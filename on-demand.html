@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>온디맨드 종목 영상 리모컨</title>
+<style>
+  :root {
+    --bg: #0e1117; --card: #161b26; --card2: #1c2333; --border: #2a3247;
+    --text: #f0f3fa; --dim: #9aa4bd; --accent: #7c8cf8; --accent2: #38bdf8;
+    --green: #34d399; --red: #f87171; --amber: #fbbf24;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text); min-height: 100vh;
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    padding: 16px 14px 48px; max-width: 560px; margin: 0 auto;
+  }
+  header { text-align: center; padding: 18px 0 6px; }
+  header h1 { font-size: 21px; letter-spacing: -0.5px; }
+  header h1 .dot { color: var(--accent); }
+  header p { color: var(--dim); font-size: 12.5px; margin-top: 6px; }
+
+  .tabs { display: flex; gap: 8px; margin: 18px 0 14px; }
+  .tabs button {
+    flex: 1; padding: 11px 0; border-radius: 12px; border: 1px solid var(--border);
+    background: var(--card); color: var(--dim); font-size: 14.5px; font-weight: 700; cursor: pointer;
+  }
+  .tabs button.on { background: var(--accent); border-color: var(--accent); color: #0b1020; }
+
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 18px 16px; margin-bottom: 14px;
+  }
+  .card h2 { font-size: 15px; color: var(--accent2); margin-bottom: 12px; }
+  label { display: block; font-size: 12.5px; color: var(--dim); margin: 10px 0 6px; }
+  input[type=text], input[type=password] {
+    width: 100%; padding: 13px 14px; border-radius: 12px; border: 1px solid var(--border);
+    background: var(--card2); color: var(--text); font-size: 16px; outline: none;
+  }
+  input:focus { border-color: var(--accent); }
+  .btn {
+    width: 100%; padding: 14px 0; margin-top: 14px; border: none; border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #0b1020; font-size: 16px; font-weight: 800; cursor: pointer;
+  }
+  .btn:disabled { opacity: 0.45; cursor: default; }
+  .btn.ghost { background: var(--card2); color: var(--dim); border: 1px solid var(--border); font-weight: 600; font-size: 13.5px; padding: 10px 0; }
+
+  .hint { font-size: 12px; color: var(--dim); line-height: 1.65; margin-top: 10px; }
+  .hint code { background: var(--card2); padding: 1px 6px; border-radius: 6px; font-size: 11.5px; }
+  .hint a { color: var(--accent2); }
+  details { margin-top: 12px; }
+  summary { cursor: pointer; color: var(--accent2); font-size: 13px; }
+  details .hint { margin-top: 8px; }
+  ol.hint { padding-left: 18px; }
+
+  #status { display: none; }
+  .st-row { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+  .st-dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .st-dot.run { background: var(--amber); animation: pulse 1.2s infinite; }
+  .st-dot.ok  { background: var(--green); }
+  .st-dot.bad { background: var(--red); }
+  @keyframes pulse { 50% { opacity: 0.35; } }
+  .st-text { font-size: 14px; }
+  .st-sub  { font-size: 12px; color: var(--dim); margin-top: 6px; }
+  .st-link { font-size: 12.5px; margin-top: 10px; }
+  .st-link a { color: var(--accent2); }
+
+  .tk { border: 1px solid var(--border); border-radius: 14px; margin-bottom: 12px; overflow: hidden; }
+  .tk-head {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 15px; background: var(--card2); cursor: pointer;
+  }
+  .tk-head b { font-size: 16px; }
+  .tk-head span { font-size: 12px; color: var(--dim); }
+  .tk-body { padding: 12px 14px; display: none; }
+  .tk-body.open { display: block; }
+  .scenes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
+  .scenes img { width: 100%; border-radius: 10px; border: 1px solid var(--border); display: block; }
+  .empty { text-align: center; color: var(--dim); font-size: 13.5px; padding: 28px 0; }
+
+  .toast {
+    position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%);
+    background: var(--card2); border: 1px solid var(--border); color: var(--text);
+    padding: 12px 20px; border-radius: 12px; font-size: 13.5px; display: none; max-width: 90%;
+  }
+  footer { text-align: center; color: #3d465e; font-size: 11.5px; margin-top: 26px; line-height: 1.7; }
+</style>
+</head>
+<body>
+<header>
+  <h1>온디맨드 종목 영상<span class="dot">.</span></h1>
+  <p>티커를 입력하면 GitHub Actions가 뉴스 분석 → 영상 제작 → 메일 발송</p>
+</header>
+
+<div class="tabs">
+  <button id="tabGen" class="on" onclick="showTab('gen')">영상 생성</button>
+  <button id="tabHist" onclick="showTab('hist')">생성 이력</button>
+</div>
+
+<!-- ══ 탭 1: 영상 생성 ══════════════════════════════════════════ -->
+<div id="pageGen">
+  <div class="card">
+    <h2>새 영상 요청</h2>
+    <label for="ticker">종목 티커 (한국 주식은 .KS/.KQ 접미사)</label>
+    <input type="text" id="ticker" placeholder="예: TSLA, NVDA, 005930.KS" autocapitalize="characters" autocomplete="off">
+    <button class="btn" id="goBtn" onclick="dispatchRun()">🎬 영상 생성 시작</button>
+    <p class="hint">완료까지 보통 15~30분 — 끝나면 메일로 영상이 도착합니다. 이 페이지를 닫아도 진행에는 영향이 없습니다.</p>
+  </div>
+
+  <div class="card" id="status">
+    <h2>진행 상태</h2>
+    <div class="st-row"><div class="st-dot run" id="stDot"></div><div class="st-text" id="stText">실행 준비 중…</div></div>
+    <div class="st-sub" id="stSub"></div>
+    <div class="st-link" id="stLink"></div>
+  </div>
+
+  <div class="card" id="patCard">
+    <h2>연결 설정 (GitHub 토큰)</h2>
+    <div id="patSaved" style="display:none">
+      <p class="hint">✅ 토큰이 이 브라우저에 저장되어 있습니다 (localStorage — 저장소·서버로 전송되지 않음).</p>
+      <button class="btn ghost" onclick="clearPat()">토큰 삭제 / 재입력</button>
+    </div>
+    <div id="patForm">
+      <label for="pat">Personal Access Token (fine-grained)</label>
+      <input type="password" id="pat" placeholder="github_pat_..." autocomplete="off">
+      <button class="btn ghost" onclick="savePat()">토큰 저장</button>
+      <details>
+        <summary>토큰 발급 방법 (1분)</summary>
+        <ol class="hint">
+          <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank">GitHub → 새 Fine-grained 토큰</a> 열기</li>
+          <li>Repository access → <b>Only select repositories</b> → 이 저장소 선택</li>
+          <li>Permissions → Repository permissions → <b>Actions: Read and write</b> (저장소가 비공개면 <b>Contents: Read-only</b>도 추가)</li>
+          <li>Generate 후 <code>github_pat_...</code> 값을 여기 붙여넣기</li>
+        </ol>
+        <p class="hint">⚠ 토큰은 절대 저장소 파일·코드에 넣지 마세요. 이 페이지는 브라우저 localStorage에만 보관합니다.</p>
+      </details>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 탭 2: 생성 이력 ══════════════════════════════════════════ -->
+<div id="pageHist" style="display:none">
+  <div id="histList"><p class="empty">불러오는 중…</p></div>
+</div>
+
+<div class="toast" id="toast"></div>
+<footer>실행 엔진: GitHub Actions · on-demand-video.yml<br>결과는 메일 첨부(18MB 이하) 또는 Actions 아티팩트로 전달됩니다</footer>
+
+<script>
+// ── 저장소 자동 감지 — 어느 저장소에 올려도 수정 없이 동작 ─────
+// GitHub Pages(https://<owner>.github.io/<repo>/on-demand.html)의 URL에서 owner·repo를 읽는다.
+// 로컬(file://)로 열면 아래 폴백 값을 사용.
+let OWNER = 'korlee88', REPO = 'rklb-dashboard';   // 폴백 (github.io가 아닐 때만)
+const _host = location.hostname.match(/^([^.]+)\.github\.io$/);
+if (_host) {
+  OWNER = _host[1];
+  const seg = location.pathname.split('/').filter(Boolean);
+  if (seg.length) REPO = seg[0];
+}
+let BRANCH = 'main';   // 기본 브랜치 — 로드 시 API로 확정(폴백 main)
+let RAW = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}`;
+const WORKFLOW = 'on-demand-video.yml';
+const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
+const LS_KEY = 'od_pat_' + REPO;
+let pollTimer = null;
+
+// 기본 브랜치를 API로 한 번 확정(캐시) — dispatch·이력·raw 이미지에 사용
+let _branchP = null;
+function ensureBranch() {
+  if (!_branchP) _branchP = (async () => {
+    try {
+      const r = await fetch(API, { headers: ghHeaders(true) });
+      if (r.ok) BRANCH = (await r.json()).default_branch || BRANCH;
+    } catch (e) { /* 폴백 main 유지 */ }
+    RAW = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}`;
+  })();
+  return _branchP;
+}
+
+// ── 공통 ──────────────────────────────────────────────────────
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.style.display = 'block';
+  clearTimeout(t._h); t._h = setTimeout(() => t.style.display = 'none', 3500);
+}
+function ghHeaders(withAuth) {
+  const h = { 'Accept': 'application/vnd.github+json' };
+  const pat = localStorage.getItem(LS_KEY);
+  if (withAuth && pat) h['Authorization'] = 'Bearer ' + pat;
+  return h;
+}
+function showTab(t) {
+  document.getElementById('pageGen').style.display  = t === 'gen'  ? 'block' : 'none';
+  document.getElementById('pageHist').style.display = t === 'hist' ? 'block' : 'none';
+  document.getElementById('tabGen').className  = t === 'gen'  ? 'on' : '';
+  document.getElementById('tabHist').className = t === 'hist' ? 'on' : '';
+  if (t === 'hist') loadHistory();
+}
+
+// ── PAT 관리 (localStorage 전용 — 하드코딩·전송 금지) ─────────
+function refreshPatUI() {
+  const has = !!localStorage.getItem(LS_KEY);
+  document.getElementById('patSaved').style.display = has ? 'block' : 'none';
+  document.getElementById('patForm').style.display  = has ? 'none'  : 'block';
+}
+function savePat() {
+  const v = document.getElementById('pat').value.trim();
+  if (!v) return toast('토큰을 입력해 주세요');
+  localStorage.setItem(LS_KEY, v);
+  document.getElementById('pat').value = '';
+  refreshPatUI(); toast('토큰이 이 브라우저에 저장됐습니다');
+}
+function clearPat() {
+  localStorage.removeItem(LS_KEY); refreshPatUI(); toast('토큰을 삭제했습니다');
+}
+
+// ── 워크플로 실행 ─────────────────────────────────────────────
+async function dispatchRun() {
+  const raw = document.getElementById('ticker').value.trim().toUpperCase();
+  if (!/^[A-Z0-9.\-]{1,10}$/.test(raw)) return toast('올바른 티커 형식이 아닙니다 (예: TSLA, 005930.KS)');
+  if (!localStorage.getItem(LS_KEY)) { toast('아래 연결 설정에서 GitHub 토큰을 먼저 저장해 주세요'); return; }
+
+  const btn = document.getElementById('goBtn');
+  btn.disabled = true; btn.textContent = '요청 중…';
+  try {
+    await ensureBranch();
+    const res = await fetch(`${API}/actions/workflows/${WORKFLOW}/dispatches`, {
+      method: 'POST',
+      headers: { ...ghHeaders(true), 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ref: BRANCH, inputs: { ticker: raw } }),
+    });
+    if (res.status === 204) {
+      toast(`${raw} 영상 생성을 시작했습니다`);
+      startPolling(raw, Date.now());
+    } else if (res.status === 401 || res.status === 403) {
+      toast('토큰 인증 실패 — 토큰 권한(Actions: Read and write)과 저장소 선택을 확인하세요');
+    } else if (res.status === 404) {
+      toast('워크플로를 찾을 수 없습니다 — 토큰의 저장소 접근 범위를 확인하세요');
+    } else {
+      const e = await res.json().catch(() => ({}));
+      toast('실행 실패: ' + (e.message || `HTTP ${res.status}`));
+    }
+  } catch (err) {
+    toast('네트워크 오류: ' + err.message);
+  } finally {
+    btn.disabled = false; btn.textContent = '🎬 영상 생성 시작';
+  }
+}
+
+// ── 진행 상태 폴링 ────────────────────────────────────────────
+function setStatus(dot, text, sub, linkHtml) {
+  document.getElementById('status').style.display = 'block';
+  document.getElementById('stDot').className = 'st-dot ' + dot;
+  document.getElementById('stText').textContent = text;
+  document.getElementById('stSub').textContent = sub || '';
+  document.getElementById('stLink').innerHTML = linkHtml || '';
+}
+function startPolling(ticker, t0) {
+  clearInterval(pollTimer);
+  setStatus('run', `${ticker} — 실행 대기열 등록 중…`, '', '');
+  const tick = async () => {
+    try {
+      const res = await fetch(`${API}/actions/workflows/${WORKFLOW}/runs?per_page=1`, { headers: ghHeaders(true) });
+      if (!res.ok) return;
+      const run = (await res.json()).workflow_runs?.[0];
+      if (!run || new Date(run.created_at).getTime() < t0 - 90000) return;   // 이번 요청 이전 런 무시
+      const mins = Math.max(0, Math.round((Date.now() - new Date(run.created_at)) / 60000));
+      const link = `<a href="${run.html_url}" target="_blank">GitHub에서 실행 로그 보기 →</a>`;
+      if (run.status === 'completed') {
+        clearInterval(pollTimer);
+        if (run.conclusion === 'success') {
+          setStatus('ok', `${ticker} — 완료! 메일함을 확인하세요 📬`, `소요 ${mins}분`, link);
+          toast('영상 생성 완료');
+        } else {
+          setStatus('bad', `${ticker} — 실패 (${run.conclusion})`, '실행 로그에서 원인을 확인하세요', link);
+        }
+      } else {
+        const label = run.status === 'queued' ? '대기열' : '생성 중 (뉴스 분석 → 대본 → 영상 → 메일)';
+        setStatus('run', `${ticker} — ${label}`, `경과 ${mins}분 · 보통 15~30분 소요`, link);
+      }
+    } catch (e) { /* 일시 오류 — 다음 폴링에서 재시도 */ }
+  };
+  tick();
+  pollTimer = setInterval(tick, 15000);
+}
+
+// ── 생성 이력 (공개 저장소면 토큰 불필요 · 비공개면 저장된 토큰으로 재시도) ──
+async function ghContents(path) {
+  let res = await fetch(`${API}/contents/${path}?ref=${BRANCH}`, { headers: ghHeaders(false) });
+  if (!res.ok && localStorage.getItem(LS_KEY)) {
+    res = await fetch(`${API}/contents/${path}?ref=${BRANCH}`, { headers: ghHeaders(true) });
+  }
+  if (!res.ok) throw res.status;
+  return res.json();
+}
+async function loadHistory() {
+  const box = document.getElementById('histList');
+  box.innerHTML = '<p class="empty">불러오는 중…</p>';
+  try {
+    await ensureBranch();
+    const tickers = (await ghContents('data/on-demand')).filter(x => x.type === 'dir');
+    if (!tickers.length) throw 404;
+    box.innerHTML = '';
+    for (const t of tickers) {
+      const dates = (await ghContents(`data/on-demand/${t.name}`))
+        .filter(x => x.type === 'dir').map(x => x.name).sort().reverse();
+      const latest = dates[0];
+      const el = document.createElement('div');
+      el.className = 'tk';
+      el.innerHTML = `
+        <div class="tk-head" onclick="this.nextElementSibling.classList.toggle('open')">
+          <b>${t.name}</b><span>${latest ? '최근 ' + latest : '리포트 없음'} · ${dates.length}회</span>
+        </div>
+        <div class="tk-body">${latest ? `
+          <div class="scenes">
+            ${[0,1,2].map(i => `<a href="${RAW}/data/on-demand/${t.name}/${latest}/scene_0${i}.png" target="_blank">
+              <img loading="lazy" src="${RAW}/data/on-demand/${t.name}/${latest}/scene_0${i}.png"
+                   onerror="this.parentElement.style.display='none'"></a>`).join('')}
+          </div>
+          <p class="hint">영상 파일은 메일 첨부 또는
+            <a href="https://github.com/${OWNER}/${REPO}/actions/workflows/${WORKFLOW}" target="_blank">Actions 아티팩트</a>에서 (30일 보관)</p>`
+          : '<p class="hint">아직 완료된 리포트가 없습니다</p>'}
+        </div>`;
+      box.appendChild(el);
+    }
+  } catch (code) {
+    box.innerHTML = `<p class="empty">${code === 404
+      ? '아직 생성 이력이 없습니다 — 첫 영상을 만들어 보세요!'
+      : ':( 이력을 불러오지 못했습니다 (잠시 후 다시)'}</p>`;
+  }
+}
+
+// ── 초기화 ────────────────────────────────────────────────────
+refreshPatUI();
+ensureBranch();   // 기본 브랜치 미리 확정(백그라운드)
+document.getElementById('ticker').addEventListener('keydown', e => { if (e.key === 'Enter') dispatchRun(); });
+</script>
+</body>
+</html>
