@@ -1,0 +1,104 @@
+name: 온디맨드 종목 영상 생성
+
+on:
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: '분석할 종목 티커 (예: TSLA, NVDA, PLTR)'
+        required: true
+        type: string
+      skip_publish:
+        description: '게시 생략(메일 안 보냄) — 아티팩트만 생성하는 미리보기용'
+        type: boolean
+        default: false
+
+jobs:
+  on-demand-video:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: 티커·경로 설정
+        run: |
+          T=$(echo "${{ github.event.inputs.ticker }}" | tr '[:lower:]' '[:upper:]' | tr -d ' ')
+          echo "TICKER=${T}" >> $GITHUB_ENV
+          echo "TICKER_CONFIG=configs/${T}/ticker.json" >> $GITHUB_ENV
+          echo "SESSIONS_FILE=data/on-demand/${T}/session.json" >> $GITHUB_ENV
+          echo "REPORT_BASE=data/on-demand/${T}" >> $GITHUB_ENV
+          echo "TODAY=$(TZ='Asia/Seoul' date +'%Y-%m-%d')" >> $GITHUB_ENV
+          echo "🎯 대상 종목: ${T}"
+
+      - name: Node 20 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Python 3.11 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 한글 폰트 · ffmpeg 설치
+        run: sudo apt-get update --quiet && sudo apt-get install -y fonts-nanum fonts-nanum-extra ffmpeg --fix-missing --quiet
+
+      - name: Python 의존성 설치
+        run: pip install -r requirements.txt --quiet
+
+      - name: 종목 메타데이터 확인/조사
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/resolve-ticker.js
+
+      - name: 뉴스 수집·분석
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/on-demand-collect.js
+
+      - name: 대본 및 씬 이미지 생성
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/weekly_video_prep.py
+
+      - name: 영상 합성
+        run: python scripts/weekly_video_make.py
+
+      - name: 결과 커밋 & 푸시
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "${TICKER} On-demand Bot"
+          git add configs/ data/on-demand/
+          git restore --staged 'data/on-demand/**/*.mp3' 2>/dev/null || true
+          git restore --staged 'data/on-demand/**/*.mp4' 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음 — 커밋 건너뜀"
+          else
+            git commit -m "on-demand: ${TICKER} 영상 자료 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: 영상 아티팩트 업로드
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.TICKER }}-${{ env.TODAY }}-video
+          path: data/on-demand/${{ env.TICKER }}/*/*.mp4
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: 메일 발송
+        if: github.event.inputs.skip_publish != 'true'
+        continue-on-error: true
+        env:
+          GWS_YOUTUBE_TOKEN:  ${{ secrets.GWS_YOUTUBE_TOKEN }}
+          GWS_SA_CREDENTIALS: ${{ secrets.GWS_SA_CREDENTIALS }}
+          GOOGLE_SHEET_ID:    ${{ secrets.GOOGLE_SHEET_ID }}
+          GMAIL_USER:         ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_TO:           ${{ secrets.GMAIL_TO }}
+        run: python scripts/gws_publish.py
