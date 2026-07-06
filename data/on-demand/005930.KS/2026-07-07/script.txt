@@ -1,0 +1,25 @@
+SCENE_0_TITLE: 오늘의삼전
+SCENE_0:
+결론부터, *318,000원* 안착했어요
+전일 종가 대비 *+2.75%* 반등했죠
+*D램 20% 인상* 소식이 훈풍이네요
+*1.4nm 칩·BESPOKE AI 가전* 로드맵 주목이죠
+
+SCENE_1_TITLE: 핵심3선
+SCENE_1:
+호재: *자사주 매입* 검토 소식에 주주환원 기대감이 살아나요
+악재: DX 노조가 *7월 16일 집회* 예고해서 노사 갈등이 걱정이에요
+보합: 2분기 실적과 *SK하이닉스 나스닥 상장*이 AI 랠리 시험대네요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+*2분기 실적 발표* — 최대 분수령이에요
+*메모리 사상 최대* 실적 넘길지가 관건
+*온디바이스 AI폰·폴더블 신작* 공개 기대돼요
+누적 *+1~2% 안팎*, 완만한 상승 흐름이죠
+*휴머노이드 로봇·1.4nm 양산* 로드맵도 주목
+함께해 주셔서 고마워요!
+
+IMAGE_PROMPT_0: [씬0 — 16:9 landscape · Seoul Han River and Lotte Tower skyline at night as backdrop, futuristic smart homes seamlessly integrated with on-device AI, powered by advanced 1.4nm semiconductors, sleek customizable BESPOKE appliances glowing softly, humanoid robots assisting in daily life, next-generation foldable displays showing immersive experiences, futuristic global city night skyline in purple violet tech analytics tones, glowing city lights bokeh, semiconductor wafer motifs floating subtly, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_1: [씬1 — 16:9 landscape · Futuristic smart homes seamlessly integrated with on-device AI, powered by advanced 1.4nm semiconductors, sleek customizable BESPOKE appliances, humanoid robots assisting in daily life, next-generation foldable displays offering immersive experiences, dynamic aerospace launch imagery with rockets and orbiting satellites blended with semiconductor fabs, vivid green growth bullish energy pulsing across the scene, dynamic upward trajectory arcs, glowing motion lines, semiconductor circuit patterns radiating outward, cinematic composition, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_2: [씬2 — 9:16 vertical · Nordic-inspired eco-friendly futuristic smart city backdrop with lush greenery and clean architecture, symbols of Samsung semiconductor, home appliance, mobile and display industries elegantly integrated, futuristic smart homes seamlessly integrated with on-device AI powered by advanced 1.4nm semiconductors, sleek customizable BESPOKE appliances, humanoid robots assisting in daily life, next-generation foldable displays offering immersive experiences, dreamlike global future cityscape, golden inspirational future mood, golden sunlight starlight sparkles, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo]

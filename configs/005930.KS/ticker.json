@@ -1,0 +1,35 @@
+{
+  "ticker": "005930.KS",
+  "company_en": "Samsung Electronics Co., Ltd.",
+  "company_ko": "삼성전자",
+  "industry_ko": "반도체, 가전, 모바일, 디스플레이",
+  "exchange": "Korea Exchange (KRX)",
+  "image_future_tech_en": "Futuristic smart homes seamlessly integrated with on-device AI, powered by advanced 1.4nm semiconductors, and featuring sleek, customizable BESPOKE appliances. Humanoid robots assist in daily life, while next-generation foldable displays offer immersive experiences.",
+  "brand_label": "005930.KS BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "000660.KS",
+  "key_people": [
+    "Lee Jae-yong",
+    "TM Roh",
+    "Jun Young-hyun"
+  ],
+  "google_trends_keywords": [
+    "삼성전자",
+    "갤럭시",
+    "비스포크",
+    "반도체",
+    "AI 반도체",
+    "이재용"
+  ],
+  "video_tags": [
+    "삼성전자",
+    "갤럭시",
+    "비스포크",
+    "AI",
+    "스마트싱스",
+    "반도체"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-07-06T23:52:42.265Z"
+}

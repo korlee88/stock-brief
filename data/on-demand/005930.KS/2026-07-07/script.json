@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-07-07",
+  "generated_by": "Claude Opus 4",
+  "title": "결론부터, *318,000원* 안착했어요",
+  "subtitle": "2026-07-07 ~ 2026-07-07 · 삼성전자, 자사주 매입 프로그램 검토 소식에 주가 변동",
+  "summary": {
+    "week_start": "2026-07-07",
+    "week_end": "2026-07-07",
+    "session_count": 1,
+    "total_analyzed": 8,
+    "bullish_count": 2,
+    "bearish_count": 1,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 318000,
+    "price_end": 318000,
+    "latest_price": 318000,
+    "today_price": 318000,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "삼성전자, 자사주 매입 프로그램 검토 소식에 주가 변동성 확대",
+      "score": 2,
+      "reason": "자사주 매입은 주주 가치 환원 및 주가 부양 효과를 기대할 수 있어 긍정적이지만, 단기적인 주가 변동성을 야기할 수 있습니다.",
+      "source": "Simply Wall St",
+      "date": "2026-07-04",
+      "category": "Market",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "삼성전자, 자사주 매입 프로그램 검토 소식에 주가 변동성 확대",
+        "score": 2,
+        "reason": "자사주 매입은 주주 가치 환원 및 주가 부양 효과를 기대할 수 있어 긍정적이지만, 단기적인 주가 변동성을 야기할 수 있습니다.",
+        "source": "Simply Wall St",
+        "date": "2026-07-04",
+        "category": "Market"
+      },
+      {
+        "title": "삼성전자, D램 가격 20% 인상 추진 및 미국 증시 상장 가능성 언급",
+        "score": 4,
+        "reason": "D램 가격 인상은 삼성전자의 수익성 개선에 직접적인 긍정적 영향을 미치며, 미국 증시 상장은 자금 조달 및 기업 가치 상승에 기여할 수 있어 주가에 긍정적입니다.",
+        "source": "Morningstar",
+        "date": "2026-07-06",
+        "category": "Product"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "삼성전자 DX 부문 노조, 7월 16일 집회 예고",
+        "score": -2,
+        "reason": "노사 갈등은 기업의 생산성 및 이미지에 부정적인 영향을 미칠 수 있으며, 이는 주가에 하방 압력으로 작용할 수 있습니다.",
+        "source": "Businesskorea",
+        "date": "2026-07-06",
+        "category": "Legal"
+      }
+    ],
+    "top_neutral": [
+      {
+        "title": "준영현 삼성전자 부회장, 호남 지역 원전 확대 요청",
+        "score": 1,
+        "reason": "반도체 공장 운영에 필수적인 안정적인 전력 공급 확보 노력은 긍정적이지만, 원전 확대는 사회적 논의가 필요한 사안으로 주가에 미치는 영향은 중립적입니다.",
+        "source": "News1",
+        "date": "2026-07-06",
+        "category": "Regulatory"
+      },
+      {
+        "title": "삼성전자, 2분기 실적 발표 및 SK하이닉스 나스닥 상장으로 AI 반도체 랠리 시험대",
+        "score": 0,
+        "reason": "주요 기업들의 실적 발표와 상장은 시장의 불확실성을 해소하거나 새로운 방향을 제시할 수 있지만, 현재로서는 긍정적 또는 부정적 영향이 명확하지 않아 중립적입니다.",
+        "source": "Barrons.com",
+        "date": "2026-07-06",
+        "category": "Market"
+      }
+    ],
+    "neutral_count": 2,
+    "scene1_news": {
+      "bullish": {
+        "title": "삼성전자, 자사주 매입 프로그램 검토 소식에 주가 변동성 확대",
+        "score": 2,
+        "reason": "자사주 매입은 주주 가치 환원 및 주가 부양 효과를 기대할 수 있어 긍정적이지만, 단기적인 주가 변동성을 야기할 수 있습니다.",
+        "source": "Simply Wall St",
+        "date": "2026-07-04",
+        "category": "Market"
+      },
+      "bearish": {
+        "title": "삼성전자 DX 부문 노조, 7월 16일 집회 예고",
+        "score": -2,
+        "reason": "노사 갈등은 기업의 생산성 및 이미지에 부정적인 영향을 미칠 수 있으며, 이는 주가에 하방 압력으로 작용할 수 있습니다.",
+        "source": "Businesskorea",
+        "date": "2026-07-06",
+        "category": "Legal"
+      },
+      "neutral": {
+        "title": "삼성전자, 2분기 실적 발표 및 SK하이닉스 나스닥 상장으로 AI 반도체 랠리 시험대",
+        "score": 0,
+        "reason": "주요 기업들의 실적 발표와 상장은 시장의 불확실성을 해소하거나 새로운 방향을 제시할 수 있지만, 현재로서는 긍정적 또는 부정적 영향이 명확하지 않아 중립적입니다.",
+        "source": "Barrons.com",
+        "date": "2026-07-06",
+        "category": "Market"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-07-07",
+        318000
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-07-07",
+    "today_news": [
+      {
+        "title": "삼성전자, D램 가격 20% 인상 추진 및 미국 증시 상장 가능성 언급",
+        "category": "Product",
+        "source": "Morningstar",
+        "date": "2026-07-06"
+      },
+      {
+        "title": "준영현 삼성전자 부회장, 호남 지역 원전 확대 요청",
+        "category": "Regulatory",
+        "source": "News1",
+        "date": "2026-07-06"
+      },
+      {
+        "title": "삼성전자 DX 부문 노조, 7월 16일 집회 예고",
+        "category": "Legal",
+        "source": "Businesskorea",
+        "date": "2026-07-06"
+      },
+      {
+        "title": "삼성전자, 2분기 실적 발표 및 SK하이닉스 나스닥 상장으로 AI 반도체 랠리 시험대",
+        "category": "Market",
+        "source": "Barrons.com",
+        "date": "2026-07-06"
+      },
+      {
+        "title": "삼성전자, 자사주 매입 프로그램 검토 소식에 주가 변동성 확대",
+        "category": "Market",
+        "source": "Simply Wall St",
+        "date": "2026-07-04"
+      },
+      {
+        "title": "삼성전자, 2분기 메모리 실적 사상 최대치 예상",
+        "category": "Earnings",
+        "source": "YouTube",
+        "date": "2026-07-03"
+      },
+      {
+        "title": "이재용 회장, 반도체 메가 클러스터 직접 챙기며 정부 지원 강조",
+        "category": "Regulatory",
+        "source": "The DONG-A ILBO",
+        "date": "2026-07-01"
+      },
+      {
+        "title": "삼성전자, 400조 원 규모 광주 반도체 공장 투자 계획 발표",
+        "category": "Contract",
+        "source": "Seoul Economic Daily",
+        "date": "2026-07-01"
+      }
+    ],
+    "prev_day": {
+      "date": "2026-07-06",
+      "open": 320000.0,
+      "close": 318000.0,
+      "change_pct": 2.75
+    },
+    "movement_reason": "2026년 7월 7일 삼성전자 (005930.KS) 주가 하락의 주요 원인을 분석하는 것은 현재 시점(2026년 7월 6일)에서는 불가능합니다. 주가는 실시간으로 변동하며 미래의 주가 등락 원인은 예측할 수 없습니다.\n\n또한, 현재 주가 318,000달러는 삼성전자 주식의 일반적인 가격과 통화 단위(원화)와 차이가 있습니다."
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "오늘의삼전",
+      "lines": [
+        "결론부터, *318,000원* 안착했어요",
+        "전일 종가 대비 *+2.75%* 반등했죠",
+        "*D램 20% 인상* 소식이 훈풍이네요",
+        "*1.4nm 칩·BESPOKE AI 가전* 로드맵 주목이죠"
+      ],
+      "body": "결론부터, *318,000원* 안착했어요\n전일 종가 대비 *+2.75%* 반등했죠\n*D램 20% 인상* 소식이 훈풍이네요\n*1.4nm 칩·BESPOKE AI 가전* 로드맵 주목이죠"
+    },
+    {
+      "index": 1,
+      "title": "핵심3선",
+      "lines": [
+        "호재: *자사주 매입* 검토 소식에 주주환원 기대감이 살아나요",
+        "악재: DX 노조가 *7월 16일 집회* 예고해서 노사 갈등이 걱정이에요",
+        "보합: 2분기 실적과 *SK하이닉스 나스닥 상장*이 AI 랠리 시험대네요"
+      ],
+      "body": "호재: *자사주 매입* 검토 소식에 주주환원 기대감이 살아나요\n악재: DX 노조가 *7월 16일 집회* 예고해서 노사 갈등이 걱정이에요\n보합: 2분기 실적과 *SK하이닉스 나스닥 상장*이 AI 랠리 시험대네요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "*2분기 실적 발표* — 최대 분수령이에요",
+        "*메모리 사상 최대* 실적 넘길지가 관건",
+        "*온디바이스 AI폰·폴더블 신작* 공개 기대돼요",
+        "누적 *+1~2% 안팎*, 완만한 상승 흐름이죠",
+        "*휴머노이드 로봇·1.4nm 양산* 로드맵도 주목",
+        "함께해 주셔서 고마워요!"
+      ],
+      "body": "*2분기 실적 발표* — 최대 분수령이에요\n*메모리 사상 최대* 실적 넘길지가 관건\n*온디바이스 AI폰·폴더블 신작* 공개 기대돼요\n누적 *+1~2% 안팎*, 완만한 상승 흐름이죠\n*휴머노이드 로봇·1.4nm 양산* 로드맵도 주목\n함께해 주셔서 고마워요!"
+    }
+  ],
+  "image_prompts": {}
+}
