@@ -36,6 +36,17 @@ BRAND_LABEL        = TICKER_CONFIG.get("brand_label", f"{TICKER} BRIEF")
 REPO               = TICKER_CONFIG.get("repo", os.environ.get("GITHUB_REPOSITORY", ""))
 VIDEO_TAGS         = TICKER_CONFIG.get("video_tags", [TICKER, "주식", "Shorts"])
 
+# ── 통화 표기: 한국거래소(.KS/.KQ) 종목은 원화·정수, 그 외는 $·2소수점 (prep.py와 동일 규칙) ──
+IS_KRW = TICKER.upper().endswith((".KS", ".KQ")) or "korea" in TICKER_CONFIG.get("exchange", "").lower()
+MARKET_KW = "한국주식" if IS_KRW else "미국주식"
+
+def fmt_price(value, empty=""):
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return empty
+    return f"{v:,.0f}원" if IS_KRW else f"${v:,.2f}"
+
 REPORT_BASE        = Path(os.environ.get("REPORT_BASE") or (ROOT_DIR / "data" / "weekly-report"))
 
 GWS_YOUTUBE_TOKEN  = os.environ.get("GWS_YOUTUBE_TOKEN", "")
@@ -92,10 +103,7 @@ def build_youtube_copy(meta: dict, report_dir: Path) -> tuple[str, str]:
     bi     = meta.get("avg_buy_index")   # 온디맨드(뉴스 전용) 종목은 None
     price  = meta.get("latest_price")
     signal = get_signal_label(bi)
-    try:
-        price_str = f"${float(price):,.2f}" if price else ""
-    except (TypeError, ValueError):
-        price_str = ""
+    price_str = fmt_price(price)
 
     # 제목: 씬0 헤드라인(대본 줄1) 훅
     headline = ""
@@ -124,7 +132,7 @@ def build_youtube_copy(meta: dict, report_dir: Path) -> tuple[str, str]:
 
     # 연관검색어·해시태그: config 기반 조립 (중복 제거·순서 보존)
     kw = []
-    for k in ([COMPANY_KO, TICKER, f"{COMPANY_KO} 주가", f"{TICKER} 주가", "미국주식"]
+    for k in ([COMPANY_KO, TICKER, f"{COMPANY_KO} 주가", f"{TICKER} 주가", MARKET_KW]
               + TICKER_CONFIG.get("google_trends_keywords", [])
               + [t for t in VIDEO_TAGS if t.lower() != "shorts"]
               + [TICKER_CONFIG.get("industry_ko", ""), TICKER_CONFIG.get("competitor_ticker", "")]):
@@ -133,7 +141,7 @@ def build_youtube_copy(meta: dict, report_dir: Path) -> tuple[str, str]:
             kw.append(k)
     hashtags = " ".join(dict.fromkeys(
         "#" + t.replace(" ", "").replace("·", "")
-        for t in [TICKER, COMPANY_KO, "미국주식"] + [v for v in VIDEO_TAGS if v.lower() != "shorts"]
+        for t in [TICKER, COMPANY_KO, MARKET_KW] + [v for v in VIDEO_TAGS if v.lower() != "shorts"]
     )) + " #Shorts"
 
     bi_s = f"참고지수 {bi}점({signal})" if bi is not None else "뉴스 브리핑"
@@ -223,7 +231,7 @@ def upload_to_youtube(report_dir: Path, meta: dict) -> str | None:
 
 # ── Google Sheets 기록 ────────────────────────────────────────────────────────
 
-SHEET_HEADER = ["날짜", "매수지수", "주가($)", "매수신호", "세션수", "YouTube링크"]
+SHEET_HEADER = ["날짜", "매수지수", f"주가({'원' if IS_KRW else '$'})", "매수신호", "세션수", "YouTube링크"]
 
 
 def log_to_sheets(meta: dict, youtube_url: str | None) -> bool:
@@ -271,10 +279,7 @@ def _build_html(meta: dict, youtube_url: str | None, scene_count: int,
     signal = get_signal_label(bi)
     bi_disp = f"{bi}점" if bi is not None else "—"
 
-    try:
-        price_str = f"${float(price):,.2f}" if price else "N/A"
-    except (TypeError, ValueError):
-        price_str = "N/A"
+    price_str = fmt_price(price, empty="N/A")
 
     signal_color = {"매수": "#22c55e", "관망": "#f59e0b", "매도": "#ef4444"}.get(signal, "#6b7280")
 

@@ -80,6 +80,18 @@
   .scenes img { width: 100%; border-radius: 10px; border: 1px solid var(--border); display: block; }
   .empty { text-align: center; color: var(--dim); font-size: 13.5px; padding: 28px 0; }
 
+  .kr-results { margin-top: 10px; display: flex; flex-direction: column; gap: 7px; }
+  .kr-item {
+    display: flex; justify-content: space-between; align-items: center; gap: 10px;
+    padding: 11px 13px; border-radius: 11px; border: 1px solid var(--border);
+    background: var(--card2); cursor: pointer;
+  }
+  .kr-item:hover { border-color: var(--accent); }
+  .kr-item b { font-size: 14.5px; font-weight: 700; }
+  .kr-item .mkt { font-size: 11px; color: var(--dim); margin-left: 6px; font-weight: 500; }
+  .kr-item code { font-size: 13px; color: var(--accent2); background: none; }
+  .kr-empty { font-size: 12.5px; color: var(--dim); padding: 6px 2px; }
+
   .toast {
     position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%);
     background: var(--card2); border: 1px solid var(--border); color: var(--text);
@@ -101,6 +113,14 @@
 
 <!-- ══ 탭 1: 영상 생성 ══════════════════════════════════════════ -->
 <div id="pageGen">
+  <div class="card" id="krCard">
+    <h2>🔎 한국 종목 코드 찾기</h2>
+    <label for="krSearch">종목명으로 검색 (예: 하이닉스 → SK하이닉스 000660.KS)</label>
+    <input type="text" id="krSearch" placeholder="예: 하이닉스, 삼성전자, 에코프로" autocomplete="off">
+    <div id="krResults" class="kr-results"></div>
+    <p class="hint">코드를 누르면 위 종목 티커 칸에 자동 입력됩니다. 주요 코스피·코스닥 종목을 담고 있어요.</p>
+  </div>
+
   <div class="card">
     <h2>새 영상 요청</h2>
     <label for="ticker">종목 티커 (한국 주식은 .KS/.KQ 접미사)</label>
@@ -152,7 +172,7 @@
 // ── 저장소 자동 감지 — 어느 저장소에 올려도 수정 없이 동작 ─────
 // GitHub Pages(https://<owner>.github.io/<repo>/on-demand.html)의 URL에서 owner·repo를 읽는다.
 // 로컬(file://)로 열면 아래 폴백 값을 사용.
-let OWNER = 'korlee88', REPO = 'rklb-dashboard';   // 폴백 (github.io가 아닐 때만)
+let OWNER = 'korlee88', REPO = 'stock-brief';   // 폴백 (github.io가 아닐 때만)
 const _host = location.hostname.match(/^([^.]+)\.github\.io$/);
 if (_host) {
   OWNER = _host[1];
@@ -332,7 +352,67 @@ async function loadHistory() {
   }
 }
 
+// ── 한국 종목 코드 검색 (주요 코스피·코스닥 · 오프라인 내장 사전) ──
+// Yahoo 티커 규칙: 코스피=.KS, 코스닥=.KQ. 종목명 부분 일치로 검색.
+const KR_STOCKS = [
+  ["삼성전자","005930.KS"],["삼성전자우","005935.KS"],["SK하이닉스","000660.KS"],
+  ["LG에너지솔루션","373220.KS"],["삼성바이오로직스","207940.KS"],["현대차","005380.KS"],
+  ["기아","000270.KS"],["셀트리온","068270.KS"],["POSCO홀딩스","005490.KS"],["포스코홀딩스","005490.KS"],
+  ["NAVER","035420.KS"],["네이버","035420.KS"],["삼성SDI","006400.KS"],["LG화학","051910.KS"],
+  ["카카오","035720.KS"],["삼성물산","028260.KS"],["현대모비스","012330.KS"],["KB금융","105560.KS"],
+  ["신한지주","055550.KS"],["삼성생명","032830.KS"],["LG전자","066570.KS"],["하나금융지주","086790.KS"],
+  ["SK이노베이션","096770.KS"],["포스코퓨처엠","003670.KS"],["POSCO퓨처엠","003670.KS"],
+  ["한국전력","015760.KS"],["크래프톤","259960.KS"],["삼성전기","009150.KS"],["SK","034730.KS"],
+  ["삼성화재","000810.KS"],["우리금융지주","316140.KS"],["KT&G","033780.KS"],["고려아연","010130.KS"],
+  ["HMM","011200.KS"],["기업은행","024110.KS"],["두산에너빌리티","034020.KS"],["LG","003550.KS"],
+  ["대한항공","003490.KS"],["에스오일","010950.KS"],["S-Oil","010950.KS"],["HD현대중공업","329180.KS"],
+  ["한화솔루션","009830.KS"],["아모레퍼시픽","090430.KS"],["엔씨소프트","036570.KS"],["넷마블","251270.KS"],
+  ["강원랜드","035250.KS"],["CJ제일제당","097950.KS"],["한미반도체","042700.KS"],["두산밥캣","241560.KS"],
+  ["현대글로비스","086280.KS"],["KT","030200.KS"],["SK텔레콤","017670.KS"],["LG유플러스","032640.KS"],
+  ["롯데케미칼","011170.KS"],["금호석유","011780.KS"],["현대제철","004020.KS"],["코웨이","021240.KS"],
+  ["오리온","271560.KS"],["미래에셋증권","006800.KS"],["삼성증권","016360.KS"],["한국금융지주","071050.KS"],
+  ["DB손해보험","005830.KS"],["메리츠금융지주","138040.KS"],["유한양행","000100.KS"],["녹십자","006280.KS"],
+  ["한미약품","128940.KS"],["현대건설","000720.KS"],["GS건설","006360.KS"],["DL이앤씨","375500.KS"],
+  ["삼성중공업","010140.KS"],["한화에어로스페이스","012450.KS"],["HD한국조선해양","009540.KS"],
+  ["CJ대한통운","000120.KS"],["이마트","139480.KS"],["롯데쇼핑","023530.KS"],["하이브","352820.KS"],
+  ["CJ ENM","035760.KS"],["신세계","004170.KS"],["현대백화점","069960.KS"],["한화","000880.KS"],
+  ["두산","000150.KS"],["LG생활건강","051900.KS"],["삼성카드","029780.KS"],["현대차우","005385.KS"],
+  ["대웅제약","069620.KS"],["종근당","185750.KS"],["한전KPS","051600.KS"],["한국타이어앤테크놀로지","161390.KS"],
+  // ── 코스닥 ──
+  ["에코프로비엠","247540.KQ"],["에코프로","086520.KQ"],["알테오젠","196170.KQ"],["HLB","028300.KQ"],
+  ["엔켐","348370.KQ"],["레인보우로보틱스","277810.KQ"],["리노공업","058470.KQ"],["셀트리온제약","068760.KQ"],
+  ["펄어비스","263750.KQ"],["카카오게임즈","293490.KQ"],["위메이드","112040.KQ"],["클래시스","214150.KQ"],
+  ["리가켐바이오","141080.KQ"],["HPSP","403870.KQ"],["이오테크닉스","039030.KQ"],["원익IPS","240810.KQ"],
+  ["동진쎄미켐","005290.KQ"],["엘앤에프","066970.KQ"],["씨젠","096530.KQ"],["루닛","328130.KQ"],
+  ["파마리서치","214450.KQ"],["에스티팜","237690.KQ"],["JYP Ent.","035900.KQ"],["에스엠","041510.KQ"],
+  ["솔브레인","357780.KQ"],["나노신소재","121600.KQ"],["성일하이텍","365340.KQ"],["펩트론","087010.KQ"],
+];
+function krMarket(code) { return code.endsWith('.KQ') ? '코스닥' : '코스피'; }
+function renderKrResults(q) {
+  const box = document.getElementById('krResults');
+  q = q.trim().toLowerCase().replace(/\s+/g, '');
+  if (!q) { box.innerHTML = ''; return; }
+  const hits = KR_STOCKS.filter(([n, c]) =>
+    n.toLowerCase().replace(/\s+/g, '').includes(q) || c.toLowerCase().includes(q)
+  ).slice(0, 12);
+  if (!hits.length) {
+    box.innerHTML = '<div class="kr-empty">일치하는 종목이 없어요 — 정확한 종목명 일부로 검색하거나, 코드를 직접 티커 칸에 입력하세요.</div>';
+    return;
+  }
+  // 중복 코드 제거(별칭 검색 후)
+  const seen = new Set();
+  box.innerHTML = hits.filter(([, c]) => !seen.has(c) && seen.add(c)).map(([n, c]) =>
+    `<div class="kr-item" onclick="pickKr('${c}')"><span><b>${n}</b><span class="mkt">${krMarket(c)}</span></span><code>${c}</code></div>`
+  ).join('');
+}
+function pickKr(code) {
+  document.getElementById('ticker').value = code;
+  toast(code + ' — 티커 칸에 입력했어요');
+  document.getElementById('ticker').scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
 // ── 초기화 ────────────────────────────────────────────────────
+document.getElementById('krSearch').addEventListener('input', e => renderKrResults(e.target.value));
 refreshPatUI();
 ensureBranch();   // 기본 브랜치 미리 확정(백그라운드)
 document.getElementById('ticker').addEventListener('keydown', e => { if (e.key === 'Enter') dispatchRun(); });
