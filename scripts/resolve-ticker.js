@@ -56,7 +56,11 @@ async function geminiPost(body, retries = 5) {
 function extractJson(data) {
   const text = (data?.candidates?.[0]?.content?.parts || []).map(p => p.text || '').join('');
   const m = text.match(/\{[\s\S]*\}/);
-  if (!m) throw new Error('JSON 응답 없음: ' + text.slice(0, 200));
+  if (!m) {
+    // 대부분 finishReason=MAX_TOKENS 로 JSON이 닫히기 전에 잘린 경우 (thinking 토큰이 예산 소진)
+    const reason = data?.candidates?.[0]?.finishReason || 'UNKNOWN';
+    throw new Error(`JSON 응답 없음 (finishReason=${reason}): ` + text.slice(0, 200));
+  }
   return JSON.parse(m[0]);
 }
 
@@ -83,7 +87,9 @@ Return ONLY a JSON object, no other text:
 }
 If the ticker does not correspond to any real listed company, return {"error": "설명"}.` }],
     }],
-    generationConfig: { maxOutputTokens: 2048, temperature: 0.1 },
+    // gemini-2.5-flash 는 thinking 모델 — thinkingBudget:0 으로 사고 토큰을 끄지 않으면
+    // 사고 토큰이 maxOutputTokens 예산을 소진해 JSON 이 닫히기 전에 잘린다(on-demand-collect.js 와 동일 처리).
+    generationConfig: { maxOutputTokens: 8192, temperature: 0.1, thinkingConfig: { thinkingBudget: 0 } },
   });
 
   const meta = extractJson(data);

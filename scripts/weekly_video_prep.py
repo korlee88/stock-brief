@@ -26,6 +26,24 @@ BRAND_LABEL       = TICKER_CONFIG.get("brand_label", f"{TICKER} BRIEF")
 REPO              = TICKER_CONFIG.get("repo", os.environ.get("GITHUB_REPOSITORY", ""))
 COMPETITOR_TICKER = TICKER_CONFIG.get("competitor_ticker", "")
 
+# 상단 헤더 브랜드 라벨: 티커(005930.KS)가 아니라 종목명(삼성전자)으로 표기 — 사람이 읽는 제목
+HEADER_BRAND      = f"{COMPANY_KO} BRIEF" if COMPANY_KO else BRAND_LABEL
+
+# ── 통화·가격 표기: 상장국 기준 ─────────────────────────────────────
+# 한국거래소(.KS=KOSPI / .KQ=KOSDAQ) 종목은 원화·정수(318,000원), 그 외(미국 등)는 $·2소수점.
+IS_KRW = TICKER.upper().endswith((".KS", ".KQ")) or "korea" in EXCHANGE.lower()
+
+def fmt_price(value, decimals=None):
+    """종목 통화에 맞춘 가격 문자열. 한국='318,000원'(정수), 그 외='$318,000.00'.
+    값이 비거나 숫자가 아니면 빈 문자열. decimals로 소수점 자릿수 강제 지정 가능(미국만 적용)."""
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return ""
+    if IS_KRW:
+        return f"{v:,.0f}원"
+    return f"${v:,.{2 if decimals is None else decimals}f}"
+
 RULES_CONFIG = json.loads((ROOT_DIR / "config" / "rules.json").read_text(encoding="utf-8"))
 RULES_MAP    = {r["id"]: r for r in RULES_CONFIG.get("rules", [])}   # 대시보드 'topRules' 배지와 동일 출처 (config 단일 진실)
 
@@ -421,7 +439,7 @@ def search_movement_reason(summary):
         price      = summary.get("latest_price", "")
         q = (
             f"{COMPANY_KO} {TICKER} 주가 {week_start}~{week_end} 기간 {direction} 주요 원인 분석. "
-            f"현재 주가 ${price}, 변동률 {sign}{tcp}%. "
+            f"현재 주가 {fmt_price(price) or price}, 변동률 {sign}{tcp}%. "
             f"검색 결과를 바탕으로 핵심 원인 2~3가지를 각 15자 이내 한국어로 작성. "
             f"형식: '원인1 / 원인2 / 원인3'"
         )
@@ -535,11 +553,11 @@ def build_next_week_outlook(forecasts):
         sign = "+" if cum >= 0 else ""
         parts.append(f"다음 주말 예상 변동률 {sign}{cum}% (현재가 대비)")
     if end:
-        parts.append(f"예상 도달가 약 ${end:,.0f}")
+        parts.append(f"예상 도달가 약 {fmt_price(end, 0)}")
     parts.append(f"현재가보다 높게 예측된 날 {up}일 / 낮은 날 {down}일")
 
     daily = " → ".join(
-        f"{f.get('label') or f.get('date','')} ${float(f.get('predictedPrice')):,.0f}"
+        f"{f.get('label') or f.get('date','')} {fmt_price(f.get('predictedPrice'), 0)}"
         for f in forecasts if f.get("predictedPrice")
     )
     if daily:
@@ -616,7 +634,7 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
   (예: "시장은 X를 우려하지만, 정작 중요한 건 Y예요"). 씬1 '향후 전망' 또는 씬2에 자연스럽게 배치.
 
 === 분석 데이터 ({week_start} ~ {week_end}) ===
-- {ticker} 현재 주가: ${price}
+- {ticker} 현재 주가: {price}
 - 기간 대비 변동률: {week_change_pct_str}
 - 분석 규모: {analysis_scale_str}
 - 매수 참고지수 추이: {buy_index_trend_str}
@@ -732,17 +750,17 @@ def _build_prompt(summary):
 
     daily_prices = summary.get("daily_prices", [])
     if daily_prices:
-        dp_lines = "\n".join(f"  {d}: ${p:,.2f}" for d, p in daily_prices)
+        dp_lines = "\n".join(f"  {d}: {fmt_price(p)}" for d, p in daily_prices)
         daily_prices_txt = f"- 최근 주가 흐름:\n{dp_lines}"
     else:
         daily_prices_txt = ""
-    # 전일(간밤) 확정 시가·종가 — 씬0 이미지 스트립과 나레이션이 어긋나지 않게 프롬프트에도 제공
+    # 전일 확정 시가·종가 — 씬0 이미지 스트립과 나레이션이 어긋나지 않게 프롬프트에도 제공
     prev_day = summary.get("prev_day")
     if prev_day:
         _pdp = prev_day.get("change_pct")
         _pdp_s = f" (전일 대비 {_pdp:+.2f}%)" if _pdp is not None else ""
-        daily_prices_txt += (f"\n- 전일(간밤 {prev_day['date']} 미국장) 확정: "
-                             f"시가 ${prev_day['open']:,.2f} → 종가 ${prev_day['close']:,.2f}{_pdp_s}")
+        daily_prices_txt += (f"\n- 전일({prev_day['date']}) 확정: "
+                             f"시가 {fmt_price(prev_day['open'])} → 종가 {fmt_price(prev_day['close'])}{_pdp_s}")
 
     # 브리핑용 변동률 문자열 (분석 기간 시작 대비)
     wcp = summary.get("week_change_pct")
@@ -893,7 +911,7 @@ def _build_prompt(summary):
         world_future_city=world_future_city,
         week_start=summary["week_start"],
         week_end=summary["week_end"],
-        price=summary["latest_price"],
+        price=fmt_price(summary["latest_price"]) or summary["latest_price"],
         b_txt=b_txt, r_txt=r_txt,
         daily_prices_txt=daily_prices_txt,
         week_change_pct_str=week_change_pct_str,
@@ -2002,7 +2020,7 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
                 cum = (endp - base) / base * 100
                 arrow = "▲" if cum >= 0 else "▼"
                 sign  = "+" if cum >= 0 else ""
-                head2_sub = f"다음주 예상 {arrow} {sign}{cum:.1f}% · 약 ${endp:,.0f}"
+                head2_sub = f"다음주 예상 {arrow} {sign}{cum:.1f}% · 약 {fmt_price(endp, 0)}"
         except (TypeError, ValueError, IndexError, AttributeError):
             pass
         head2_sub = head2_sub or "다음주 관전 포인트"
@@ -2135,7 +2153,7 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
                     int(18 + 22 * t), int(26 + 26 * t), int(48 + 40 * t)))
 
         # ② 헤더
-        draw_mbc_header(draw, BRAND_LABEL, '"핵심 뉴스 3선"', "호재 · 악재 · 보합",
+        draw_mbc_header(draw, HEADER_BRAND, '"핵심 뉴스 3선"', "호재 · 악재 · 보합",
                         accent, sf_brand, sf_head_main, sf_head_sub)
 
         # ③ 호재/악재/보합 3카드 — summarize()가 신뢰도 우선으로 뽑은 scene1_news 사용
@@ -2217,10 +2235,7 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
         # 부제: 현재 주가 + 전일 변동 + 윈도우(2일) 누적 변동률 — 기준 시점을 명시해 오독 방지
         price = summary.get("latest_price")
         wc    = summary.get("week_change_pct")
-        try:
-            price_s = f"${float(price):,.2f}" if price else ""
-        except Exception:
-            price_s = ""
+        price_s = fmt_price(price)
         # 전일 변동률: Yahoo 일봉(확정 종가) 우선, 실패 시 세션 스냅숏(today_change_pct) 폴백
         pd_pct = (summary.get("prev_day") or {}).get("change_pct")
         if pd_pct is None:
@@ -2240,7 +2255,7 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
 
     # ── 상단 헤더 (Y=0~500) — 네이비 박스 + 브랜드 + 두줄 헤드라인 ──────
     # 여기는 씬0만 도달(씬1·2는 위에서 커스텀 레이아웃으로 조기 return)
-    draw_mbc_header(draw, BRAND_LABEL, head_main, head_sub, accent,
+    draw_mbc_header(draw, HEADER_BRAND, head_main, head_sub, accent,
                     f_brand, f_head_main, f_head_sub)
 
     # ── 사진 배너 (Y=500~1000, 500px) ────────────────────────────────────
@@ -2261,7 +2276,7 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
         _pdp = prev_day.get("change_pct")
         _pct_s = f" ({'+' if _pdp >= 0 else ''}{_pdp}%)" if _pdp is not None else ""
         _pct_col = GREEN if (_pdp or 0) >= 0 else RED
-        _txt = f"전일 시가 ${prev_day['open']:,.2f} → 종가 ${prev_day['close']:,.2f}"
+        _txt = f"전일 시가 {fmt_price(prev_day['open'])} → 종가 {fmt_price(prev_day['close'])}"
         _tw = draw.textlength(_txt + _pct_s, font=f_sm)
         _tx = (W - _tw) // 2
         draw.text((_tx, PHOTO_Y + PHOTO_H - STRIP_H // 2), _txt,
