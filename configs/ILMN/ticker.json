@@ -1,0 +1,33 @@
+{
+  "ticker": "ILMN",
+  "company_en": "Illumina, Inc.",
+  "company_ko": "일루미나",
+  "industry_ko": "생명 과학 도구 및 서비스",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "A futuristic laboratory setting where advanced NovaSeq X systems, with increased speed and output, are seamlessly integrated with AI-powered multiomics analysis software, enabling researchers to rapidly uncover deep biological insights from vast multimodal datasets for predictive, preventative, and personalized medicine.",
+  "brand_label": "ILMN BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "TMO",
+  "key_people": [
+    "Jacob Thaysen",
+    "Steve Barnard"
+  ],
+  "google_trends_keywords": [
+    "일루미나",
+    "유전체 시퀀싱",
+    "DNA 분석",
+    "NovaSeq",
+    "유전체학",
+    "NGS"
+  ],
+  "video_tags": [
+    "Illumina",
+    "genomics",
+    "DNA sequencing",
+    "next-generation sequencing",
+    "precision medicine"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-07-07T14:57:04.469Z"
+}

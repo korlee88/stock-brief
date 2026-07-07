@@ -1,0 +1,27 @@
+SCENE_0_TITLE: 한눈에
+SCENE_0:
+결론부터, ILMN *$191.47* 안착이에요
+전일 *-1.47%*, 숨 고르는 흐름이네요
+에버코어 목표가 *$200*으로 올렸어요
+*중국 수요* 부진은 여전히 부담이죠
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: *NovaSeq X* 주문과 임상 시퀀싱 열기가 뜨거워요
+악재: *중국 시장* 수요 둔화가 성장에 걸림돌이네요
+보합: 이번 주 뚜렷한 중립 이슈는 없었어요
+
+SCENE_2_TITLE: 다음주
+SCENE_2:
+다음주 *실적·신제품* 일정은 비어 있어요
+관전 포인트 — *NovaSeq X 처리량↑·AI 멀티오믹스* 힌트
+현재가 *$191.47* 기준 완만한 횡보 전망이에요
+시장은 *중국 우려*지만, 핵심은 *임상 시퀀싱* 성장세죠
+변수: *내부자 매도* 증가·밸류에이션 부담 주목이에요
+함께해 주셔서 감사해요!
+
+IMAGE_PROMPT_0: Seoul Han River and Lotte Tower night skyline in the background, blended with a futuristic laboratory setting where advanced NovaSeq X sequencing systems with increased speed and output are seamlessly integrated with AI-powered multiomics analysis software, holographic DNA helixes and glowing genomic data streams floating above sleek lab benches, researchers silhouettes analyzing vast multimodal datasets for predictive preventative personalized medicine, futuristic global city night skyline purple violet tech analytics mood, glowing city lights bokeh, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A futuristic laboratory setting where advanced NovaSeq X systems with increased speed and output are seamlessly integrated with AI-powered multiomics analysis software, dynamic aerospace-inspired visualization with rocket launches and satellite orbits blending into DNA sequencing towers, researchers uncovering deep biological insights from vast multimodal datasets for predictive preventative personalized medicine, vivid green growth bullish energy atmosphere, dynamic upward trajectory lines, glowing motion streaks, cinematic dramatic lighting, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: Nordic-style eco-friendly futuristic smart city vision skyline background merged with Illumina life science symbols, a futuristic laboratory setting where advanced NovaSeq X systems with increased speed and output are seamlessly integrated with AI-powered multiomics analysis software, glowing DNA helixes and genomic data clouds floating above sustainable green buildings, researchers rapidly uncovering deep biological insights for predictive preventative personalized medicine, golden inspirational future mood, golden sunlight starlight sparkles, dreamy cinematic atmosphere, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

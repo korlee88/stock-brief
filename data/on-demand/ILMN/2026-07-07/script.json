@@ -1,0 +1,197 @@
+{
+  "generated_at": "2026-07-07",
+  "generated_by": "Claude Opus 4",
+  "title": "결론부터, ILMN *$191.47* 안착이에요",
+  "subtitle": "2026-07-07 ~ 2026-07-07 · Illumina, NovaSeq X 수요 및 임상 시퀀",
+  "summary": {
+    "week_start": "2026-07-07",
+    "week_end": "2026-07-07",
+    "session_count": 1,
+    "total_analyzed": 8,
+    "bullish_count": 5,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 191.47,
+    "price_end": 191.47,
+    "latest_price": 191.47,
+    "today_price": 191.47,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "Illumina, NovaSeq X 수요 및 임상 시퀀싱 모멘텀 강화",
+      "score": 3,
+      "reason": "주력 제품의 강력한 수요와 임상 시장에서의 성장은 회사의 핵심 사업 부문이 견고하다는 것을 보여주며, 이는 투자자들에게 긍정적인 신호로 작용하여 주가 상승에 기여할 수 있습니다.",
+      "source": "Zacks.com",
+      "date": "2026-07-03",
+      "category": "Product",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "Illumina, NovaSeq X 수요 및 임상 시퀀싱 모멘텀 강화",
+        "score": 3,
+        "reason": "주력 제품의 강력한 수요와 임상 시장에서의 성장은 회사의 핵심 사업 부문이 견고하다는 것을 보여주며, 이는 투자자들에게 긍정적인 신호로 작용하여 주가 상승에 기여할 수 있습니다.",
+        "source": "Zacks.com",
+        "date": "2026-07-03",
+        "category": "Product"
+      },
+      {
+        "title": "Illumina, 2026년 EPS 추정치 상향 조정",
+        "score": 2,
+        "reason": "애널리스트들의 EPS 추정치 상향 조정은 회사의 미래 수익성에 대한 긍정적인 전망을 반영하며, 이는 투자자들의 신뢰를 높여 주가에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "Zacks.com",
+        "date": "2026-07-03",
+        "category": "Earnings"
+      },
+      {
+        "title": "Illumina, Jacob Thaysen CEO의 2025년 4분기 및 연간 재무 실적 보고",
+        "score": 4,
+        "reason": "CEO의 긍정적인 실적 발표와 향후 전망은 투자자들에게 회사의 안정적인 성장과 수익 개선에 대한 확신을 주어 주가 상승에 크게 기여할 수 있습니다.",
+        "source": "Illumina, Inc.",
+        "date": "2026-02-05",
+        "category": "Earnings"
+      },
+      {
+        "title": "Illumina, 2026년 매출 및 EPS 가이던스 상향 조정",
+        "score": 4,
+        "reason": "회사의 매출 및 EPS 가이던스 상향 조정은 미래 실적에 대한 자신감을 나타내며, 이는 투자자들의 매수 심리를 강화하여 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "Illumina, Inc.",
+        "date": "2026-02-05",
+        "category": "Earnings"
+      },
+      {
+        "title": "Piper Sandler, Illumina (ILMN) 투자의견 '매수' 상향",
+        "score": 2,
+        "reason": "주요 투자은행의 투자의견 상향은 해당 주식에 대한 긍정적인 전망을 제시하며, 이는 투자자들의 매수 심리를 자극하여 주가 상승에 기여할 수 있습니다.",
+        "source": "The Globe and Mail",
+        "date": "2026-07-02",
+        "category": "Market"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [],
+    "neutral_count": 0,
+    "scene1_news": {
+      "bullish": {
+        "title": "Illumina, NovaSeq X 수요 및 임상 시퀀싱 모멘텀 강화",
+        "score": 3,
+        "reason": "주력 제품의 강력한 수요와 임상 시장에서의 성장은 회사의 핵심 사업 부문이 견고하다는 것을 보여주며, 이는 투자자들에게 긍정적인 신호로 작용하여 주가 상승에 기여할 수 있습니다.",
+        "source": "Zacks.com",
+        "date": "2026-07-03",
+        "category": "Product"
+      },
+      "bearish": {
+        "title": "Illumina, 중국 시장의 지속적인 수요 제약에 직면",
+        "score": -3,
+        "reason": "중국 시장은 Illumina에게 중요한 성장 동력이었으나, 지속적인 매출 감소는 전체적인 성장 전망에 부정적인 영향을 미 미쳐 주가에 하방 압력을 가할 수 있습니다.",
+        "source": "Zacks.com",
+        "date": "2026-07-03",
+        "category": "Market"
+      },
+      "neutral": null
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-07-07",
+        191.47
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-07-07",
+    "today_news": [
+      {
+        "title": "Illumina, 중국 시장의 지속적인 수요 제약에 직면",
+        "category": "Market",
+        "source": "Zacks.com",
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Illumina, NovaSeq X 수요 및 임상 시퀀싱 모멘텀 강화",
+        "category": "Product",
+        "source": "Zacks.com",
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Illumina, 2026년 EPS 추정치 상향 조정",
+        "category": "Earnings",
+        "source": "Zacks.com",
+        "date": "2026-07-03"
+      },
+      {
+        "title": "Piper Sandler, Illumina (ILMN) 투자의견 '매수' 상향",
+        "category": "Market",
+        "source": "The Globe and Mail",
+        "date": "2026-07-02"
+      },
+      {
+        "title": "Illumina, Inc. 주가 4.6% 상승했지만 GuruFocus에 따르면 고평가",
+        "category": "Market",
+        "source": "GuruFocus",
+        "date": "2026-07-01"
+      },
+      {
+        "title": "Illumina, Inc. 내부자 매도 활동 증가",
+        "category": "Market",
+        "source": "GuruFocus",
+        "date": "2026-07-01"
+      }
+    ],
+    "prev_day": {
+      "date": "2026-07-07",
+      "open": 194.0,
+      "close": 191.47,
+      "change_pct": -1.47
+    },
+    "movement_reason": "2026년 7월 7일 일루미나(ILMN) 주가 변동률에 대한 검색 결과에 따르면, 해당 기간 동안 주가는 하락하지 않고 오히려 상승세를 보였습니다. 2026년 7월 7일 현재, 일루미나 주가는 $194.44로 3.05% 상승한 것으로 나타났습니다. 따라서 제시된 '변동률 None%' 및 '하락 주요 원인 분석'이라는 전제와는 일치하지 않습니다.\n\n오히려, 다음과 같은 긍정적인 요인들이 관찰되었습니다:\n*   2026년 7월 6일, 에버코어 ISI 그룹은 일루미나에 대한 투자의견을 '시장수익률 상회(Outperform)'로 유지하고 목표 주가를 $155.00에서 $200.00으로 상향 조정했습니다.\n*   일루미나는 최근 분기별 실적 발표에서 시장 예상치를 상회하는 견조한 실적을 기록하며 긍정적인 투자 심리를 형성했습니다.\n\n따라서 2026년 7월 7일 일루미나 주가의 하락을 분석할 주요 원인은 존재하지 않습니다."
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "한눈에",
+      "lines": [
+        "결론부터, ILMN *$191.47* 안착이에요",
+        "전일 *-1.47%*, 숨 고르는 흐름이네요",
+        "에버코어 목표가 *$200*으로 올렸어요",
+        "*중국 수요* 부진은 여전히 부담이죠"
+      ],
+      "body": "결론부터, ILMN *$191.47* 안착이에요\n전일 *-1.47%*, 숨 고르는 흐름이네요\n에버코어 목표가 *$200*으로 올렸어요\n*중국 수요* 부진은 여전히 부담이죠"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: *NovaSeq X* 주문과 임상 시퀀싱 열기가 뜨거워요",
+        "악재: *중국 시장* 수요 둔화가 성장에 걸림돌이네요",
+        "보합: 이번 주 뚜렷한 중립 이슈는 없었어요"
+      ],
+      "body": "호재: *NovaSeq X* 주문과 임상 시퀀싱 열기가 뜨거워요\n악재: *중국 시장* 수요 둔화가 성장에 걸림돌이네요\n보합: 이번 주 뚜렷한 중립 이슈는 없었어요"
+    },
+    {
+      "index": 2,
+      "title": "다음주",
+      "lines": [
+        "다음주 *실적·신제품* 일정은 비어 있어요",
+        "관전 포인트 — *NovaSeq X 처리량↑·AI 멀티오믹스* 힌트",
+        "현재가 *$191.47* 기준 완만한 횡보 전망이에요",
+        "시장은 *중국 우려*지만, 핵심은 *임상 시퀀싱* 성장세죠",
+        "변수: *내부자 매도* 증가·밸류에이션 부담 주목이에요",
+        "함께해 주셔서 감사해요!"
+      ],
+      "body": "다음주 *실적·신제품* 일정은 비어 있어요\n관전 포인트 — *NovaSeq X 처리량↑·AI 멀티오믹스* 힌트\n현재가 *$191.47* 기준 완만한 횡보 전망이에요\n시장은 *중국 우려*지만, 핵심은 *임상 시퀀싱* 성장세죠\n변수: *내부자 매도* 증가·밸류에이션 부담 주목이에요\n함께해 주셔서 감사해요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "Seoul Han River and Lotte Tower night skyline in the background, blended with a futuristic laboratory setting where advanced NovaSeq X sequencing systems with increased speed and output are seamlessly integrated with AI-powered multiomics analysis software, holographic DNA helixes and glowing genomic data streams floating above sleek lab benches, researchers silhouettes analyzing vast multimodal datasets for predictive preventative personalized medicine, futuristic global city night skyline purple violet tech analytics mood, glowing city lights bokeh, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A futuristic laboratory setting where advanced NovaSeq X systems with increased speed and output are seamlessly integrated with AI-powered multiomics analysis software, dynamic aerospace-inspired visualization with rocket launches and satellite orbits blending into DNA sequencing towers, researchers uncovering deep biological insights from vast multimodal datasets for predictive preventative personalized medicine, vivid green growth bullish energy atmosphere, dynamic upward trajectory lines, glowing motion streaks, cinematic dramatic lighting, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "Nordic-style eco-friendly futuristic smart city vision skyline background merged with Illumina life science symbols, a futuristic laboratory setting where advanced NovaSeq X systems with increased speed and output are seamlessly integrated with AI-powered multiomics analysis software, glowing DNA helixes and genomic data clouds floating above sustainable green buildings, researchers rapidly uncovering deep biological insights for predictive preventative personalized medicine, golden inspirational future mood, golden sunlight starlight sparkles, dreamy cinematic atmosphere, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

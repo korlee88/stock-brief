@@ -1,0 +1,117 @@
+[
+  {
+    "date": "2026-07-07",
+    "generatedAt": "2026-07-07T14:57:13.704Z",
+    "mode": "on-demand",
+    "latestPrice": 191.47,
+    "news": [
+      {
+        "id": 1,
+        "title": "Illumina, Inc. 주가 4.6% 상승했지만 GuruFocus에 따르면 고평가",
+        "summary": "2026년 7월 1일, Illumina Inc. (ILMN) 주가가 4.6% 상승하여 현재 183.89달러를 기록했지만, GuruFocus의 GF Value™에 따르면 약 42.2% 고평가된 것으로 나타났습니다. 이는 잠재적인 가격 조정 위험을 시사합니다.",
+        "source": "GuruFocus",
+        "date": "2026-07-01",
+        "category": "Market"
+      },
+      {
+        "id": 2,
+        "title": "Illumina, Inc. 내부자 매도 활동 증가",
+        "summary": "지난 3개월 동안 Illumina 내부자들이 1억 5,580만 달러 상당의 주식을 매도하여 현재 주가에 대한 자신감 부족을 시사합니다.",
+        "source": "GuruFocus",
+        "date": "2026-07-01",
+        "category": "Market"
+      },
+      {
+        "id": 3,
+        "title": "Piper Sandler, Illumina (ILMN) 투자의견 '매수' 상향",
+        "summary": "2026년 7월 2일, Piper Sandler는 Illumina (ILMN)에 대한 투자의견을 '매수'로 상향 조정했습니다.",
+        "source": "The Globe and Mail",
+        "date": "2026-07-02",
+        "category": "Market"
+      },
+      {
+        "id": 4,
+        "title": "Illumina, 중국 시장의 지속적인 수요 제약에 직면",
+        "summary": "Illumina는 중국 시장에서 규제 및 지정학적 불확실성으로 인해 지속적인 수요 제약에 직면해 있으며, 2026년 1분기 중국 매출은 전년 대비 27.8% 감소한 5,200만 달러를 기록했습니다.",
+        "source": "Zacks.com",
+        "date": "2026-07-03",
+        "category": "Market"
+      },
+      {
+        "id": 5,
+        "title": "Illumina, NovaSeq X 수요 및 임상 시퀀싱 모멘텀 강화",
+        "summary": "Illumina는 NovaSeq X에 대한 강력한 수요와 임상 시퀀싱 모멘텀을 바탕으로 성장을 지속하고 있습니다.",
+        "source": "Zacks.com",
+        "date": "2026-07-03",
+        "category": "Product"
+      },
+      {
+        "id": 6,
+        "title": "Illumina, 2026년 EPS 추정치 상향 조정",
+        "summary": "Zacks Consensus Estimate에 따르면 Illumina의 2026년 주당순이익(EPS) 추정치가 지난 30일 동안 0.4% 증가한 5.19달러로 상향 조정되었습니다.",
+        "source": "Zacks.com",
+        "date": "2026-07-03",
+        "category": "Earnings"
+      },
+      {
+        "id": 7,
+        "title": "Illumina, Jacob Thaysen CEO의 2025년 4분기 및 연간 재무 실적 보고",
+        "summary": "Illumina는 Jacob Thaysen CEO의 지휘 아래 2025년 4분기 및 연간 재무 실적을 발표하며 분기별 매출 성장 회복, 수익성 개선, 2026년 긍정적인 전망을 강조했습니다.",
+        "source": "Illumina, Inc.",
+        "date": "2026-02-05",
+        "category": "Earnings"
+      },
+      {
+        "id": 8,
+        "title": "Illumina, 2026년 매출 및 EPS 가이던스 상향 조정",
+        "summary": "Illumina는 2026년 총 매출을 45억 달러에서 46억 달러로, 비GAAP 주당순이익(EPS)을 5.05달러에서 5.20달러로 예상하며, SomaLogic 인수 효과를 포함한 긍정적인 가이던스를 제시했습니다.",
+        "source": "Illumina, Inc.",
+        "date": "2026-02-05",
+        "category": "Earnings"
+      }
+    ],
+    "analyses": {
+      "1": {
+        "direction": "bearish",
+        "impact_score": -3,
+        "reasoning": "주가가 단기적으로 상승했음에도 불구하고, 주요 금융 분석 기관에서 고평가되었다는 분석은 투자자들에게 매도 신호로 작용하여 장기적인 주가 하락 압력을 가할 수 있습니다."
+      },
+      "2": {
+        "direction": "bearish",
+        "impact_score": -4,
+        "reasoning": "내부자 매도는 일반적으로 회사 경영진이 주가가 고평가되었다고 판단하거나 부정적인 내부 정보를 가지고 있을 때 발생하므로, 투자자들에게는 부정적인 신호로 해석될 수 있습니다."
+      },
+      "3": {
+        "direction": "bullish",
+        "impact_score": 2,
+        "reasoning": "주요 투자은행의 투자의견 상향은 해당 주식에 대한 긍정적인 전망을 제시하며, 이는 투자자들의 매수 심리를 자극하여 주가 상승에 기여할 수 있습니다."
+      },
+      "4": {
+        "direction": "bearish",
+        "impact_score": -3,
+        "reasoning": "중국 시장은 Illumina에게 중요한 성장 동력이었으나, 지속적인 매출 감소는 전체적인 성장 전망에 부정적인 영향을 미 미쳐 주가에 하방 압력을 가할 수 있습니다."
+      },
+      "5": {
+        "direction": "bullish",
+        "impact_score": 3,
+        "reasoning": "주력 제품의 강력한 수요와 임상 시장에서의 성장은 회사의 핵심 사업 부문이 견고하다는 것을 보여주며, 이는 투자자들에게 긍정적인 신호로 작용하여 주가 상승에 기여할 수 있습니다."
+      },
+      "6": {
+        "direction": "bullish",
+        "impact_score": 2,
+        "reasoning": "애널리스트들의 EPS 추정치 상향 조정은 회사의 미래 수익성에 대한 긍정적인 전망을 반영하며, 이는 투자자들의 신뢰를 높여 주가에 긍정적인 영향을 미칠 수 있습니다."
+      },
+      "7": {
+        "direction": "bullish",
+        "impact_score": 4,
+        "reasoning": "CEO의 긍정적인 실적 발표와 향후 전망은 투자자들에게 회사의 안정적인 성장과 수익 개선에 대한 확신을 주어 주가 상승에 크게 기여할 수 있습니다."
+      },
+      "8": {
+        "direction": "bullish",
+        "impact_score": 4,
+        "reasoning": "회사의 매출 및 EPS 가이던스 상향 조정은 미래 실적에 대한 자신감을 나타내며, 이는 투자자들의 매수 심리를 강화하여 주가에 긍정적인 영향을 미칠 것입니다."
+      }
+    },
+    "dailyForecasts": []
+  }
+]
