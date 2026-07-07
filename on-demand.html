@@ -118,7 +118,15 @@
     <label for="krSearch">종목명으로 검색 (예: 하이닉스 → SK하이닉스 000660.KS)</label>
     <input type="text" id="krSearch" placeholder="예: 하이닉스, 삼성전자, 에코프로" autocomplete="off">
     <div id="krResults" class="kr-results"></div>
-    <p class="hint">코드를 누르면 위 종목 티커 칸에 자동 입력됩니다. 주요 코스피·코스닥 종목을 담고 있어요.</p>
+    <p class="hint">코드를 누르면 아래 종목 티커 칸에 자동 입력됩니다. 코스피·코스닥 전 종목을 담고 있어요.</p>
+  </div>
+
+  <div class="card" id="usCard">
+    <h2>🔎 미국 종목 코드 찾기</h2>
+    <label for="usSearch">회사명·티커로 검색 (예: 테슬라 / tesla → TSLA)</label>
+    <input type="text" id="usSearch" placeholder="예: 테슬라, apple, NVDA, 팔란티어" autocomplete="off">
+    <div id="usResults" class="kr-results"></div>
+    <p class="hint">코드를 누르면 아래 종목 티커 칸에 자동 입력됩니다. 나스닥·뉴욕·아멕스 상장 종목을 담고 있어요.</p>
   </div>
 
   <div class="card">
@@ -352,63 +360,91 @@ async function loadHistory() {
   }
 }
 
-// ── 한국 종목 코드 검색 (data/kr-stocks.json 을 받아 로컬 검색 · 실시간 조회 없음) ──
-// 목록은 scripts/build_kr_stocks.py 가 KRX에서 받아 커밋한다(update-kr-stocks.yml). 자주 안 바뀜.
-// Yahoo 티커 규칙: 코스피=.KS, 코스닥=.KQ. 종목명·코드 부분 일치로 검색.
-let KR_STOCKS = [   // fetch 실패 시 폴백용 최소 목록
-  ["삼성전자","005930.KS"],["SK하이닉스","000660.KS"],["카카오","035720.KS"],["NAVER","035420.KS"],
-  ["현대차","005380.KS"],["기아","000270.KS"],["LG에너지솔루션","373220.KS"],["셀트리온","068270.KS"],
-  ["삼성바이오로직스","207940.KS"],["에코프로비엠","247540.KQ"],["에코프로","086520.KQ"],["POSCO홀딩스","005490.KS"],
-];
-// 한국어로 검색해도 영문 정식명 종목을 찾도록 하는 별칭(정식명은 KRX 원문 유지)
-const KR_ALIASES = [
-  ["네이버","NAVER"],["에스오일","S-Oil"],["포스코","POSCO"],["케이티앤지","KT&G"],
-  ["엘지","LG"],["에스케이","SK"],["씨제이","CJ"],["케이비","KB"],["지에스","GS"],["디엘","DL"],
-];
-let _krLoaded = false;
-async function loadKrStocks() {
-  if (_krLoaded) return;
+// ── 종목 코드 검색 (data/*.json 을 받아 로컬 검색 · 실시간 조회 없음) ──
+// 목록은 scripts/build_kr_stocks.py·build_us_stocks.py 가 받아 커밋한다(종목코드 목록 갱신 워크플로).
+// Yahoo 티커: 한국 코스피=.KS/코스닥=.KQ, 미국은 접미사 없음. 종목명·코드 부분 일치로 검색.
+const CODE_SETS = {
+  kr: {
+    file: 'data/kr-stocks.json', input: 'krSearch', out: 'krResults',
+    market: c => c.endsWith('.KQ') ? '코스닥' : '코스피',
+    fallback: [   // fetch 실패 시 폴백용 최소 목록
+      ["삼성전자","005930.KS"],["SK하이닉스","000660.KS"],["카카오","035720.KS"],["NAVER","035420.KS"],
+      ["현대차","005380.KS"],["기아","000270.KS"],["LG에너지솔루션","373220.KS"],["셀트리온","068270.KS"],
+      ["삼성바이오로직스","207940.KS"],["에코프로비엠","247540.KQ"],["에코프로","086520.KQ"],["POSCO홀딩스","005490.KS"],
+    ],
+    // 한국어로 검색해도 영문 정식명 종목을 찾도록 하는 별칭
+    aliases: [
+      ["네이버","NAVER"],["에스오일","S-Oil"],["포스코","POSCO"],["케이티앤지","KT&G"],
+      ["엘지","LG"],["에스케이","SK"],["씨제이","CJ"],["케이비","KB"],["지에스","GS"],["디엘","DL"],
+    ],
+  },
+  us: {
+    file: 'data/us-stocks.json', input: 'usSearch', out: 'usResults',
+    market: () => '미국',
+    fallback: [
+      ["Apple Inc.","AAPL"],["Microsoft","MSFT"],["NVIDIA","NVDA"],["Tesla Inc.","TSLA"],
+      ["Alphabet (Google)","GOOGL"],["Amazon.com","AMZN"],["Meta Platforms","META"],["Palantir","PLTR"],
+      ["Advanced Micro Devices","AMD"],["Netflix","NFLX"],["Broadcom","AVGO"],["Coinbase","COIN"],
+    ],
+    // 한국어 별명 → 미국 티커 (한국어로 검색해도 찾게)
+    aliases: [
+      ["테슬라","TSLA"],["애플","AAPL"],["엔비디아","NVDA"],["마이크로소프트","MSFT"],["마소","MSFT"],
+      ["구글","GOOGL"],["알파벳","GOOGL"],["아마존","AMZN"],["메타","META"],["페이스북","META"],
+      ["넷플릭스","NFLX"],["팔란티어","PLTR"],["브로드컴","AVGO"],["코인베이스","COIN"],["에이엠디","AMD"],
+    ],
+  },
+};
+const _codeNorm = s => s.toLowerCase().replace(/\s+/g, '');
+const _codeData = {};    // key → 로드된 목록
+const _codeLoaded = {};  // key → 로드 완료?
+async function loadCodes(key) {
+  if (_codeLoaded[key]) return;
+  const cfg = CODE_SETS[key];
   try {
     await ensureBranch();
-    const r = await fetch(`${RAW}/data/kr-stocks.json`, { cache: 'no-cache' });
+    const r = await fetch(`${RAW}/${cfg.file}`, { cache: 'no-cache' });
     if (r.ok) {
-      const data = await r.json();
-      if (Array.isArray(data) && data.length) { KR_STOCKS = data; _krLoaded = true; }
+      const d = await r.json();
+      if (Array.isArray(d) && d.length) { _codeData[key] = d; _codeLoaded[key] = true; }
     }
   } catch (e) { /* 네트워크 실패 시 폴백 목록 유지 */ }
-  if (document.getElementById('krSearch').value) renderKrResults(document.getElementById('krSearch').value);
+  const inp = document.getElementById(cfg.input);
+  if (inp && inp.value) renderCodes(key, inp.value);
 }
-function krMarket(code) { return code.endsWith('.KQ') ? '코스닥' : '코스피'; }
-const _krNorm = s => s.toLowerCase().replace(/\s+/g, '');
-function renderKrResults(q) {
-  const box = document.getElementById('krResults');
-  q = _krNorm(q.trim());
+function renderCodes(key, q) {
+  const cfg = CODE_SETS[key];
+  const box = document.getElementById(cfg.out);
+  q = _codeNorm(q.trim());
   if (!q) { box.innerHTML = ''; return; }
-  // 별칭: 한국어 질의를 영문 정식명으로도 확장해 매칭
-  const aliasHit = KR_ALIASES.filter(([k]) => _krNorm(k).includes(q)).map(([, v]) => _krNorm(v));
+  const list = _codeData[key] || cfg.fallback;
+  // 별칭: 한국어 질의를 영문명/티커로도 확장해 매칭
+  const aliasHit = cfg.aliases.filter(([k]) => _codeNorm(k).includes(q)).map(([, v]) => _codeNorm(v));
   const seen = new Set();
-  const hits = KR_STOCKS.filter(([n, c]) => {
-    const nn = _krNorm(n);
-    return nn.includes(q) || c.toLowerCase().includes(q) || aliasHit.some(a => nn.includes(a));
+  const hits = list.filter(([n, c]) => {
+    const nn = _codeNorm(n), cc = c.toLowerCase();
+    return nn.includes(q) || cc.includes(q) || aliasHit.some(a => cc === a || nn.includes(a));
   }).filter(([, c]) => !seen.has(c) && seen.add(c)).slice(0, 15);
   if (!hits.length) {
-    box.innerHTML = `<div class="kr-empty">${_krLoaded ? '일치하는 종목이 없어요' : '목록을 불러오는 중…'} — 정확한 종목명 일부로 검색하거나, 코드를 직접 티커 칸에 입력하세요.</div>`;
+    box.innerHTML = `<div class="kr-empty">${_codeLoaded[key] ? '일치하는 종목이 없어요' : '목록을 불러오는 중…'} — 정확한 종목명 일부로 검색하거나, 코드를 직접 티커 칸에 입력하세요.</div>`;
     return;
   }
   box.innerHTML = hits.map(([n, c]) =>
-    `<div class="kr-item" onclick="pickKr('${c}')"><span><b>${n}</b><span class="mkt">${krMarket(c)}</span></span><code>${c}</code></div>`
+    `<div class="kr-item" onclick="pickCode('${c}')"><span><b>${n}</b><span class="mkt">${cfg.market(c)}</span></span><code>${c}</code></div>`
   ).join('');
 }
-function pickKr(code) {
+function pickCode(code) {
   document.getElementById('ticker').value = code;
   toast(code + ' — 티커 칸에 입력했어요');
   document.getElementById('ticker').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 // ── 초기화 ────────────────────────────────────────────────────
-document.getElementById('krSearch').addEventListener('input', e => renderKrResults(e.target.value));
-document.getElementById('krSearch').addEventListener('focus', loadKrStocks, { once: true });
-loadKrStocks();   // 전체 목록 미리 받아두기(백그라운드 · 실패해도 폴백 검색 가능)
+for (const key of Object.keys(CODE_SETS)) {
+  const cfg = CODE_SETS[key];
+  document.getElementById(cfg.input).addEventListener('input', e => renderCodes(key, e.target.value));
+  document.getElementById(cfg.input).addEventListener('focus', () => loadCodes(key), { once: true });
+  loadCodes(key);   // 전체 목록 미리 받아두기(백그라운드 · 실패해도 폴백 검색 가능)
+}
 refreshPatUI();
 ensureBranch();   // 기본 브랜치 미리 확정(백그라운드)
 document.getElementById('ticker').addEventListener('keydown', e => { if (e.key === 'Enter') dispatchRun(); });
