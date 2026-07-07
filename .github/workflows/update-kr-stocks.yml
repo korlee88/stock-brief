@@ -1,9 +1,9 @@
-name: 한국 종목코드 목록 갱신
+name: 종목코드 목록 갱신 (한국·미국)
 
-# KRX 상장종목 코드 목록(data/kr-stocks.json)을 갱신한다.
-# on-demand.html 의 '한국 종목 코드 찾기'가 이 파일을 받아 로컬 검색한다.
+# 상장종목 코드 목록(data/kr-stocks.json · data/us-stocks.json)을 갱신한다.
+# on-demand.html 의 '한국/미국 종목 코드 찾기'가 이 파일들을 받아 로컬 검색한다.
 # 종목 목록은 자주 안 바뀌므로 필요할 때 수동 실행(또는 분기 스케줄)만 한다.
-# GitHub 러너는 KRX(kind.krx.co.kr)에 접근 가능 — 로컬 샌드박스가 막혀 있어도 여기선 받아진다.
+# GitHub 러너는 KRX·미국 데이터에 접근 가능 — 로컬 샌드박스가 막혀 있어도 여기선 받아진다.
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ on:
   #   - cron: '0 0 1 1,4,7,10 *'
 
 jobs:
-  update-kr-stocks:
+  update-stocks:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -28,17 +28,20 @@ jobs:
       - name: 의존성 설치 (FinanceDataReader)
         run: pip install -U finance-datareader
 
-      - name: KRX 종목 목록 다운로드
+      - name: 한국(KRX) 종목 목록 다운로드
         run: python3 scripts/build_kr_stocks.py
+
+      - name: 미국(NASDAQ·NYSE·AMEX) 종목 목록 다운로드
+        run: python3 scripts/build_us_stocks.py
 
       - name: 변경 시 커밋·푸시
         run: |
-          if git diff --quiet -- data/kr-stocks.json; then
+          if git diff --quiet -- data/kr-stocks.json data/us-stocks.json; then
             echo "변경 없음 — 커밋 생략"
           else
             git config user.name  "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add data/kr-stocks.json
-            git commit -m "chore: KRX 종목코드 목록 갱신 (data/kr-stocks.json)"
+            git add data/kr-stocks.json data/us-stocks.json
+            git commit -m "chore: 종목코드 목록 갱신 (한국·미국)"
             git push
           fi
