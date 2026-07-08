@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-07-08",
+  "generated_by": "Claude Opus 4",
+  "title": "전일 *-8.96%*, 5,180원에 마감했어요",
+  "subtitle": "2026-07-08 ~ 2026-07-08 · 케냐항공, 2035년까지 100대 항공기 보유 목표로 ",
+  "summary": {
+    "week_start": "2026-07-08",
+    "week_end": "2026-07-08",
+    "session_count": 1,
+    "total_analyzed": 7,
+    "bullish_count": 3,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 5180,
+    "price_end": 5180,
+    "latest_price": 5180,
+    "today_price": 5180,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "케냐항공, 2035년까지 100대 항공기 보유 목표로 공격적인 확장 계획",
+      "score": 4,
+      "reason": "대규모 항공기 확장 및 네트워크 확대 계획은 장기적인 성장 잠재력을 시사하며, 이는 투자자들에게 긍정적인 신호로 작용하여 주가 상승에 기여할 수 있습니다.",
+      "source": "AirInsight",
+      "date": "2026-06-11",
+      "category": "Product",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "케냐항공, 2035년까지 100대 항공기 보유 목표로 공격적인 확장 계획",
+        "score": 4,
+        "reason": "대규모 항공기 확장 및 네트워크 확대 계획은 장기적인 성장 잠재력을 시사하며, 이는 투자자들에게 긍정적인 신호로 작용하여 주가 상승에 기여할 수 있습니다.",
+        "source": "AirInsight",
+        "date": "2026-06-11",
+        "category": "Product"
+      },
+      {
+        "title": "케냐항공, 회복 계획 발표 및 지역 확장 자금 조달 모색",
+        "score": 3,
+        "reason": "회복 계획 발표와 다른 국가의 국영 항공사 입찰 계획은 회사의 성장 잠재력과 수익성 개선에 대한 긍정적인 신호를 제공하여 주가에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "Citizen Digital (bne IntelliNews를 통해 재인용)",
+        "date": "2026-06-01",
+        "category": "Market"
+      },
+      {
+        "title": "케냐항공, FedEx와 지상 조업 파트너십 체결",
+        "score": 2,
+        "reason": "FedEx와의 파트너십은 화물 사업의 성장을 촉진하고 수익 증대에 기여할 수 있어 주가에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "Kenya Airways PLC",
+        "date": "2026-05-15",
+        "category": "Contract"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "조지 카말, 케냐항공 임시 CEO로 취임",
+        "score": 1,
+        "reason": "새로운 임시 CEO의 취임은 경영진의 변화를 의미하지만, 회복 계획의 연속성을 강조하고 있어 단기적인 주가 영향은 중립적일 것으로 예상됩니다.",
+        "source": "MTB Events",
+        "date": "2025-12-21",
+        "category": "Management"
+      },
+      {
+        "title": "키프로노 키토니, 케냐항공 회장직 수락 후 라디오 아프리카 회장직 사임",
+        "score": 0,
+        "reason": "새로운 회장의 취임은 경영진의 변화를 의미하지만, 그의 목표가 회복과 신뢰 재건에 맞춰져 있어 단기적인 주가 영향은 중립적일 것으로 예상됩니다.",
+        "source": "The Star",
+        "date": "2026-06-27",
+        "category": "Management"
+      },
+      {
+        "title": "케냐항공, 턴어라운드 계획을 위해 15억 달러의 신규 자본 필요",
+        "score": 0,
+        "reason": "대규모 자본 조달 필요성은 재정적 어려움을 시사하지만, 동시에 회복을 위한 적극적인 노력을 보여주므로 주가에 미치는 영향은 중립적일 수 있습니다.",
+        "source": "KBC Digital",
+        "date": "2026-06-12",
+        "category": "Market"
+      }
+    ],
+    "neutral_count": 3,
+    "scene1_news": {
+      "bullish": null,
+      "bearish": null,
+      "neutral": null
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-07-08",
+        5180
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-07-08",
+    "today_news": [],
+    "prev_day": {
+      "date": "2026-07-08",
+      "open": 5640.0,
+      "close": 5180.0,
+      "change_pct": -8.96
+    },
+    "movement_reason": "케냐항공(381620.KQ)의 2026년 7월 8일 주가 하락의 주요 원인은 다음과 같이 분석될 수 있습니다.\n\n재무 실적 악화 / 항공기 운항 문제 / 고유가/부품난\n\n**핵심 원인 분석:**\n\n*   **재무 실적 악화:** 케냐항공은 2025년에 172억 실링(약 1억 3,800만 달러)의 상당한 순손실을 기록하며 다시 적자로 전환되었습니다. 이는 2024년 흑자 전환 이후의 좌절로, 전반적인 재정 불안정성을 보여줍니다.\n*   **항공기 운항 문제:** 2025년에는 보잉 787 드림라이너 기종의 운항 중단과 전반적인 운항 능력 감소가 손실의 주요 원인으로 지목되었습니다. 또한, 2026년 7월 5일에는 뉴욕행 항공편(KQ 002D)이 비행 제어 스포일러 오작동으로 회항하는 기술적 문제가 발생하여 운항 신뢰성에 대한 우려를 더했습니다.\n*   **고유가/부품난:** 글로벌 공급망 혼란으로 인한 부품 및 엔진 수급의 어려움, 그리고 전반적인 운영 비용 상승(특히 유가 부담)은 2025년 실적 부진의 주요 원인이었으며, 이는 현재까지도 항공사 운영에 지속적인 부담으로 작용할 수 있습니다. 항공업계 전반적으로 2026년 순이익 전망치가 하향 조정된 점도 이러한 어려움을 반영합니다."
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "전일 *-8.96%*, 5,180원에 마감했어요",
+        "아프리카 하늘 잇는 *케냐 국적기*예요",
+        "*2035년 100대* 기단 목표로 달려요"
+      ],
+      "body": "전일 *-8.96%*, 5,180원에 마감했어요\n아프리카 하늘 잇는 *케냐 국적기*예요\n*2035년 100대* 기단 목표로 달려요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: *2035년 100대* 친환경 드림라이너 확장이요",
+        "악재: *172억 실링* 손실 부담이 남아있어요",
+        "보합: *FedEx*와 손잡고 화물 사업 키워요"
+      ],
+      "body": "호재: *2035년 100대* 친환경 드림라이너 확장이요\n악재: *172억 실링* 손실 부담이 남아있어요\n보합: *FedEx*와 손잡고 화물 사업 키워요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "다음주 *예정 이벤트 공백* — 뉴스 흐름 주목",
+        "관전포인트: *787 드림라이너* AI 좌석·친환경 연료",
+        "시장은 손실 걱정, *회복 로드맵* 실행이 관건",
+        "누적 *±3% 내외*, 방향성 탐색 구간 예상",
+        "변수: *유가·부품난* 재발 우려 상존",
+        "오늘도 함께해줘서 고마워요!"
+      ],
+      "body": "다음주 *예정 이벤트 공백* — 뉴스 흐름 주목\n관전포인트: *787 드림라이너* AI 좌석·친환경 연료\n시장은 손실 걱정, *회복 로드맵* 실행이 관건\n누적 *±3% 내외*, 방향성 탐색 구간 예상\n변수: *유가·부품난* 재발 우려 상존\n오늘도 함께해줘서 고마워요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A breathtaking 16:9 landscape cinematic view of Dubai's Burj Khalifa skyline at night with glowing purple violet tech analytics lights, a sleek modern Kenya Airways Boeing 787 Dreamliner soaring elegantly through a vibrant African sky above the futuristic cityscape, its wings subtly incorporating sustainable aviation fuel technology glowing softly, passengers inside experiencing personalized AI-driven in-flight entertainment through holographic displays, futuristic global city night skyline with glowing city lights bokeh, purple violet tech analytics atmosphere, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic 16:9 landscape futuristic aerospace scene showcasing a sleek modern Kenya Airways Boeing 787 Dreamliner soaring through a vibrant African sky at sunrise, wings subtly incorporating sustainable aviation fuel technology with green glowing accents, surrounded by rocket launches, satellite orbits, and futuristic space infrastructure representing aviation growth, passengers inside experiencing AI-driven in-flight entertainment and seamless connectivity, vivid green growth bullish energy atmosphere, dynamic upward trajectory with glowing motion lines, cinematic lighting, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A stunning 9:16 vertical composition featuring Singapore's Smart Nation future garden city vision as background with lush vertical gardens and futuristic skyscrapers, a sleek modern Kenya Airways Boeing 787 Dreamliner soaring gracefully through a vibrant African sky above, wings subtly incorporating sustainable aviation fuel technology, passengers inside enjoying personalized AI-driven in-flight entertainment and seamless connectivity, golden inspirational future mood with radiant golden sunlight, starlight sparkles, and shimmering highlights, dreamy future cityscape atmosphere, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}
