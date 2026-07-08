@@ -148,14 +148,14 @@ def build_scene_tts_segments(idx: int, lines: list) -> list:
         return []
 
     if idx == 0:
-        # 회사 소개 & 간략한 주가 흐름 — 줄1(간략한 주가 흐름) + 줄2~(회사가 추구하는 방향)
-        head    = cleaned[0] if cleaned else ""       # 간략한 주가 흐름
-        dir1    = cleaned[1] if len(cleaned) > 1 else ""   # 회사 방향·비전
-        dir2    = cleaned[2] if len(cleaned) > 2 else ""   # 방향·강점 부연
+        # 회사 소개 & 간략한 주가 흐름 — 줄1(간략한 주가 흐름) + 줄2~(방향·투자·제품·시장 지위)
+        head = cleaned[0] if cleaned else ""
+        rest = cleaned[1:]
         segments = []
         if head: segments.append(head)
-        if dir1: segments.append("이 회사가 그리는 방향은 이래요. " + dir1)
-        if dir2: segments.append(dir2)
+        for i, ln in enumerate(rest):
+            # 첫 방향 줄에만 다정한 브리지, 나머지는 자연스럽게 이어 읽기
+            segments.append(("이 회사가 그리는 방향은 이래요. " + ln) if i == 0 else ln)
 
     elif idx == 1:
         # 핵심 뉴스 3선 — 호재/악재/보합 각 줄("호재:/악재:/보합:" 접두어)에 다정한 브리지를 붙여 narration

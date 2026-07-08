@@ -27,7 +27,8 @@ REPO              = TICKER_CONFIG.get("repo", os.environ.get("GITHUB_REPOSITORY"
 COMPETITOR_TICKER = TICKER_CONFIG.get("competitor_ticker", "")
 
 # 상단 헤더 브랜드 라벨: 티커(005930.KS)가 아니라 종목명(삼성전자)으로 표기 — 사람이 읽는 제목
-HEADER_BRAND      = f"{COMPANY_KO} BRIEF" if COMPANY_KO else BRAND_LABEL
+# (v1.2: "BRIEF" 접미 삭제 — 사용자 요청, 종목명만 표기)
+HEADER_BRAND      = COMPANY_KO or BRAND_LABEL
 
 # ── 통화·가격 표기: 상장국 기준 ─────────────────────────────────────
 # 한국거래소(.KS=KOSPI / .KQ=KOSDAQ) 종목은 원화·정수(318,000원), 그 외(미국 등)는 $·2소수점.
@@ -459,6 +460,39 @@ def search_movement_reason(summary):
         return None
 
 
+def search_company_direction():
+    """Gemini + Google Search grounding으로 회사가 추구하는 방향·최근 투자를 검색.
+
+    씬0 '회사가 추구하는 방향' 소재가 빈약하지 않게 구체 사실(투자 금액·신제품·로드맵)을
+    확보한다(사용자 요청). 실패해도 파이프라인 계속 — 대본 프롬프트가 모델 지식으로 채움."""
+    if not GEMINI_API_KEY:
+        return None
+    try:
+        from google import genai
+        from google.genai import types
+        q = (
+            f"{COMPANY_KO}({TICKER}, {INDUSTRY_KO}) 회사가 추구하는 방향을 조사해줘. "
+            f"우선순위: ① 회사의 비전·전략 방향 ② 최근 1년 내 주요 투자·설비·인수(금액 등 구체 수치) "
+            f"③ 핵심 신제품·신기술 로드맵 ④ 시장 내 위치·점유율. "
+            f"검색 결과 기반 사실만, 각 20자 내외 한국어 구절 3~4개를 '/'로 구분해 한 줄로. "
+            f"예: 'AI 메모리 1위 전략 / 20조 원 파운드리 투자 / HBM4 내년 양산'"
+        )
+        client   = genai.Client(api_key=GEMINI_API_KEY)
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=q,
+            config=types.GenerateContentConfig(
+                tools=[types.Tool(google_search=types.GoogleSearch())]
+            ),
+        )
+        text = response.text.strip()
+        print(f"   🧭 회사 방향·투자: {text[:80]}")
+        return text
+    except Exception as e:
+        print(f"   ⚠ 회사 방향 검색 실패: {e}", file=sys.stderr)
+        return None
+
+
 def fetch_google_trends(keywords, days=7):
     """지난 7일 vs 직전 7일 검색량 비교 → 증감비율 + 최고 키워드."""
     if not keywords:
@@ -643,6 +677,7 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 - 경쟁사({competitor_ticker}) 비교: {competitor_str}
 - 기술적 지표(참고용, 자연스럽게 수치 인용 가능): {tech_str}
 - 주가 변동 원인: {movement_reason_str}
+- 회사 방향·최근 투자 (검색 결과 — 씬0 줄2~5 소재로 우선 활용): {company_direction_str}
 - 검색량 트렌드: {trends_str}
 - 다음주 예정 이벤트: {next_events_str}
 - 다음주 가격 예측(AI 모델, 참고용·매매신호 아님): {next_week_str}
@@ -658,11 +693,14 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 
 === 씬 구성 (총 3씬) ===
 
-【씬 0 — 회사 소개 & 간략한 주가 흐름】 (3줄, 한 줄 30자 이내, 핵심만 응축)
-※ 이 씬은 '주가 분석'이 아니라 **회사가 어떤 방향을 추구하는지**를 중심으로 소개한다. 주가는 줄1에서 간단히만 짚고, 변동 원인 심층 분석은 하지 않는다(뉴스 분석은 씬1 담당).
+【씬 0 — 회사 소개 & 간략한 주가 흐름】 (5줄, 한 줄 30자 이내, 핵심만 응축)
+※ 이 씬은 '주가 분석'이 아니라 **회사가 어떤 방향을 추구하는지**를 알차게 소개한다. 주가는 줄1에서 간단히만 짚고, 변동 원인 심층 분석은 하지 않는다(뉴스 분석은 씬1 담당).
+※ 줄2~5 소재는 아래 '회사 방향·최근 투자 (검색 결과)'를 우선 활용하고, 부족하면 ① 추구하는 방향·비전 ② 최근 투자·설비·인수(구체 금액) ③ 핵심 신제품·기술 로드맵 ④ 시장 내 위치 순으로 아는 사실을 채운다 — 4줄이 전부 비지 않게 반드시 채울 것.
 - 줄1: 위 '오프닝 훅 스타일'로 시작 — 현재 주가와 기간 변동률을 **간결하게** 녹인 한 줄 (간략한 주가 흐름, 30자 이내, 수치 필수). 상세한 변동 원인은 설명하지 말 것
-- 줄2: 이 회사가 **추구하는 방향·비전** 핵심 한 줄 — 무슨 사업으로 어디를 향하는지 ({industry_ko} 산업, 미래 사업/로드맵 {future_tech} 활용, 30자 이내). 주가 얘기는 넣지 말 것
-- 줄3: 회사의 방향·강점 부연 한 줄 — 핵심 제품·기술·시장 내 위치 등 (30자 이내). 주가 얘기는 넣지 말 것
+- 줄2: 이 회사가 **추구하는 방향·비전** 핵심 한 줄 — 무슨 사업으로 어디를 향하는지 ({industry_ko} 산업, 30자 이내). 주가 얘기 금지
+- 줄3: **최근 투자·신사업** 한 줄 — 설비 투자·인수·증설 등 구체 수치 포함 (검색 결과 활용, 30자 이내). 주가 얘기 금지
+- 줄4: **핵심 제품·기술** 한 줄 — 대표 제품/기술({future_tech} 참고)과 그 의미 (30자 이내). 주가 얘기 금지
+- 줄5: **시장 내 위치·강점** 한 줄 — 점유율·순위·경쟁 우위 등 (30자 이내). 주가 얘기 금지
 
 【씬 1 — 핵심 뉴스 3선 (호재·악재·보합)】 (정확히 3줄 — 호재 1줄, 악재 1줄, 보합 1줄)
 ※ 위 "씬1 선정 뉴스(신뢰도 우선)"로 제공된 3건(호재·악재·보합)을 그대로 사용해 각각 자연스러운 구어체 한 문장으로 전한다.
@@ -687,7 +725,9 @@ SCENE_0_TITLE: [6자 이내, 친근한 단어 예: "회사소개" "어떤회사"
 SCENE_0:
 [줄1 — 현재 주가·기간 변동률 간결 요약, 핵심 수치 *별표* 강조]
 [줄2 — 회사가 추구하는 방향·비전, 핵심 키워드 *별표* 강조]
-[줄3 — 회사 방향·강점 부연, 핵심 키워드 *별표* 강조]
+[줄3 — 최근 투자·신사업 (구체 수치), 핵심 *별표* 강조]
+[줄4 — 핵심 제품·기술, 핵심 키워드 *별표* 강조]
+[줄5 — 시장 내 위치·강점, 핵심 키워드 *별표* 강조]
 
 SCENE_1_TITLE: [6자 이내, 예: "핵심뉴스" "3대뉴스"]
 SCENE_1:
@@ -787,6 +827,10 @@ def _build_prompt(summary):
 
     movement_reason = summary.get("movement_reason")
     movement_reason_str = movement_reason if movement_reason else "데이터 수집 중"
+
+    company_direction = summary.get("company_direction")
+    company_direction_str = company_direction if company_direction else \
+        "(검색 실패 — 아는 사실 기반으로 이 회사의 비전·최근 투자·핵심 제품을 채워 넣을 것)"
 
     # 다음주 가격 예측 요약 (dailyForecasts 기반, 매매신호 단어 제외)
     next_week_str = build_next_week_outlook(summary.get("forecasts", []))
@@ -915,6 +959,7 @@ def _build_prompt(summary):
         daily_prices_txt=daily_prices_txt,
         week_change_pct_str=week_change_pct_str,
         movement_reason_str=movement_reason_str,
+        company_direction_str=company_direction_str,
         trends_str=trends_str,
         next_events_str=next_events_str,
         next_week_str=next_week_str,
@@ -1246,12 +1291,20 @@ _NANO_BANANA_MODELS = [
     "gemini-3.1-flash-image-preview",  # Nano Banana 2 (100/일 무료, 폴백)
 ]
 
+_NANO_QUOTA_EXHAUSTED = False   # 429가 대기 후에도 반복되면 세션 전체 스킵 (일일 쿼터 소진 판단)
+
 def fetch_nano_banana_image(prompt: str, out_path: Path, aspect_ratio: str = "16:9") -> bool:
     """Nano Banana API로 씬 배경 이미지 생성. 실패 시 False 반환.
     aspect_ratio: '16:9' (씬 1~3 가로 strip) 또는 '9:16' (씬 0·4 풀스크린).
-    """
-    if not GEMINI_API_KEY or not prompt:
+
+    429(RESOURCE_EXHAUSTED) 처리: 무료 티어는 분당·일일 한도가 함께 있어 —
+    첫 429엔 65초 대기 후 1회 재시도(분당 한도면 해소), 그래도 429면 일일 쿼터
+    소진으로 보고 남은 씬 전부 스킵(무의미한 재시도로 몇 분 낭비 방지)."""
+    global _NANO_QUOTA_EXHAUSTED
+    if not GEMINI_API_KEY or not prompt or _NANO_QUOTA_EXHAUSTED:
         return False
+    import time
+    waited_for_quota = False
     try:
         from google import genai
         from google.genai import types
@@ -1273,6 +1326,18 @@ def fetch_nano_banana_image(prompt: str, out_path: Path, aspect_ratio: str = "16
                             return True
                     break   # 응답은 왔으나 이미지 없음 → 재시도 무의미, 다음 모델로
                 except Exception as e:
+                    msg = str(e)
+                    if "429" in msg or "RESOURCE_EXHAUSTED" in msg:
+                        if not waited_for_quota:
+                            print("      ⏳ 이미지 쿼터 429 — 65초 대기 후 재시도 (분당 한도 해소 대기)",
+                                  file=sys.stderr)
+                            time.sleep(65)
+                            waited_for_quota = True
+                            continue
+                        _NANO_QUOTA_EXHAUSTED = True
+                        print("      🚫 대기 후에도 429 — Gemini 이미지 일일 쿼터 소진으로 판단, "
+                              "이번 실행의 남은 씬 배경 생성을 건너뜁니다", file=sys.stderr)
+                        return False
                     print(f"      ⚠ {model_id} 시도{attempt+1}/2 실패: {e}", file=sys.stderr)
                     continue
     except Exception as e:
@@ -1299,7 +1364,22 @@ def draw_photo_card(img, draw, accent, bg_path: Path | None, x, y, w, h):
     draw.rounded_rectangle([x - 3, y - 3, x + w + 3, y + h + 3],
                            radius=8, outline=accent, width=2)
     if not bg_path or not bg_path.exists():
-        draw.rounded_rectangle([x, y, x + w, y + h], radius=6, fill=CARD_BG)
+        # AI 배경 실패(쿼터 등) 폴백: 단색 대신 헤더와 톤을 맞춘 세로 그라데이션 +
+        # 대각 스트라이프 — 이미지가 없어도 '빈 화면'으로 보이지 않게(사용자 피드백)
+        from PIL import ImageDraw
+        band = PILImage.new("RGB", (w, h), CARD_BG)
+        bd = ImageDraw.Draw(band)
+        top, bottom = (26, 34, 60), (13, 17, 32)
+        for yy in range(h):
+            t = yy / max(1, h - 1)
+            bd.line([(0, yy), (w, yy)], fill=tuple(int(a + (b - a) * t) for a, b in zip(top, bottom)))
+        stripe = tuple(min(255, c + 14) for c in top)
+        for sx in range(-h, w + h, 120):
+            bd.line([(sx, h), (sx + h, 0)], fill=stripe, width=26)
+        # 은은한 악센트 글로우 라인
+        bd.line([(0, h - 2), (w, h - 2)], fill=accent, width=2)
+        img.paste(band, (x, y))
+        draw.rounded_rectangle([x, y, x + w, y + h], radius=6, outline=None)
         return
     try:
         photo = PILImage.open(bg_path).convert("RGB")
@@ -2449,6 +2529,10 @@ def main():
     # ── 주가 변동 원인 (Google Search grounding) ──
     print("🔍 주가 변동 원인 검색 중...")
     summary["movement_reason"] = search_movement_reason(summary)
+
+    # ── 회사가 추구하는 방향·최근 투자 (Google Search grounding — 씬0 소재) ──
+    print("🧭 회사 방향·최근 투자 검색 중...")
+    summary["company_direction"] = search_company_direction()
 
     # ── 대본 ──
     img_prompts = {}  # Nano Banana 이미지 생성에 사용 (대본 생성 시 채워짐)
