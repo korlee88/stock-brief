@@ -297,7 +297,7 @@ function showTab(t) {
 // 정적 페이지라 서버 검증은 없지만: ① 관리 UI(토큰 설정·리셋)는 허용된 구글 계정
 // 로그인 전엔 렌더되지 않고 ② 실행 권한은 어차피 이 브라우저에만 저장되는 GitHub
 // 토큰이 지킨다(저장소에 커밋 안 됨) — 방문자는 보지도, 실행하지도 못한다.
-const GOOGLE_CLIENT_ID = '';   // Google Cloud OAuth 클라이언트 ID (공개돼도 안전 — 아래 발급 안내 참고)
+const GOOGLE_CLIENT_ID = '61387599818-tic3n5io1cs3aqklbokcdn1h1jsrg1p5.apps.googleusercontent.com';   // OAuth 클라이언트 ID (공개용 식별자 — 커밋 안전)
 const ADMIN_EMAILS = ['sinlee01@gmail.com'];   // 관리자 허용 구글 계정
 const ADMIN_SS_KEY = 'od_admin_' + REPO;
 let _gsiInited = false;
