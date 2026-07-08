@@ -1,0 +1,11 @@
+# 000660.KS 주간 배경 이미지 프롬프트 — 2026-07-08
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A breathtaking 16:9 landscape cinematic view of Dubai Burj Khalifa night skyline blended with a futuristic data center filled with glowing stacked High Bandwidth Memory HBM modules, powering advanced AI computations with unparalleled speed and efficiency, deep purple violet tech analytics atmosphere, glowing city lights bokeh, semiconductor wafer reflections, holographic data streams flowing between skyscrapers, futuristic global city night skyline, immersive depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A dynamic 16:9 landscape aerospace vision showing a futuristic data center filled with glowing stacked High Bandwidth Memory HBM modules powering advanced AI computations with unparalleled speed and efficiency, rockets launching upward, satellites orbiting, space infrastructure surrounding semiconductor towers, vivid green growth bullish energy, dynamic upward trajectory lines, glowing motion streaks, cosmic clouds, chip circuits merging with stars, forward-looking optimism, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A visionary 9:16 vertical composition of Singapore Smart Nation future garden city skyline, blended with a futuristic data center filled with glowing stacked High Bandwidth Memory HBM modules powering advanced AI computations with unparalleled speed and efficiency, golden inspirational future mood, radiant sunlight, sparkling stars, floating semiconductor wafers, lush vertical gardens integrated with silicon towers, warm gold and amber tones, hopeful atmosphere, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

@@ -1,0 +1,31 @@
+{
+  "ticker": "000660.KS",
+  "company_en": "SK hynix Inc.",
+  "company_ko": "SK하이닉스",
+  "industry_ko": "반도체",
+  "exchange": "KOSPI",
+  "image_future_tech_en": "A futuristic data center filled with glowing, stacked High Bandwidth Memory (HBM) modules, powering advanced AI computations with unparalleled speed and efficiency.",
+  "brand_label": "000660.KS BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "MU",
+  "key_people": [
+    "Kwak Noh-Jung"
+  ],
+  "google_trends_keywords": [
+    "SK하이닉스",
+    "HBM",
+    "고대역폭 메모리",
+    "반도체",
+    "곽노정"
+  ],
+  "video_tags": [
+    "SK hynix",
+    "HBM",
+    "AI memory",
+    "반도체",
+    "SK하이닉스"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-07-08T11:51:25.468Z"
+}

@@ -1,0 +1,241 @@
+{
+  "generated_at": "2026-07-08",
+  "generated_by": "Claude Opus 4",
+  "title": "전일 *-5.68%* 급락, 현재 *207만원*대",
+  "subtitle": "2026-07-08 ~ 2026-07-08 · SK하이닉스, 280억 달러 규모 美 ADR 상장 수요",
+  "summary": {
+    "week_start": "2026-07-08",
+    "week_end": "2026-07-08",
+    "session_count": 1,
+    "total_analyzed": 8,
+    "bullish_count": 4,
+    "bearish_count": 2,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 2076000,
+    "price_end": 2076000,
+    "latest_price": 2076000,
+    "today_price": 2076000,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "SK하이닉스, 280억 달러 규모 美 ADR 상장 수요예측 흥행",
+      "score": 4,
+      "reason": "대규모 ADR 상장의 성공적인 수요예측은 SK하이닉스에 대한 글로벌 투자자들의 높은 신뢰와 AI 반도체 시장에서의 강력한 입지를 확인시켜주며, 이는 주가에 긍정적인 영향을 미칠 것입니다.",
+      "source": "Bloomberg",
+      "date": "2026-07-08",
+      "category": "Market",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "SK하이닉스, 280억 달러 규모 美 ADR 상장 수요예측 흥행",
+        "score": 4,
+        "reason": "대규모 ADR 상장의 성공적인 수요예측은 SK하이닉스에 대한 글로벌 투자자들의 높은 신뢰와 AI 반도체 시장에서의 강력한 입지를 확인시켜주며, 이는 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "Bloomberg",
+        "date": "2026-07-08",
+        "category": "Market"
+      },
+      {
+        "title": "곽노정 SK하이닉스 사장, 반도체 설비 구축에 1100조 원 투자 계획 발표",
+        "score": 3,
+        "reason": "대규모 투자 계획은 SK하이닉스의 장기적인 성장 동력 확보와 시장 지배력 강화를 의미하며, 이는 기업 가치 상승으로 이어져 주가에 긍정적인 영향을 줄 것입니다.",
+        "source": "연합뉴스",
+        "date": "2026-07-08",
+        "category": "Contract"
+      },
+      {
+        "title": "SK하이닉스 2분기 영업이익 70조 원 근접 전망",
+        "score": 4,
+        "reason": "SK하이닉스의 2분기 영업이익이 시장 예상치를 뛰어넘어 70조 원에 근접할 것이라는 전망은 HBM 시장에서의 강력한 경쟁력과 전반적인 메모리 업황 개선을 반영하며, 이는 주가에 매우 긍정적인 영향을 미칠 것입니다.",
+        "source": "연합인포맥스",
+        "date": "2026-07-06",
+        "category": "Earnings"
+      },
+      {
+        "title": "곽노정 SK하이닉스 대표이사 자사주 가치 1년 새 33배 증가",
+        "score": 2,
+        "reason": "대표이사의 자사주 가치 급증은 SK하이닉스의 주가 상승과 HBM 시장에서의 성공을 반영하며, 이는 경영진의 성과와 기업의 긍정적인 전망을 보여주어 주가에 긍정적입니다.",
+        "source": "뉴스1",
+        "date": "2026-07-06",
+        "category": "Market"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "삼성전자 실적 호조에도 AI 밸류에이션 우려로 아시아 반도체주 급락",
+        "score": -4,
+        "reason": "삼성전자의 실적 호조에도 불구하고 AI 반도체 섹터 전반의 고평가 우려가 제기되면서 SK하이닉스를 포함한 아시아 반도체주가 하락했습니다. 이는 시장 전반의 투자 심리 위축으로 이어져 주가에 부정적인 영향을 미칩니다.",
+        "source": "Investing.com",
+        "date": "2026-07-08",
+        "category": "Market"
+      },
+      {
+        "title": "SK하이닉스, 美 상장 앞두고 주가 5% 이상 하락",
+        "score": -3,
+        "reason": "대규모 ADR 상장 발표에도 불구하고 주가가 하락한 것은 단기적으로 시장이 공모 물량 소화에 대한 부담을 느끼거나 차익 실현 매물이 출회되었기 때문으로, 이는 주가에 부정적인 영향을 미 미칠 수 있습니다.",
+        "source": "Reuters",
+        "date": "2026-07-06",
+        "category": "Market"
+      }
+    ],
+    "top_neutral": [
+      {
+        "title": "SK하이닉스 ADR 상장으로 원/달러 환율 두 달 만에 1500원 아래로 하락",
+        "score": 0,
+        "reason": "SK하이닉스의 ADR 상장 관련 달러 매도 물량으로 인한 환율 하락은 기업의 환율 리스크 관리 측면에서 긍정적이지만, 직접적인 주가 영향보다는 거시 경제적 요인에 가깝습니다.",
+        "source": "머니투데이",
+        "date": "2026-07-08",
+        "category": "Macro"
+      },
+      {
+        "title": "SK하이닉스, 7월 중순까지 ADR 자금 국내 유입 예정",
+        "score": 1,
+        "reason": "ADR 조달 자금의 국내 유입은 기업의 재무 건전성 강화에 기여할 수 있지만, 이미 알려진 자금 조달 계획의 일환이므로 주가에 미치는 영향은 제한적일 수 있습니다.",
+        "source": "Reuters",
+        "date": "2026-07-08",
+        "category": "Market"
+      }
+    ],
+    "neutral_count": 2,
+    "scene1_news": {
+      "bullish": {
+        "title": "SK하이닉스, 280억 달러 규모 美 ADR 상장 수요예측 흥행",
+        "score": 4,
+        "reason": "대규모 ADR 상장의 성공적인 수요예측은 SK하이닉스에 대한 글로벌 투자자들의 높은 신뢰와 AI 반도체 시장에서의 강력한 입지를 확인시켜주며, 이는 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "Bloomberg",
+        "date": "2026-07-08",
+        "category": "Market"
+      },
+      "bearish": {
+        "title": "SK하이닉스, 美 상장 앞두고 주가 5% 이상 하락",
+        "score": -3,
+        "reason": "대규모 ADR 상장 발표에도 불구하고 주가가 하락한 것은 단기적으로 시장이 공모 물량 소화에 대한 부담을 느끼거나 차익 실현 매물이 출회되었기 때문으로, 이는 주가에 부정적인 영향을 미 미칠 수 있습니다.",
+        "source": "Reuters",
+        "date": "2026-07-06",
+        "category": "Market"
+      },
+      "neutral": {
+        "title": "SK하이닉스, 7월 중순까지 ADR 자금 국내 유입 예정",
+        "score": 1,
+        "reason": "ADR 조달 자금의 국내 유입은 기업의 재무 건전성 강화에 기여할 수 있지만, 이미 알려진 자금 조달 계획의 일환이므로 주가에 미치는 영향은 제한적일 수 있습니다.",
+        "source": "Reuters",
+        "date": "2026-07-08",
+        "category": "Market"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-07-08",
+        2076000
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-07-08",
+    "today_news": [
+      {
+        "title": "SK하이닉스, 280억 달러 규모 美 ADR 상장 수요예측 흥행",
+        "category": "Market",
+        "source": "Bloomberg",
+        "date": "2026-07-08"
+      },
+      {
+        "title": "곽노정 SK하이닉스 사장, 반도체 설비 구축에 1100조 원 투자 계획 발표",
+        "category": "Contract",
+        "source": "연합뉴스",
+        "date": "2026-07-08"
+      },
+      {
+        "title": "SK하이닉스 ADR 상장으로 원/달러 환율 두 달 만에 1500원 아래로 하락",
+        "category": "Macro",
+        "source": "머니투데이",
+        "date": "2026-07-08"
+      },
+      {
+        "title": "SK하이닉스, 7월 중순까지 ADR 자금 국내 유입 예정",
+        "category": "Market",
+        "source": "Reuters",
+        "date": "2026-07-08"
+      },
+      {
+        "title": "삼성전자 실적 호조에도 AI 밸류에이션 우려로 아시아 반도체주 급락",
+        "category": "Market",
+        "source": "Investing.com",
+        "date": "2026-07-08"
+      },
+      {
+        "title": "SK하이닉스, 美 상장 앞두고 주가 5% 이상 하락",
+        "category": "Market",
+        "source": "Reuters",
+        "date": "2026-07-06"
+      },
+      {
+        "title": "곽노정 SK하이닉스 대표이사 자사주 가치 1년 새 33배 증가",
+        "category": "Market",
+        "source": "뉴스1",
+        "date": "2026-07-06"
+      },
+      {
+        "title": "SK하이닉스 2분기 영업이익 70조 원 근접 전망",
+        "category": "Earnings",
+        "source": "연합인포맥스",
+        "date": "2026-07-06"
+      }
+    ],
+    "prev_day": {
+      "date": "2026-07-08",
+      "open": 2118000.0,
+      "close": 2076000.0,
+      "change_pct": -5.68
+    },
+    "movement_reason": "2026년 7월 8일 SK하이닉스(000660.KS) 주가 하락의 주요 원인은 다음과 같습니다.\n\n반도체 고점 우려 / 중동 지정학적 긴장 / 글로벌 기술주 약세"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "하이닉스",
+      "lines": [
+        "전일 *-5.68%* 급락, 현재 *207만원*대",
+        "*HBM3E* 앞세워 AI 메모리 1위 굳혀요",
+        "*1100조 원* 설비 투자로 초격차 벌려요"
+      ],
+      "body": "전일 *-5.68%* 급락, 현재 *207만원*대\n*HBM3E* 앞세워 AI 메모리 1위 굳혀요\n*1100조 원* 설비 투자로 초격차 벌려요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: *280억 달러* 미국 ADR 수요예측 대박 났어요",
+        "악재: 美 상장 앞두고 물량 부담에 *5% 이상* 밀렸죠",
+        "보합: *7월 중순*까지 ADR 자금 국내 유입 예정이래요"
+      ],
+      "body": "호재: *280억 달러* 미국 ADR 수요예측 대박 났어요\n악재: 美 상장 앞두고 물량 부담에 *5% 이상* 밀렸죠\n보합: *7월 중순*까지 ADR 자금 국내 유입 예정이래요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "*7월 중순* ADR 자금 국내 유입 — 최대 이벤트",
+        "관전 포인트: *HBM4* 양산·영업이익 *70조* 눈앞",
+        "시장은 고평가 우려, 정작 핵심은 *HBM 실수요*",
+        "누적 *±2% 안팎*, 변동성 커질 듯해요",
+        "변수: AI 밸류에이션 우려·중동 지정학 리스크",
+        "다음에 또 만나요!"
+      ],
+      "body": "*7월 중순* ADR 자금 국내 유입 — 최대 이벤트\n관전 포인트: *HBM4* 양산·영업이익 *70조* 눈앞\n시장은 고평가 우려, 정작 핵심은 *HBM 실수요*\n누적 *±2% 안팎*, 변동성 커질 듯해요\n변수: AI 밸류에이션 우려·중동 지정학 리스크\n다음에 또 만나요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A breathtaking 16:9 landscape cinematic view of Dubai Burj Khalifa night skyline blended with a futuristic data center filled with glowing stacked High Bandwidth Memory HBM modules, powering advanced AI computations with unparalleled speed and efficiency, deep purple violet tech analytics atmosphere, glowing city lights bokeh, semiconductor wafer reflections, holographic data streams flowing between skyscrapers, futuristic global city night skyline, immersive depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic 16:9 landscape aerospace vision showing a futuristic data center filled with glowing stacked High Bandwidth Memory HBM modules powering advanced AI computations with unparalleled speed and efficiency, rockets launching upward, satellites orbiting, space infrastructure surrounding semiconductor towers, vivid green growth bullish energy, dynamic upward trajectory lines, glowing motion streaks, cosmic clouds, chip circuits merging with stars, forward-looking optimism, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A visionary 9:16 vertical composition of Singapore Smart Nation future garden city skyline, blended with a futuristic data center filled with glowing stacked High Bandwidth Memory HBM modules powering advanced AI computations with unparalleled speed and efficiency, golden inspirational future mood, radiant sunlight, sparkling stars, floating semiconductor wafers, lush vertical gardens integrated with silicon towers, warm gold and amber tones, hopeful atmosphere, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

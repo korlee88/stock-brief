@@ -1,0 +1,26 @@
+SCENE_0_TITLE: 하이닉스
+SCENE_0:
+전일 *-5.68%* 급락, 현재 *207만원*대
+*HBM3E* 앞세워 AI 메모리 1위 굳혀요
+*1100조 원* 설비 투자로 초격차 벌려요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: *280억 달러* 미국 ADR 수요예측 대박 났어요
+악재: 美 상장 앞두고 물량 부담에 *5% 이상* 밀렸죠
+보합: *7월 중순*까지 ADR 자금 국내 유입 예정이래요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+*7월 중순* ADR 자금 국내 유입 — 최대 이벤트
+관전 포인트: *HBM4* 양산·영업이익 *70조* 눈앞
+시장은 고평가 우려, 정작 핵심은 *HBM 실수요*
+누적 *±2% 안팎*, 변동성 커질 듯해요
+변수: AI 밸류에이션 우려·중동 지정학 리스크
+다음에 또 만나요!
+
+IMAGE_PROMPT_0: A breathtaking 16:9 landscape cinematic view of Dubai Burj Khalifa night skyline blended with a futuristic data center filled with glowing stacked High Bandwidth Memory HBM modules, powering advanced AI computations with unparalleled speed and efficiency, deep purple violet tech analytics atmosphere, glowing city lights bokeh, semiconductor wafer reflections, holographic data streams flowing between skyscrapers, futuristic global city night skyline, immersive depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic 16:9 landscape aerospace vision showing a futuristic data center filled with glowing stacked High Bandwidth Memory HBM modules powering advanced AI computations with unparalleled speed and efficiency, rockets launching upward, satellites orbiting, space infrastructure surrounding semiconductor towers, vivid green growth bullish energy, dynamic upward trajectory lines, glowing motion streaks, cosmic clouds, chip circuits merging with stars, forward-looking optimism, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A visionary 9:16 vertical composition of Singapore Smart Nation future garden city skyline, blended with a futuristic data center filled with glowing stacked High Bandwidth Memory HBM modules powering advanced AI computations with unparalleled speed and efficiency, golden inspirational future mood, radiant sunlight, sparkling stars, floating semiconductor wafers, lush vertical gardens integrated with silicon towers, warm gold and amber tones, hopeful atmosphere, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
