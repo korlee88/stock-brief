@@ -2605,7 +2605,7 @@ def main():
     # ── 온디맨드 최근 생성 포인터 (data/on-demand/latest.json) ──
     # on-demand.html 우측 '최근 생성 영상' 카드가 이 파일 하나만 읽어
     # 씬 미리보기 경로 + YouTube 업로드용 제목·설명을 표시한다(메일과 동일 카피).
-    if "on-demand" in str(REPORT_BASE):
+    if "on-demand" in str(OUTPUT_BASE):
         try:
             import gws_publish   # build_youtube_copy 재사용 — 메일·자동업로드와 단일 진실
             meta = json.loads((out_dir / "meta.json").read_text(encoding="utf-8"))
