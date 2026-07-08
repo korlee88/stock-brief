@@ -113,6 +113,14 @@
   .trend-bar-track { background: var(--card2); border-radius: 4px; margin: 5px 0 0 32px; }
   .trend-bar-track .trend-bar { margin: 0; }
 
+  /* ── 최근 생성 영상 (우측 패널) ── */
+  .copypre {
+    background: var(--card2); border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 12px; font-size: 12px; line-height: 1.6; color: var(--text);
+    white-space: pre-wrap; word-break: break-all; overflow-y: auto; margin-top: 4px;
+    font-family: inherit;
+  }
+
   .toast {
     position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%);
     background: var(--card2); border: 1px solid var(--border); color: var(--text);
@@ -232,6 +240,21 @@
     <div id="trendList" class="trend-list"></div>
     <p class="hint">종목을 누르면 티커 칸에 자동 입력됩니다. 순위 갱신(리셋)은 <b>관리자 탭</b>에서 —
     구글 검색 동향 기반 AI 추정 순위입니다.</p>
+  </div>
+
+  <!-- 최근 생성 영상 — 메일과 동일한 씬 미리보기 + YouTube 업로드용 제목·설명 -->
+  <div class="card" id="lastVideoCard">
+    <h2>🎬 최근 생성 영상</h2>
+    <p class="hint" id="lvMeta">불러오는 중…</p>
+    <div class="scenes" id="lvScenes"></div>
+    <div id="lvCopy" style="display:none">
+      <label>YouTube 업로드용 제목</label>
+      <pre class="copypre" id="lvTitle"></pre>
+      <button class="btn ghost" onclick="copyText('lvTitle','제목')">📋 제목 복사</button>
+      <label>YouTube 업로드용 설명</label>
+      <pre class="copypre" id="lvDesc" style="max-height:200px"></pre>
+      <button class="btn ghost" onclick="copyText('lvDesc','설명')">📋 설명 복사</button>
+    </div>
   </div>
 </aside>
 </div><!-- /.cols -->
@@ -359,6 +382,36 @@ function adminLogout() {
   sessionStorage.removeItem(ADMIN_SS_KEY);
   refreshAdminUI();
   toast('관리 화면을 잠갔습니다');
+}
+
+// ── 최근 생성 영상 (data/on-demand/latest.json — prep이 생성마다 갱신) ──
+// 메일과 동일 소스: 씬 미리보기 3장 + YouTube 업로드용 제목·설명(build_youtube_copy 재사용)
+async function loadLastVideo() {
+  const meta = document.getElementById('lvMeta');
+  try {
+    const d = await fetchRepoJson('data/on-demand/latest.json');
+    meta.textContent = `${d.company_ko}(${d.ticker}) · ${d.date} 생성`;
+    document.getElementById('lvScenes').innerHTML = (d.scenes || []).map(s =>
+      `<a href="${RAW}/${s}" target="_blank"><img loading="lazy" src="${RAW}/${s}"
+         onerror="this.parentElement.style.display='none'"></a>`).join('');
+    document.getElementById('lvTitle').textContent = d.youtube_title || '';
+    document.getElementById('lvDesc').textContent = d.youtube_description || '';
+    document.getElementById('lvCopy').style.display =
+      (d.youtube_title || d.youtube_description) ? 'block' : 'none';
+  } catch (e) {
+    meta.textContent = '아직 생성 기록이 없어요 — 영상을 만들면 씬 미리보기와 업로드용 제목·설명이 여기 표시됩니다.';
+  }
+}
+function copyText(id, label) {
+  const t = document.getElementById(id).textContent;
+  const fallback = () => {
+    const ta = document.createElement('textarea');
+    ta.value = t; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); ta.remove(); toast(label + ' 복사됨');
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(t).then(() => toast(label + ' 복사됨')).catch(fallback);
+  } else fallback();
 }
 
 // ── PAT 관리 (localStorage 전용 — 하드코딩·전송 금지) ─────────
@@ -579,20 +632,21 @@ let _trendsGeneratedAt = null;
 let _trendPollTimer = null;
 const _esc = s => String(s).replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
 
-async function fetchTrendsJson() {
+async function fetchRepoJson(path) {
   // GitHub contents API 우선(커밋 직후에도 신선) → 실패 시 raw CDN 폴백
   await ensureBranch();
   try {
-    const j = await ghContents(TRENDS_FILE);
+    const j = await ghContents(path);
     const txt = new TextDecoder().decode(
       Uint8Array.from(atob((j.content || '').replace(/\n/g, '')), c => c.charCodeAt(0)));
     return JSON.parse(txt);
   } catch (e) {
-    const r = await fetch(`${RAW}/${TRENDS_FILE}?t=${Date.now()}`, { cache: 'no-cache' });
+    const r = await fetch(`${RAW}/${path}?t=${Date.now()}`, { cache: 'no-cache' });
     if (!r.ok) throw r.status;
     return r.json();
   }
 }
+const fetchTrendsJson = () => fetchRepoJson(TRENDS_FILE);
 function renderTrends(data) {
   const meta = document.getElementById('trendMeta');
   const list = document.getElementById('trendList');
@@ -676,6 +730,7 @@ async function resetTrends() {
 
 // ── 초기화 ────────────────────────────────────────────────────
 loadTrends();   // 기록된 순위 표시(조사는 리셋 버튼으로만)
+loadLastVideo();   // 최근 생성 영상 카드 (latest.json)
 for (const key of Object.keys(CODE_SETS)) {
   const cfg = CODE_SETS[key];
   document.getElementById(cfg.input).addEventListener('input', e => renderCodes(key, e.target.value));

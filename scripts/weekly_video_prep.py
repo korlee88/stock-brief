@@ -2602,6 +2602,32 @@ def main():
             "trends":          summary.get("trends"),
         }, f, ensure_ascii=False, indent=2)
 
+    # ── 온디맨드 최근 생성 포인터 (data/on-demand/latest.json) ──
+    # on-demand.html 우측 '최근 생성 영상' 카드가 이 파일 하나만 읽어
+    # 씬 미리보기 경로 + YouTube 업로드용 제목·설명을 표시한다(메일과 동일 카피).
+    if "on-demand" in str(REPORT_BASE):
+        try:
+            import gws_publish   # build_youtube_copy 재사용 — 메일·자동업로드와 단일 진실
+            meta = json.loads((out_dir / "meta.json").read_text(encoding="utf-8"))
+            yt_title, yt_desc = gws_publish.build_youtube_copy(meta, out_dir)
+            latest = {
+                "ticker": TICKER,
+                "company_ko": COMPANY_KO,
+                "date": today,
+                "report_dir": f"data/on-demand/{TICKER}/{today}",
+                "scenes": [f"data/on-demand/{TICKER}/{today}/scene_{i:02d}.png" for i in range(3)],
+                "youtube_title": yt_title,
+                "youtube_description": yt_desc,
+                "generated_at": today,
+            }
+            latest_path = ROOT_DIR / "data" / "on-demand" / "latest.json"
+            latest_path.parent.mkdir(parents=True, exist_ok=True)
+            latest_path.write_text(json.dumps(latest, ensure_ascii=False, indent=1) + "\n",
+                                   encoding="utf-8")
+            print(f"   📌 latest.json 갱신 — {COMPANY_KO} {today} (웹 '최근 생성 영상' 카드용)")
+        except Exception as e:
+            print(f"   ⚠ latest.json 갱신 실패(계속 진행): {e}", file=sys.stderr)
+
     print(f"\n✅ 완료: {out_dir}/")
     print(f"   📄 script.txt  — 영상 대본 (5씬, 인트로+클로징 포함)")
     print(f"   🖼 scene_00~04.png — 씬별 배경 카드 이미지 (1080×1920, YouTube Shorts 세로 포맷)")
