@@ -64,15 +64,45 @@ function extractJson(data) {
   return JSON.parse(m[0]);
 }
 
+// ── 한국 티커(.KS/.KQ) 오인 방지 ─────────────────────────────────────────────
+// 사례: "381620.KQ"를 검색이 케냐항공(나이로비 거래소 티커 "KQ")으로 오인해
+// 완전히 다른 회사의 영상이 생성됨. 한국 티커는 로컬 전 종목 목록(data/kr-stocks.json,
+// KRX에서 받아 커밋)에서 정식 회사명을 먼저 찾아 프롬프트에 명시하고,
+// 결과가 한국 상장사가 아니면 캐시하지 않고 실패시킨다(불량 캐시 방지).
+const IS_KR = /\.(KS|KQ)$/.test(TICKER);
+const KR_MARKET = TICKER.endsWith('.KQ') ? 'KOSDAQ' : 'KOSPI';
+
+function lookupKrName() {
+  if (!IS_KR) return null;
+  try {
+    const list = JSON.parse(fs.readFileSync(
+      path.join(__dirname, '..', 'data', 'kr-stocks.json'), 'utf8'));
+    const hit = list.find(([, code]) => code === TICKER);
+    return hit ? hit[0] : null;
+  } catch { return null; }   // 목록 없어도 진행(프롬프트 지침만으로 방어)
+}
+
+const _norm = s => String(s || '').toLowerCase().replace(/[\s·.,()]/g, '');
+
 async function main() {
+  const krName = lookupKrName();
+  if (krName) console.log(`📌 한국 종목 확인: ${TICKER} = ${krName} (${KR_MARKET}, data/kr-stocks.json)`);
   console.log(`🔎 ${TICKER} 종목 메타데이터 조사 중 (Gemini + Google Search)...`);
+
+  const krContext = IS_KR
+    ? `\nIMPORTANT: The suffix ".KS"/".KQ" means this is a SOUTH KOREAN stock on the Korea Exchange \
+(.KS = KOSPI, .KQ = KOSDAQ). The numeric part is the Korean stock code. \
+Do NOT confuse the suffix with other companies' ticker symbols (e.g. Kenya Airways "KQ").${
+      krName ? `\nThis ticker is the ${KR_MARKET}-listed Korean company "${krName}" — research THIS company.` : ''}\n`
+    : '';
+
   const data = await geminiPost({
     tools: [{ google_search: {} }],
     contents: [{
       role: 'user',
       parts: [{ text:
-`Search the web and identify the publicly traded company with stock ticker "${TICKER}" (US listing preferred).
-Return ONLY a JSON object, no other text:
+`Search the web and identify the publicly traded company with stock ticker "${TICKER}"${IS_KR ? '' : ' (US listing preferred)'}.
+${krContext}Return ONLY a JSON object, no other text:
 {
  "ticker": "${TICKER}",
  "company_en": "official company name in English",
@@ -100,6 +130,25 @@ If the ticker does not correspond to any real listed company, return {"error": "
   if (!meta.company_ko || !meta.company_en) {
     console.error('❌ 필수 필드(company_ko/en) 누락 — 응답:', JSON.stringify(meta).slice(0, 300));
     process.exit(1);
+  }
+
+  // ── 한국 티커 검증: 오답을 캐시하면 재요청마다 같은 오류가 반복되므로, 캐시 전에 확인 ──
+  if (IS_KR) {
+    const exch = _norm(meta.exchange);
+    const exchOk = ['krx', 'kospi', 'kosdaq', 'korea', '코스피', '코스닥', '한국'].some(k => exch.includes(_norm(k)));
+    if (!exchOk) {
+      console.error(`❌ 한국 티커(${TICKER})인데 거래소가 "${meta.exchange}" — 다른 회사로 오인된 응답이라 캐시하지 않습니다.`);
+      console.error(`   응답 회사: ${meta.company_ko}(${meta.company_en})${krName ? ` / 기대 회사: ${krName}` : ''}`);
+      process.exit(1);
+    }
+    if (krName) {
+      const a = _norm(meta.company_ko), b = _norm(krName), c = _norm(meta.company_en);
+      if (!(a.includes(b) || b.includes(a) || c.includes(b))) {
+        console.warn(`⚠ 회사명 불일치: 응답 "${meta.company_ko}" vs KRX 목록 "${krName}" — KRX 정식명으로 교체`);
+        meta.company_ko = krName;
+      }
+      meta.exchange = KR_MARKET;   // KRX 목록이 확정한 시장으로 고정
+    }
   }
 
   // 파이프라인이 기대하는 나머지 필드 채움 (온디맨드 뉴스 전용 모드 기본값)
