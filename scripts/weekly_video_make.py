@@ -16,6 +16,13 @@ ROOT_DIR      = Path(__file__).parent.parent
 TICKER_CONFIG = json.loads(Path(os.environ.get("TICKER_CONFIG")
                                 or (ROOT_DIR / "config" / "ticker.json")).read_text(encoding="utf-8"))
 TICKER        = TICKER_CONFIG["ticker"]
+COMPANY_KO    = TICKER_CONFIG.get("company_ko", "") or TICKER
+
+def safe_filename(name: str) -> str:
+    """파일명용 정리 — 한글 유지, 윈도우 금지 문자(\\/:*?"<>|)·공백 제거. 비면 티커 폴백."""
+    import re as _re
+    s = _re.sub(r'[\\/:*?"<>|\s]+', '', str(name)).strip('.')
+    return s or _re.sub(r'[\\/:*?"<>|\s]+', '', TICKER) or "video"
 
 REPORT_BASE   = Path(os.environ.get("REPORT_BASE") or (ROOT_DIR / "data" / "weekly-report"))
 VOICE         = "ko-KR-SunHiNeural"    # 밝은 여성 — 친근 튜닝 (edge-tts 지원 검증 음성)
@@ -564,8 +571,9 @@ async def build_video_async(report_dir):
         except Exception as e:
             print(f"   ⚠ BGM 믹싱 실패: {e} — 음악 없이 진행", file=sys.stderr)
 
-    # 파일명: {TICKER}_YYYYMMDD.mp4 (예: RKLB_20260706.mp4) — 리포트 디렉토리명(YYYY-MM-DD)에서 생성
-    out_path = report_dir / f"{TICKER}_{report_dir.name.replace('-', '')}.mp4"
+    # 파일명: {한글 종목명}_YYYYMMDD.mp4 (예: SK하이닉스_20260709.mp4) — 숫자 코드 대신
+    # 사람이 읽는 종목명으로(사용자 요청). 리포트 디렉토리명(YYYY-MM-DD)에서 날짜 생성.
+    out_path = report_dir / f"{safe_filename(COMPANY_KO)}_{report_dir.name.replace('-', '')}.mp4"
     final.write_videofile(
         str(out_path),
         fps=FPS,
