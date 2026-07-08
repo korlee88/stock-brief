@@ -1,0 +1,11 @@
+# 083450.KQ 주간 배경 이미지 프롬프트 — 2026-07-08
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A breathtaking 16:9 landscape view of the Dubai Burj Khalifa skyline at night, glowing with purple and violet futuristic tech analytics overlays, seamlessly merged with a sleek, futuristic data center utilizing immersion cooling technology, servers submerged in specialized dielectric fluid, surrounded by advanced scrubbers and chillers ensuring optimal environmental control and energy efficiency, glowing city lights bokeh, semiconductor equipment silhouettes, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A dynamic 16:9 landscape futuristic aerospace scene with rockets launching, satellites orbiting Earth, and space infrastructure glowing in vivid green growth bullish energy, blended with a sleek futuristic data center utilizing immersion cooling technology, servers submerged in specialized dielectric fluid, surrounded by advanced scrubbers and chillers ensuring optimal environmental control and energy efficiency, dynamic upward trajectory, glowing motion lines, semiconductor material particles floating, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A stunning 9:16 vertical view of Singapore Smart Nation future garden city vision at golden hour, lush vertical greenery merging with a sleek futuristic data center utilizing immersion cooling technology, servers submerged in specialized dielectric fluid, surrounded by advanced scrubbers and chillers ensuring optimal environmental control and energy efficiency, golden sunlight, sparkling stars, inspirational future mood, semiconductor equipment symbolic visuals, radiant golden glow, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

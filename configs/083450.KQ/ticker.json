@@ -1,0 +1,34 @@
+{
+  "ticker": "083450.KQ",
+  "company_en": "Global Standard Technology Co., Ltd.",
+  "company_ko": "GST",
+  "industry_ko": "반도체 장비 및 재료",
+  "exchange": "KOSDAQ",
+  "image_future_tech_en": "A sleek, futuristic data center utilizing immersion cooling technology, with servers submerged in a specialized dielectric fluid, surrounded by advanced scrubbers and chillers ensuring optimal environmental control and energy efficiency.",
+  "brand_label": "083450.KQ BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "084370.KQ",
+  "key_people": [
+    "Oh Joon-chul (오준철)"
+  ],
+  "google_trends_keywords": [
+    "지에스티",
+    "GST 반도체",
+    "GST 스크러버",
+    "GST 칠러",
+    "오준철"
+  ],
+  "video_tags": [
+    "GST",
+    "Global Standard Technology",
+    "지에스티",
+    "반도체 장비",
+    "스크러버",
+    "칠러",
+    "이머전 쿨링",
+    "AI 데이터센터"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-07-08T11:45:55.750Z"
+}

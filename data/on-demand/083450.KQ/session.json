@@ -1,0 +1,39 @@
+[
+  {
+    "date": "2026-07-08",
+    "generatedAt": "2026-07-08T11:46:00.940Z",
+    "mode": "on-demand",
+    "latestPrice": 42300,
+    "news": [
+      {
+        "id": 1,
+        "title": "LG전자 인도법인 세무추징금 이슈 취소, GST 주가에 미미한 영향",
+        "summary": "LG전자 인도법인의 세무추징금 이슈가 최종 취소되었으나, GST(083450.KQ)와의 직접적인 연관성이 부족하여 GST 주가에는 미미한 영향을 미쳤습니다.",
+        "source": "이데일리 TV",
+        "date": "2026-07-06",
+        "category": "Market"
+      },
+      {
+        "id": 2,
+        "title": "반도체 소부장 '금맥' 캐보니 - GST 언급",
+        "summary": "매일경제 기사에서 반도체 소부장(소재·부품·장비) 관련 기업 중 하나로 GST가 언급되었습니다.",
+        "source": "매일경제",
+        "date": "2026-07-05",
+        "category": "Market"
+      }
+    ],
+    "analyses": {
+      "1": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "LG전자 인도법인의 세무추징금 취소는 긍정적인 소식이지만, GST와의 직접적인 사업 연관성이 낮아 주가에 큰 영향을 주지 않은 것으로 보입니다."
+      },
+      "2": {
+        "direction": "neutral",
+        "impact_score": 1,
+        "reasoning": "반도체 소부장 산업에 대한 전반적인 관심이 높아지는 가운데 GST가 언급된 것은 긍정적이지만, 구체적인 계약이나 실적 개선 소식이 아니므로 영향은 제한적입니다."
+      }
+    },
+    "dailyForecasts": []
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-07-08",
+  "generated_by": "Claude Opus 4",
+  "title": "GST 주가 *42,300원*, 하루 만에 *-4.84%*네요",
+  "subtitle": "2026-07-08 ~ 2026-07-08",
+  "summary": {
+    "week_start": "2026-07-08",
+    "week_end": "2026-07-08",
+    "session_count": 1,
+    "total_analyzed": 2,
+    "bullish_count": 0,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 42300,
+    "price_end": 42300,
+    "latest_price": 42300,
+    "today_price": 42300,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": null,
+    "top_bullish": [],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "LG전자 인도법인 세무추징금 이슈 취소, GST 주가에 미미한 영향",
+        "score": 0,
+        "reason": "LG전자 인도법인의 세무추징금 취소는 긍정적인 소식이지만, GST와의 직접적인 사업 연관성이 낮아 주가에 큰 영향을 주지 않은 것으로 보입니다.",
+        "source": "이데일리 TV",
+        "date": "2026-07-06",
+        "category": "Market"
+      }
+    ],
+    "neutral_count": 1,
+    "scene1_news": {
+      "bullish": null,
+      "bearish": null,
+      "neutral": {
+        "title": "반도체 소부장 '금맥' 캐보니 - GST 언급",
+        "score": 1,
+        "reason": "반도체 소부장 산업에 대한 전반적인 관심이 높아지는 가운데 GST가 언급된 것은 긍정적이지만, 구체적인 계약이나 실적 개선 소식이 아니므로 영향은 제한적입니다.",
+        "source": "매일경제",
+        "date": "2026-07-05",
+        "category": "Market"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-07-08",
+        42300
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-07-08",
+    "today_news": [
+      {
+        "title": "LG전자 인도법인 세무추징금 이슈 취소, GST 주가에 미미한 영향",
+        "category": "Market",
+        "source": "이데일리 TV",
+        "date": "2026-07-06"
+      },
+      {
+        "title": "반도체 소부장 '금맥' 캐보니 - GST 언급",
+        "category": "Market",
+        "source": "매일경제",
+        "date": "2026-07-05"
+      }
+    ],
+    "prev_day": {
+      "date": "2026-07-08",
+      "open": 42850.0,
+      "close": 42300.0,
+      "change_pct": -4.84
+    },
+    "movement_reason": "2026년 7월 8일 GST(083450.KQ) 주가 하락에 대한 주요 원인은 현재 검색 결과에서 특정하여 확인할 수 없습니다. 실시간 주식 시장 변동에 대한 상세 분석은 당일 장 마감 후 또는 일정 시간이 지난 후에 제공되는 경우가 많기 때문입니다.\n\n검색된 정보는 대부분 GST에 대한 긍정적인 전망이나 이전 날짜의 주가 동향 및 기업 정보에 해당합니다. 예를 들어, 2026년 7월 6일에는 GST 주가가 4.95% 하락하여 47,000원에 마감되었으나, 이는 LG전자 인도법인의 세무추징금 이슈 취소와 GST의 직접적인 연관성 부족으로 시장 반응이 미미했기 때문으로 분석되었습니다. 하지만 이는 7월 8일의 하락 원인이 아닙니다.\n\n따라서 2026년 7월 8일자 GST 주가 하락에 대한 핵심 원인을 검색 결과를 바탕으로 2~3가지 이내로 작성하는 것은 어렵습니다."
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "GST 주가 *42,300원*, 하루 만에 *-4.84%*네요",
+        "반도체 *스크러버·칠러* 강자예요",
+        "공정 환경제어 *글로벌 톱티어* 노려요"
+      ],
+      "body": "GST 주가 *42,300원*, 하루 만에 *-4.84%*네요\n반도체 *스크러버·칠러* 강자예요\n공정 환경제어 *글로벌 톱티어* 노려요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        ""
+      ],
+      "body": ""
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        ""
+      ],
+      "body": ""
+    }
+  ],
+  "image_prompts": {
+    "0": "A breathtaking 16:9 landscape view of the Dubai Burj Khalifa skyline at night, glowing with purple and violet futuristic tech analytics overlays, seamlessly merged with a sleek, futuristic data center utilizing immersion cooling technology, servers submerged in specialized dielectric fluid, surrounded by advanced scrubbers and chillers ensuring optimal environmental control and energy efficiency, glowing city lights bokeh, semiconductor equipment silhouettes, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic 16:9 landscape futuristic aerospace scene with rockets launching, satellites orbiting Earth, and space infrastructure glowing in vivid green growth bullish energy, blended with a sleek futuristic data center utilizing immersion cooling technology, servers submerged in specialized dielectric fluid, surrounded by advanced scrubbers and chillers ensuring optimal environmental control and energy efficiency, dynamic upward trajectory, glowing motion lines, semiconductor material particles floating, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A stunning 9:16 vertical view of Singapore Smart Nation future garden city vision at golden hour, lush vertical greenery merging with a sleek futuristic data center utilizing immersion cooling technology, servers submerged in specialized dielectric fluid, surrounded by advanced scrubbers and chillers ensuring optimal environmental control and energy efficiency, golden sunlight, sparkling stars, inspirational future mood, semiconductor equipment symbolic visuals, radiant golden glow, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

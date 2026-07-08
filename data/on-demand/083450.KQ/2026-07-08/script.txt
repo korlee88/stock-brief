@@ -1,0 +1,24 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+GST 주가 *42,300원*, 하루 만에 *-4.84%*네요
+반도체 *스크러버·칠러* 강자예요
+공정 환경제어 *글로벌 톱티어* 노려요
+
+SCENE_1_TITLE: 핵심뉴스
+호재: 최근 뚜렷한 호재는 없었어요, 조용한 한 주였답니다
+악재: 최근 뚜렷한 악재는 없었어요, 다만 *-4.84%* 하락은 체크해요
+보합: *반도체 소부장* 금맥 조명, GST 언급됐지만 계약은 미확정
+
+SCENE_2_TITLE: 다음주전망
+줄1: 다음주 *예정 이벤트 부재*, 일반 모니터링 국면
+줄2: 관전 포인트 — *소부장 수급*·외국인 매매 동향 주목
+줄3: 시장은 단기 낙폭 우려, 정작 중요한 건 *공정 장비 수요* 지속성
+줄4: *42,300원선* 지지 여부가 단기 방향 관건
+줄5: 변수: *반도체 업황 변동성*·밸류에이션 부담
+줄6: 오늘도 함께해 주셔서 고마워요!
+
+IMAGE_PROMPT_0: A breathtaking 16:9 landscape view of the Dubai Burj Khalifa skyline at night, glowing with purple and violet futuristic tech analytics overlays, seamlessly merged with a sleek, futuristic data center utilizing immersion cooling technology, servers submerged in specialized dielectric fluid, surrounded by advanced scrubbers and chillers ensuring optimal environmental control and energy efficiency, glowing city lights bokeh, semiconductor equipment silhouettes, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic 16:9 landscape futuristic aerospace scene with rockets launching, satellites orbiting Earth, and space infrastructure glowing in vivid green growth bullish energy, blended with a sleek futuristic data center utilizing immersion cooling technology, servers submerged in specialized dielectric fluid, surrounded by advanced scrubbers and chillers ensuring optimal environmental control and energy efficiency, dynamic upward trajectory, glowing motion lines, semiconductor material particles floating, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A stunning 9:16 vertical view of Singapore Smart Nation future garden city vision at golden hour, lush vertical greenery merging with a sleek futuristic data center utilizing immersion cooling technology, servers submerged in specialized dielectric fluid, surrounded by advanced scrubbers and chillers ensuring optimal environmental control and energy efficiency, golden sunlight, sparkling stars, inspirational future mood, semiconductor equipment symbolic visuals, radiant golden glow, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
