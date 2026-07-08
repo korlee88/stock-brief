@@ -658,11 +658,11 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 
 === 씬 구성 (총 3씬) ===
 
-【씬 0 — 주간 브리핑】 (4줄, 한 줄 30자 이내, 핵심 정보만 응축)
-- 줄1: 위 '오프닝 훅 스타일'로 시작하는 강렬한 첫 줄 — 변동률·현재 주가 등 핵심 수치를 자연스럽게 녹인다 (30자 이내, 수치 필수). 고정·상투 멘트 금지
-- 줄2: 주가 변동 원인 핵심 한 줄 (movement_reason 활용, 30자 이내, 수치 포함)
-- 줄3: 최근 수집된 뉴스 중 가장 큰 호재 핵심 한 줄 (30자 이내, 수치 포함, 점수 금지)
-- 줄4: 최근 수집된 뉴스 중 가장 큰 리스크 한 줄 (30자 이내, 수치 포함, 점수 금지). ※ 뚜렷한 악재가 없으면 "리스크가 없다"고 단정하지 말고, 위 '주의 깊게 볼 변수'를 활용해 구조적 리스크(고변동성·밸류에이션 부담·발사 일정 변수 등)를 한 줄로 짚어줄 것
+【씬 0 — 회사 소개 & 간략한 주가 흐름】 (3줄, 한 줄 30자 이내, 핵심만 응축)
+※ 이 씬은 '주가 분석'이 아니라 **회사가 어떤 방향을 추구하는지**를 중심으로 소개한다. 주가는 줄1에서 간단히만 짚고, 변동 원인 심층 분석은 하지 않는다(뉴스 분석은 씬1 담당).
+- 줄1: 위 '오프닝 훅 스타일'로 시작 — 현재 주가와 기간 변동률을 **간결하게** 녹인 한 줄 (간략한 주가 흐름, 30자 이내, 수치 필수). 상세한 변동 원인은 설명하지 말 것
+- 줄2: 이 회사가 **추구하는 방향·비전** 핵심 한 줄 — 무슨 사업으로 어디를 향하는지 ({industry_ko} 산업, 미래 사업/로드맵 {future_tech} 활용, 30자 이내). 주가 얘기는 넣지 말 것
+- 줄3: 회사의 방향·강점 부연 한 줄 — 핵심 제품·기술·시장 내 위치 등 (30자 이내). 주가 얘기는 넣지 말 것
 
 【씬 1 — 핵심 뉴스 3선 (호재·악재·보합)】 (정확히 3줄 — 호재 1줄, 악재 1줄, 보합 1줄)
 ※ 위 "씬1 선정 뉴스(신뢰도 우선)"로 제공된 3건(호재·악재·보합)을 그대로 사용해 각각 자연스러운 구어체 한 문장으로 전한다.
@@ -683,12 +683,11 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 
 === 출력 형식 (반드시 준수) ===
 ※ 핵심 수치·키워드는 *별표*로 감싸 강조한다 (각 줄 최대 1~2개).
-SCENE_0_TITLE: [6자 이내, 친근한 단어 예: "최근동향" "한눈에"]
+SCENE_0_TITLE: [6자 이내, 친근한 단어 예: "회사소개" "어떤회사"]
 SCENE_0:
-[줄1 — 변동률·주가 요약, 핵심 수치 *별표* 강조]
-[줄2 — 변동 원인 핵심, 핵심 *별표* 강조]
-[줄3 — 최대 호재 핵심, 핵심 *별표* 강조]
-[줄4 — 최대 리스크 핵심, 핵심 *별표* 강조]
+[줄1 — 현재 주가·기간 변동률 간결 요약, 핵심 수치 *별표* 강조]
+[줄2 — 회사가 추구하는 방향·비전, 핵심 키워드 *별표* 강조]
+[줄3 — 회사 방향·강점 부연, 핵심 키워드 *별표* 강조]
 
 SCENE_1_TITLE: [6자 이내, 예: "핵심뉴스" "3대뉴스"]
 SCENE_1:
@@ -2295,40 +2294,46 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
         CARD_GAP = 16
         TOTAL_H  = SAFE_BOTTOM - CONTENT_Y   # 약 640px
 
-        # ─ 변동 원인 텍스트 정리 ──────────────────────────────
-        movement_reason = strip_markup(strip_emoji(summary.get("movement_reason") or ""))
-        if not movement_reason and len(news_lines) >= 2:
-            movement_reason = strip_markup(strip_emoji(news_lines[1]))
-        # 서두 상용구 제거("…원인은 다음과 같습니다." 등) — 핵심만 남겨 카드에 맞춤
-        movement_reason = re.sub(r'^.*?(?:원인|이유|배경)[은는이가]?\s*다음과\s*같습니다[.:]?\s*',
-                                 '', movement_reason).strip()
+        # ─ 회사가 추구하는 방향: 씬0은 '주가 분석'이 아니라 회사 방향 소개 중심(사용자 요청).
+        #   간략한 주가 흐름은 상단 헤더(현재가·변동률)·전일 스트립이 담당하고,
+        #   본문 카드는 대본 줄2~(회사 방향·비전)를 보여준다 ─
+        dir_lines = [strip_markup(strip_emoji(l)).strip()
+                     for l in news_lines[1:] if strip_markup(strip_emoji(l)).strip()]
+        if not dir_lines:
+            dir_lines = [f"{COMPANY_KO}는 {INDUSTRY_KO} 분야의 성장을 추구하고 있어요" if INDUSTRY_KO
+                         else f"{COMPANY_KO}의 사업 방향을 살펴볼게요"]
 
-        # ─ 변동 원인 카드: 본문 영역 전체 사용 — 호재/악재 프레임은 씬1(핵심 뉴스 3선)과
-        #   중복이라 제거(v1.0.34), 변동 원인이 넉넉한 높이로 잘림 없이 표시된다 ─
-        REASON_Y = CONTENT_Y
-        REASON_H = TOTAL_H
+        CARD_Y = CONTENT_Y
+        CARD_H = TOTAL_H
 
         # ─ 반투명 카드 배경 레이어(씬1과 동일한 비침 효과) ─
         from PIL import Image as PILImage
         CARD_ALPHA = 190
         _layer = PILImage.new("RGBA", (W, H), (0, 0, 0, 0))
         _ld = ImageDraw.Draw(_layer)
-        _ld.rounded_rectangle([PAD, REASON_Y, PAD + FC_W, REASON_Y + REASON_H], radius=14, fill=CARD_BG + (CARD_ALPHA,))
+        _ld.rounded_rectangle([PAD, CARD_Y, PAD + FC_W, CARD_Y + CARD_H], radius=14, fill=CARD_BG + (CARD_ALPHA,))
         img = PILImage.alpha_composite(img.convert("RGBA"), _layer).convert("RGB")
         draw = ImageDraw.Draw(img)
 
-        draw.rounded_rectangle([PAD, REASON_Y, PAD + FC_W, REASON_Y + REASON_H],
+        draw.rounded_rectangle([PAD, CARD_Y, PAD + FC_W, CARD_Y + CARD_H],
                                radius=14, outline=accent, width=3)
-        draw.text((PAD + 20, REASON_Y + 14), "최근 변동 원인", font=f_sm, fill=accent, anchor="lt")
-        if movement_reason:
-            # 단독 카드가 되면서 본문을 공통 크기 42px(f_nm, 줄간 52)로 승격 — 여전히 넘치면 …
-            fit = max(1, (REASON_H - 66 - 12) // 52)
-            ky = REASON_Y + 66
-            for wl in wrap_ellipsis(draw, movement_reason, f_nm, FC_W - 40, fit):
-                bb = draw.textbbox((0, 0), wl, font=f_nm)
-                draw.text(((W - (bb[2] - bb[0])) // 2, ky), wl,
-                          font=f_nm, fill=WHITE, stroke_width=1, stroke_fill=STROKE)
-                ky += 52
+        draw.text((PAD + 20, CARD_Y + 14), "회사가 추구하는 방향", font=f_sm, fill=accent, anchor="lt")
+
+        # 본문: 방향 줄들을 공통 42px(f_nm, 줄간 58)로 렌더, 폭 초과 시 랩(넘치면 …), 세로 중앙 정렬
+        LINE_H = 58
+        avail = max(1, (CARD_H - 66 - 16) // LINE_H)
+        wrapped = []
+        for dl in dir_lines:
+            for wl in wrap_ellipsis(draw, dl, f_nm, FC_W - 40, 3):
+                wrapped.append(wl)
+        wrapped = wrapped[:avail]
+        block_h = len(wrapped) * LINE_H
+        ky = CARD_Y + 66 + max(0, (CARD_H - 66 - 16 - block_h) // 2)
+        for wl in wrapped:
+            bb = draw.textbbox((0, 0), wl, font=f_nm)
+            draw.text(((W - (bb[2] - bb[0])) // 2, ky), wl,
+                      font=f_nm, fill=WHITE, stroke_width=1, stroke_fill=STROKE)
+            ky += LINE_H
 
     # (씬 1은 위 "핵심 뉴스 3선" 커스텀 블록에서 처리하고 조기 return)
 

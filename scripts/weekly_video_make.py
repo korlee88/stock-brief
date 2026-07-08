@@ -141,16 +141,14 @@ def build_scene_tts_segments(idx: int, lines: list) -> list:
         return []
 
     if idx == 0:
-        # 주간 브리핑 — 4줄(헤드라인·원인·호재·리스크) + 친근한 연결
-        head    = cleaned[0] if cleaned else ""
-        reason  = cleaned[1] if len(cleaned) > 1 else ""
-        bull    = cleaned[2] if len(cleaned) > 2 else ""
-        bear    = cleaned[3] if len(cleaned) > 3 else ""
+        # 회사 소개 & 간략한 주가 흐름 — 줄1(간략한 주가 흐름) + 줄2~(회사가 추구하는 방향)
+        head    = cleaned[0] if cleaned else ""       # 간략한 주가 흐름
+        dir1    = cleaned[1] if len(cleaned) > 1 else ""   # 회사 방향·비전
+        dir2    = cleaned[2] if len(cleaned) > 2 else ""   # 방향·강점 부연
         segments = []
-        if head:   segments.append(head)
-        if reason: segments.append("왜 이렇게 움직였는지 같이 볼까요? " + reason)
-        if bull:   segments.append("좋은 소식도 있어요. " + bull)
-        if bear:   segments.append("다만 이런 점은 살짝 걱정되는 부분이죠. " + bear)
+        if head: segments.append(head)
+        if dir1: segments.append("이 회사가 그리는 방향은 이래요. " + dir1)
+        if dir2: segments.append(dir2)
 
     elif idx == 1:
         # 핵심 뉴스 3선 — 호재/악재/보합 각 줄("호재:/악재:/보합:" 접두어)에 다정한 브리지를 붙여 narration
