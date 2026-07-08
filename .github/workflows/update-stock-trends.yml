@@ -1,0 +1,39 @@
+name: 구글 관심 주식 순위 갱신
+
+# on-demand.html 우측 '구글 관심 주식 TOP 30' 패널의 데이터(data/stock-trends.json)를 갱신.
+# 페이지의 [리셋] 버튼이 이 워크플로를 workflow_dispatch로 호출한다 —
+# 사용자 요청: 리셋을 누를 때만 순위를 검색해서 기록 (자동 스케줄 없음).
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-stock-trends:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node 20 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 구글 관심 주식 순위 조사 (Gemini + Google Search)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/build_stock_trends.js
+
+      - name: 커밋·푸시
+        run: |
+          if git diff --quiet -- data/stock-trends.json; then
+            echo "변경 없음 — 커밋 생략"
+          else
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/stock-trends.json
+            git commit -m "chore: 구글 관심 주식 순위 기록 ($(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M') KST)"
+            git push
+          fi

@@ -14,8 +14,12 @@
   body {
     background: var(--bg); color: var(--text); min-height: 100vh;
     font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-    padding: 16px 14px 48px; max-width: 560px; margin: 0 auto;
+    padding: 16px 14px 48px; max-width: 1020px; margin: 0 auto;
   }
+  /* 2컬럼: 좌 = 기존 리모컨(560), 우 = 관심 주식 순위(400). 좁으면 세로 스택 */
+  .cols { display: flex; gap: 22px; align-items: flex-start; justify-content: center; flex-wrap: wrap; }
+  .col-main { flex: 1 1 480px; max-width: 560px; min-width: 300px; }
+  .col-side { flex: 1 1 340px; max-width: 400px; min-width: 300px; }
   header { text-align: center; padding: 18px 0 6px; }
   header h1 { font-size: 21px; letter-spacing: -0.5px; }
   header h1 .dot { color: var(--accent); }
@@ -92,6 +96,22 @@
   .kr-item code { font-size: 13px; color: var(--accent2); background: none; }
   .kr-empty { font-size: 12.5px; color: var(--dim); padding: 6px 2px; }
 
+  /* ── 구글 관심 주식 TOP 30 (우측 패널) ── */
+  .trend-list { margin-top: 10px; display: flex; flex-direction: column; gap: 4px; max-height: 62vh; overflow-y: auto; }
+  .trend-row {
+    padding: 7px 9px 8px; border-radius: 10px; cursor: pointer;
+  }
+  .trend-row:hover { background: var(--card2); }
+  .trend-top { display: flex; align-items: baseline; gap: 8px; }
+  .trend-rank { width: 24px; flex: none; text-align: right; font-size: 12.5px; color: var(--dim); font-variant-numeric: tabular-nums; }
+  .trend-rank.top3 { color: var(--accent2); font-weight: 800; }
+  .trend-name { font-size: 14px; font-weight: 700; }
+  .trend-mkt { font-size: 10.5px; color: var(--dim); }
+  .trend-tk { margin-left: auto; font-size: 11.5px; color: var(--accent2); font-family: monospace; }
+  .trend-bar { height: 6px; border-radius: 0 4px 4px 0; background: rgba(124,140,248,0.75); margin: 5px 0 0 32px; }
+  .trend-bar-track { background: var(--card2); border-radius: 4px; margin: 5px 0 0 32px; }
+  .trend-bar-track .trend-bar { margin: 0; }
+
   .toast {
     position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%);
     background: var(--card2); border: 1px solid var(--border); color: var(--text);
@@ -106,6 +126,8 @@
   <p>티커를 입력하면 GitHub Actions가 뉴스 분석 → 영상 제작 → 메일 발송</p>
 </header>
 
+<div class="cols">
+<div class="col-main">
 <div class="tabs">
   <button id="tabGen" class="on" onclick="showTab('gen')">영상 생성</button>
   <button id="tabHist" onclick="showTab('hist')">생성 이력</button>
@@ -172,6 +194,20 @@
 <div id="pageHist" style="display:none">
   <div id="histList"><p class="empty">불러오는 중…</p></div>
 </div>
+</div><!-- /.col-main -->
+
+<!-- ══ 우측: 구글 관심 주식 TOP 30 ══════════════════════════════ -->
+<aside class="col-side">
+  <div class="card">
+    <h2>🔥 구글 관심 주식 TOP 30</h2>
+    <p class="hint" id="trendMeta">불러오는 중…</p>
+    <div id="trendList" class="trend-list"></div>
+    <button class="btn ghost" id="trendResetBtn" onclick="resetTrends()">🔄 리셋 — 순위 다시 조사·기록</button>
+    <p class="hint">리셋을 누를 때만 새로 조사해 기록합니다 (Gemini·구글 검색 동향 기반 AI 추정 순위, 완료까지 1~3분).
+    종목을 누르면 티커 칸에 자동 입력됩니다.</p>
+  </div>
+</aside>
+</div><!-- /.cols -->
 
 <div class="toast" id="toast"></div>
 <footer>실행 엔진: GitHub Actions · on-demand-video.yml<br>결과는 메일 첨부(18MB 이하) 또는 Actions 아티팩트로 전달됩니다</footer>
@@ -438,7 +474,110 @@ function pickCode(code) {
   document.getElementById('ticker').scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
+// ── 구글 관심 주식 TOP 30 (data/stock-trends.json — 리셋 버튼으로만 갱신·기록) ──
+const TRENDS_FILE = 'data/stock-trends.json';
+const TRENDS_WORKFLOW = 'update-stock-trends.yml';
+let _trendsGeneratedAt = null;
+let _trendPollTimer = null;
+const _esc = s => String(s).replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+
+async function fetchTrendsJson() {
+  // GitHub contents API 우선(커밋 직후에도 신선) → 실패 시 raw CDN 폴백
+  await ensureBranch();
+  try {
+    const j = await ghContents(TRENDS_FILE);
+    const txt = new TextDecoder().decode(
+      Uint8Array.from(atob((j.content || '').replace(/\n/g, '')), c => c.charCodeAt(0)));
+    return JSON.parse(txt);
+  } catch (e) {
+    const r = await fetch(`${RAW}/${TRENDS_FILE}?t=${Date.now()}`, { cache: 'no-cache' });
+    if (!r.ok) throw r.status;
+    return r.json();
+  }
+}
+function renderTrends(data) {
+  const meta = document.getElementById('trendMeta');
+  const list = document.getElementById('trendList');
+  const items = (data && data.items) || [];
+  if (!items.length) {
+    meta.textContent = '아직 기록된 순위가 없어요 — 아래 리셋을 눌러 첫 순위를 조사해 보세요.';
+    list.innerHTML = '';
+    return;
+  }
+  const dt = data.generated_at ? new Date(data.generated_at) : null;
+  meta.textContent = dt
+    ? `기준: ${dt.toLocaleString('ko-KR', { timeZone: 'Asia/Seoul', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })} KST · ${data.source || ''}`
+    : (data.source || '');
+  const max = Math.max(...items.map(i => i.score || 0), 1);
+  list.innerHTML = items.map(it => `
+    <div class="trend-row" ${it.ticker ? `onclick="pickCode('${_esc(it.ticker)}')"` : ''}>
+      <div class="trend-top">
+        <span class="trend-rank${it.rank <= 3 ? ' top3' : ''}">${it.rank}</span>
+        <span class="trend-name">${_esc(it.name_ko)}</span>
+        <span class="trend-mkt">${_esc(it.market || '')}</span>
+        ${it.ticker ? `<span class="trend-tk">${_esc(it.ticker)}</span>` : ''}
+      </div>
+      <div class="trend-bar" style="width:calc((100% - 32px) * ${Math.max(0.04, (it.score || 1) / max)})"></div>
+    </div>`).join('');
+}
+async function loadTrends() {
+  try {
+    const data = await fetchTrendsJson();
+    _trendsGeneratedAt = data.generated_at || null;
+    renderTrends(data);
+  } catch (e) {
+    document.getElementById('trendMeta').textContent = '순위 데이터를 불러오지 못했어요 (잠시 후 새로고침)';
+  }
+}
+async function resetTrends() {
+  if (!localStorage.getItem(LS_KEY)) { toast('아래 연결 설정에서 GitHub 토큰을 먼저 저장해 주세요'); return; }
+  const btn = document.getElementById('trendResetBtn');
+  btn.disabled = true; btn.textContent = '🔄 조사 요청 중…';
+  try {
+    await ensureBranch();
+    const res = await fetch(`${API}/actions/workflows/${TRENDS_WORKFLOW}/dispatches`, {
+      method: 'POST',
+      headers: { ...ghHeaders(true), 'Content-Type': 'application/json' },
+      body: JSON.stringify({ ref: BRANCH }),
+    });
+    if (res.status !== 204) {
+      const e = await res.json().catch(() => ({}));
+      toast('조사 실행 실패: ' + (e.message || `HTTP ${res.status}`));
+      btn.disabled = false; btn.textContent = '🔄 리셋 — 순위 다시 조사·기록';
+      return;
+    }
+    toast('순위 조사를 시작했어요 — 완료까지 1~3분');
+    btn.textContent = '⏳ 조사 중… (1~3분)';
+    // 완료 폴링: generated_at 이 바뀌면 새 순위 렌더
+    const before = _trendsGeneratedAt;
+    let tries = 0;
+    clearInterval(_trendPollTimer);
+    _trendPollTimer = setInterval(async () => {
+      tries++;
+      try {
+        const data = await fetchTrendsJson();
+        if (data.generated_at && data.generated_at !== before) {
+          clearInterval(_trendPollTimer);
+          _trendsGeneratedAt = data.generated_at;
+          renderTrends(data);
+          toast('새 순위가 기록됐어요');
+          btn.disabled = false; btn.textContent = '🔄 리셋 — 순위 다시 조사·기록';
+        }
+      } catch (e) { /* 다음 폴링 */ }
+      if (tries > 30) {   // ~10분 초과 시 폴링 중단
+        clearInterval(_trendPollTimer);
+        btn.disabled = false; btn.textContent = '🔄 리셋 — 순위 다시 조사·기록';
+        toast('아직 완료되지 않았어요 — 잠시 후 새로고침해 주세요');
+      }
+    }, 20000);
+  } catch (err) {
+    toast('네트워크 오류: ' + err.message);
+    btn.disabled = false; btn.textContent = '🔄 리셋 — 순위 다시 조사·기록';
+  }
+}
+
 // ── 초기화 ────────────────────────────────────────────────────
+loadTrends();   // 기록된 순위 표시(조사는 리셋 버튼으로만)
 for (const key of Object.keys(CODE_SETS)) {
   const cfg = CODE_SETS[key];
   document.getElementById(cfg.input).addEventListener('input', e => renderCodes(key, e.target.value));

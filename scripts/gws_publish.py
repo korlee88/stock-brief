@@ -75,8 +75,9 @@ def load_meta(report_dir: Path) -> dict:
 
 
 def find_video(report_dir: Path) -> Path | None:
-    """영상 파일 탐색 — 신규 {TICKER}_YYYYMMDD.mp4 우선, 구 video.mp4 폴백."""
-    cands = sorted(report_dir.glob(f"{TICKER}_*.mp4"))
+    """영상 파일 탐색 — {종목명}_YYYYMMDD.mp4(한글, v1.2) / {TICKER}_*.mp4(구) 모두 매칭,
+    구 video.mp4 폴백. 이름 규칙이 바뀌어도 리포트 디렉토리의 최신 mp4를 집는다."""
+    cands = sorted(p for p in report_dir.glob("*.mp4") if p.name != "video.mp4")
     if cands:
         return cands[-1]
     legacy = report_dir / "video.mp4"
