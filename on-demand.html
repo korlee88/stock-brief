@@ -15,12 +15,12 @@
   body {
     background: var(--bg); color: var(--text); min-height: 100vh;
     font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-    padding: 16px 14px 48px; max-width: 1020px; margin: 0 auto;
+    padding: 16px 14px 48px; max-width: 1400px; margin: 0 auto;
   }
-  /* 2컬럼: 좌 = 기존 리모컨(560), 우 = 관심 주식 순위(400). 좁으면 세로 스택 */
-  .cols { display: flex; gap: 22px; align-items: flex-start; justify-content: center; flex-wrap: wrap; }
+  /* 3컬럼: 좌 = 리모컨(560) · 중 = 관심 주식 순위 · 우 = 최근 생성 영상. 좁으면 순서대로 세로 스택 */
+  .cols { display: flex; gap: 20px; align-items: flex-start; justify-content: center; flex-wrap: wrap; }
   .col-main { flex: 1 1 480px; max-width: 560px; min-width: 300px; }
-  .col-side { flex: 1 1 340px; max-width: 400px; min-width: 300px; }
+  .col-side { flex: 1 1 320px; max-width: 380px; min-width: 300px; }
   header { text-align: center; padding: 18px 0 6px; }
   header h1 { font-size: 21px; letter-spacing: -0.5px; }
   header h1 .dot { color: var(--accent); }
@@ -241,8 +241,10 @@
     <p class="hint">종목을 누르면 티커 칸에 자동 입력됩니다. 순위 갱신(리셋)은 <b>관리자 탭</b>에서 —
     구글 검색 동향 기반 AI 추정 순위입니다.</p>
   </div>
+</aside>
 
-  <!-- 최근 생성 영상 — 메일과 동일한 씬 미리보기 + YouTube 업로드용 제목·설명 -->
+<!-- ══ 3열: 최근 생성 영상 — 메일과 동일한 씬 미리보기 + YouTube 업로드용 제목·설명 ══ -->
+<aside class="col-side">
   <div class="card" id="lastVideoCard">
     <h2>🎬 최근 생성 영상</h2>
     <p class="hint" id="lvMeta">불러오는 중…</p>
