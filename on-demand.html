@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>온디맨드 종목 영상 리모컨</title>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 <style>
   :root {
     --bg: #0e1117; --card: #161b26; --card2: #1c2333; --border: #2a3247;
@@ -131,6 +132,7 @@
 <div class="tabs">
   <button id="tabGen" class="on" onclick="showTab('gen')">영상 생성</button>
   <button id="tabHist" onclick="showTab('hist')">생성 이력</button>
+  <button id="tabAdmin" onclick="showTab('admin')">관리자</button>
 </div>
 
 <!-- ══ 탭 1: 영상 생성 ══════════════════════════════════════════ -->
@@ -166,33 +168,59 @@
     <div class="st-link" id="stLink"></div>
   </div>
 
-  <div class="card" id="patCard">
-    <h2>연결 설정 (GitHub 토큰)</h2>
-    <div id="patSaved" style="display:none">
-      <p class="hint">✅ 토큰이 이 브라우저에 저장되어 있습니다 (localStorage — 저장소·서버로 전송되지 않음).</p>
-      <button class="btn ghost" onclick="clearPat()">토큰 삭제 / 재입력</button>
-    </div>
-    <div id="patForm">
-      <label for="pat">Personal Access Token (fine-grained)</label>
-      <input type="password" id="pat" placeholder="github_pat_..." autocomplete="off">
-      <button class="btn ghost" onclick="savePat()">토큰 저장</button>
-      <details>
-        <summary>토큰 발급 방법 (1분)</summary>
-        <ol class="hint">
-          <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank">GitHub → 새 Fine-grained 토큰</a> 열기</li>
-          <li>Repository access → <b>Only select repositories</b> → 이 저장소 선택</li>
-          <li>Permissions → Repository permissions → <b>Actions: Read and write</b> (저장소가 비공개면 <b>Contents: Read-only</b>도 추가)</li>
-          <li>Generate 후 <code>github_pat_...</code> 값을 여기 붙여넣기</li>
-        </ol>
-        <p class="hint">⚠ 토큰은 절대 저장소 파일·코드에 넣지 마세요. 이 페이지는 브라우저 localStorage에만 보관합니다.</p>
-      </details>
-    </div>
-  </div>
 </div>
 
 <!-- ══ 탭 2: 생성 이력 ══════════════════════════════════════════ -->
 <div id="pageHist" style="display:none">
   <div id="histList"><p class="empty">불러오는 중…</p></div>
+</div>
+
+<!-- ══ 탭 3: 관리자 (구글 로그인으로만 활성화) ══════════════════ -->
+<div id="pageAdmin" style="display:none">
+  <div class="card" id="adminLocked">
+    <h2>🔐 관리자 로그인</h2>
+    <p class="hint">관리 기능(GitHub 토큰 설정 · 관심 주식 순위 리셋)은 <b>허용된 구글 계정</b>으로 로그인해야 열립니다.
+    실행 권한 자체는 이 브라우저에만 저장되는 GitHub 토큰이 지키므로, 다른 방문자는 로그인 없이는 관리 화면을 볼 수 없고 토큰 없이는 아무것도 실행할 수 없습니다.</p>
+    <div id="gsiBtn" style="margin-top:14px"></div>
+    <p class="hint" id="gsiHint"></p>
+  </div>
+
+  <div id="adminPanel" style="display:none">
+    <div class="card">
+      <h2>👤 관리자 모드</h2>
+      <p class="hint" id="adminWho"></p>
+      <button class="btn ghost" onclick="adminLogout()">로그아웃 (관리 화면 잠금)</button>
+    </div>
+
+    <div class="card" id="patCard">
+      <h2>연결 설정 (GitHub 토큰)</h2>
+      <div id="patSaved" style="display:none">
+        <p class="hint">✅ 토큰이 이 브라우저에 저장되어 있습니다 (localStorage — 저장소·서버로 전송되지 않음).</p>
+        <button class="btn ghost" onclick="clearPat()">토큰 삭제 / 재입력</button>
+      </div>
+      <div id="patForm">
+        <label for="pat">Personal Access Token (fine-grained)</label>
+        <input type="password" id="pat" placeholder="github_pat_..." autocomplete="off">
+        <button class="btn ghost" onclick="savePat()">토큰 저장</button>
+        <details>
+          <summary>토큰 발급 방법 (1분)</summary>
+          <ol class="hint">
+            <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank">GitHub → 새 Fine-grained 토큰</a> 열기</li>
+            <li>Repository access → <b>Only select repositories</b> → 이 저장소 선택</li>
+            <li>Permissions → Repository permissions → <b>Actions: Read and write</b> (저장소가 비공개면 <b>Contents: Read-only</b>도 추가)</li>
+            <li>Generate 후 <code>github_pat_...</code> 값을 여기 붙여넣기</li>
+          </ol>
+          <p class="hint">⚠ 토큰은 절대 저장소 파일·코드에 넣지 마세요. 이 페이지는 브라우저 localStorage에만 보관합니다.</p>
+        </details>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🔥 관심 주식 순위 관리</h2>
+      <button class="btn ghost" id="trendResetBtn" onclick="resetTrends()">🔄 리셋 — 순위 다시 조사·기록</button>
+      <p class="hint">리셋을 누를 때만 새로 조사해 기록합니다 (Gemini·구글 검색 동향 기반, 완료까지 1~3분). 결과는 우측 패널에 표시됩니다.</p>
+    </div>
+  </div>
 </div>
 </div><!-- /.col-main -->
 
@@ -202,9 +230,8 @@
     <h2>🔥 구글 관심 주식 TOP 30</h2>
     <p class="hint" id="trendMeta">불러오는 중…</p>
     <div id="trendList" class="trend-list"></div>
-    <button class="btn ghost" id="trendResetBtn" onclick="resetTrends()">🔄 리셋 — 순위 다시 조사·기록</button>
-    <p class="hint">리셋을 누를 때만 새로 조사해 기록합니다 (Gemini·구글 검색 동향 기반 AI 추정 순위, 완료까지 1~3분).
-    종목을 누르면 티커 칸에 자동 입력됩니다.</p>
+    <p class="hint">종목을 누르면 티커 칸에 자동 입력됩니다. 순위 갱신(리셋)은 <b>관리자 탭</b>에서 —
+    구글 검색 동향 기반 AI 추정 순위입니다.</p>
   </div>
 </aside>
 </div><!-- /.cols -->
@@ -256,11 +283,82 @@ function ghHeaders(withAuth) {
   return h;
 }
 function showTab(t) {
-  document.getElementById('pageGen').style.display  = t === 'gen'  ? 'block' : 'none';
-  document.getElementById('pageHist').style.display = t === 'hist' ? 'block' : 'none';
-  document.getElementById('tabGen').className  = t === 'gen'  ? 'on' : '';
-  document.getElementById('tabHist').className = t === 'hist' ? 'on' : '';
+  document.getElementById('pageGen').style.display   = t === 'gen'   ? 'block' : 'none';
+  document.getElementById('pageHist').style.display  = t === 'hist'  ? 'block' : 'none';
+  document.getElementById('pageAdmin').style.display = t === 'admin' ? 'block' : 'none';
+  document.getElementById('tabGen').className   = t === 'gen'   ? 'on' : '';
+  document.getElementById('tabHist').className  = t === 'hist'  ? 'on' : '';
+  document.getElementById('tabAdmin').className = t === 'admin' ? 'on' : '';
   if (t === 'hist') loadHistory();
+  if (t === 'admin') { refreshAdminUI(); initGsi(); }
+}
+
+// ── 관리자 모드 (구글 로그인으로만 활성화 — 허용 계정 화이트리스트) ──
+// 정적 페이지라 서버 검증은 없지만: ① 관리 UI(토큰 설정·리셋)는 허용된 구글 계정
+// 로그인 전엔 렌더되지 않고 ② 실행 권한은 어차피 이 브라우저에만 저장되는 GitHub
+// 토큰이 지킨다(저장소에 커밋 안 됨) — 방문자는 보지도, 실행하지도 못한다.
+const GOOGLE_CLIENT_ID = '';   // Google Cloud OAuth 클라이언트 ID (공개돼도 안전 — 아래 발급 안내 참고)
+const ADMIN_EMAILS = ['sinlee01@gmail.com'];   // 관리자 허용 구글 계정
+const ADMIN_SS_KEY = 'od_admin_' + REPO;
+let _gsiInited = false;
+
+function adminSession() {
+  try {
+    const s = JSON.parse(sessionStorage.getItem(ADMIN_SS_KEY));
+    return (s && s.exp > Date.now() / 1000) ? s : null;
+  } catch (e) { return null; }
+}
+function refreshAdminUI() {
+  const s = adminSession();
+  document.getElementById('adminLocked').style.display = s ? 'none' : 'block';
+  document.getElementById('adminPanel').style.display  = s ? 'block' : 'none';
+  if (s) document.getElementById('adminWho').textContent =
+    `${s.email} 계정으로 로그인됨 — 이 브라우저 탭이 닫히면 자동 잠금됩니다.`;
+}
+function initGsi() {
+  const hint = document.getElementById('gsiHint');
+  if (!GOOGLE_CLIENT_ID) {
+    hint.innerHTML = `⚠ 구글 로그인 클라이언트 ID가 아직 설정되지 않았습니다.<br>
+      ① <a href="https://console.cloud.google.com/apis/credentials" target="_blank">Google Cloud Console → 사용자 인증 정보</a>에서
+      <b>OAuth 클라이언트 ID(웹 애플리케이션)</b> 생성<br>
+      ② 승인된 자바스크립트 원본에 <code>https://${location.hostname}</code> 추가<br>
+      ③ 발급된 클라이언트 ID를 이 파일(on-demand.html)의 <code>GOOGLE_CLIENT_ID</code> 상수에 넣어 커밋<br>
+      (클라이언트 ID는 공개용 식별자라 저장소에 커밋해도 안전합니다)`;
+    return;
+  }
+  if (_gsiInited) return;
+  if (!(window.google && google.accounts && google.accounts.id)) {
+    setTimeout(initGsi, 400);   // GIS 스크립트 로드 대기
+    return;
+  }
+  google.accounts.id.initialize({ client_id: GOOGLE_CLIENT_ID, callback: onGsiCredential });
+  google.accounts.id.renderButton(document.getElementById('gsiBtn'),
+    { theme: 'filled_black', size: 'large', text: 'signin_with', width: 280 });
+  _gsiInited = true;
+}
+function onGsiCredential(resp) {
+  try {
+    const b64 = resp.credential.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+    const p = JSON.parse(new TextDecoder().decode(
+      Uint8Array.from(atob(b64), c => c.charCodeAt(0))));
+    const email = (p.email || '').toLowerCase();
+    if (!p.email_verified || !ADMIN_EMAILS.includes(email)) {
+      toast(`허용되지 않은 계정입니다 (${email || '이메일 확인 불가'})`);
+      return;
+    }
+    sessionStorage.setItem(ADMIN_SS_KEY, JSON.stringify({
+      email, exp: p.exp || Math.floor(Date.now() / 1000) + 3600,
+    }));
+    refreshAdminUI();
+    toast('관리자 모드가 활성화됐습니다');
+  } catch (e) {
+    toast('로그인 처리 실패: ' + e.message);
+  }
+}
+function adminLogout() {
+  sessionStorage.removeItem(ADMIN_SS_KEY);
+  refreshAdminUI();
+  toast('관리 화면을 잠갔습니다');
 }
 
 // ── PAT 관리 (localStorage 전용 — 하드코딩·전송 금지) ─────────
@@ -284,7 +382,7 @@ function clearPat() {
 async function dispatchRun() {
   const raw = document.getElementById('ticker').value.trim().toUpperCase();
   if (!/^[A-Z0-9.\-]{1,10}$/.test(raw)) return toast('올바른 티커 형식이 아닙니다 (예: TSLA, 005930.KS)');
-  if (!localStorage.getItem(LS_KEY)) { toast('아래 연결 설정에서 GitHub 토큰을 먼저 저장해 주세요'); return; }
+  if (!localStorage.getItem(LS_KEY)) { toast('관리자 탭에서 구글 로그인 후 GitHub 토큰을 먼저 저장해 주세요'); return; }
 
   const btn = document.getElementById('goBtn');
   btn.disabled = true; btn.textContent = '요청 중…';
@@ -530,7 +628,7 @@ async function loadTrends() {
   }
 }
 async function resetTrends() {
-  if (!localStorage.getItem(LS_KEY)) { toast('아래 연결 설정에서 GitHub 토큰을 먼저 저장해 주세요'); return; }
+  if (!localStorage.getItem(LS_KEY)) { toast('관리자 탭에서 구글 로그인 후 GitHub 토큰을 먼저 저장해 주세요'); return; }
   const btn = document.getElementById('trendResetBtn');
   btn.disabled = true; btn.textContent = '🔄 조사 요청 중…';
   try {
