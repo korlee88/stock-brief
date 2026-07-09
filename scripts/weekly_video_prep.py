@@ -313,12 +313,15 @@ def summarize(sessions):
         is_recent = 1 if _days_ago(n.get("date", "")) <= RECENT_NEWS_DAYS else 0
         sc = -n.get("score", 0) if neg else n.get("score", 0)
         return (cred, is_today, is_recent, sc)
-    # 씬1 3카드는 신선도 3일 창이 너무 좁아(신뢰 호재가 바로 밖으로 밀림) 10일 창으로 넓혀
-    # 신뢰 출처를 우선 확보한다. 단 창을 벗어난 옛 기사로 폴백하지 않는다 — 창 내에 없으면 None을
-    # 반환해 렌더가 "최근 뚜렷한 OO 없음"으로 정직하게 처리(옛 2025년 악재가 끌려오던 문제 방지).
+    # 씬1 3카드는 신선도 3일 창이 너무 좁아(신뢰 호재가 바로 밀림) 10일 창으로 넓혀
+    # 신뢰 출처를 우선 확보한다. 창 내에 없으면 — 소형주 뉴스 가뭄으로 본문이 비는 것보다는
+    # 수집된 것 중 가장 최근·신뢰 기사로 폴백한다(사용자 요청). 옛 기사가 최신처럼 보이지 않게
+    # 렌더가 3일 초과 기사에 날짜 배지를 표시하므로 시점 오인은 없다.
     SCENE1_WINDOW_DAYS = 10
     def _pick_cred(full, neg=False):
         pool = [n for n in full if _days_ago(n.get("date", "")) <= SCENE1_WINDOW_DAYS]
+        if not pool:
+            pool = list(full)   # 창 밖 폴백 — 날짜 배지로 시점 명시됨
         if not pool:
             return None
         return sorted(pool, key=lambda n: _cred_first_key(n, neg), reverse=True)[0]
@@ -711,6 +714,7 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 - 줄3: "보합: ..." — 제공된 보합(중립) 뉴스를 한 문장으로 (40~55자, 수치 포함). 보합이 "없음"이면 "보합: 최근 뚜렷한 중립 이슈는 없었어요"
 
 【씬 2 — 다음주 전망 (클로징)】 (6줄, 다음주 예측 중심·수치 의무 — 간결하고 "딱 잘라지는" 헤드라인 어투)
+※ 데이터가 없어도 "이벤트 부재"·"예측 데이터 없이"·"자료 없음" 같은 **결핍 고백 문구 금지** — 대신 실적 발표월({industry_ko} 산업 일정), 제품·기술 로드맵, 경쟁 구도 등 아는 사실로 관전 포인트를 채운다.
 ※ 마지막 씬. 줄1~5는 신문 헤드라인처럼 **짧고 단호하게 끊어** 쓴다 — "~예요/~니다/~돼요/~해요/~져요" 같은 긴 서술 어미를 쓰지 말고 **체언(명사)·명사형("전망/예상/관측/관건/변수/주목")으로 딱 잘라** 맺는다. 단 구체 수치·이름·근거는 그대로 넣어 알차게(줄당 30~45자, 화면 2줄까지). 줄6(마무리)만 예외로 따뜻하게.
 - 줄1: 다음주 핵심 일정·이벤트 1건 — next_events 활용, 날짜/이름 명시 (예: "7월 2일 2분기 실적 발표 — 최대 분수령")
 - 줄2: 그 이벤트 관전 포인트 — 수치·근거 (예: "매출 컨센서스 *1억 3천만 달러* 상회가 관건")
@@ -2237,10 +2241,28 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
 
         # ③ 호재/악재/보합 3카드 — summarize()가 신뢰도 우선으로 뽑은 scene1_news 사용
         s1 = summary.get("scene1_news", {}) or {}
+        # 뉴스 슬롯이 비면 대본 줄로 카드를 채운다 — 대본은 뉴스가 없어도 재무·로드맵 등으로
+        # 알차게 작성되므로(씬1 스펙) 나레이션-화면이 일치하고 '없어요' placeholder 노출이 줄어든다.
+        _prefix_slot = {"호재": "bullish", "악재": "bearish", "보합": "neutral",
+                        "중립": "neutral", "전망": "neutral"}
+        script_fill = {}
+        for _ln in lines:
+            _m = re.match(r'^\s*(호재|악재|보합|중립|전망)\s*[:：]\s*(.+)$',
+                          strip_markup(strip_emoji(_ln)))
+            if _m:
+                _slot, _txt = _prefix_slot[_m.group(1)], _m.group(2).strip()
+                if _slot not in script_fill and len(_txt) >= 12 and not _txt.startswith("최근 뚜렷한"):
+                    script_fill[_slot] = _txt
+        def _slot_news(key):
+            n = s1.get(key)
+            if n:
+                return n
+            t = script_fill.get(key)
+            return {"title": t, "reason": "", "source": ""} if t else None
         CARDS = [
-            ("▲ 호재", GREEN, CARD_GREEN, s1.get("bullish"), "최근 뚜렷한 호재가 없어요"),
-            ("▼ 악재", RED,   CARD_RED,   s1.get("bearish"), "최근 뚜렷한 악재가 없어요"),
-            ("◆ 보합", AMBER, CARD_AMBER, s1.get("neutral"), "최근 뚜렷한 보합 뉴스가 없어요"),
+            ("▲ 호재", GREEN, CARD_GREEN, _slot_news("bullish"), "최근 뚜렷한 호재가 없어요"),
+            ("▼ 악재", RED,   CARD_RED,   _slot_news("bearish"), "최근 뚜렷한 악재가 없어요"),
+            ("◆ 보합", AMBER, CARD_AMBER, _slot_news("neutral"), "최근 뚜렷한 보합 뉴스가 없어요"),
         ]
         c_top = PHOTO_Y + 8
         c_gap = 20
@@ -2274,19 +2296,28 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
             if news:
                 src  = news.get("source", "")
                 cred = source_credibility_tag(src)
-                src_disp = (f"{src} · {cred}" if cred else src)[:34]
+                # 3일 초과 기사엔 날짜 배지 — 옛 기사(뉴스 가뭄 폴백)가 최신처럼 보이지 않게
+                date_tag = ""
+                try:
+                    from datetime import datetime as _dt
+                    _nd = _dt.strptime(str(news.get("date", ""))[:10], "%Y-%m-%d")
+                    if (_dt.now() - _nd).days > 3:
+                        date_tag = f"{_nd.month}/{_nd.day} 기사"
+                except (ValueError, TypeError):
+                    pass
+                src_disp = " · ".join(p for p in [date_tag, src, cred] if p)[:34]
                 if src_disp:
                     draw.text((cx + cw - 20, cy + 30), src_disp, font=f_xs,
                               fill=(190, 198, 216), anchor="rm")
                 title = strip_markup(strip_emoji(news.get("title", "")))
                 title = re.sub(r'^(로켓랩|Rocket\s*Lab)[,\s·]*', '', title).strip()
+                detail = strip_markup(strip_emoji(news.get("reason", "")))
                 ty = cy + 84
-                # 헤드라인 최대 2줄(넘으면 …)
-                for wl in wrap_ellipsis(draw, title, f_nm, cw - 44, 2):
+                # 헤드라인 최대 2줄(넘으면 …) — 디테일 없는 대본 폴백 카드는 3줄까지 허용
+                for wl in wrap_ellipsis(draw, title, f_nm, cw - 44, 2 if detail else 3):
                     draw.text((cx + 22, ty), wl, font=f_nm, fill=WHITE,
                               stroke_width=1, stroke_fill=STROKE)
                     ty += bh_b + 12
-                detail = strip_markup(strip_emoji(news.get("reason", "")))
                 ty += 6
                 # 디테일 줄 수를 카드 잔여 높이로 동적 계산(큰 카드면 더 많이, 넘으면 마지막 줄 …)
                 avail = (cy + ch - 14) - ty
