@@ -89,6 +89,9 @@ async function fetchLatestPrice() {
 }
 
 async function collectAndAnalyze(newsDays) {
+  // newsDays = null → 기간 무제한 '가장 최근 뉴스' 모드 (소형주 뉴스 가뭄 보강 —
+  // 몇 주~몇 달 전 기사라도 가장 최근 것을 수집, 기사 날짜를 정확히 기재해 화면에 시점 표시)
+  const recentMode = newsDays == null;
   const today = new Date().toISOString().split('T')[0];
   const keyPeople = (cfg.key_people || []).join(' and ');
   // 매체 화이트리스트: 한국 종목은 한국 주요 경제지·통신사가 주 취재원 (미국 매체만 허용하면 사실상 0건)
@@ -105,7 +108,9 @@ async function collectAndAnalyze(newsDays) {
       parts: [{ text:
 `[필수 규칙] title·summary·reasoning은 반드시 한국어(Korean)로 작성. source·category만 영어 유지.
 
-Search for the latest ${searchName}${keyPeople ? ` and ${keyPeople}` : ''} news from the past ${newsDays} days that could impact ${TICKER} stock.${
+Search for the latest ${searchName}${keyPeople ? ` and ${keyPeople}` : ''} news ${recentMode
+  ? `— the MOST RECENT articles you can find about this company with NO date restriction (they may be weeks or even months old; that is OK). Always include each article's accurate publication date`
+  : `from the past ${newsDays} days`} that could impact ${TICKER} stock.${
   IS_KR ? `\nThis is a South Korean listed company — search in KOREAN (e.g. "${cfg.company_ko} 주가", "${cfg.company_ko} 뉴스") as well as English.` : ''}
 Only include articles from major financial/tech news outlets (${outlets} 등).
 Return ONLY a JSON array of the 8~10 most market-impactful items, strictly no duplicates, each from a different event.
@@ -142,8 +147,27 @@ async function main() {
       console.warn(`   ⚠ 최근 ${days}일 뉴스 0건 — 검색 기간을 확대해 재시도합니다`);
     }
   }
-  if (!Array.isArray(items) || items.length === 0) {
-    console.error(`❌ 최근 ${NEWS_WINDOWS[NEWS_WINDOWS.length - 1]}일까지 넓혀도 뉴스 0건 — 영상 생성 중단`);
+  // 소형주 뉴스 가뭄 보강: 14일까지 넓혀도 3건 미만이면 기간 무제한 '가장 최근 뉴스'로
+  // 추가 수집(제목 기준 중복 제거) — 본문이 빈약해지는 것을 막는다. 기사 날짜는 씬1 카드에 표시됨.
+  const MIN_ITEMS = 3;
+  if (!Array.isArray(items)) items = [];
+  if (items.length < MIN_ITEMS) {
+    console.log(`📰 뉴스 ${items.length}건뿐 — 기간 무제한 '가장 최근 뉴스' 보강 검색...`);
+    try {
+      const extra = await collectAndAnalyze(null);
+      const seenTitles = new Set(items.map(it => (it.title || '').trim()));
+      for (const it of (extra || [])) {
+        const t = (it.title || '').trim();
+        if (t && !seenTitles.has(t)) { seenTitles.add(t); items.push(it); }
+      }
+      console.log(`   ℹ 보강 후 총 ${items.length}건`);
+    } catch (e) {
+      console.warn(`   ⚠ 보강 검색 실패(수집분으로 계속): ${e.message}`);
+    }
+    items = items.map((it, i) => ({ ...it, id: i + 1 }));   // 병합분 id 충돌 방지(재부여)
+  }
+  if (items.length === 0) {
+    console.error('❌ 기간 무제한 검색까지 해도 뉴스 0건 — 영상 생성 중단');
     console.error('   (뉴스 기반 브리핑이라 소재가 없으면 영상을 만들 수 없어요. 뉴스가 생긴 뒤 다시 시도해 주세요.)');
     process.exit(1);
   }

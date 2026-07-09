@@ -164,10 +164,12 @@ def build_scene_tts_segments(idx: int, lines: list) -> list:
             "호재": "먼저 좋은 소식이에요. ",
             "악재": "반대로 짚어볼 점은요. ",
             "보합": "끝으로 중립적인 소식이에요. ",
+            "중립": "끝으로 중립적인 소식이에요. ",
+            "전망": "끝으로 지켜볼 흐름이에요. ",   # AI가 보합 대신 쓰는 접두어 드리프트 대응
         }
         segments = []
         for ln in cleaned:
-            m = _re.match(r'^\s*(호재|악재|보합)\s*[:：]\s*(.*)$', ln)
+            m = _re.match(r'^\s*(호재|악재|보합|중립|전망)\s*[:：]\s*(.*)$', ln)
             if m:
                 key, body = m.group(1), m.group(2).strip()
                 segments.append((bridges.get(key, "") + body).strip() if body else "")
