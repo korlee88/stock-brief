@@ -2113,7 +2113,9 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
         # ── 3개 메시지 카드 (관전 포인트·가격 전망·마무리) ─────────────
         # news_lines: [0]=핵심일정(헤더로 승격), [1]=→관전포인트, [2]=가격예측, [3]=→흐름부연, [4]=변수, [5]=마무리
         def _nl(i, fallback):
-            return strip_emoji(news_lines[i]) if len(news_lines) > i else fallback
+            t = strip_emoji(news_lines[i]) if len(news_lines) > i else fallback
+            # 카드 라벨과 중복되는 서두 제거 ("관전 포인트 — ..." → "...") — 라벨이 이미 표기됨
+            return re.sub(r'^\s*(관전\s?포인트|가격\s?전망|마무리)\s*[—\-:·]*\s*', '', t).strip() or t
 
         # 카드별 (label, lines[], col, bgcol, hl_col, max_body_lines)
         # hl_col: 본문 *강조* 색 — 카드마다 다른 색으로 포인트 구분 (금색/라이트시안/라이트그린)
@@ -2251,7 +2253,9 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
                           strip_markup(strip_emoji(_ln)))
             if _m:
                 _slot, _txt = _prefix_slot[_m.group(1)], _m.group(2).strip()
-                if _slot not in script_fill and len(_txt) >= 12 and not _txt.startswith("최근 뚜렷한"):
+                # placeholder성 문장("최근/이번 주 뚜렷한 OO는 없었어요")은 카드에 채우지 않음
+                _is_placeholder = re.search(r'뚜렷한.{0,14}(없었|없어|없네)', _txt)
+                if _slot not in script_fill and len(_txt) >= 12 and not _is_placeholder:
                     script_fill[_slot] = _txt
         def _slot_news(key):
             n = s1.get(key)
@@ -2345,6 +2349,10 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
         # 부제: 현재 주가 + 전일 변동 + 윈도우(2일) 누적 변동률 — 기준 시점을 명시해 오독 방지
         price = summary.get("latest_price")
         wc    = summary.get("week_change_pct")
+        # 온디맨드(단일 세션)는 윈도우 시작=끝이라 누적 변동률이 항상 0.0% —
+        # 급락일에 "2일 ▲+0.0%"처럼 오해를 부르므로 표시하지 않는다
+        if summary.get("week_start") == summary.get("week_end"):
+            wc = None
         price_s = fmt_price(price)
         # 전일 변동률: Yahoo 일봉(확정 종가) 우선, 실패 시 세션 스냅숏(today_change_pct) 폴백
         pd_pct = (summary.get("prev_day") or {}).get("change_pct")
