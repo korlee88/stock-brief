@@ -1,0 +1,11 @@
+# 091440.KQ 주간 배경 이미지 프롬프트 — 2026-07-09
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A cinematic 16:9 landscape view of Tokyo Tower and Shibuya skyline at night, seamlessly blended with a sleek futuristic data center humming with advanced optical transmission equipment, glowing fiber optic cables weaving through the scene, holographic displays of quantum-encrypted data streams floating in the air, microscopic views of next-generation semiconductor materials like HBM and OLED display films layered subtly, futuristic global city night skyline with deep purple and violet tech analytics ambiance, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A dynamic 16:9 landscape depicting a futuristic aerospace launch scene fused with a sleek data center powered by advanced optical transmission equipment, glowing fiber optic cables radiating vivid green light, holographic displays of quantum-encrypted data streams surrounding rockets ascending into orbit, satellites in low-earth orbit, cosmic infrastructure blending with microscopic views of HBM and OLED semiconductor films, vivid green growth bullish energy, dynamic upward trajectory, glowing motion lines, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A vertical 9:16 visionary portrait of a futuristic Tokyo smart city skyline bathed in golden sunlight, integrated with a sleek data center humming with advanced optical transmission equipment, glowing fiber optic cables threading through skyscrapers, holographic quantum-encrypted data streams cascading down buildings, microscopic imagery of next-generation semiconductor materials like HBM and OLED display films woven into the atmosphere, dreamlike future city landscape, golden inspirational future mood, radiant sunlight, starlight sparkles, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

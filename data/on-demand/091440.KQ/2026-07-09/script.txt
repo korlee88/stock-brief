@@ -1,0 +1,31 @@
+SCENE_0_TITLE: 어떤회사
+
+SCENE_0:
+현재 *2,380원*, 전일比 *-4.42%*네요
+*양자암호통신* 사업화에 속도 내고 있어요
+*한울반도체 지분 80억* 취득했거든요
+*하이브리드 양자보안* 기술이 핵심이죠
+*광전송장비* 백본망 강자예요
+
+SCENE_1_TITLE: 핵심뉴스
+
+SCENE_1:
+호재: 한울소재과학, *KISTI 하이브리드 양자보안* 기술 확보로 경쟁력 커졌어요
+악재: 뚜렷한 악재는 없지만 *EPS -1,056원* 실적은 지켜봐야죠
+전망: *QKD-PQC 결합* 광전송 로드맵 조용히 이어가고 있어요
+
+SCENE_2_TITLE: 다음주전망
+
+SCENE_2:
+이벤트 부재, *양자암호 광전송 상용화* 속도가 관건이에요
+실적 우려 속, 핵심은 *POTN·HBM 소재* 로드맵이에요
+예측 데이터 없이 *2,380원 박스권* 흐름 예상돼요
+전일 *-4.42%* 하락 후 반등 여부 주목돼요
+변수: *단기 급등 밸류에이션* 부담·투자심리 위축이에요
+함께해 주셔서 감사해요!
+
+IMAGE_PROMPT_0: A cinematic 16:9 landscape view of Tokyo Tower and Shibuya skyline at night, seamlessly blended with a sleek futuristic data center humming with advanced optical transmission equipment, glowing fiber optic cables weaving through the scene, holographic displays of quantum-encrypted data streams floating in the air, microscopic views of next-generation semiconductor materials like HBM and OLED display films layered subtly, futuristic global city night skyline with deep purple and violet tech analytics ambiance, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic 16:9 landscape depicting a futuristic aerospace launch scene fused with a sleek data center powered by advanced optical transmission equipment, glowing fiber optic cables radiating vivid green light, holographic displays of quantum-encrypted data streams surrounding rockets ascending into orbit, satellites in low-earth orbit, cosmic infrastructure blending with microscopic views of HBM and OLED semiconductor films, vivid green growth bullish energy, dynamic upward trajectory, glowing motion lines, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A vertical 9:16 visionary portrait of a futuristic Tokyo smart city skyline bathed in golden sunlight, integrated with a sleek data center humming with advanced optical transmission equipment, glowing fiber optic cables threading through skyscrapers, holographic quantum-encrypted data streams cascading down buildings, microscopic imagery of next-generation semiconductor materials like HBM and OLED display films woven into the atmosphere, dreamlike future city landscape, golden inspirational future mood, radiant sunlight, starlight sparkles, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

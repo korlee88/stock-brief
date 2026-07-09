@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-07-09",
+  "generated_by": "Claude Opus 4",
+  "title": "현재 *2,380원*, 전일比 *-4.42%*네요",
+  "subtitle": "2026-07-09 ~ 2026-07-09 · 한울소재과학, KISTI 하이브리드 양자보안 기술 확보",
+  "summary": {
+    "week_start": "2026-07-09",
+    "week_end": "2026-07-09",
+    "session_count": 1,
+    "total_analyzed": 1,
+    "bullish_count": 1,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 2380,
+    "price_end": 2380,
+    "latest_price": 2380,
+    "today_price": 2380,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "한울소재과학, KISTI 하이브리드 양자보안 기술 확보",
+      "score": 4,
+      "reason": "양자암호통신은 미래 성장성이 높은 분야이며, 핵심 기술 확보를 통해 한울소재과학의 시장 경쟁력이 강화될 것으로 예상되어 주가에 긍정적인 영향을 미칠 것이다.",
+      "source": "데일리한국",
+      "date": "2026-07-01",
+      "category": "Product",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "한울소재과학, KISTI 하이브리드 양자보안 기술 확보",
+        "score": 4,
+        "reason": "양자암호통신은 미래 성장성이 높은 분야이며, 핵심 기술 확보를 통해 한울소재과학의 시장 경쟁력이 강화될 것으로 예상되어 주가에 긍정적인 영향을 미칠 것이다.",
+        "source": "데일리한국",
+        "date": "2026-07-01",
+        "category": "Product"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [],
+    "neutral_count": 0,
+    "scene1_news": {
+      "bullish": {
+        "title": "한울소재과학, KISTI 하이브리드 양자보안 기술 확보",
+        "score": 4,
+        "reason": "양자암호통신은 미래 성장성이 높은 분야이며, 핵심 기술 확보를 통해 한울소재과학의 시장 경쟁력이 강화될 것으로 예상되어 주가에 긍정적인 영향을 미칠 것이다.",
+        "source": "데일리한국",
+        "date": "2026-07-01",
+        "category": "Product"
+      },
+      "bearish": null,
+      "neutral": null
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-07-09",
+        2380
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-07-09",
+    "today_news": [],
+    "prev_day": {
+      "date": "2026-07-08",
+      "open": 2495.0,
+      "close": 2380.0,
+      "change_pct": -4.42
+    },
+    "movement_reason": "2026년 7월 9일 한울소재과학(091440.KQ)의 주가 하락에 대한 주요 원인은 다음과 같이 분석될 수 있습니다.\n\n*   시장 투자심리 악화\n*   차익 실현 매물\n*   실적 부진 우려\n\n7월 9일 현재 한울소재과학의 주가는 2,490원으로 전일 대비 1.58% 하락한 상태를 보이고 있습니다. 이는 시장 전반의 투자 심리 위축과 최근 주가 상승에 따른 투자자들의 차익 실현 매물이 출회되었을 가능성을 시사합니다. 또한, 회사의 주당순이익(EPS)이 -1,056원으로 나타나는 등 지속적인 실적 부진에 대한 우려가 주가 하락에 영향을 미쳤을 수 있습니다.",
+    "company_direction": "한울소재과학(091440.KQ)의 주요 사업 방향은 다음과 같습니다.\n\n*   **① 회사의 비전·전략 방향**: 반도체 소재 사업 영역 확장 / 차세대 POTN 상용화 추진 / 양자암호통신 사업화 가속\n*   **② 최근 1년 내 주요 투자·설비·인수**: 한울반도체 지분 80억 취득 / KISTI 양자보안 기술 확보\n*   **③ 핵심 신제품·신기술 로드맵**: 하이브리드 양자보안 기술 개발 / QKD-PQC 결합 보안성 강화 / 실시간 양자키 최적 경로 기술\n*   **④ 시장 내 위치·점유율**: 광전송장비 전문기업 / 통신사업자 및 공공시장 공급 / 백본망 시장 집중"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "현재 *2,380원*, 전일比 *-4.42%*네요",
+        "*양자암호통신* 사업화에 속도 내고 있어요",
+        "*한울반도체 지분 80억* 취득했거든요",
+        "*하이브리드 양자보안* 기술이 핵심이죠",
+        "*광전송장비* 백본망 강자예요"
+      ],
+      "body": "현재 *2,380원*, 전일比 *-4.42%*네요\n*양자암호통신* 사업화에 속도 내고 있어요\n*한울반도체 지분 80억* 취득했거든요\n*하이브리드 양자보안* 기술이 핵심이죠\n*광전송장비* 백본망 강자예요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: 한울소재과학, *KISTI 하이브리드 양자보안* 기술 확보로 경쟁력 커졌어요",
+        "악재: 뚜렷한 악재는 없지만 *EPS -1,056원* 실적은 지켜봐야죠",
+        "전망: *QKD-PQC 결합* 광전송 로드맵 조용히 이어가고 있어요"
+      ],
+      "body": "호재: 한울소재과학, *KISTI 하이브리드 양자보안* 기술 확보로 경쟁력 커졌어요\n악재: 뚜렷한 악재는 없지만 *EPS -1,056원* 실적은 지켜봐야죠\n전망: *QKD-PQC 결합* 광전송 로드맵 조용히 이어가고 있어요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "이벤트 부재, *양자암호 광전송 상용화* 속도가 관건이에요",
+        "실적 우려 속, 핵심은 *POTN·HBM 소재* 로드맵이에요",
+        "예측 데이터 없이 *2,380원 박스권* 흐름 예상돼요",
+        "전일 *-4.42%* 하락 후 반등 여부 주목돼요",
+        "변수: *단기 급등 밸류에이션* 부담·투자심리 위축이에요",
+        "함께해 주셔서 감사해요!"
+      ],
+      "body": "이벤트 부재, *양자암호 광전송 상용화* 속도가 관건이에요\n실적 우려 속, 핵심은 *POTN·HBM 소재* 로드맵이에요\n예측 데이터 없이 *2,380원 박스권* 흐름 예상돼요\n전일 *-4.42%* 하락 후 반등 여부 주목돼요\n변수: *단기 급등 밸류에이션* 부담·투자심리 위축이에요\n함께해 주셔서 감사해요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A cinematic 16:9 landscape view of Tokyo Tower and Shibuya skyline at night, seamlessly blended with a sleek futuristic data center humming with advanced optical transmission equipment, glowing fiber optic cables weaving through the scene, holographic displays of quantum-encrypted data streams floating in the air, microscopic views of next-generation semiconductor materials like HBM and OLED display films layered subtly, futuristic global city night skyline with deep purple and violet tech analytics ambiance, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic 16:9 landscape depicting a futuristic aerospace launch scene fused with a sleek data center powered by advanced optical transmission equipment, glowing fiber optic cables radiating vivid green light, holographic displays of quantum-encrypted data streams surrounding rockets ascending into orbit, satellites in low-earth orbit, cosmic infrastructure blending with microscopic views of HBM and OLED semiconductor films, vivid green growth bullish energy, dynamic upward trajectory, glowing motion lines, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A vertical 9:16 visionary portrait of a futuristic Tokyo smart city skyline bathed in golden sunlight, integrated with a sleek data center humming with advanced optical transmission equipment, glowing fiber optic cables threading through skyscrapers, holographic quantum-encrypted data streams cascading down buildings, microscopic imagery of next-generation semiconductor materials like HBM and OLED display films woven into the atmosphere, dreamlike future city landscape, golden inspirational future mood, radiant sunlight, starlight sparkles, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

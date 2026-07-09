@@ -1,0 +1,33 @@
+{
+  "ticker": "091440.KQ",
+  "company_en": "Hanwool Materials Science Inc.",
+  "company_ko": "한울소재과학",
+  "industry_ko": "통신 및 방송 장비 제조업, 반도체 소재",
+  "exchange": "KOSDAQ",
+  "image_future_tech_en": "A sleek, futuristic data center humming with advanced optical transmission equipment, featuring glowing fiber optic cables and holographic displays of quantum-encrypted data streams, alongside microscopic views of next-generation semiconductor materials like HBM and OLED display films.",
+  "brand_label": "091440.KQ BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "056360.KQ",
+  "key_people": [
+    "신규철",
+    "임세혁"
+  ],
+  "google_trends_keywords": [
+    "한울소재과학",
+    "091440 주가",
+    "한울소재과학 반도체",
+    "한울소재과학 양자암호",
+    "한울소재과학 광통신"
+  ],
+  "video_tags": [
+    "한울소재과학",
+    "Hanwool Materials Science",
+    "091440.KQ",
+    "광통신",
+    "반도체 소재",
+    "양자암호통신"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-07-09T00:18:03.873Z"
+}
