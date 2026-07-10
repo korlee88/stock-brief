@@ -393,9 +393,11 @@ async function loadLastVideo() {
   try {
     const d = await fetchRepoJson('data/on-demand/latest.json');
     meta.textContent = `${d.company_ko}(${d.ticker}) · ${d.date} 생성`;
-    document.getElementById('lvScenes').innerHTML = (d.scenes || []).map(s =>
-      `<a href="${RAW}/${s}" target="_blank"><img loading="lazy" src="${RAW}/${s}"
-         onerror="this.parentElement.style.display='none'"></a>`).join('');
+    document.getElementById('lvScenes').innerHTML = (d.scenes || []).map(s => {
+      const u = `${RAW}/${s.split('/').map(encodeURIComponent).join('/')}`;   // 한글 파일명 인코딩
+      return `<a href="${u}" target="_blank"><img loading="lazy" src="${u}"
+         onerror="this.parentElement.style.display='none'"></a>`;
+    }).join('');
     document.getElementById('lvTitle').textContent = d.youtube_title || '';
     document.getElementById('lvDesc').textContent = d.youtube_description || '';
     document.getElementById('lvCopy').style.display =
@@ -524,6 +526,16 @@ async function loadHistory() {
       const dates = (await ghContents(`data/on-demand/${t.name}`))
         .filter(x => x.type === 'dir').map(x => x.name).sort().reverse();
       const latest = dates[0];
+      // 씬 이미지 파일명이 {YYMMDD}_{회사명}_씬N.png 로 바뀌어(구 scene_NN.png 병존)
+      // 하드코딩 대신 디렉토리의 실제 png 목록을 읽는다
+      let scenePngs = [];
+      if (latest) {
+        try {
+          scenePngs = (await ghContents(`data/on-demand/${t.name}/${latest}`))
+            .filter(x => x.type === 'file' && /(_씬\d|scene_\d\d)\.png$/i.test(x.name))
+            .map(x => x.name).sort().slice(0, 3);
+        } catch (e) { /* 목록 실패 시 미리보기만 생략 */ }
+      }
       const el = document.createElement('div');
       el.className = 'tk';
       el.innerHTML = `
@@ -532,8 +544,8 @@ async function loadHistory() {
         </div>
         <div class="tk-body">${latest ? `
           <div class="scenes">
-            ${[0,1,2].map(i => `<a href="${RAW}/data/on-demand/${t.name}/${latest}/scene_0${i}.png" target="_blank">
-              <img loading="lazy" src="${RAW}/data/on-demand/${t.name}/${latest}/scene_0${i}.png"
+            ${scenePngs.map(n => `<a href="${RAW}/data/on-demand/${t.name}/${latest}/${encodeURIComponent(n)}" target="_blank">
+              <img loading="lazy" src="${RAW}/data/on-demand/${t.name}/${latest}/${encodeURIComponent(n)}"
                    onerror="this.parentElement.style.display='none'"></a>`).join('')}
           </div>
           <p class="hint">영상 파일은 메일 첨부 또는

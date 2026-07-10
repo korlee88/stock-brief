@@ -34,6 +34,15 @@ HEADER_BRAND      = COMPANY_KO or BRAND_LABEL
 # 한국거래소(.KS=KOSPI / .KQ=KOSDAQ) 종목은 원화·정수(318,000원), 그 외(미국 등)는 $·2소수점.
 IS_KRW = TICKER.upper().endswith((".KS", ".KQ")) or "korea" in EXCHANGE.lower()
 
+def scene_png_name(idx: int, date_str: str) -> str:
+    """씬 이미지 파일명 — {YYMMDD}_{회사명}_씬{idx}.png (사용자 요청 형식).
+    date_str: 'YYYY-MM-DD' (리포트 디렉토리명). 회사명은 파일명 금지 문자·공백 제거."""
+    import re as _re
+    ymd = date_str.replace("-", "")[2:]   # 2026-07-09 → 260709
+    name = _re.sub(r'[\\/:*?"<>|\s]+', '', COMPANY_KO or TICKER).strip('.')
+    return f"{ymd}_{name or TICKER}_씬{idx}.png"
+
+
 def fmt_price(value, decimals=None):
     """종목 통화에 맞춘 가격 문자열. 한국='318,000원'(정수), 그 외='$318,000.00'.
     값이 비거나 숫자가 아니면 빈 문자열. decimals로 소수점 자릿수 강제 지정 가능(미국만 적용)."""
@@ -474,11 +483,11 @@ def search_company_direction():
         from google import genai
         from google.genai import types
         q = (
-            f"{COMPANY_KO}({TICKER}, {INDUSTRY_KO}) 회사가 추구하는 방향을 조사해줘. "
-            f"우선순위: ① 회사의 비전·전략 방향 ② 최근 1년 내 주요 투자·설비·인수(금액 등 구체 수치) "
-            f"③ 핵심 신제품·신기술 로드맵 ④ 시장 내 위치·점유율. "
-            f"검색 결과 기반 사실만, 각 20자 내외 한국어 구절 3~4개를 '/'로 구분해 한 줄로. "
-            f"예: 'AI 메모리 1위 전략 / 20조 원 파운드리 투자 / HBM4 내년 양산'"
+            f"{COMPANY_KO}({TICKER}, {INDUSTRY_KO}) 회사 소개 자료를 조사해줘. "
+            f"우선순위: ① 주력 사업(무엇을 만들어/무슨 사업으로 매출을 내는지) ② 회사의 비전·전략 방향 "
+            f"③ 최근 1년 내 주요 투자·설비·인수(금액 등 구체 수치) ④ 핵심 신제품·신기술 로드맵 ⑤ 시장 내 위치·점유율. "
+            f"검색 결과 기반 사실만, 각 20자 내외 한국어 구절 4~5개를 '/'로 구분해 한 줄로. "
+            f"예: '메모리 반도체 주력 / AI 메모리 1위 전략 / 20조 원 파운드리 투자 / HBM4 내년 양산'"
         )
         client   = genai.Client(api_key=GEMINI_API_KEY)
         response = client.models.generate_content(
@@ -696,14 +705,15 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 
 === 씬 구성 (총 3씬) ===
 
-【씬 0 — 회사 소개 & 간략한 주가 흐름】 (5줄, 한 줄 30자 이내, 핵심만 응축)
-※ 이 씬은 '주가 분석'이 아니라 **회사가 어떤 방향을 추구하는지**를 알차게 소개한다. 주가는 줄1에서 간단히만 짚고, 변동 원인 심층 분석은 하지 않는다(뉴스 분석은 씬1 담당).
-※ 줄2~5 소재는 아래 '회사 방향·최근 투자 (검색 결과)'를 우선 활용하고, 부족하면 ① 추구하는 방향·비전 ② 최근 투자·설비·인수(구체 금액) ③ 핵심 신제품·기술 로드맵 ④ 시장 내 위치 순으로 아는 사실을 채운다 — 4줄이 전부 비지 않게 반드시 채울 것.
+【씬 0 — 회사 소개 & 간략한 주가 흐름】 (6줄, 한 줄 30자 이내, 핵심만 응축)
+※ 이 씬은 '주가 분석'이 아니라 **어떤 회사인지 소개**하는 씬이다. 주가는 줄1에서 간단히만 짚고, 변동 원인 심층 분석은 하지 않는다(뉴스 분석은 씬1 담당).
+※ 줄2~6 소재는 아래 '회사 방향·최근 투자 (검색 결과)'를 우선 활용하고, 부족하면 ① 주력 사업 ② 추구하는 방향·비전 ③ 최근 투자·설비·인수(구체 금액) ④ 핵심 신제품·기술 로드맵 ⑤ 시장 내 위치 순으로 아는 사실을 채운다 — 5줄이 전부 비지 않게 반드시 채울 것.
 - 줄1: 위 '오프닝 훅 스타일'로 시작 — 현재 주가와 기간 변동률을 **간결하게** 녹인 한 줄 (간략한 주가 흐름, 30자 이내, 수치 필수). 상세한 변동 원인은 설명하지 말 것
-- 줄2: 이 회사가 **추구하는 방향·비전** 핵심 한 줄 — 무슨 사업으로 어디를 향하는지 ({industry_ko} 산업, 30자 이내). 주가 얘기 금지
-- 줄3: **최근 투자·신사업** 한 줄 — 설비 투자·인수·증설 등 구체 수치 포함 (검색 결과 활용, 30자 이내). 주가 얘기 금지
-- 줄4: **핵심 제품·기술** 한 줄 — 대표 제품/기술({future_tech} 참고)과 그 의미 (30자 이내). 주가 얘기 금지
-- 줄5: **시장 내 위치·강점** 한 줄 — 점유율·순위·경쟁 우위 등 (30자 이내). 주가 얘기 금지
+- 줄2: **주력 사업** 한 줄 — 무엇을 만들어/무슨 사업으로 돈을 버는 회사인지 ({industry_ko} 산업, 30자 이내). 주가 얘기 금지
+- 줄3: 이 회사가 **추구하는 방향·비전** 핵심 한 줄 — 어디를 향해 가는지 (30자 이내). 주가 얘기 금지
+- 줄4: **최근 투자·신사업** 한 줄 — 설비 투자·인수·증설 등 구체 수치 포함 (검색 결과 활용, 30자 이내). 주가 얘기 금지
+- 줄5: **핵심 제품·기술** 한 줄 — 대표 제품/기술({future_tech} 참고)과 그 의미 (30자 이내). 주가 얘기 금지
+- 줄6: **시장 내 위치·강점** 한 줄 — 점유율·순위·경쟁 우위 등 (30자 이내). 주가 얘기 금지
 
 【씬 1 — 핵심 뉴스 3선 (호재·악재·보합)】 (정확히 3줄 — 호재 1줄, 악재 1줄, 보합 1줄)
 ※ 위 "씬1 선정 뉴스(신뢰도 우선)"로 제공된 3건(호재·악재·보합)을 그대로 사용해 각각 자연스러운 구어체 한 문장으로 전한다.
@@ -728,10 +738,11 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 SCENE_0_TITLE: [6자 이내, 친근한 단어 예: "회사소개" "어떤회사"]
 SCENE_0:
 [줄1 — 현재 주가·기간 변동률 간결 요약, 핵심 수치 *별표* 강조]
-[줄2 — 회사가 추구하는 방향·비전, 핵심 키워드 *별표* 강조]
-[줄3 — 최근 투자·신사업 (구체 수치), 핵심 *별표* 강조]
-[줄4 — 핵심 제품·기술, 핵심 키워드 *별표* 강조]
-[줄5 — 시장 내 위치·강점, 핵심 키워드 *별표* 강조]
+[줄2 — 주력 사업 (무엇으로 돈 버는 회사인지), 핵심 키워드 *별표* 강조]
+[줄3 — 회사가 추구하는 방향·비전, 핵심 키워드 *별표* 강조]
+[줄4 — 최근 투자·신사업 (구체 수치), 핵심 *별표* 강조]
+[줄5 — 핵심 제품·기술, 핵심 키워드 *별표* 강조]
+[줄6 — 시장 내 위치·강점, 핵심 키워드 *별표* 강조]
 
 SCENE_1_TITLE: [6자 이내, 예: "핵심뉴스" "3대뉴스"]
 SCENE_1:
@@ -1837,19 +1848,20 @@ SOURCE_CREDIBILITY = {
     # 데이터 집계 사이트
     'stock analysis': ('미국·집계', 'low'), 'stockanalysis': ('미국·집계', 'low'),
 }
-CRED_TIER_LABEL = {'high': '신뢰 높음', 'mid': '신뢰 보통', 'low': '신뢰 낮음'}
+CRED_TIER_LABEL = {'high': '신뢰도 높음', 'mid': '신뢰도 중간', 'low': '신뢰도 낮음'}
 
 
 def source_credibility_tag(source: str) -> str:
-    """뉴스 출처 신뢰도 태그 (대시보드 SourceTag와 동일 판정 기준). 미매칭 시 '출처 미확인'.
-    영상 카드 하단 바는 한 줄 폭이 좁아 국적 라벨은 생략하고 신뢰도만 짧게 표기."""
+    """뉴스 출처 신뢰도 태그 (대시보드 SourceTag와 동일 판정 기준).
+    영상 카드 하단 바는 한 줄 폭이 좁아 국적 라벨은 생략하고 신뢰도만 짧게 표기.
+    미매칭 출처는 '출처 미확인' 대신 '신뢰도 낮음'으로 — 낮음/중간/높음 3단 표기(사용자 요청)."""
     if not source:
         return ""
     s = source.lower()
     for k, (_country, tier) in SOURCE_CREDIBILITY.items():
         if k in s:
             return CRED_TIER_LABEL[tier]
-    return "출처 미확인"
+    return CRED_TIER_LABEL['low']
 
 
 _CRED_RANK = {'high': 3, 'mid': 2, 'low': 1}
@@ -2106,7 +2118,9 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
                 head2_sub = f"다음주 예상 {arrow} {sign}{cum:.1f}% · 약 {fmt_price(endp, 0)}"
         except (TypeError, ValueError, IndexError, AttributeError):
             pass
-        head2_sub = head2_sub or "다음주 관전 포인트"
+        # 서브 폴백 "다음주 관전 포인트"는 배지 "다음주 전망"과 중복이라 제거(사용자 요청) —
+        # 예측 데이터가 있을 때만 수치 서브를 표기, 없으면 서브 생략
+        head2_sub = head2_sub or ""
         draw_mbc_header(draw, "다음주 전망", head2, head2_sub, accent,
                         f_brand, f_head_main, f_head_sub)
 
@@ -2436,7 +2450,7 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
 
         draw.rounded_rectangle([PAD, CARD_Y, PAD + FC_W, CARD_Y + CARD_H],
                                radius=14, outline=accent, width=3)
-        draw.text((PAD + 20, CARD_Y + 14), "회사가 추구하는 방향", font=f_sm, fill=accent, anchor="lt")
+        draw.text((PAD + 20, CARD_Y + 14), "어떤 회사인가요?", font=f_sm, fill=accent, anchor="lt")
 
         # 본문: 방향 줄들을 공통 42px(f_nm, 줄간 58)로 렌더, 폭 초과 시 랩(넘치면 …), 세로 중앙 정렬
         LINE_H = 58
@@ -2518,9 +2532,9 @@ def build_images(scenes, summary, out_dir, img_prompts=None):
     for scene in scenes:
         idx  = scene["index"]
         img  = build_scene_image(scene, summary, font_reg, font_bold, bg_paths.get(idx))
-        path = out_dir / f"scene_{idx:02d}.png"
+        path = out_dir / scene_png_name(idx, out_dir.name)   # YYMMDD_회사명_씬N.png
         img.save(path, "PNG")
-        print(f"   ✅ scene_{idx:02d}.png 저장")
+        print(f"   ✅ {path.name} 저장")
 
 # ── 메인 ──────────────────────────────────────────────────────────────────
 
@@ -2654,7 +2668,7 @@ def main():
                 "company_ko": COMPANY_KO,
                 "date": today,
                 "report_dir": f"data/on-demand/{TICKER}/{today}",
-                "scenes": [f"data/on-demand/{TICKER}/{today}/scene_{i:02d}.png" for i in range(3)],
+                "scenes": [f"data/on-demand/{TICKER}/{today}/{scene_png_name(i, today)}" for i in range(3)],
                 "youtube_title": yt_title,
                 "youtube_description": yt_desc,
                 "generated_at": today,
@@ -2669,7 +2683,7 @@ def main():
 
     print(f"\n✅ 완료: {out_dir}/")
     print(f"   📄 script.txt  — 영상 대본 (5씬, 인트로+클로징 포함)")
-    print(f"   🖼 scene_00~04.png — 씬별 배경 카드 이미지 (1080×1920, YouTube Shorts 세로 포맷)")
+    print(f"   🖼 YYMMDD_회사명_씬0~2.png — 씬별 배경 카드 이미지 (1080×1920, YouTube Shorts 세로 포맷)")
 
 
 if __name__ == "__main__":
