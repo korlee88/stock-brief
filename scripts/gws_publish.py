@@ -383,10 +383,11 @@ def send_gmail_digest(report_dir: Path, meta: dict, youtube_url: str | None) -> 
     else:
         subject = f"{TICKER} 뉴스 브리핑 {date}"
 
-    # 씬 이미지 수집 (0~5: 인트로 + 본편 4 + 클로징)
+    # 씬 이미지 수집 — 신규 {YYMMDD}_{회사명}_씬N.png 우선, 구 scene_NN.png 폴백 (과거 리포트 호환)
     scene_paths = []
     for i in range(0, 6):
-        p = report_dir / f"scene_{i:02d}.png"
+        cands = sorted(report_dir.glob(f"*_씬{i}.png"))
+        p = cands[-1] if cands else report_dir / f"scene_{i:02d}.png"
         if p.exists():
             scene_paths.append((i, p))
 
