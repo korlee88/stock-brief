@@ -1,0 +1,29 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+다들 조용하다 했지만, *1,729원*서 반등 중이에요
+*디스플레이·배터리 장비* 만드는 코스닥 회사예요
+*로봇·푸드테크*까지 사업을 넓히고 있죠
+이차전지 장비 생산능력을 *3배로 증설* 중이에요
+접었다 펴는 *폴더블 OLED 장비* 개발을 앞서가요
+*이차전지 캡(뚜껑)* 시장을 먼저 잡은 강자예요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 삼성디스플레이 베트남 공장에 *57.9억* OLED 장비를 공급하기로 했어요
+악재: 4월 *투자경고 종목*에 지정돼 매매거래 정지 예고까지 떴어요
+보합: *5대1 주식병합*으로 주당 가치를 끌어올리려 해요
+
+SCENE_2_TITLE: 전망
+SCENE_2:
+관전 포인트 *3분기 실적* — 폴더블 OLED 장비 매출이 잡히는 시점이에요
+*57.9억 계약*이 언제 매출로 반영되는지가 최대 관건이죠
+전일 *+8.47%* 급등 뒤라 단기 *변동성 확대*가 예상돼요
+*5거래일 중 3일 상승*세지만, 차익 매물이 변수예요
+변수: *투자경고* 후유증과 단기 밸류 부담도 봐야죠
+함께해 주셔서 감사해요
+
+IMAGE_PROMPT_0: A sleek, automated robotic arm precisely assembling advanced foldable display modules, while simultaneously integrating next-generation battery cells into electric vehicle power packs, all within a smart factory environment utilizing quantum computing for optimized production, set against a stunning New York Manhattan skyline at night with the Statue of Liberty silhouette, futuristic global city night skyline in deep purple violet tech analytics tones, glowing city lights bokeh, holographic display panels floating in the air, cinematic depth of field, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic aerospace-inspired vision showing a sleek automated robotic arm precisely assembling advanced foldable display modules while integrating next-generation battery cells into electric vehicle power packs within a smart quantum-optimized factory, combined with rocket launches, orbiting satellites and futuristic space infrastructure in the background, vivid green bullish growth energy, dynamic upward trajectory lines, glowing motion streaks, radiant emerald and lime accents, cinematic lighting, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A visionary future Seoul smart city skyline at golden hour, featuring a sleek automated robotic arm precisely assembling advanced foldable display modules while simultaneously integrating next-generation battery cells into electric vehicle power packs within a quantum-computing smart factory, symbolic display panels, battery cells and robotic silhouettes floating above the city, inspirational golden sunlight, starlight sparkles, warm amber and gold hues, dreamlike futuristic mood, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

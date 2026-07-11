@@ -1,0 +1,187 @@
+{
+  "generated_at": "2026-07-11",
+  "generated_by": "Claude Opus 4",
+  "title": "다들 조용하다 했지만, *1,729원*서 반등 중이에요",
+  "subtitle": "2026-07-11 ~ 2026-07-11 · 파인텍, 삼성디스플레이 베트남과 57억 9천만 원 규모",
+  "summary": {
+    "week_start": "2026-07-11",
+    "week_end": "2026-07-11",
+    "session_count": 1,
+    "total_analyzed": 9,
+    "bullish_count": 4,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 1729,
+    "price_end": 1729,
+    "latest_price": 1729,
+    "today_price": 1729,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "파인텍, 삼성디스플레이 베트남과 57억 9천만 원 규모 OLED 제조장비 공급 계약 체결",
+      "score": 4,
+      "reason": "대규모 OLED 제조장비 공급 계약은 파인텍의 매출 증대와 실적 개선에 긍정적인 영향을 미칠 것으로 예상됩니다. 특히 삼성디스플레이와의 계약은 안정적인 사업 기반을 강화하는 요인입니다.",
+      "source": "톱스타뉴스, 이데일리, 한국경제, 디지털투데이",
+      "date": "2026-06-25",
+      "category": "Contract",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "파인텍, 삼성디스플레이 베트남과 57억 9천만 원 규모 OLED 제조장비 공급 계약 체결",
+        "score": 4,
+        "reason": "대규모 OLED 제조장비 공급 계약은 파인텍의 매출 증대와 실적 개선에 긍정적인 영향을 미칠 것으로 예상됩니다. 특히 삼성디스플레이와의 계약은 안정적인 사업 기반을 강화하는 요인입니다.",
+        "source": "톱스타뉴스, 이데일리, 한국경제, 디지털투데이",
+        "date": "2026-06-25",
+        "category": "Contract"
+      },
+      {
+        "title": "파인텍, 강원일 대표·임원진 자사주 매입…\"주주가치 제고\"",
+        "score": 3,
+        "reason": "경영진의 자사주 매입은 회사 성장에 대한 자신감을 보여주며, 주주가치 제고 의지를 표명하는 것으로 투자자들에게 긍정적인 신호로 작용할 수 있습니다.",
+        "source": "지디넷코리아",
+        "date": "2026-03-10",
+        "category": "Market"
+      },
+      {
+        "title": "파인텍, 로봇 관련 사업 정관 추가 추진",
+        "score": 2,
+        "reason": "신사업 진출은 회사의 성장 동력을 확보하고 사업 포트폴리오를 다각화하여 미래 성장 가능성을 높이는 긍정적인 요인입니다.",
+        "source": "전자신문, Daum",
+        "date": "2026-03-04",
+        "category": "Product"
+      },
+      {
+        "title": "파인텍, \"조리자동화 로봇 1분기 개발완료 목표\"",
+        "score": 2,
+        "reason": "신규 로봇 사업 진출은 파인텍의 사업 영역을 확장하고 새로운 성장 동력을 확보할 수 있는 기회가 될 수 있습니다.",
+        "source": "지디넷코리아",
+        "date": "2026-03-24",
+        "category": "Product"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "파인텍, 5대1 주식병합 추진…\"기업가치 제고·주가 안정화\"",
+        "score": 0,
+        "reason": "주식병합은 단기적으로 주가에 큰 영향을 미치지 않을 수 있으나, 장기적으로 기업가치 제고와 주가 안정화에 기여하여 투자 심리에 긍정적인 영향을 줄 수 있습니다.",
+        "source": "Daum",
+        "date": "2026-03-04",
+        "category": "Market"
+      },
+      {
+        "title": "파인텍, 공매도 과열종목 연장→공매도 거래 하루 추가 금지",
+        "score": 0,
+        "reason": "공매도 금지는 단기적인 주가 하락을 방어할 수 있지만, 근본적인 기업 가치 변화가 아니므로 중립적인 영향으로 판단됩니다.",
+        "source": "톱스타뉴스",
+        "date": "2026-04-28",
+        "category": "Regulatory"
+      },
+      {
+        "title": "파인텍 액면병합 마치고 22일 거래 재개…장전 시간외매매는 금지",
+        "score": 0,
+        "reason": "액면병합 후 거래 재개는 주가에 직접적인 영향을 미치기보다는 기업의 이미지 개선과 투자자 접근성 향상에 기여할 수 있습니다.",
+        "source": "데이터투자",
+        "date": "2026-05-21",
+        "category": "Market"
+      }
+    ],
+    "neutral_count": 3,
+    "scene1_news": {
+      "bullish": {
+        "title": "파인텍, 삼성디스플레이 베트남과 57억 9천만 원 규모 OLED 제조장비 공급 계약 체결",
+        "score": 4,
+        "reason": "대규모 OLED 제조장비 공급 계약은 파인텍의 매출 증대와 실적 개선에 긍정적인 영향을 미칠 것으로 예상됩니다. 특히 삼성디스플레이와의 계약은 안정적인 사업 기반을 강화하는 요인입니다.",
+        "source": "톱스타뉴스, 이데일리, 한국경제, 디지털투데이",
+        "date": "2026-06-25",
+        "category": "Contract"
+      },
+      "bearish": {
+        "title": "파인텍, 투자경고 종목→매매거래 정지 예고",
+        "score": -2,
+        "reason": "투자경고 종목 지정 및 매매거래 정지 예고는 주가 급등에 대한 시장의 경고로, 단기적인 투자 심리 위축과 주가 하락을 유발할 수 있습니다.",
+        "source": "톱스타뉴스",
+        "date": "2026-04-20",
+        "category": "Regulatory"
+      },
+      "neutral": {
+        "title": "파인텍, 5대1 주식병합 추진…\"기업가치 제고·주가 안정화\"",
+        "score": 0,
+        "reason": "주식병합은 단기적으로 주가에 큰 영향을 미치지 않을 수 있으나, 장기적으로 기업가치 제고와 주가 안정화에 기여하여 투자 심리에 긍정적인 영향을 줄 수 있습니다.",
+        "source": "Daum",
+        "date": "2026-03-04",
+        "category": "Market"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-07-11",
+        1729
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-07-11",
+    "today_news": [],
+    "prev_day": {
+      "date": "2026-07-10",
+      "open": 1649.0,
+      "close": 1729.0,
+      "change_pct": 8.47
+    },
+    "movement_reason": "2026년 7월 11일은 토요일로, 한국 증시는 휴장일입니다. 따라서 해당 일자에는 파인텍(131760.KQ) 주가의 하락이나 변동이 발생하지 않습니다. 주식 거래가 이루어지지 않으므로 주가 변동률은 '없음'으로 표시되는 것이 자연스럽습니다.\n\n요청하신 2026년 7월 11일 파인텍 주가 하락의 주요 원인을 분석하는 것은 시장 휴장으로 인해 불가능합니다.",
+    "company_direction": "파인텍(131760.KQ) 회사 소개 자료입니다.\n\n디스플레이 및 이차전지 장비 부품 제조 / 폴더블 디스플레이 장비 개발 선도 / 이차전지, 센서, 로봇 사업으로 다각화 / 글로벌 일류 기업 도약 목표 / 이차전지 장비 생산 능력 3배 증설 / 삼성디스플레이에 OLED 장비 공급 / 조리 자동화 로봇 개발 및 푸드테크 확장 / 비접촉식 터치 등 신기술 로드맵 / 디스플레이 장비 기술 선도 기업 / 이차전지 캡 어셈블리 시장 초기 선점."
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "다들 조용하다 했지만, *1,729원*서 반등 중이에요",
+        "*디스플레이·배터리 장비* 만드는 코스닥 회사예요",
+        "*로봇·푸드테크*까지 사업을 넓히고 있죠",
+        "이차전지 장비 생산능력을 *3배로 증설* 중이에요",
+        "접었다 펴는 *폴더블 OLED 장비* 개발을 앞서가요",
+        "*이차전지 캡(뚜껑)* 시장을 먼저 잡은 강자예요"
+      ],
+      "body": "다들 조용하다 했지만, *1,729원*서 반등 중이에요\n*디스플레이·배터리 장비* 만드는 코스닥 회사예요\n*로봇·푸드테크*까지 사업을 넓히고 있죠\n이차전지 장비 생산능력을 *3배로 증설* 중이에요\n접었다 펴는 *폴더블 OLED 장비* 개발을 앞서가요\n*이차전지 캡(뚜껑)* 시장을 먼저 잡은 강자예요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: 삼성디스플레이 베트남 공장에 *57.9억* OLED 장비를 공급하기로 했어요",
+        "악재: 4월 *투자경고 종목*에 지정돼 매매거래 정지 예고까지 떴어요",
+        "보합: *5대1 주식병합*으로 주당 가치를 끌어올리려 해요"
+      ],
+      "body": "호재: 삼성디스플레이 베트남 공장에 *57.9억* OLED 장비를 공급하기로 했어요\n악재: 4월 *투자경고 종목*에 지정돼 매매거래 정지 예고까지 떴어요\n보합: *5대1 주식병합*으로 주당 가치를 끌어올리려 해요"
+    },
+    {
+      "index": 2,
+      "title": "전망",
+      "lines": [
+        "관전 포인트 *3분기 실적* — 폴더블 OLED 장비 매출이 잡히는 시점이에요",
+        "*57.9억 계약*이 언제 매출로 반영되는지가 최대 관건이죠",
+        "전일 *+8.47%* 급등 뒤라 단기 *변동성 확대*가 예상돼요",
+        "*5거래일 중 3일 상승*세지만, 차익 매물이 변수예요",
+        "변수: *투자경고* 후유증과 단기 밸류 부담도 봐야죠",
+        "함께해 주셔서 감사해요"
+      ],
+      "body": "관전 포인트 *3분기 실적* — 폴더블 OLED 장비 매출이 잡히는 시점이에요\n*57.9억 계약*이 언제 매출로 반영되는지가 최대 관건이죠\n전일 *+8.47%* 급등 뒤라 단기 *변동성 확대*가 예상돼요\n*5거래일 중 3일 상승*세지만, 차익 매물이 변수예요\n변수: *투자경고* 후유증과 단기 밸류 부담도 봐야죠\n함께해 주셔서 감사해요"
+    }
+  ],
+  "image_prompts": {
+    "0": "A sleek, automated robotic arm precisely assembling advanced foldable display modules, while simultaneously integrating next-generation battery cells into electric vehicle power packs, all within a smart factory environment utilizing quantum computing for optimized production, set against a stunning New York Manhattan skyline at night with the Statue of Liberty silhouette, futuristic global city night skyline in deep purple violet tech analytics tones, glowing city lights bokeh, holographic display panels floating in the air, cinematic depth of field, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic aerospace-inspired vision showing a sleek automated robotic arm precisely assembling advanced foldable display modules while integrating next-generation battery cells into electric vehicle power packs within a smart quantum-optimized factory, combined with rocket launches, orbiting satellites and futuristic space infrastructure in the background, vivid green bullish growth energy, dynamic upward trajectory lines, glowing motion streaks, radiant emerald and lime accents, cinematic lighting, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A visionary future Seoul smart city skyline at golden hour, featuring a sleek automated robotic arm precisely assembling advanced foldable display modules while simultaneously integrating next-generation battery cells into electric vehicle power packs within a quantum-computing smart factory, symbolic display panels, battery cells and robotic silhouettes floating above the city, inspirational golden sunlight, starlight sparkles, warm amber and gold hues, dreamlike futuristic mood, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

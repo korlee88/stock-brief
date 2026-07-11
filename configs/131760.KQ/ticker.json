@@ -1,0 +1,35 @@
+{
+  "ticker": "131760.KQ",
+  "company_en": "Finetek Co., Ltd.",
+  "company_ko": "파인텍",
+  "industry_ko": "디스플레이 부품 및 장비, 이차전지 제조장비, 로봇",
+  "exchange": "KOSDAQ",
+  "image_future_tech_en": "A sleek, automated robotic arm precisely assembling advanced foldable display modules, while simultaneously integrating next-generation battery cells into electric vehicle power packs, all within a smart factory environment utilizing quantum computing for optimized production.",
+  "brand_label": "131760.KQ BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "319660.KQ",
+  "key_people": [
+    "Kang Won-il (강원일)",
+    "Jang Seok-jun (장석준)"
+  ],
+  "google_trends_keywords": [
+    "파인텍",
+    "파인텍 주가",
+    "폴더블 디스플레이 장비",
+    "이차전지 장비",
+    "조리 자동화 로봇",
+    "양자 암호"
+  ],
+  "video_tags": [
+    "Finetek",
+    "파인텍",
+    "디스플레이 장비",
+    "이차전지 장비",
+    "폴더블폰",
+    "로봇",
+    "퀀텀 기술"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-07-11T02:15:04.354Z"
+}
