@@ -1,0 +1,246 @@
+{
+  "generated_at": "2026-07-13",
+  "generated_by": "Claude Opus 4",
+  "title": "역대급 실적에도 *-10.7%* 빠졌어요",
+  "subtitle": "2026-07-13 ~ 2026-07-13 · 삼성전자, 앤트로픽 AI칩 파운드리 수주…테슬라·엔비디",
+  "summary": {
+    "week_start": "2026-07-13",
+    "week_end": "2026-07-13",
+    "session_count": 1,
+    "total_analyzed": 10,
+    "bullish_count": 4,
+    "bearish_count": 1,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 254500,
+    "price_end": 254500,
+    "latest_price": 254500,
+    "today_price": 254500,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "삼성전자, 앤트로픽 AI칩 파운드리 수주…테슬라·엔비디아 이어 연속 낭보",
+      "score": 4,
+      "reason": "앤트로픽 AI칩 파운드리 수주는 삼성전자 파운드리 사업부의 경쟁력 강화와 고객사 다변화를 의미하며, 이는 향후 실적 개선에 크게 기여할 것으로 예상된다. 특히 AI 반도체 시장에서의 입지 강화는 주가에 긍정적인 영향을 미칠 것이다.",
+      "source": "뉴스웍스",
+      "date": "2026-07-13",
+      "category": "Contract",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "삼성전자, 앤트로픽 AI칩 파운드리 수주…테슬라·엔비디아 이어 연속 낭보",
+        "score": 4,
+        "reason": "앤트로픽 AI칩 파운드리 수주는 삼성전자 파운드리 사업부의 경쟁력 강화와 고객사 다변화를 의미하며, 이는 향후 실적 개선에 크게 기여할 것으로 예상된다. 특히 AI 반도체 시장에서의 입지 강화는 주가에 긍정적인 영향을 미칠 것이다.",
+        "source": "뉴스웍스",
+        "date": "2026-07-13",
+        "category": "Contract"
+      },
+      {
+        "title": "법원, 삼성전자 낸드 핵심기술 보호 손 들어줬다…SK하이닉스 이직 제한",
+        "score": 2,
+        "reason": "핵심 기술 유출 방지는 삼성전자의 기술 경쟁력 유지에 매우 중요하며, 이번 법원 판결은 이러한 기술 보호 노력을 강화하는 긍정적인 신호로 해석될 수 있다. 이는 장기적인 기업 가치 유지에 도움이 될 것이다.",
+        "source": "경기신문",
+        "date": "2026-07-13",
+        "category": "Legal"
+      },
+      {
+        "title": "이재용 삼성전자 회장, '선밸리 콘퍼런스' 참석…파운드리 협력 확대 기대",
+        "score": 4,
+        "reason": "이재용 회장의 선밸리 콘퍼런스 참석은 글로벌 빅테크 기업들과의 파운드리 협력 기회를 모색하고 신규 수주를 확대할 가능성을 시사한다. 특히 TSMC의 생산 한계가 부각되는 시점에서 삼성 파운드리의 경쟁력 강화에 긍정적인 영향을 미칠 것으로 예상된다.",
+        "source": "한국경제",
+        "date": "2026-07-11",
+        "category": "Market"
+      },
+      {
+        "title": "삼성전자, 2027년 반도체 공급난 대비 장기 계약 확대 전망…KB증권 목표주가 60만원 제시",
+        "score": 3,
+        "reason": "내년 메모리 공급 부족 심화 전망과 빅테크 기업들의 장기 계약 확대는 삼성전자의 안정적인 매출 확보와 수익성 개선에 긍정적인 영향을 미칠 것이다. 높은 목표주가 제시와 실적 개선 전망은 투자 심리를 개선하여 주가 상승에 기여할 것으로 보인다.",
+        "source": "한국경제",
+        "date": "2026-07-12",
+        "category": "Market"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "삼성전자 초기업노조, 호남 반도체 프로젝트에 '노란봉투법' 근거로 노사정 협의 요구",
+        "score": -2,
+        "reason": "노조가 대규모 투자 프로젝트에 대해 노란봉투법을 근거로 교섭을 요구하는 것은 사업 추진에 불확실성을 더할 수 있다. 이는 투자 계획 지연이나 추가 비용 발생 가능성을 내포하며 주가에 부정적인 영향을 미 미칠 수 있다.",
+        "source": "조선일보",
+        "date": "2026-07-13",
+        "category": "Legal"
+      }
+    ],
+    "top_neutral": [
+      {
+        "title": "삼성전자, 넷리스트 메모리 특허 비침해확인소송 추가 제기",
+        "score": 0,
+        "reason": "특허 분쟁은 기업에게 잠재적인 리스크 요인이지만, 삼성전자가 적극적으로 비침해확인소송을 제기하며 대응하는 것은 일반적인 법적 절차이다. 현재로서는 주가에 미치는 영향이 중립적이며, 장기적인 결과에 따라 변동될 수 있다.",
+        "source": "지디넷코리아",
+        "date": "2026-07-09",
+        "category": "Legal"
+      },
+      {
+        "title": "금융당국, 삼성전자 사내대출 제한…대기업 복지 규제 논란 확산",
+        "score": -1,
+        "reason": "기업의 복지 제도에 대한 금융당국의 개입은 경영 자율성 침해 논란을 야기할 수 있으나, 삼성전자가 이를 수용하여 대출 조건을 조정한 것은 규제 리스크를 완화하려는 노력으로 볼 수 있다. 단기적으로는 중립적인 영향을 미 미치지만, 향후 유사한 규제 확대 가능성은 부정적일 수 있다.",
+        "source": "뉴스핌",
+        "date": "2026-07-10",
+        "category": "Regulatory"
+      },
+      {
+        "title": "엑시콘, 삼성전자와 499억 규모 LT 및 SSD 테스터 공급 계약 체결",
+        "score": 0,
+        "reason": "삼성전자가 엑시콘과 대규모 공급 계약을 체결한 것은 긍정적인 소식이지만, 삼성전자 전체 사업 규모에 비추어 볼 때 주가에 미치는 직접적인 영향은 제한적일 것으로 판단된다. 이는 일반적인 사업 활동의 일환으로 해석된다.",
+        "source": "글로벌이코노믹",
+        "date": "2026-07-10",
+        "category": "Contract"
+      }
+    ],
+    "neutral_count": 3,
+    "scene1_news": {
+      "bullish": {
+        "title": "이재용 삼성전자 회장, '선밸리 콘퍼런스' 참석…파운드리 협력 확대 기대",
+        "score": 4,
+        "reason": "이재용 회장의 선밸리 콘퍼런스 참석은 글로벌 빅테크 기업들과의 파운드리 협력 기회를 모색하고 신규 수주를 확대할 가능성을 시사한다. 특히 TSMC의 생산 한계가 부각되는 시점에서 삼성 파운드리의 경쟁력 강화에 긍정적인 영향을 미칠 것으로 예상된다.",
+        "source": "한국경제",
+        "date": "2026-07-11",
+        "category": "Market"
+      },
+      "bearish": {
+        "title": "삼성전자 초기업노조, 호남 반도체 프로젝트에 '노란봉투법' 근거로 노사정 협의 요구",
+        "score": -2,
+        "reason": "노조가 대규모 투자 프로젝트에 대해 노란봉투법을 근거로 교섭을 요구하는 것은 사업 추진에 불확실성을 더할 수 있다. 이는 투자 계획 지연이나 추가 비용 발생 가능성을 내포하며 주가에 부정적인 영향을 미 미칠 수 있다.",
+        "source": "조선일보",
+        "date": "2026-07-13",
+        "category": "Legal"
+      },
+      "neutral": {
+        "title": "삼성전자, 넷리스트 메모리 특허 비침해확인소송 추가 제기",
+        "score": 0,
+        "reason": "특허 분쟁은 기업에게 잠재적인 리스크 요인이지만, 삼성전자가 적극적으로 비침해확인소송을 제기하며 대응하는 것은 일반적인 법적 절차이다. 현재로서는 주가에 미치는 영향이 중립적이며, 장기적인 결과에 따라 변동될 수 있다.",
+        "source": "지디넷코리아",
+        "date": "2026-07-09",
+        "category": "Legal"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-07-13",
+        254500
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-07-13",
+    "today_news": [
+      {
+        "title": "삼성전자, 앤트로픽 AI칩 파운드리 수주…테슬라·엔비디아 이어 연속 낭보",
+        "category": "Contract",
+        "source": "뉴스웍스",
+        "date": "2026-07-13"
+      },
+      {
+        "title": "법원, 삼성전자 낸드 핵심기술 보호 손 들어줬다…SK하이닉스 이직 제한",
+        "category": "Legal",
+        "source": "경기신문",
+        "date": "2026-07-13"
+      },
+      {
+        "title": "삼성전자 초기업노조, 호남 반도체 프로젝트에 '노란봉투법' 근거로 노사정 협의 요구",
+        "category": "Legal",
+        "source": "조선일보",
+        "date": "2026-07-13"
+      },
+      {
+        "title": "삼성전자, 2027년 반도체 공급난 대비 장기 계약 확대 전망…KB증권 목표주가 60만원 제시",
+        "category": "Market",
+        "source": "한국경제",
+        "date": "2026-07-12"
+      },
+      {
+        "title": "이재용 삼성전자 회장, '선밸리 콘퍼런스' 참석…파운드리 협력 확대 기대",
+        "category": "Market",
+        "source": "한국경제",
+        "date": "2026-07-11"
+      },
+      {
+        "title": "금융당국, 삼성전자 사내대출 제한…대기업 복지 규제 논란 확산",
+        "category": "Regulatory",
+        "source": "뉴스핌",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "엑시콘, 삼성전자와 499억 규모 LT 및 SSD 테스터 공급 계약 체결",
+        "category": "Contract",
+        "source": "글로벌이코노믹",
+        "date": "2026-07-10"
+      },
+      {
+        "title": "삼성전자, 넷리스트 메모리 특허 비침해확인소송 추가 제기",
+        "category": "Legal",
+        "source": "지디넷코리아",
+        "date": "2026-07-09"
+      }
+    ],
+    "prev_day": {
+      "date": "2026-07-13",
+      "open": 285000.0,
+      "close": 254500.0,
+      "change_pct": -10.7
+    },
+    "movement_reason": "2026년 7월 13일 삼성전자(005930.KS) 주가 하락의 주요 원인은 다음과 같습니다.\n\n차익실현 매물 / 반도체 고점 우려 / 시장 기대치 미달.\n\n**주요 원인 분석:**\n*   **차익실현 매물**: 삼성전자가 2026년 2분기 역대급 실적(영업이익 89조 4천억원, 비공식적으로 100조원 이상 추정)을 발표했음에도 불구하고, 투자자들이 호재 소멸로 판단하여 이익을 실현하기 위한 매도세가 강하게 나타났습니다. 이는 '소문에 사고 뉴스에 파는' 전형적인 현상으로 분석됩니다.\n*   **반도체 고점 우려**: 일부 투자은행(IB)들은 반도체 업황의 '피크아웃(정점 후 하락)' 가능성을 제기하며 반도체 중심의 상승장이 마무리되고 있다는 분석을 내놓았습니다. AI 거품론과 같은 시장의 우려도 주가 하락에 영향을 미쳤습니다.\n*   **시장 기대치 미달**: 삼성전자의 실제 실적은 시장 컨센서스(약 85조원)를 상회했으나, 일부 투자자들의 눈높이가 90조원에서 100조원 이상으로 높아져 있었기 때문에, 실적 발표가 이러한 과도한 기대를 충족시키지 못하면서 주가에 부정적인 영향을 주었습니다.",
+    "company_direction": "삼성전자는 메모리 반도체, 시스템 반도체, 파운드리, 스마트폰, TV, 가전, 디스플레이 등 광범위한 전자 산업 분야에서 강력한 영향력을 자랑하는 기업입니다.\n\n① 주력 사업\n메모리 반도체(D램·낸드) 세계 1위 / 시스템 반도체와 파운드리도 주력 / 갤럭시 스마트폰, TV, 가전 매출 견인 / OLED 디스플레이와 전장 사업 확장 중.\n\n② 회사의 비전·전략 방향\nAI(인공지능) 기반 전사적 혁신 전환 추진 / AI 반도체 선도 위한 기술 경쟁력 강화 / 제조 효율 높일 반도체 AI 팩토리 구축 / 로봇, 전장 등 미래 신사업 발굴 지속.\n\n③ 최근 1년 내 주요 투자·설비·인수(금액 등 구체 수치)\n2026년 시설·R&D에 110조 원 이상 투자 / 용인 360조 원 투자, 29년 팹 조기 가동 / 미국 테일러 파운드리 450억 달러 확장 / AI 팩토리 위해 엔비디아 GPU 5만 개 도입.\n\n④ 핵심 신제품·신기술 로드맵\nAI용 HBM4(고대역폭메모리) 등 차세대 메모리 개발 / 2나노 초미세 파운드리 공정 기술 확보 / 갤럭시 AI 스마트폰, AI TV 등 신제품 출시 / 2030년까지 AI 기반 자율 제조 공장 구현.\n\n⑤ 시장 내 위치·점유율\n메모리 반도체 시장 글로벌 1위 유지 / TV 시장 20년 연속 선두 지위 확고 / 스마트폰 시장 선도, AI폰 대중화 견인 / 파운드리 점유율 2027년 20% 목표."
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "역대급 실적에도 *-10.7%* 빠졌어요",
+        "*메모리 반도체* 세계 1위 전자기업이에요",
+        "*AI 반도체* 중심으로 확 바뀌는 중이죠",
+        "용인에 *360조 원* 초대형 반도체 공장 지어요",
+        "*HBM4*로 AI용 메모리 시장 이끌어요",
+        "TV *20년 연속* 세계 1위 강자예요"
+      ],
+      "body": "역대급 실적에도 *-10.7%* 빠졌어요\n*메모리 반도체* 세계 1위 전자기업이에요\n*AI 반도체* 중심으로 확 바뀌는 중이죠\n용인에 *360조 원* 초대형 반도체 공장 지어요\n*HBM4*로 AI용 메모리 시장 이끌어요\nTV *20년 연속* 세계 1위 강자예요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: 이재용 회장 *선밸리 참석*, 파운드리(위탁생산) 수주 기대돼요",
+        "악재: 초기업노조가 *호남 반도체* 노사정 협의 요구하고 나섰어요",
+        "보합: 넷리스트 상대 메모리 *특허 비침해* 소송 추가로 냈어요"
+      ],
+      "body": "호재: 이재용 회장 *선밸리 참석*, 파운드리(위탁생산) 수주 기대돼요\n악재: 초기업노조가 *호남 반도체* 노사정 협의 요구하고 나섰어요\n보합: 넷리스트 상대 메모리 *특허 비침해* 소송 추가로 냈어요"
+    },
+    {
+      "index": 2,
+      "title": "전망",
+      "lines": [
+        "다음주 *2분기 실적* 시장 반응 주목돼요",
+        "관전 포인트: 영업이익 *89.4조* 전망치 달성 여부",
+        "고점 우려 속, 관건은 *HBM 수주*예요",
+        "누적 *±2% 박스권*, 변동성 커질 전망",
+        "변수: *반도체 고점론*·AI 거품 논쟁 다시 부각",
+        "미래: *1.4나노 칩*·AI 가전·휴머노이드 로봇",
+        "함께해 주셔서 감사해요!"
+      ],
+      "body": "다음주 *2분기 실적* 시장 반응 주목돼요\n관전 포인트: 영업이익 *89.4조* 전망치 달성 여부\n고점 우려 속, 관건은 *HBM 수주*예요\n누적 *±2% 박스권*, 변동성 커질 전망\n변수: *반도체 고점론*·AI 거품 논쟁 다시 부각\n미래: *1.4나노 칩*·AI 가전·휴머노이드 로봇\n함께해 주셔서 감사해요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A breathtaking 16:9 landscape view of Paris with the Eiffel Tower illuminated at night beside the Seine river, seamlessly blended with a futuristic global tech city skyline in deep purple and violet hues. Floating holographic displays showcase advanced 1.4nm semiconductor wafers, sleek BESPOKE smart home appliances, humanoid robots assisting citizens, and next-generation foldable displays. Glowing city lights create dreamy bokeh effects, purple violet tech analytics atmosphere, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic 16:9 landscape scene depicting a futuristic aerospace launch with vivid green growth energy, rockets ascending through the atmosphere alongside orbiting satellites and space infrastructure. Integrated into the vision are floating semiconductor chips, foldable display panels, smart home BESPOKE appliances, and humanoid robots representing Samsung's technological direction. Bright green bullish upward trajectories, glowing motion lines, particle effects, cinematic lighting, on-device AI holograms, 1.4nm chip visualizations, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A stunning 9:16 vertical view of Singapore's Smart Nation garden city vision at golden hour, featuring lush vertical forests intertwined with futuristic architecture. Floating holographic elements showcase Samsung's future vision: sleek BESPOKE smart home appliances, humanoid robots assisting daily life, next-generation foldable displays, and 1.4nm semiconductor chips. Golden sunlight rays, sparkling starlight, inspirational future mood, warm golden glow, dreamy atmospheric particles, on-device AI integration visuals, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

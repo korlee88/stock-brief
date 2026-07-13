@@ -1,0 +1,11 @@
+# 005930.KS 주간 배경 이미지 프롬프트 — 2026-07-13
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A breathtaking 16:9 landscape view of Paris with the Eiffel Tower illuminated at night beside the Seine river, seamlessly blended with a futuristic global tech city skyline in deep purple and violet hues. Floating holographic displays showcase advanced 1.4nm semiconductor wafers, sleek BESPOKE smart home appliances, humanoid robots assisting citizens, and next-generation foldable displays. Glowing city lights create dreamy bokeh effects, purple violet tech analytics atmosphere, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A dynamic 16:9 landscape scene depicting a futuristic aerospace launch with vivid green growth energy, rockets ascending through the atmosphere alongside orbiting satellites and space infrastructure. Integrated into the vision are floating semiconductor chips, foldable display panels, smart home BESPOKE appliances, and humanoid robots representing Samsung's technological direction. Bright green bullish upward trajectories, glowing motion lines, particle effects, cinematic lighting, on-device AI holograms, 1.4nm chip visualizations, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A stunning 9:16 vertical view of Singapore's Smart Nation garden city vision at golden hour, featuring lush vertical forests intertwined with futuristic architecture. Floating holographic elements showcase Samsung's future vision: sleek BESPOKE smart home appliances, humanoid robots assisting daily life, next-generation foldable displays, and 1.4nm semiconductor chips. Golden sunlight rays, sparkling starlight, inspirational future mood, warm golden glow, dreamy atmospheric particles, on-device AI integration visuals, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

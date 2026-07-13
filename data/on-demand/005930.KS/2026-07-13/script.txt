@@ -1,0 +1,30 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+역대급 실적에도 *-10.7%* 빠졌어요
+*메모리 반도체* 세계 1위 전자기업이에요
+*AI 반도체* 중심으로 확 바뀌는 중이죠
+용인에 *360조 원* 초대형 반도체 공장 지어요
+*HBM4*로 AI용 메모리 시장 이끌어요
+TV *20년 연속* 세계 1위 강자예요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 이재용 회장 *선밸리 참석*, 파운드리(위탁생산) 수주 기대돼요
+악재: 초기업노조가 *호남 반도체* 노사정 협의 요구하고 나섰어요
+보합: 넷리스트 상대 메모리 *특허 비침해* 소송 추가로 냈어요
+
+SCENE_2_TITLE: 전망
+SCENE_2:
+다음주 *2분기 실적* 시장 반응 주목돼요
+관전 포인트: 영업이익 *89.4조* 전망치 달성 여부
+고점 우려 속, 관건은 *HBM 수주*예요
+누적 *±2% 박스권*, 변동성 커질 전망
+변수: *반도체 고점론*·AI 거품 논쟁 다시 부각
+미래: *1.4나노 칩*·AI 가전·휴머노이드 로봇
+함께해 주셔서 감사해요!
+
+IMAGE_PROMPT_0: A breathtaking 16:9 landscape view of Paris with the Eiffel Tower illuminated at night beside the Seine river, seamlessly blended with a futuristic global tech city skyline in deep purple and violet hues. Floating holographic displays showcase advanced 1.4nm semiconductor wafers, sleek BESPOKE smart home appliances, humanoid robots assisting citizens, and next-generation foldable displays. Glowing city lights create dreamy bokeh effects, purple violet tech analytics atmosphere, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic 16:9 landscape scene depicting a futuristic aerospace launch with vivid green growth energy, rockets ascending through the atmosphere alongside orbiting satellites and space infrastructure. Integrated into the vision are floating semiconductor chips, foldable display panels, smart home BESPOKE appliances, and humanoid robots representing Samsung's technological direction. Bright green bullish upward trajectories, glowing motion lines, particle effects, cinematic lighting, on-device AI holograms, 1.4nm chip visualizations, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A stunning 9:16 vertical view of Singapore's Smart Nation garden city vision at golden hour, featuring lush vertical forests intertwined with futuristic architecture. Floating holographic elements showcase Samsung's future vision: sleek BESPOKE smart home appliances, humanoid robots assisting daily life, next-generation foldable displays, and 1.4nm semiconductor chips. Golden sunlight rays, sparkling starlight, inspirational future mood, warm golden glow, dreamy atmospheric particles, on-device AI integration visuals, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
