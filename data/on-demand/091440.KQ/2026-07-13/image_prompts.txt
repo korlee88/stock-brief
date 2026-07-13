@@ -1,0 +1,11 @@
+# 091440.KQ 주간 배경 이미지 프롬프트 — 2026-07-13
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A cinematic 16:9 landscape view of Paris Eiffel Tower and Seine river night skyline seamlessly blended with a sleek futuristic data center humming with advanced optical transmission equipment, glowing fiber optic cables weaving through the sky, holographic displays of quantum-encrypted data streams floating above rooftops, microscopic views of next-generation semiconductor materials like HBM and OLED display films layered as translucent overlays, futuristic global city skyline in deep purple violet tech analytics mood, glowing city lights bokeh, dreamy atmospheric depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A dynamic 16:9 landscape visual of a futuristic aerospace-inspired industrial scene featuring a sleek data center humming with advanced optical transmission equipment, glowing fiber optic cables radiating outward like rocket trails, holographic displays of quantum-encrypted data streams orbiting satellites and space infrastructure, microscopic close-ups of HBM semiconductor chips and OLED display films glowing along the edges, vivid green growth bullish energy pulsing throughout, dynamic upward trajectory lines, glowing motion streaks, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A stunning 9:16 vertical portrait of Singapore Smart Nation future garden city vision skyline blended with a sleek futuristic data center humming with advanced optical transmission equipment, glowing fiber optic cables cascading down like waterfalls, holographic displays of quantum-encrypted data streams floating between skyscrapers, microscopic views of next-generation semiconductor materials like HBM and OLED display films embedded in the architecture, golden inspirational future mood, radiant golden sunlight, starlight sparkles, shimmering atmosphere, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

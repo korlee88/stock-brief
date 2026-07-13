@@ -1,0 +1,29 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+다들 놓쳤지만, 하루 *+19.76%* 급등했어요
+*광통신 장비*랑 반도체 소재 만드는 회사예요
+*AI 반도체 소재*로 사업을 넓히는 중이죠
+자회사 세종공장에 *700억 원* 투자했어요
+차세대 통신장비(*고속 광전송*) 상용화도 추진 중
+*국산 AI 서버* 클라이막스-408도 공개했죠
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 자회사 JKM이 *반도체 소재 양산 임박*, 첫 매출 초읽기예요
+악재: 1월엔 과열 경고 뒤 *40% 급락*했던 이력이 있더라고요
+보합: 3월엔 신규철·임세혁 *각자 대표* 체제로 바꿨어요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+관전 포인트 — *JKM 세종공장 양산 개시* 시점
+관건 — *AI 메모리(HBM) 소재* 첫 매출 여부예요
+전일 *+19.76%* 급등 뒤 *숨고르기 흐름* 예상돼요
+*단기 차익실현* 매물과 기대감의 줄다리기가 관건
+변수 — 단기 급등에 따른 *고평가 부담*
+오늘도 함께해줘서 고마워요!
+
+IMAGE_PROMPT_0: A cinematic 16:9 landscape view of Paris Eiffel Tower and Seine river night skyline seamlessly blended with a sleek futuristic data center humming with advanced optical transmission equipment, glowing fiber optic cables weaving through the sky, holographic displays of quantum-encrypted data streams floating above rooftops, microscopic views of next-generation semiconductor materials like HBM and OLED display films layered as translucent overlays, futuristic global city skyline in deep purple violet tech analytics mood, glowing city lights bokeh, dreamy atmospheric depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic 16:9 landscape visual of a futuristic aerospace-inspired industrial scene featuring a sleek data center humming with advanced optical transmission equipment, glowing fiber optic cables radiating outward like rocket trails, holographic displays of quantum-encrypted data streams orbiting satellites and space infrastructure, microscopic close-ups of HBM semiconductor chips and OLED display films glowing along the edges, vivid green growth bullish energy pulsing throughout, dynamic upward trajectory lines, glowing motion streaks, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A stunning 9:16 vertical portrait of Singapore Smart Nation future garden city vision skyline blended with a sleek futuristic data center humming with advanced optical transmission equipment, glowing fiber optic cables cascading down like waterfalls, holographic displays of quantum-encrypted data streams floating between skyscrapers, microscopic views of next-generation semiconductor materials like HBM and OLED display films embedded in the architecture, golden inspirational future mood, radiant golden sunlight, starlight sparkles, shimmering atmosphere, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

@@ -1,0 +1,168 @@
+{
+  "generated_at": "2026-07-13",
+  "generated_by": "Claude Opus 4",
+  "title": "다들 놓쳤지만, 하루 *+19.76%* 급등했어요",
+  "subtitle": "2026-07-13 ~ 2026-07-13 · 한울소재과학, 자회사 JKM 반도체 소재 생산기지 구축",
+  "summary": {
+    "week_start": "2026-07-13",
+    "week_end": "2026-07-13",
+    "session_count": 1,
+    "total_analyzed": 7,
+    "bullish_count": 2,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 3030,
+    "price_end": 3030,
+    "latest_price": 3030,
+    "today_price": 3030,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "한울소재과학, 자회사 JKM 반도체 소재 생산기지 구축 완료 및 양산 임박",
+      "score": 5,
+      "reason": "반도체 소재 생산을 위한 핵심 인허가 절차를 완료하여 실제 제품 생산 및 매출 발생이 가능해졌다는 소식은 회사의 실적 개선에 대한 기대감을 높여 주가에 긍정적인 영향을 미칠 것입니다.",
+      "source": "조선비즈",
+      "date": "2026-07-13",
+      "category": "Product",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "한울소재과학, 자회사 JKM 반도체 소재 생산기지 구축 완료 및 양산 임박",
+        "score": 5,
+        "reason": "반도체 소재 생산을 위한 핵심 인허가 절차를 완료하여 실제 제품 생산 및 매출 발생이 가능해졌다는 소식은 회사의 실적 개선에 대한 기대감을 높여 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "조선비즈",
+        "date": "2026-07-13",
+        "category": "Product"
+      },
+      {
+        "title": "한울소재과학, 자회사 JKM 반도체 소재 생산 공정안전보고서 심사 통과로 상업 생산 임박",
+        "score": 4,
+        "reason": "반도체 소재 사업의 상업 생산이 임박했다는 소식은 회사의 매출 증대와 수익성 개선에 직접적인 긍정적 영향을 미 미칠 것으로 예상되어 주가에 강한 상승 요인으로 작용할 것입니다.",
+        "source": "전자신문",
+        "date": "2026-07-13",
+        "category": "Product"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "한울소재과학, 신규철·임세혁 각자 대표이사 체제로 전환",
+        "score": 0,
+        "reason": "경영 효율성 제고를 위한 각자 대표이사 체제 전환은 일반적인 기업 경영 활동의 일환으로, 단기적인 주가에 직접적인 큰 영향을 미치기보다는 장기적인 기업 운영에 긍정적일 수 있습니다.",
+        "source": "디지털투데이",
+        "date": "2026-03-31",
+        "category": "Regulatory"
+      }
+    ],
+    "neutral_count": 1,
+    "scene1_news": {
+      "bullish": {
+        "title": "한울소재과학, 자회사 JKM 반도체 소재 생산기지 구축 완료 및 양산 임박",
+        "score": 5,
+        "reason": "반도체 소재 생산을 위한 핵심 인허가 절차를 완료하여 실제 제품 생산 및 매출 발생이 가능해졌다는 소식은 회사의 실적 개선에 대한 기대감을 높여 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "조선비즈",
+        "date": "2026-07-13",
+        "category": "Product"
+      },
+      "bearish": {
+        "title": "한울소재과학, InvestingPro 과대평가 경고 후 40% 급락",
+        "score": -4,
+        "reason": "주식의 과대평가 경고와 실제 주가 하락은 투자자들에게 부정적인 신호로 작용하여 추가적인 매도 압력을 유발할 수 있습니다.",
+        "source": "Investing.com",
+        "date": "2026-01-15",
+        "category": "Market"
+      },
+      "neutral": {
+        "title": "한울소재과학, 신규철·임세혁 각자 대표이사 체제로 전환",
+        "score": 0,
+        "reason": "경영 효율성 제고를 위한 각자 대표이사 체제 전환은 일반적인 기업 경영 활동의 일환으로, 단기적인 주가에 직접적인 큰 영향을 미치기보다는 장기적인 기업 운영에 긍정적일 수 있습니다.",
+        "source": "디지털투데이",
+        "date": "2026-03-31",
+        "category": "Regulatory"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-07-13",
+        3030
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-07-13",
+    "today_news": [
+      {
+        "title": "한울소재과학, 자회사 JKM 반도체 소재 생산 공정안전보고서 심사 통과로 상업 생산 임박",
+        "category": "Product",
+        "source": "전자신문",
+        "date": "2026-07-13"
+      },
+      {
+        "title": "한울소재과학, 자회사 JKM 반도체 소재 생산기지 구축 완료 및 양산 임박",
+        "category": "Product",
+        "source": "조선비즈",
+        "date": "2026-07-13"
+      }
+    ],
+    "prev_day": {
+      "date": "2026-07-13",
+      "open": 2760.0,
+      "close": 3030.0,
+      "change_pct": 19.76
+    },
+    "movement_reason": "2026년 7월 13일 한울소재과학(091440.KQ)의 주가 하락에 대한 주요 원인을 분석한 결과, 해당 날짜의 주가 하락을 뒷받침하는 정보는 검색 결과에서 확인되지 않았습니다. 오히려 2026년 7월 13일에는 한울소재과학의 자회사인 제이케이머트리얼즈(JKM)가 세종캠퍼스 반도체·디스플레이 감광재료 제조공정에 대한 공정안전보고서(PSM) 심사 적합 통보를 받았다는 긍정적인 소식이 보도되었습니다. 이 PSM 적합 통보는 JKM이 세종캠퍼스의 상업생산에 필요한 인허가와 안전 절차를 모두 완료했음을 의미하며, 한울소재과학의 반도체 소재 사업이 실제 제품 생산 및 매출 발생 단계로 전환될 전망임을 시사합니다.\n\n현재 검색 결과로는 2026년 7월 13일 주가 하락의 원인을 특정할 수 없습니다.",
+    "company_direction": "한울소재과학은 광통신 장비와 반도체 소재 사업을 주력으로 영위하고 있습니다.\n\n① 주력 사업:\n통신 백본망 핵심 광전송장비 공급 / 반도체 감광제 등 첨단 소재 제조 / 차세대 전송장비 POTN 상용화 추진/ 5G 데이터 트래픽 증가 대응.\n\n② 회사의 비전·전략 방향:\nAI용 반도체 소재 사업 확대 / 6G 통신 기술 개발 국책과제 참여/ 양자암호통신 기술 연구로 신규 수익 창출/ 국산 고성능 AI 서버 클라이막스-408 공개.\n\n③ 최근 1년 내 주요 투자·설비·인수:\n자회사 JKM 세종캠퍼스 공정안전 심사 통과/ 약 700억 원 투자 세종캠퍼스 가동/ 반도체 소재 생산을 위한 공장 사용 승인/ 관계사 한울반도체 지분 80억 원 취득.\n\n④ 핵심 신제품·신기술 로드맵:\n차세대 POTN 전송장비 상용화 추진/ 반도체 전공정·후공정용 고품질 소재 개발/ 고분자 폴리머 제조동 연내 준공 목표/ AI 서버 클라이막스-408 출시로 AI 인프라 시장 진출.\n\n⑤ 시장 내 위치·점유율:\n시장 점유율 자료는 없음/ 통신사업자 및 공공시장 광전송장비 공급/ 5G 투자 위축으로 통신 부문 매출 감소/ 반도체 소재 국산화로 공급망 안정 기여 목표."
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "다들 놓쳤지만, 하루 *+19.76%* 급등했어요",
+        "*광통신 장비*랑 반도체 소재 만드는 회사예요",
+        "*AI 반도체 소재*로 사업을 넓히는 중이죠",
+        "자회사 세종공장에 *700억 원* 투자했어요",
+        "차세대 통신장비(*고속 광전송*) 상용화도 추진 중",
+        "*국산 AI 서버* 클라이막스-408도 공개했죠"
+      ],
+      "body": "다들 놓쳤지만, 하루 *+19.76%* 급등했어요\n*광통신 장비*랑 반도체 소재 만드는 회사예요\n*AI 반도체 소재*로 사업을 넓히는 중이죠\n자회사 세종공장에 *700억 원* 투자했어요\n차세대 통신장비(*고속 광전송*) 상용화도 추진 중\n*국산 AI 서버* 클라이막스-408도 공개했죠"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: 자회사 JKM이 *반도체 소재 양산 임박*, 첫 매출 초읽기예요",
+        "악재: 1월엔 과열 경고 뒤 *40% 급락*했던 이력이 있더라고요",
+        "보합: 3월엔 신규철·임세혁 *각자 대표* 체제로 바꿨어요"
+      ],
+      "body": "호재: 자회사 JKM이 *반도체 소재 양산 임박*, 첫 매출 초읽기예요\n악재: 1월엔 과열 경고 뒤 *40% 급락*했던 이력이 있더라고요\n보합: 3월엔 신규철·임세혁 *각자 대표* 체제로 바꿨어요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "관전 포인트 — *JKM 세종공장 양산 개시* 시점",
+        "관건 — *AI 메모리(HBM) 소재* 첫 매출 여부예요",
+        "전일 *+19.76%* 급등 뒤 *숨고르기 흐름* 예상돼요",
+        "*단기 차익실현* 매물과 기대감의 줄다리기가 관건",
+        "변수 — 단기 급등에 따른 *고평가 부담*",
+        "오늘도 함께해줘서 고마워요!"
+      ],
+      "body": "관전 포인트 — *JKM 세종공장 양산 개시* 시점\n관건 — *AI 메모리(HBM) 소재* 첫 매출 여부예요\n전일 *+19.76%* 급등 뒤 *숨고르기 흐름* 예상돼요\n*단기 차익실현* 매물과 기대감의 줄다리기가 관건\n변수 — 단기 급등에 따른 *고평가 부담*\n오늘도 함께해줘서 고마워요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A cinematic 16:9 landscape view of Paris Eiffel Tower and Seine river night skyline seamlessly blended with a sleek futuristic data center humming with advanced optical transmission equipment, glowing fiber optic cables weaving through the sky, holographic displays of quantum-encrypted data streams floating above rooftops, microscopic views of next-generation semiconductor materials like HBM and OLED display films layered as translucent overlays, futuristic global city skyline in deep purple violet tech analytics mood, glowing city lights bokeh, dreamy atmospheric depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic 16:9 landscape visual of a futuristic aerospace-inspired industrial scene featuring a sleek data center humming with advanced optical transmission equipment, glowing fiber optic cables radiating outward like rocket trails, holographic displays of quantum-encrypted data streams orbiting satellites and space infrastructure, microscopic close-ups of HBM semiconductor chips and OLED display films glowing along the edges, vivid green growth bullish energy pulsing throughout, dynamic upward trajectory lines, glowing motion streaks, cinematic depth, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A stunning 9:16 vertical portrait of Singapore Smart Nation future garden city vision skyline blended with a sleek futuristic data center humming with advanced optical transmission equipment, glowing fiber optic cables cascading down like waterfalls, holographic displays of quantum-encrypted data streams floating between skyscrapers, microscopic views of next-generation semiconductor materials like HBM and OLED display films embedded in the architecture, golden inspirational future mood, radiant golden sunlight, starlight sparkles, shimmering atmosphere, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}
