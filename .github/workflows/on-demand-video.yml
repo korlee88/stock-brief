@@ -59,6 +59,13 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/on-demand-collect.js
 
+      - name: 정량 신호 보강 (기술지표·수급·밸류)
+        env:
+          # pykrx(한국 수급/밸류)·yfinance(미국 밸류/목표가)는 키 불필요. 실패해도 파이프라인 계속.
+          TICKER_CONFIG: configs/${{ env.TICKER }}/ticker.json
+          SESSIONS_FILE: data/on-demand/${{ env.TICKER }}/session.json
+        run: python scripts/enrich_signals.py || true
+
       - name: 대본 및 씬 이미지 생성
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

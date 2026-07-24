@@ -434,6 +434,7 @@ def summarize(sessions):
         "macro_ctx":       latest.get("macroCtx") or {},
         "today_date":      today_str,
         "today_news":      today_news[:8],
+        "signals":         latest.get("signals") or {},   # enrich_signals.py 정량 신호
     }
 
 
@@ -699,6 +700,7 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 - 점수 구성 요인 동향 (참고용, 점수·숫자 절대 금지·"~한 신호가 있었다" 식 맥락 설명에만 활용): {scoring_str}
 - 경쟁사({competitor_ticker}) 비교: {competitor_str}
 - 기술적 지표(참고용, 자연스럽게 수치 인용 가능): {tech_str}
+- 정량 신호 (기술추세·수급·밸류 — 씬2 '다음주 전망'의 근거로 우선 활용. 전문용어는 풀어서 쉽게): {signals_str}
 - 주가 변동 원인: {movement_reason_str}
 - 회사 방향·최근 투자 (검색 결과 — 씬0 줄2~5 소재로 우선 활용): {company_direction_str}
 - 검색량 트렌드: {trends_str}
@@ -735,6 +737,7 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 - 줄3: "보합: ..." — 제공된 보합(중립) 뉴스를 한 문장으로 (40~55자, 수치 포함). 보합이 "없음"이면 "보합: 최근 뚜렷한 중립 이슈는 없었어요"
 
 【씬 2 — 다음주 전망 (클로징)】 (6줄, 다음주 예측 중심·수치 의무 — 간결하고 "딱 잘라지는" 헤드라인 어투)
+※ 위 '정량 신호(기술추세·수급·밸류)'를 **전망의 핵심 근거로 우선 활용**한다 — 뉴스 감(感)이 아니라 추세·수급·밸류 수치로 방향을 뒷받침. 단 RSI·MACD·PER 같은 용어는 **반드시 쉬운 말로 풀어** 쓴다(예: "RSI 72" → "단기 과열 신호", "외국인 5일 순매수 +120억" → "외국인이 최근 강하게 사들이는 중").
 ※ 데이터가 없어도 "이벤트 부재"·"예측 데이터 없이"·"자료 없음" 같은 **결핍 고백 문구 금지** — 대신 실적 발표월({industry_ko} 산업 일정), 제품·기술 로드맵, 경쟁 구도 등 아는 사실로 관전 포인트를 채운다.
 ※ 마지막 씬. 줄1~5는 신문 헤드라인처럼 **짧고 단호하게 끊어** 쓴다 — "~예요/~니다/~돼요/~해요/~져요" 같은 긴 서술 어미를 쓰지 말고 **체언(명사)·명사형("전망/예상/관측/관건/변수/주목")으로 딱 잘라** 맺는다. 단 구체 수치·이름·근거는 그대로 넣어 알차게(줄당 30~45자, 화면 2줄까지). 줄6(마무리)만 예외로 따뜻하게.
 - 줄1: 다음주 핵심 일정·이벤트 1건 — next_events 활용, 날짜/이름 명시 (예: "7월 2일 2분기 실적 발표 — 최대 분수령")
@@ -807,6 +810,38 @@ SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({company_
 
 === 출력 ===
 설명·코멘트 없이, 재검토를 마친 최종 대본 전체(IMAGE_PROMPT_0~2 포함)만 원본과 동일한 형식으로 출력해라."""
+
+
+def _format_signals(sig: dict) -> str:
+    """enrich_signals.py의 정량 신호(technicals/supply_demand/valuation)를
+    대본 프롬프트용 자연어 한 줄로 정리. 비면 '데이터 없음'."""
+    if not sig:
+        return "데이터 없음"
+    parts = []
+    t = sig.get("technicals") or {}
+    if t:
+        tp = []
+        if t.get("trend"):          tp.append(t["trend"])
+        if t.get("rsi14") is not None:
+            tp.append(f"RSI {t['rsi14']}({t.get('rsi_state','')})")
+        if t.get("macd_momentum"):  tp.append(t["macd_momentum"])
+        if t.get("vs_ma20_pct") is not None:
+            tp.append(f"20일선 대비 {t['vs_ma20_pct']:+}%")
+        if t.get("pos_52w_pct") is not None:
+            tp.append(f"52주 범위 {t['pos_52w_pct']:.0f}% 지점")
+        if t.get("mom_20d_pct") is not None:
+            tp.append(f"20일 모멘텀 {t['mom_20d_pct']:+}%")
+        if t.get("volatility_20d_pct") is not None:
+            tp.append(f"변동성 {t['volatility_20d_pct']}%")
+        if tp:
+            parts.append("[기술추세] " + ", ".join(tp))
+    sd = sig.get("supply_demand") or {}
+    if sd:
+        parts.append("[수급 5일] " + ", ".join(f"{k.replace('_',' ')} {v}" for k, v in sd.items()))
+    val = sig.get("valuation") or {}
+    if val:
+        parts.append("[밸류] " + ", ".join(f"{k} {v}" for k, v in val.items()))
+    return " / ".join(parts) if parts else "데이터 없음"
 
 
 def _build_prompt(summary):
@@ -930,6 +965,9 @@ def _build_prompt(summary):
     rsi = mc.get("rsi")
     tech_str = f"RSI {rsi:.1f}" if isinstance(rsi, (int, float)) else "데이터 없음"
 
+    # ── 정량 신호(enrich_signals.py) → 자연어 그라운딩 (씬2 전망 근거) ──
+    signals_str = _format_signals(summary.get("signals") or {})
+
     # ── 오늘 실제 수집된 뉴스 전체 목록 (씬1을 이 안에서만 작성하도록 그라운딩 — 옛 뉴스 재활용 방지) ──
     today_news = summary.get("today_news") or []
     today_news_str = (
@@ -990,6 +1028,7 @@ def _build_prompt(summary):
         week_change_pct_str=week_change_pct_str,
         movement_reason_str=movement_reason_str,
         company_direction_str=company_direction_str,
+        signals_str=signals_str,
         trends_str=trends_str,
         next_events_str=next_events_str,
         next_week_str=next_week_str,

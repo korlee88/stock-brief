@@ -10,3 +10,5 @@ pydub
 moviepy
 numpy
 pytrends
+pykrx
+yfinance
