@@ -56,6 +56,11 @@ GMAIL_USER         = os.environ.get("GMAIL_USER", "")
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
 GMAIL_TO           = os.environ.get("GMAIL_TO", "")
 
+# 카카오톡 "나에게 보내기" 알림 (선택) — REST API. 액세스토큰은 6시간 만료라
+# refresh_token + REST API 키로 매 실행마다 새 토큰 발급. 시크릿 없으면 조용히 건너뜀.
+KAKAO_REST_API_KEY = os.environ.get("KAKAO_REST_API_KEY", "")
+KAKAO_REFRESH_TOKEN = os.environ.get("KAKAO_REFRESH_TOKEN", "")
+
 
 # ── 유틸 ──────────────────────────────────────────────────────────────────────
 
@@ -453,6 +458,66 @@ def send_gmail_digest(report_dir: Path, meta: dict, youtube_url: str | None) -> 
 
 # ── 메인 ──────────────────────────────────────────────────────────────────────
 
+def _kakao_refresh_access_token():
+    """refresh_token으로 새 access_token 발급 (카카오 토큰은 6시간 만료)."""
+    import urllib.parse
+    import urllib.request
+    body = urllib.parse.urlencode({
+        "grant_type": "refresh_token",
+        "client_id": KAKAO_REST_API_KEY,
+        "refresh_token": KAKAO_REFRESH_TOKEN,
+    }).encode()
+    req = urllib.request.Request("https://kauth.kakao.com/oauth/token", data=body,
+                                 headers={"Content-Type": "application/x-www-form-urlencoded"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return json.loads(r.read()).get("access_token")
+
+
+def send_kakao_memo(report_dir: Path, meta: dict, youtube_url: str | None):
+    """영상 생성 완료를 카카오톡 '나에게 보내기'로 알림 (text 템플릿, 200자 이내)."""
+    import urllib.parse
+    import urllib.request
+    token = _kakao_refresh_access_token()
+    if not token:
+        raise RuntimeError("액세스 토큰 발급 실패")
+
+    date = meta.get("generated_at", "")
+    price_str = fmt_price(meta.get("latest_price"))
+    # 씬0 헤드라인(대본 줄1)을 훅으로
+    headline = ""
+    sj = report_dir / "script.json"
+    if sj.exists():
+        try:
+            scenes = json.loads(sj.read_text(encoding="utf-8")).get("scenes") or []
+            if scenes and scenes[0].get("lines"):
+                headline = scenes[0]["lines"][0].replace("*", "").strip().strip('"')
+        except Exception:
+            pass
+    parts = [f"🎬 {COMPANY_KO}({TICKER}) 영상 생성 완료"]
+    if headline:
+        parts.append(f"“{headline}”")
+    if price_str:
+        parts.append(f"현재가 {price_str} · {date}")
+    parts.append("메일함에서 영상을 확인하세요 📬")
+    text = "\n".join(parts)[:200]
+
+    link_url = youtube_url or (f"https://github.com/{REPO}/actions" if REPO else "https://github.com")
+    template = {
+        "object_type": "text",
+        "text": text,
+        "link": {"web_url": link_url, "mobile_web_url": link_url},
+        "button_title": "영상 보기",
+    }
+    body = urllib.parse.urlencode({"template_object": json.dumps(template, ensure_ascii=False)}).encode()
+    req = urllib.request.Request(
+        "https://kapi.kakao.com/v2/api/talk/memo/default/send", data=body,
+        headers={"Authorization": f"Bearer {token}",
+                 "Content-Type": "application/x-www-form-urlencoded"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        if r.status != 200:
+            raise RuntimeError(f"HTTP {r.status}")
+
+
 def main():
     report_dir = find_latest_report()
     if not report_dir:
@@ -510,6 +575,21 @@ def main():
             ("GMAIL_TO", GMAIL_TO),
         ] if not v]
         print(f"  [SKIP] Gmail: {', '.join(missing)} 없음")
+
+    # ── 4. 카카오톡 완료 알림 (선택) ─────────────────────────────────────────
+    if KAKAO_REST_API_KEY and KAKAO_REFRESH_TOKEN:
+        try:
+            print("  💬 카카오톡 알림 발송 중...")
+            send_kakao_memo(report_dir, meta, youtube_url)
+            print("  ✅ 카카오톡 알림 발송 완료")
+        except Exception as e:
+            print(f"  ⚠ 카카오톡 실패: {e}", file=sys.stderr)
+    else:
+        missing = [s for s, v in [
+            ("KAKAO_REST_API_KEY", KAKAO_REST_API_KEY),
+            ("KAKAO_REFRESH_TOKEN", KAKAO_REFRESH_TOKEN),
+        ] if not v]
+        print(f"  [SKIP] 카카오톡: {', '.join(missing)} 없음")
 
     print("\n✅ GWS 게시 완료\n")
 
