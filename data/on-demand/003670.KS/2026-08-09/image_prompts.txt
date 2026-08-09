@@ -1,0 +1,11 @@
+# 003670.KS 주간 배경 이미지 프롬프트 — 2026-08-09
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A cinematic 16:9 landscape view of London's Big Ben, Thames River, and London Eye at night, seamlessly blended with a futuristic factory featuring advanced robotics and AI-powered systems producing next-generation silicon anode materials and high-performance cathode materials for electric vehicles and energy storage systems, showcasing a seamless automated sustainable manufacturing process, glowing purple violet tech analytics overlays, holographic battery cell diagrams floating above the skyline, city lights bokeh, futuristic global city atmosphere, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A dynamic 16:9 landscape scene depicting a futuristic factory with advanced robotics and AI-powered systems producing next-generation silicon anode materials and high-performance cathode materials for electric vehicles and energy storage systems, showcasing a seamless automated sustainable manufacturing process, merged with an aerospace launch imagery of rockets ascending, satellite orbits, and orbital infrastructure, vivid green bullish growth energy radiating upward, dynamic upward trajectory motion lines, glowing particles, cathode powder streams, EV battery cells illuminated, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A breathtaking 9:16 vertical composition of Shanghai's futuristic ultra-tall smart city skyline at golden hour, blended with symbolic visuals of battery materials, refractories, and advanced chemical compounds, featuring a futuristic factory with advanced robotics and AI-powered systems producing next-generation silicon anode materials and high-performance cathode materials for electric vehicles and energy storage systems, showcasing a seamless automated sustainable manufacturing process, golden sun rays, starlight sparkles, inspirational future city vision mood, glowing battery cells rising skyward, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

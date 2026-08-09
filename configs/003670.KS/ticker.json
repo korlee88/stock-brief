@@ -1,0 +1,33 @@
+{
+  "ticker": "003670.KS",
+  "company_en": "POSCO Future M Co., Ltd.",
+  "company_ko": "포스코퓨처엠",
+  "industry_ko": "배터리 소재, 내화물, 기초화학소재",
+  "exchange": "KOSPI",
+  "image_future_tech_en": "A futuristic factory with advanced robotics and AI-powered systems producing next-generation silicon anode materials and high-performance cathode materials for electric vehicles and energy storage systems, showcasing a seamless, automated, and sustainable manufacturing process.",
+  "brand_label": "003670.KS BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "247540.KQ",
+  "key_people": [
+    "Eom Gi-cheon",
+    "Yoo Byeong-og"
+  ],
+  "google_trends_keywords": [
+    "포스코퓨처엠",
+    "양극재",
+    "음극재",
+    "이차전지 소재",
+    "POSCO Future M"
+  ],
+  "video_tags": [
+    "POSCO Future M",
+    "포스코퓨처엠",
+    "이차전지",
+    "배터리 소재",
+    "양극재",
+    "음극재"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-08-09T10:23:14.677Z"
+}

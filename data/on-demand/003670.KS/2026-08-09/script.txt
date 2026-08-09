@@ -1,0 +1,29 @@
+SCENE_0_TITLE: 회사소개
+SCENE_0:
+경쟁사 대비 *+5.63%* 반등, 15만원대 안착
+*배터리 양·음극재*로 돈 버는 소재기업이죠
+*친환경 미래소재*로 초격차에 도전 중이에요
+캐나다 공장에 *1.1조원* 유상증자로 실탄 확보
+*하이니켈 양극재* 2026년 양산 준비 착착
+국내 *유일 양·음극재* 동시 생산 강자예요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 국내 배터리사와 *3조원* 규모 보급형 LFP 양극재 장기 공급 계약 추진 중이에요
+악재: 목표주가 *41.8% 하향*됐지만 매수 의견은 유지돼 바닥론에 힘 실려요
+보합: 2분기 영업이익률 *3.9%* 개선됐지만 출하량 전망은 아직 안갯속이에요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+8월 중순 *LFP 계약 세부조건* 공시가 최대 분수령
+관전 포인트: *19만톤* 공급 확정 시 실리콘 음극재 실적 레벨업
+누적 *+2~4% 안팎*, 완만한 우상향 전망이에요
+20일선 대비 *+9.2%*, 상승 모멘텀 아직 유효해요
+변수: *대규모 물량 출회*와 전기차 수요 둔화 우려
+오늘도 함께해 줘서 고마워요!
+
+IMAGE_PROMPT_0: A cinematic 16:9 landscape view of London's Big Ben, Thames River, and London Eye at night, seamlessly blended with a futuristic factory featuring advanced robotics and AI-powered systems producing next-generation silicon anode materials and high-performance cathode materials for electric vehicles and energy storage systems, showcasing a seamless automated sustainable manufacturing process, glowing purple violet tech analytics overlays, holographic battery cell diagrams floating above the skyline, city lights bokeh, futuristic global city atmosphere, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic 16:9 landscape scene depicting a futuristic factory with advanced robotics and AI-powered systems producing next-generation silicon anode materials and high-performance cathode materials for electric vehicles and energy storage systems, showcasing a seamless automated sustainable manufacturing process, merged with an aerospace launch imagery of rockets ascending, satellite orbits, and orbital infrastructure, vivid green bullish growth energy radiating upward, dynamic upward trajectory motion lines, glowing particles, cathode powder streams, EV battery cells illuminated, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A breathtaking 9:16 vertical composition of Shanghai's futuristic ultra-tall smart city skyline at golden hour, blended with symbolic visuals of battery materials, refractories, and advanced chemical compounds, featuring a futuristic factory with advanced robotics and AI-powered systems producing next-generation silicon anode materials and high-performance cathode materials for electric vehicles and energy storage systems, showcasing a seamless automated sustainable manufacturing process, golden sun rays, starlight sparkles, inspirational future city vision mood, glowing battery cells rising skyward, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
