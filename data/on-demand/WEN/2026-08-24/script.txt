@@ -1,0 +1,29 @@
+SCENE_0_TITLE: 웬디스소개
+SCENE_0:
+넬슨 펠츠의 *비공개 전환설* 등장!
+*신선 냉장육 햄버거* 전문 체인이에요
+*2028년까지 1천 개* 신규 매장 열어요
+*중국 시장 1천 개* 매장까지 늘려요
+구글 AI로 *다국어 자동 주문* 도입 중
+미국 햄버거 시장 *3위* 자리 지키죠
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 트라이언 펀드의 *비공개 전환 추진* 소식에 프리미엄 기대감 커져요
+악재: 모건 스탠리가 *목표주가 하향*, 투자 심리에 부담을 주네요
+보합: 미국 사장 사임에 *COO(최고운영책임자) 부활*로 조직 개편 중이에요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+관전 포인트 — *AI 주문·로봇 조리* 매장 확대
+20일선 대비 *+12.4%*, 단기 과열 신호예요
+애널리스트 목표주가 평균 *$7.79* 부담이죠
+현재가 $9.01, *조정 가능성* 남아 있어요
+변수: *6분기 연속* 동일매장 매출 감소
+오늘도 함께해 주셔서 고마워요!
+
+IMAGE_PROMPT_0: A cinematic 16:9 landscape scene of Paris Eiffel Tower and Seine river night view blended with a futuristic Wendy's drive-thru concept, AI-powered voice assistants taking multilingual orders, robotic arms preparing square hamburgers and Frosty desserts inside a sleek digitally integrated restaurant, glowing purple violet tech analytics overlay, futuristic global city night skyline, holographic data streams, bokeh city lights, dreamy inspiring corporate mood, ultra-high resolution, cinematic depth of field, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic 16:9 landscape visualization of a futuristic Wendy's drive-thru with AI voice assistants and robotic kitchen arms crafting square burgers and Frosty desserts, fused with an aerospace launch backdrop showing rockets ascending and satellites orbiting, vivid green bullish growth energy, upward trajectory motion lines, glowing digital data streams, restaurant innovation meeting cosmic scale ambition, cinematic lighting, hyper-detailed sci-fi realism, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A stunning 9:16 vertical scene of Dubai Neom-style futuristic megacity skyline at golden hour, blended with a next-generation Wendy's drive-thru featuring AI voice assistants taking multilingual orders and robotic arms preparing square hamburgers and Frosty desserts, sleek digitally integrated restaurant glowing under warm golden sunlight, sparkling stars, inspirational futuristic vision mood, holographic menus floating in air, luxurious gold tones, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

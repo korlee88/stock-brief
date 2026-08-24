@@ -1,0 +1,37 @@
+{
+  "ticker": "WEN",
+  "company_en": "The Wendy's Company",
+  "company_ko": "웬디스",
+  "industry_ko": "외식 산업",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "A futuristic Wendy's drive-thru with AI-powered voice assistants seamlessly taking complex orders from customers in multiple languages, while robotic arms in the kitchen efficiently prepare customized square hamburgers and Frosty desserts, all within a sleek, digitally integrated restaurant environment.",
+  "brand_label": "WEN BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "QSR",
+  "key_people": [
+    "Robert D. Wright",
+    "Steve Cirulis"
+  ],
+  "google_trends_keywords": [
+    "웬디스",
+    "웬디스 햄버거",
+    "웬디스 메뉴",
+    "웬디스 칠리",
+    "웬디스 주식"
+  ],
+  "video_tags": [
+    "Wendy's",
+    "Wendy's Company",
+    "Fast Food",
+    "Hamburgers",
+    "Drive-Thru AI",
+    "Restaurant Technology",
+    "웬디스",
+    "패스트푸드",
+    "햄버거",
+    "인공지능 드라이브 스루"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-08-24T09:49:04.437Z"
+}

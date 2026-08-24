@@ -1,0 +1,11 @@
+# WEN 주간 배경 이미지 프롬프트 — 2026-08-24
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A cinematic 16:9 landscape scene of Paris Eiffel Tower and Seine river night view blended with a futuristic Wendy's drive-thru concept, AI-powered voice assistants taking multilingual orders, robotic arms preparing square hamburgers and Frosty desserts inside a sleek digitally integrated restaurant, glowing purple violet tech analytics overlay, futuristic global city night skyline, holographic data streams, bokeh city lights, dreamy inspiring corporate mood, ultra-high resolution, cinematic depth of field, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A dynamic 16:9 landscape visualization of a futuristic Wendy's drive-thru with AI voice assistants and robotic kitchen arms crafting square burgers and Frosty desserts, fused with an aerospace launch backdrop showing rockets ascending and satellites orbiting, vivid green bullish growth energy, upward trajectory motion lines, glowing digital data streams, restaurant innovation meeting cosmic scale ambition, cinematic lighting, hyper-detailed sci-fi realism, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A stunning 9:16 vertical scene of Dubai Neom-style futuristic megacity skyline at golden hour, blended with a next-generation Wendy's drive-thru featuring AI voice assistants taking multilingual orders and robotic arms preparing square hamburgers and Frosty desserts, sleek digitally integrated restaurant glowing under warm golden sunlight, sparkling stars, inspirational futuristic vision mood, holographic menus floating in air, luxurious gold tones, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

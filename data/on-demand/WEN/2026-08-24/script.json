@@ -1,0 +1,208 @@
+{
+  "generated_at": "2026-08-24",
+  "generated_by": "Claude Opus 4",
+  "title": "넬슨 펠츠의 *비공개 전환설* 등장!",
+  "subtitle": "2026-08-24 ~ 2026-08-24 · 넬슨 펠츠의 트라이언 펀드 매니지먼트, 웬디스 비공개 ",
+  "summary": {
+    "week_start": "2026-08-24",
+    "week_end": "2026-08-24",
+    "session_count": 1,
+    "total_analyzed": 6,
+    "bullish_count": 2,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 9.01,
+    "price_end": 9.01,
+    "latest_price": 9.01,
+    "today_price": 9.01,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "넬슨 펠츠의 트라이언 펀드 매니지먼트, 웬디스 비공개 전환 추진 보도",
+      "score": 4,
+      "reason": "비공개 전환 가능성은 일반적으로 주주들에게 프리미엄을 제공하므로 주가에 긍정적인 영향을 미칩니다.",
+      "source": "Reuters",
+      "date": "2026-08-12",
+      "category": "Market",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "넬슨 펠츠의 트라이언 펀드 매니지먼트, 웬디스 비공개 전환 추진 보도",
+        "score": 4,
+        "reason": "비공개 전환 가능성은 일반적으로 주주들에게 프리미엄을 제공하므로 주가에 긍정적인 영향을 미칩니다.",
+        "source": "Reuters",
+        "date": "2026-08-12",
+        "category": "Market"
+      },
+      {
+        "title": "웬디스, 스티브 시룰리스를 CFO 겸 최고 전략 책임자로 임명",
+        "score": 2,
+        "reason": "경험 많은 CFO의 영입은 회사의 재무 건전성 및 전략 실행에 대한 기대를 높여 주가에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "PR Newswire",
+        "date": "2026-06-23",
+        "category": "Management"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "웬디스, 미국 사장 피트 수어켄 사임 및 COO 역할 부활",
+        "score": 0,
+        "reason": "경영진 개편은 단기적으로 불확실성을 야기할 수 있지만, 장기적인 턴어라운드 계획의 일환일 수 있어 즉각적인 주가 영향은 중립적입니다.",
+        "source": "Perplexity",
+        "date": "2026-08-21",
+        "category": "Management"
+      },
+      {
+        "title": "웬디스, 로버트 D. 라이트 CEO 주도로 턴어라운드 계획 추진",
+        "score": 1,
+        "reason": "새로운 CEO의 턴어라운드 계획은 장기적으로 긍정적일 수 있으나, 단기적인 실적 부진과 함께 발표되어 즉각적인 큰 주가 상승을 기대하기는 어렵습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-07",
+        "category": "Strategy"
+      }
+    ],
+    "neutral_count": 2,
+    "scene1_news": {
+      "bullish": {
+        "title": "넬슨 펠츠의 트라이언 펀드 매니지먼트, 웬디스 비공개 전환 추진 보도",
+        "score": 4,
+        "reason": "비공개 전환 가능성은 일반적으로 주주들에게 프리미엄을 제공하므로 주가에 긍정적인 영향을 미칩니다.",
+        "source": "Reuters",
+        "date": "2026-08-12",
+        "category": "Market"
+      },
+      "bearish": {
+        "title": "모건 스탠리, 웬디스 목표 주가 하향 조정",
+        "score": -3,
+        "reason": "애널리스트의 목표 주가 하향 조정은 투자 심리에 부정적인 영향을 미쳐 주가 하락 압력으로 작용할 수 있습니다.",
+        "source": "Perplexity",
+        "date": "2026-08-20",
+        "category": "Market"
+      },
+      "neutral": {
+        "title": "웬디스, 미국 사장 피트 수어켄 사임 및 COO 역할 부활",
+        "score": 0,
+        "reason": "경영진 개편은 단기적으로 불확실성을 야기할 수 있지만, 장기적인 턴어라운드 계획의 일환일 수 있어 즉각적인 주가 영향은 중립적입니다.",
+        "source": "Perplexity",
+        "date": "2026-08-21",
+        "category": "Management"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-08-24",
+        9.01
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-08-24",
+    "today_news": [
+      {
+        "title": "웬디스, 미국 사장 피트 수어켄 사임 및 COO 역할 부활",
+        "category": "Management",
+        "source": "Perplexity",
+        "date": "2026-08-21"
+      },
+      {
+        "title": "모건 스탠리, 웬디스 목표 주가 하향 조정",
+        "category": "Market",
+        "source": "Perplexity",
+        "date": "2026-08-20"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 9.01,
+        "ma20": 8.01,
+        "vs_ma20_pct": 12.4,
+        "ma60": 7.58,
+        "trend": "상승추세(20일선>60일선)",
+        "rsi14": 67.9,
+        "rsi_state": "중립",
+        "macd_momentum": "상승 모멘텀",
+        "volatility_20d_pct": 4.6,
+        "pos_52w_pct": 63.0,
+        "high_52w": 10.72,
+        "low_52w": 6.07,
+        "mom_5d_pct": 4.3,
+        "mom_20d_pct": 28.9
+      },
+      "valuation": {
+        "목표주가_평균": 7.79,
+        "목표주가_최고": 13.0,
+        "목표주가_최저": 5.0,
+        "애널리스트_수": 19,
+        "투자의견": "중립",
+        "PER_선행": 16.6,
+        "PER": 13.7
+      }
+    },
+    "prev_day": {
+      "date": "2026-08-21",
+      "open": 8.84,
+      "close": 9.01,
+      "change_pct": 2.27
+    },
+    "month_low": {
+      "low": 6.97,
+      "current": 9.01,
+      "pct_vs_low": 29.27
+    },
+    "movement_reason": "2026년 8월 24일 웬디스(WEN) 주가 하락의 주요 원인은 다음과 같습니다.\n\n*   애널리스트 전망 하향\n*   2분기 실적 부진\n*   연간 전망 철회/배당 삭감",
+    "company_direction": "웬디스(WEN) 회사 소개 자료입니다.\n\n① 주력 사업: 신선한 냉장육 햄버거 제조/판매 / 치킨 샌드위치 및 감자튀김 제공 / 시그니처 디저트 프로스티 판매 / 전 세계 7천여 개 매장 운영\n② 회사의 비전·전략 방향: 브랜드 활성화 및 수익성 증대 목표 / '프로젝트 프레시' 성장 전략 추진 / 고객 경험 개선 위한 기술 투자 / 2028년까지 1천 개 신규 매장 확장\n③ 최근 1년 내 주요 투자·설비·인수: 수익성 개선 위한 매장 300개 폐쇄 계획 (2025-2026년) / 기술·마케팅 투자 위해 자본 재분배 / 중국 시장 1천 개 신규 매장 확장 추진 (향후 10년) / 행동주의 펀드, 회사 인수 추진설 제기 (2026년 8월)\n④ 핵심 신제품·신기술 로드맵: 구글 AI 기반 '프레시AI' 드라이브 스루 도입 / AI 챗봇으로 주문 처리 간소화 목표 / 핵심 메뉴 개선 및 신제품 출시 계획\n⑤ 시장 내 위치·점유율: 미국 햄버거 시장 3위 위치 (2026년) / 국내 동일 매장 매출 6분기 연속 감소 / 2024년 시장 점유율 11.4% 기록 / 특정 6개 주에서 선호도 1위"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "웬디스소개",
+      "lines": [
+        "넬슨 펠츠의 *비공개 전환설* 등장!",
+        "*신선 냉장육 햄버거* 전문 체인이에요",
+        "*2028년까지 1천 개* 신규 매장 열어요",
+        "*중국 시장 1천 개* 매장까지 늘려요",
+        "구글 AI로 *다국어 자동 주문* 도입 중",
+        "미국 햄버거 시장 *3위* 자리 지키죠"
+      ],
+      "body": "넬슨 펠츠의 *비공개 전환설* 등장!\n*신선 냉장육 햄버거* 전문 체인이에요\n*2028년까지 1천 개* 신규 매장 열어요\n*중국 시장 1천 개* 매장까지 늘려요\n구글 AI로 *다국어 자동 주문* 도입 중\n미국 햄버거 시장 *3위* 자리 지키죠"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: 트라이언 펀드의 *비공개 전환 추진* 소식에 프리미엄 기대감 커져요",
+        "악재: 모건 스탠리가 *목표주가 하향*, 투자 심리에 부담을 주네요",
+        "보합: 미국 사장 사임에 *COO(최고운영책임자) 부활*로 조직 개편 중이에요"
+      ],
+      "body": "호재: 트라이언 펀드의 *비공개 전환 추진* 소식에 프리미엄 기대감 커져요\n악재: 모건 스탠리가 *목표주가 하향*, 투자 심리에 부담을 주네요\n보합: 미국 사장 사임에 *COO(최고운영책임자) 부활*로 조직 개편 중이에요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "관전 포인트 — *AI 주문·로봇 조리* 매장 확대",
+        "20일선 대비 *+12.4%*, 단기 과열 신호예요",
+        "애널리스트 목표주가 평균 *$7.79* 부담이죠",
+        "현재가 $9.01, *조정 가능성* 남아 있어요",
+        "변수: *6분기 연속* 동일매장 매출 감소",
+        "오늘도 함께해 주셔서 고마워요!"
+      ],
+      "body": "관전 포인트 — *AI 주문·로봇 조리* 매장 확대\n20일선 대비 *+12.4%*, 단기 과열 신호예요\n애널리스트 목표주가 평균 *$7.79* 부담이죠\n현재가 $9.01, *조정 가능성* 남아 있어요\n변수: *6분기 연속* 동일매장 매출 감소\n오늘도 함께해 주셔서 고마워요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A cinematic 16:9 landscape scene of Paris Eiffel Tower and Seine river night view blended with a futuristic Wendy's drive-thru concept, AI-powered voice assistants taking multilingual orders, robotic arms preparing square hamburgers and Frosty desserts inside a sleek digitally integrated restaurant, glowing purple violet tech analytics overlay, futuristic global city night skyline, holographic data streams, bokeh city lights, dreamy inspiring corporate mood, ultra-high resolution, cinematic depth of field, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic 16:9 landscape visualization of a futuristic Wendy's drive-thru with AI voice assistants and robotic kitchen arms crafting square burgers and Frosty desserts, fused with an aerospace launch backdrop showing rockets ascending and satellites orbiting, vivid green bullish growth energy, upward trajectory motion lines, glowing digital data streams, restaurant innovation meeting cosmic scale ambition, cinematic lighting, hyper-detailed sci-fi realism, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A stunning 9:16 vertical scene of Dubai Neom-style futuristic megacity skyline at golden hour, blended with a next-generation Wendy's drive-thru featuring AI voice assistants taking multilingual orders and robotic arms preparing square hamburgers and Frosty desserts, sleek digitally integrated restaurant glowing under warm golden sunlight, sparkling stars, inspirational futuristic vision mood, holographic menus floating in air, luxurious gold tones, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}
