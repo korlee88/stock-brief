@@ -9,15 +9,20 @@ session.json 의 세션 객체에 `signals` 필드를 추가한다. 전부 **선
   · technicals (전 종목, Yahoo 일봉+numpy): 20/60일 이동평균 대비 위치·추세(골든/데드),
     RSI14(과열/과매도), MACD 모멘텀, 20일 변동성, 52주 위치, 5·20일 모멘텀
   · supply_demand (한국 .KS/.KQ, pykrx): 최근 5거래일 외국인·기관 순매수(수급)
-  · valuation (한국 pykrx PER/PBR/EPS · 미국 yfinance PER/목표주가/투자의견)
+  · valuation (한국 pykrx PER/PBR/EPS · 미국 yfinance PER/목표주가 컨센서스 범위·투자의견)
+  · analyst_reports (한국만, 네이버 금융 리서치): 최근 증권사 리포트 — 증권사명·날짜·
+    제목, 목표주가는 제목에 명시된 경우만 파싱(추측 금지). 대형 IB 개별 목표주가는
+    미국은 무료로 구하기 어려워 컨센서스 범위로 대체, 한국은 증권사 리포트로 보강.
 
 env: SESSIONS_FILE(세션 json 경로), TICKER_CONFIG(회사 config). 둘 다 필수.
 """
 import json
 import os
+import re
 import sys
 import urllib.request
 from datetime import datetime, timedelta
+from html.parser import HTMLParser
 
 CFG_PATH = os.environ.get("TICKER_CONFIG")
 SESS_PATH = os.environ.get("SESSIONS_FILE")
@@ -160,7 +165,77 @@ def fetch_kr_signals(code):
     return sd, val
 
 
-# ── 미국: yfinance 목표주가·투자의견·PER ──────────────────────────────────────
+# ── 한국: 네이버 금융 리서치 — 대형 증권사 개별 리포트(목표주가는 명시된 경우만) ──
+_NAVER_RESEARCH_URL = ("https://finance.naver.com/research/company_list.naver"
+                        "?searchType=itemCode&itemCode={code}")
+# "목표주가 95,000원", "목표가: 95000원" 처럼 명시적으로 적힌 경우만 인정 —
+# 제목의 다른 숫자를 목표가로 오인하지 않기 위해 키워드 근접 매칭만 사용.
+_TARGET_PRICE_RE = re.compile(r'목표\s?주?가\s*[:：]?\s*([0-9][0-9,]{3,})\s*원')
+
+
+class _NaverResearchParser(HTMLParser):
+    """네이버 금융 개별 종목 리서치 리스트 — <tr>당 <td> 5개(종목명·제목·증권사·첨부·작성일) 추출."""
+    def __init__(self):
+        super().__init__()
+        self.rows = []
+        self._cells = None
+        self._in_td = False
+        self._buf = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "tr":
+            self._cells = []
+        elif tag == "td" and self._cells is not None:
+            self._in_td, self._buf = True, []
+
+    def handle_data(self, data):
+        if self._in_td:
+            self._buf.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "td" and self._in_td:
+            self._in_td = False
+            self._cells.append("".join(self._buf).strip())
+        elif tag == "tr" and self._cells is not None:
+            if len(self._cells) >= 5:
+                self.rows.append(self._cells[:5])
+            self._cells = None
+
+
+def fetch_kr_analyst_reports(code, max_items=3):
+    """네이버 금융 리서치에서 최근 대형 증권사 리포트(증권사명·날짜·제목) 조회.
+    목표주가는 제목에 명시된 경우만 파싱해 담는다(없으면 숫자 없이 맥락만 제공 —
+    추측한 숫자를 목표주가로 오인시키지 않기 위함). 페이지 구조 변경 등 실패해도
+    조용히 빈 리스트 반환(비차단, 실호출 검증은 CI 러너에서만 가능 — 샌드박스 차단)."""
+    try:
+        url = _NAVER_RESEARCH_URL.format(code=code)
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            html = r.read().decode("euc-kr", errors="replace")
+        parser = _NaverResearchParser()
+        parser.feed(html)
+        out = []
+        for cells in parser.rows:
+            _name, title, firm, _attach, date = cells
+            # 헤더행·빈행 제거: 증권사·작성일 칸이 실제 데이터여야 함
+            if not firm or firm in ("증권사", "종목명") or not date or "." not in date:
+                continue
+            item = {"firm": firm, "date": date, "title": title}
+            m = _TARGET_PRICE_RE.search(title)
+            if m:
+                item["target_price"] = int(m.group(1).replace(",", ""))
+            out.append(item)
+            if len(out) >= max_items:
+                break
+        return out
+    except Exception as e:
+        print(f"   ⚠ 네이버 리서치 조회 실패: {e}", file=sys.stderr)
+        return []
+
+
+# ── 미국: yfinance 목표주가 컨센서스(평균·최고·최저·참여 인원)·투자의견·PER ──────────
+# 개별 대형 IB(골드만삭스 등) 명의 목표주가는 무료로 구할 신뢰 가능한 소스가 없어
+# (TipRanks·Benzinga 등은 유료) 컨센서스 범위로 대체(사용자 확인 사항).
 def fetch_us_signals(ticker):
     val = {}
     try:
@@ -173,6 +248,15 @@ def fetch_us_signals(ticker):
         tmp = info.get("targetMeanPrice")
         if tmp:
             val["목표주가_평균"] = round(float(tmp), 2)
+        for src, dst in (("targetHighPrice", "목표주가_최고"), ("targetLowPrice", "목표주가_최저")):
+            if info.get(src):
+                try:
+                    val[dst] = round(float(info[src]), 2)
+                except (TypeError, ValueError):
+                    pass
+        noo = info.get("numberOfAnalystOpinions")
+        if noo:
+            val["애널리스트_수"] = int(noo)
         rk = info.get("recommendationKey")
         if rk and rk != "none":
             val["투자의견"] = {"strong_buy": "적극매수", "buy": "매수", "hold": "중립",
@@ -213,6 +297,11 @@ def main():
         if val:
             signals["valuation"] = val
             print(f"   ✅ 밸류: {val}")
+        reports = fetch_kr_analyst_reports(KR_CODE)
+        if reports:
+            signals["analyst_reports"] = reports
+            print(f"   ✅ 증권사 리포트 {len(reports)}건: "
+                  + ", ".join(f"{r['firm']}({r['date']})" for r in reports))
     else:
         val = fetch_us_signals(TICKER)
         if val:

@@ -700,7 +700,7 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 - 점수 구성 요인 동향 (참고용, 점수·숫자 절대 금지·"~한 신호가 있었다" 식 맥락 설명에만 활용): {scoring_str}
 - 경쟁사({competitor_ticker}) 비교: {competitor_str}
 - 기술적 지표(참고용, 자연스럽게 수치 인용 가능): {tech_str}
-- 정량 신호 (기술추세·수급·밸류 — 씬2 '다음주 전망'의 근거로 우선 활용. 전문용어는 풀어서 쉽게): {signals_str}
+- 정량 신호 (기술추세·수급·밸류·목표주가 — 씬2 '다음주 전망'의 근거로 우선 활용. 전문용어는 풀어서 쉽게): {signals_str}
 - 주가 변동 원인: {movement_reason_str}
 - 회사 방향·최근 투자 (검색 결과 — 씬0 줄2~5 소재로 우선 활용): {company_direction_str}
 - 검색량 트렌드: {trends_str}
@@ -737,7 +737,8 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 - 줄3: "보합: ..." — 제공된 보합(중립) 뉴스를 한 문장으로 (40~55자, 수치 포함). 보합이 "없음"이면 "보합: 최근 뚜렷한 중립 이슈는 없었어요"
 
 【씬 2 — 다음주 전망 (클로징)】 (6줄, 다음주 예측 중심·수치 의무 — 간결하고 "딱 잘라지는" 헤드라인 어투)
-※ 위 '정량 신호(기술추세·수급·밸류)'를 **전망의 핵심 근거로 우선 활용**한다 — 뉴스 감(感)이 아니라 추세·수급·밸류 수치로 방향을 뒷받침. 단 RSI·MACD·PER 같은 용어는 **반드시 쉬운 말로 풀어** 쓴다(예: "RSI 72" → "단기 과열 신호", "외국인 5일 순매수 +120억" → "외국인이 최근 강하게 사들이는 중").
+※ 위 '정량 신호(기술추세·수급·밸류·목표주가)'를 **전망의 핵심 근거로 우선 활용**한다 — 뉴스 감(感)이 아니라 추세·수급·밸류·목표주가 수치로 방향을 뒷받침. 단 RSI·MACD·PER 같은 용어는 **반드시 쉬운 말로 풀어** 쓴다(예: "RSI 72" → "단기 과열 신호", "외국인 5일 순매수 +120억" → "외국인이 최근 강하게 사들이는 중").
+※ 목표주가는 [밸류·목표주가]/[증권사 리포트]에 있는 수치만 사용하고, 없는 숫자를 지어내지 않는다. 증권사 리포트에 목표주가 없이 증권사명·날짜만 있으면 "○○증권이 최근 리포트를 냈다" 정도로만 언급(구체 금액 단정 금지).
 ※ 데이터가 없어도 "이벤트 부재"·"예측 데이터 없이"·"자료 없음" 같은 **결핍 고백 문구 금지** — 대신 실적 발표월({industry_ko} 산업 일정), 제품·기술 로드맵, 경쟁 구도 등 아는 사실로 관전 포인트를 채운다.
 ※ 마지막 씬. 줄1~5는 신문 헤드라인처럼 **짧고 단호하게 끊어** 쓴다 — "~예요/~니다/~돼요/~해요/~져요" 같은 긴 서술 어미를 쓰지 말고 **체언(명사)·명사형("전망/예상/관측/관건/변수/주목")으로 딱 잘라** 맺는다. 단 구체 수치·이름·근거는 그대로 넣어 알차게(줄당 30~45자, 화면 2줄까지). 줄6(마무리)만 예외로 따뜻하게.
 - 줄1: 다음주 핵심 일정·이벤트 1건 — next_events 활용, 날짜/이름 명시 (예: "7월 2일 2분기 실적 발표 — 최대 분수령")
@@ -813,8 +814,10 @@ SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({company_
 
 
 def _format_signals(sig: dict) -> str:
-    """enrich_signals.py의 정량 신호(technicals/supply_demand/valuation)를
-    대본 프롬프트용 자연어 한 줄로 정리. 비면 '데이터 없음'."""
+    """enrich_signals.py의 정량 신호(technicals/supply_demand/valuation/analyst_reports)를
+    대본 프롬프트용 자연어 한 줄로 정리. 비면 '데이터 없음'.
+    목표주가: 미국은 애널리스트 컨센서스 범위(평균·최고·최저), 한국은 네이버 금융
+    증권사 리포트(제목에 명시된 경우만 숫자 포함 — 없는 리포트는 증권사·날짜만)."""
     if not sig:
         return "데이터 없음"
     parts = []
@@ -840,7 +843,18 @@ def _format_signals(sig: dict) -> str:
         parts.append("[수급 5일] " + ", ".join(f"{k.replace('_',' ')} {v}" for k, v in sd.items()))
     val = sig.get("valuation") or {}
     if val:
-        parts.append("[밸류] " + ", ".join(f"{k} {v}" for k, v in val.items()))
+        # 목표주가류 키는 통화 표기(원/달러)로, 나머지(PER 등)는 숫자 그대로
+        def _vfmt(k, v):
+            return f"{k.replace('_',' ')} {fmt_price(v)}" if "목표주가" in k else f"{k.replace('_',' ')} {v}"
+        parts.append("[밸류·목표주가] " + ", ".join(_vfmt(k, v) for k, v in val.items()))
+    reports = sig.get("analyst_reports") or []
+    if reports:
+        # 목표주가가 제목에 명시된 리포트만 숫자 포함, 없으면 증권사·날짜만(추측 금지)
+        rp = []
+        for r in reports:
+            tp = f" 목표주가 {fmt_price(r['target_price'])}" if r.get("target_price") else ""
+            rp.append(f"{r['firm']}({r['date']}){tp}")
+        parts.append("[증권사 리포트] " + ", ".join(rp))
     return " / ".join(parts) if parts else "데이터 없음"
 
 
