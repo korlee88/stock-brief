@@ -1,0 +1,35 @@
+{
+  "ticker": "NBIS",
+  "company_en": "Nebius Group N.V.",
+  "company_ko": "네비우스 그룹",
+  "industry_ko": "인공지능 인프라, 클라우드 컴퓨팅, 자율주행, 교육 기술",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "A futuristic data center with towering racks of high-performance GPU clusters, seamlessly integrated with autonomous delivery robots navigating through the facility and self-driving vehicles operating outside, all powered by advanced AI and cloud platforms.",
+  "brand_label": "NBIS BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "NVDA",
+  "key_people": [
+    "Arkady Volozh",
+    "Ophir Nave"
+  ],
+  "google_trends_keywords": [
+    "네비우스",
+    "NBIS 주가",
+    "Nebius AI",
+    "자율주행 기술",
+    "클라우드 컴퓨팅"
+  ],
+  "video_tags": [
+    "Nebius Group",
+    "NBIS Stock",
+    "AI Infrastructure",
+    "Cloud Computing",
+    "Autonomous Driving",
+    "인공지능",
+    "클라우드",
+    "자율주행"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-08-24T08:16:15.725Z"
+}

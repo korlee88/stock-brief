@@ -1,0 +1,29 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+메타와 *270억 달러* 계약, 주가 *$219*
+*AI 인프라* 빌려주고 돈 버는 클라우드 기업
+*2030년 5GW* AI 컴퓨팅 파워 확보 목표
+엔비디아 *20억 달러* 전략 투자까지 유치
+*차세대 GPU*로 초대형 AI 클라우드 구축
+2분기 매출 *454% 급증*한 신흥 강자
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: Q2 실적 대박에 연간 매출 전망 *상향*했어요
+악재: *50억 달러* 전환사채 발행, 주식가치 희석 우려
+보합: 같은 *50억 달러*, 성장 실탄이자 희석 부담 공존
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+다음주 이벤트 없어 *실적 여운* 이어질 전망
+관전포인트: GPU 클라우드 확장 기대, 목표가 *$283*
+현재가 *$219*, *20일선 +2.6%* 완만한 우상향 예상
+*20일 모멘텀 +16.7%*, 단기 상승세 우위예요
+변수: *하락추세* 잔존, 밸류에이션 부담도 살펴봐요
+오늘도 함께해 주셔서 감사해요!
+
+IMAGE_PROMPT_0: A breathtaking cinematic view of Paris at night featuring the illuminated Eiffel Tower and Seine river reflections, seamlessly blended with a futuristic data center visualization showing towering racks of high-performance GPU clusters, autonomous delivery robots navigating corridors, and self-driving vehicles operating outside, all connected through glowing AI cloud networks, futuristic global city night skyline in purple violet tech analytics tones, glowing city lights bokeh, holographic data streams, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic futuristic aerospace and AI infrastructure vision scene depicting a massive data center with towering racks of high-performance GPU clusters glowing green, autonomous delivery robots moving through corridors, self-driving vehicles operating outside, rockets launching into orbit with satellite constellations overhead, dynamic upward trajectory lines symbolizing bullish growth, vivid green growth energy atmosphere, glowing motion lines, cloud computing servers pulsing with light, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A stunning vertical vision of a futuristic megacity inspired by Dubai and NEOM at golden hour, featuring soaring skyscrapers integrated with a colossal AI data center showing towering racks of high-performance GPU clusters, autonomous delivery robots navigating streets below, self-driving vehicles flowing seamlessly, advanced cloud platforms illuminating the sky, golden inspirational future mood with sunlight rays, starlight sparkles, shimmering golden reflections, holographic AI interfaces floating in air, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

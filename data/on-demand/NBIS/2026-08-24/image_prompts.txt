@@ -1,0 +1,11 @@
+# NBIS 주간 배경 이미지 프롬프트 — 2026-08-24
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A breathtaking cinematic view of Paris at night featuring the illuminated Eiffel Tower and Seine river reflections, seamlessly blended with a futuristic data center visualization showing towering racks of high-performance GPU clusters, autonomous delivery robots navigating corridors, and self-driving vehicles operating outside, all connected through glowing AI cloud networks, futuristic global city night skyline in purple violet tech analytics tones, glowing city lights bokeh, holographic data streams, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A dynamic futuristic aerospace and AI infrastructure vision scene depicting a massive data center with towering racks of high-performance GPU clusters glowing green, autonomous delivery robots moving through corridors, self-driving vehicles operating outside, rockets launching into orbit with satellite constellations overhead, dynamic upward trajectory lines symbolizing bullish growth, vivid green growth energy atmosphere, glowing motion lines, cloud computing servers pulsing with light, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A stunning vertical vision of a futuristic megacity inspired by Dubai and NEOM at golden hour, featuring soaring skyscrapers integrated with a colossal AI data center showing towering racks of high-performance GPU clusters, autonomous delivery robots navigating streets below, self-driving vehicles flowing seamlessly, advanced cloud platforms illuminating the sky, golden inspirational future mood with sunlight rays, starlight sparkles, shimmering golden reflections, holographic AI interfaces floating in air, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

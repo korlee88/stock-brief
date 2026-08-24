@@ -1,0 +1,238 @@
+{
+  "generated_at": "2026-08-24",
+  "generated_by": "Claude Opus 4",
+  "title": "메타와 *270억 달러* 계약, 주가 *$219*",
+  "subtitle": "2026-08-24 ~ 2026-08-24 · Nebius Group, Meta와 270억 달러 규모",
+  "summary": {
+    "week_start": "2026-08-24",
+    "week_end": "2026-08-24",
+    "session_count": 1,
+    "total_analyzed": 11,
+    "bullish_count": 8,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 219.13,
+    "price_end": 219.13,
+    "latest_price": 219.13,
+    "today_price": 219.13,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "Nebius Group, Meta와 270억 달러 규모 계약 체결",
+      "score": 5,
+      "reason": "Meta와의 대규모 계약은 Nebius의 AI 인프라 서비스에 대한 강력한 수요를 입증하며, 상당한 미래 매출을 보장하여 주가에 매우 긍정적인 영향을 미쳤습니다.",
+      "source": "Forbes",
+      "date": "2026-03-26",
+      "category": "Contract",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "Nebius Group, Meta와 270억 달러 규모 계약 체결",
+        "score": 5,
+        "reason": "Meta와의 대규모 계약은 Nebius의 AI 인프라 서비스에 대한 강력한 수요를 입증하며, 상당한 미래 매출을 보장하여 주가에 매우 긍정적인 영향을 미쳤습니다.",
+        "source": "Forbes",
+        "date": "2026-03-26",
+        "category": "Contract"
+      },
+      {
+        "title": "Nebius Group, Q2 실적 호조 및 연간 매출 가이던스 상향",
+        "score": 4,
+        "reason": "예상치를 뛰어넘는 매출 성장과 상향된 가이던스는 Nebius의 강력한 사업 모멘텀과 AI 인프라 시장에서의 리더십을 보여주며, 투자자들에게 긍정적인 신호로 작용할 것입니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-20",
+        "category": "Earnings"
+      },
+      {
+        "title": "Nebius CEO, AI 클라우드 계약 '역대 최고 조건'으로 체결 발표",
+        "score": 3,
+        "reason": "최대 규모의 계약을 역대 최고 조건으로 체결했다는 소식은 회사의 수익성 개선과 성장 잠재력을 시사하며, 이는 주가에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "TipRanks",
+        "date": "2026-08-17",
+        "category": "Contract"
+      },
+      {
+        "title": "NVIDIA, Nebius에 20억 달러 지분 투자 및 전략적 파트너십",
+        "score": 4,
+        "reason": "NVIDIA의 전략적 투자는 Nebius의 기술력과 시장 잠재력을 인정하는 것으로, AI 산업 내에서 Nebius의 입지를 강화하고 향후 성장에 대한 기대를 높여 주가에 긍정적인 영향을 줄 것입니다.",
+        "source": "Wikipedia",
+        "date": "2026-03-11",
+        "category": "Market"
+      },
+      {
+        "title": "아카디 볼로즈, 유럽 제재에서 해제",
+        "score": 3,
+        "reason": "창립자이자 CEO인 아카디 볼로즈에 대한 제재 해제는 Nebius Group의 사업 확장에 대한 불확실성을 제거하고, 회사의 리더십 안정성을 강화하여 긍정적인 영향을 미 미칠 것입니다.",
+        "source": "Lansky",
+        "date": "2024-03-XX",
+        "category": "Regulatory"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "Nebius Group, 50억 달러 규모 전환사채 발행",
+        "score": 0,
+        "reason": "전환사채 발행은 AI 인프라 확장을 위한 자금을 확보하는 긍정적인 측면이 있지만, 잠재적인 주식 희석 우려로 인해 단기적으로는 주가에 중립적인 영향을 미칠 수 있습니다.",
+        "source": "Perplexity",
+        "date": "2026-08-20",
+        "category": "Market"
+      },
+      {
+        "title": "오피르 나베, Nebius Group N.V.의 COO 겸 이사로 임명",
+        "score": 1,
+        "reason": "경험이 풍부한 오피르 나베의 COO 및 이사 임명은 회사의 운영 효율성과 경영 안정성에 긍정적인 영향을 미칠 수 있지만, 단기적인 주가 영향은 중립적일 것으로 예상됩니다.",
+        "source": "MarketScreener UK",
+        "date": "2024-08-XX",
+        "category": "Management"
+      }
+    ],
+    "neutral_count": 2,
+    "scene1_news": {
+      "bullish": {
+        "title": "Nebius Group, Q2 실적 호조 및 연간 매출 가이던스 상향",
+        "score": 4,
+        "reason": "예상치를 뛰어넘는 매출 성장과 상향된 가이던스는 Nebius의 강력한 사업 모멘텀과 AI 인프라 시장에서의 리더십을 보여주며, 투자자들에게 긍정적인 신호로 작용할 것입니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-20",
+        "category": "Earnings"
+      },
+      "bearish": {
+        "title": "Nebius Group, AI 및 데이터 센터 확장을 위한 50억 달러 전환사채 발행",
+        "score": -4,
+        "reason": "대규모 전환사채 발행은 기존 주주의 지분 희석 우려를 불러일으키고, 이는 일반적으로 주가에 부정적인 영향을 미칩니다. 특히 AI 클라우드 관련 주식들이 자금 조달 우려로 하락세를 보인다는 분석도 있습니다.",
+        "source": "Robinhood",
+        "date": "2026-08-20",
+        "category": "Market"
+      },
+      "neutral": {
+        "title": "Nebius Group, 50억 달러 규모 전환사채 발행",
+        "score": 0,
+        "reason": "전환사채 발행은 AI 인프라 확장을 위한 자금을 확보하는 긍정적인 측면이 있지만, 잠재적인 주식 희석 우려로 인해 단기적으로는 주가에 중립적인 영향을 미칠 수 있습니다.",
+        "source": "Perplexity",
+        "date": "2026-08-20",
+        "category": "Market"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-08-24",
+        219.13
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-08-24",
+    "today_news": [
+      {
+        "title": "Nebius Group, AI 및 데이터 센터 확장을 위한 50억 달러 전환사채 발행",
+        "category": "Market",
+        "source": "Robinhood",
+        "date": "2026-08-20"
+      },
+      {
+        "title": "Nebius Group, Q2 실적 호조 및 연간 매출 가이던스 상향",
+        "category": "Earnings",
+        "source": "Seeking Alpha",
+        "date": "2026-08-20"
+      },
+      {
+        "title": "Nebius Group, 50억 달러 규모 전환사채 발행",
+        "category": "Market",
+        "source": "Perplexity",
+        "date": "2026-08-20"
+      },
+      {
+        "title": "Nebius CEO, AI 클라우드 계약 '역대 최고 조건'으로 체결 발표",
+        "category": "Contract",
+        "source": "TipRanks",
+        "date": "2026-08-17"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 219.13,
+        "ma20": 213.47,
+        "vs_ma20_pct": 2.6,
+        "ma60": 225.44,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 51.5,
+        "rsi_state": "중립",
+        "macd_momentum": "상승 모멘텀",
+        "volatility_20d_pct": 11.7,
+        "pos_52w_pct": 66.0,
+        "high_52w": 299.86,
+        "low_52w": 63.26,
+        "mom_5d_pct": -21.1,
+        "mom_20d_pct": 16.7
+      },
+      "valuation": {
+        "목표주가_평균": 283.93,
+        "목표주가_최고": 415.0,
+        "목표주가_최저": 144.0,
+        "애널리스트_수": 15,
+        "투자의견": "적극매수",
+        "PER_선행": -73.1
+      }
+    },
+    "prev_day": {
+      "date": "2026-08-21",
+      "open": 226.36,
+      "close": 219.13,
+      "change_pct": -0.45
+    },
+    "movement_reason": "Nevius Group (NBIS)의 2026년 8월 24일 주가 하락에 대한 실시간 원인을 현재 시점에서 파악하기는 어렵습니다. AI는 미래의 실시간 시장 데이터나 당일 발생한 특정 뉴스를 즉시 확인할 수 없기 때문입니다.\n\n그러나 일반적으로 주가 하락의 주요 원인은 다음과 같습니다.\n\n*   실적 발표 부진\n*   시장 투자 심리 악화\n*   사업 환경 변화\n\n이러한 일반적인 요인들이 네비우스 그룹 주가 하락에 영향을 미칠 수 있습니다.",
+    "company_direction": "네비우스 그룹(NBIS)은 인공지능(AI) 산업 전반에 걸친 풀스택 인프라를 구축하는 기술 기업입니다.\n\n*   **주력 사업:** AI 산업용 풀스택 인프라 구축 / AI 클라우드 플랫폼 핵심 매출원 / 자율주행·교육기술·데이터 솔루션 사업 / 유럽·미국 자체 데이터센터 운영\n*   **회사의 비전·전략 방향:** AI 여정 통합 플랫폼 제공 목표 / AI 민주화 실현 전략 추진 / 자산 경량화 모델로 AI 클라우드 확장 / 2030년까지 AI 컴퓨팅 5기가와트(GW) 확보\n*   **최근 1년 내 주요 투자·설비·인수:** 2026년 엔비디아 20억 달러 전략 투자 / 데이터센터 확장에 50억 달러 전환사채 발행 / 자율주행 자회사에 3.75억 달러 투자 / 6.43억 달러로 아이겐AI 인수 완료 / 2026년 설비투자 200억~250억 달러 계획\n*   **핵심 신제품·신기술 로드맵:** 차세대 하이퍼스케일 AI 클라우드 개발 / 엔비디아 루빈 등 차세대 GPU 플랫폼 도입 / 오픈소스 기반 AI 추론 '토큰 팩토리' / 자율주행 로봇택시 2025년 말 출시\n*   **시장 내 위치·점유율:** AI 인프라 시장 주요 강자 위치 / MS·메타 등 빅테크와 200억 달러 장기 계약 / 2026년 2분기 매출 454% 급증 / 2026년 예상 매출 33억 달러 초과 / 시가총액 556억 달러로 세계 460위"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "메타와 *270억 달러* 계약, 주가 *$219*",
+        "*AI 인프라* 빌려주고 돈 버는 클라우드 기업",
+        "*2030년 5GW* AI 컴퓨팅 파워 확보 목표",
+        "엔비디아 *20억 달러* 전략 투자까지 유치",
+        "*차세대 GPU*로 초대형 AI 클라우드 구축",
+        "2분기 매출 *454% 급증*한 신흥 강자"
+      ],
+      "body": "메타와 *270억 달러* 계약, 주가 *$219*\n*AI 인프라* 빌려주고 돈 버는 클라우드 기업\n*2030년 5GW* AI 컴퓨팅 파워 확보 목표\n엔비디아 *20억 달러* 전략 투자까지 유치\n*차세대 GPU*로 초대형 AI 클라우드 구축\n2분기 매출 *454% 급증*한 신흥 강자"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: Q2 실적 대박에 연간 매출 전망 *상향*했어요",
+        "악재: *50억 달러* 전환사채 발행, 주식가치 희석 우려",
+        "보합: 같은 *50억 달러*, 성장 실탄이자 희석 부담 공존"
+      ],
+      "body": "호재: Q2 실적 대박에 연간 매출 전망 *상향*했어요\n악재: *50억 달러* 전환사채 발행, 주식가치 희석 우려\n보합: 같은 *50억 달러*, 성장 실탄이자 희석 부담 공존"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "다음주 이벤트 없어 *실적 여운* 이어질 전망",
+        "관전포인트: GPU 클라우드 확장 기대, 목표가 *$283*",
+        "현재가 *$219*, *20일선 +2.6%* 완만한 우상향 예상",
+        "*20일 모멘텀 +16.7%*, 단기 상승세 우위예요",
+        "변수: *하락추세* 잔존, 밸류에이션 부담도 살펴봐요",
+        "오늘도 함께해 주셔서 감사해요!"
+      ],
+      "body": "다음주 이벤트 없어 *실적 여운* 이어질 전망\n관전포인트: GPU 클라우드 확장 기대, 목표가 *$283*\n현재가 *$219*, *20일선 +2.6%* 완만한 우상향 예상\n*20일 모멘텀 +16.7%*, 단기 상승세 우위예요\n변수: *하락추세* 잔존, 밸류에이션 부담도 살펴봐요\n오늘도 함께해 주셔서 감사해요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A breathtaking cinematic view of Paris at night featuring the illuminated Eiffel Tower and Seine river reflections, seamlessly blended with a futuristic data center visualization showing towering racks of high-performance GPU clusters, autonomous delivery robots navigating corridors, and self-driving vehicles operating outside, all connected through glowing AI cloud networks, futuristic global city night skyline in purple violet tech analytics tones, glowing city lights bokeh, holographic data streams, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic futuristic aerospace and AI infrastructure vision scene depicting a massive data center with towering racks of high-performance GPU clusters glowing green, autonomous delivery robots moving through corridors, self-driving vehicles operating outside, rockets launching into orbit with satellite constellations overhead, dynamic upward trajectory lines symbolizing bullish growth, vivid green growth energy atmosphere, glowing motion lines, cloud computing servers pulsing with light, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A stunning vertical vision of a futuristic megacity inspired by Dubai and NEOM at golden hour, featuring soaring skyscrapers integrated with a colossal AI data center showing towering racks of high-performance GPU clusters, autonomous delivery robots navigating streets below, self-driving vehicles flowing seamlessly, advanced cloud platforms illuminating the sky, golden inspirational future mood with sunlight rays, starlight sparkles, shimmering golden reflections, holographic AI interfaces floating in air, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}
