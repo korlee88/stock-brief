@@ -141,38 +141,6 @@ HOOK_STYLES = [
 def pick_hook(seed):
     return random.Random(str(seed)).choice(HOOK_STYLES)
 
-# 씬0 배경용 — 서울 단일 묘사 탈피, 세계 주요 도시 실제 야경 랜드마크 로테이션 (생성일 시드)
-WORLD_CAPITALS_NIGHT = [
-    "뉴욕 맨해튼 스카이라인과 자유의 여신상",
-    "런던 빅벤과 템스강, 런던아이",
-    "도쿄 도쿄타워와 시부야 스카이라인",
-    "파리 에펠탑과 세느강변",
-    "두바이 부르즈할리파 스카이라인",
-    "싱가포르 마리나베이샌즈와 가든스바이더베이",
-    "시드니 오페라하우스와 하버브릿지",
-    "서울 한강과 롯데타워 스카이라인",
-]
-
-# 씬2 배경용 — 각국이 꿈꾸는 미래도시 비전 로테이션 (생성일 시드, 씬0과 다른 솔트로 독립 분산)
-WORLD_FUTURE_CITIES = [
-    "아랍에미리트 두바이 네옴시티풍 미래 메가시티",
-    "싱가포르 스마트네이션 미래 정원도시",
-    "일본 도쿄 미래형 스마트시티",
-    "한국 서울 미래형 스마트시티",
-    "사우디아라비아 네옴 더라인 미래도시",
-    "중국 상하이 미래형 초고층 스마트시티",
-    "아랍에미리트 마스다르시티 친환경 미래도시",
-    "북유럽풍 친환경 미래 스마트시티",
-]
-
-def pick_capital(seed):
-    """씬0 배경 도시 — 생성일 시드로 결정적 선택(영상마다 다른 도시, 재실행 시 동일)."""
-    return random.Random(str(seed) + "_capital").choice(WORLD_CAPITALS_NIGHT)
-
-def pick_future_city(seed):
-    """씬2 배경 미래도시 — 씬0과 다른 솔트로 독립 선택."""
-    return random.Random(str(seed) + "_futurecity").choice(WORLD_FUTURE_CITIES)
-
 SCENE_WIKI_ARTICLES = TICKER_CONFIG.get("scene_wiki_articles", [])   # 온디맨드 종목은 없을 수 있음
 GOOGLE_TRENDS_KEYWORDS = TICKER_CONFIG.get("google_trends_keywords", [])
 
@@ -807,13 +775,18 @@ SCENE_2:
 
 === 배경 이미지 프롬프트 (Gemini Imagen용, 영어, 3개) ===
 각 60단어 이상. 반드시 포함: "no text, no letters, no watermark, no logo", "ultra-high resolution".
-{company_ko}·{industry_ko} 관련 시각 요소 포함. 씬별 색감 지정.
-★ 각 이미지에 {company_ko}의 미래 기술·사업계획을 시각적으로 반영하라(핵심 제품/로드맵): {future_tech}.
+★ 주 피사체 원칙(가장 중요): {company_ko}({industry_ko})가 실제로 추구하는 브랜드 이미지·업(業)의
+  정체성을 주 피사체로 삼는다. 모든 종목에 범용 미래도시·로켓 발사 같은 상투적 SF 배경을 기본값으로
+  쓰지 말 것 — 이 회사이기 때문에 나올 수 있는 구체적 장면을 그린다(예: 반도체면 클린룸·웨이퍼,
+  화장품이면 뷰티 스튜디오, 실제로 항공우주 기업일 때만 로켓·발사 장면 사용).
+★ {company_ko}의 핵심 매출 제품·서비스({future_tech})는 화면 한쪽의 보조 오브젝트로만 작게
+  배치한다 — 제품이 화면을 지배하는 큰 클로즈업이나 주인공처럼 나오면 안 된다.
 ※ 씬 0·1은 16:9 landscape (horizontal strip), 씬 2는 9:16 vertical (full screen) — 프롬프트에 비율 명시.
+  씬별 무드는 유지: 0=보라 분석적, 1=초록 성장, 2=골드 영감.
 
-IMAGE_PROMPT_0: [씬0 — 16:9 landscape · {world_capital} 야경 배경 + {company_ko} {industry_ko}가 추구하는 방향성이 느껴지는 핵심 비주얼, {future_tech}, 글로벌 첨단 도시 스카이라인, 보라빛 미래적 분석 분위기, futuristic global city night skyline purple violet tech analytics, glowing city lights bokeh, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
-IMAGE_PROMPT_1: [씬1 — 16:9 landscape · {future_tech} 비전이 담긴 항공우주 발전 상상도, {company_ko} {industry_ko}의 방향성이 보여지는 역동적 비주얼, 로켓 발사·인공위성 궤도·우주 인프라가 어우러진 미래 지향적 장면, 초록빛 성장 상승 에너지 분위기, futuristic aerospace launch vivid green growth bullish energy, dynamic upward trajectory, glowing motion lines, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
-IMAGE_PROMPT_2: [씬2 — 9:16 vertical · {world_future_city} 비전 배경 + {company_ko} {industry_ko} 상징 비주얼 + 미래 비전({future_tech}), 각국이 꿈꾸는 미래도시 풍경, 골드빛 영감적인 미래 무드, 황금빛 태양·별빛·반짝임, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo]"""
+IMAGE_PROMPT_0: [씬0 — 16:9 landscape · {company_ko}({industry_ko})가 추구하는 브랜드 이미지·업의 정체성을 담은, 이 업종에 실제로 어울리는 구체적 공간·장면을 주 피사체로, 핵심 제품({future_tech})은 화면 한쪽에 작게 보조 오브젝트로만 배치, 보라빛 분석적 무드 조명, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_1: [씬1 — 16:9 landscape · {company_ko}({industry_ko})의 성장·상승세를 상징하는, 이 업종 고유의 구체적 장면을 주 피사체로(범용 로켓 발사 이미지는 실제 항공우주 기업일 때만 사용), 핵심 제품({future_tech})은 화면 한쪽의 보조 요소로만 등장, 초록빛 성장 상승 에너지 분위기, dynamic upward energy, glowing motion lines, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_2: [씬2 — 9:16 vertical · {company_ko}({industry_ko})가 그리는 사업 방향성을 담은, 이 업종 고유의 미래 지향적 장면을 주 피사체로(범용 미래도시가 아니라 실제 사업 영역을 반영), 핵심 제품({future_tech})은 화면 한쪽의 보조 요소로만 배치, 골드빛 영감적인 무드, warm inspiring golden light, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo]"""
 
 
 SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({company_ko}) 유튜브 쇼츠 나레이션 대본이다.
@@ -1054,8 +1027,6 @@ def _build_prompt(summary):
 
     _seed = summary.get("week_end") or summary.get("week_start") or ""
     hook_style = pick_hook(_seed)
-    world_capital = pick_capital(_seed)
-    world_future_city = pick_future_city(_seed)
     return SCRIPT_PROMPT_TEMPLATE.format(
         ticker=TICKER,
         company_ko=COMPANY_KO,
@@ -1063,8 +1034,6 @@ def _build_prompt(summary):
         grounding=grounding,
         future_tech=FUTURE_TECH_EN,
         hook_style=hook_style,
-        world_capital=world_capital,
-        world_future_city=world_future_city,
         week_start=summary["week_start"],
         week_end=summary["week_end"],
         price=fmt_price(summary["latest_price"]) or summary["latest_price"],

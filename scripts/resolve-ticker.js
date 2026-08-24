@@ -113,7 +113,7 @@ ${krContext}Return ONLY a JSON object, no other text:
  "competitor_ticker": "대표 경쟁사 상장 티커 1개 (없으면 \\"\\")",
  "google_trends_keywords": ["한국어 연관 검색 키워드 4~6개 (회사명·제품·CEO 등)"],
  "video_tags": ["한국어/영문 YouTube 태그 4~5개"],
- "image_future_tech_en": "the company's flagship future products/roadmap as a vivid 1-2 sentence English visual description for AI image generation"
+ "image_future_tech_en": "the company's current core revenue-generating flagship product or service (what actually drives its sales today, not a speculative future roadmap) as a vivid 1-2 sentence English visual description suitable as a small SECONDARY/supporting element in an AI-generated image"
 }
 If the ticker does not correspond to any real listed company, return {"error": "설명"}.` }],
     }],
