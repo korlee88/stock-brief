@@ -613,6 +613,37 @@ def build_next_week_outlook(forecasts):
     return "; ".join(parts)
 
 
+def fetch_month_low_pct(ticker):
+    """Yahoo 일봉에서 최근 1개월 최저가 대비 현재가 변동률 (씬0 헤더용).
+
+    기존 '전일 대비 %'는 하루짜리 등락이라 변동폭이 작아 한눈에 의미가 안 와닿는다는
+    피드백(사용자 요청)으로, 더 눈에 띄는 비교 기준인 '한달 최저 대비'로 교체.
+    range=1mo(약 21거래일)의 저가(low) 중 최솟값을 기준으로 삼는다.
+    실패 시 None — 씬0에서 폴백(전일 대비)으로 대체된다.
+    """
+    for host in ("query1", "query2"):
+        url = f"https://{host}.finance.yahoo.com/v8/finance/chart/{ticker}?range=1mo&interval=1d"
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=10) as r:
+                data = json.load(r)
+            res = data["chart"]["result"][0]
+            quote = res["indicators"]["quote"][0]
+            lows = [v for v in (quote.get("low") or []) if v is not None]
+            closes = [v for v in (quote.get("close") or []) if v is not None]
+            if not lows or not closes:
+                continue
+            month_low = min(lows)
+            current = closes[-1]
+            if month_low <= 0:
+                continue
+            pct = round((current - month_low) / month_low * 100, 2)
+            return {"low": round(float(month_low), 2), "current": round(float(current), 2), "pct_vs_low": pct}
+        except Exception as e:
+            print(f"   ⚠ Yahoo 월간 최저가({host}) 실패: {e}")
+    return None
+
+
 def fetch_prev_day_ohlc(ticker):
     """Yahoo 일봉에서 가장 최근 완료된 거래일의 시가·종가를 가져온다 (씬0 '전일 시가→종가'용).
 
@@ -2428,7 +2459,7 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
         if not (first.startswith('"') or first.startswith("'")):
             first = f'"{first}"'
         head_main = first
-        # 부제: 현재 주가 + 전일 변동 + 윈도우(2일) 누적 변동률 — 기준 시점을 명시해 오독 방지
+        # 부제: 현재 주가 + 한달 최저 대비 변동 + 윈도우(2일) 누적 변동률 — 기준 시점을 명시해 오독 방지
         price = summary.get("latest_price")
         wc    = summary.get("week_change_pct")
         # 온디맨드(단일 세션)는 윈도우 시작=끝이라 누적 변동률이 항상 0.0% —
@@ -2436,16 +2467,21 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
         if summary.get("week_start") == summary.get("week_end"):
             wc = None
         price_s = fmt_price(price)
-        # 전일 변동률: Yahoo 일봉(확정 종가) 우선, 실패 시 세션 스냅숏(today_change_pct) 폴백
-        pd_pct = (summary.get("prev_day") or {}).get("change_pct")
-        if pd_pct is None:
-            pd_pct = summary.get("today_change_pct")
+        # 한달 최저 대비 변동률(사용자 요청 — 전일 대비는 하루짜리라 변동폭이 작아 눈에 잘
+        # 안 들어옴). Yahoo 월간 최저가 조회 실패 시에만 전일 대비로 폴백.
+        low_pct = (summary.get("month_low") or {}).get("pct_vs_low")
+        low_label = "한달최저대비"
+        if low_pct is None:
+            low_pct = (summary.get("prev_day") or {}).get("change_pct")
+            if low_pct is None:
+                low_pct = summary.get("today_change_pct")
+            low_label = "전일"
         # 서브 한 줄(폭 W-80)에 확실히 들어가게 실측하며 단계적 압축(1소수점 → 화살표 생략 → 공백 축소)
         arrow = ("▲" if wc >= 0 else "▼") if wc is not None else ""
         for fmt in ("full", "no_arrow", "tight"):
             sub_parts = [p for p in [price_s] if p]
-            if pd_pct is not None:
-                sub_parts.append(f"전일{' ' if fmt != 'tight' else ''}{pd_pct:+.1f}%")
+            if low_pct is not None:
+                sub_parts.append(f"{low_label}{' ' if fmt != 'tight' else ''}{low_pct:+.1f}%")
             if wc is not None:
                 a = arrow if fmt == "full" else ""
                 sub_parts.append(f"{LOOKBACK_DAYS}일{' ' if fmt != 'tight' else ''}{a}{wc:+.1f}%")
@@ -2635,6 +2671,12 @@ def main():
         pd_ = summary["prev_day"]
         pct_ = f" ({pd_['change_pct']:+.2f}%)" if pd_.get("change_pct") is not None else ""
         print(f"   전일({pd_['date']}) 시가 ${pd_['open']} → 종가 ${pd_['close']}{pct_}")
+
+    # ── 한달 최저가 대비 현재가 (씬0 헤더 비교 기준 — 사용자 요청으로 전일 대비 대체) ──
+    summary["month_low"] = fetch_month_low_pct(TICKER)
+    if summary["month_low"]:
+        ml = summary["month_low"]
+        print(f"   한달 최저 {fmt_price(ml['low'])} 대비 현재 {fmt_price(ml['current'])} ({ml['pct_vs_low']:+.2f}%)")
 
     # ── Google Trends 수집 ──
     print("📈 Google Trends 수집 중...")
