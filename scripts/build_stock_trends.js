@@ -7,7 +7,8 @@
  * 한 번의 통합 검색은 "한국 개인투자자 관점" 프롬프트에 끌려 미국 쪽 결과 품질이
  * 떨어짐: 실제 미국에서 화제인 종목이 아니라 한국어 검색 맥락에 걸리는 종목 위주로
  * 나옴). 각 시장 검색은 그 시장 언어·매체 기준으로 독립 그라운딩되고, 결과를
- * 시장 내 순위 기준으로 교차 배치(interleave)해 한쪽이 다른 쪽을 밀어내지 않게 한다.
+ * 시장 내 순위 기준으로 교차 배치(interleave)하되 **미국을 한국보다 우선**한다
+ * (사용자 요청 — US1,KR1,US2,KR2,... 순, 동순위면 미국이 위).
  *
  * on-demand.html 우측 '구글 관심 주식 TOP 30' 패널이 이 파일을 읽어 표시하며,
  * 갱신은 페이지의 [리셋] 버튼 → update-stock-trends.yml workflow_dispatch 로만 일어난다
@@ -106,13 +107,13 @@ async function main() {
   ]);
   console.log(`   한국 ${krItems.length}건, 미국 ${usItems.length}건 수신`);
 
-  // 시장 내 순위(이미 score 내림차순으로 옴) 기준으로 교차 배치(KR1,US1,KR2,US2,...)
-  // — 한쪽 시장의 self-score가 전반적으로 높게 나와도 다른 시장이 밀려나지 않는다.
+  // 시장 내 순위(이미 score 내림차순으로 옴) 기준으로 교차 배치하되 미국을 우선
+  // 배치(US1,KR1,US2,KR2,...) — 사용자 요청: 한국보다 미국 검색 순위를 우선한다.
   const interleaved = [];
   const maxLen = Math.max(krItems.length, usItems.length);
   for (let i = 0; i < maxLen; i++) {
-    if (krItems[i]) interleaved.push(krItems[i]);
     if (usItems[i]) interleaved.push(usItems[i]);
+    if (krItems[i]) interleaved.push(krItems[i]);
   }
 
   // 정리: 이름 중복 제거(양쪽에 같은 종목이 우연히 잡힌 경우 대비)·30개 컷·순위 재부여
@@ -124,7 +125,7 @@ async function main() {
 
   const out = {
     generated_at: new Date().toISOString(),
-    source: 'Gemini + Google Search 그라운딩 — 한국·미국 독립 검색 후 교차 배치 (AI 추정 순위)',
+    source: 'Gemini + Google Search 그라운딩 — 한국·미국 독립 검색 후 미국 우선 교차 배치 (AI 추정 순위)',
     items,
   };
   fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 1) + '\n');
