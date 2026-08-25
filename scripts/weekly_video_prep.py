@@ -1369,6 +1369,56 @@ def fetch_wiki_image_with_fallback(articles, out_path: Path) -> bool:
     return False
 
 
+_IMAGEN_MODELS = [
+    "imagen-4.0-generate-001",   # Imagen 4 — Nano Banana보다 사진 같은 화질·구도(유료, 무료 티어 없음)
+    "imagen-3.0-generate-002",   # Imagen 3 (폴백)
+]
+
+_IMAGEN_UNAVAILABLE = False   # 결제 미설정 등으로 계속 실패하면 이번 실행에서 더 시도하지 않음
+
+def fetch_imagen_image(prompt: str, out_path: Path, aspect_ratio: str = "16:9") -> bool:
+    """Google Imagen API로 씬 배경 이미지 생성 (사용자 요청 — Nano Banana 화질이 아쉽다는
+    피드백으로 상위 화질 모델을 1순위로 시도). 같은 GEMINI_API_KEY로 호출되지만 Imagen은
+    유료 과금 대상(무료 티어 없음) — 결제 미설정 계정은 첫 실패 시 남은 씬도 바로
+    Nano Banana(무료)로 넘어가 API 키만으로도 파이프라인이 그대로 동작한다.
+    실패 시 False 반환 → 호출부에서 fetch_nano_banana_image로 폴백."""
+    global _IMAGEN_UNAVAILABLE
+    if not GEMINI_API_KEY or not prompt or _IMAGEN_UNAVAILABLE:
+        return False
+    try:
+        from google import genai
+        from google.genai import types
+        client = genai.Client(api_key=GEMINI_API_KEY)
+        for model_id in _IMAGEN_MODELS:
+            try:
+                response = client.models.generate_images(
+                    model=model_id,
+                    prompt=prompt,
+                    config=types.GenerateImagesConfig(
+                        number_of_images=1,
+                        aspect_ratio=aspect_ratio,
+                    ),
+                )
+                images = response.generated_images or []
+                if images and images[0].image and images[0].image.image_bytes:
+                    out_path.write_bytes(images[0].image.image_bytes)
+                    return True
+            except Exception as e:
+                msg = str(e)
+                # 결제 미설정(FAILED_PRECONDITION/PERMISSION_DENIED)은 재시도해도 계속 실패하므로
+                # 이번 실행에서 Imagen 자체를 끄고 바로 Nano Banana(무료)로 넘어간다.
+                if "FAILED_PRECONDITION" in msg or "PERMISSION_DENIED" in msg or "billing" in msg.lower():
+                    _IMAGEN_UNAVAILABLE = True
+                    print(f"      ⚠ Imagen 결제 미설정으로 판단, 이번 실행은 Nano Banana만 사용: {e}",
+                          file=sys.stderr)
+                    return False
+                print(f"      ⚠ {model_id} 실패: {e}", file=sys.stderr)
+                continue
+    except Exception as e:
+        print(f"      ⚠ Imagen 초기화 실패: {e}", file=sys.stderr)
+    return False
+
+
 _NANO_BANANA_MODELS = [
     "gemini-2.5-flash-image",          # Nano Banana  (500/일 무료)
     "gemini-3.1-flash-image-preview",  # Nano Banana 2 (100/일 무료, 폴백)
@@ -2576,16 +2626,19 @@ def build_images(scenes, summary, out_dir, img_prompts=None):
             bg_paths[idx] = None
             continue
 
-        # 1순위: Nano Banana AI 이미지 (GEMINI_API_KEY 필요)
+        # 1순위: Imagen(사진 같은 고화질, 유료) → 2순위: Nano Banana(무료) — GEMINI_API_KEY 필요
         prompt = img_prompts.get(idx, "")
         aspect = BG_ASPECTS.get(idx, "16:9")
         if prompt:
-            ok = fetch_nano_banana_image(prompt, bg_path, aspect_ratio=aspect)
-            if ok:
+            if fetch_imagen_image(prompt, bg_path, aspect_ratio=aspect):
+                bg_paths[idx] = bg_path
+                print(f"      씬{idx} [Imagen AI · {aspect}] ✅")
+                continue
+            if fetch_nano_banana_image(prompt, bg_path, aspect_ratio=aspect):
                 bg_paths[idx] = bg_path
                 print(f"      씬{idx} [Nano Banana AI · {aspect}] ✅")
                 continue
-            print(f"      씬{idx} Nano Banana 실패 → 정적 배경/그라데이션 폴백", file=sys.stderr)
+            print(f"      씬{idx} Imagen·Nano Banana 모두 실패 → 정적 배경/그라데이션 폴백", file=sys.stderr)
 
         # 2순위: 로컬 정적 배경 (data/scene-backgrounds/ — config scene_static_bg_files)
         # ※ Wikipedia 폴백은 제거 — 대표이미지가 회사 로고라 풀스크린 배경으로 부적합(영상이 조잡해짐).
