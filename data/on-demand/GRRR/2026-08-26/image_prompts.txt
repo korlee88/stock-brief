@@ -1,0 +1,11 @@
+# GRRR 주간 배경 이미지 프롬프트 — 2026-08-26
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A sophisticated smart city operations control room at dusk, featuring large curved video walls displaying intricate urban analytics dashboards, glowing purple and violet ambient lighting reflecting on polished floors, silhouettes of analysts studying real-time data streams, holographic maps of interconnected districts floating in mid-air, on one side a small subtle cluster of interconnected street cameras and sensors on a miniature cityscape model as a secondary object, deep analytical purple mood, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+An expansive modern AI data center corridor in Asia bathed in vibrant emerald green light, rows of tall server racks glowing with pulsing indicator lights, cool mist drifting along the polished floor, dynamic upward energy conveyed through glowing motion lines streaming toward the ceiling, symbolizing rapid growth and expansion, on one side a small secondary display panel showing a smart city camera network feed as a supporting element, lush green growth atmosphere, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A visionary sunrise view of a futuristic Asian metropolis skyline bathed in warm golden light, sleek AI infrastructure buildings and data center towers rising among traditional architecture, soft golden clouds drifting across the sky evoking inspiration and forward momentum, on one side of the frame a small subtle streetlight-mounted camera and sensor node as a secondary background object, warm inspiring golden mood conveying ambition and long-term vision, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

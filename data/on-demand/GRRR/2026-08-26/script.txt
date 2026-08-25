@@ -1,0 +1,29 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+경쟁사 대비 *$14.04*, 보합권 마감
+*AI 보안·스마트시티* 솔루션 기업
+*아시아 AI 데이터센터* 확장 목표
+2026년 *2.32억 달러* 채권 발행으로 투자금 확보
+*인텔 가우디* 칩 기반 AI 서버용 GPU 출시
+2027년 매출 *4.5~5억 달러* 목표
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 2027년 매출 *4.5~5억 달러* 목표 제시로 성장 기대감이 커졌어요
+악재: 매출은 늘었지만 *조정 손실*이 나서 수익성 걱정이 커졌죠
+보합: 이번엔 딱히 중립 이슈는 없었어요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+관전 포인트: *AI 카메라·데이터센터* 확장으로 스마트시티 선점
+근거: 상반기 매출 *99% 급증*, 성장세 이어져요
+평균 목표주가 *$36.75*, 현 주가 대비 상승 여력
+20일 모멘텀 *+20.5%*, 단기 상승 흐름 유효
+변수: *공격적 확장*에 따른 자본 지출 부담
+함께해 주셔서 감사해요!
+
+IMAGE_PROMPT_0: A sophisticated smart city operations control room at dusk, featuring large curved video walls displaying intricate urban analytics dashboards, glowing purple and violet ambient lighting reflecting on polished floors, silhouettes of analysts studying real-time data streams, holographic maps of interconnected districts floating in mid-air, on one side a small subtle cluster of interconnected street cameras and sensors on a miniature cityscape model as a secondary object, deep analytical purple mood, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: An expansive modern AI data center corridor in Asia bathed in vibrant emerald green light, rows of tall server racks glowing with pulsing indicator lights, cool mist drifting along the polished floor, dynamic upward energy conveyed through glowing motion lines streaming toward the ceiling, symbolizing rapid growth and expansion, on one side a small secondary display panel showing a smart city camera network feed as a supporting element, lush green growth atmosphere, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A visionary sunrise view of a futuristic Asian metropolis skyline bathed in warm golden light, sleek AI infrastructure buildings and data center towers rising among traditional architecture, soft golden clouds drifting across the sky evoking inspiration and forward momentum, on one side of the frame a small subtle streetlight-mounted camera and sensor node as a secondary background object, warm inspiring golden mood conveying ambition and long-term vision, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

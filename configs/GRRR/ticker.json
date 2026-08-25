@@ -1,0 +1,33 @@
+{
+  "ticker": "GRRR",
+  "company_en": "Gorilla Technology Group Inc.",
+  "company_ko": "고릴라 테크놀로지 그룹",
+  "industry_ko": "애플리케이션 소프트웨어",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "A network of interconnected cameras and sensors in a smart city environment, feeding real-time video and data into an AI-powered analytics platform that identifies anomalies, recognizes faces and license plates, and optimizes urban operations for enhanced security and efficiency.",
+  "brand_label": "GRRR BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "PLTR",
+  "key_people": [
+    "Jay Chandan"
+  ],
+  "google_trends_keywords": [
+    "고릴라 테크놀로지",
+    "GRRR 주가",
+    "AI 기반 보안",
+    "엣지 AI",
+    "스마트 시티 솔루션"
+  ],
+  "video_tags": [
+    "Gorilla Technology",
+    "GRRR",
+    "AI",
+    "Cybersecurity",
+    "Video Analytics",
+    "Smart City",
+    "IoT"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-08-25T23:43:13.500Z"
+}

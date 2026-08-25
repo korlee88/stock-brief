@@ -1,0 +1,104 @@
+[
+  {
+    "date": "2026-08-26",
+    "generatedAt": "2026-08-25T23:43:20.203Z",
+    "mode": "on-demand",
+    "latestPrice": 14.04,
+    "news": [
+      {
+        "id": 1,
+        "title": "Gorilla Technology, 상반기 매출 99% 급증 및 2026년 매출 전망 상향 조정",
+        "summary": "Gorilla Technology Group은 2026년 상반기 매출이 99% 증가한 7,840만 달러를 기록했으며, 2026년 연간 매출 전망을 최소 2억 달러로 상향 조정했습니다. 이는 AI 인프라 및 데이터 센터 프로그램, 스마트 시티 프로젝트에 힘입은 결과입니다.",
+        "source": "StockTitan",
+        "date": "2026-08-24",
+        "category": "Earnings"
+      },
+      {
+        "id": 2,
+        "title": "Gorilla Technology, 수익성 우려로 주가 하락",
+        "summary": "Gorilla Technology는 2026년 상반기 조정 손실을 기록하며 수익성 우려가 제기되어 주가가 13% 이상 하락했습니다. 이는 매출 증가와 연간 가이던스 상향 조정에도 불구하고 발생했습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-25",
+        "category": "Earnings"
+      },
+      {
+        "id": 3,
+        "title": "Gorilla Technology, 2027년 매출 목표 4억 5천만~5억 달러 제시",
+        "summary": "Gorilla Technology는 2027년 매출 목표를 4억 5천만 달러에서 5억 달러로 제시했으며, 이는 월스트리트 컨센서스보다 최대 29% 높은 수치입니다. 이는 주로 GPU-as-a-Service 프로젝트에 의해 주도될 것으로 예상됩니다.",
+        "source": "Stocktwits",
+        "date": "2026-08-25",
+        "category": "Product"
+      },
+      {
+        "id": 4,
+        "title": "Gorilla Technology, 자본 집약적 확장 계획 및 실행 위험으로 주가 하락",
+        "summary": "Gorilla Technology는 2분기 매출이 크게 증가했음에도 불구하고, 자본 집약적인 확장 계획과 실행 위험에 대한 투자자들의 우려로 시간 외 거래에서 주가가 13.08% 하락했습니다.",
+        "source": "Earnings call transcript: Gorilla Technology Q2 2026 revenue jumps, shares sink",
+        "date": "2026-08-24",
+        "category": "Market"
+      },
+      {
+        "id": 5,
+        "title": "Gorilla Technology, 아시아 AI 인프라 플랫폼 전반에 걸쳐 실행 가속화",
+        "summary": "Gorilla Technology는 아시아 AI 인프라 플랫폼 전반에 걸쳐 실행을 가속화하고 있으며, 이는 AI 인프라 및 데이터 센터 프로그램, 스마트 시티 프로젝트를 통해 매출 성장을 견인하고 있습니다.",
+        "source": "Public.com",
+        "date": "2026-08-24",
+        "category": "Product"
+      }
+    ],
+    "analyses": {
+      "1": {
+        "direction": "bullish",
+        "impact_score": 4,
+        "reasoning": "매출이 크게 증가하고 연간 매출 전망이 상향 조정된 것은 회사의 성장 모멘텀을 보여주며 주가에 긍정적인 영향을 미칠 것입니다."
+      },
+      "2": {
+        "direction": "bearish",
+        "impact_score": -4,
+        "reasoning": "매출 증가에도 불구하고 조정 손실을 기록하고 수익성 우려가 부각되면서 투자자들의 신뢰가 하락하여 주가에 부정적인 영향을 미쳤습니다."
+      },
+      "3": {
+        "direction": "bullish",
+        "impact_score": 3,
+        "reasoning": "높은 2027년 매출 목표는 회사의 장기적인 성장 잠재력을 시사하며, 특히 GPU-as-a-Service와 같은 고마진 사업의 확장은 주가에 긍정적입니다."
+      },
+      "4": {
+        "direction": "bearish",
+        "impact_score": -3,
+        "reasoning": "회사의 공격적인 확장 계획은 미래 성장을 위한 투자이지만, 단기적으로는 자본 지출 증가와 실행 불확실성으로 인해 투자자들에게 부담으로 작용하여 주가에 부정적인 영향을 미쳤습니다."
+      },
+      "5": {
+        "direction": "bullish",
+        "impact_score": 2,
+        "reasoning": "아시아 시장에서의 AI 인프라 확장은 회사의 핵심 사업 성장을 의미하며, 이는 장기적인 매출 증대와 시장 점유율 확대로 이어져 주가에 긍정적인 영향을 줄 수 있습니다."
+      }
+    },
+    "dailyForecasts": [],
+    "signals": {
+      "technicals": {
+        "price": 14.04,
+        "ma20": 13.73,
+        "vs_ma20_pct": 2.3,
+        "ma60": 15.54,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 60.1,
+        "rsi_state": "중립",
+        "macd_momentum": "상승 모멘텀",
+        "volatility_20d_pct": 5.5,
+        "pos_52w_pct": 35.0,
+        "high_52w": 23.49,
+        "low_52w": 9.04,
+        "mom_5d_pct": -7.6,
+        "mom_20d_pct": 20.5
+      },
+      "valuation": {
+        "목표주가_평균": 36.75,
+        "목표주가_최고": 44.0,
+        "목표주가_최저": 24.0,
+        "애널리스트_수": 4,
+        "투자의견": "적극매수",
+        "PER_선행": 7.6
+      }
+    }
+  }
+]

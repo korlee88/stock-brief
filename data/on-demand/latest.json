@@ -1,14 +1,14 @@
 {
- "ticker": "MRNA",
- "company_ko": "모더나",
- "date": "2026-08-25",
- "report_dir": "data/on-demand/MRNA/2026-08-25",
+ "ticker": "GRRR",
+ "company_ko": "고릴라 테크놀로지 그룹",
+ "date": "2026-08-26",
+ "report_dir": "data/on-demand/GRRR/2026-08-26",
  "scenes": [
-  "data/on-demand/MRNA/2026-08-25/260825_모더나_씬0.png",
-  "data/on-demand/MRNA/2026-08-25/260825_모더나_씬1.png",
-  "data/on-demand/MRNA/2026-08-25/260825_모더나_씬2.png"
+  "data/on-demand/GRRR/2026-08-26/260826_고릴라테크놀로지그룹_씬0.png",
+  "data/on-demand/GRRR/2026-08-26/260826_고릴라테크놀로지그룹_씬1.png",
+  "data/on-demand/GRRR/2026-08-26/260826_고릴라테크놀로지그룹_씬2.png"
  ],
- "youtube_title": "모더나, 요즘 어떨까요? $138.89예요 | 모더나(MRNA) 주가 브리핑 8/25 #Shorts",
- "youtube_description": "모더나(MRNA) 2026-08-25 주가 브리핑 — 현재가 $138.89 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 모더나, MRNA, 모더나 주가, MRNA 주가, 미국주식, 모더나 백신, mRNA 치료제, 모더나 암 백신, Moderna, MRNA stock, mRNA vaccine, biotechnology, cancer vaccine, 생명공학, 제약, BNTX\n#MRNA #모더나 #미국주식 #Moderna #MRNAstock #mRNAvaccine #biotechnology #cancervaccine #Shorts",
- "generated_at": "2026-08-25"
+ "youtube_title": "경쟁사 대비 $14.04, 보합권 마감 | 고릴라 테크놀로지 그룹(GRRR) 주가 브리핑 8/26 #Shorts",
+ "youtube_description": "고릴라 테크놀로지 그룹(GRRR) 2026-08-26 주가 브리핑 — 현재가 $14.04 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 고릴라 테크놀로지 그룹, GRRR, 고릴라 테크놀로지 그룹 주가, GRRR 주가, 미국주식, 고릴라 테크놀로지, AI 기반 보안, 엣지 AI, 스마트 시티 솔루션, Gorilla Technology, AI, Cybersecurity, Video Analytics, Smart City, IoT, 애플리케이션 소프트웨어, PLTR\n#GRRR #고릴라테크놀로지그룹 #미국주식 #GorillaTechnology #AI #Cybersecurity #VideoAnalytics #SmartCity #IoT #Shorts",
+ "generated_at": "2026-08-26"
 }
