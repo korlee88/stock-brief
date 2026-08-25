@@ -250,93 +250,68 @@ async def gen_audio(segments, path):
         print(f"   ⚠ 세그먼트 합성 실패({e}) → 단일 TTS 폴백", file=sys.stderr)
         await _tts(" ".join(segments), path)
 
-# ── 로봇 마스코트 ─────────────────────────────────────────────────────────────
+# ── 곰 마스코트 ───────────────────────────────────────────────────────────────
+# 기존 기계식 로봇 캐릭터(안테나·LED·"T" 패널)가 딱딱하다는 사용자 피드백으로
+# 둥근 곰 얼굴 캐릭터로 교체. SCENE_MOODS에서 실제로 쓰는 focused/happy/celebrating
+# 3개 표정만 구현(다른 mood는 호출되지 않던 죽은 코드라 함께 정리).
 
-def draw_robot_pil(img, rx, ry, mood="neutral", accent=(167, 139, 250)):
-    """Pillow 도형으로 로봇 캐릭터를 img 위에 합성."""
+def draw_mascot_pil(img, rx, ry, mood="focused", accent=(167, 139, 250)):
+    """PIL 도형으로 둥근 곰 얼굴 마스코트를 img 위에 합성. 씬 accent 색은 스카프에
+    반영해 기존처럼 장면별 분위기를 유지한다."""
     from PIL import Image, ImageDraw
     layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    d     = ImageDraw.Draw(layer)
-    BODY  = (38, 44, 60)
-    METAL = (78, 88, 112)
-    SHINE = (215, 225, 240)
-    _G    = (34, 197, 94)
-    _R    = (239, 68, 68)
-    _A    = (245, 158, 11)
+    d = ImageDraw.Draw(layer)
 
-    ax = rx + 50
-    d.line([ax, ry-26, ax, ry], fill=METAL, width=3)
-    d.ellipse([ax-8, ry-36, ax+8, ry-20], fill=accent, outline=SHINE, width=1)
-    d.rounded_rectangle([rx, ry, rx+100, ry+86], radius=18, fill=BODY, outline=METAL, width=2)
+    HEAD    = (244, 175, 160)
+    EAR     = (230, 150, 140)
+    EAR_IN  = (255, 240, 230)
+    BLUSH   = (255, 140, 120)
+    DARK    = (58, 42, 46)
+    NOSE    = (200, 70, 60)
 
-    ey = ry + 22
-    lx, rx2 = rx+13, rx+57
-    ew, eh  = 28, 22
+    cx, cy = rx + 50, ry + 50
+    R = 46
 
-    if mood == "happy":
-        d.arc([lx, ey, lx+ew, ey+eh], start=200, end=340, fill=accent, width=4)
-        d.arc([rx2, ey, rx2+ew, ey+eh], start=200, end=340, fill=accent, width=4)
-    elif mood == "excited":
-        d.ellipse([lx, ey-2, lx+ew, ey+ew-2], fill=accent)
-        d.ellipse([rx2, ey-2, rx2+ew, ey+ew-2], fill=accent)
-        d.ellipse([lx+4, ey+2, lx+9, ey+7], fill=SHINE)
-        d.ellipse([rx2+4, ey+2, rx2+9, ey+7], fill=SHINE)
-    elif mood == "worried":
-        d.line([lx, ey+10, lx+ew, ey+4], fill=_R, width=5)
-        d.line([rx2, ey+4, rx2+ew, ey+10], fill=_R, width=5)
-    elif mood == "focused":
-        d.rectangle([lx, ey+7, lx+ew, ey+15], fill=accent)
-        d.rectangle([rx2, ey+7, rx2+ew, ey+15], fill=accent)
-    elif mood == "shocked":
-        # 동그란 큰 눈 + 동공 작게
-        d.ellipse([lx-2, ey-4, lx+ew+2, ey+ew], fill=SHINE)
-        d.ellipse([rx2-2, ey-4, rx2+ew+2, ey+ew], fill=SHINE)
-        d.ellipse([lx+ew//2-3, ey+ew//2-3, lx+ew//2+3, ey+ew//2+3], fill=_R)
-        d.ellipse([rx2+ew//2-3, ey+ew//2-3, rx2+ew//2+3, ey+ew//2+3], fill=_R)
-        # 머리 위 ! 표시
-        d.text((ax-4, ry-58), "!", fill=_R)
-    elif mood == "celebrating":
-        # 별 모양 눈 (대각선 + 가로 라인)
-        for cx_eye in (lx + ew // 2, rx2 + ew // 2):
-            cy_eye = ey + ew // 2
-            d.line([cx_eye-10, cy_eye, cx_eye+10, cy_eye], fill=accent, width=3)
-            d.line([cx_eye, cy_eye-10, cx_eye, cy_eye+10], fill=accent, width=3)
-            d.line([cx_eye-7, cy_eye-7, cx_eye+7, cy_eye+7], fill=accent, width=2)
-            d.line([cx_eye-7, cy_eye+7, cx_eye+7, cy_eye-7], fill=accent, width=2)
-    else:
-        d.rectangle([lx, ey, lx+ew, ey+eh], fill=accent)
-        d.rectangle([rx2, ey, rx2+ew, ey+eh], fill=accent)
-        d.ellipse([lx+4, ey+3, lx+9, ey+9], fill=SHINE)
-        d.ellipse([rx2+4, ey+3, rx2+9, ey+9], fill=SHINE)
+    # 귀
+    for ex in (cx - 38, cx + 38):
+        d.ellipse([ex - 16, cy - 54, ex + 16, cy - 22], fill=EAR)
+        d.ellipse([ex - 9,  cy - 47, ex + 9,  cy - 29], fill=EAR_IN)
 
-    my = ry + 60
-    if mood in ("happy", "excited", "celebrating"):
-        d.arc([rx+26, my-8, rx+74, my+14], start=0, end=180, fill=accent, width=3)
-    elif mood == "worried":
-        d.arc([rx+26, my, rx+74, my+18], start=180, end=360, fill=_R, width=3)
-    elif mood == "shocked":
-        # 입을 큰 동그라미 (놀란 표정)
-        d.ellipse([rx+38, my-4, rx+62, my+18], fill=_R, outline=SHINE, width=2)
-    else:
-        d.line([rx+30, my+6, rx+70, my+6], fill=METAL, width=3)
+    # 머리
+    d.ellipse([cx - R, cy - R, cx + R, cy + R], fill=HEAD)
 
-    bx, by = rx+12, ry+94
-    d.rounded_rectangle([bx, by, bx+76, by+66], radius=10, fill=BODY, outline=METAL, width=2)
-    d.rounded_rectangle([bx+18, by+10, bx+58, by+44], radius=6, fill=accent)
-    tx = bx + 28
-    d.line([tx, by+16, tx+20, by+16], fill=(255,255,255), width=3)
-    d.line([tx+10, by+16, tx+10, by+40], fill=(255,255,255), width=3)
-    led = _G if mood in ("happy","excited") else _R if mood=="worried" else _A
-    d.ellipse([bx+56, by+46, bx+66, by+56], fill=led)
+    # 볼터치
+    d.ellipse([cx - 40, cy + 4, cx - 18, cy + 18], fill=(*BLUSH, 140))
+    d.ellipse([cx + 18, cy + 4, cx + 40, cy + 18], fill=(*BLUSH, 140))
 
-    d.rounded_rectangle([bx-20, by+8, bx-5, by+48], radius=6, fill=METAL)
-    d.rounded_rectangle([bx+81, by+8, bx+96, by+48], radius=6, fill=METAL)
-    d.ellipse([bx-24, by+42, bx-6, by+60], fill=METAL)
-    d.ellipse([bx+82, by+42, bx+100, by+60], fill=METAL)
-    d.rounded_rectangle([bx+8,  by+70, bx+30, by+88], radius=6, fill=METAL)
-    d.rounded_rectangle([bx+46, by+70, bx+68, by+88], radius=6, fill=METAL)
-    d.rounded_rectangle([bx+4,  by+84, bx+34, by+96], radius=4, fill=(55,62,80))
-    d.rounded_rectangle([bx+42, by+84, bx+72, by+96], radius=4, fill=(55,62,80))
+    # 눈·입 (mood별 — focused=차분, happy=미소, celebrating=반짝이는 눈+함박웃음)
+    lx, rx2, ey = cx - 20, cx + 20, cy - 6
+    if mood == "celebrating":
+        for ex in (lx, rx2):
+            d.line([ex - 7, ey, ex + 7, ey], fill=DARK, width=3)
+            d.line([ex, ey - 7, ex, ey + 7], fill=DARK, width=3)
+            d.line([ex - 5, ey - 5, ex + 5, ey + 5], fill=DARK, width=2)
+            d.line([ex - 5, ey + 5, ex + 5, ey - 5], fill=DARK, width=2)
+        d.arc([cx - 18, cy + 4, cx + 18, cy + 26], start=10, end=170, fill=DARK, width=4)
+    elif mood == "happy":
+        d.arc([lx - 10, ey - 6, lx + 10, ey + 10], start=200, end=340, fill=DARK, width=4)
+        d.arc([rx2 - 10, ey - 6, rx2 + 10, ey + 10], start=200, end=340, fill=DARK, width=4)
+        d.arc([cx - 15, cy + 6, cx + 15, cy + 22], start=10, end=170, fill=DARK, width=3)
+    else:   # focused (기본)
+        for ex in (lx, rx2):
+            d.ellipse([ex - 7, ey - 7, ex + 7, ey + 7], fill=DARK)
+            d.ellipse([ex - 3, ey - 5, ex + 1, ey - 1], fill=(255, 255, 255))
+        d.arc([cx - 9, cy + 9, cx + 9, cy + 19], start=10, end=170, fill=DARK, width=3)
+
+    # 코
+    d.ellipse([cx - 7, cy + 10, cx + 7, cy + 22], fill=NOSE)
+
+    # 스카프(accent 색) + 배지 — 기존 눈/패널 색상 자리를 대체, 상승 화살표로 반응 표현
+    d.rounded_rectangle([cx - 38, cy + 32, cx + 38, cy + 50], radius=9, fill=accent)
+    d.ellipse([cx - 12, cy + 30, cx + 12, cy + 54], fill=(255, 247, 230), outline=accent, width=2)
+    arrow_col = (34, 197, 94) if mood in ("happy", "celebrating") else (140, 100, 245)
+    d.line([cx - 5, cy + 47, cx - 1, cy + 40, cx + 3, cy + 44, cx + 8, cy + 36],
+           fill=arrow_col, width=3)
 
     return Image.alpha_composite(img.convert("RGBA"), layer).convert("RGB")
 
@@ -463,9 +438,9 @@ def make_anime_frame(t, base_arr, accent, dur, scene_idx):
     img = fx_scanline(img, t)
     img = fx_pulse_glow(img, t, accent)
 
-    mood     = SCENE_MOODS[scene_idx]
-    robot_dy = int(math.sin(t * 3.5) * 3)
-    img = draw_robot_pil(img, W - 130, 40 + robot_dy, mood, accent)
+    mood       = SCENE_MOODS[scene_idx]
+    mascot_dy  = int(math.sin(t * 3.5) * 3)
+    img = draw_mascot_pil(img, W - 130, 40 + mascot_dy, mood, accent)
 
     # 영상 시작/종료에만 부드러운 페이드 (그 외 씬 전환은 CrossFadeIn 처리)
     if is_intro:
