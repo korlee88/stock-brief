@@ -12,18 +12,6 @@
 "AAC-U"
 ],
 [
-"Artius II Acquisition Inc",
-"AACB"
-],
-[
-"Artius II Acquisition Rights",
-"AACBR"
-],
-[
-"Artius II Acquisition Units",
-"AACBU"
-],
-[
 "ATA Creativity Global ADR",
 "AACG"
 ],
@@ -48,6 +36,10 @@
 "AACP"
 ],
 [
+"Apogee Acquisition Rights",
+"AACPR"
+],
+[
 "Apogee Acquisition Units",
 "AACPU"
 ],
@@ -56,7 +48,7 @@
 "AADX"
 ],
 [
-"American Airlines Group Inc",
+"American Airlines Group Inc.",
 "AAL"
 ],
 [
@@ -64,15 +56,15 @@
 "AAME"
 ],
 [
-"Acadian Asset Management Inc",
+"Acadian Asset Management Inc.",
 "AAMI"
 ],
 [
-"Applied Optoelectronics Inc",
+"Applied Optoelectronics  Inc.",
 "AAOI"
 ],
 [
-"Aaon Inc",
+"AAON  Inc.",
 "AAON"
 ],
 [
@@ -84,19 +76,19 @@
 "AAPG"
 ],
 [
-"Apple Inc",
+"Apple Inc.",
 "AAPL"
 ],
 [
-"Aardvark Therapeutics Inc",
+"Aardvark Therapeutics  Inc.",
 "AARD"
 ],
 [
-"American Assets Trust Inc",
+"American Assets Trust  Inc.",
 "AAT"
 ],
 [
-"Allied Gold Corp",
+"Allied Gold Corporation",
 "AAUC"
 ],
 [
@@ -104,11 +96,11 @@
 "AB"
 ],
 [
-"American Battery Technology Co",
+"American Battery Technology Company",
 "ABAT"
 ],
 [
-"Abbvie Inc",
+"AbbVie Inc.",
 "ABBV"
 ],
 [
@@ -116,7 +108,7 @@
 "ABCB"
 ],
 [
-"Abcellera Biologics Inc",
+"AbCellera Biologics Inc.",
 "ABCL"
 ],
 [
@@ -140,7 +132,7 @@
 "ABM"
 ],
 [
-"Airbnb Inc",
+"Airbnb  Inc.",
 "ABNB"
 ],
 [
@@ -148,7 +140,7 @@
 "ABOS"
 ],
 [
-"Arbor Realty Trust Inc",
+"Arbor Realty Trust  Inc.",
 "ABR"
 ],
 [
@@ -188,7 +180,7 @@
 "ABXL"
 ],
 [
-"Arcosa Inc",
+"Arcosa  Inc.",
 "ACA"
 ],
 [
@@ -200,7 +192,7 @@
 "ACAAU"
 ],
 [
-"ACADIA Pharmaceuticals Inc",
+"Acadia Pharmaceuticals Inc.",
 "ACAD"
 ],
 [
@@ -220,7 +212,7 @@
 "ACCS"
 ],
 [
-"ProFrac Holding Corp",
+"ProFrac Holding Corp.",
 "ACDC"
 ],
 [
@@ -228,7 +220,7 @@
 "ACEL"
 ],
 [
-"Adicet Bio Inc",
+"ADICET Bio  Inc.",
 "ACET"
 ],
 [
@@ -244,7 +236,7 @@
 "ACGCU"
 ],
 [
-"Arch Capital Group Ltd",
+"Arch Capital Group Ltd.",
 "ACGL"
 ],
 [
@@ -256,23 +248,23 @@
 "ACGLO"
 ],
 [
-"Accendra Health Inc",
+"Accendra Health  Inc.",
 "ACH"
 ],
 [
-"Acadia Healthcare Company Inc",
+"Acadia Healthcare Company  Inc.",
 "ACHC"
 ],
 [
-"Archer Aviation Inc",
+"Archer Aviation Inc.",
 "ACHR"
 ],
 [
-"Achieve Life Sciences Inc",
+"Achieve Life Sciences  Inc.",
 "ACHV"
 ],
 [
-"Albertsons Companies Inc",
+"Albertsons Companies  Inc.",
 "ACI"
 ],
 [
@@ -284,11 +276,11 @@
 "ACIU"
 ],
 [
-"ACI Worldwide Inc",
+"ACI Worldwide  Inc.",
 "ACIW"
 ],
 [
-"Axcelis Technologies Inc",
+"Axcelis Technologies  Inc.",
 "ACLS"
 ],
 [
@@ -300,7 +292,7 @@
 "ACM"
 ],
 [
-"ACM Research Inc",
+"ACM Research  Inc.",
 "ACMR"
 ],
 [
@@ -328,7 +320,7 @@
 "ACP"
 ],
 [
-"Acres Commercial Realty Corp",
+"ACRES Commercial Realty Corp.",
 "ACR"
 ],
 [
@@ -336,11 +328,11 @@
 "ACRE"
 ],
 [
-"Aclaris Therapeutics Inc",
+"Aclaris Therapeutics  Inc.",
 "ACRS"
 ],
 [
-"Acrivon Therapeutics Inc",
+"Acrivon Therapeutics  Inc.",
 "ACRV"
 ],
 [
@@ -348,7 +340,7 @@
 "ACT"
 ],
 [
-"Acacia Research Corp",
+"Acacia Research Corporation",
 "ACTG"
 ],
 [
@@ -364,7 +356,7 @@
 "ACV"
 ],
 [
-"ACV Auctions Inc",
+"ACV Auctions Inc.",
 "ACVA"
 ],
 [
@@ -384,16 +376,12 @@
 "ADACU"
 ],
 [
-"Adagene Inc ADR",
+"Adagene Inc. ADR",
 "ADAG"
 ],
 [
-"Adamas Trust Inc",
+"Adamas Trust  Inc.",
 "ADAM"
-],
-[
-"Adamas 9 125 Senior Notes Due 2030",
-"ADAMG"
 ],
 [
 "Adamas 9 875 Senior Notes Due 2030",
@@ -432,7 +420,7 @@
 "ADBE"
 ],
 [
-"Agree Realty Corp",
+"Agree Realty Corporation",
 "ADC"
 ],
 [
@@ -440,7 +428,7 @@
 "ADCT"
 ],
 [
-"Adeia Inc",
+"Adeia Inc.",
 "ADEA"
 ],
 [
@@ -448,8 +436,12 @@
 "ADGM"
 ],
 [
-"Analog Devices Inc",
+"Analog Devices  Inc.",
 "ADI"
+],
+[
+"ADI Global Distribution Inc.",
+"ADIG"
 ],
 [
 "Adial Pharmaceuticals Inc",
@@ -460,7 +452,7 @@
 "ADM"
 ],
 [
-"ADMA Biologics Inc",
+"ADMA Biologics  Inc.",
 "ADMA"
 ],
 [
@@ -476,7 +468,7 @@
 "ADP"
 ],
 [
-"Adaptive Biotechnologies Corp",
+"Adaptive Biotechnologies Corporation",
 "ADPT"
 ],
 [
@@ -484,7 +476,7 @@
 "ADSE"
 ],
 [
-"Autodesk Inc",
+"Autodesk  Inc.",
 "ADSK"
 ],
 [
@@ -504,7 +496,7 @@
 "ADUS"
 ],
 [
-"Advantage Solutions Inc",
+"Advantage Solutions Inc.",
 "ADV"
 ],
 [
@@ -536,7 +528,7 @@
 "AEC"
 ],
 [
-"Ameren Corp",
+"Ameren Corporation",
 "AEE"
 ],
 [
@@ -548,7 +540,7 @@
 "AEFC"
 ],
 [
-"Aegon Ltd ADR",
+"Aegon Ltd. ADR",
 "AEG"
 ],
 [
@@ -564,11 +556,11 @@
 "AEI"
 ],
 [
-"Advanced Energy Industries Inc",
+"Advanced Energy Industries  Inc.",
 "AEIS"
 ],
 [
-"Agnico Eagle Mines Ltd",
+"Agnico Eagle Mines Limited",
 "AEM"
 ],
 [
@@ -580,7 +572,7 @@
 "AENT"
 ],
 [
-"American Eagle Outfitters Inc",
+"American Eagle Outfitters  Inc.",
 "AEO"
 ],
 [
@@ -592,7 +584,7 @@
 "AEP"
 ],
 [
-"AerCap Holdings NV",
+"AerCap Holdings N.V.",
 "AER"
 ],
 [
@@ -604,11 +596,11 @@
 "AERT"
 ],
 [
-"AES Corp",
+"The AES Corporation",
 "AES"
 ],
 [
-"Atlas Energy Solutions Inc",
+"Atlas Energy Solutions Inc.",
 "AESI"
 ],
 [
@@ -640,15 +632,11 @@
 "AFB"
 ],
 [
-"Affinity Bancshares Inc",
-"AFBI"
-],
-[
 "Advanced Flower Capital Inc",
 "AFCG"
 ],
 [
-"American Financial Group Inc",
+"American Financial Group  Inc.",
 "AFG"
 ],
 [
@@ -680,7 +668,7 @@
 "AFJKU"
 ],
 [
-"Aflac Inc",
+"Aflac Incorporated",
 "AFL"
 ],
 [
@@ -688,15 +676,15 @@
 "AFRI"
 ],
 [
-"Affirm Holdings Inc",
+"Affirm Holdings  Inc.",
 "AFRM"
 ],
 [
-"Afya Ltd",
+"Afya Limited",
 "AFYA"
 ],
 [
-"First Majestic Silver Corp",
+"First Majestic Silver Corp.",
 "AG"
 ],
 [
@@ -708,7 +696,7 @@
 "AGCC"
 ],
 [
-"AGCO Corp",
+"AGCO Corporation",
 "AGCO"
 ],
 [
@@ -732,19 +720,19 @@
 "AGIG"
 ],
 [
-"Agios Pharmaceuticals Inc",
+"Agios Pharmaceuticals  Inc.",
 "AGIO"
 ],
 [
-"agilon health inc",
+"agilon health  inc.",
 "AGL"
 ],
 [
-"Federal Agricultural Mortgage Corp Class C",
+"Federal Agricultural Mortgage Corporation Class C",
 "AGM"
 ],
 [
-"Federal Agricultural Mortgage Corp Class A",
+"Federal Agricultural Mortgage Corporation Class A",
 "AGM-A"
 ],
 [
@@ -756,7 +744,7 @@
 "AGMH"
 ],
 [
-"AGNC Investment Corp",
+"AGNC Investment Corp.",
 "AGNC"
 ],
 [
@@ -784,7 +772,7 @@
 "AGNCZ"
 ],
 [
-"Agnt  Inc (Pre-Reincorporation)",
+"AGNT  Inc.",
 "AGNT"
 ],
 [
@@ -796,7 +784,7 @@
 "AGPU"
 ],
 [
-"Adecoagro SA",
+"Adecoagro S.A.",
 "AGRO"
 ],
 [
@@ -804,7 +792,7 @@
 "AGRZ"
 ],
 [
-"Argan Inc",
+"Argan  Inc.",
 "AGX"
 ],
 [
@@ -812,7 +800,7 @@
 "AGYS"
 ],
 [
-"Adapthealth Corp",
+"AdaptHealth Corp.",
 "AHCO"
 ],
 [
@@ -824,7 +812,7 @@
 "AHMA"
 ],
 [
-"American Healthcare REIT Inc",
+"American Healthcare REIT  Inc.",
 "AHR"
 ],
 [
@@ -868,11 +856,11 @@
 "AIFF"
 ],
 [
-"AIFU Inc",
+"AIFU Inc.",
 "AIFU"
 ],
 [
-"American International Group Inc",
+"American International Group  Inc.",
 "AIG"
 ],
 [
@@ -920,7 +908,7 @@
 "AIOS"
 ],
 [
-"PowerFleet Inc",
+"Powerfleet  Inc.",
 "AIOT"
 ],
 [
@@ -928,7 +916,7 @@
 "AIP"
 ],
 [
-"AAR Corp",
+"AAR CORP.",
 "AIR"
 ],
 [
@@ -944,7 +932,7 @@
 "AIRI"
 ],
 [
-"Airjoule Technologies Corp",
+"AirJoule Technologies Corporation",
 "AIRJ"
 ],
 [
@@ -1008,11 +996,11 @@
 "AKBA"
 ],
 [
-"Embotelladora Andina SA ADR Series A",
+"Embotelladora Andina S.A. ADR Series A",
 "AKO-A"
 ],
 [
-"Embotelladora Andina SA ADR Series B",
+"Embotelladora Andina S.A. ADR Series B",
 "AKO-B"
 ],
 [
@@ -1028,7 +1016,7 @@
 "AKTX"
 ],
 [
-"Astera Labs  Inc",
+"Astera Labs  Inc.",
 "ALAB"
 ],
 [
@@ -1038,10 +1026,6 @@
 [
 "Albemarle Corp",
 "ALB"
-],
-[
-"Avalon Globocare Corp",
-"ALBT"
 ],
 [
 "Alcon AG",
@@ -1064,7 +1048,7 @@
 "ALDX"
 ],
 [
-"Alector Inc",
+"Alector  Inc.",
 "ALEC"
 ],
 [
@@ -1076,7 +1060,7 @@
 "ALFUU"
 ],
 [
-"Alamo Group Inc",
+"Alamo Group Inc.",
 "ALG"
 ],
 [
@@ -1084,32 +1068,28 @@
 "ALGM"
 ],
 [
-"Align Technology Inc",
+"Align Technology  Inc.",
 "ALGN"
 ],
 [
-"Aligos Therapeutics Inc",
+"Aligos Therapeutics  Inc.",
 "ALGS"
 ],
 [
-"Allegiant Travel Co",
+"Allegiant Travel Company",
 "ALGT"
 ],
 [
-"Alliance Laundry Holdings Inc",
+"Alliance Laundry Holdings Inc.",
 "ALH"
 ],
 [
-"Alignment Healthcare Inc",
+"Alignment Healthcare  Inc.",
 "ALHC"
 ],
 [
 "Calisa Acquisition Corp",
 "ALIS"
-],
-[
-"Calisa Acquisition Rights Exp 11 Sep 2030",
-"ALISR"
 ],
 [
 "Calisa Acquisition Units",
@@ -1128,7 +1108,7 @@
 "ALKS"
 ],
 [
-"Alkami Technology Inc",
+"Alkami Technology  Inc.",
 "ALKT"
 ],
 [
@@ -1140,7 +1120,7 @@
 "ALLE"
 ],
 [
-"Allogene Therapeutics Inc",
+"Allogene Therapeutics  Inc.",
 "ALLO"
 ],
 [
@@ -1156,7 +1136,7 @@
 "ALLY"
 ],
 [
-"Almonty Industries Inc",
+"Almonty Industries Inc.",
 "ALM"
 ],
 [
@@ -1164,7 +1144,7 @@
 "ALMR"
 ],
 [
-"Alumis Inc",
+"Alumis Inc.",
 "ALMS"
 ],
 [
@@ -1176,7 +1156,7 @@
 "ALNT"
 ],
 [
-"Alnylam Pharmaceuticals Inc",
+"Alnylam Pharmaceuticals  Inc.",
 "ALNY"
 ],
 [
@@ -1216,7 +1196,7 @@
 "ALPXU"
 ],
 [
-"Alarm.com Holdings Inc",
+"Alarm.com Holdings  Inc.",
 "ALRM"
 ],
 [
@@ -1224,7 +1204,7 @@
 "ALRS"
 ],
 [
-"Allison Transmission Holdings Inc",
+"Allison Transmission Holdings  Inc.",
 "ALSN"
 ],
 [
@@ -1252,7 +1232,7 @@
 "ALUB-U"
 ],
 [
-"Autoliv Inc",
+"Autoliv  Inc.",
 "ALV"
 ],
 [
@@ -1272,8 +1252,12 @@
 "ALZN"
 ],
 [
-"Antero Midstream Corp",
+"Antero Midstream Corporation",
 "AM"
+],
+[
+"AMR Resources Acquisition Units",
+"AMACU"
 ],
 [
 "Amalgamated Financial Corp",
@@ -1288,7 +1272,7 @@
 "AMAT"
 ],
 [
-"Ambarella Inc",
+"Ambarella  Inc.",
 "AMBA"
 ],
 [
@@ -1304,7 +1288,7 @@
 "AMBP"
 ],
 [
-"Ambiq Micro Inc",
+"Ambiq Micro  Inc.",
 "AMBQ"
 ],
 [
@@ -1324,11 +1308,11 @@
 "AMCR"
 ],
 [
-"AMC Global Media Inc",
+"AMC Global Media Inc.",
 "AMCX"
 ],
 [
-"Advanced Micro Devices Inc",
+"Advanced Micro Devices  Inc.",
 "AMD"
 ],
 [
@@ -1336,7 +1320,7 @@
 "AME"
 ],
 [
-"Affiliated Managers Group Inc",
+"Affiliated Managers Group  Inc.",
 "AMG"
 ],
 [
@@ -1352,15 +1336,15 @@
 "AMIX"
 ],
 [
-"Amkor Technology Inc",
+"Amkor Technology  Inc.",
 "AMKR"
 ],
 [
-"Amylyx Pharmaceuticals Inc",
+"Amylyx Pharmaceuticals  Inc.",
 "AMLX"
 ],
 [
-"AMN Healthcare Services Inc",
+"AMN Healthcare Services  Inc.",
 "AMN"
 ],
 [
@@ -1376,11 +1360,15 @@
 "AMPG"
 ],
 [
-"Amphastar Pharmaceuticals  Inc",
+"Amplitech Group Rights Series B",
+"AMPGZ"
+],
+[
+"Amphastar Pharmaceuticals  Inc.",
 "AMPH"
 ],
 [
-"Amplitude Inc",
+"Amplitude  Inc.",
 "AMPL"
 ],
 [
@@ -1388,11 +1376,11 @@
 "AMPX"
 ],
 [
-"Amplify Energy Corp",
+"Amplify Energy Corp.",
 "AMPY"
 ],
 [
-"Alpha Metallurgical Resources Inc",
+"Alpha Metallurgical Resources  Inc.",
 "AMR"
 ],
 [
@@ -1404,7 +1392,7 @@
 "AMRN"
 ],
 [
-"Amneal Pharmaceuticals Inc",
+"Amneal Pharmaceuticals  Inc.",
 "AMRX"
 ],
 [
@@ -1432,11 +1420,11 @@
 "AMST"
 ],
 [
-"American Tower Corp",
+"American Tower Corporation",
 "AMT"
 ],
 [
-"Amerant Bancorp Inc",
+"Amerant Bancorp Inc.",
 "AMTB"
 ],
 [
@@ -1444,7 +1432,7 @@
 "AMTD"
 ],
 [
-"Amentum Holdings Inc",
+"Amentum Holdings  Inc.",
 "AMTM"
 ],
 [
@@ -1452,7 +1440,7 @@
 "AMTX"
 ],
 [
-"American Well Corp",
+"American Well Corporation",
 "AMWL"
 ],
 [
@@ -1468,12 +1456,16 @@
 "AMZN"
 ],
 [
-"AutoNation Inc",
+"AutoNation  Inc.",
 "AN"
 ],
 [
-"AnaptysBio Inc",
+"AnaptysBio  Inc.",
 "ANAB"
+],
+[
+"AnaptysBio Inc",
+"ANABV"
 ],
 [
 "Andersons Inc",
@@ -1488,7 +1480,7 @@
 "ANET"
 ],
 [
-"Abercrombie & Fitch Co",
+"Abercrombie & Fitch Co.",
 "ANF"
 ],
 [
@@ -1500,11 +1492,11 @@
 "ANGI"
 ],
 [
-"AngioDynamics Inc",
+"AngioDynamics  Inc.",
 "ANGO"
 ],
 [
-"Angel Studios Inc",
+"Angel Studios  Inc.",
 "ANGX"
 ],
 [
@@ -1512,7 +1504,7 @@
 "ANIK"
 ],
 [
-"ANI Pharmaceuticals Inc",
+"ANI Pharmaceuticals  Inc.",
 "ANIP"
 ],
 [
@@ -1520,7 +1512,7 @@
 "ANIX"
 ],
 [
-"Adlai Nortye Ltd ADR",
+"Adlai Nortye Group Ltd ADR",
 "ANL"
 ],
 [
@@ -1528,7 +1520,7 @@
 "ANNA"
 ],
 [
-"Annexon Inc",
+"Annexon  Inc.",
 "ANNX"
 ],
 [
@@ -1538,14 +1530,6 @@
 [
 "Alto Neuroscience Inc",
 "ANRO"
-],
-[
-"Agriculture & Natural Solutions Acquisition Corp",
-"ANSC"
-],
-[
-"Agriculture Natural Solutions Acquisition Units",
-"ANSCU"
 ],
 [
 "Antalpha Platform Holding Co",
@@ -1576,7 +1560,7 @@
 "AOMN"
 ],
 [
-"Angel Oak Mortgage REIT Inc",
+"Angel Oak Mortgage REIT  Inc.",
 "AOMR"
 ],
 [
@@ -1588,11 +1572,11 @@
 "AORT"
 ],
 [
-"A O Smith Corp",
+"A. O. Smith Corporation",
 "AOS"
 ],
 [
-"Alpha and Omega Semiconductor Ltd",
+"Alpha and Omega Semiconductor Limited",
 "AOSL"
 ],
 [
@@ -1604,16 +1588,12 @@
 "AP"
 ],
 [
-"APA Corp (US)",
+"APA Corporation",
 "APA"
 ],
 [
 "StoneBridge Acquisition II Corp",
 "APAC"
-],
-[
-"StoneBridge Acquisition II Rights Exp 09 Sep 2030",
-"APACR"
 ],
 [
 "StoneBridge Acquisition II Units",
@@ -1628,19 +1608,19 @@
 "APC"
 ],
 [
-"Air Products and Chemicals Inc",
+"Air Products and Chemicals  Inc.",
 "APD"
 ],
 [
-"American Public Education Inc",
+"American Public Education  Inc.",
 "APEI"
 ],
 [
-"APi Group Corp",
+"APi Group Corporation",
 "APG"
 ],
 [
-"Apogee Therapeutics Inc",
+"Apogee Therapeutics  Inc.",
 "APGE"
 ],
 [
@@ -1664,10 +1644,6 @@
 "APLM"
 ],
 [
-"Aptorum Group Ltd",
-"APM"
-],
-[
 "AmperCap Acquisition Co",
 "APMC"
 ],
@@ -1680,7 +1656,11 @@
 "APMCU"
 ],
 [
-"Apollo Global Management Inc",
+"Apnimed Inc",
+"APMD"
+],
+[
+"Apollo Global Management  Inc.",
 "APO"
 ],
 [
@@ -1688,11 +1668,11 @@
 "APOG"
 ],
 [
-"Applovin Corp",
+"AppLovin Corporation",
 "APP"
 ],
 [
-"Appfolio Inc",
+"AppFolio  Inc.",
 "APPF"
 ],
 [
@@ -1700,7 +1680,7 @@
 "APPN"
 ],
 [
-"Digital Turbine Inc",
+"Digital Turbine  Inc.",
 "APPS"
 ],
 [
@@ -1764,7 +1744,7 @@
 "AQST"
 ],
 [
-"Antero Resources Corp",
+"Antero Resources Corporation",
 "AR"
 ],
 [
@@ -1772,7 +1752,7 @@
 "ARAI"
 ],
 [
-"Accuray Inc",
+"Accuray Incorporated",
 "ARAY"
 ],
 [
@@ -1788,7 +1768,7 @@
 "ARBK"
 ],
 [
-"ArcBest Corp (Texas)",
+"ArcBest Corporation",
 "ARCB"
 ],
 [
@@ -1808,11 +1788,15 @@
 "ARCL"
 ],
 [
+"ARC Group Acquisition I Rights",
+"ARCLR"
+],
+[
 "ARC Group Acquisition I Units",
 "ARCLU"
 ],
 [
-"Arcos Dorados Holdings Inc",
+"Arcos Dorados Holdings Inc.",
 "ARCO"
 ],
 [
@@ -1828,7 +1812,7 @@
 "ARDT"
 ],
 [
-"Ardelyx Inc",
+"Ardelyx  Inc.",
 "ARDX"
 ],
 [
@@ -1844,7 +1828,7 @@
 "AREN"
 ],
 [
-"Ares Management Corp",
+"Ares Management Corporation",
 "ARES"
 ],
 [
@@ -1852,7 +1836,7 @@
 "ARGX"
 ],
 [
-"Arhaus Inc",
+"Arhaus  Inc.",
 "ARHS"
 ],
 [
@@ -1876,7 +1860,7 @@
 "ARL"
 ],
 [
-"Arlo Technologies Inc",
+"Arlo Technologies  Inc.",
 "ARLO"
 ],
 [
@@ -1892,11 +1876,11 @@
 "ARMK"
 ],
 [
-"Armata Pharmaceuticals Inc",
+"Armata Pharmaceuticals  Inc.",
 "ARMP"
 ],
 [
-"Archrock Inc",
+"Archrock  Inc.",
 "AROC"
 ],
 [
@@ -1904,7 +1888,7 @@
 "AROW"
 ],
 [
-"Arq Inc",
+"Arq  Inc.",
 "ARQ"
 ],
 [
@@ -1912,11 +1896,11 @@
 "ARQQ"
 ],
 [
-"Arcutis Biotherapeutics Inc",
+"Arcutis Biotherapeutics  Inc.",
 "ARQT"
 ],
 [
-"ARMOUR Residential REIT Inc",
+"ARMOUR Residential REIT  Inc.",
 "ARR"
 ],
 [
@@ -1952,11 +1936,11 @@
 "ARVN"
 ],
 [
-"Arrow Electronics Inc",
+"Arrow Electronics  Inc.",
 "ARW"
 ],
 [
-"Arrowhead Pharmaceuticals Inc",
+"Arrowhead Pharmaceuticals  Inc.",
 "ARWR"
 ],
 [
@@ -1964,7 +1948,7 @@
 "ARX"
 ],
 [
-"Arxis Inc",
+"Arxis  Inc.",
 "ARXS"
 ],
 [
@@ -1976,7 +1960,7 @@
 "ASA"
 ],
 [
-"Asana Inc",
+"Asana  Inc.",
 "ASAN"
 ],
 [
@@ -2000,7 +1984,7 @@
 "ASGI"
 ],
 [
-"Ashland Inc",
+"Ashland Inc.",
 "ASH"
 ],
 [
@@ -2008,7 +1992,7 @@
 "ASIC"
 ],
 [
-"AdvanSix Inc",
+"AdvanSix Inc.",
 "ASIX"
 ],
 [
@@ -2024,7 +2008,7 @@
 "ASMB"
 ],
 [
-"ASML Holding NV ADR",
+"ASML Holding N.V. ADR",
 "ASML"
 ],
 [
@@ -2032,7 +2016,7 @@
 "ASND"
 ],
 [
-"Academy Sports and Outdoors Inc",
+"Academy Sports and Outdoors  Inc.",
 "ASO"
 ],
 [
@@ -2052,11 +2036,11 @@
 "ASPI"
 ],
 [
-"Aspen Aerogels Inc",
+"Aspen Aerogels  Inc.",
 "ASPN"
 ],
 [
-"Altisource Portfolio Solutions SA",
+"Altisource Portfolio Solutions S.A.",
 "ASPS"
 ],
 [
@@ -2076,11 +2060,11 @@
 "ASTC"
 ],
 [
-"Astec Industries Inc",
+"Astec Industries  Inc.",
 "ASTE"
 ],
 [
-"Astrana Health Inc",
+"Astrana Health  Inc.",
 "ASTH"
 ],
 [
@@ -2092,7 +2076,7 @@
 "ASTL"
 ],
 [
-"AST SpaceMobile Inc",
+"AST SpaceMobile  Inc.",
 "ASTS"
 ],
 [
@@ -2100,7 +2084,7 @@
 "ASUR"
 ],
 [
-"ASE Technology Holding Co Ltd ADR",
+"ASE Technology Holding Co.  Ltd. ADR",
 "ASX"
 ],
 [
@@ -2112,7 +2096,7 @@
 "ATAI"
 ],
 [
-"Atour Lifestyle Holdings Ltd ADR",
+"Atour Lifestyle Holdings Limited ADR",
 "ATAT"
 ],
 [
@@ -2124,7 +2108,7 @@
 "ATCX"
 ],
 [
-"Alphatec Holdings Inc",
+"Alphatec Holdings  Inc.",
 "ATEC"
 ],
 [
@@ -2144,7 +2128,7 @@
 "ATGL"
 ],
 [
-"Alterity Therapeutics Ltd ADR",
+"Alterity Therapeutics Limited ADR",
 "ATHE"
 ],
 [
@@ -2172,7 +2156,7 @@
 "ATIIU"
 ],
 [
-"Atkore Inc",
+"Atkore Inc.",
 "ATKR"
 ],
 [
@@ -2200,7 +2184,7 @@
 "ATLX"
 ],
 [
-"Atmus Filtration Technologies Inc",
+"Atmus Filtration Technologies Inc.",
 "ATMU"
 ],
 [
@@ -2212,7 +2196,7 @@
 "ATNM"
 ],
 [
-"Atmos Energy Corp",
+"Atmos Energy Corporation",
 "ATO"
 ],
 [
@@ -2228,24 +2212,28 @@
 "ATPC"
 ],
 [
-"Aptargroup Inc",
+"AptarGroup  Inc.",
 "ATR"
 ],
 [
-"Atara Biotherapeutics Inc",
+"Atara Biotherapeutics  Inc.",
 "ATRA"
 ],
 [
-"AtriCure Inc",
+"AtriCure  Inc.",
 "ATRC"
 ],
 [
-"Astronics Corp",
+"Astronics Corporation",
 "ATRO"
 ],
 [
-"ATS Corp",
+"ATS Corporation",
 "ATS"
+],
+[
+"Attovia Therapeutics Inc",
+"ATTO"
 ],
 [
 "Addentax Group Corp",
@@ -2260,7 +2248,7 @@
 "AU"
 ],
 [
-"Atlantic Union Bankshares Corp",
+"Atlantic Union Bankshares Corporation",
 "AUB"
 ],
 [
@@ -2288,15 +2276,15 @@
 "AUNA"
 ],
 [
-"Aurinia Pharmaceuticals Inc",
+"Aurinia Pharmaceuticals Inc.",
 "AUPH"
 ],
 [
-"Aurora Innovation Inc",
+"Aurora Innovation  Inc.",
 "AUR"
 ],
 [
-"Aura Biosciences Inc",
+"Aura Biosciences  Inc.",
 "AURA"
 ],
 [
@@ -2316,7 +2304,7 @@
 "AUUD"
 ],
 [
-"Avista Corp",
+"Avista Corporation",
 "AVA"
 ],
 [
@@ -2324,7 +2312,7 @@
 "AVAH"
 ],
 [
-"Grupo Aval Acciones y Valores SA ADR",
+"Grupo Aval Acciones y Valores S.A. ADR",
 "AVAL"
 ],
 [
@@ -2332,12 +2320,8 @@
 "AVAT"
 ],
 [
-"AeroVironment Inc",
+"AeroVironment  Inc.",
 "AVAV"
-],
-[
-"AvalonBay Communities Inc",
-"AVB"
 ],
 [
 "Avidia Bancorp Inc",
@@ -2348,11 +2332,11 @@
 "AVBH"
 ],
 [
-"ArriVent BioPharma Inc",
+"ArriVent BioPharma  Inc.",
 "AVBP"
 ],
 [
-"American Vanguard Corp",
+"American Vanguard Corporation",
 "AVD"
 ],
 [
@@ -2364,7 +2348,7 @@
 "AVGO"
 ],
 [
-"Atea Pharmaceuticals Inc",
+"Atea Pharmaceuticals  Inc.",
 "AVIR"
 ],
 [
@@ -2374,10 +2358,6 @@
 [
 "Avalyn Pharma Inc",
 "AVLN"
-],
-[
-"Avanos Medical Inc",
-"AVNS"
 ],
 [
 "Avient Corp",
@@ -2392,7 +2372,7 @@
 "AVO"
 ],
 [
-"AvePoint Inc (Delaware)",
+"AvePoint  Inc.",
 "AVPT"
 ],
 [
@@ -2404,7 +2384,7 @@
 "AVT"
 ],
 [
-"Avantor Inc",
+"Avantor  Inc.",
 "AVTR"
 ],
 [
@@ -2428,11 +2408,11 @@
 "AWF"
 ],
 [
-"Armstrong World Industries Inc",
+"Armstrong World Industries  Inc.",
 "AWI"
 ],
 [
-"American Water Works Co Inc",
+"American Water Works Company  Inc.",
 "AWK"
 ],
 [
@@ -2440,7 +2420,7 @@
 "AWP"
 ],
 [
-"American States Water Co",
+"American States Water Company",
 "AWR"
 ],
 [
@@ -2452,7 +2432,7 @@
 "AWX"
 ],
 [
-"Axos Financial Inc",
+"Axos Financial  Inc.",
 "AX"
 ],
 [
@@ -2460,7 +2440,7 @@
 "AXG"
 ],
 [
-"AxoGen Inc",
+"AxoGen  Inc.",
 "AXGN"
 ],
 [
@@ -2484,11 +2464,11 @@
 "AXINU"
 ],
 [
-"Axon Enterprise Inc",
+"Axon Enterprise  Inc.",
 "AXON"
 ],
 [
-"American Express Co",
+"American Express Company",
 "AXP"
 ],
 [
@@ -2496,27 +2476,27 @@
 "AXR"
 ],
 [
-"AXIS Capital Holdings Ltd",
+"AXIS Capital Holdings Limited",
 "AXS"
 ],
 [
-"Axsome Therapeutics Inc",
+"Axsome Therapeutics  Inc.",
 "AXSM"
 ],
 [
-"Axalta Coating Systems Ltd",
+"Axalta Coating Systems Ltd.",
 "AXTA"
 ],
 [
-"AXT Inc",
+"AXT  Inc.",
 "AXTI"
 ],
 [
-"Aya Gold & Silver Inc",
+"Aya Gold & Silver Inc (Quebec)",
 "AYA"
 ],
 [
-"Acuity Inc",
+"Acuity Inc.",
 "AYI"
 ],
 [
@@ -2532,15 +2512,19 @@
 "AZI"
 ],
 [
+"Azio AI Holdings Inc",
+"AZIO"
+],
+[
 "AstraZeneca PLC",
 "AZN"
 ],
 [
-"Autozone Inc",
+"AutoZone  Inc.",
 "AZO"
 ],
 [
-"Azenta Inc",
+"Azenta  Inc.",
 "AZTA"
 ],
 [
@@ -2556,7 +2540,7 @@
 "AZZ"
 ],
 [
-"Barrick Mining Corp",
+"Barrick Mining Corporation",
 "B"
 ],
 [
@@ -2564,11 +2548,11 @@
 "BA"
 ],
 [
-"Alibaba Group Holding Ltd ADR",
+"Alibaba Group Holding Limited ADR",
 "BABA"
 ],
 [
-"Bank of America Corp",
+"Bank of America Corporation",
 "BAC"
 ],
 [
@@ -2592,11 +2576,11 @@
 "BAFN"
 ],
 [
-"Booz Allen Hamilton Holding Corp",
+"Booz Allen Hamilton Holding Corporation",
 "BAH"
 ],
 [
-"Braskem SA ADR",
+"Braskem S.A. ADR",
 "BAK"
 ],
 [
@@ -2604,7 +2588,7 @@
 "BALL"
 ],
 [
-"Bally's Corp",
+"Bally's Corporation",
 "BALY"
 ],
 [
@@ -2612,11 +2596,11 @@
 "BAM"
 ],
 [
-"Banc of California Inc",
+"Banc of California  Inc.",
 "BANC"
 ],
 [
-"Bandwidth Inc",
+"Bandwidth Inc.",
 "BAND"
 ],
 [
@@ -2636,7 +2620,7 @@
 "BANR"
 ],
 [
-"ArrowMark Financial Corp",
+"ArrowMark Financial Corp.",
 "BANX"
 ],
 [
@@ -2664,36 +2648,20 @@
 "BATRK"
 ],
 [
-"Baxter International Inc",
+"Baxter International Inc.",
 "BAX"
 ],
 [
-"Bayview Acquisition Corp",
-"BAYA"
-],
-[
-"Bayview Acquisition Rights",
-"BAYAR"
-],
-[
-"Bayview Acquisition Units",
-"BAYAU"
-],
-[
-"BlackBerry Ltd",
+"BlackBerry Limited",
 "BB"
 ],
 [
-"BigBear.ai Holdings Inc",
+"BigBear.ai Holdings  Inc.",
 "BBAI"
 ],
 [
 "Banco BBVA Argentina SA ADR",
 "BBAR"
-],
-[
-"Bed Bath & Beyond Inc",
-"BBBY"
 ],
 [
 "Concrete Pumping Holdings Inc",
@@ -2724,7 +2692,7 @@
 "BBGI"
 ],
 [
-"BridgeBio Pharma Inc",
+"BridgeBio Pharma  Inc.",
 "BBIO"
 ],
 [
@@ -2748,7 +2716,7 @@
 "BBSI"
 ],
 [
-"Beacon Financial Corp",
+"Beacon Financial Corporation",
 "BBT"
 ],
 [
@@ -2764,15 +2732,15 @@
 "BBVA"
 ],
 [
-"Build-A-Bear Workshop Inc",
+"Build-A-Bear Workshop  Inc.",
 "BBW"
 ],
 [
-"Bath & Body Works Inc",
+"Bath & Body Works  Inc.",
 "BBWI"
 ],
 [
-"Best Buy Co Inc",
+"Best Buy Co.  Inc.",
 "BBY"
 ],
 [
@@ -2812,6 +2780,10 @@
 "BCC"
 ],
 [
+"Bleichroeder Acquisition Corp III",
+"BCCQ"
+],
+[
 "Bleichroeder Acquisition III Units",
 "BCCQU"
 ],
@@ -2844,15 +2816,15 @@
 "BCML"
 ],
 [
-"Brinks Co",
+"The Brink's Company",
 "BCO"
 ],
 [
-"Balchem Corp",
+"Balchem Corporation",
 "BCPC"
 ],
 [
-"BioCryst Pharmaceuticals Inc",
+"BioCryst Pharmaceuticals  Inc.",
 "BCRX"
 ],
 [
@@ -2888,7 +2860,7 @@
 "BCYC"
 ],
 [
-"Belden Inc",
+"Belden Inc.",
 "BDC"
 ],
 [
@@ -2932,7 +2904,7 @@
 "BDX"
 ],
 [
-"Bloom Energy Corp",
+"Bloom Energy Corporation",
 "BE"
 ],
 [
@@ -2948,11 +2920,11 @@
 "BEAGU"
 ],
 [
-"Beam Therapeutics Inc",
+"Beam Therapeutics Inc.",
 "BEAM"
 ],
 [
-"Heartbeam Inc",
+"HeartBeam  Inc.",
 "BEAT"
 ],
 [
@@ -2972,19 +2944,19 @@
 "BEEP"
 ],
 [
-"KE Holdings Inc ADR",
+"KE Holdings Inc. ADR",
 "BEKE"
 ],
 [
-"Bel Fuse Inc Class A",
+"Bel Fuse Inc. Class A",
 "BELFA"
 ],
 [
-"Bel Fuse Inc Class B",
+"Bel Fuse Inc. Class B",
 "BELFB"
 ],
 [
-"Franklin Resources Inc",
+"Franklin Templeton  Inc.",
 "BEN"
 ],
 [
@@ -2996,7 +2968,7 @@
 "BEP"
 ],
 [
-"Brookfield Renewable Corp",
+"Brhc Holdings Ltd",
 "BEPC"
 ],
 [
@@ -3004,7 +2976,7 @@
 "BESS"
 ],
 [
-"BETA Technologies Inc",
+"BETA Technologies  Inc.",
 "BETA"
 ],
 [
@@ -3012,11 +2984,11 @@
 "BETR"
 ],
 [
-"Brown-Forman Corp Class A",
+"Brown-Forman Corporation Class A",
 "BF-A"
 ],
 [
-"Brown-Forman Corp Class B",
+"Brown-Forman Corporation Class B",
 "BF-B"
 ],
 [
@@ -3028,11 +3000,11 @@
 "BFC"
 ],
 [
-"Bread Financial Holdings Inc",
+"Bread Financial Holdings  Inc.",
 "BFH"
 ],
 [
-"Butterfly Network Inc",
+"Butterfly Network  Inc.",
 "BFLY"
 ],
 [
@@ -3148,7 +3120,7 @@
 "BHB"
 ],
 [
-"Bausch Health Companies Inc",
+"Bausch Health Companies Inc.",
 "BHC"
 ],
 [
@@ -3156,7 +3128,7 @@
 "BHE"
 ],
 [
-"Brighthouse Financial Inc",
+"Brighthouse Financial  Inc.",
 "BHF"
 ],
 [
@@ -3212,7 +3184,7 @@
 "BHV"
 ],
 [
-"Biohaven Ltd",
+"Biohaven Ltd.",
 "BHVN"
 ],
 [
@@ -3220,7 +3192,11 @@
 "BIAF"
 ],
 [
-"Baidu Inc ADR",
+"Tribeca Strategic Acquisition Corp",
+"BID"
+],
+[
+"Baidu  Inc. ADR",
 "BIDU"
 ],
 [
@@ -3228,7 +3204,7 @@
 "BIDWU"
 ],
 [
-"Biogen Inc",
+"Biogen Inc.",
 "BIIB"
 ],
 [
@@ -3244,20 +3220,24 @@
 "BILI"
 ],
 [
-"BILL Holdings Inc",
+"BILL Holdings  Inc.",
 "BILL"
 ],
 [
-"Bio Rad Laboratories Inc Class A",
+"Bio-Rad Laboratories  Inc. Class A",
 "BIO"
 ],
 [
-"Bio Rad Laboratories Inc Class B",
+"Bio-Rad Laboratories  Inc. Class B",
 "BIO-B"
 ],
 [
-"BIOAGE Labs Inc",
+"BioAge Labs  Inc.",
 "BIOA"
+],
+[
+"Instinct Bio Technical Company Holdings Inc",
+"BIOT"
 ],
 [
 "Bioceres Crop Solutions Corp",
@@ -3308,7 +3288,7 @@
 "BIYA"
 ],
 [
-"BJ's Wholesale Club Holdings Inc",
+"BJ's Wholesale Club Holdings  Inc.",
 "BJ"
 ],
 [
@@ -3324,7 +3304,7 @@
 "BKD"
 ],
 [
-"Buckle Inc",
+"The Buckle  Inc.",
 "BKE"
 ],
 [
@@ -3348,11 +3328,11 @@
 "BKKT"
 ],
 [
-"Booking Holdings Inc",
+"Booking Holdings Inc.",
 "BKNG"
 ],
 [
-"Baker Hughes Co",
+"Baker Hughes Company",
 "BKR"
 ],
 [
@@ -3368,19 +3348,23 @@
 "BKTI"
 ],
 [
-"BankUnited Inc",
+"BankUnited  Inc.",
 "BKU"
 ],
 [
-"BKV Corp",
+"BKV Corporation",
 "BKV"
+],
+[
+"BIO-Key International Inc",
+"BKYI"
 ],
 [
 "BlackLine Inc",
 "BL"
 ],
 [
-"Blue Bird Corp",
+"Blue Bird Corporation",
 "BLBD"
 ],
 [
@@ -3396,7 +3380,7 @@
 "BLDR"
 ],
 [
-"BioLife Solutions Inc",
+"BioLife Solutions  Inc.",
 "BLFS"
 ],
 [
@@ -3408,15 +3392,15 @@
 "BLIV"
 ],
 [
-"BlackRock Inc",
+"BlackRock  Inc.",
 "BLK"
 ],
 [
-"Blackbaud Inc",
+"Blackbaud  Inc.",
 "BLKB"
 ],
 [
-"BillionToOne Inc",
+"BillionToOne  Inc.",
 "BLLN"
 ],
 [
@@ -3424,7 +3408,7 @@
 "BLMN"
 ],
 [
-"Blend Labs Inc",
+"Blend Labs  Inc.",
 "BLND"
 ],
 [
@@ -3452,7 +3436,11 @@
 "BLSH"
 ],
 [
-"Belite Bio Inc ADR",
+"BlossomHill Therapeutics Inc",
+"BLSM"
+],
+[
+"Belite Bio  Inc ADR",
 "BLTE"
 ],
 [
@@ -3488,7 +3476,7 @@
 "BMA"
 ],
 [
-"Bumble Inc",
+"Bumble Inc.",
 "BMBL"
 ],
 [
@@ -3496,7 +3484,7 @@
 "BME"
 ],
 [
-"Biomea Fusion Inc",
+"Biomea Fusion  Inc.",
 "BMEA"
 ],
 [
@@ -3512,11 +3500,11 @@
 "BMHL"
 ],
 [
-"Badger Meter Inc",
+"Badger Meter  Inc.",
 "BMI"
 ],
 [
-"Blue Moon Metals Inc",
+"Blue Moon Metals Inc.",
 "BMM"
 ],
 [
@@ -3528,7 +3516,7 @@
 "BMNP"
 ],
 [
-"Bitmine Immersion Technologies Inc",
+"BitMine Immersion Technologies  Inc.",
 "BMNR"
 ],
 [
@@ -3548,24 +3536,20 @@
 "BMRC"
 ],
 [
-"BioMarin Pharmaceutical Inc",
+"BioMarin Pharmaceutical Inc.",
 "BMRN"
 ],
 [
-"Bristol-Myers Squibb Co",
+"Bristol-Myers Squibb Company",
 "BMY"
 ],
 [
-"Brookfield Corp",
+"Brookfield Corporation",
 "BN"
 ],
 [
 "Brand Engagement Network Inc",
 "BNAI"
-],
-[
-"BNB Plus Corp",
-"BNBX"
 ],
 [
 "CEA Industries Inc",
@@ -3576,7 +3560,7 @@
 "BNED"
 ],
 [
-"Bionano Genomics Inc",
+"Bionano Genomics  Inc.",
 "BNGO"
 ],
 [
@@ -3584,19 +3568,15 @@
 "BNKK"
 ],
 [
-"Broadstone Net Lease Inc",
+"Broadstone Net Lease  Inc.",
 "BNL"
 ],
 [
-"Burning Rock Biotech Ltd ADR",
+"Burning Rock Biotech Limited ADR",
 "BNR"
 ],
 [
-"Brenmiller Energy Ltd",
-"BNRG"
-],
-[
-"Bank of Nova Scotia",
+"The Bank of Nova Scotia",
 "BNS"
 ],
 [
@@ -3616,10 +3596,6 @@
 "BNY"
 ],
 [
-"Banzai International Inc",
-"BNZI"
-],
-[
 "Bob's Discount Furniture  Inc",
 "BOBS"
 ],
@@ -3628,7 +3604,7 @@
 "BOC"
 ],
 [
-"Beachbody Company Inc",
+"Beachbody Company  Inc",
 "BODI"
 ],
 [
@@ -3640,7 +3616,7 @@
 "BOF"
 ],
 [
-"Bank of Hawaii Corp",
+"Bank of Hawaii Corporation",
 "BOH"
 ],
 [
@@ -3648,11 +3624,11 @@
 "BOKF"
 ],
 [
-"Boundless Bio Inc",
+"Boundless Bio  Inc.",
 "BOLD"
 ],
 [
-"Bolt Biotherapeutics Inc",
+"Bolt Biotherapeutics  Inc.",
 "BOLT"
 ],
 [
@@ -3664,11 +3640,11 @@
 "BOOM"
 ],
 [
-"Boot Barn Holdings Inc",
+"Boot Barn Holdings  Inc.",
 "BOOT"
 ],
 [
-"Borr Drilling Ltd",
+"Borr Drilling Limited",
 "BORR"
 ],
 [
@@ -3680,11 +3656,11 @@
 "BOT"
 ],
 [
-"Bank of The James Financial Group  Inc",
+"Bank of The James Financial Group Inc",
 "BOTJ"
 ],
 [
-"Bowhead Specialty Holdings Inc",
+"Bowhead Specialty Holdings Inc.",
 "BOW"
 ],
 [
@@ -3712,7 +3688,7 @@
 "BPACU"
 ],
 [
-"Popular Inc",
+"Popular  Inc.",
 "BPOP"
 ],
 [
@@ -3764,7 +3740,7 @@
 "BRBI"
 ],
 [
-"Bellring Brands Inc",
+"BellRing Brands  Inc.",
 "BRBR"
 ],
 [
@@ -3772,11 +3748,11 @@
 "BRBS"
 ],
 [
-"Brady Corp",
+"Brady Corporation",
 "BRC"
 ],
 [
-"Black Rock Coffee Bar Inc",
+"Black Rock Coffee Bar  Inc.",
 "BRCB"
 ],
 [
@@ -3812,11 +3788,15 @@
 "BRK-B"
 ],
 [
+"Burtech Acquisition Corp II",
+"BRKH"
+],
+[
 "Burtech Acquisition II Units",
 "BRKHU"
 ],
 [
-"Bruker Corp",
+"Bruker Corporation",
 "BRKR"
 ],
 [
@@ -3840,11 +3820,15 @@
 "BRNS"
 ],
 [
+"Brenx Ltd",
+"BRNX"
+],
+[
 "Brown & Brown Inc",
 "BRO"
 ],
 [
-"Dutch Bros Inc",
+"Dutch Bros Inc.",
 "BROS"
 ],
 [
@@ -3856,12 +3840,16 @@
 "BRSL"
 ],
 [
-"Brightspire Capital Inc",
+"BrightSpire Capital  Inc.",
 "BRSP"
 ],
 [
 "BRT Apartments Corp",
 "BRT"
+],
+[
+"B&R Technology Merger Units",
+"BRTMU"
 ],
 [
 "BioRestorative Therapies Inc",
@@ -3870,6 +3858,10 @@
 [
 "Boost Run Inc",
 "BRUN"
+],
+[
+"Braveheart Bio  Inc.",
+"BRVE"
 ],
 [
 "Saba Capital Income & Opportunities Fund",
@@ -3906,6 +3898,10 @@
 [
 "Banco Santander Brasil SA ADR",
 "BSBR"
+],
+[
+"BioStem Technologies  Inc.",
+"BSEM"
 ],
 [
 "Bassett Furniture Industries Inc",
@@ -3964,7 +3960,7 @@
 "BTBD"
 ],
 [
-"Bit Digital  Inc",
+"Bit Digital  Inc.",
 "BTBT"
 ],
 [
@@ -3980,11 +3976,11 @@
 "BTDR"
 ],
 [
-"Baytex Energy Corp",
+"Baytex Energy Corp.",
 "BTE"
 ],
 [
-"B2Gold Corp",
+"B2Gold Corp.",
 "BTG"
 ],
 [
@@ -3992,8 +3988,12 @@
 "BTGO"
 ],
 [
-"British American Tobacco P.l.c ADR",
+"British American Tobacco p.l.c. ADR",
 "BTI"
+],
+[
+"Brightline Interactive  Inc.",
+"BTLN"
 ],
 [
 "Biote Corp",
@@ -4012,7 +4012,7 @@
 "BTOG"
 ],
 [
-"BTQ Technologies Corp",
+"BTQ Technologies Corp.",
 "BTQ"
 ],
 [
@@ -4064,15 +4064,11 @@
 "BUR"
 ],
 [
-"Burlington Stores Inc",
+"Burlington Stores  Inc.",
 "BURL"
 ],
 [
-"NUBURU Inc",
-"BURU"
-],
-[
-"First Busey Corp",
+"First Busey Corporation",
 "BUSE"
 ],
 [
@@ -4084,7 +4080,7 @@
 "BUUU"
 ],
 [
-"Brightview Holdings Inc",
+"BrightView Holdings  Inc.",
 "BV"
 ],
 [
@@ -4100,15 +4096,15 @@
 "BVN"
 ],
 [
-"Bioventus Inc",
+"Bioventus Inc.",
 "BVS"
 ],
 [
-"Babcock & Wilcox Enterprises Inc",
+"Babcock & Wilcox Enterprises  Inc.",
 "BW"
 ],
 [
-"Borgwarner Inc",
+"BorgWarner Inc.",
 "BWA"
 ],
 [
@@ -4136,7 +4132,7 @@
 "BWG"
 ],
 [
-"Baldwin Insurance Group  Inc",
+"The Baldwin Insurance Group  Inc.",
 "BWIN"
 ],
 [
@@ -4152,7 +4148,7 @@
 "BWLP"
 ],
 [
-"Bowman Consulting Group Ltd",
+"Bowman Consulting Group Ltd.",
 "BWMN"
 ],
 [
@@ -4160,19 +4156,19 @@
 "BWMX"
 ],
 [
-"Babcock And Wilcox Enterprises 6 50 Senior Notes due 2026",
-"BWNB"
-],
-[
 "BWX Technologies Inc",
 "BWXT"
 ],
 [
-"Blackstone Inc",
+"Blackstone Inc.",
 "BX"
 ],
 [
-"Bluelinx Holdings Inc",
+"BOXABL Inc",
+"BXBL"
+],
+[
+"BlueLinx Holdings Inc.",
 "BXC"
 ],
 [
@@ -4184,7 +4180,7 @@
 "BXMT"
 ],
 [
-"BXP Inc",
+"BXP  Inc.",
 "BXP"
 ],
 [
@@ -4200,7 +4196,7 @@
 "BYAH"
 ],
 [
-"Boyd Gaming Corp",
+"Boyd Gaming Corporation",
 "BYD"
 ],
 [
@@ -4208,7 +4204,7 @@
 "BYFC"
 ],
 [
-"Beyond Meat Inc",
+"Beyond Meat  Inc.",
 "BYND"
 ],
 [
@@ -4220,7 +4216,7 @@
 "BYSI"
 ],
 [
-"Kanzhun Ltd ADR",
+"KANZHUN LIMITED ADR",
 "BZ"
 ],
 [
@@ -4232,7 +4228,7 @@
 "BZFD"
 ],
 [
-"Beazer Homes USA Inc",
+"Beazer Homes USA  Inc.",
 "BZH"
 ],
 [
@@ -4252,7 +4248,7 @@
 "CAAS"
 ],
 [
-"Cabaletta Bio Inc",
+"Cabaletta Bio  Inc.",
 "CABA"
 ],
 [
@@ -4292,15 +4288,15 @@
 "CAF"
 ],
 [
-"Conagra Brands Inc",
+"Conagra Brands  Inc.",
 "CAG"
 ],
 [
-"Cardinal Health  Inc",
+"Cardinal Health  Inc.",
 "CAH"
 ],
 [
-"Caris Life Sciences Inc",
+"Caris Life Sciences  Inc.",
 "CAI"
 ],
 [
@@ -4324,11 +4320,11 @@
 "CALC"
 ],
 [
-"Cal-Maine Foods Inc",
+"Cal-Maine Foods  Inc.",
 "CALM"
 ],
 [
-"Calix Inc",
+"Calix  Inc.",
 "CALX"
 ],
 [
@@ -4340,7 +4336,7 @@
 "CAMP"
 ],
 [
-"Camtek Ltd",
+"Camtek Ltd.",
 "CAMT"
 ],
 [
@@ -4372,7 +4368,7 @@
 "CAPNU"
 ],
 [
-"Capricor Therapeutics Inc",
+"Capricor Therapeutics  Inc.",
 "CAPR"
 ],
 [
@@ -4396,15 +4392,15 @@
 "CARE"
 ],
 [
-"CarGurus Inc",
+"CarGurus  Inc.",
 "CARG"
 ],
 [
-"Carlsmed Inc",
+"Carlsmed  Inc.",
 "CARL"
 ],
 [
-"Carrier Global Corp",
+"Carrier Global Corporation",
 "CARR"
 ],
 [
@@ -4412,7 +4408,7 @@
 "CARS"
 ],
 [
-"Maplebear Inc",
+"Maplebear Inc.",
 "CART"
 ],
 [
@@ -4436,6 +4432,10 @@
 "CAT"
 ],
 [
+"Catalyst Acquisition Units",
+"CATLU"
+],
+[
 "Cato Corp",
 "CATO"
 ],
@@ -4448,7 +4448,7 @@
 "CATY"
 ],
 [
-"CAVA Group Inc",
+"CAVA Group  Inc.",
 "CAVA"
 ],
 [
@@ -4460,11 +4460,11 @@
 "CBAN"
 ],
 [
-"CBAK Energy Technology Inc",
+"CBAK Energy Technology Ltd",
 "CBAT"
 ],
 [
-"Central Bancompany Inc",
+"Central Bancompany  Inc.",
 "CBC"
 ],
 [
@@ -4472,7 +4472,7 @@
 "CBFV"
 ],
 [
-"Crescent Biopharma Inc",
+"Crescent Biopharma  Inc.",
 "CBIO"
 ],
 [
@@ -4480,11 +4480,11 @@
 "CBK"
 ],
 [
-"CBL & Associates Properties Inc",
+"CBL & Associates Properties  Inc.",
 "CBL"
 ],
 [
-"Ceribell Inc",
+"CeriBell  Inc.",
 "CBLL"
 ],
 [
@@ -4496,11 +4496,11 @@
 "CBNK"
 ],
 [
-"Cboe Global Markets Inc",
+"Cboe Global Markets  Inc.",
 "CBOE"
 ],
 [
-"CBRE Group Inc",
+"CBRE Group  Inc.",
 "CBRE"
 ],
 [
@@ -4512,7 +4512,7 @@
 "CBRS"
 ],
 [
-"Commerce Bancshares Inc",
+"Commerce Bancshares  Inc.",
 "CBSH"
 ],
 [
@@ -4528,11 +4528,11 @@
 "CBUS"
 ],
 [
-"CBIZ Inc",
+"CBIZ  Inc.",
 "CBZ"
 ],
 [
-"Chemours Co",
+"The Chemours Company",
 "CC"
 ],
 [
@@ -4556,12 +4556,20 @@
 "CCBG"
 ],
 [
-"CCC Intelligent Solutions Holdings Inc",
+"CCC Intelligent Solutions Holdings Inc.",
 "CCC"
 ],
 [
-"C4 Therapeutics  Inc",
+"C4 Therapeutics  Inc.",
 "CCCC"
+],
+[
+"Columbus Circle Capital Corp III",
+"CCCT"
+],
+[
+"Columbus Circle Capital III Units",
+"CCCTU"
 ],
 [
 "Calamos Dynamic Convertible And Income Closed Fund",
@@ -4608,15 +4616,7 @@
 "CCIIU"
 ],
 [
-"Churchill Capital Corp IX",
-"CCIX"
-],
-[
-"Churchill Capital IX Units",
-"CCIXU"
-],
-[
-"Cameco Corp",
+"Cameco Corporation",
 "CCJ"
 ],
 [
@@ -4652,10 +4652,6 @@
 "CCOI"
 ],
 [
-"Cross Country Healthcare Inc",
-"CCRN"
-],
-[
 "Century Communities Inc",
 "CCS"
 ],
@@ -4688,7 +4684,7 @@
 "CD"
 ],
 [
-"Coeur Mining  Inc",
+"Coeur Mining  Inc.",
 "CDE"
 ],
 [
@@ -4704,7 +4700,7 @@
 "CDLX"
 ],
 [
-"CareDx Inc",
+"CareDx  Inc.",
 "CDNA"
 ],
 [
@@ -4712,7 +4708,7 @@
 "CDNL"
 ],
 [
-"Cadence Design Systems Inc",
+"Cadence Design Systems  Inc.",
 "CDNS"
 ],
 [
@@ -4736,11 +4732,11 @@
 "CDTG"
 ],
 [
-"CDW Corp",
+"CDW Corporation",
 "CDW"
 ],
 [
-"Codexis Inc",
+"Codexis  Inc.",
 "CDXS"
 ],
 [
@@ -4756,7 +4752,7 @@
 "CE"
 ],
 [
-"CECO Environmental Corp",
+"CECO Environmental Corp.",
 "CECO"
 ],
 [
@@ -4772,11 +4768,11 @@
 "CEG"
 ],
 [
-"Celcuity Inc",
+"Celcuity Inc.",
 "CELC"
 ],
 [
-"Celsius Holdings Inc",
+"Celsius Holdings  Inc.",
 "CELH"
 ],
 [
@@ -4800,12 +4796,16 @@
 "CENTA"
 ],
 [
-"Century Aluminum Co",
+"Century Aluminum Company",
 "CENX"
 ],
 [
 "Cantor Equity Partners IV Inc",
 "CEPF"
+],
+[
+"Capstone Energy+ Inc",
+"CEPL"
 ],
 [
 "Cantor Equity Partners I Inc",
@@ -4816,7 +4816,7 @@
 "CEPS"
 ],
 [
-"Central Puerto SA ADR",
+"Central Puerto S.A. ADR",
 "CEPU"
 ],
 [
@@ -4828,7 +4828,7 @@
 "CERS"
 ],
 [
-"Certara Inc",
+"Certara  Inc.",
 "CERT"
 ],
 [
@@ -4848,7 +4848,7 @@
 "CEV"
 ],
 [
-"CEVA Inc",
+"Ceva  Inc.",
 "CEVA"
 ],
 [
@@ -4884,7 +4884,7 @@
 "CG"
 ],
 [
-"Centerra Gold Inc",
+"Centerra Gold Inc.",
 "CGAU"
 ],
 [
@@ -4892,27 +4892,31 @@
 "CGBD"
 ],
 [
-"Canopy Growth Corp",
+"Canopy Growth Corporation",
 "CGC"
+],
+[
+"Cartesian Growth Corporation IV",
+"CGCF"
 ],
 [
 "Cartesian Growth IV Units",
 "CGCFU"
 ],
 [
-"Cullinan Therapeutics Inc",
+"Cullinan Therapeutics  Inc.",
 "CGEM"
 ],
 [
-"Compugen Ltd",
+"Compugen Ltd.",
 "CGEN"
 ],
 [
-"Cognyte Software Ltd",
+"COGNYTE SOFTWARE LTD.",
 "CGNT"
 ],
 [
-"Cognex Corp",
+"Cognex Corporation",
 "CGNX"
 ],
 [
@@ -4920,7 +4924,7 @@
 "CGO"
 ],
 [
-"CG Oncology Inc",
+"CG Oncology  Inc.",
 "CGON"
 ],
 [
@@ -4968,7 +4972,7 @@
 "CHD"
 ],
 [
-"Churchill Downs Inc",
+"Churchill Downs Incorporated",
 "CHDN"
 ],
 [
@@ -4984,7 +4988,7 @@
 "CHECU"
 ],
 [
-"Chefs' Warehouse Inc",
+"The Chefs' Warehouse  Inc.",
 "CHEF"
 ],
 [
@@ -4992,11 +4996,15 @@
 "CHEK"
 ],
 [
+"Change Agents Corp",
+"CHGA"
+],
+[
 "Chegg Inc",
 "CHGG"
 ],
 [
-"Choice Hotels International Inc",
+"Choice Hotels International  Inc.",
 "CHH"
 ],
 [
@@ -5004,7 +5012,7 @@
 "CHI"
 ],
 [
-"Check Point Software Technologies Ltd",
+"Check Point Software Technologies Ltd.",
 "CHKP"
 ],
 [
@@ -5012,7 +5020,7 @@
 "CHMG"
 ],
 [
-"Cherry Hill Mortgage Investment Corp",
+"Cherry Hill Mortgage Investment Corporation",
 "CHMI"
 ],
 [
@@ -5048,7 +5056,7 @@
 "CHR"
 ],
 [
-"Chord Energy Corp",
+"Chord Energy Corporation",
 "CHRD"
 ],
 [
@@ -5060,7 +5068,7 @@
 "CHRS"
 ],
 [
-"CH Robinson Worldwide Inc",
+"C.H. Robinson Worldwide  Inc.",
 "CHRW"
 ],
 [
@@ -5092,8 +5100,12 @@
 "CHT"
 ],
 [
-"Charter Communications Inc",
+"Charter Communications  Inc.",
 "CHTR"
+],
+[
+"Charter Communications Cumulative Redeemable Prf Shs Series A",
+"CHTRP"
 ],
 [
 "Calamos Global Dynamic Income Closed Fund",
@@ -5108,11 +5120,11 @@
 "CHY"
 ],
 [
-"Chime Financial Inc",
+"Chime Financial  Inc.",
 "CHYM"
 ],
 [
-"Cigna Group",
+"The Cigna Group",
 "CI"
 ],
 [
@@ -5124,7 +5136,7 @@
 "CIB"
 ],
 [
-"Ciena Corp",
+"Ciena Corporation",
 "CIEN"
 ],
 [
@@ -5144,8 +5156,12 @@
 "CIG-C"
 ],
 [
-"Colliers International Group Inc",
+"Colliers International Group Inc.",
 "CIGI"
+],
+[
+"Concorde International Group Ltd",
+"CIGL"
 ],
 [
 "BlackRock Enhanced Large Cap Core Closed End Fund",
@@ -5160,7 +5176,7 @@
 "CIK"
 ],
 [
-"Chimera Investment Corp",
+"Chimera Investment Corporation",
 "CIM"
 ],
 [
@@ -5176,7 +5192,7 @@
 "CIMP"
 ],
 [
-"Cincinnati Financial Corp",
+"Cincinnati Financial Corporation",
 "CINF"
 ],
 [
@@ -5184,7 +5200,7 @@
 "CING"
 ],
 [
-"Ciandt Inc",
+"CI&T Inc.",
 "CINT"
 ],
 [
@@ -5224,7 +5240,7 @@
 "CKX"
 ],
 [
-"Colgate-Palmolive Co",
+"Colgate-Palmolive Company",
 "CL"
 ],
 [
@@ -5232,7 +5248,7 @@
 "CLAR"
 ],
 [
-"Core Laboratories Inc",
+"Core Laboratories Inc.",
 "CLB"
 ],
 [
@@ -5260,7 +5276,7 @@
 "CLDT"
 ],
 [
-"Celldex Therapeutics Inc",
+"Celldex Therapeutics  Inc.",
 "CLDX"
 ],
 [
@@ -5300,11 +5316,11 @@
 "CLMB"
 ],
 [
-"Calumet Inc",
+"Calumet  Inc.",
 "CLMT"
 ],
 [
-"Clean Energy Fuels Corp",
+"Clean Energy Fuels Corp.",
 "CLNE"
 ],
 [
@@ -5312,11 +5328,11 @@
 "CLNN"
 ],
 [
-"Clover Health Investments Corp",
+"Clover Health Investments  Corp.",
 "CLOV"
 ],
 [
-"Clipper Realty Inc",
+"Clipper Realty Inc.",
 "CLPR"
 ],
 [
@@ -5340,11 +5356,11 @@
 "CLRS"
 ],
 [
-"Celestica Inc",
+"Celestica Inc.",
 "CLS"
 ],
 [
-"CleanSpark Inc",
+"CleanSpark  Inc.",
 "CLSK"
 ],
 [
@@ -5364,7 +5380,7 @@
 "CLWT"
 ],
 [
-"Clorox Co",
+"The Clorox Company",
 "CLX"
 ],
 [
@@ -5396,7 +5412,7 @@
 "CMCO"
 ],
 [
-"Comcast Corp",
+"Comcast Corporation",
 "CMCSA"
 ],
 [
@@ -5408,11 +5424,11 @@
 "CMDB"
 ],
 [
-"CME Group Inc",
+"CME Group Inc.",
 "CME"
 ],
 [
-"Chipotle Mexican Grill Inc",
+"Chipotle Mexican Grill  Inc.",
 "CMG"
 ],
 [
@@ -5436,7 +5452,7 @@
 "CMND"
 ],
 [
-"Compass Minerals International Inc",
+"Compass Minerals International  Inc.",
 "CMP"
 ],
 [
@@ -5452,15 +5468,15 @@
 "CMPX"
 ],
 [
-"Commerce.com Inc",
+"Commerce.com  Inc.",
 "CMRC"
 ],
 [
-"Costamare Inc",
+"Costamare Inc.",
 "CMRE"
 ],
 [
-"CMS Energy Corp",
+"CMS Energy Corporation",
 "CMS"
 ],
 [
@@ -5496,7 +5512,7 @@
 "CNCK"
 ],
 [
-"Conduent Inc",
+"Conduent Incorporated",
 "CNDT"
 ],
 [
@@ -5512,11 +5528,11 @@
 "CNF"
 ],
 [
-"CNH Industrial NV",
+"CNH Industrial N.V.",
 "CNH"
 ],
 [
-"Canadian National Railway Co",
+"Canadian National Railway Company",
 "CNI"
 ],
 [
@@ -5524,7 +5540,7 @@
 "CNK"
 ],
 [
-"Collective Mining Ltd",
+"Collective Mining Ltd.",
 "CNL"
 ],
 [
@@ -5540,11 +5556,11 @@
 "CNNE"
 ],
 [
-"CNO Financial Group Inc",
+"CNO Financial Group  Inc.",
 "CNO"
 ],
 [
-"ConnectOne Bancorp Inc",
+"ConnectOne Bancorp  Inc.",
 "CNOB"
 ],
 [
@@ -5552,7 +5568,7 @@
 "CNOBP"
 ],
 [
-"CenterPoint Energy Inc",
+"CenterPoint Energy  Inc.",
 "CNP"
 ],
 [
@@ -5560,7 +5576,7 @@
 "CNQ"
 ],
 [
-"Core Natural Resources Inc",
+"Core Natural Resources  Inc.",
 "CNR"
 ],
 [
@@ -5570,6 +5586,10 @@
 [
 "CNS Pharmaceuticals Inc",
 "CNSP"
+],
+[
+"Cerenome  Inc.",
+"CNSY"
 ],
 [
 "Connect Biopharma Holdings Ltd",
@@ -5592,11 +5612,11 @@
 "CNVS"
 ],
 [
-"CNX Resources Corp",
+"CNX Resources Corporation",
 "CNX"
 ],
 [
-"Concentrix Corp",
+"Concentrix Corporation",
 "CNXC"
 ],
 [
@@ -5616,7 +5636,7 @@
 "COCH"
 ],
 [
-"Vita Coco Company Inc",
+"The Vita Coco Company  Inc.",
 "COCO"
 ],
 [
@@ -5648,7 +5668,7 @@
 "COFS"
 ],
 [
-"Cogent Biosciences Inc",
+"Cogent Biosciences  Inc.",
 "COGT"
 ],
 [
@@ -5656,11 +5676,11 @@
 "COHN"
 ],
 [
-"Coherent Corp",
+"Coherent Corp.",
 "COHR"
 ],
 [
-"Cohu Inc",
+"Cohu  Inc.",
 "COHU"
 ],
 [
@@ -5696,7 +5716,7 @@
 "COLL"
 ],
 [
-"Columbia Sportswear Co",
+"Columbia Sportswear Company",
 "COLM"
 ],
 [
@@ -5708,11 +5728,11 @@
 "CON"
 ],
 [
-"Cooper Companies Inc",
+"The Cooper Companies  Inc.",
 "COO"
 ],
 [
-"Traeger Inc",
+"Traeger  Inc.",
 "COOK"
 ],
 [
@@ -5736,11 +5756,11 @@
 "COPR"
 ],
 [
-"Cencora Inc",
+"Cencora  Inc.",
 "COR"
 ],
 [
-"Corcept Therapeutics Inc",
+"Corcept Therapeutics Incorporated",
 "CORT"
 ],
 [
@@ -5764,7 +5784,7 @@
 "COTY"
 ],
 [
-"Coursera Inc",
+"Coursera  Inc.",
 "COUR"
 ],
 [
@@ -5772,11 +5792,11 @@
 "COYA"
 ],
 [
-"Canadian Pacific Kansas City Ltd",
+"Canadian Pacific Kansas City Limited",
 "CP"
 ],
 [
-"Copa Holdings SA",
+"Copa Holdings  S.A.",
 "CPA"
 ],
 [
@@ -5784,7 +5804,7 @@
 "CPAC"
 ],
 [
-"Corpay Inc",
+"Corpay  Inc.",
 "CPAY"
 ],
 [
@@ -5812,11 +5832,11 @@
 "CPIX"
 ],
 [
-"Chesapeake Utilities Corp",
+"Chesapeake Utilities Corporation",
 "CPK"
 ],
 [
-"Coupang Inc",
+"Coupang  Inc.",
 "CPNG"
 ],
 [
@@ -5832,11 +5852,7 @@
 "CPRT"
 ],
 [
-"Catalyst Pharmaceuticals Inc",
-"CPRX"
-],
-[
-"Cooper-Standard Holdings Inc",
+"Cooper-Standard Holdings Inc.",
 "CPS"
 ],
 [
@@ -5860,7 +5876,7 @@
 "CQP"
 ],
 [
-"Crane Co",
+"Crane Company",
 "CR"
 ],
 [
@@ -5908,19 +5924,19 @@
 "CRBG"
 ],
 [
-"Corbus Pharmaceuticals Holdings Inc",
+"Corbus Pharmaceuticals Holdings  Inc.",
 "CRBP"
 ],
 [
-"Caribou Biosciences Inc",
+"Caribou Biosciences  Inc.",
 "CRBU"
 ],
 [
-"California Resources Corp",
+"California Resources Corporation",
 "CRC"
 ],
 [
-"Circle Internet Group Inc",
+"Circle Internet Group  Inc.",
 "CRCL"
 ],
 [
@@ -5936,7 +5952,7 @@
 "CRD-B"
 ],
 [
-"Cardiff Oncology Inc",
+"Cardiff Oncology  Inc.",
 "CRDF"
 ],
 [
@@ -5950,10 +5966,6 @@
 [
 "Cre8 Enterprise Ltd",
 "CRE"
-],
-[
-"Smart Powerr Corp",
-"CREG"
 ],
 [
 "Cresud SACIF y A ADR",
@@ -5972,7 +5984,7 @@
 "CRGO"
 ],
 [
-"Crescent Energy Co",
+"Crescent Energy Company",
 "CRGY"
 ],
 [
@@ -5980,7 +5992,7 @@
 "CRH"
 ],
 [
-"Carter's Inc",
+"Carter's  Inc.",
 "CRI"
 ],
 [
@@ -5988,19 +6000,19 @@
 "CRIS"
 ],
 [
-"Comstock Resources Inc",
+"Comstock Resources  Inc.",
 "CRK"
 ],
 [
-"Charles River Laboratories International Inc",
+"Charles River Laboratories International  Inc.",
 "CRL"
 ],
 [
-"Salesforce Inc",
+"Salesforce  Inc.",
 "CRM"
 ],
 [
-"CorMedix Inc",
+"CorMedix Inc.",
 "CRMD"
 ],
 [
@@ -6012,7 +6024,7 @@
 "CRMT"
 ],
 [
-"Cerence Inc",
+"Cerence Inc.",
 "CRNC"
 ],
 [
@@ -6020,19 +6032,19 @@
 "CRNT"
 ],
 [
-"Crinetics Pharmaceuticals Inc",
+"Crinetics Pharmaceuticals  Inc.",
 "CRNX"
 ],
 [
-"Cronos Group Inc",
+"Cronos Group Inc.",
 "CRON"
 ],
 [
-"Crocs Inc",
+"Crocs  Inc.",
 "CROX"
 ],
 [
-"Carpenter Technology Corp",
+"Carpenter Technology Corporation",
 "CRS"
 ],
 [
@@ -6048,15 +6060,15 @@
 "CRT"
 ],
 [
-"Criteo SA ADR",
+"Criteo SA (Pre-Reincorporation)",
 "CRTO"
 ],
 [
-"Cirrus Logic Inc",
+"Cirrus Logic  Inc.",
 "CRUS"
 ],
 [
-"CorVel Corp",
+"CorVel Corporation",
 "CRVL"
 ],
 [
@@ -6064,11 +6076,11 @@
 "CRVO"
 ],
 [
-"Corvus Pharmaceuticals Inc",
+"Corvus Pharmaceuticals  Inc.",
 "CRVS"
 ],
 [
-"CrowdStrike Holdings Inc",
+"CrowdStrike Holdings  Inc.",
 "CRWD"
 ],
 [
@@ -6076,7 +6088,7 @@
 "CRWS"
 ],
 [
-"CoreWeave Inc",
+"CoreWeave  Inc.",
 "CRWV"
 ],
 [
@@ -6084,7 +6096,7 @@
 "CSAI"
 ],
 [
-"Cosan SA ADR",
+"Cosan S.A. ADR",
 "CSAN"
 ],
 [
@@ -6096,7 +6108,7 @@
 "CSCO"
 ],
 [
-"Costar Group Inc",
+"CoStar Group  Inc.",
 "CSGP"
 ],
 [
@@ -6104,11 +6116,11 @@
 "CSHR"
 ],
 [
-"Canadian Solar Inc",
+"Canadian Solar Inc.",
 "CSIQ"
 ],
 [
-"Carlisle Companies Inc",
+"Carlisle Companies Incorporated",
 "CSL"
 ],
 [
@@ -6120,6 +6132,10 @@
 "CSQ"
 ],
 [
+"Csquare Inc",
+"CSQR"
+],
+[
 "Centerspace",
 "CSR"
 ],
@@ -6128,7 +6144,7 @@
 "CSTE"
 ],
 [
-"Castle Biosciences Inc",
+"Castle Biosciences  Inc.",
 "CSTL"
 ],
 [
@@ -6140,15 +6156,15 @@
 "CSV"
 ],
 [
-"CSW Industrials Inc",
+"CSW Industrials  Inc.",
 "CSW"
 ],
 [
-"Capital Southwest Corp",
+"Capital Southwest Corporation",
 "CSWC"
 ],
 [
-"CSX Corp",
+"CSX Corporation",
 "CSX"
 ],
 [
@@ -6156,15 +6172,19 @@
 "CTAA"
 ],
 [
+"ClearThink 1 Acquisition Rights",
+"CTAAR"
+],
+[
 "ClearThink 1 Acquisition Units",
 "CTAAU"
 ],
 [
-"Cintas Corp",
+"Cintas Corporation",
 "CTAS"
 ],
 [
-"Community Trust Bancorp Inc",
+"Community Trust Bancorp  Inc.",
 "CTBI"
 ],
 [
@@ -6184,7 +6204,7 @@
 "CTHH"
 ],
 [
-"Cytek Biosciences Inc",
+"Cytek Biosciences  Inc.",
 "CTKB"
 ],
 [
@@ -6196,7 +6216,7 @@
 "CTM"
 ],
 [
-"CytomX Therapeutics Inc",
+"CytomX Therapeutics  Inc.",
 "CTMX"
 ],
 [
@@ -6216,7 +6236,7 @@
 "CTOR"
 ],
 [
-"Custom Truck One Source Inc",
+"Custom Truck One Source  Inc.",
 "CTOS"
 ],
 [
@@ -6224,7 +6244,7 @@
 "CTRA"
 ],
 [
-"CareTrust REIT Inc",
+"CareTrust REIT  Inc.",
 "CTRE"
 ],
 [
@@ -6244,7 +6264,7 @@
 "CTS"
 ],
 [
-"Cognizant Technology Solutions Corp",
+"Cognizant Technology Solutions Corporation",
 "CTSH"
 ],
 [
@@ -6252,7 +6272,7 @@
 "CTSO"
 ],
 [
-"Corteva Inc",
+"Corteva  Inc.",
 "CTVA"
 ],
 [
@@ -6276,7 +6296,7 @@
 "CUBE"
 ],
 [
-"Customers Bancorp Inc",
+"Customers Bancorp  Inc.",
 "CUBI"
 ],
 [
@@ -6284,7 +6304,7 @@
 "CUBWU"
 ],
 [
-"Cue Biopharma Inc",
+"Cue Biopharma  Inc.",
 "CUE"
 ],
 [
@@ -6316,6 +6336,10 @@
 "CURX"
 ],
 [
+"Clinuvel Pharmaceuticals Ltd ADR",
+"CUVL"
+],
+[
 "Cousins Properties Inc",
 "CUZ"
 ],
@@ -6328,7 +6352,7 @@
 "CVBF"
 ],
 [
-"Cavco Industries Inc",
+"Cavco Industries  Inc.",
 "CVCO"
 ],
 [
@@ -6356,7 +6380,7 @@
 "CVLG"
 ],
 [
-"Commvault Systems Inc",
+"Commvault Systems  Inc.",
 "CVLT"
 ],
 [
@@ -6372,15 +6396,15 @@
 "CVR"
 ],
 [
-"CVRx Inc",
+"CVRx  Inc.",
 "CVRX"
 ],
 [
-"CVS Health Corp",
+"CVS Health Corporation",
 "CVS"
 ],
 [
-"Covista Inc",
+"Covista Inc.",
 "CVSA"
 ],
 [
@@ -6392,11 +6416,11 @@
 "CVV"
 ],
 [
-"Chevron Corp",
+"Chevron Corporation",
 "CVX"
 ],
 [
-"Curtiss-Wright Corp",
+"Curtiss-Wright Corporation",
 "CW"
 ],
 [
@@ -6428,7 +6452,7 @@
 "CWK"
 ],
 [
-"Casella Waste Systems Inc",
+"Casella Waste Systems  Inc.",
 "CWST"
 ],
 [
@@ -6436,7 +6460,7 @@
 "CWT"
 ],
 [
-"Cemex SAB de CV ADR",
+"Cemex  S.A.B. de C.V. ADR",
 "CX"
 ],
 [
@@ -6456,15 +6480,15 @@
 "CXIIU"
 ],
 [
-"Sprinklr Inc",
+"Sprinklr  Inc.",
 "CXM"
 ],
 [
-"Crane NXT Co",
+"Crane NXT  Co.",
 "CXT"
 ],
 [
-"CoreCivic Inc",
+"CoreCivic  Inc.",
 "CXW"
 ],
 [
@@ -6496,11 +6520,11 @@
 "CYPH"
 ],
 [
-"Cryoport Inc",
+"Cryoport  Inc.",
 "CYRX"
 ],
 [
-"Cytokinetics Inc",
+"Cytokinetics  Incorporated",
 "CYTK"
 ],
 [
@@ -6520,7 +6544,7 @@
 "CZWI"
 ],
 [
-"Dominion Energy Inc",
+"Dominion Energy  Inc.",
 "D"
 ],
 [
@@ -6532,7 +6556,7 @@
 "DAAQU"
 ],
 [
-"Danaos Corp",
+"Danaos Corporation",
 "DAC"
 ],
 [
@@ -6548,7 +6572,7 @@
 "DAKT"
 ],
 [
-"Delta Air Lines Inc",
+"Delta Air Lines  Inc.",
 "DAL"
 ],
 [
@@ -6560,7 +6584,7 @@
 "DAO"
 ],
 [
-"Darling Ingredients Inc",
+"Darling Ingredients Inc.",
 "DAR"
 ],
 [
@@ -6568,7 +6592,7 @@
 "DARE"
 ],
 [
-"DoorDash Inc",
+"DoorDash  Inc.",
 "DASH"
 ],
 [
@@ -6576,7 +6600,7 @@
 "DAVA"
 ],
 [
-"Dave Inc",
+"Dave Inc.",
 "DAVE"
 ],
 [
@@ -6628,11 +6652,11 @@
 "DC"
 ],
 [
-"Docebo Inc",
+"Docebo Inc.",
 "DCBO"
 ],
 [
-"DocGo Inc",
+"DocGo Inc.",
 "DCGO"
 ],
 [
@@ -6640,15 +6664,15 @@
 "DCH"
 ],
 [
-"Donaldson Company Inc",
+"Donaldson Company  Inc.",
 "DCI"
 ],
 [
-"Ducommun Inc",
+"Ducommun Incorporated",
 "DCO"
 ],
 [
-"Dime Commercial Bancshares Inc",
+"Dime Community Bancshares  Inc.",
 "DCOM"
 ],
 [
@@ -6668,7 +6692,7 @@
 "DCX"
 ],
 [
-"Dupont De Nemours Inc",
+"DuPont de Nemours  Inc.",
 "DD"
 ],
 [
@@ -6692,7 +6716,7 @@
 "DDOG"
 ],
 [
-"Dillard's Inc",
+"Dillard's  Inc.",
 "DDS"
 ],
 [
@@ -6712,7 +6736,7 @@
 "DEC"
 ],
 [
-"Deckers Outdoor Corp",
+"Deckers Outdoor Corporation",
 "DECK"
 ],
 [
@@ -6720,7 +6744,7 @@
 "DEFT"
 ],
 [
-"Douglas Emmett Inc",
+"Douglas Emmett  Inc.",
 "DEI"
 ],
 [
@@ -6740,7 +6764,7 @@
 "DETX"
 ],
 [
-"DeFi Development Corp (Pre-Reincorporation)",
+"DeFi Development Corp (Nevada)",
 "DFDV"
 ],
 [
@@ -6748,7 +6772,7 @@
 "DFH"
 ],
 [
-"Donnelley Financial Solutions Inc",
+"Donnelley Financial Solutions  Inc.",
 "DFIN"
 ],
 [
@@ -6776,6 +6800,10 @@
 "DG"
 ],
 [
+"Disciplined Growth Acquisition Corp",
+"DGAC"
+],
+[
 "Disciplined Growth Acquisition Units",
 "DGAC-U"
 ],
@@ -6788,7 +6816,7 @@
 "DGICB"
 ],
 [
-"Digi International Inc",
+"Digi International Inc.",
 "DGII"
 ],
 [
@@ -6820,15 +6848,15 @@
 "DHF"
 ],
 [
-"D.R. Horton Inc",
+"D.R. Horton  Inc.",
 "DHI"
 ],
 [
-"Danaher Corp",
+"Danaher Corporation",
 "DHR"
 ],
 [
-"DHT Holdings Inc",
+"DHT Holdings  Inc.",
 "DHT"
 ],
 [
@@ -6844,19 +6872,19 @@
 "DIBS"
 ],
 [
-"Dine Brands Global Inc",
+"Dine Brands Global  Inc.",
 "DIN"
 ],
 [
-"HF Sinclair Corp",
+"HF Sinclair Corporation",
 "DINO"
 ],
 [
-"Diodes Inc",
+"Diodes Incorporated",
 "DIOD"
 ],
 [
-"Walt Disney Co",
+"The Walt Disney Company",
 "DIS"
 ],
 [
@@ -6864,7 +6892,7 @@
 "DIT"
 ],
 [
-"Daily Journal Corp",
+"Daily Journal Corporation",
 "DJCO"
 ],
 [
@@ -6884,15 +6912,15 @@
 "DKL"
 ],
 [
-"Draftkings Inc",
+"DraftKings Inc.",
 "DKNG"
 ],
 [
-"Dick's Sporting Goods Inc",
+"DICK'S Sporting Goods  Inc.",
 "DKS"
 ],
 [
-"Dolby Laboratories Inc",
+"Dolby Laboratories  Inc.",
 "DLB"
 ],
 [
@@ -6904,7 +6932,7 @@
 "DLNG"
 ],
 [
-"Dlocal Ltd.",
+"DLocal Limited",
 "DLO"
 ],
 [
@@ -6912,7 +6940,7 @@
 "DLPN"
 ],
 [
-"Digital Realty Trust Inc",
+"Digital Realty Trust  Inc.",
 "DLR"
 ],
 [
@@ -6924,7 +6952,7 @@
 "DLTR"
 ],
 [
-"Deluxe Corp",
+"Deluxe Corporation",
 "DLX"
 ],
 [
@@ -6960,7 +6988,7 @@
 "DMB"
 ],
 [
-"Del Monte Corp",
+"Del Monte Corporation",
 "DMC"
 ],
 [
@@ -6984,7 +7012,7 @@
 "DMO"
 ],
 [
-"Damora Therapeutics Inc",
+"Damora Therapeutics Inc (Pre-Reincorporation)",
 "DMRA"
 ],
 [
@@ -6992,11 +7020,11 @@
 "DMRC"
 ],
 [
-"Ginkgo Bioworks Holdings Inc",
+"Ginkgo Bioworks Holdings  Inc.",
 "DNA"
 ],
 [
-"Denali Therapeutics Inc",
+"Denali Therapeutics Inc.",
 "DNLI"
 ],
 [
@@ -7012,7 +7040,7 @@
 "DNN"
 ],
 [
-"DNOW Inc",
+"DNOW Inc.",
 "DNOW"
 ],
 [
@@ -7024,7 +7052,7 @@
 "DNTH"
 ],
 [
-"Krispy Kreme Inc",
+"Krispy Kreme  Inc.",
 "DNUT"
 ],
 [
@@ -7032,15 +7060,15 @@
 "DOC"
 ],
 [
-"DigitalOcean Holdings Inc",
+"DigitalOcean Holdings  Inc.",
 "DOCN"
 ],
 [
-"Doximity Inc",
+"Doximity  Inc.",
 "DOCS"
 ],
 [
-"DocuSign Inc",
+"Docusign  Inc.",
 "DOCU"
 ],
 [
@@ -7060,11 +7088,11 @@
 "DOMO"
 ],
 [
-"Brp Inc",
+"BRP Inc.",
 "DOO"
 ],
 [
-"Dorman Products Inc",
+"Dorman Products  Inc.",
 "DORM"
 ],
 [
@@ -7076,11 +7104,11 @@
 "DOV"
 ],
 [
-"Dow Inc",
+"Dow Inc.",
 "DOW"
 ],
 [
-"Amdocs Ltd",
+"Amdocs Limited",
 "DOX"
 ],
 [
@@ -7100,7 +7128,11 @@
 "DPRO"
 ],
 [
-"Domino's Pizza Inc",
+"Top KingWin Ltd",
+"DPU"
+],
+[
+"Domino's Pizza  Inc.",
 "DPZ"
 ],
 [
@@ -7148,11 +7180,11 @@
 "DRTS"
 ],
 [
-"Bright Minds Biosciences Inc",
+"Bright Minds Biosciences Inc.",
 "DRUG"
 ],
 [
-"Driven Brands Holdings Inc",
+"Driven Brands Holdings Inc.",
 "DRVN"
 ],
 [
@@ -7168,15 +7200,15 @@
 "DSC"
 ],
 [
-"Design Therapeutics Inc",
+"Design Therapeutics  Inc.",
 "DSGN"
 ],
 [
-"Distribution Solutions Group Inc",
+"Distribution Solutions Group  Inc.",
 "DSGR"
 ],
 [
-"Descartes Systems Group Inc",
+"The Descartes Systems Group Inc.",
 "DSGX"
 ],
 [
@@ -7224,7 +7256,7 @@
 "DTCX"
 ],
 [
-"DTE Energy Co",
+"DTE Energy Company",
 "DTE"
 ],
 [
@@ -7288,11 +7320,15 @@
 "DUKR"
 ],
 [
+"DUKE ENERGY Units",
+"DUKU"
+],
+[
 "Fangdd Network Group Ltd",
 "DUO"
 ],
 [
-"Duolingo Inc",
+"Duolingo  Inc.",
 "DUOL"
 ],
 [
@@ -7300,7 +7336,7 @@
 "DUOT"
 ],
 [
-"Doubleverify Holdings Inc",
+"DoubleVerify Holdings  Inc.",
 "DV"
 ],
 [
@@ -7312,7 +7348,7 @@
 "DVLT"
 ],
 [
-"Devon Energy Corp",
+"Devon Energy Corporation",
 "DVN"
 ],
 [
@@ -7328,7 +7364,7 @@
 "DX"
 ],
 [
-"DXC Technology Co",
+"DXC Technology Company",
 "DXC"
 ],
 [
@@ -7344,7 +7380,7 @@
 "DXLG"
 ],
 [
-"DXP Enterprises Inc",
+"DXP Enterprises  Inc.",
 "DXPE"
 ],
 [
@@ -7368,7 +7404,7 @@
 "DYAI"
 ],
 [
-"Dyne Therapeutics  Inc",
+"Dyne Therapeutics  Inc.",
 "DYN"
 ],
 [
@@ -7392,10 +7428,6 @@
 "E"
 ],
 [
-"Electronic Arts Inc",
-"EA"
-],
-[
 "Allspring Income Opportunities Mutual Fund",
 "EAD"
 ],
@@ -7416,7 +7448,7 @@
 "EAT"
 ],
 [
-"eBay Inc",
+"eBay Inc.",
 "EBAY"
 ],
 [
@@ -7440,7 +7472,7 @@
 "EBR-B"
 ],
 [
-"Emergent BioSolutions Inc",
+"Emergent BioSolutions Inc.",
 "EBS"
 ],
 [
@@ -7468,19 +7500,19 @@
 "ECF"
 ],
 [
-"Everus Construction Group Inc",
+"Everus Construction Group  Inc.",
 "ECG"
 ],
 [
-"EchoStar Corp",
+"EchoStar Corporation",
 "ECHO"
 ],
 [
-"Ecolab Inc",
+"Ecolab Inc.",
 "ECL"
 ],
 [
-"Okeanis Eco Tankers Corp",
+"Okeanis Eco Tankers Corp.",
 "ECO"
 ],
 [
@@ -7488,11 +7520,11 @@
 "ECOR"
 ],
 [
-"Encore Capital Group Inc",
+"Encore Capital Group  Inc.",
 "ECPG"
 ],
 [
-"Ecovyst Inc",
+"Ecovyst Inc.",
 "ECVT"
 ],
 [
@@ -7500,7 +7532,7 @@
 "ECX"
 ],
 [
-"Consolidated Edison Inc",
+"Consolidated Edison  Inc.",
 "ED"
 ],
 [
@@ -7520,7 +7552,7 @@
 "EDHL"
 ],
 [
-"Editas Medicine Inc",
+"Editas Medicine  Inc.",
 "EDIT"
 ],
 [
@@ -7540,12 +7572,16 @@
 "EDTK"
 ],
 [
-"New Oriental Education & Technology Group Inc ADR",
+"New Oriental Education & Technology Group Inc. ADR",
 "EDU"
 ],
 [
 "Educational Development Corp",
 "EDUC"
+],
+[
+"Endovia Health Sciences  Inc.",
+"EDVA"
 ],
 [
 "Excelerate Energy Inc",
@@ -7564,11 +7600,7 @@
 "EEIQ"
 ],
 [
-"Emerald Holding Inc",
-"EEX"
-],
-[
-"Ellington Financial Inc",
+"Ellington Financial Inc.",
 "EFC"
 ],
 [
@@ -7604,15 +7636,15 @@
 "EFTY"
 ],
 [
-"Equifax Inc",
+"Equifax Inc.",
 "EFX"
 ],
 [
-"Enerflex Ltd",
+"Enerflex Ltd.",
 "EFXT"
 ],
 [
-"Everest Group Ltd",
+"Everest Group  Ltd.",
 "EG"
 ],
 [
@@ -7620,7 +7652,7 @@
 "EGAN"
 ],
 [
-"Eagle Bancorp Inc",
+"Eagle Bancorp  Inc.",
 "EGBN"
 ],
 [
@@ -7644,11 +7676,11 @@
 "EGHT"
 ],
 [
-"Eldorado Gold Corp",
+"Eldorado Gold Corporation",
 "EGO"
 ],
 [
-"Eastgroup Properties Inc",
+"EastGroup Properties  Inc.",
 "EGP"
 ],
 [
@@ -7656,7 +7688,7 @@
 "EGY"
 ],
 [
-"EHang Holdings Ltd ADR",
+"EHang Holdings Limited ADR",
 "EH"
 ],
 [
@@ -7688,7 +7720,7 @@
 "EICA"
 ],
 [
-"Employers Holdings Inc",
+"Employers Holdings  Inc.",
 "EIG"
 ],
 [
@@ -7724,7 +7756,7 @@
 "ELAB"
 ],
 [
-"Elanco Animal Health Inc",
+"Elanco Animal Health Incorporated",
 "ELAN"
 ],
 [
@@ -7744,7 +7776,7 @@
 "ELE"
 ],
 [
-"elf Beauty Inc",
+"e.l.f. Beauty  Inc.",
 "ELF"
 ],
 [
@@ -7784,10 +7816,6 @@
 "ELS"
 ],
 [
-"Electro-Sensors Inc",
-"ELSE"
-],
-[
 "Eltek Ltd",
 "ELTK"
 ],
@@ -7808,7 +7836,7 @@
 "ELVA"
 ],
 [
-"Enliven Therapeutics Inc",
+"Enliven Therapeutics  Inc.",
 "ELVN"
 ],
 [
@@ -7836,11 +7864,11 @@
 "EMAT"
 ],
 [
-"Embecta Corp",
+"Embecta Corp.",
 "EMBC"
 ],
 [
-"Embraer SA ADR",
+"Embraer S.A. ADR",
 "EMBJ"
 ],
 [
@@ -7892,11 +7920,11 @@
 "EMR"
 ],
 [
-"Enbridge Inc",
+"Enbridge Inc.",
 "ENB"
 ],
 [
-"enGene Therapeutics Inc",
+"enGene Therapeutics Inc.",
 "ENGN"
 ],
 [
@@ -7916,7 +7944,7 @@
 "ENJ"
 ],
 [
-"Enlight Renewable Energy Ltd",
+"Enlight Renewable Energy Ltd.",
 "ENLT"
 ],
 [
@@ -7928,11 +7956,11 @@
 "ENO"
 ],
 [
-"Enovis Corp",
+"Enovis Corporation",
 "ENOV"
 ],
 [
-"Enphase Energy Inc",
+"Enphase Energy  Inc.",
 "ENPH"
 ],
 [
@@ -7940,7 +7968,7 @@
 "ENR"
 ],
 [
-"Legato Merger Corp III ADR",
+"Einride AB (publ) ADR",
 "ENRD"
 ],
 [
@@ -7952,7 +7980,7 @@
 "ENSC"
 ],
 [
-"Ensign Group  Inc",
+"The Ensign Group  Inc.",
 "ENSG"
 ],
 [
@@ -7968,7 +7996,7 @@
 "ENTX"
 ],
 [
-"Enova International Inc",
+"Enova International  Inc.",
 "ENVA"
 ],
 [
@@ -7976,7 +8004,7 @@
 "ENVB"
 ],
 [
-"Enovix Corp",
+"Enovix Corporation",
 "ENVX"
 ],
 [
@@ -7988,7 +8016,7 @@
 "EOD"
 ],
 [
-"EOG Resources Inc",
+"EOG Resources  Inc.",
 "EOG"
 ],
 [
@@ -8008,12 +8036,8 @@
 "EOS"
 ],
 [
-"Eos Energy Enterprises Inc",
+"Eos Energy Enterprises  Inc.",
 "EOSE"
-],
-[
-"Eos Energy Enterprises Rights",
-"EOSER"
 ],
 [
 "Eaton Vance National Municipal Opportunities Closed Fund",
@@ -8024,15 +8048,15 @@
 "EP"
 ],
 [
-"Enerpac Tool Group Corp",
+"Enerpac Tool Group Corp.",
 "EPAC"
 ],
 [
-"Epam Systems Inc",
+"EPAM Systems  Inc.",
 "EPAM"
 ],
 [
-"Edgewell Personal Care Co",
+"Edgewell Personal Care Company",
 "EPC"
 ],
 [
@@ -8048,11 +8072,11 @@
 "EPOW"
 ],
 [
-"EPR Properties",
+"Epr Properties",
 "EPR"
 ],
 [
-"Essential Properties Realty Trust Inc",
+"Essential Properties Realty Trust  Inc.",
 "EPRT"
 ],
 [
@@ -8080,7 +8104,7 @@
 "EQH"
 ],
 [
-"Equinix Inc",
+"Equinix  Inc.",
 "EQIX"
 ],
 [
@@ -8092,15 +8116,11 @@
 "EQPT"
 ],
 [
-"Equity Residential",
-"EQR"
-],
-[
-"Equus Total Return，Inc.",
+"EQUUS Total Return Inc",
 "EQS"
 ],
 [
-"EQT Corp",
+"EQT Corporation",
 "EQT"
 ],
 [
@@ -8108,11 +8128,11 @@
 "EQV-U"
 ],
 [
-"Equinox Gold Corp",
+"Equinox Gold Corp.",
 "EQX"
 ],
 [
-"Erasca Inc",
+"Erasca  Inc.",
 "ERAS"
 ],
 [
@@ -8132,7 +8152,7 @@
 "ERIE"
 ],
 [
-"Energy Recovery Inc",
+"Energy Recovery  Inc.",
 "ERII"
 ],
 [
@@ -8140,7 +8160,7 @@
 "ERNA"
 ],
 [
-"Ero Copper Corp",
+"Ero Copper Corp.",
 "ERO"
 ],
 [
@@ -8168,7 +8188,7 @@
 "ESCA"
 ],
 [
-"ESCO Technologies Inc",
+"ESCO Technologies Inc.",
 "ESE"
 ],
 [
@@ -8192,11 +8212,11 @@
 "ESLA"
 ],
 [
-"Elbit Systems Ltd",
+"Elbit Systems Ltd.",
 "ESLT"
 ],
 [
-"Essent Group Ltd",
+"Essent Group Ltd.",
 "ESNT"
 ],
 [
@@ -8208,19 +8228,15 @@
 "ESP"
 ],
 [
-"Esperion Therapeutics Inc",
-"ESPR"
-],
-[
 "Esquire Financial Holdings Inc",
 "ESQ"
 ],
 [
-"Empire State Realty Trust Inc",
+"Empire State Realty Trust  Inc.",
 "ESRT"
 ],
 [
-"Essex Property Trust Inc",
+"Essex Property Trust  Inc.",
 "ESS"
 ],
 [
@@ -8228,7 +8244,7 @@
 "ESTA"
 ],
 [
-"Elastic NV",
+"Elastic N.V.",
 "ESTC"
 ],
 [
@@ -8240,7 +8256,7 @@
 "ETB"
 ],
 [
-"Ethan Allen Interiors Inc",
+"Ethan Allen Interiors Inc.",
 "ETD"
 ],
 [
@@ -8264,7 +8280,7 @@
 "ETON"
 ],
 [
-"eToro Group Ltd",
+"eToro Group Ltd.",
 "ETOR"
 ],
 [
@@ -8284,7 +8300,7 @@
 "ETSS-U"
 ],
 [
-"ETSY Inc",
+"Etsy  Inc.",
 "ETSY"
 ],
 [
@@ -8304,7 +8320,7 @@
 "ETY"
 ],
 [
-"enCore Energy Corp",
+"enCore Energy Corp.",
 "EU"
 ],
 [
@@ -8316,7 +8332,7 @@
 "EURK"
 ],
 [
-"Eureka Acquisition Rights Exp 03 Jul 2026",
+"Eureka Acquisition Right Exp 3rd Jul 2027",
 "EURKR"
 ],
 [
@@ -8344,11 +8360,11 @@
 "EVCM"
 ],
 [
-"EverQuote Inc",
+"EverQuote  Inc.",
 "EVER"
 ],
 [
-"Eve Holding Inc",
+"Eve Holding  Inc.",
 "EVEX"
 ],
 [
@@ -8368,7 +8384,7 @@
 "EVGO"
 ],
 [
-"Evolent Health Inc",
+"Evolent Health  Inc.",
 "EVH"
 ],
 [
@@ -8376,11 +8392,11 @@
 "EVI"
 ],
 [
-"Evolv Technologies Holdings Inc",
+"Evolv Technologies Holdings  Inc.",
 "EVLV"
 ],
 [
-"Evommune Inc",
+"Evommune  Inc.",
 "EVMN"
 ],
 [
@@ -8400,11 +8416,11 @@
 "EVOXU"
 ],
 [
-"Evercore Inc",
+"Evercore Inc.",
 "EVR"
 ],
 [
-"Evergy Inc",
+"Evergy  Inc.",
 "EVRG"
 ],
 [
@@ -8416,23 +8432,27 @@
 "EVTC"
 ],
 [
-"Vertical Aerospace Ltd",
+"Vertical Aerospace Ltd.",
 "EVTL"
-],
-[
-"Envirotech Vehicles Inc",
-"EVTV"
 ],
 [
 "Eaton Vance Limited Duration Income Closed Fund",
 "EVV"
 ],
 [
-"Edwards Lifesciences Corp",
+"Edwards Lifesciences Corporation",
 "EW"
 ],
 [
-"East West Bancorp Inc",
+"East West Ave Acquisition Corp",
+"EWAV"
+],
+[
+"East West Ave Acquisition Units",
+"EWAVU"
+],
+[
+"East West Bancorp  Inc.",
 "EWBC"
 ],
 [
@@ -8440,7 +8460,7 @@
 "EWCZ"
 ],
 [
-"Edgewise Therapeutics Inc",
+"Edgewise Therapeutics  Inc.",
 "EWTX"
 ],
 [
@@ -8448,7 +8468,7 @@
 "EXC"
 ],
 [
-"Expand Energy Corp",
+"Expand Energy Corporation",
 "EXE"
 ],
 [
@@ -8456,7 +8476,7 @@
 "EXEL"
 ],
 [
-"Expensify Inc",
+"Expensify  Inc.",
 "EXFY"
 ],
 [
@@ -8468,7 +8488,7 @@
 "EXK"
 ],
 [
-"Exlservice Holdings Inc",
+"ExlService Holdings  Inc.",
 "EXLS"
 ],
 [
@@ -8488,19 +8508,19 @@
 "EXPD"
 ],
 [
-"Expedia Group Inc",
+"Expedia Group  Inc.",
 "EXPE"
 ],
 [
-"Exponent Inc",
+"Exponent  Inc.",
 "EXPO"
 ],
 [
-"Extra Space Storage Inc (Maryland)",
+"Extra Space Storage Inc.",
 "EXR"
 ],
 [
-"Extreme Networks Inc",
+"Extreme Networks  Inc.",
 "EXTR"
 ],
 [
@@ -8508,7 +8528,7 @@
 "EXYN"
 ],
 [
-"National Vision Holdings Inc",
+"National Vision Holdings  Inc.",
 "EYE"
 ],
 [
@@ -8532,7 +8552,7 @@
 "F"
 ],
 [
-"First Advantage Corp",
+"First Advantage Corporation",
 "FA"
 ],
 [
@@ -8560,11 +8580,11 @@
 "FAMI"
 ],
 [
-"Diamondback Energy Inc",
+"Diamondback Energy  Inc.",
 "FANG"
 ],
 [
-"Fastenal Co",
+"Fastenal Company",
 "FAST"
 ],
 [
@@ -8578,6 +8598,10 @@
 [
 "Abrdn Asia Pacific Income Closed End Fund",
 "FAX"
+],
+[
+"First Breach Inc.",
+"FBDT"
 ],
 [
 "FBS Global Ltd",
@@ -8600,11 +8624,11 @@
 "FBIZ"
 ],
 [
-"FB Financial Corp",
+"FB Financial Corporation",
 "FBK"
 ],
 [
-"FB Bancorp Inc",
+"FB Bancorp  Inc.",
 "FBLA"
 ],
 [
@@ -8632,7 +8656,11 @@
 "FBYD"
 ],
 [
-"Franklin Covey Co",
+"Falcon's Beyond Global 11 Cumulative Convertible Pref Shs Series B",
+"FBYDP"
+],
+[
+"Franklin Covey Co.",
 "FC"
 ],
 [
@@ -8660,7 +8688,7 @@
 "FCF"
 ],
 [
-"Firstcash Holdings Inc",
+"Firstcash Holdings Inc (Texas)",
 "FCFS"
 ],
 [
@@ -8672,7 +8700,7 @@
 "FCN"
 ],
 [
-"First Citizens BancShares Inc (Delaware)",
+"First Citizens BancShares  Inc. (Delaware)",
 "FCNCA"
 ],
 [
@@ -8720,11 +8748,19 @@
 "FDBC"
 ],
 [
+"Freedom Metals Acquisition Corp",
+"FDMM"
+],
+[
+"Freedom Metals Acquisition Units",
+"FDMMU"
+],
+[
 "4D Molecular Therapeutics Inc",
 "FDMT"
 ],
 [
-"Factset Research Systems Inc",
+"FactSet Research Systems Inc.",
 "FDS"
 ],
 [
@@ -8748,7 +8784,7 @@
 "FE"
 ],
 [
-"5E Advanced Materials Inc",
+"5E Advanced Materials  Inc.",
 "FEAM"
 ],
 [
@@ -8760,7 +8796,7 @@
 "FEDU"
 ],
 [
-"ENvue Medical Inc",
+"ENvue Medical  Inc.",
 "FEED"
 ],
 [
@@ -8768,7 +8804,7 @@
 "FEIM"
 ],
 [
-"Franklin Electric Co Inc",
+"FRANKLIN ELECTRIC CO.  INC.",
 "FELE"
 ],
 [
@@ -8776,7 +8812,7 @@
 "FEMY"
 ],
 [
-"Fennec Pharmaceuticals Inc",
+"Fennec Pharmaceuticals Inc.",
 "FENC"
 ],
 [
@@ -8784,7 +8820,7 @@
 "FENG"
 ],
 [
-"Ferrovial NV",
+"Ferrovial N.V.",
 "FER"
 ],
 [
@@ -8820,7 +8856,7 @@
 "FFAI"
 ],
 [
-"First Financial Bancorp",
+"First Financial Bancorp.",
 "FFBC"
 ],
 [
@@ -8864,18 +8900,6 @@
 "FGL"
 ],
 [
-"FG Merger II Corp",
-"FGMC"
-],
-[
-"FG Merger II Rights Exp 21 Jan 2030",
-"FGMCR"
-],
-[
-"FG Merger II Units",
-"FGMCU"
-],
-[
 "F&G Annuities And Life 7 950 Senior Notes due 2053",
 "FGN"
 ],
@@ -8892,7 +8916,7 @@
 "FGXCU"
 ],
 [
-"First Hawaiian Inc",
+"First Hawaiian  Inc.",
 "FHB"
 ],
 [
@@ -8904,7 +8928,7 @@
 "FHN"
 ],
 [
-"Foghorn Therapeutics Inc",
+"Foghorn Therapeutics Inc.",
 "FHTX"
 ],
 [
@@ -8912,7 +8936,7 @@
 "FIBK"
 ],
 [
-"Fair Isaac Corp",
+"Fair Isaac Corporation",
 "FICO"
 ],
 [
@@ -8920,15 +8944,15 @@
 "FIEE"
 ],
 [
-"Figma Inc",
+"Figma  Inc.",
 "FIG"
 ],
 [
-"Figure Technology Solutions Inc",
+"Figure Technology Solutions  Inc.",
 "FIGR"
 ],
 [
-"Figs Inc",
+"FIGS  Inc.",
 "FIGS"
 ],
 [
@@ -8952,7 +8976,7 @@
 "FINW"
 ],
 [
-"Ftai Infrastructure Inc",
+"FTAI Infrastructure Inc.",
 "FIP"
 ],
 [
@@ -9000,20 +9024,24 @@
 "FITBP"
 ],
 [
-"Five Below Inc",
+"Five Below  Inc.",
 "FIVE"
 ],
 [
-"Five9 Inc",
+"Five9  Inc.",
 "FIVN"
 ],
 [
-"Comfort Systems USA Inc",
+"Comfort Systems USA  Inc.",
 "FIX"
 ],
 [
-"National Beverage Corp",
+"National Beverage Corp.",
 "FIZZ"
+],
+[
+"ARC Group Securities Acquisition I Units",
+"FJDIU"
 ],
 [
 "Starfighters Space Inc",
@@ -9040,7 +9068,7 @@
 "FLG"
 ],
 [
-"Fulgent Genetics Inc",
+"Fulgent Genetics  Inc.",
 "FLGT"
 ],
 [
@@ -9048,7 +9076,7 @@
 "FLL"
 ],
 [
-"Filana Therapeutics Inc",
+"Filana Therapeutics  Inc.",
 "FLNA"
 ],
 [
@@ -9056,7 +9084,7 @@
 "FLNC"
 ],
 [
-"FLEX LNG Ltd",
+"FLEX LNG Ltd.",
 "FLNG"
 ],
 [
@@ -9068,7 +9096,7 @@
 "FLO"
 ],
 [
-"Flowco Holdings Inc",
+"Flowco Holdings Inc.",
 "FLOC"
 ],
 [
@@ -9076,7 +9104,7 @@
 "FLR"
 ],
 [
-"Flowserve Corp",
+"Flowserve Corporation",
 "FLS"
 ],
 [
@@ -9088,7 +9116,7 @@
 "FLUX"
 ],
 [
-"1-800-Flowers.Com Inc",
+"1-800-FLOWERS.COM  Inc.",
 "FLWS"
 ],
 [
@@ -9100,7 +9128,7 @@
 "FLXS"
 ],
 [
-"Firefly Aerospace Inc",
+"Firefly Aerospace Inc.",
 "FLY"
 ],
 [
@@ -9108,7 +9136,7 @@
 "FLYE"
 ],
 [
-"Flywire Corp",
+"Flywire Corporation",
 "FLYW"
 ],
 [
@@ -9122,6 +9150,10 @@
 [
 "Future Money Acquisition Corp",
 "FMAC"
+],
+[
+"Future Money Acquisition Rights",
+"FMACR"
 ],
 [
 "Future Money Acquisition Units",
@@ -9176,7 +9208,7 @@
 "FNB"
 ],
 [
-"Floor & Decor Holdings Inc",
+"Floor & Decor Holdings  Inc.",
 "FND"
 ],
 [
@@ -9188,7 +9220,7 @@
 "FNGR"
 ],
 [
-"Funko Inc",
+"Funko  Inc.",
 "FNKO"
 ],
 [
@@ -9204,7 +9236,7 @@
 "FNUC"
 ],
 [
-"Franco-Nevada Corp",
+"Franco-Nevada Corporation",
 "FNV"
 ],
 [
@@ -9232,6 +9264,10 @@
 "FOFO"
 ],
 [
+"Londian Wason New Energy Tech Inc ADR",
+"FOIL"
+],
+[
 "Forestar Group Inc",
 "FOR"
 ],
@@ -9252,19 +9288,19 @@
 "FOSL"
 ],
 [
-"Shift4 Payments  Inc",
+"Shift4 Payments  Inc.",
 "FOUR"
 ],
 [
-"Fox Corp Class B",
+"Fox Corporation Class B",
 "FOX"
 ],
 [
-"Fox Corp Class A",
+"Fox Corporation Class A",
 "FOXA"
 ],
 [
-"Fox Factory Holding Corp",
+"Fox Factory Holding Corp.",
 "FOXF"
 ],
 [
@@ -9276,7 +9312,7 @@
 "FPF"
 ],
 [
-"Five Point Holdings LLC",
+"Five Point Holdings  LLC",
 "FPH"
 ],
 [
@@ -9284,11 +9320,11 @@
 "FPI"
 ],
 [
-"Forgent Power Solutions  Inc",
+"Forgent Power Solutions  Inc.",
 "FPS"
 ],
 [
-"First Industrial Realty Trust Inc",
+"First Industrial Realty Trust  Inc.",
 "FR"
 ],
 [
@@ -9320,7 +9356,7 @@
 "FRHC"
 ],
 [
-"First Merchants Corp",
+"First Merchants Corporation",
 "FRME"
 ],
 [
@@ -9336,11 +9372,15 @@
 "FRMM"
 ],
 [
+"Freenome  Inc.",
+"FRNM"
+],
+[
 "Frontline PLC",
 "FRO"
 ],
 [
-"Jfrog Ltd",
+"JFrog Ltd.",
 "FROG"
 ],
 [
@@ -9348,11 +9388,11 @@
 "FRPH"
 ],
 [
-"Freshpet Inc",
+"Freshpet  Inc.",
 "FRPT"
 ],
 [
-"Freshworks Inc",
+"Freshworks Inc.",
 "FRSH"
 ],
 [
@@ -9412,11 +9452,11 @@
 "FSK"
 ],
 [
-"First Solar Inc",
+"First Solar  Inc.",
 "FSLR"
 ],
 [
-"Fastly Inc",
+"Fastly  Inc.",
 "FSLY"
 ],
 [
@@ -9444,7 +9484,7 @@
 "FSUN"
 ],
 [
-"FirstService Corp",
+"FIRSTSERVICE CORPORATION",
 "FSV"
 ],
 [
@@ -9452,7 +9492,7 @@
 "FT"
 ],
 [
-"FTAI Aviation Ltd",
+"FTAI Aviation Ltd.",
 "FTAI"
 ],
 [
@@ -9512,8 +9552,12 @@
 "FTLF"
 ],
 [
-"Fortinet Inc",
+"Fortinet  Inc.",
 "FTNT"
+],
+[
+"FutureCorp Space Acquisition 1",
+"FTRA"
 ],
 [
 "FutureCorp Space Acquisition 1 Units",
@@ -9524,15 +9568,11 @@
 "FTRE"
 ],
 [
-"Fast Track Entertainment",
-"FTRK"
-],
-[
-"Fortis Inc",
+"Fortis Inc.",
 "FTS"
 ],
 [
-"Fortive Corp",
+"Fortive Corporation",
 "FTV"
 ],
 [
@@ -9540,7 +9580,7 @@
 "FTW"
 ],
 [
-"FuboTV Inc",
+"FuboTV Inc.",
 "FUBO"
 ],
 [
@@ -9552,7 +9592,7 @@
 "FUL"
 ],
 [
-"Fulcrum Therapeutics Inc",
+"Fulcrum Therapeutics  Inc.",
 "FULC"
 ],
 [
@@ -9584,11 +9624,11 @@
 "FUSB"
 ],
 [
-"Fusemachines Inc",
+"FUSEMACHINES INC.",
 "FUSE"
 ],
 [
-"Futu Holdings Ltd ADR",
+"Futu Holdings Limited ADR",
 "FUTU"
 ],
 [
@@ -9612,12 +9652,16 @@
 "FVNNU"
 ],
 [
-"FrontView REIT Inc",
+"FrontView REIT  Inc.",
 "FVR"
 ],
 [
 "Fiverr International Ltd",
 "FVRR"
+],
+[
+"Futurewave Acquisition Corp",
+"FWAC"
 ],
 [
 "Futurewave Acquisition Units",
@@ -9640,7 +9684,7 @@
 "FWRD"
 ],
 [
-"First Watch Restaurant Group Inc",
+"First Watch Restaurant Group  Inc.",
 "FWRG"
 ],
 [
@@ -9660,7 +9704,7 @@
 "FXNC"
 ],
 [
-"Genpact Ltd",
+"Genpact Limited",
 "G"
 ],
 [
@@ -9688,10 +9732,6 @@
 "GAM"
 ],
 [
-"Gambling.com Group Ltd",
-"GAMB"
-],
-[
 "GameSquare Holdings Inc",
 "GAME"
 ],
@@ -9700,7 +9740,7 @@
 "GANX"
 ],
 [
-"Gap Inc",
+"The Gap  Inc.",
 "GAP"
 ],
 [
@@ -9708,7 +9748,7 @@
 "GASS"
 ],
 [
-"GATX Corp",
+"GATX Corporation",
 "GATX"
 ],
 [
@@ -9744,7 +9784,7 @@
 "GBR"
 ],
 [
-"Global Business Travel Group Inc",
+"Global Business Travel Group  Inc.",
 "GBTG"
 ],
 [
@@ -9772,7 +9812,7 @@
 "GCL"
 ],
 [
-"GCM Grosvenor Inc",
+"GCM Grosvenor Inc.",
 "GCMG"
 ],
 [
@@ -9804,7 +9844,7 @@
 "GDC"
 ],
 [
-"GoDaddy Inc",
+"GoDaddy Inc.",
 "GDDY"
 ],
 [
@@ -9828,15 +9868,15 @@
 "GDO"
 ],
 [
-"Green Dot Corp",
+"Green Dot Corporation",
 "GDOT"
 ],
 [
-"GoodRx Holdings Inc",
+"GoodRx Holdings  Inc.",
 "GDRX"
 ],
 [
-"GDS Holdings Ltd ADR",
+"GDS Holdings Limited ADR",
 "GDS"
 ],
 [
@@ -9848,11 +9888,11 @@
 "GDV"
 ],
 [
-"Grid Dynamics Holdings Inc",
+"Grid Dynamics Holdings  Inc.",
 "GDYN"
 ],
 [
-"General Electric Co",
+"General Electric Company",
 "GE"
 ],
 [
@@ -9872,7 +9912,7 @@
 "GEG"
 ],
 [
-"GE Healthcare Technologies Inc",
+"GE HealthCare Technologies Inc.",
 "GEHC"
 ],
 [
@@ -9888,7 +9928,7 @@
 "GEMI"
 ],
 [
-"Gen Digital Inc",
+"Gen Digital Inc.",
 "GEN"
 ],
 [
@@ -9912,7 +9952,7 @@
 "GENVR"
 ],
 [
-"Geo Group Inc",
+"The GEO Group  Inc.",
 "GEO"
 ],
 [
@@ -9920,7 +9960,7 @@
 "GEOS"
 ],
 [
-"Geron Corp",
+"Geron Corporation",
 "GERN"
 ],
 [
@@ -9932,7 +9972,7 @@
 "GEV"
 ],
 [
-"Gevo Inc",
+"Gevo  Inc.",
 "GEVO"
 ],
 [
@@ -9944,27 +9984,31 @@
 "GFAI"
 ],
 [
-"Griffon Corp",
+"Griffon Corporation",
 "GFF"
 ],
 [
-"Gold Fields Ltd ADR",
+"Gold Fields Limited ADR",
 "GFI"
 ],
 [
-"GFL Environmental Inc",
+"GFL Environmental Inc.",
 "GFL"
 ],
 [
-"Greenfire Resources Ltd",
+"Greenfire Resources Ltd.",
 "GFR"
 ],
 [
-"GlobalFoundries Inc",
+"GLOBALFOUNDRIES Inc.",
 "GFS"
 ],
 [
-"Grupo Financiero Galicia SA ADR",
+"General Fusion Group Ltd",
+"GFUZ"
+],
+[
+"Grupo Financiero Galicia S.A. ADR",
 "GGAL"
 ],
 [
@@ -9972,7 +10016,7 @@
 "GGB"
 ],
 [
-"Graco Inc",
+"Graco Inc.",
 "GGG"
 ],
 [
@@ -9984,10 +10028,6 @@
 "GGR"
 ],
 [
-"Glimpse Group Inc",
-"GGRP"
-],
-[
 "Gabelli Multimedia Trust Inc",
 "GGT"
 ],
@@ -9996,7 +10036,7 @@
 "GGZ"
 ],
 [
-"Guardant Health Inc",
+"Guardant Health  Inc.",
 "GH"
 ],
 [
@@ -10020,6 +10060,10 @@
 "GHRS"
 ],
 [
+"Gores Holdings XI Inc",
+"GHXI"
+],
+[
 "Gores Holdings XI Units",
 "GHXIU"
 ],
@@ -10036,7 +10080,7 @@
 "GIBO"
 ],
 [
-"Global Industrial Co",
+"Global Industrial Company",
 "GIC"
 ],
 [
@@ -10052,15 +10096,15 @@
 "GIII"
 ],
 [
-"Gildan Activewear Inc",
+"Gildan Activewear Inc.",
 "GIL"
 ],
 [
-"Gilead Sciences  Inc",
+"Gilead Sciences  Inc.",
 "GILD"
 ],
 [
-"Gilat Satellite Networks Ltd",
+"Gilat Satellite Networks Ltd.",
 "GILT"
 ],
 [
@@ -10080,16 +10124,16 @@
 "GIW"
 ],
 [
-"GigCapital8 Rights Exp 30th Sep 2030",
-"GIWWR"
-],
-[
 "Gigcapital8 Units",
 "GIWWU"
 ],
 [
 "GigCapital9 Corp",
 "GIX"
+],
+[
+"GigCapital9 Rights",
+"GIXXR"
 ],
 [
 "GigCapital9 Units",
@@ -10120,11 +10164,11 @@
 "GJT"
 ],
 [
-"Glaukos Corp",
+"Glaukos Corporation",
 "GKOS"
 ],
 [
-"Globe Life Inc",
+"Globe Life Inc.",
 "GL"
 ],
 [
@@ -10136,11 +10180,11 @@
 "GLAS"
 ],
 [
-"Global-E Online Ltd",
+"Global-E Online Ltd.",
 "GLBE"
 ],
 [
-"Globus Maritime Ltd",
+"Globus Maritime Limited",
 "GLBS"
 ],
 [
@@ -10160,11 +10204,11 @@
 "GLED-U"
 ],
 [
-"Liberty Capital Corp Series A",
+"Liberty Capital Corporation Series A",
 "GLIBA"
 ],
 [
-"Liberty Capital Corp Series C",
+"Liberty Capital Corporation Series C",
 "GLIBK"
 ],
 [
@@ -10176,7 +10220,7 @@
 "GLND"
 ],
 [
-"Golar LNG Ltd",
+"Golar LNG Limited",
 "GLNG"
 ],
 [
@@ -10184,11 +10228,11 @@
 "GLO"
 ],
 [
-"Globant SA",
+"GLOBANT S.A.",
 "GLOB"
 ],
 [
-"Gloo Holdings Inc",
+"Gloo Holdings  Inc.",
 "GLOO"
 ],
 [
@@ -10196,7 +10240,7 @@
 "GLP"
 ],
 [
-"Gaming and Leisure Properties Inc",
+"Gaming and Leisure Properties  Inc.",
 "GLPI"
 ],
 [
@@ -10216,7 +10260,7 @@
 "GLU"
 ],
 [
-"Monte Rosa Therapeutics Inc",
+"Monte Rosa Therapeutics  Inc.",
 "GLUE"
 ],
 [
@@ -10224,7 +10268,7 @@
 "GLV"
 ],
 [
-"Corning Inc",
+"Corning Incorporated",
 "GLW"
 ],
 [
@@ -10244,11 +10288,11 @@
 "GMAB"
 ],
 [
-"GameStop Corp",
+"GameStop Corp.",
 "GME"
 ],
 [
-"Globus Medical Inc",
+"Globus Medical  Inc.",
 "GMED"
 ],
 [
@@ -10280,7 +10324,7 @@
 "GNFT"
 ],
 [
-"Genco Shipping & Trading Ltd",
+"Genco Shipping & Trading Limited",
 "GNK"
 ],
 [
@@ -10292,7 +10336,7 @@
 "GNLN"
 ],
 [
-"Genelux Corp",
+"Genelux Corporation",
 "GNLX"
 ],
 [
@@ -10300,7 +10344,7 @@
 "GNPX"
 ],
 [
-"Generac Holdings Inc",
+"Generac Holdings Inc.",
 "GNRC"
 ],
 [
@@ -10316,11 +10360,11 @@
 "GNT"
 ],
 [
-"Genenta Science SPA ADR",
+"Genenta Science SpA ADR",
 "GNTA"
 ],
 [
-"Gentex Corp",
+"Gentex Corporation",
 "GNTX"
 ],
 [
@@ -10328,7 +10372,7 @@
 "GNW"
 ],
 [
-"Grocery Outlet Holding Corp",
+"Grocery Outlet Holding Corp.",
 "GO"
 ],
 [
@@ -10340,7 +10384,7 @@
 "GOF"
 ],
 [
-"Gogo Inc",
+"Gogo Inc.",
 "GOGO"
 ],
 [
@@ -10364,11 +10408,11 @@
 "GOODO"
 ],
 [
-"Alphabet Inc Class C",
+"Alphabet Inc. Class C",
 "GOOG"
 ],
 [
-"Alphabet Inc Class A",
+"Alphabet Inc. Class A",
 "GOOGL"
 ],
 [
@@ -10380,19 +10424,19 @@
 "GOOGN"
 ],
 [
-"Canada Goose Holdings Inc",
+"Canada Goose Holdings Inc.",
 "GOOS"
 ],
 [
-"Gold Resource Corp",
+"Goldgroup Mining Inc",
 "GORO"
 ],
 [
-"Gossamer Bio Inc",
+"Gossamer Bio  Inc.",
 "GOSS"
 ],
 [
-"Gaotu Techedu Inc ADR",
+"Gaotu Techedu Inc. ADR",
 "GOTU"
 ],
 [
@@ -10424,7 +10468,7 @@
 "GPC"
 ],
 [
-"Structure Therapeutics Inc ADR",
+"Structure Therapeutics Inc. ADR",
 "GPCR"
 ],
 [
@@ -10436,11 +10480,11 @@
 "GPI"
 ],
 [
-"Graphic Packaging Holding Co",
+"Graphic Packaging Holding Company",
 "GPK"
 ],
 [
-"Granite Point Mortgage Trust Inc",
+"Granite Point Mortgage Trust Inc.",
 "GPMT"
 ],
 [
@@ -10448,11 +10492,11 @@
 "GPN"
 ],
 [
-"Gulfport Energy Corp",
+"Gulfport Energy Corporation",
 "GPOR"
 ],
 [
-"Green Plains Inc",
+"Green Plains Inc.",
 "GPRE"
 ],
 [
@@ -10468,12 +10512,8 @@
 "GPUS"
 ],
 [
-"Grab Holdings Ltd",
+"Grab Holdings Limited",
 "GRAB"
-],
-[
-"Graf Global Corp",
-"GRAF"
 ],
 [
 "Graf Global Units",
@@ -10488,11 +10528,11 @@
 "GRAN"
 ],
 [
-"Green Brick Partners Inc",
+"Green Brick Partners  Inc.",
 "GRBK"
 ],
 [
-"Gorman- Rupp Co",
+"The Gorman-Rupp Company",
 "GRC"
 ],
 [
@@ -10500,7 +10540,7 @@
 "GRCE"
 ],
 [
-"Guardian Pharmacy Services Inc",
+"Guardian Pharmacy Services  Inc.",
 "GRDN"
 ],
 [
@@ -10508,11 +10548,7 @@
 "GRDX"
 ],
 [
-"Greenidge Generation Holdings Inc",
-"GREE"
-],
-[
-"Greenidge Generation Holdings 8 50 Senior Notes due 2026",
+"Vulcan Infrastructure and Power 8 50 Senior Notes due 2026",
 "GREEL"
 ],
 [
@@ -10520,7 +10556,7 @@
 "GRF"
 ],
 [
-"Grifols SA ADR",
+"Grifols  S.A. ADR",
 "GRFS"
 ],
 [
@@ -10532,7 +10568,7 @@
 "GRML"
 ],
 [
-"Garmin Ltd",
+"Garmin Ltd.",
 "GRMN"
 ],
 [
@@ -10544,7 +10580,7 @@
 "GRNQ"
 ],
 [
-"Granite Ridge Resources Inc",
+"Granite Ridge Resources  Inc.",
 "GRNT"
 ],
 [
@@ -10564,12 +10600,16 @@
 "GROY"
 ],
 [
-"Groupon Inc",
+"Groupon  Inc.",
 "GRPN"
 ],
 [
 "Gorilla Technology Group Inc",
 "GRRR"
+],
+[
+"Grandstand Limited",
+"GRSD"
 ],
 [
 "Gravity Co Ltd ADR",
@@ -10588,7 +10628,7 @@
 "GS"
 ],
 [
-"Globalstar Inc",
+"Globalstar  Inc.",
 "GSAT"
 ],
 [
@@ -10600,7 +10640,7 @@
 "GSBD"
 ],
 [
-"Goosehead Insurance Inc",
+"Goosehead Insurance  Inc.",
 "GSHD"
 ],
 [
@@ -10624,7 +10664,7 @@
 "GSK"
 ],
 [
-"Global Ship Lease Inc",
+"Global Ship Lease  Inc.",
 "GSL"
 ],
 [
@@ -10634,10 +10674,6 @@
 [
 "GSR IV Acquisition Corp",
 "GSRF"
-],
-[
-"GSR IV Acquisition Rights Exp 22nd Aug 2030",
-"GSRFR"
 ],
 [
 "GSR IV Acquisition Units",
@@ -10696,7 +10732,7 @@
 "GTERU"
 ],
 [
-"Gates Industrial Corporation PLC",
+"Gates Industrial Corporation Ltd",
 "GTES"
 ],
 [
@@ -10708,15 +10744,11 @@
 "GTIM"
 ],
 [
-"GitLab Inc",
+"GitLab Inc.",
 "GTLB"
 ],
 [
-"Chart Industries Inc",
-"GTLS"
-],
-[
-"Zoominfo Technologies Inc",
+"ZoomInfo Technologies Inc.",
 "GTM"
 ],
 [
@@ -10728,11 +10760,11 @@
 "GTN-A"
 ],
 [
-"Garrett Motion Inc. (Delaware)",
+"Garrett Motion Inc.",
 "GTX"
 ],
 [
-"Getty Realty Corp",
+"Getty Realty Corp.",
 "GTY"
 ],
 [
@@ -10756,15 +10788,11 @@
 "GUT"
 ],
 [
-"Fractyl Health Inc",
+"Fractyl Health  Inc.",
 "GUTS"
 ],
 [
-"Visionary Holdings Inc",
-"GV"
-],
-[
-"Granite Construction Inc",
+"Granite Construction Incorporated",
 "GVA"
 ],
 [
@@ -10776,11 +10804,11 @@
 "GWAV"
 ],
 [
-"ESS Tech Inc",
+"ESS Tech  Inc.",
 "GWH"
 ],
 [
-"Guidewire Software Inc",
+"Guidewire Software  Inc.",
 "GWRE"
 ],
 [
@@ -10796,11 +10824,15 @@
 "GXAI"
 ],
 [
-"GXO Logistics Inc",
+"GXO Logistics  Inc.",
 "GXO"
 ],
 [
-"Gyre Therapeutics Inc",
+"Game Your Game Inc",
+"GYGY"
+],
+[
+"Gyre Therapeutics  Inc.",
 "GYRE"
 ],
 [
@@ -10828,7 +10860,7 @@
 "HAFC"
 ],
 [
-"Hafnia Ltd",
+"Hafnia Limited",
 "HAFN"
 ],
 [
@@ -10836,11 +10868,11 @@
 "HAIN"
 ],
 [
-"Halliburton Co",
+"Halliburton Company",
 "HAL"
 ],
 [
-"Halozyme Therapeutics Inc",
+"Halozyme Therapeutics  Inc.",
 "HALO"
 ],
 [
@@ -10848,11 +10880,11 @@
 "HAO"
 ],
 [
-"Happen Inc",
+"Happen  Inc.",
 "HAPN"
 ],
 [
-"Hasbro Inc",
+"Hasbro  Inc.",
 "HAS"
 ],
 [
@@ -10876,7 +10908,7 @@
 "HAWK"
 ],
 [
-"Hayward Holdings Inc",
+"Hayward Holdings  Inc.",
 "HAYW"
 ],
 [
@@ -10900,7 +10932,7 @@
 "HBANZ"
 ],
 [
-"Hamilton Beach Brands Holding Co",
+"Hamilton Beach Brands Holding Company",
 "HBB"
 ],
 [
@@ -10924,16 +10956,20 @@
 "HBNC"
 ],
 [
-"HBT Financial  Inc",
+"HBT Financial Inc",
 "HBT"
 ],
 [
-"HCA Healthcare Inc",
+"HCA Healthcare  Inc.",
 "HCA"
 ],
 [
 "Hall Chadwick Acquisition Corp",
 "HCAC"
+],
+[
+"Hall Chadwick Acquisition Rights Exp 20th Nov 2030",
+"HCACR"
 ],
 [
 "Hall Chadwick Acquisition Units",
@@ -10944,7 +10980,7 @@
 "HCAI"
 ],
 [
-"Health Catalyst Inc",
+"Health Catalyst  Inc.",
 "HCAT"
 ],
 [
@@ -10964,11 +11000,15 @@
 "HCIC"
 ],
 [
+"Hennessy Capital Investment VIII Share Rights Exp 2nd Feb 2031",
+"HCICR"
+],
+[
 "Hennessy Capital Investment VIII Units",
 "HCICU"
 ],
 [
-"Hackett Group Inc",
+"The Hackett Group  Inc.",
 "HCKT"
 ],
 [
@@ -10984,7 +11024,7 @@
 "HCMAU"
 ],
 [
-"Healthcare Services Group Inc",
+"Healthcare Services Group  Inc.",
 "HCSG"
 ],
 [
@@ -11000,15 +11040,15 @@
 "HCWC"
 ],
 [
-"Home Depot Inc",
+"The Home Depot  Inc.",
 "HD"
 ],
 [
-"HDFC Bank Ltd ADR",
+"HDFC Bank Limited ADR",
 "HDB"
 ],
 [
-"Super Hi International Holding Ltd ADR",
+"Super Hi International Holding Ltd. ADR",
 "HDL"
 ],
 [
@@ -11020,15 +11060,15 @@
 "HDSN"
 ],
 [
-"Hawaiian Electric Industries Inc",
+"Hawaiian Electric Industries  Inc.",
 "HE"
 ],
 [
-"HEICO Corp",
+"HEICO Corporation",
 "HEI"
 ],
 [
-"HEICO Corp Class A",
+"HEICO Corporation Class A",
 "HEI-A"
 ],
 [
@@ -11036,7 +11076,7 @@
 "HELE"
 ],
 [
-"Cybin Inc",
+"Cybin Inc.",
 "HELP"
 ],
 [
@@ -11076,7 +11116,7 @@
 "HFWA"
 ],
 [
-"Hamilton Insurance Group Ltd",
+"Hamilton Insurance Group  Ltd.",
 "HG"
 ],
 [
@@ -11092,7 +11132,7 @@
 "HGTY"
 ],
 [
-"Hilton Grand Vacations Inc",
+"Hilton Grand Vacations Inc.",
 "HGV"
 ],
 [
@@ -11108,7 +11148,7 @@
 "HIFS"
 ],
 [
-"Hartford Insurance Group Inc",
+"The Hartford Insurance Group  Inc.",
 "HIG"
 ],
 [
@@ -11116,11 +11156,11 @@
 "HIHO"
 ],
 [
-"Huntington Ingalls Industries Inc",
+"HUNTINGTON INGALLS INDUSTRIES  INC.",
 "HII"
 ],
 [
-"Hims & Hers Health Inc",
+"Hims & Hers Health  Inc.",
 "HIMS"
 ],
 [
@@ -11136,7 +11176,7 @@
 "HIO"
 ],
 [
-"Hippo Holdings Inc",
+"Hippo Holdings Inc.",
 "HIPO"
 ],
 [
@@ -11152,7 +11192,7 @@
 "HIVE"
 ],
 [
-"Highwoods Properties Inc",
+"Highwoods Properties  Inc.",
 "HIW"
 ],
 [
@@ -11188,11 +11228,11 @@
 "HLIO"
 ],
 [
-"Harmonic Inc",
+"Harmonic Inc.",
 "HLIT"
 ],
 [
-"Holley Inc",
+"Holley Inc.",
 "HLLY"
 ],
 [
@@ -11204,7 +11244,7 @@
 "HLN"
 ],
 [
-"Hamilton Lane Inc",
+"Hamilton Lane Incorporated",
 "HLNE"
 ],
 [
@@ -11224,7 +11264,7 @@
 "HLXC"
 ],
 [
-"Honda Motor Co Ltd ADR",
+"HONDA MOTOR CO.  LTD. ADR",
 "HMC"
 ],
 [
@@ -11240,15 +11280,15 @@
 "HMR"
 ],
 [
-"Harmony Gold Mining Company Ltd ADR",
+"Harmony Gold Mining Company Limited ADR",
 "HMY"
 ],
 [
-"Hinge Health Inc",
+"Hinge Health  Inc.",
 "HNGE"
 ],
 [
-"HNI Corp",
+"HNI Corporation",
 "HNI"
 ],
 [
@@ -11256,11 +11296,11 @@
 "HNNA"
 ],
 [
-"Hallador Energy Co",
+"Hallador Energy Company",
 "HNRG"
 ],
 [
-"Honest Company Inc",
+"The Honest Company  Inc.",
 "HNST"
 ],
 [
@@ -11276,7 +11316,7 @@
 "HOFT"
 ],
 [
-"Harley-Davidson Inc",
+"Harley-Davidson  Inc.",
 "HOG"
 ],
 [
@@ -11300,7 +11340,7 @@
 "HONIV"
 ],
 [
-"Robinhood Markets Inc",
+"Robinhood Markets  Inc.",
 "HOOD"
 ],
 [
@@ -11312,7 +11352,7 @@
 "HOUR"
 ],
 [
-"Hovnanian Enterprises Inc",
+"Hovnanian Enterprises  Inc.",
 "HOV"
 ],
 [
@@ -11328,7 +11368,7 @@
 "HOWL"
 ],
 [
-"Helmerich and Payne Inc",
+"Helmerich & Payne  Inc.",
 "HP"
 ],
 [
@@ -11336,7 +11376,7 @@
 "HPAI"
 ],
 [
-"Hewlett Packard Enterprise Co",
+"Hewlett Packard Enterprise Company",
 "HPE"
 ],
 [
@@ -11352,7 +11392,7 @@
 "HPK"
 ],
 [
-"Hudson Pacific Properties Inc",
+"Hudson Pacific Properties  Inc.",
 "HPP"
 ],
 [
@@ -11380,7 +11420,7 @@
 "HQL"
 ],
 [
-"Healthequity Inc",
+"HealthEquity  Inc.",
 "HQY"
 ],
 [
@@ -11392,7 +11432,7 @@
 "HRB"
 ],
 [
-"Herc Holdings Inc",
+"Herc Holdings Inc.",
 "HRI"
 ],
 [
@@ -11400,11 +11440,11 @@
 "HRL"
 ],
 [
-"Harmony Biosciences Holdings Inc",
+"Harmony Biosciences Holdings  Inc.",
 "HRMY"
 ],
 [
-"Harrow Inc",
+"Harrow  Inc.",
 "HROW"
 ],
 [
@@ -11416,7 +11456,7 @@
 "HRTX"
 ],
 [
-"Horizon Technology Finance Corp",
+"Horizon Technology Finance Corporation",
 "HRZN"
 ],
 [
@@ -11440,7 +11480,7 @@
 "HSHP"
 ],
 [
-"Henry Schein Inc",
+"Henry Schein  Inc.",
 "HSIC"
 ],
 [
@@ -11448,15 +11488,15 @@
 "HSLV"
 ],
 [
-"Host Hotels and Resorts  Inc",
+"Host Hotels & Resorts  Inc.",
 "HST"
 ],
 [
-"HealthStream Inc",
+"HealthStream  Inc.",
 "HSTM"
 ],
 [
-"Hershey Co",
+"The Hershey Company",
 "HSY"
 ],
 [
@@ -11480,15 +11520,15 @@
 "HTD"
 ],
 [
-"Heartflow Inc",
+"Heartflow  Inc.",
 "HTFL"
 ],
 [
-"Hercules Capital Inc",
+"Hercules Capital  Inc.",
 "HTGC"
 ],
 [
-"Hilltop Holdings Inc",
+"Hilltop Holdings Inc.",
 "HTH"
 ],
 [
@@ -11528,11 +11568,11 @@
 "HUBC"
 ],
 [
-"Hub Group Inc",
+"Hub Group  Inc.",
 "HUBG"
 ],
 [
-"HubSpot Inc",
+"HubSpot  Inc.",
 "HUBS"
 ],
 [
@@ -11548,7 +11588,7 @@
 "HUIZ"
 ],
 [
-"Humana Inc",
+"Humana Inc.",
 "HUM"
 ],
 [
@@ -11568,7 +11608,7 @@
 "HURC"
 ],
 [
-"Huron Consulting Group Inc",
+"Huron Consulting Group Inc.",
 "HURN"
 ],
 [
@@ -11612,7 +11652,7 @@
 "HWBK"
 ],
 [
-"Hancock Whitney Corp",
+"Hancock Whitney Corporation",
 "HWC"
 ],
 [
@@ -11624,7 +11664,7 @@
 "HWKN"
 ],
 [
-"Howmet Aerospace Inc",
+"Howmet Aerospace Inc.",
 "HWM"
 ],
 [
@@ -11632,7 +11672,7 @@
 "HXHX"
 ],
 [
-"Hexcel Corp",
+"Hexcel Corporation",
 "HXL"
 ],
 [
@@ -11656,7 +11696,7 @@
 "HYLN"
 ],
 [
-"Hycroft Mining Holding Corporation",
+"Hycroft Mining Holding Corp",
 "HYMC"
 ],
 [
@@ -11668,7 +11708,7 @@
 "HYPD"
 ],
 [
-"Hyperfine Inc",
+"Hyperfine  Inc.",
 "HYPR"
 ],
 [
@@ -11678,6 +11718,10 @@
 [
 "MarineMax Inc",
 "HZO"
+],
+[
+"Innovative Solutions and Support Inc",
+"IA"
 ],
 [
 "Idea Acquisition Corp",
@@ -11708,7 +11752,7 @@
 "IAG"
 ],
 [
-"Integra Lifesciences Holdings Corp",
+"Integra LifeSciences Holdings Corporation",
 "IART"
 ],
 [
@@ -11748,11 +11792,11 @@
 "IBKR"
 ],
 [
-"International Business Machines Corp",
+"International Business Machines Corporation",
 "IBM"
 ],
 [
-"ICICI Bank Ltd ADR",
+"ICICI Bank Limited ADR",
 "IBN"
 ],
 [
@@ -11764,7 +11808,7 @@
 "IBOC"
 ],
 [
-"Installed Building Products  Inc",
+"Installed Building Products  Inc.",
 "IBP"
 ],
 [
@@ -11772,7 +11816,7 @@
 "IBRX"
 ],
 [
-"Ibotta Inc",
+"Ibotta  Inc.",
 "IBTA"
 ],
 [
@@ -11788,7 +11832,7 @@
 "ICE"
 ],
 [
-"ICF International Inc",
+"ICF International  Inc.",
 "ICFI"
 ],
 [
@@ -11796,11 +11840,11 @@
 "ICG"
 ],
 [
-"Ichor Holdings  Ltd",
+"Ichor Holdings  Ltd.",
 "ICHR"
 ],
 [
-"ICL Group Ltd",
+"ICL Group Ltd.",
 "ICL"
 ],
 [
@@ -11820,11 +11864,11 @@
 "ICU"
 ],
 [
-"ICU Medical Inc",
+"ICU Medical  Inc.",
 "ICUI"
 ],
 [
-"Idacorp  Inc",
+"IDACORP  Inc.",
 "IDA"
 ],
 [
@@ -11856,7 +11900,7 @@
 "IDR"
 ],
 [
-"IDT Corp",
+"IDT Corporation",
 "IDT"
 ],
 [
@@ -11864,16 +11908,20 @@
 "IDXX"
 ],
 [
-"IDEAYA Biosciences Inc",
+"IDEAYA Biosciences  Inc.",
 "IDYA"
 ],
 [
-"Ivanhoe Electric Inc",
+"Ivanhoe Electric Inc.",
 "IE"
 ],
 [
 "Infinite Eagle Acquisition Corp",
 "IEAG"
+],
+[
+"Infinite Eagle Acquisition Rights",
+"IEAGR"
 ],
 [
 "Infinite Eagle Acquisition Units",
@@ -11888,7 +11936,7 @@
 "IESC"
 ],
 [
-"IDEX Corp",
+"IDEX Corporation",
 "IEX"
 ],
 [
@@ -11896,7 +11944,7 @@
 "IFBD"
 ],
 [
-"International Flavors & Fragrances Inc",
+"International Flavors & Fragrances Inc.",
 "IFF"
 ],
 [
@@ -11960,11 +12008,11 @@
 "IHG"
 ],
 [
-"iHeartMedia Inc",
+"iHeartMedia  Inc.",
 "IHRT"
 ],
 [
-"IHS Holding Ltd",
+"IHS Holding Limited",
 "IHS"
 ],
 [
@@ -11984,7 +12032,7 @@
 "IIIN"
 ],
 [
-"I3 Verticals Inc",
+"I3 Verticals  Inc.",
 "IIIV"
 ],
 [
@@ -11996,7 +12044,7 @@
 "IIPR"
 ],
 [
-"Inhibikase Therapeutics Inc",
+"Inhibikase Therapeutics  Inc.",
 "IKT"
 ],
 [
@@ -12032,6 +12080,10 @@
 "IMAX"
 ],
 [
+"IMC Rare Earths Ltd",
+"IMC"
+],
+[
 "IM Cannabis Corp",
 "IMCC"
 ],
@@ -12044,7 +12096,7 @@
 "IMDX"
 ],
 [
-"Ingles Markets Inc",
+"Ingles Markets  Incorporated",
 "IMKTA"
 ],
 [
@@ -12056,11 +12108,11 @@
 "IMMR"
 ],
 [
-"Immix Biopharma Inc",
+"Immix Biopharma  Inc.",
 "IMMX"
 ],
 [
-"Immunome Inc",
+"Immunome  Inc.",
 "IMNM"
 ],
 [
@@ -12088,7 +12140,7 @@
 "IMRN"
 ],
 [
-"Immuneering Corp",
+"Immuneering Corporation",
 "IMRX"
 ],
 [
@@ -12100,15 +12152,15 @@
 "IMTE"
 ],
 [
-"Immatics NV",
+"Immatics N.V.",
 "IMTX"
 ],
 [
-"Immunic Inc",
+"Immunic  Inc.",
 "IMUX"
 ],
 [
-"Immunovant Inc",
+"Immunovant  Inc.",
 "IMVT"
 ],
 [
@@ -12116,7 +12168,7 @@
 "IMXI"
 ],
 [
-"IN8bio Inc",
+"IN8bio  Inc.",
 "INAB"
 ],
 [
@@ -12184,19 +12236,19 @@
 "INFU"
 ],
 [
-"Infosys Ltd ADR",
+"Infosys Limited ADR",
 "INFY"
 ],
 [
-"ING Groep NV ADR",
+"ING Groep N.V. ADR",
 "ING"
 ],
 [
-"Ingram Micro Holding Corp",
+"Ingram Micro Holding Corporation",
 "INGM"
 ],
 [
-"Inogen Inc",
+"Inogen  Inc.",
 "INGN"
 ],
 [
@@ -12232,7 +12284,7 @@
 "INMB"
 ],
 [
-"Inmode Ltd",
+"InMode Ltd.",
 "INMD"
 ],
 [
@@ -12248,7 +12300,7 @@
 "INO"
 ],
 [
-"Innodata Inc",
+"Innodata Inc.",
 "INOD"
 ],
 [
@@ -12256,27 +12308,27 @@
 "INR"
 ],
 [
-"Inspired Entertainment Inc",
+"Inspired Entertainment  Inc",
 "INSE"
 ],
 [
-"Inseego Corp",
+"Inseego Corp.",
 "INSG"
 ],
 [
-"Insmed Inc",
+"Insmed Incorporated",
 "INSM"
 ],
 [
-"Inspire Medical Systems Inc",
+"Inspire Medical Systems  Inc.",
 "INSP"
 ],
 [
-"International Seaways Inc",
+"International Seaways  Inc.",
 "INSW"
 ],
 [
-"Intapp Inc",
+"Intapp  Inc.",
 "INTA"
 ],
 [
@@ -12304,7 +12356,7 @@
 "INTT"
 ],
 [
-"Intuit Inc",
+"Intuit Inc.",
 "INTU"
 ],
 [
@@ -12320,7 +12372,7 @@
 "INV"
 ],
 [
-"Innoviva Inc",
+"Innoviva  Inc.",
 "INVA"
 ],
 [
@@ -12328,7 +12380,7 @@
 "INVE"
 ],
 [
-"Invitation Homes Inc",
+"Invitation Homes Inc.",
 "INVH"
 ],
 [
@@ -12340,7 +12392,11 @@
 "INVZ"
 ],
 [
-"IONQ Inc",
+"Ionic Digital Inc",
+"IOND"
+],
+[
+"IonQ  Inc.",
 "IONQ"
 ],
 [
@@ -12348,7 +12404,7 @@
 "IONR"
 ],
 [
-"Ionis Pharmaceuticals Inc",
+"Ionis Pharmaceuticals  Inc.",
 "IONS"
 ],
 [
@@ -12360,7 +12416,7 @@
 "IOSP"
 ],
 [
-"Samsara Inc (Pre-Reincorporation)",
+"Samsara Inc.",
 "IOT"
 ],
 [
@@ -12382,18 +12438,6 @@
 [
 "Merrill Lynch Depositor Certificates Series 2003 1 Exp 15 May 2033",
 "IPB"
-],
-[
-"Inflection Point Acquisition Corp III",
-"IPCX"
-],
-[
-"Inflection Point Acquisition III Rights Exp 25th April 2030",
-"IPCXR"
-],
-[
-"Inflection Point Acquisition III Units",
-"IPCXU"
 ],
 [
 "Professional Diversity Network Inc",
@@ -12436,12 +12480,16 @@
 "IPM"
 ],
 [
-"Century Therapeutics Inc",
+"Century Therapeutics  Inc.",
 "IPSC"
 ],
 [
 "IP Strategy Holdings Inc",
 "IPST"
+],
+[
+"InterPrivate Investment Partners V Inc",
+"IPVV"
 ],
 [
 "InterPrivate Investment Partners V Units",
@@ -12456,7 +12504,7 @@
 "IPWR"
 ],
 [
-"Iperionx Ltd ADR",
+"IperionX Limited ADR",
 "IPX"
 ],
 [
@@ -12468,7 +12516,7 @@
 "IQI"
 ],
 [
-"Real Asset Acquisition Corp ADR",
+"Iqm Quantum Computers Oyj ADR",
 "IQMX"
 ],
 [
@@ -12496,16 +12544,20 @@
 "IRD"
 ],
 [
-"Iridium Communications Inc",
+"Iridium Communications Inc.",
 "IRDM"
 ],
 [
-"IREN Ltd",
+"IREN Limited",
 "IREN"
 ],
 [
 "Iron Horse Acquisitions Corp II",
 "IRHO"
+],
+[
+"Iron Horse Acquisitions II Rights Exp 11th July 2030",
+"IRHOR"
 ],
 [
 "Iron Horse Acquisition II Units",
@@ -12520,11 +12572,11 @@
 "IRM"
 ],
 [
-"IRadimed Corp",
+"IRADIMED CORPORATION",
 "IRMD"
 ],
 [
-"Disc Medicine Inc",
+"Disc Medicine  Inc.",
 "IRON"
 ],
 [
@@ -12532,7 +12584,7 @@
 "IRS"
 ],
 [
-"Independence Realty Trust  Inc",
+"Independence Realty Trust  Inc.",
 "IRT"
 ],
 [
@@ -12540,7 +12592,7 @@
 "IRTC"
 ],
 [
-"Ironwood Pharmaceuticals Inc",
+"Ironwood Pharmaceuticals  Inc.",
 "IRWD"
 ],
 [
@@ -12552,11 +12604,15 @@
 "ISD"
 ],
 [
+"Snow Rothschild Acquisition Corp",
+"ISNR"
+],
+[
 "Snow Rothschild Acquisition Units",
 "ISNRU"
 ],
 [
-"IsoEnergy Ltd (Pre-Reincorporation)",
+"IsoEnergy Ltd.",
 "ISOU"
 ],
 [
@@ -12572,15 +12628,11 @@
 "ISRG"
 ],
 [
-"Innovative Solutions and Support Inc",
-"ISSC"
-],
-[
 "Investar Holding Corp",
 "ISTR"
 ],
 [
-"Gartner Inc",
+"Gartner  Inc.",
 "IT"
 ],
 [
@@ -12616,7 +12668,7 @@
 "ITRG"
 ],
 [
-"Itron Inc",
+"Itron  Inc.",
 "ITRI"
 ],
 [
@@ -12652,11 +12704,11 @@
 "IVR"
 ],
 [
-"Inventrust Properties Corp",
+"InvenTrust Properties Corp.",
 "IVT"
 ],
 [
-"Invivyd Inc",
+"Invivyd  Inc.",
 "IVVD"
 ],
 [
@@ -12664,7 +12716,7 @@
 "IVZ"
 ],
 [
-"ORIX Corp ADR",
+"ORIX CORPORATION ADR",
 "IX"
 ],
 [
@@ -12682,6 +12734,10 @@
 [
 "Jacobs Solutions Inc",
 "J"
+],
+[
+"JAB Acquisition Corp I",
+"JAB"
 ],
 [
 "JAB Acquisition I Units",
@@ -12716,7 +12772,7 @@
 "JAN"
 ],
 [
-"Janux Therapeutics Inc",
+"Janux Therapeutics  Inc.",
 "JANX"
 ],
 [
@@ -12736,11 +12792,11 @@
 "JBGS"
 ],
 [
-"J B Hunt Transport Services Inc",
+"J.B. Hunt Transport Services  Inc.",
 "JBHT"
 ],
 [
-"Janus International Group Inc",
+"Janus International Group  Inc.",
 "JBI"
 ],
 [
@@ -12752,11 +12808,11 @@
 "JBK"
 ],
 [
-"Jabil Inc",
+"Jabil Inc.",
 "JBL"
 ],
 [
-"JetBlue Airways Corp",
+"JetBlue Airways Corporation",
 "JBLU"
 ],
 [
@@ -12764,11 +12820,11 @@
 "JBS"
 ],
 [
-"John B Sanfilippo & Son Inc",
+"John B. Sanfilippo & Son  Inc.",
 "JBSS"
 ],
 [
-"JBT Marel Corp",
+"JBT Marel Corporation",
 "JBTM"
 ],
 [
@@ -12792,7 +12848,7 @@
 "JCTC"
 ],
 [
-"JD.com Inc ADR",
+"JD.com  Inc. ADR",
 "JD"
 ],
 [
@@ -12872,7 +12928,7 @@
 "JKHY"
 ],
 [
-"JinkoSolar Holding Co Ltd ADR",
+"JinkoSolar Holding Co.  Ltd. ADR",
 "JKS"
 ],
 [
@@ -12884,7 +12940,7 @@
 "JLHL"
 ],
 [
-"Jones Lang LaSalle Inc",
+"Jones Lang LaSalle Incorporated",
 "JLL"
 ],
 [
@@ -12898,6 +12954,10 @@
 [
 "Jumia Technologies AG ADR",
 "JMIA"
+],
+[
+"Jersey Mike's Subs Inc",
+"JMKE"
 ],
 [
 "Nuveen Multi-Market Income Fund",
@@ -12916,7 +12976,7 @@
 "JOB"
 ],
 [
-"Joby Aviation Inc",
+"Joby Aviation  Inc.",
 "JOBY"
 ],
 [
@@ -12928,11 +12988,15 @@
 "JOF"
 ],
 [
+"Jones Ventures INTL Acquisition1 Units",
+"JONEU"
+],
+[
 "Johnson Outdoors Inc",
 "JOUT"
 ],
 [
-"Joyy Inc ADR",
+"JOYY Inc. ADR",
 "JOYY"
 ],
 [
@@ -12972,7 +13036,7 @@
 "JSM"
 ],
 [
-"Jasper Therapeutics Inc",
+"Jasper Therapeutics  Inc.",
 "JSPR"
 ],
 [
@@ -12996,7 +13060,7 @@
 "JXG"
 ],
 [
-"Jackson Financial Inc",
+"Jackson Financial Inc.",
 "JXN"
 ],
 [
@@ -13024,7 +13088,7 @@
 "KALA"
 ],
 [
-"Kaiser Aluminum Corp",
+"Kaiser Aluminum Corporation",
 "KALU"
 ],
 [
@@ -13048,7 +13112,7 @@
 "KAZR"
 ],
 [
-"KB Financial Group Inc ADR",
+"KB Financial Group Inc. ADR",
 "KB"
 ],
 [
@@ -13100,7 +13164,7 @@
 "KCHVU"
 ],
 [
-"Kyndryl Holdings Inc",
+"Kyndryl Holdings  Inc.",
 "KD"
 ],
 [
@@ -13132,7 +13196,7 @@
 "KEN"
 ],
 [
-"Korea Electric Power Corp ADR",
+"Korea Electric Power Corporation ADR",
 "KEP"
 ],
 [
@@ -13148,7 +13212,7 @@
 "KEY"
 ],
 [
-"Keysight Technologies Inc",
+"Keysight Technologies  Inc.",
 "KEYS"
 ],
 [
@@ -13236,7 +13300,7 @@
 "KKR"
 ],
 [
-"KLA Corp",
+"KLA Corporation",
 "KLAC"
 ],
 [
@@ -13268,15 +13332,19 @@
 "KLXE"
 ],
 [
-"Kimberly-Clark Corp",
+"KLX Energy Services Holdings Rights",
+"KLXER"
+],
+[
+"Kimberly-Clark Corporation",
 "KMB"
 ],
 [
-"Kamada Ltd",
+"Kamada Ltd.",
 "KMDA"
 ],
 [
-"Kinder Morgan Inc",
+"Kinder Morgan  Inc.",
 "KMI"
 ],
 [
@@ -13284,7 +13352,7 @@
 "KMPB"
 ],
 [
-"Kemper Corp",
+"Kemper Corporation",
 "KMPR"
 ],
 [
@@ -13292,11 +13360,11 @@
 "KMRK"
 ],
 [
-"Kennametal Inc",
+"Kennametal Inc.",
 "KMT"
 ],
 [
-"Kestra Medical Technologies Ltd",
+"Kestra Medical Technologies  Ltd.",
 "KMTS"
 ],
 [
@@ -13304,7 +13372,7 @@
 "KMX"
 ],
 [
-"Knowles Corp",
+"Knowles Corporation",
 "KN"
 ],
 [
@@ -13332,11 +13400,11 @@
 "KNSL"
 ],
 [
-"Kinetik Holdings Inc",
+"Kinetik Holdings Inc.",
 "KNTK"
 ],
 [
-"Knight-Swift Transportation Holdings Inc",
+"Knight-Swift Transportation Holdings Inc.",
 "KNX"
 ],
 [
@@ -13344,7 +13412,7 @@
 "KO"
 ],
 [
-"Kodiak Sciences Inc",
+"Kodiak Sciences Inc.",
 "KOD"
 ],
 [
@@ -13364,11 +13432,7 @@
 "KOPN"
 ],
 [
-"KORE Group Holdings Inc",
-"KORE"
-],
-[
-"Kosmos Energy Ltd",
+"Kosmos Energy Ltd.",
 "KOS"
 ],
 [
@@ -13396,11 +13460,11 @@
 "KPLT"
 ],
 [
-"Kiora Pharmaceuticals Inc",
+"Kiora Pharmaceuticals  Inc.",
 "KPRX"
 ],
 [
-"Karyopharm Therapeutics Inc",
+"Karyopharm Therapeutics Inc.",
 "KPTI"
 ],
 [
@@ -13416,7 +13480,7 @@
 "KRAQU"
 ],
 [
-"Kilroy Realty Corp",
+"Kilroy Realty Corporation",
 "KRC"
 ],
 [
@@ -13440,7 +13504,7 @@
 "KRMN"
 ],
 [
-"Kornit Digital Ltd",
+"Kornit Digital Ltd.",
 "KRNT"
 ],
 [
@@ -13448,11 +13512,11 @@
 "KRNY"
 ],
 [
-"Kronos Worldwide Inc",
+"Kronos Worldwide  Inc.",
 "KRO"
 ],
 [
-"Keros Therapeutics Inc",
+"Keros Therapeutics  Inc.",
 "KROS"
 ],
 [
@@ -13460,7 +13524,7 @@
 "KRP"
 ],
 [
-"Korro Bio Inc",
+"Korro Bio  Inc.",
 "KRRO"
 ],
 [
@@ -13476,11 +13540,11 @@
 "KRT"
 ],
 [
-"Kura Sushi USA Inc",
+"Kura Sushi USA  Inc.",
 "KRUS"
 ],
 [
-"Krystal Biotech Inc",
+"Krystal Biotech  Inc.",
 "KRYS"
 ],
 [
@@ -13492,15 +13556,15 @@
 "KSPI"
 ],
 [
-"Kohls Corp",
+"Kohl's Corporation",
 "KSS"
 ],
 [
-"KT Corp ADR",
+"KT Corporation ADR",
 "KT"
 ],
 [
-"Kontoor Brands Inc",
+"Kontoor Brands  Inc.",
 "KTB"
 ],
 [
@@ -13520,7 +13584,7 @@
 "KTN"
 ],
 [
-"Kratos Defense and Security Solutions Inc",
+"Kratos Defense & Security Solutions  Inc.",
 "KTOS"
 ],
 [
@@ -13530,6 +13594,10 @@
 [
 "K2 Capital Acquisition Corp",
 "KTWO"
+],
+[
+"K2 Capital Acquisition Rights",
+"KTWOR"
 ],
 [
 "K2 Capital Acquisition Units",
@@ -13544,7 +13612,7 @@
 "KULR"
 ],
 [
-"Kura Oncology Inc",
+"Kura Oncology  Inc.",
 "KURA"
 ],
 [
@@ -13552,23 +13620,15 @@
 "KUST"
 ],
 [
-"Keen Vision Acquisition Corp",
-"KVAC"
-],
-[
-"Keen Vision Acquisition Units",
-"KVACU"
-],
-[
 "KVH Industries Inc",
 "KVHI"
 ],
 [
-"Kenvue Inc",
+"Kenvue Inc.",
 "KVUE"
 ],
 [
-"Klaviyo Inc",
+"Klaviyo  Inc.",
 "KVYO"
 ],
 [
@@ -13592,7 +13652,7 @@
 "KYIV"
 ],
 [
-"Kymera Therapeutics Inc",
+"Kymera Therapeutics  Inc.",
 "KYMR"
 ],
 [
@@ -13600,11 +13660,11 @@
 "KYN"
 ],
 [
-"Kyntra Bio Inc",
+"Kyntra Bio  Inc.",
 "KYNB"
 ],
 [
-"Kyverna Therapeutics Inc",
+"Kyverna Therapeutics  Inc.",
 "KYTX"
 ],
 [
@@ -13612,11 +13672,11 @@
 "KZIA"
 ],
 [
-"Loews Corp",
+"Loews Corporation",
 "L"
 ],
 [
-"Standard BioTools Inc",
+"Standard BioTools Inc.",
 "LAB"
 ],
 [
@@ -13688,7 +13748,7 @@
 "LASE"
 ],
 [
-"nLIGHT Inc",
+"nLIGHT  Inc.",
 "LASR"
 ],
 [
@@ -13700,11 +13760,11 @@
 "LATAU"
 ],
 [
-"Laureate Education Inc",
+"Laureate Education  Inc.",
 "LAUR"
 ],
 [
-"CS Disco Inc",
+"CS Disco  Inc.",
 "LAW"
 ],
 [
@@ -13712,7 +13772,7 @@
 "LAWR"
 ],
 [
-"Lazard Inc",
+"Lazard  Inc.",
 "LAZ"
 ],
 [
@@ -13720,7 +13780,7 @@
 "LAZR"
 ],
 [
-"LandBridge Co LLC",
+"LandBridge Company LLC",
 "LB"
 ],
 [
@@ -13728,19 +13788,7 @@
 "LBGJ"
 ],
 [
-"Liberty Broadband Corp Series A",
-"LBRDA"
-],
-[
-"Liberty Broadband Corp Series C",
-"LBRDK"
-],
-[
-"Liberty Broadband Cum Redeemable Prf Shs Series A",
-"LBRDP"
-],
-[
-"Liberty Energy Inc",
+"Liberty Energy Inc.",
 "LBRT"
 ],
 [
@@ -13780,7 +13828,7 @@
 "LCFY"
 ],
 [
-"Lucid Group Inc",
+"Lucid Group  Inc.",
 "LCID"
 ],
 [
@@ -13808,7 +13856,7 @@
 "LDI"
 ],
 [
-"Leidos Holdings Inc",
+"Leidos Holdings  Inc.",
 "LDOS"
 ],
 [
@@ -13816,16 +13864,20 @@
 "LDP"
 ],
 [
-"Lands' End Inc",
+"Lands' End  Inc.",
 "LE"
 ],
 [
-"Lear Corp",
+"Lear Corporation",
 "LEA"
 ],
 [
 "Lincoln Electric Holdings Inc",
 "LECO"
+],
+[
+"Leader's Advantage Acquisition Units",
+"LEDRU"
 ],
 [
 "SemiLEDs Corp",
@@ -13836,7 +13888,7 @@
 "LEE"
 ],
 [
-"Leggett & Platt Inc",
+"Leggett & Platt  Incorporated",
 "LEG"
 ],
 [
@@ -13844,7 +13896,7 @@
 "LEGH"
 ],
 [
-"Legend Biotech Corp ADR",
+"Legend Biotech Corporation ADR",
 "LEGN"
 ],
 [
@@ -13864,7 +13916,7 @@
 "LEN-B"
 ],
 [
-"LENZ Therapeutics Inc",
+"LENZ Therapeutics  Inc.",
 "LENZ"
 ],
 [
@@ -13876,7 +13928,7 @@
 "LESL"
 ],
 [
-"Centrus Energy Corp",
+"Centrus Energy Corp.",
 "LEU"
 ],
 [
@@ -13896,7 +13948,7 @@
 "LFACU"
 ],
 [
-"Lifecore Biomedical Inc",
+"Lifecore Biomedical  Inc.",
 "LFCR"
 ],
 [
@@ -13912,7 +13964,7 @@
 "LFS"
 ],
 [
-"LifeStance Health Group Inc",
+"LifeStance Health Group  Inc.",
 "LFST"
 ],
 [
@@ -13924,7 +13976,7 @@
 "LFTO"
 ],
 [
-"Littelfuse Inc",
+"Littelfuse  Inc.",
 "LFUS"
 ],
 [
@@ -13952,7 +14004,7 @@
 "LGI"
 ],
 [
-"LGI Homes Inc",
+"LGI Homes  Inc.",
 "LGIH"
 ],
 [
@@ -13960,11 +14012,11 @@
 "LGL"
 ],
 [
-"Legence Corp",
+"Legence Corp.",
 "LGN"
 ],
 [
-"Ligand Pharmaceuticals Inc",
+"Ligand Pharmaceuticals Incorporated",
 "LGND"
 ],
 [
@@ -13980,7 +14032,7 @@
 "LGVN"
 ],
 [
-"Labcorp Holdings Inc",
+"Labcorp Holdings Inc.",
 "LH"
 ],
 [
@@ -13992,11 +14044,11 @@
 "LHSW"
 ],
 [
-"L3harris Technologies  Inc",
+"L3Harris Technologies  Inc.",
 "LHX"
 ],
 [
-"Li Auto Inc ADR",
+"Li Auto Inc. ADR",
 "LI"
 ],
 [
@@ -14012,7 +14064,7 @@
 "LIEN"
 ],
 [
-"Life360 Inc",
+"Life360  Inc.",
 "LIF"
 ],
 [
@@ -14024,11 +14076,11 @@
 "LII"
 ],
 [
-"Liberty Latin America Ltd Class A",
+"Liberty Latin America Ltd. Class A",
 "LILA"
 ],
 [
-"Liberty Latin America Ltd Class C",
+"Liberty Latin America Ltd. Class C",
 "LILAK"
 ],
 [
@@ -14052,11 +14104,11 @@
 "LINC"
 ],
 [
-"Lindblad Expeditions Holdings Inc",
+"Lindblad Expeditions Holdings  Inc.",
 "LIND"
 ],
 [
-"Lineage Inc",
+"Lineage  Inc.",
 "LINE"
 ],
 [
@@ -14064,7 +14116,7 @@
 "LINK"
 ],
 [
-"Lionsgate Studios Corp",
+"Lionsgate Studios Corp.",
 "LION"
 ],
 [
@@ -14076,7 +14128,7 @@
 "LITB"
 ],
 [
-"Lumentum Holdings Inc",
+"Lumentum Holdings Inc.",
 "LITE"
 ],
 [
@@ -14112,15 +14164,11 @@
 "LKSP"
 ],
 [
-"Lake Superior Acquisition Rights Exp 19th Sep 2030",
-"LKSPR"
-],
-[
 "Lake Superior Acquisition Units",
 "LKSPU"
 ],
 [
-"Eli Lilly and Co",
+"Eli Lilly and Company",
 "LLY"
 ],
 [
@@ -14132,16 +14180,12 @@
 "LLYVK"
 ],
 [
-"LeMaitre Vascular Inc",
+"LeMaitre Vascular  Inc.",
 "LMAT"
 ],
 [
 "Limbach Holdings Inc",
 "LMB"
-],
-[
-"LM Funding America Inc",
-"LMFA"
 ],
 [
 "Lemonade Inc",
@@ -14152,7 +14196,7 @@
 "LMNR"
 ],
 [
-"Lumexa Imaging Holdings Inc",
+"Lumexa Imaging Holdings  Inc.",
 "LMRI"
 ],
 [
@@ -14184,7 +14228,7 @@
 "LNKS"
 ],
 [
-"Lindsay Corp",
+"Lindsay Corporation",
 "LNN"
 ],
 [
@@ -14196,7 +14240,7 @@
 "LNT"
 ],
 [
-"Lantheus Holdings Inc",
+"Lantheus Holdings  Inc.",
 "LNTH"
 ],
 [
@@ -14212,11 +14256,11 @@
 "LOAN"
 ],
 [
-"Loar Holdings Inc",
+"Loar Holdings Inc.",
 "LOAR"
 ],
 [
-"Live Oak Bancshares Inc",
+"Live Oak Bancshares  Inc.",
 "LOB"
 ],
 [
@@ -14236,7 +14280,7 @@
 "LODE"
 ],
 [
-"Logitech international SA",
+"Logitech international S.A.",
 "LOGI"
 ],
 [
@@ -14300,7 +14344,7 @@
 "LPCVU"
 ],
 [
-"Dorian LPG Ltd",
+"Dorian LPG Ltd.",
 "LPG"
 ],
 [
@@ -14308,12 +14352,8 @@
 "LPL"
 ],
 [
-"LPL Financial Holdings Inc",
+"LPL Financial Holdings Inc.",
 "LPLA"
-],
-[
-"Open Lending Corp",
-"LPRO"
 ],
 [
 "LivePerson Inc",
@@ -14324,11 +14364,11 @@
 "LPTH"
 ],
 [
-"Louisiana-Pacific Corp",
+"Louisiana-Pacific Corporation",
 "LPX"
 ],
 [
-"Liquidia Corp",
+"Liquidia Corporation",
 "LQDA"
 ],
 [
@@ -14336,7 +14376,7 @@
 "LQDT"
 ],
 [
-"Lam Research Corp",
+"Lam Research Corporation",
 "LRCX"
 ],
 [
@@ -14348,7 +14388,7 @@
 "LRHC"
 ],
 [
-"Larimar Therapeutics Inc",
+"Larimar Therapeutics  Inc.",
 "LRMR"
 ],
 [
@@ -14364,7 +14404,7 @@
 "LSBK"
 ],
 [
-"Lattice Semiconductor Corp",
+"Lattice Semiconductor Corporation",
 "LSCC"
 ],
 [
@@ -14376,11 +14416,7 @@
 "LSF"
 ],
 [
-"Lakeside Holding Ltd",
-"LSH"
-],
-[
-"Lightspeed Commerce Inc",
+"Lightspeed Commerce Inc.",
 "LSPD"
 ],
 [
@@ -14388,7 +14424,7 @@
 "LSTA"
 ],
 [
-"Landstar System Inc",
+"Landstar System  Inc.",
 "LSTR"
 ],
 [
@@ -14396,19 +14432,27 @@
 "LTBR"
 ],
 [
-"LTC Properties Inc",
+"LTC Properties  Inc.",
 "LTC"
+],
+[
+"Latigo Biotherapeutics  Inc.",
+"LTGO"
+],
+[
+"Long Table Growth Corp",
+"LTGR"
 ],
 [
 "Long Table Growth Units",
 "LTGRU"
 ],
 [
-"Life Time Group Holdings  Inc",
+"Life Time Group Holdings  Inc.",
 "LTH"
 ],
 [
-"LATAM Airlines Group SA ADR",
+"LATAM Airlines Group S.A. ADR",
 "LTM"
 ],
 [
@@ -14440,11 +14484,11 @@
 "LUD"
 ],
 [
-"Lululemon Athletica Inc",
+"lululemon athletica inc.",
 "LULU"
 ],
 [
-"Lumen Technologies Inc",
+"Lumen Technologies  Inc.",
 "LUMN"
 ],
 [
@@ -14472,15 +14516,15 @@
 "LVO"
 ],
 [
-"Las Vegas Sands Corp",
+"Las Vegas Sands Corp.",
 "LVS"
 ],
 [
-"LiveWire Group Inc",
+"LiveWire Group  Inc.",
 "LVWR"
 ],
 [
-"Lamb Weston Holdings Inc",
+"Lamb Weston Holdings  Inc.",
 "LW"
 ],
 [
@@ -14496,11 +14540,11 @@
 "LWAY"
 ],
 [
-"Lightwave Logic Inc",
+"Lightwave Logic  Inc.",
 "LWLG"
 ],
 [
-"Lexinfintech Holdings Ltd ADR",
+"LexinFintech Holdings Ltd. ADR",
 "LX"
 ],
 [
@@ -14508,7 +14552,7 @@
 "LXEH"
 ],
 [
-"Lexeo Therapeutics Inc",
+"Lexeo Therapeutics  Inc.",
 "LXEO"
 ],
 [
@@ -14520,23 +14564,23 @@
 "LXP"
 ],
 [
-"Lexicon Pharmaceuticals Inc",
+"Lexicon Pharmaceuticals  Inc.",
 "LXRX"
 ],
 [
-"LSB Industries Inc",
+"LSB Industries  Inc.",
 "LXU"
 ],
 [
-"Lyondellbasell Industries N.v",
+"LyondellBasell Industries N.V.",
 "LYB"
 ],
 [
-"Lyell Immunopharma Inc",
+"Lyell Immunopharma  Inc.",
 "LYEL"
 ],
 [
-"Lyft Inc",
+"Lyft  Inc.",
 "LYFT"
 ],
 [
@@ -14544,15 +14588,19 @@
 "LYG"
 ],
 [
+"Lyntris Inc.",
+"LYNX"
+],
+[
 "LSI Industries Inc",
 "LYTS"
 ],
 [
-"Live Nation Entertainment Inc",
+"Live Nation Entertainment  Inc.",
 "LYV"
 ],
 [
-"LegalZoom.com Inc",
+"LegalZoom.com  Inc.",
 "LZ"
 ],
 [
@@ -14572,7 +14620,7 @@
 "M"
 ],
 [
-"Mastercard Inc",
+"Mastercard Incorporated",
 "MA"
 ],
 [
@@ -14584,7 +14632,7 @@
 "MAAS"
 ],
 [
-"Macerich Co",
+"The Macerich Company",
 "MAC"
 ],
 [
@@ -14600,7 +14648,7 @@
 "MAGH"
 ],
 [
-"Magnera Corp",
+"Magnera Corporation",
 "MAGN"
 ],
 [
@@ -14636,11 +14684,11 @@
 "MAN"
 ],
 [
-"Veradermics Inc",
+"Veradermics  Incorporated",
 "MANE"
 ],
 [
-"Manhattan Associates Inc",
+"Manhattan Associates  Inc.",
 "MANH"
 ],
 [
@@ -14648,11 +14696,11 @@
 "MANU"
 ],
 [
-"Marriott International Inc",
+"Marriott International  Inc.",
 "MAR"
 ],
 [
-"MARA Holdings Inc",
+"MARA Holdings  Inc.",
 "MARA"
 ],
 [
@@ -14660,7 +14708,7 @@
 "MARPS"
 ],
 [
-"Masco Corp",
+"Masco Corporation",
 "MAS"
 ],
 [
@@ -14668,7 +14716,7 @@
 "MASK"
 ],
 [
-"908 Devices Inc",
+"908 Devices Inc.",
 "MASS"
 ],
 [
@@ -14680,7 +14728,7 @@
 "MATH"
 ],
 [
-"Mativ Holdings Inc",
+"Mativ Holdings  Inc.",
 "MATV"
 ],
 [
@@ -14696,7 +14744,7 @@
 "MAV"
 ],
 [
-"Mediaalpha Inc",
+"MediaAlpha  Inc.",
 "MAX"
 ],
 [
@@ -14708,7 +14756,7 @@
 "MAYS"
 ],
 [
-"Maze Therapeutics Inc",
+"Maze Therapeutics  Inc.",
 "MAZE"
 ],
 [
@@ -14720,19 +14768,11 @@
 "MBAI"
 ],
 [
-"M3-Brigade Acquisition V Corp",
-"MBAV"
-],
-[
-"M3 Brigade Acquisition V Units",
-"MBAVU"
-],
-[
 "Marathon Bancorp Inc",
 "MBBC"
 ],
 [
-"Masterbrand Inc",
+"MasterBrand  Inc.",
 "MBC"
 ],
 [
@@ -14796,11 +14836,11 @@
 "MBWM"
 ],
 [
-"MBX Biosciences Inc",
+"MBX Biosciences  Inc.",
 "MBX"
 ],
 [
-"Moelis & Co",
+"Moelis & Company",
 "MC"
 ],
 [
@@ -14864,11 +14904,11 @@
 "MCK"
 ],
 [
-"XAI Madison Equity Premium Income Fund",
+"XAI Madison Equity Premium Income Closed End Fund",
 "MCN"
 ],
 [
-"Moody's Corp",
+"Moody's Corporation",
 "MCO"
 ],
 [
@@ -14876,11 +14916,11 @@
 "MCR"
 ],
 [
-"Seres Therapeutics Inc",
+"Seres Therapeutics  Inc.",
 "MCRB"
 ],
 [
-"Monarch Casino & Resort Inc",
+"Monarch Casino & Resort  Inc.",
 "MCRI"
 ],
 [
@@ -14896,7 +14936,7 @@
 "MCTA"
 ],
 [
-"Mercury General Corp",
+"Mercury General Corporation",
 "MCY"
 ],
 [
@@ -14904,7 +14944,7 @@
 "MD"
 ],
 [
-"Mda Space Ltd",
+"MDA Space Ltd.",
 "MDA"
 ],
 [
@@ -14912,7 +14952,7 @@
 "MDAI"
 ],
 [
-"MongoDB Inc",
+"MongoDB  Inc.",
 "MDB"
 ],
 [
@@ -14924,7 +14964,7 @@
 "MDCX"
 ],
 [
-"Madrigal Pharmaceuticals Inc",
+"Madrigal Pharmaceuticals  Inc.",
 "MDGL"
 ],
 [
@@ -14932,7 +14972,7 @@
 "MDIA"
 ],
 [
-"Medline Inc",
+"Medline Inc.",
 "MDLN"
 ],
 [
@@ -14940,7 +14980,7 @@
 "MDLZ"
 ],
 [
-"Medalist Diversified  Inc",
+"Medalist Diversified Inc",
 "MDRR"
 ],
 [
@@ -14948,19 +14988,15 @@
 "MDT"
 ],
 [
-"MDU Resources Group Inc",
+"MDU Resources Group  Inc.",
 "MDU"
-],
-[
-"Modiv Industrial Inc",
-"MDV"
 ],
 [
 "Mediwound Ltd",
 "MDWD"
 ],
 [
-"MiMedx Group Inc",
+"MiMedx Group  Inc.",
 "MDXG"
 ],
 [
@@ -14976,8 +15012,12 @@
 "MED"
 ],
 [
-"Medpace Holdings Inc",
+"Medpace Holdings  Inc.",
 "MEDP"
+],
+[
+"DataMeds AI Inc",
+"MEDS"
 ],
 [
 "NYLI CBRE Global Infrstrctr Megatrends Term Fd",
@@ -14988,11 +15028,11 @@
 "MEGL"
 ],
 [
-"Methode Electronics Inc",
+"Methode Electronics  Inc.",
 "MEI"
 ],
 [
-"MercadoLibre Inc",
+"MercadoLibre  Inc.",
 "MELI"
 ],
 [
@@ -15016,23 +15056,23 @@
 "MESHU"
 ],
 [
-"Mesoblast Ltd ADR",
+"Mesoblast Limited ADR",
 "MESO"
 ],
 [
-"MetLife Inc",
+"MetLife  Inc.",
 "MET"
 ],
 [
-"Meta Platforms Inc",
+"Meta Platforms  Inc.",
 "META"
 ],
 [
-"Ramaco Resources Inc Class A",
+"Ramaco Resources  Inc. Class A",
 "METC"
 ],
 [
-"Ramaco Resources Inc Class B",
+"Ramaco Resources  Inc. Class B",
 "METCB"
 ],
 [
@@ -15052,7 +15092,11 @@
 "MEVOU"
 ],
 [
-"MFA Financial Inc",
+"MindForge Inc",
+"MF"
+],
+[
+"MFA Financial  Inc.",
 "MFA"
 ],
 [
@@ -15064,11 +15108,11 @@
 "MFAO"
 ],
 [
-"Manulife Financial Corp",
+"Manulife Financial Corporation",
 "MFC"
 ],
 [
-"Mizuho Financial Group Inc ADR",
+"Mizuho Financial Group  Inc. ADR",
 "MFG"
 ],
 [
@@ -15092,19 +15136,15 @@
 "MFP"
 ],
 [
-"Midera Food Processing Inc",
-"MFPVV"
-],
-[
 "Mistras Group Inc",
 "MG"
 ],
 [
-"Magna International Inc",
+"Magna International Inc.",
 "MGA"
 ],
 [
-"MGE Energy Inc",
+"MGE Energy  Inc.",
 "MGEE"
 ],
 [
@@ -15128,7 +15168,7 @@
 "MGN"
 ],
 [
-"Magnite Inc",
+"Magnite  Inc.",
 "MGNI"
 ],
 [
@@ -15168,7 +15208,7 @@
 "MGYR"
 ],
 [
-"McGraw Hill Inc",
+"McGraw Hill  Inc.",
 "MH"
 ],
 [
@@ -15188,7 +15228,7 @@
 "MHI"
 ],
 [
-"Mohawk Industries Inc",
+"Mohawk Industries  Inc.",
 "MHK"
 ],
 [
@@ -15204,20 +15244,16 @@
 "MIACU"
 ],
 [
-"Miami International Holdings Inc",
+"Miami International Holdings  Inc.",
 "MIAX"
 ],
 [
-"Magnum Ice Cream Company NV",
+"The Magnum Ice Cream Company N.V.",
 "MICC"
 ],
 [
-"Middleby Corp",
+"The Middleby Corporation",
 "MIDD"
-],
-[
-"Middleby Corp",
-"MIDDV"
 ],
 [
 "Mint Incorporation Ltd",
@@ -15240,7 +15276,7 @@
 "MIO"
 ],
 [
-"Mirion Technologies Inc",
+"Mirion Technologies  Inc.",
 "MIR"
 ],
 [
@@ -15248,7 +15284,7 @@
 "MIRA"
 ],
 [
-"Mirum Pharmaceuticals Inc",
+"Mirum Pharmaceuticals  Inc.",
 "MIRM"
 ],
 [
@@ -15292,16 +15328,12 @@
 "MKDW"
 ],
 [
-"Markel Group Inc",
+"Markel Group Inc.",
 "MKL"
 ],
 [
 "McKinley Acquisition Corp",
 "MKLY"
-],
-[
-"McKinley Acquisition Rights",
-"MKLYR"
 ],
 [
 "Mckinley Acquisition Units",
@@ -15316,7 +15348,7 @@
 "MKTW"
 ],
 [
-"Marketaxess Holdings Inc",
+"MarketAxess Holdings Inc.",
 "MKTX"
 ],
 [
@@ -15324,7 +15356,7 @@
 "MKZR"
 ],
 [
-"Mountain Lake Acquisition II Corp",
+"Mountain Lake Acquisition Corp II",
 "MLAA"
 ],
 [
@@ -15332,7 +15364,7 @@
 "MLAAU"
 ],
 [
-"Mesa Laboratories Inc",
+"Mesa Laboratories  Inc.",
 "MLAB"
 ],
 [
@@ -15356,11 +15388,11 @@
 "MLI"
 ],
 [
-"MillerKnoll Inc",
+"MillerKnoll  Inc.",
 "MLKN"
 ],
 [
-"Martin Marietta Materials Inc",
+"Martin Marietta Materials  Inc.",
 "MLM"
 ],
 [
@@ -15380,7 +15412,7 @@
 "MLTX"
 ],
 [
-"Mineralys Therapeutics Inc",
+"Mineralys Therapeutics  Inc.",
 "MLYS"
 ],
 [
@@ -15404,11 +15436,11 @@
 "MMLP"
 ],
 [
-"3M Co",
+"3M Company",
 "MMM"
 ],
 [
-"Maximus Inc",
+"Maximus  Inc.",
 "MMS"
 ],
 [
@@ -15432,7 +15464,7 @@
 "MMU"
 ],
 [
-"MakeMyTrip Ltd",
+"MakeMyTrip Limited",
 "MMYT"
 ],
 [
@@ -15444,11 +15476,11 @@
 "MNDR"
 ],
 [
-"monday.com Ltd",
+"monday.com Ltd.",
 "MNDY"
 ],
 [
-"MannKind Corp",
+"MannKind Corporation",
 "MNKD"
 ],
 [
@@ -15456,7 +15488,7 @@
 "MNOV"
 ],
 [
-"Monopar Therapeutics Inc",
+"Monopar Therapeutics Inc.",
 "MNPR"
 ],
 [
@@ -15464,11 +15496,11 @@
 "MNR"
 ],
 [
-"Monro Inc",
+"Monro  Inc.",
 "MNRO"
 ],
 [
-"MainStreet Bancshares Inc",
+"MainStreet Bancshares  Inc.",
 "MNSB"
 ],
 [
@@ -15480,7 +15512,7 @@
 "MNSO"
 ],
 [
-"Monster Beverage Corp",
+"Monster Beverage Corporation",
 "MNST"
 ],
 [
@@ -15488,7 +15520,7 @@
 "MNTK"
 ],
 [
-"MNTN Inc",
+"MNTN  Inc.",
 "MNTN"
 ],
 [
@@ -15504,7 +15536,7 @@
 "MO"
 ],
 [
-"Mobilicom Ltd",
+"Mobilicom Limited",
 "MOB"
 ],
 [
@@ -15516,7 +15548,7 @@
 "MOBX"
 ],
 [
-"Modine Manufacturing Co",
+"Modine Manufacturing Company",
 "MOD"
 ],
 [
@@ -15544,11 +15576,11 @@
 "MOLN"
 ],
 [
-"Hello Group Inc ADR",
+"Hello Group Inc. ADR",
 "MOMO"
 ],
 [
-"Morningstar Inc",
+"Morningstar  Inc.",
 "MORN"
 ],
 [
@@ -15564,7 +15596,7 @@
 "MOVE"
 ],
 [
-"MP Materials Corp",
+"MP Materials Corp.",
 "MP"
 ],
 [
@@ -15580,11 +15612,11 @@
 "MPB"
 ],
 [
-"Marathon Petroleum Corp",
+"Marathon Petroleum Corporation",
 "MPC"
 ],
 [
-"MapLight Therapeutics Inc",
+"MapLight Therapeutics  Inc.",
 "MPLT"
 ],
 [
@@ -15612,7 +15644,7 @@
 "MPWR"
 ],
 [
-"Marqeta Inc",
+"Marqeta  Inc.",
 "MQ"
 ],
 [
@@ -15626,6 +15658,14 @@
 [
 "Meridian Corp",
 "MRBK"
+],
+[
+"Mercator Acquisition Corp",
+"MRCO"
+],
+[
+"Mercator Acquisition Units",
+"MRCOU"
 ],
 [
 "Mercury Systems Inc",
@@ -15676,7 +15716,7 @@
 "MRT"
 ],
 [
-"Marten Transport Ltd",
+"Marten Transport  Ltd.",
 "MRTN"
 ],
 [
@@ -15684,11 +15724,11 @@
 "MRVI"
 ],
 [
-"Marvell Technology Inc",
+"Marvell Technology  Inc.",
 "MRVL"
 ],
 [
-"Marex UK Holdings Ltd",
+"Marex Group Ltd",
 "MRX"
 ],
 [
@@ -15696,7 +15736,7 @@
 "MS"
 ],
 [
-"MSA Safety Inc",
+"MSA Safety Incorporated",
 "MSA"
 ],
 [
@@ -15732,11 +15772,11 @@
 "MSDL"
 ],
 [
-"Middlesex Water Co",
+"Middlesex Water Company",
 "MSEX"
 ],
 [
-"Microsoft Corp",
+"Microsoft Corporation",
 "MSFT"
 ],
 [
@@ -15748,7 +15788,7 @@
 "MSGM"
 ],
 [
-"Madison Square Garden Sports Corp",
+"Madison Square Garden Sports Corp.",
 "MSGS"
 ],
 [
@@ -15764,11 +15804,11 @@
 "MSIF"
 ],
 [
-"Satellos Bioscience Inc",
+"Satellos Bioscience Inc.",
 "MSLE"
 ],
 [
-"Msc Industrial Direct Co.  Inc",
+"MSC Industrial Direct Co.  Inc.",
 "MSM"
 ],
 [
@@ -15784,16 +15824,16 @@
 "MSTR"
 ],
 [
-"Ming Shing Group Holdings Ltd",
-"MSW"
-],
-[
 "ArcelorMittal SA ADR",
 "MT"
 ],
 [
-"Metalla Royalty & Streaming Ltd",
+"Metalla Royalty & Streaming Ltd.",
 "MTA"
+],
+[
+"Market Technology Acquisition Units",
+"MTAKU"
 ],
 [
 "Metals Acquisition Corp II",
@@ -15804,7 +15844,7 @@
 "MTAL-U"
 ],
 [
-"M&T Bank Corp",
+"M&T Bank Corporation",
 "MTB"
 ],
 [
@@ -15812,15 +15852,15 @@
 "MTC"
 ],
 [
-"Match Group Inc",
+"Match Group  Inc.",
 "MTCH"
 ],
 [
-"Mettler-toledo International Inc",
+"Mettler-Toledo International Inc.",
 "MTD"
 ],
 [
-"Matador Resources Co",
+"Matador Resources Company",
 "MTDR"
 ],
 [
@@ -15836,7 +15876,7 @@
 "MTEX"
 ],
 [
-"MGIC Investment Corp",
+"MGIC Investment Corporation",
 "MTG"
 ],
 [
@@ -15848,7 +15888,7 @@
 "MTLS"
 ],
 [
-"Vail Resorts Inc",
+"Vail Resorts  Inc.",
 "MTN"
 ],
 [
@@ -15868,7 +15908,7 @@
 "MTR"
 ],
 [
-"Materion Corp",
+"Materion Corporation",
 "MTRN"
 ],
 [
@@ -15876,7 +15916,7 @@
 "MTRX"
 ],
 [
-"MACOM Technology Solutions Holdings Inc",
+"MACOM Technology Solutions Holdings  Inc.",
 "MTSI"
 ],
 [
@@ -15892,7 +15932,7 @@
 "MTW"
 ],
 [
-"Minerals Technologies Inc",
+"Minerals Technologies Inc.",
 "MTX"
 ],
 [
@@ -15900,7 +15940,7 @@
 "MTZ"
 ],
 [
-"Micron Technology Inc",
+"Micron Technology  Inc.",
 "MU"
 ],
 [
@@ -15912,7 +15952,7 @@
 "MUC"
 ],
 [
-"Mitsubishi UFJ Financial Group Inc ADR",
+"Mitsubishi UFJ Financial Group  Inc. ADR",
 "MUFG"
 ],
 [
@@ -15924,7 +15964,7 @@
 "MUR"
 ],
 [
-"Murphy USA Inc",
+"Murphy USA Inc.",
 "MUSA"
 ],
 [
@@ -15956,11 +15996,11 @@
 "MVO"
 ],
 [
-"Microvast Holdings Inc",
+"Microvast Holdings  Inc.",
 "MVST"
 ],
 [
-"Mueller Water Products Inc",
+"Mueller Water Products  Inc.",
 "MWA"
 ],
 [
@@ -16000,7 +16040,7 @@
 "MXF"
 ],
 [
-"Maxlinear Inc",
+"MaxLinear  Inc.",
 "MXL"
 ],
 [
@@ -16012,7 +16052,7 @@
 "MYFW"
 ],
 [
-"Myriad Genetics Inc",
+"Myriad Genetics  Inc.",
 "MYGN"
 ],
 [
@@ -16032,7 +16072,7 @@
 "MYO"
 ],
 [
-"PLAYSTUDIOS Inc",
+"PLAYSTUDIOS  Inc.",
 "MYPS"
 ],
 [
@@ -16052,11 +16092,15 @@
 "MYX"
 ],
 [
+"Maywood Acquisition 2 Rights 24th Feb 2031",
+"MYXXR"
+],
+[
 "Maywood Acquisition 2 Units",
 "MYXXU"
 ],
 [
-"Marzetti Co",
+"The Marzetti Company",
 "MZTI"
 ],
 [
@@ -16096,7 +16140,7 @@
 "NAII"
 ],
 [
-"Northern Dynasty Minerals Ltd",
+"Northern Dynasty Minerals Ltd.",
 "NAK"
 ],
 [
@@ -16112,7 +16156,7 @@
 "NAMM"
 ],
 [
-"NewAmsterdam Pharma Company NV",
+"NewAmsterdam Pharma Company N.V.",
 "NAMS"
 ],
 [
@@ -16128,7 +16172,7 @@
 "NATH"
 ],
 [
-"NCR Atleos Corp",
+"NCR Atleos Corporation",
 "NATL"
 ],
 [
@@ -16136,15 +16180,15 @@
 "NATR"
 ],
 [
-"Nautilus Biotechnology Inc",
+"Nautilus Biotechnology  Inc.",
 "NAUT"
 ],
 [
-"Navient Corp",
+"Navient Corporation",
 "NAVI"
 ],
 [
-"Navan Inc",
+"Navan  Inc.",
 "NAVN"
 ],
 [
@@ -16152,7 +16196,7 @@
 "NAZ"
 ],
 [
-"NioCorp Developments Ltd",
+"NioCorp Developments Ltd.",
 "NB"
 ],
 [
@@ -16176,7 +16220,7 @@
 "NBIS"
 ],
 [
-"Neurocrine Biosciences  Inc",
+"Neurocrine Biosciences  Inc.",
 "NBIX"
 ],
 [
@@ -16188,11 +16232,11 @@
 "NBP"
 ],
 [
-"Nabors Industries Ltd",
+"Nabors Industries Ltd.",
 "NBR"
 ],
 [
-"Newbridge Acquisition Ltd",
+"Newbridge Acquisition Limited",
 "NBRG"
 ],
 [
@@ -16204,7 +16248,7 @@
 "NBRGU"
 ],
 [
-"Nbt Bancorp Inc",
+"NBT Bancorp Inc.",
 "NBTB"
 ],
 [
@@ -16248,7 +16292,7 @@
 "NCL"
 ],
 [
-"Norwegian Cruise Line Holdings Ltd",
+"Norwegian Cruise Line Holdings Ltd.",
 "NCLH"
 ],
 [
@@ -16260,8 +16304,16 @@
 "NCNA"
 ],
 [
-"nCino Inc",
+"nCino  Inc.",
 "NCNO"
+],
+[
+"Southern Cross Acquisition I Corp",
+"NCO"
+],
+[
+"Southern Cross Acquisition I Units",
+"NCOOU"
 ],
 [
 "Netcapital Inc",
@@ -16308,7 +16360,7 @@
 "NDRA"
 ],
 [
-"Nordson Corp",
+"Nordson Corporation",
 "NDSN"
 ],
 [
@@ -16324,7 +16376,7 @@
 "NECB"
 ],
 [
-"Nextera Energy Inc",
+"NextEra Energy  Inc.",
 "NEE"
 ],
 [
@@ -16340,11 +16392,11 @@
 "NEN"
 ],
 [
-"Neogenomics Inc",
+"NeoGenomics  Inc.",
 "NEO"
 ],
 [
-"Neogen Corp",
+"Neogen Corporation",
 "NEOG"
 ],
 [
@@ -16360,19 +16412,19 @@
 "NEPH"
 ],
 [
-"Minerva Neurosciences Inc",
+"Minerva Neurosciences  Inc",
 "NERV"
 ],
 [
-"National Energy Services Reunited Corp",
+"National Energy Services Reunited Corp.",
 "NESR"
 ],
 [
-"Cloudflare Inc",
+"Cloudflare  Inc.",
 "NET"
 ],
 [
-"NewMarket Corp",
+"NewMarket Corporation",
 "NEU"
 ],
 [
@@ -16380,11 +16432,11 @@
 "NEUP"
 ],
 [
-"New Pacific Metals Corp",
+"New Pacific Metals Corp.",
 "NEWP"
 ],
 [
-"NewtekOne Inc",
+"NewtekOne  Inc.",
 "NEWT"
 ],
 [
@@ -16394,6 +16446,10 @@
 [
 "NewtekOne 8 625 Fixed Rate Senior Notes due 2029",
 "NEWTH"
+],
+[
+"Newtekone 8 50  Fixed Rate Senior Notes Due 2031",
+"NEWTO"
 ],
 [
 "NewtekOne Depositary Shs Non Cumulative Perpetual Pref Shs Series B",
@@ -16416,19 +16472,15 @@
 "NEXR"
 ],
 [
-"NextDecade Corp",
+"NextDecade Corporation",
 "NEXT"
-],
-[
-"Northfield Bancorp Inc",
-"NFBK"
 ],
 [
 "New Fortress Energy Inc",
 "NFE"
 ],
 [
-"National Fuel Gas Co",
+"National Fuel Gas Company",
 "NFG"
 ],
 [
@@ -16440,7 +16492,7 @@
 "NFJ"
 ],
 [
-"Netflix Inc",
+"Netflix  Inc.",
 "NFLX"
 ],
 [
@@ -16464,7 +16516,7 @@
 "NGNE"
 ],
 [
-"Natural Gas Services Group Inc",
+"Natural Gas Services Group  Inc.",
 "NGS"
 ],
 [
@@ -16472,7 +16524,7 @@
 "NGVC"
 ],
 [
-"Ingevity Corp",
+"Ingevity Corporation",
 "NGVT"
 ],
 [
@@ -16480,7 +16532,7 @@
 "NHC"
 ],
 [
-"National Health Investors Inc",
+"National Health Investors  Inc.",
 "NHI"
 ],
 [
@@ -16500,7 +16552,7 @@
 "NHIVU"
 ],
 [
-"National Healthcare Properties Inc",
+"National Healthcare Properties  Inc.",
 "NHP"
 ],
 [
@@ -16520,15 +16572,15 @@
 "NHTC"
 ],
 [
-"NiSource Inc",
+"NiSource Inc.",
 "NI"
 ],
 [
-"Nicolet Bankshares  Inc",
+"Nicolet Bankshares Inc",
 "NIC"
 ],
 [
-"Nice Ltd ADR",
+"NICE Ltd. ADR",
 "NICE"
 ],
 [
@@ -16540,6 +16592,10 @@
 "NIE"
 ],
 [
+"Aptorum Group Ltd",
+"NIKI"
+],
+[
 "Nuveen Select Maturities Municipal Fund",
 "NIM"
 ],
@@ -16548,7 +16604,7 @@
 "NINE"
 ],
 [
-"NIO Inc ADR",
+"NIO Inc. ADR",
 "NIO"
 ],
 [
@@ -16576,7 +16632,7 @@
 "NJR"
 ],
 [
-"Nike Inc",
+"NIKE  Inc.",
 "NKE"
 ],
 [
@@ -16592,7 +16648,7 @@
 "NKTR"
 ],
 [
-"Nkarta Inc",
+"Nkarta  Inc.",
 "NKTX"
 ],
 [
@@ -16620,7 +16676,7 @@
 "NMAI"
 ],
 [
-"Newsmax Inc",
+"Newsmax Inc.",
 "NMAX"
 ],
 [
@@ -16640,7 +16696,7 @@
 "NMI"
 ],
 [
-"NMI Holdings Inc",
+"NMI Holdings  Inc.",
 "NMIH"
 ],
 [
@@ -16664,7 +16720,7 @@
 "NMPAU"
 ],
 [
-"Nomura Holdings Inc ADR",
+"Nomura Holdings  Inc. ADR",
 "NMR"
 ],
 [
@@ -16692,7 +16748,7 @@
 "NMZ"
 ],
 [
-"NextNav Inc",
+"NextNav Inc.",
 "NN"
 ],
 [
@@ -16700,19 +16756,19 @@
 "NNBR"
 ],
 [
-"Nano Dimension Ltd ADR",
+"Nano Dimension Ltd. ADR",
 "NNDM"
 ],
 [
-"Nano Nuclear Energy Inc",
+"NANO Nuclear Energy Inc.",
 "NNE"
 ],
 [
-"Nelnet Inc",
+"Nelnet  Inc.",
 "NNI"
 ],
 [
-"NNN REIT Inc",
+"NNN REIT  Inc.",
 "NNN"
 ],
 [
@@ -16736,7 +16792,7 @@
 "NOA"
 ],
 [
-"Noah Holdings Ltd ADR",
+"Noah Holdings Limited ADR",
 "NOAH"
 ],
 [
@@ -16760,7 +16816,7 @@
 "NOEMU"
 ],
 [
-"Northern Oil and Gas Inc",
+"Northern Oil and Gas  Inc.",
 "NOG"
 ],
 [
@@ -16776,7 +16832,7 @@
 "NOMA"
 ],
 [
-"Nomad Foods Ltd",
+"Nomad Foods Limited",
 "NOMD"
 ],
 [
@@ -16784,7 +16840,7 @@
 "NOV"
 ],
 [
-"Novanta Inc",
+"Novanta Inc.",
 "NOVT"
 ],
 [
@@ -16796,7 +16852,7 @@
 "NOW"
 ],
 [
-"Neptune Insurance Holdings Inc",
+"Neptune Insurance Holdings Inc.",
 "NP"
 ],
 [
@@ -16812,7 +16868,7 @@
 "NPB"
 ],
 [
-"Neuropace Inc",
+"NeuroPace  Inc.",
 "NPCE"
 ],
 [
@@ -16828,11 +16884,11 @@
 "NPK"
 ],
 [
-"NPK International Inc",
+"NPK International Inc.",
 "NPKI"
 ],
 [
-"Enpro Inc",
+"Enpro Inc.",
 "NPO"
 ],
 [
@@ -16844,7 +16900,7 @@
 "NPV"
 ],
 [
-"NET Power Inc",
+"NET Power Inc.",
 "NPWR"
 ],
 [
@@ -16852,15 +16908,15 @@
 "NRC"
 ],
 [
-"NerdWallet Inc",
+"NerdWallet  Inc.",
 "NRDS"
 ],
 [
-"Nerdy Inc",
+"Nerdy Inc.",
 "NRDY"
 ],
 [
-"Nexpoint Real Estate Finance Inc",
+"NexPoint Real Estate Finance  Inc.",
 "NREF"
 ],
 [
@@ -16868,7 +16924,7 @@
 "NRG"
 ],
 [
-"Energy Vault Holdings Inc",
+"Energy Vault Holdings  Inc.",
 "NRGV"
 ],
 [
@@ -16908,8 +16964,8 @@
 "NRXS"
 ],
 [
-"National Storage Affiliates Trust",
-"NSA"
+"NorthStrive Acquisition I Units",
+"NSAIU"
 ],
 [
 "Norfolk Southern Corp",
@@ -16924,7 +16980,7 @@
 "NSLR"
 ],
 [
-"Insperity Inc",
+"Insperity  Inc.",
 "NSP"
 ],
 [
@@ -16936,7 +16992,7 @@
 "NSRX"
 ],
 [
-"NAPCO Security Technologies Inc",
+"NAPCO Security Technologies  Inc.",
 "NSSC"
 ],
 [
@@ -16960,15 +17016,15 @@
 "NTCL"
 ],
 [
-"Netscout Systems Inc",
+"NetScout Systems  Inc.",
 "NTCT"
 ],
 [
-"NetEase Inc ADR",
+"NetEase  Inc. ADR",
 "NTES"
 ],
 [
-"NETGEAR Inc",
+"NETGEAR  Inc.",
 "NTGR"
 ],
 [
@@ -16984,11 +17040,11 @@
 "NTIP"
 ],
 [
-"Intellia Therapeutics Inc",
+"INTELLIA THERAPEUTICS  INC.",
 "NTLA"
 ],
 [
-"Nutanix Inc",
+"Nutanix  Inc.",
 "NTNX"
 ],
 [
@@ -16996,7 +17052,7 @@
 "NTR"
 ],
 [
-"Natera Inc",
+"Natera  Inc.",
 "NTRA"
 ],
 [
@@ -17008,7 +17064,7 @@
 "NTRP"
 ],
 [
-"Northern Trust Corp",
+"Northern Trust Corporation",
 "NTRS"
 ],
 [
@@ -17016,11 +17072,11 @@
 "NTRSO"
 ],
 [
-"Netskope Inc",
+"Netskope  Inc.",
 "NTSK"
 ],
 [
-"Netstreit Corp",
+"NETSTREIT Corp.",
 "NTST"
 ],
 [
@@ -17056,7 +17112,11 @@
 "NUE"
 ],
 [
-"NU Skin Enterprises Inc",
+"NuRAN Wireless Inc",
+"NUR"
+],
+[
+"Nu Skin Enterprises  Inc.",
 "NUS"
 ],
 [
@@ -17072,12 +17132,8 @@
 "NUV"
 ],
 [
-"Nuvation Bio Inc",
+"Nuvation Bio Inc.",
 "NUVB"
-],
-[
-"Nuvalent  Inc",
-"NUVL"
 ],
 [
 "Nuveen AMT-Free Municipal Value Fund",
@@ -17092,11 +17148,11 @@
 "NVA"
 ],
 [
-"Novavax Inc",
+"Novavax  Inc.",
 "NVAX"
 ],
 [
-"Novocure Ltd",
+"NovoCure Limited",
 "NVCR"
 ],
 [
@@ -17104,7 +17160,7 @@
 "NVCT"
 ],
 [
-"NVIDIA Corp",
+"NVIDIA Corporation",
 "NVDA"
 ],
 [
@@ -17116,11 +17172,11 @@
 "NVG"
 ],
 [
-"Navigator Holdings Ltd",
+"Navigator Holdings Ltd.",
 "NVGS"
 ],
 [
-"Nova Ltd",
+"Nova Ltd.",
 "NVMI"
 ],
 [
@@ -17136,7 +17192,7 @@
 "NVO"
 ],
 [
-"NVR Inc",
+"NVR  Inc.",
 "NVR"
 ],
 [
@@ -17148,7 +17204,7 @@
 "NVS"
 ],
 [
-"Envista Holdings Corp",
+"Envista Holdings Corporation",
 "NVST"
 ],
 [
@@ -17156,12 +17212,8 @@
 "NVT"
 ],
 [
-"Navitas Semiconductor Corp",
+"Navitas Semiconductor Corporation",
 "NVTS"
-],
-[
-"Nuvve Holding Corp",
-"NVVE"
 ],
 [
 "NOVONIX Ltd ADR",
@@ -17180,7 +17232,7 @@
 "NWBI"
 ],
 [
-"NorthWestern Energy Group Inc",
+"NorthWestern Energy Group  Inc.",
 "NWE"
 ],
 [
@@ -17200,7 +17252,7 @@
 "NWL"
 ],
 [
-"Northwest Natural Holding Co",
+"Northwest Natural Holding Company",
 "NWN"
 ],
 [
@@ -17208,11 +17260,11 @@
 "NWPX"
 ],
 [
-"News Corp Class B",
+"News Corporation Class B",
 "NWS"
 ],
 [
-"News Corp Class A",
+"News Corporation Class A",
 "NWSA"
 ],
 [
@@ -17228,7 +17280,7 @@
 "NXB"
 ],
 [
-"Nextdoor Holdings Inc",
+"Nextdoor Holdings  Inc.",
 "NXDR"
 ],
 [
@@ -17246,6 +17298,10 @@
 [
 "Nexgel Inc",
 "NXGL"
+],
+[
+"Neighborhood Intelligence  Inc.",
+"NXH"
 ],
 [
 "Nexalin Technology Inc",
@@ -17292,7 +17348,7 @@
 "NXXT"
 ],
 [
-"Nayax Ltd",
+"Nayax Ltd.",
 "NYAX"
 ],
 [
@@ -17300,7 +17356,7 @@
 "NYC"
 ],
 [
-"New York Times Co",
+"The New York Times Company",
 "NYT"
 ],
 [
@@ -17312,7 +17368,7 @@
 "NZF"
 ],
 [
-"Realty Income Corp",
+"Realty Income Corporation",
 "O"
 ],
 [
@@ -17364,8 +17420,16 @@
 "OBTC"
 ],
 [
+"Obsidian Therapeutics  Inc",
+"OBX"
+],
+[
 "Owens Corning",
 "OC"
+],
+[
+"Ocean Capital Acquisition Corp",
+"OCAC"
 ],
 [
 "Ocean Capital Acquisition Units",
@@ -17400,8 +17464,12 @@
 "OCG"
 ],
 [
-"Ocugen Inc",
+"Ocugen  Inc.",
 "OCGN"
+],
+[
+"OceanLight Acquisition Units",
+"OCLTU"
 ],
 [
 "Oculis Holding AG",
@@ -17416,7 +17484,7 @@
 "OCTV"
 ],
 [
-"Ocular Therapeutix Inc",
+"Ocular Therapeutix  Inc.",
 "OCUL"
 ],
 [
@@ -17424,20 +17492,16 @@
 "ODC"
 ],
 [
-"Oddity Tech Ltd",
+"ODDITY Tech Ltd.",
 "ODD"
 ],
 [
-"Old Dominion Freight Line Inc",
+"Old Dominion Freight Line  Inc.",
 "ODFL"
 ],
 [
 "Odyssey Therapeutics Inc",
 "ODTX"
-],
-[
-"Osisko Development Corp",
-"ODV"
 ],
 [
 "Odysight.AI Inc",
@@ -17460,7 +17524,7 @@
 "OFG"
 ],
 [
-"Orthofix Medical Inc",
+"Orthofix Medical Inc.",
 "OFIX"
 ],
 [
@@ -17484,7 +17548,7 @@
 "OGCP"
 ],
 [
-"OGE Energy Corp",
+"OGE Energy Corp.",
 "OGE"
 ],
 [
@@ -17492,15 +17556,19 @@
 "OGEN"
 ],
 [
+"Osisko Gold Group Inc",
+"OGG"
+],
+[
 "Organigram Global Inc",
 "OGI"
 ],
 [
-"Organon & Co",
+"Organon & Co.",
 "OGN"
 ],
 [
-"ONE Gas Inc",
+"ONE Gas  Inc.",
 "OGS"
 ],
 [
@@ -17516,11 +17584,11 @@
 "OHACU"
 ],
 [
-"Omega Healthcare Investors  Inc",
+"Omega Healthcare Investors  Inc.",
 "OHI"
 ],
 [
-"O-i Glass  Inc",
+"O-I Glass  Inc.",
 "OI"
 ],
 [
@@ -17544,19 +17612,19 @@
 "OIO"
 ],
 [
-"Oil States International Inc",
+"Oil States International  Inc.",
 "OIS"
 ],
 [
-"ONEOK Inc",
+"ONEOK  Inc.",
 "OKE"
 ],
 [
-"Oklo Inc",
+"Oklo Inc.",
 "OKLO"
 ],
 [
-"Okta Inc",
+"Okta  Inc.",
 "OKTA"
 ],
 [
@@ -17580,7 +17648,7 @@
 "OLLI"
 ],
 [
-"Olema Pharmaceuticals Inc",
+"Olema Pharmaceuticals  Inc.",
 "OLMA"
 ],
 [
@@ -17596,15 +17664,11 @@
 "OLP"
 ],
 [
-"Olaplex Holdings Inc",
-"OLPX"
-],
-[
-"Outset Medical Inc",
+"Outset Medical  Inc.",
 "OM"
 ],
 [
-"Grupo Aeroportuario del Centro Norte SAB De CV ADR",
+"Grupo Aeroportuario del Centro Norte  S.A.B. de C.V. ADR",
 "OMAB"
 ],
 [
@@ -17616,11 +17680,11 @@
 "OMCL"
 ],
 [
-"Omada Health Inc",
+"Omada Health  Inc.",
 "OMDA"
 ],
 [
-"Omeros Corp",
+"Omeros Corporation",
 "OMER"
 ],
 [
@@ -17628,7 +17692,7 @@
 "OMEX"
 ],
 [
-"OneMain Holdings Inc",
+"OneMain Holdings  Inc.",
 "OMF"
 ],
 [
@@ -17696,7 +17760,7 @@
 "ONIT"
 ],
 [
-"Orion Properties Inc",
+"Orion Properties Inc.",
 "ONL"
 ],
 [
@@ -17708,15 +17772,15 @@
 "ONON"
 ],
 [
-"Onterris Inc",
+"Onterris  Inc.",
 "ONT"
 ],
 [
-"Onto Innovation Inc",
+"Onto Innovation Inc.",
 "ONTO"
 ],
 [
-"Ooma Inc",
+"Ooma  Inc.",
 "OOMA"
 ],
 [
@@ -17724,7 +17788,7 @@
 "OPAD"
 ],
 [
-"Opal Fuels Inc",
+"Opal Fuels Inc.",
 "OPAL"
 ],
 [
@@ -17736,7 +17800,7 @@
 "OPCH"
 ],
 [
-"Opendoor Technologies Inc",
+"Opendoor Technologies Inc.",
 "OPEN"
 ],
 [
@@ -17752,7 +17816,7 @@
 "OPI"
 ],
 [
-"OPKO Health Inc",
+"OPKO Health  Inc.",
 "OPK"
 ],
 [
@@ -17772,7 +17836,7 @@
 "OPRT"
 ],
 [
-"OptimizeRx Corp",
+"OptimizeRx Corporation",
 "OPRX"
 ],
 [
@@ -17800,7 +17864,7 @@
 "OPXS"
 ],
 [
-"Oppenheimer Holdings Inc",
+"Oppenheimer Holdings Inc.",
 "OPY"
 ],
 [
@@ -17812,7 +17876,7 @@
 "ORA"
 ],
 [
-"Eightco Holdings Inc (Pre-Reincorporation)",
+"Eightco Holdings Inc (Texas)",
 "ORBS"
 ],
 [
@@ -17820,23 +17884,19 @@
 "ORC"
 ],
 [
-"Oracle Corp",
+"Oracle Corporation",
 "ORCL"
 ],
 [
-"Origin Materials Inc",
-"ORGN"
-],
-[
-"Organogenesis Holdings Inc",
+"Organogenesis Holdings Inc.",
 "ORGO"
 ],
 [
-"Old Republic International Corp",
+"Old Republic International Corporation",
 "ORI"
 ],
 [
-"Oric Pharmaceuticals Inc",
+"ORIC Pharmaceuticals  Inc.",
 "ORIC"
 ],
 [
@@ -17860,11 +17920,7 @@
 "ORKT"
 ],
 [
-"Orla Mining Ltd",
-"ORLA"
-],
-[
-"O'Reilly Automotive Inc",
+"O'Reilly Automotive  Inc.",
 "ORLY"
 ],
 [
@@ -17884,7 +17940,7 @@
 "OSBC"
 ],
 [
-"Oscar Health Inc",
+"Oscar Health  Inc.",
 "OSCR"
 ],
 [
@@ -17892,7 +17948,7 @@
 "OSG"
 ],
 [
-"OSI Systems Inc",
+"OSI Systems  Inc.",
 "OSIS"
 ],
 [
@@ -17900,8 +17956,12 @@
 "OSK"
 ],
 [
-"OneSpan Inc",
+"OneSpan Inc.",
 "OSPN"
+],
+[
+"Osprey Acquisition Corp. III",
+"OSPR"
 ],
 [
 "Osprey Acquisition III Units",
@@ -17940,7 +18000,7 @@
 "OTAI-U"
 ],
 [
-"Open Text Corp",
+"Open Text Corporation",
 "OTEX"
 ],
 [
@@ -17956,7 +18016,7 @@
 "OTGAU"
 ],
 [
-"Otis Worldwide Corp",
+"Otis Worldwide Corporation",
 "OTIS"
 ],
 [
@@ -17964,19 +18024,19 @@
 "OTLK"
 ],
 [
-"Oatly Group AB (publ) ADR",
+"Oatly Group AB ADR",
 "OTLY"
 ],
 [
-"Otter Tail Corp",
+"Otter Tail Corporation",
 "OTTR"
 ],
 [
-"Ouster Inc",
+"Ouster  Inc.",
 "OUST"
 ],
 [
-"Outfront Media Inc",
+"OUTFRONT Media Inc.",
 "OUT"
 ],
 [
@@ -17984,7 +18044,7 @@
 "OVBC"
 ],
 [
-"Ovid Therapeutics Inc",
+"Ovid Therapeutics Inc.",
 "OVID"
 ],
 [
@@ -17992,11 +18052,11 @@
 "OVLY"
 ],
 [
-"Ovintiv Inc",
+"Ovintiv Inc.",
 "OVV"
 ],
 [
-"Blue Owl Capital Inc",
+"Blue Owl Capital Inc.",
 "OWL"
 ],
 [
@@ -18032,7 +18092,7 @@
 "OXM"
 ],
 [
-"Oxford Square Capital Corp",
+"Oxford Square Capital Corp.",
 "OXSQ"
 ],
 [
@@ -18080,7 +18140,7 @@
 "PAACU"
 ],
 [
-"Pan American Silver Corp",
+"Pan American Silver Corp.",
 "PAAS"
 ],
 [
@@ -18088,7 +18148,7 @@
 "PAC"
 ],
 [
-"Pacific Biosciences of California Inc",
+"Pacific Biosciences of California  Inc.",
 "PACB"
 ],
 [
@@ -18104,7 +18164,7 @@
 "PACK"
 ],
 [
-"Pacs Group Inc",
+"PACS Group  Inc.",
 "PACS"
 ],
 [
@@ -18160,11 +18220,11 @@
 "PAMT"
 ],
 [
-"Pangaea Logistics Solutions Ltd",
+"Pangaea Logistics Solutions Ltd.",
 "PANL"
 ],
 [
-"Palo Alto Networks Inc",
+"Palo Alto Networks  Inc.",
 "PANW"
 ],
 [
@@ -18172,8 +18232,12 @@
 "PAPL"
 ],
 [
-"PAR Technology Corp",
+"PAR Technology Corporation",
 "PAR"
+],
+[
+"Banzai International Inc",
+"PARA"
 ],
 [
 "Park Dental Partners Inc",
@@ -18196,7 +18260,7 @@
 "PATH"
 ],
 [
-"Patrick Industries Inc",
+"Patrick Industries  Inc.",
 "PATK"
 ],
 [
@@ -18220,7 +18284,7 @@
 "PAY"
 ],
 [
-"Paycom Software Inc",
+"Paycom Software  Inc.",
 "PAYC"
 ],
 [
@@ -18236,19 +18300,23 @@
 "PAYS"
 ],
 [
-"Paychex Inc",
+"Paychex  Inc.",
 "PAYX"
 ],
 [
-"Prosperity Bancshares  Inc",
+"Prosperity Bancshares  Inc.",
 "PB"
 ],
 [
-"Pembina Pipeline Corp",
+"Pembina Pipeline Corporation",
 "PBA"
 ],
 [
-"PBF Energy Inc",
+"Private Bancorp of America Inc",
+"PBAM"
+],
+[
+"PBF Energy Inc.",
 "PBF"
 ],
 [
@@ -18264,7 +18332,7 @@
 "PBHC"
 ],
 [
-"Pitney Bowes Inc",
+"Pitney Bowes Inc.",
 "PBI"
 ],
 [
@@ -18344,7 +18412,7 @@
 "PCQ"
 ],
 [
-"Pacira Biosciences Inc",
+"Pacira BioSciences  Inc.",
 "PCRX"
 ],
 [
@@ -18352,11 +18420,7 @@
 "PCSA"
 ],
 [
-"Perceptive Capital Solutions Corp",
-"PCSC"
-],
-[
-"Purecycle Technologies Inc",
+"PureCycle Technologies  Inc.",
 "PCT"
 ],
 [
@@ -18368,7 +18432,7 @@
 "PCTY"
 ],
 [
-"Vaxcyte Inc",
+"Vaxcyte  Inc.",
 "PCVX"
 ],
 [
@@ -18376,7 +18440,7 @@
 "PCYO"
 ],
 [
-"PagerDuty Inc",
+"PagerDuty  Inc.",
 "PD"
 ],
 [
@@ -18388,7 +18452,7 @@
 "PDCC"
 ],
 [
-"PDD Holdings Inc ADR",
+"PDD Holdings Inc. ADR",
 "PDD"
 ],
 [
@@ -18396,7 +18460,7 @@
 "PDEX"
 ],
 [
-"PDF Solutions Inc",
+"PDF Solutions  Inc.",
 "PDFS"
 ],
 [
@@ -18408,7 +18472,7 @@
 "PDLB"
 ],
 [
-"Piedmont Realty Trust Inc",
+"Piedmont Realty Trust  Inc.",
 "PDM"
 ],
 [
@@ -18464,7 +18528,7 @@
 "PECEU"
 ],
 [
-"Phillips Edison & Co Inc",
+"Phillips Edison & Company  Inc.",
 "PECO"
 ],
 [
@@ -18476,11 +18540,11 @@
 "PEG"
 ],
 [
-"Pegasystems Inc",
+"Pegasystems Inc.",
 "PEGA"
 ],
 [
-"Penumbra Inc",
+"Penumbra  Inc.",
 "PEN"
 ],
 [
@@ -18488,7 +18552,7 @@
 "PENG"
 ],
 [
-"PENN Entertainment Inc",
+"PENN Entertainment  Inc.",
 "PENN"
 ],
 [
@@ -18496,15 +18560,15 @@
 "PEO"
 ],
 [
-"PepsiCo Inc",
+"PepsiCo  Inc.",
 "PEP"
 ],
 [
-"PepGen Inc",
+"PepGen Inc.",
 "PEPG"
 ],
 [
-"Perfect Corp",
+"Perfect Corp.",
 "PERF"
 ],
 [
@@ -18516,7 +18580,7 @@
 "PESI"
 ],
 [
-"Petmed Express Inc",
+"PetMed Express  Inc.",
 "PETS"
 ],
 [
@@ -18540,7 +18604,7 @@
 "PFD"
 ],
 [
-"Pfizer Inc",
+"Pfizer Inc.",
 "PFE"
 ],
 [
@@ -18548,7 +18612,7 @@
 "PFG"
 ],
 [
-"Performance Food Group Co",
+"Performance Food Group Company",
 "PFGC"
 ],
 [
@@ -18580,7 +18644,7 @@
 "PFSA"
 ],
 [
-"PennyMac Financial Services Inc",
+"PennyMac Financial Services  Inc.",
 "PFSI"
 ],
 [
@@ -18588,7 +18652,7 @@
 "PFX"
 ],
 [
-"Procter & Gamble Co",
+"The Procter & Gamble Company",
 "PG"
 ],
 [
@@ -18608,11 +18672,11 @@
 "PGC"
 ],
 [
-"Precigen Inc",
+"Precigen  Inc.",
 "PGEN"
 ],
 [
-"Progyny Inc",
+"Progyny  Inc.",
 "PGNY"
 ],
 [
@@ -18624,7 +18688,7 @@
 "PGR"
 ],
 [
-"Pagaya Technologies Ltd",
+"Pagaya Technologies Ltd.",
 "PGY"
 ],
 [
@@ -18636,11 +18700,11 @@
 "PH"
 ],
 [
-"Pharming Group NV ADR",
+"Pharming Group N.V. ADR",
 "PHAR"
 ],
 [
-"Phathom Pharmaceuticals Inc",
+"Phathom Pharmaceuticals  Inc.",
 "PHAT"
 ],
 [
@@ -18648,7 +18712,7 @@
 "PHD"
 ],
 [
-"Koninklijke Philips NV ADR",
+"Koninklijke Philips N.V. ADR",
 "PHG"
 ],
 [
@@ -18656,11 +18720,11 @@
 "PHGE"
 ],
 [
-"PLDT Inc ADR",
+"PLDT Inc. ADR",
 "PHI"
 ],
 [
-"Phinia Inc",
+"PHINIA Inc.",
 "PHIN"
 ],
 [
@@ -18672,7 +18736,7 @@
 "PHK"
 ],
 [
-"Pultegroup Inc",
+"PulteGroup  Inc.",
 "PHM"
 ],
 [
@@ -18680,7 +18744,11 @@
 "PHOE"
 ],
 [
-"Phreesia Inc",
+"First Phosphate Corp ADR",
+"PHOS"
+],
+[
+"Phreesia  Inc.",
 "PHR"
 ],
 [
@@ -18692,7 +18760,7 @@
 "PHUN"
 ],
 [
-"Pharvaris NV",
+"Pharvaris N.V.",
 "PHVS"
 ],
 [
@@ -18700,7 +18768,7 @@
 "PHYS"
 ],
 [
-"Impinj Inc",
+"Impinj  Inc.",
 "PI"
 ],
 [
@@ -18716,7 +18784,7 @@
 "PIII"
 ],
 [
-"Putnam Master Intermediate Income Trust",
+"Franklin Master Intermediate Income Trust",
 "PIM"
 ],
 [
@@ -18724,7 +18792,7 @@
 "PINE"
 ],
 [
-"Pinterest Inc",
+"Pinterest  Inc.",
 "PINS"
 ],
 [
@@ -18732,7 +18800,7 @@
 "PIPR"
 ],
 [
-"PJT Partners Inc",
+"PJT Partners Inc.",
 "PJT"
 ],
 [
@@ -18756,7 +18824,7 @@
 "PKOH"
 ],
 [
-"Posco Holdings Inc ADR",
+"POSCO Holdings Inc. ADR",
 "PKX"
 ],
 [
@@ -18764,7 +18832,7 @@
 "PL"
 ],
 [
-"Photronics Inc",
+"Photronics  Inc.",
 "PLAB"
 ],
 [
@@ -18772,7 +18840,7 @@
 "PLAG"
 ],
 [
-"Dave and Buster's Entertainment  Inc",
+"Dave & Buster's Entertainment  Inc.",
 "PLAY"
 ],
 [
@@ -18792,7 +18860,15 @@
 "PLCE"
 ],
 [
-"Prologis Inc",
+"Pelican Acquisition II Corp",
+"PLCI"
+],
+[
+"Pelican Acquisition II Units",
+"PLCIU"
+],
+[
+"Prologis  Inc.",
 "PLD"
 ],
 [
@@ -18812,7 +18888,7 @@
 "PLMKU"
 ],
 [
-"Palomar Holdings Inc",
+"Palomar Holdings  Inc.",
 "PLMR"
 ],
 [
@@ -18828,7 +18904,7 @@
 "PLPC"
 ],
 [
-"Pliant Therapeutics Inc",
+"Pliant Therapeutics  Inc.",
 "PLRX"
 ],
 [
@@ -18848,7 +18924,7 @@
 "PLTK"
 ],
 [
-"Palantir Technologies Inc",
+"Palantir Technologies Inc.",
 "PLTR"
 ],
 [
@@ -18856,7 +18932,7 @@
 "PLTS"
 ],
 [
-"Plug Power Inc",
+"Plug Power Inc.",
 "PLUG"
 ],
 [
@@ -18872,7 +18948,7 @@
 "PLUR"
 ],
 [
-"ePlus inc",
+"ePlus inc.",
 "PLUS"
 ],
 [
@@ -18896,6 +18972,10 @@
 "PM"
 ],
 [
+"Ming Shing Group Holdings Ltd",
+"PMA"
+],
+[
 "Powell Max Ltd",
 "PMAX"
 ],
@@ -18916,7 +18996,7 @@
 "PML"
 ],
 [
-"Putnam Managed Municipal Income Closed Fund",
+"Franklin Managed Municipal Income Trust",
 "PMM"
 ],
 [
@@ -18924,7 +19004,7 @@
 "PMN"
 ],
 [
-"Putnam Municipal Opportunities Trust",
+"Franklin Municipal Opportunities Trust",
 "PMO"
 ],
 [
@@ -18948,7 +19028,7 @@
 "PMTU"
 ],
 [
-"PennyMac Mortgage Investment Trust 9 00  Senior Notes due 2030",
+"PennyMac Mortgage Investment Trust 9 00 Senior Notes due 2030",
 "PMTV"
 ],
 [
@@ -18956,7 +19036,7 @@
 "PMTW"
 ],
 [
-"PMV Pharmaceuticals Inc",
+"PMV Pharmaceuticals  Inc.",
 "PMVP"
 ],
 [
@@ -18964,15 +19044,19 @@
 "PN"
 ],
 [
+"Pinnacle Acquisition Units",
+"PNAQ-U"
+],
+[
 "Patriot National Bancorp Inc",
 "PNBK"
 ],
 [
-"PNC Financial Services Group Inc",
+"The PNC Financial Services Group  Inc.",
 "PNC"
 ],
 [
-"Pinnacle Financial Partners Inc",
+"Pinnacle Financial Partners  Inc.",
 "PNFP"
 ],
 [
@@ -18980,7 +19064,7 @@
 "PNI"
 ],
 [
-"Pennantpark Investment Corp",
+"PennantPark Investment Corporation",
 "PNNT"
 ],
 [
@@ -18992,11 +19076,11 @@
 "PNRG"
 ],
 [
-"Pennant Group Inc",
+"The Pennant Group  Inc.",
 "PNTG"
 ],
 [
-"Pinnacle West Capital Corp",
+"Pinnacle West Capital Corporation",
 "PNW"
 ],
 [
@@ -19012,7 +19096,7 @@
 "PODC"
 ],
 [
-"Insulet Corp",
+"Insulet Corporation",
 "PODD"
 ],
 [
@@ -19040,6 +19124,10 @@
 "PONO"
 ],
 [
+"Pono Capital Four Rights",
+"PONOR"
+],
+[
 "Pono Capital Four Units",
 "PONOU"
 ],
@@ -19048,7 +19136,7 @@
 "PONY"
 ],
 [
-"Pool Corp",
+"Pool Corporation",
 "POOL"
 ],
 [
@@ -19056,11 +19144,11 @@
 "POR"
 ],
 [
-"Post Holdings Inc",
+"Post Holdings  Inc.",
 "POST"
 ],
 [
-"Power Integrations Inc",
+"Power Integrations  Inc.",
 "POWI"
 ],
 [
@@ -19088,7 +19176,7 @@
 "PPCB"
 ],
 [
-"PPG Industries Inc",
+"PPG Industries  Inc.",
 "PPG"
 ],
 [
@@ -19116,15 +19204,15 @@
 "PPSI"
 ],
 [
-"Putnam Premier Income Trust",
+"Franklin Premier Income Trust",
 "PPT"
 ],
 [
-"Perpetua Resources Corp",
+"Perpetua Resources Corp.",
 "PPTA"
 ],
 [
-"Permian Resources Corp",
+"Permian Resources Corporation",
 "PR"
 ],
 [
@@ -19136,7 +19224,7 @@
 "PRAA"
 ],
 [
-"Praxis Precision Medicines Inc",
+"Praxis Precision Medicines  Inc.",
 "PRAX"
 ],
 [
@@ -19148,7 +19236,7 @@
 "PRCT"
 ],
 [
-"Perdoceo Education Corp",
+"Perdoceo Education Corporation",
 "PRDO"
 ],
 [
@@ -19176,15 +19264,11 @@
 "PRHI"
 ],
 [
-"Conifer Holdings 9 75 Senior Unsecured Notes 2028",
-"PRHIZ"
-],
-[
-"Primerica Inc",
+"Primerica  Inc.",
 "PRI"
 ],
 [
-"Primoris Services Corp",
+"Primoris Services Corporation",
 "PRIM"
 ],
 [
@@ -19192,19 +19276,19 @@
 "PRK"
 ],
 [
-"United Parks & Resorts Inc",
+"United Parks & Resorts Inc.",
 "PRKS"
 ],
 [
-"Proto Labs Inc",
+"Proto Labs  Inc.",
 "PRLB"
 ],
 [
-"Prelude Therapeutics Inc",
+"Prelude Therapeutics Incorporated",
 "PRLD"
 ],
 [
-"Perimeter Solutions Inc",
+"Perimeter Solutions  Inc.",
 "PRM"
 ],
 [
@@ -19212,7 +19296,7 @@
 "PRMB"
 ],
 [
-"Prime Medicine  Inc",
+"Prime Medicine  Inc.",
 "PRME"
 ],
 [
@@ -19252,7 +19336,7 @@
 "PRSO"
 ],
 [
-"Pursuit Attractions and Hospitality Inc",
+"Pursuit Attractions and Hospitality  Inc.",
 "PRSU"
 ],
 [
@@ -19316,7 +19400,7 @@
 "PSIG"
 ],
 [
-"Power Solutions International Inc",
+"Power Solutions International  Inc.",
 "PSIX"
 ],
 [
@@ -19328,7 +19412,7 @@
 "PSLV"
 ],
 [
-"PriceSmart Inc",
+"PriceSmart  Inc.",
 "PSMT"
 ],
 [
@@ -19336,7 +19420,7 @@
 "PSN"
 ],
 [
-"Personalis Inc",
+"Personalis  Inc.",
 "PSNL"
 ],
 [
@@ -19356,12 +19440,8 @@
 "PSQH"
 ],
 [
-"Postal Realty Trust Inc",
+"Postal Realty Trust  Inc.",
 "PSTL"
-],
-[
-"Plus Therapeutics Inc",
-"PSTV"
 ],
 [
 "Pershing Square USA Ltd",
@@ -19384,11 +19464,11 @@
 "PTACU"
 ],
 [
-"Ptc Inc",
+"PTC Inc.",
 "PTC"
 ],
 [
-"PTC Therapeutics Inc",
+"PTC Therapeutics  Inc.",
 "PTCT"
 ],
 [
@@ -19396,7 +19476,7 @@
 "PTEN"
 ],
 [
-"Protagonist Therapeutics Inc",
+"Protagonist Therapeutics  Inc.",
 "PTGX"
 ],
 [
@@ -19416,10 +19496,6 @@
 "PTN"
 ],
 [
-"Pitanium Ltd",
-"PTNM"
-],
-[
 "Peloton Interactive Inc",
 "PTON"
 ],
@@ -19432,7 +19508,7 @@
 "PTORU"
 ],
 [
-"Pattern Group Inc",
+"Pattern Group Inc.",
 "PTRN"
 ],
 [
@@ -19440,7 +19516,7 @@
 "PTY"
 ],
 [
-"PubMatic Inc",
+"PubMatic  Inc.",
 "PUBM"
 ],
 [
@@ -19452,7 +19528,7 @@
 "PULM"
 ],
 [
-"ProPetro Holding Corp",
+"ProPetro Holding Corp.",
 "PUMP"
 ],
 [
@@ -19464,7 +19540,7 @@
 "PUSA"
 ],
 [
-"PVH Corp",
+"PVH Corp.",
 "PVH"
 ],
 [
@@ -19480,6 +19556,10 @@
 "PW"
 ],
 [
+"PowerCompute Inc",
+"PWCM"
+],
+[
 "Perella Weinberg Partners",
 "PWP"
 ],
@@ -19492,11 +19572,11 @@
 "PWRL"
 ],
 [
-"Phoenix Education Partners Inc",
+"Phoenix Education Partners  Inc.",
 "PXED"
 ],
 [
-"Pixelworks Inc",
+"Pixelworks  Inc.",
 "PXLW"
 ],
 [
@@ -19528,7 +19608,7 @@
 "PZZA"
 ],
 [
-"Qnity Electronics Inc",
+"Qnity Electronics  Inc.",
 "Q"
 ],
 [
@@ -19540,7 +19620,7 @@
 "QADRU"
 ],
 [
-"D-Wave Quantum Inc",
+"D-Wave Quantum Inc.",
 "QBTS"
 ],
 [
@@ -19548,7 +19628,7 @@
 "QCLS"
 ],
 [
-"Qualcomm Inc",
+"QUALCOMM Incorporated",
 "QCOM"
 ],
 [
@@ -19576,11 +19656,11 @@
 "QFIN"
 ],
 [
-"Qiagen NV",
+"QIAGEN N.V.",
 "QGEN"
 ],
 [
-"Quhuo Ltd ADR",
+"Quhuo Ltd",
 "QH"
 ],
 [
@@ -19588,7 +19668,7 @@
 "QLEP"
 ],
 [
-"Qualys Inc",
+"Qualys  Inc.",
 "QLYS"
 ],
 [
@@ -19596,16 +19676,28 @@
 "QMCO"
 ],
 [
+"QumulusAI Inc",
+"QMLS"
+],
+[
 "QMMM Holdings Ltd",
 "QMMM"
+],
+[
+"QNB Corp",
+"QNBC"
 ],
 [
 "Quantum eMotion Corp",
 "QNC"
 ],
 [
-"Quince Therapeutics Inc",
+"Quince Therapeutics  Inc.",
 "QNCX"
+],
+[
+"Quanome Technologies  Inc",
+"QNME"
 ],
 [
 "Quoin Pharmaceuticals Ltd ADR",
@@ -19640,11 +19732,11 @@
 "QRHC"
 ],
 [
-"Qorvo Inc",
+"Qorvo  Inc.",
 "QRVO"
 ],
 [
-"Quantumscape Corp",
+"QuantumScape Corporation",
 "QS"
 ],
 [
@@ -19664,7 +19756,7 @@
 "QSI"
 ],
 [
-"Restaurant Brands International Inc",
+"Restaurant Brands International Inc.",
 "QSR"
 ],
 [
@@ -19676,11 +19768,11 @@
 "QTI"
 ],
 [
-"Quanterix Corp",
+"Quanterix Corporation",
 "QTRX"
 ],
 [
-"Q32 Bio Inc",
+"Q32 Bio Inc.",
 "QTTB"
 ],
 [
@@ -19692,7 +19784,7 @@
 "QUAD"
 ],
 [
-"Quantum Computing Inc",
+"Quantum Computing Inc.",
 "QUBT"
 ],
 [
@@ -19708,15 +19800,11 @@
 "QUMS"
 ],
 [
-"Quantumsphere Acquisition Rights",
-"QUMSR"
-],
-[
 "Quantumsphere Acquisition Units",
 "QUMSU"
 ],
 [
-"Uniqure NV",
+"uniQure N.V.",
 "QURE"
 ],
 [
@@ -19726,6 +19814,10 @@
 [
 "QVC 6.375% Senior Secured Notes Exp 13 Sep 2067",
 "QVCD"
+],
+[
+"QVC Group  Inc.",
+"QVCG"
 ],
 [
 "QVC Group Inc Series A",
@@ -19744,7 +19836,7 @@
 "QXO"
 ],
 [
-"Ryder System Inc",
+"Ryder System  Inc.",
 "R"
 ],
 [
@@ -19764,7 +19856,11 @@
 "RACC"
 ],
 [
-"Ferrari NV",
+"Research Alliance Corporation IV",
+"RACD"
+],
+[
+"Ferrari N.V.",
 "RACE"
 ],
 [
@@ -19780,7 +19876,7 @@
 "RAIN"
 ],
 [
-"Ralliant Corp",
+"Ralliant Corporation",
 "RAL"
 ],
 [
@@ -19808,11 +19904,11 @@
 "RANI"
 ],
 [
-"Rapport Therapeutics Inc",
+"Rapport Therapeutics  Inc.",
 "RAPP"
 ],
 [
-"Ultragenyx Pharmaceutical Inc",
+"Ultragenyx Pharmaceutical Inc.",
 "RARE"
 ],
 [
@@ -19828,7 +19924,7 @@
 "RAYA"
 ],
 [
-"RB Global Inc",
+"RB Global  Inc (Ontario)",
 "RBA"
 ],
 [
@@ -19836,11 +19932,11 @@
 "RBB"
 ],
 [
-"Ribbon Communications Inc",
+"Ribbon Communications Inc.",
 "RBBN"
 ],
 [
-"RBC Bearings Inc",
+"RBC Bearings Incorporated",
 "RBC"
 ],
 [
@@ -19860,7 +19956,7 @@
 "RBNE"
 ],
 [
-"Rubrik Inc",
+"Rubrik  Inc.",
 "RBRK"
 ],
 [
@@ -19874,6 +19970,10 @@
 [
 "Ready Capital 6 20 Senior Notes due 2026",
 "RCB"
+],
+[
+"River City Bank",
+"RCBC"
 ],
 [
 "Ready Capital 9.00% Senior Notes due 2029",
@@ -19892,7 +19992,7 @@
 "RCI"
 ],
 [
-"Rocket Pharmaceuticals Inc",
+"Rocket Pharmaceuticals  Inc.",
 "RCKT"
 ],
 [
@@ -19900,7 +20000,7 @@
 "RCKY"
 ],
 [
-"Royal Caribbean Cruises Ltd",
+"Royal Caribbean Cruises Ltd.",
 "RCL"
 ],
 [
@@ -19920,7 +20020,7 @@
 "RCT"
 ],
 [
-"Arcus Biosciences Inc",
+"Arcus Biosciences  Inc.",
 "RCUS"
 ],
 [
@@ -19948,7 +20048,7 @@
 "RDCM"
 ],
 [
-"Reddit Inc",
+"Reddit  Inc.",
 "RDDT"
 ],
 [
@@ -19968,11 +20068,11 @@
 "RDIB"
 ],
 [
-"Radian Group Inc",
+"Radian Group Inc.",
 "RDN"
 ],
 [
-"RadNet Inc",
+"RadNet  Inc.",
 "RDNT"
 ],
 [
@@ -19984,15 +20084,15 @@
 "RDVT"
 ],
 [
-"Redwire Corp",
+"Redwire Corporation",
 "RDW"
 ],
 [
-"Radware Ltd",
+"Radware Ltd.",
 "RDWR"
 ],
 [
-"Dr Reddy's Laboratories Ltd ADR",
+"Dr. Reddy's Laboratories Limited ADR",
 "RDY"
 ],
 [
@@ -20004,11 +20104,11 @@
 "REA"
 ],
 [
-"RealReal Inc",
+"The RealReal  Inc.",
 "REAL"
 ],
 [
-"Real Brokerage Inc",
+"The Real Brokerage Inc.",
 "REAX"
 ],
 [
@@ -20020,12 +20120,12 @@
 "RECT"
 ],
 [
-"REE Automotive Ltd",
-"REE"
-],
-[
 "Reed's Inc",
 "REED"
+],
+[
+"Reformation Inc.",
+"REF"
 ],
 [
 "Chicago Atlantic Real Estate Finance Inc",
@@ -20048,7 +20148,7 @@
 "REGCP"
 ],
 [
-"Regeneron Pharmaceuticals Inc",
+"Regeneron Pharmaceuticals  Inc.",
 "REGN"
 ],
 [
@@ -20068,11 +20168,11 @@
 "RELX"
 ],
 [
-"Remitly Global Inc",
+"Remitly Global  Inc.",
 "RELY"
 ],
 [
-"Rent the Runway Inc",
+"Rent the Runway  Inc.",
 "RENT"
 ],
 [
@@ -20080,7 +20180,7 @@
 "RENX"
 ],
 [
-"Replimune Group Inc",
+"Replimune Group  Inc.",
 "REPL"
 ],
 [
@@ -20104,11 +20204,11 @@
 "REVB"
 ],
 [
-"REX American Resources Corp",
+"REX American Resources Corporation",
 "REX"
 ],
 [
-"Rexford Industrial Realty Inc",
+"Rexford Industrial Realty  Inc.",
 "REXR"
 ],
 [
@@ -20116,11 +20216,11 @@
 "REYN"
 ],
 [
-"Resideo Technologies Inc",
+"Resideo Technologies  Inc.",
 "REZI"
 ],
 [
-"Regions Financial Corp",
+"Regions Financial Corporation",
 "RF"
 ],
 [
@@ -20128,7 +20228,7 @@
 "RFAI"
 ],
 [
-"RF Acquisition II Right 01st May 2026",
+"RF Acquisition Corp II Rights Exp 15th Feb 2027",
 "RFAIR"
 ],
 [
@@ -20138,6 +20238,10 @@
 [
 "RF Acquisition Corp III",
 "RFAM"
+],
+[
+"RF Acquisition III Rights",
+"RFAMR"
 ],
 [
 "RF Acquisition III Units",
@@ -20164,7 +20268,7 @@
 "RFMZ"
 ],
 [
-"Reinsurance Group of America Inc",
+"Reinsurance Group of America  Incorporated",
 "RGA"
 ],
 [
@@ -20176,11 +20280,11 @@
 "RGCO"
 ],
 [
-"Repligen Corp",
+"Repligen Corporation",
 "RGEN"
 ],
 [
-"Royal Gold Inc",
+"Royal Gold  Inc.",
 "RGLD"
 ],
 [
@@ -20188,15 +20292,15 @@
 "RGNT"
 ],
 [
-"Regenxbio Inc",
+"REGENXBIO Inc.",
 "RGNX"
 ],
 [
-"Resources Connection Inc",
+"Resources Connection  Inc.",
 "RGP"
 ],
 [
-"Sturm Ruger & Company Inc",
+"Sturm  Ruger & Company  Inc.",
 "RGR"
 ],
 [
@@ -20208,7 +20312,7 @@
 "RGT"
 ],
 [
-"Rigetti Computing Inc",
+"Rigetti Computing  Inc.",
 "RGTI"
 ],
 [
@@ -20244,11 +20348,11 @@
 "RICK"
 ],
 [
-"Transocean Ltd",
+"Transocean Ltd.",
 "RIG"
 ],
 [
-"Rigel Pharmaceuticals Inc",
+"Rigel Pharmaceuticals  Inc.",
 "RIGL"
 ],
 [
@@ -20288,7 +20392,7 @@
 "RIO"
 ],
 [
-"Riot Platforms Inc",
+"Riot Platforms  Inc.",
 "RIOT"
 ],
 [
@@ -20312,7 +20416,7 @@
 "RJET"
 ],
 [
-"Raymond James Financial Inc",
+"Raymond James Financial  Inc.",
 "RJF"
 ],
 [
@@ -20332,11 +20436,11 @@
 "RKTO"
 ],
 [
-"Ralph Lauren Corp",
+"Ralph Lauren Corporation",
 "RL"
 ],
 [
-"Relay Therapeutics Inc",
+"Relay Therapeutics  Inc.",
 "RLAY"
 ],
 [
@@ -20380,7 +20484,7 @@
 "RMBI"
 ],
 [
-"Rambus Inc",
+"Rambus Inc.",
 "RMBS"
 ],
 [
@@ -20392,7 +20496,7 @@
 "RMCO"
 ],
 [
-"Resmed Inc",
+"ResMed Inc.",
 "RMD"
 ],
 [
@@ -20416,7 +20520,7 @@
 "RMNI"
 ],
 [
-"RMR Group Inc",
+"The RMR Group Inc.",
 "RMR"
 ],
 [
@@ -20436,7 +20540,7 @@
 "RNA"
 ],
 [
-"Cartesian Therapeutics Inc",
+"Cartesian Therapeutics  Inc.",
 "RNAC"
 ],
 [
@@ -20468,7 +20572,7 @@
 "RNP"
 ],
 [
-"Renaissancere Holdings Ltd",
+"RenaissanceRe Holdings Ltd.",
 "RNR"
 ],
 [
@@ -20488,7 +20592,7 @@
 "RNXT"
 ],
 [
-"Construction Partners Inc",
+"Construction Partners  Inc.",
 "ROAD"
 ],
 [
@@ -20496,11 +20600,11 @@
 "ROC"
 ],
 [
-"Gibraltar Industries Inc",
+"Gibraltar Industries  Inc.",
 "ROCK"
 ],
 [
-"Rogers Corp",
+"Rogers Corporation",
 "ROG"
 ],
 [
@@ -20512,7 +20616,7 @@
 "ROK"
 ],
 [
-"Roku Inc",
+"Roku  Inc.",
 "ROKU"
 ],
 [
@@ -20532,7 +20636,7 @@
 "ROOT"
 ],
 [
-"Roper Technologies Inc",
+"Roper Technologies  Inc.",
 "ROP"
 ],
 [
@@ -20548,7 +20652,7 @@
 "RPC"
 ],
 [
-"Rapid7 Inc",
+"Rapid7  Inc.",
 "RPD"
 ],
 [
@@ -20556,7 +20660,7 @@
 "RPGL"
 ],
 [
-"Rapid Micro Biosystems  Inc",
+"Rapid Micro Biosystems  Inc.",
 "RPID"
 ],
 [
@@ -20576,7 +20680,7 @@
 "RQI"
 ],
 [
-"Richtech Robotics Inc",
+"Richtech Robotics Inc.",
 "RR"
 ],
 [
@@ -20584,7 +20688,7 @@
 "RRBI"
 ],
 [
-"Range Resources Corp",
+"Range Resources Corporation",
 "RRC"
 ],
 [
@@ -20600,15 +20704,15 @@
 "RRGB"
 ],
 [
-"Red Rock Resorts Inc",
+"Red Rock Resorts  Inc.",
 "RRR"
 ],
 [
-"Regal Rexnord Corp",
+"Regal Rexnord Corporation",
 "RRX"
 ],
 [
-"Reliance Inc",
+"Reliance  Inc.",
 "RS"
 ],
 [
@@ -20620,7 +20724,7 @@
 "RSG"
 ],
 [
-"Rush Street Interactive Inc",
+"Rush Street Interactive  Inc.",
 "RSI"
 ],
 [
@@ -20660,7 +20764,7 @@
 "RUBI"
 ],
 [
-"Rum Group Inc",
+"RUM Group Inc.",
 "RUM"
 ],
 [
@@ -20668,11 +20772,11 @@
 "RUN"
 ],
 [
-"Rush Enterprises Inc Class A",
+"Rush Enterprises  Inc. Class A",
 "RUSHA"
 ],
 [
-"Rush Enterprises Inc Class B",
+"Rush Enterprises  Inc. Class B",
 "RUSHB"
 ],
 [
@@ -20680,11 +20784,15 @@
 "RVI"
 ],
 [
+"Robinhood Ventures Fund II Closed End Fund",
+"RVII"
+],
+[
 "Revolve Group Inc",
 "RVLV"
 ],
 [
-"Revolution Medicines Inc",
+"Revolution Medicines  Inc.",
 "RVMD"
 ],
 [
@@ -20704,7 +20812,7 @@
 "RVT"
 ],
 [
-"Revvity Inc",
+"Revvity  Inc.",
 "RVTY"
 ],
 [
@@ -20712,7 +20820,7 @@
 "RWAY"
 ],
 [
-"Redwood Trust Inc",
+"Redwood Trust  Inc.",
 "RWT"
 ],
 [
@@ -20740,11 +20848,11 @@
 "RXO"
 ],
 [
-"Recursion Pharmaceuticals Inc",
+"Recursion Pharmaceuticals  Inc.",
 "RXRX"
 ],
 [
-"Rxsight Inc",
+"RxSight  Inc.",
 "RXST"
 ],
 [
@@ -20760,7 +20868,7 @@
 "RYAAY"
 ],
 [
-"Rayonier Advanced Materials Inc",
+"Rayonier Advanced Materials Inc.",
 "RYAM"
 ],
 [
@@ -20780,7 +20888,7 @@
 "RYM"
 ],
 [
-"Rayonier Inc",
+"Rayonier Inc.",
 "RYN"
 ],
 [
@@ -20788,11 +20896,11 @@
 "RYOJ"
 ],
 [
-"Rhythm Pharmaceuticals Inc",
+"Rhythm Pharmaceuticals  Inc.",
 "RYTM"
 ],
 [
-"Ryerson Holding Corp",
+"Ryerson Holding Corporation",
 "RYZ"
 ],
 [
@@ -20800,7 +20908,7 @@
 "RZC"
 ],
 [
-"Rezolute Inc",
+"Rezolute  Inc.",
 "RZLT"
 ],
 [
@@ -20812,7 +20920,7 @@
 "S"
 ],
 [
-"Seabridge Gold Inc",
+"Seabridge Gold Inc.",
 "SA"
 ],
 [
@@ -20828,7 +20936,7 @@
 "SABA"
 ],
 [
-"Sabre Corp",
+"Sabre Corporation",
 "SABR"
 ],
 [
@@ -20888,11 +20996,11 @@
 "SAIH"
 ],
 [
-"SailPoint Inc",
+"SailPoint  Inc.",
 "SAIL"
 ],
 [
-"Boston Beer Company Inc",
+"The Boston Beer Company  Inc.",
 "SAM"
 ],
 [
@@ -20900,11 +21008,15 @@
 "SAMG"
 ],
 [
-"Banco Santander SA ADR",
+"Samos Energy Acquisition Units",
+"SAMO-U"
+],
+[
+"Banco Santander S.A. ADR",
 "SAN"
 ],
 [
-"Sana Biotechnology Inc",
+"Sana Biotechnology  Inc.",
 "SANA"
 ],
 [
@@ -20932,7 +21044,7 @@
 "SATA"
 ],
 [
-"Satellogic Inc",
+"Satellogic Inc.",
 "SATL"
 ],
 [
@@ -20956,7 +21068,7 @@
 "SBET"
 ],
 [
-"Splash Beverage Group Inc",
+"Endovia Health Sciences  Inc.",
 "SBEV"
 ],
 [
@@ -20968,7 +21080,7 @@
 "SBFM"
 ],
 [
-"Sinclair Inc",
+"Sinclair  Inc.",
 "SBGI"
 ],
 [
@@ -20980,7 +21092,7 @@
 "SBI"
 ],
 [
-"Star Bulk Carriers Corp",
+"Star Bulk Carriers Corp.",
 "SBLK"
 ],
 [
@@ -20992,7 +21104,7 @@
 "SBR"
 ],
 [
-"Sabra Health Care REIT Inc",
+"Sabra Health Care REIT  Inc.",
 "SBRA"
 ],
 [
@@ -21004,7 +21116,7 @@
 "SBSI"
 ],
 [
-"Sibanye Stillwater Ltd ADR",
+"Sibanye Stillwater Limited ADR",
 "SBSW"
 ],
 [
@@ -21032,6 +21144,10 @@
 "SCAG"
 ],
 [
+"Southern Cross Acquisition II Units",
+"SCATU"
+],
+[
 "Southern Copper Corp",
 "SCCO"
 ],
@@ -21040,11 +21156,11 @@
 "SCD"
 ],
 [
-"Scholastic Corp",
+"Scholastic Corporation",
 "SCHL"
 ],
 [
-"Charles Schwab Corp",
+"The Charles Schwab Corporation",
 "SCHW"
 ],
 [
@@ -21104,8 +21220,12 @@
 "SCPQU"
 ],
 [
-"Scansource Inc",
+"ScanSource  Inc.",
 "SCSC"
+],
+[
+"Scribe Therapeutics Inc",
+"SCTX"
 ],
 [
 "374Water Inc",
@@ -21156,15 +21276,11 @@
 "SDHY"
 ],
 [
-"Smart Digital Group Ltd",
-"SDM"
-],
-[
 "Sadot Group Inc",
 "SDOT"
 ],
 [
-"Seadrill Ltd",
+"Seadrill Limited",
 "SDRL"
 ],
 [
@@ -21172,7 +21288,7 @@
 "SDST"
 ],
 [
-"Sea Ltd ADR",
+"Sea Limited ADR",
 "SE"
 ],
 [
@@ -21180,15 +21296,15 @@
 "SEAT"
 ],
 [
-"Seaboard Corp",
+"Seaboard Corporation",
 "SEB"
 ],
 [
-"Cantor Equity Partners II Inc",
+"Securitize Corp",
 "SECZ"
 ],
 [
-"Solaredge Technologies Inc",
+"SolarEdge Technologies  Inc.",
 "SEDG"
 ],
 [
@@ -21196,7 +21312,7 @@
 "SEED"
 ],
 [
-"Seer Inc",
+"Seer  Inc.",
 "SEER"
 ],
 [
@@ -21208,11 +21324,11 @@
 "SEGG"
 ],
 [
-"Solaris Energy Infrastructure Inc",
+"Solaris Energy Infrastructure  Inc.",
 "SEI"
 ],
 [
-"SEI Investments Co",
+"SEI Investments Company",
 "SEIC"
 ],
 [
@@ -21224,11 +21340,11 @@
 "SEMR"
 ],
 [
-"Seneca Foods Corp Class A",
+"Seneca Foods Corporation Class A",
 "SENEA"
 ],
 [
-"Seneca Foods Corp Class B",
+"Seneca Foods Corporation Class B",
 "SENEB"
 ],
 [
@@ -21236,15 +21352,15 @@
 "SENS"
 ],
 [
-"Septerna Inc",
+"Septerna  Inc.",
 "SEPN"
 ],
 [
-"Serina Therapeutics Inc",
+"Serina Therapeutics  Inc.",
 "SER"
 ],
 [
-"Sera Prognostics Inc",
+"Sera Prognostics  Inc.",
 "SERA"
 ],
 [
@@ -21252,7 +21368,7 @@
 "SERV"
 ],
 [
-"SES AI Corp",
+"SES AI Corporation",
 "SES"
 ],
 [
@@ -21268,7 +21384,7 @@
 "SEZL"
 ],
 [
-"Stifel Financial Corp",
+"Stifel Financial Corp.",
 "SF"
 ],
 [
@@ -21292,11 +21408,11 @@
 "SFHG"
 ],
 [
-"Stitch Fix Inc",
+"Stitch Fix  Inc.",
 "SFIX"
 ],
 [
-"Sfl Corporation Ltd",
+"SFL Corporation Ltd.",
 "SFL"
 ],
 [
@@ -21304,7 +21420,7 @@
 "SFM"
 ],
 [
-"Simmons First National Corp",
+"Simmons First National Corporation",
 "SFNC"
 ],
 [
@@ -21328,15 +21444,15 @@
 "SGC"
 ],
 [
-"SGHC Ltd",
+"SGHC Limited",
 "SGHC"
 ],
 [
-"Sight Sciences Inc",
+"Sight Sciences  Inc.",
 "SGHT"
 ],
 [
-"Somnigroup International Inc",
+"Somnigroup International Inc.",
 "SGI"
 ],
 [
@@ -21344,23 +21460,19 @@
 "SGLY"
 ],
 [
-"Sigma Lithium Corp",
+"Sigma Lithium Corporation",
 "SGML"
 ],
 [
-"Sagimet Biosciences Inc",
+"Sagimet Biosciences Inc.",
 "SGMT"
 ],
 [
-"SpyGlass Pharma Inc",
+"SpyGlass Pharma  Inc.",
 "SGP"
 ],
 [
-"SPAR Group Inc",
-"SGRP"
-],
-[
-"Surgery Partners Inc",
+"Surgery Partners  Inc.",
 "SGRY"
 ],
 [
@@ -21380,7 +21492,7 @@
 "SHBI"
 ],
 [
-"Sotera Health Co",
+"Sotera Health Company",
 "SHC"
 ],
 [
@@ -21396,7 +21508,7 @@
 "SHFS"
 ],
 [
-"Shinhan Financial Group Co Ltd ADR",
+"Shinhan Financial Group Co.  Ltd. ADR",
 "SHG"
 ],
 [
@@ -21408,7 +21520,7 @@
 "SHIP"
 ],
 [
-"Shoals Technologies Group Inc",
+"Shoals Technologies Group  Inc.",
 "SHLS"
 ],
 [
@@ -21424,12 +21536,16 @@
 "SHOE"
 ],
 [
-"Steven Madden Ltd",
+"Steven Madden  Ltd.",
 "SHOO"
 ],
 [
-"Shopify Inc",
+"Shopify Inc.",
 "SHOP"
+],
+[
+"RMG ML Sports Holdings",
+"SHOT"
 ],
 [
 "RMG ML Sports Holdings Units",
@@ -21444,11 +21560,11 @@
 "SHW"
 ],
 [
-"Shoulder Innovations Inc",
+"Shoulder Innovations  Inc.",
 "SI"
 ],
 [
-"SI-BONE Inc",
+"SI-BONE  Inc.",
 "SIBN"
 ],
 [
@@ -21472,7 +21588,7 @@
 "SIFY"
 ],
 [
-"Signet Jewelers Ltd",
+"Signet Jewelers Limited",
 "SIG"
 ],
 [
@@ -21480,7 +21596,7 @@
 "SIGA"
 ],
 [
-"Selective Insurance Group Inc",
+"Selective Insurance Group  Inc.",
 "SIGI"
 ],
 [
@@ -21512,7 +21628,7 @@
 "SIMAU"
 ],
 [
-"Silicon Motion Technology Corp ADR",
+"Silicon Motion Technology Corporation ADR",
 "SIMO"
 ],
 [
@@ -21524,15 +21640,15 @@
 "SINT"
 ],
 [
-"Sionna Therapeutics Inc",
+"Sionna Therapeutics  Inc.",
 "SION"
 ],
 [
-"Sirius XM Holdings Inc",
+"Sirius XM Holdings Inc.",
 "SIRI"
 ],
 [
-"Site Centers Corp",
+"SITE Centers Corp.",
 "SITC"
 ],
 [
@@ -21540,7 +21656,7 @@
 "SITE"
 ],
 [
-"SiTime Corp",
+"SiTime Corporation",
 "SITM"
 ],
 [
@@ -21548,7 +21664,7 @@
 "SJ"
 ],
 [
-"J.M. Smucker Co",
+"The J. M. Smucker Company",
 "SJM"
 ],
 [
@@ -21556,8 +21672,12 @@
 "SJT"
 ],
 [
-"Skeena Resources Ltd",
+"Skeena Resources Limited",
 "SKE"
+],
+[
+"SK hynix Inc. ADR",
+"SKHY"
 ],
 [
 "Skillsoft Corp",
@@ -21576,11 +21696,11 @@
 "SKLZ"
 ],
 [
-"SK Telecom Co Ltd ADR",
+"SK Telecom Co.  Ltd. ADR",
 "SKM"
 ],
 [
-"Tanger Inc",
+"Tanger Inc.",
 "SKT"
 ],
 [
@@ -21592,7 +21712,7 @@
 "SKY"
 ],
 [
-"SKYAI Inc",
+"Skyai  Inc",
 "SKYA"
 ],
 [
@@ -21600,7 +21720,7 @@
 "SKYE"
 ],
 [
-"Sky Harbour Group Corp",
+"Sky Harbour Group Corporation",
 "SKYH"
 ],
 [
@@ -21608,11 +21728,7 @@
 "SKYQ"
 ],
 [
-"Skywater Technology Inc",
-"SKYT"
-],
-[
-"SkyWest Inc",
+"SkyWest  Inc.",
 "SKYW"
 ],
 [
@@ -21620,15 +21736,11 @@
 "SKYX"
 ],
 [
-"Silicon Laboratories Inc",
+"Silicon Laboratories Inc.",
 "SLAB"
 ],
 [
-"SOLAI Ltd ADR",
-"SLAI"
-],
-[
-"SLB NV",
+"SLB N.V.",
 "SLB"
 ],
 [
@@ -21640,11 +21752,11 @@
 "SLDB"
 ],
 [
-"Slide Insurance Holdings Inc",
+"Slide Insurance Holdings  Inc.",
 "SLDE"
 ],
 [
-"Solid Power Inc",
+"Solid Power  Inc.",
 "SLDP"
 ],
 [
@@ -21664,15 +21776,15 @@
 "SLGB"
 ],
 [
-"Sol Gel Technologies Ltd",
+"SOL-GEL TECHNOLOGIES LTD.",
 "SLGL"
 ],
 [
-"Silgan Holdings Inc",
+"Silgan Holdings Inc.",
 "SLGN"
 ],
 [
-"Standard Lithium Ltd",
+"Standard Lithium Ltd.",
 "SLI"
 ],
 [
@@ -21708,11 +21820,11 @@
 "SLNHP"
 ],
 [
-"Simulations Plus Inc",
+"Simulations Plus  Inc.",
 "SLP"
 ],
 [
-"SelectQuote Inc",
+"SelectQuote  Inc.",
 "SLQT"
 ],
 [
@@ -21728,7 +21840,7 @@
 "SLSN"
 ],
 [
-"Solaris Resources Inc",
+"Solaris Resources Inc.",
 "SLSR"
 ],
 [
@@ -21768,7 +21880,7 @@
 "SMCIP"
 ],
 [
-"Sumitomo Mitsui Financial Group  Inc ADR",
+"Sumitomo Mitsui Financial Group  Inc. ADR",
 "SMFG"
 ],
 [
@@ -21788,7 +21900,7 @@
 "SMJF"
 ],
 [
-"Summit Therapeutics Inc",
+"Summit Therapeutics Inc.",
 "SMMT"
 ],
 [
@@ -21796,7 +21908,7 @@
 "SMP"
 ],
 [
-"Simply Good Foods Co",
+"The Simply Good Foods Company",
 "SMPL"
 ],
 [
@@ -21812,7 +21924,7 @@
 "SMSI"
 ],
 [
-"Semtech Corp",
+"Semtech Corporation",
 "SMTC"
 ],
 [
@@ -21824,7 +21936,7 @@
 "SMTK"
 ],
 [
-"Similarweb Ltd",
+"Similarweb Ltd.",
 "SMWB"
 ],
 [
@@ -21836,7 +21948,7 @@
 "SMXT"
 ],
 [
-"Sharkninja Inc",
+"SharkNinja  Inc.",
 "SN"
 ],
 [
@@ -21856,11 +21968,11 @@
 "SND"
 ],
 [
-"Sonida Senior Living Inc",
+"Sonida Senior Living  Inc.",
 "SNDA"
 ],
 [
-"Sandisk Corp",
+"SanDisk Corporation",
 "SNDK"
 ],
 [
@@ -21868,11 +21980,11 @@
 "SNDL"
 ],
 [
-"Schneider National Inc",
+"Schneider National  Inc.",
 "SNDR"
 ],
 [
-"Syndax Pharmaceuticals Inc",
+"Syndax Pharmaceuticals  Inc.",
 "SNDX"
 ],
 [
@@ -21900,12 +22012,16 @@
 "SNOA"
 ],
 [
-"Snowflake Inc",
+"Snowflake Inc.",
 "SNOW"
 ],
 [
-"Synopsys Inc",
+"Synopsys  Inc.",
 "SNPS"
+],
+[
+"SunScout Holding Limited",
+"SNSC"
 ],
 [
 "Senstar Technologies Corp",
@@ -21924,7 +22040,7 @@
 "SNWV"
 ],
 [
-"TD Synnex Corp",
+"TD SYNNEX Corporation",
 "SNX"
 ],
 [
@@ -21944,7 +22060,7 @@
 "SOAR"
 ],
 [
-"South Bow Corp",
+"South Bow Corporation",
 "SOBO"
 ],
 [
@@ -21952,7 +22068,7 @@
 "SOBR"
 ],
 [
-"Sable Offshore Corp",
+"Sable Offshore Corp.",
 "SOC"
 ],
 [
@@ -21964,7 +22080,7 @@
 "SOCAU"
 ],
 [
-"SoFi Technologies Inc",
+"SoFi Technologies  Inc.",
 "SOFI"
 ],
 [
@@ -21996,7 +22112,7 @@
 "SOLS"
 ],
 [
-"Solventum Corp",
+"Solventum Corporation",
 "SOLV"
 ],
 [
@@ -22004,7 +22120,7 @@
 "SOMN"
 ],
 [
-"Sonoco Products Co",
+"Sonoco Products Company",
 "SON"
 ],
 [
@@ -22012,15 +22128,15 @@
 "SONM"
 ],
 [
-"Sonos Inc",
+"Sonos  Inc.",
 "SONO"
 ],
 [
-"Sony Group Corp ADR",
+"Sony Group Corporation ADR",
 "SONY"
 ],
 [
-"Sophia Genetics SA",
+"SOPHiA GENETICS SA",
 "SOPH"
 ],
 [
@@ -22056,7 +22172,7 @@
 "SOUL-U"
 ],
 [
-"SoundHound AI Inc",
+"SoundHound AI  Inc.",
 "SOUN"
 ],
 [
@@ -22068,7 +22184,7 @@
 "SPAI"
 ],
 [
-"Spectrum Brands Holdings Inc",
+"Spectrum Brands Holdings  Inc.",
 "SPB"
 ],
 [
@@ -22090,10 +22206,6 @@
 [
 "Silver Pegasus Acquisition Corp",
 "SPEG"
-],
-[
-"Silver Pegasus Acquisition Rights Exp 26 Jun 2030",
-"SPEGR"
 ],
 [
 "Silver Pegasus Acquisition Units",
@@ -22124,7 +22236,7 @@
 "SPHR"
 ],
 [
-"Spire Global Inc",
+"Spire Global  Inc.",
 "SPIR"
 ],
 [
@@ -22148,7 +22260,7 @@
 "SPME"
 ],
 [
-"Siriuspoint Ltd",
+"SiriusPoint Ltd.",
 "SPNT"
 ],
 [
@@ -22156,7 +22268,7 @@
 "SPOK"
 ],
 [
-"Spotify Technology SA",
+"Spotify Technology S.A.",
 "SPOT"
 ],
 [
@@ -22168,7 +22280,7 @@
 "SPPP"
 ],
 [
-"Spruce Biosciences  Inc",
+"Spruce Biosciences  Inc.",
 "SPRB"
 ],
 [
@@ -22176,7 +22288,7 @@
 "SPRC"
 ],
 [
-"Spero Therapeutics Inc",
+"Spero Therapeutics  Inc.",
 "SPRO"
 ],
 [
@@ -22188,11 +22300,11 @@
 "SPRY"
 ],
 [
-"SPS Commerce Inc",
+"SPS Commerce  Inc.",
 "SPSC"
 ],
 [
-"Sprout Social Inc",
+"Sprout Social  Inc.",
 "SPT"
 ],
 [
@@ -22252,7 +22364,7 @@
 "SRE"
 ],
 [
-"Surf Air Mobility Inc",
+"Surf Air Mobility Inc.",
 "SRFM"
 ],
 [
@@ -22268,15 +22380,15 @@
 "SRL"
 ],
 [
-"Sarepta Therapeutics Inc",
+"Sarepta Therapeutics  Inc.",
 "SRPT"
 ],
 [
-"Scholar Rock Holding Corp",
+"Scholar Rock Holding Corporation",
 "SRRK"
 ],
 [
-"Strata Critical Medical Inc",
+"Strata Critical Medical  Inc.",
 "SRTA"
 ],
 [
@@ -22292,12 +22404,16 @@
 "SRXH"
 ],
 [
-"Surrozen Inc",
+"Surrozen  Inc.",
 "SRZN"
 ],
 [
 "Spacsphere Acquisition Corp",
 "SSAC"
+],
+[
+"SPACSphere Acquisition Rights",
+"SSACR"
 ],
 [
 "SPACSphere Acquisition Units",
@@ -22312,7 +22428,7 @@
 "SSBI"
 ],
 [
-"Simpson Manufacturing Co Inc",
+"Simpson Manufacturing Co.  Inc.",
 "SSD"
 ],
 [
@@ -22320,19 +22436,15 @@
 "SSEA"
 ],
 [
-"Starry Sea Acquisition Rights Exp 07th Jul 2030",
-"SSEAR"
-],
-[
 "Starry Sea Acquisition Units",
 "SSEAU"
 ],
 [
-"SS Innovations International Inc",
+"SS Innovations International  Inc.",
 "SSII"
 ],
 [
-"Sasol Ltd ADR",
+"Sasol Limited ADR",
 "SSL"
 ],
 [
@@ -22344,7 +22456,7 @@
 "SSMR"
 ],
 [
-"SS&C Technologies Holdings Inc",
+"SS&C Technologies Holdings  Inc.",
 "SSNC"
 ],
 [
@@ -22352,11 +22464,11 @@
 "SSP"
 ],
 [
-"SSR Mining Inc",
+"SSR Mining Inc.",
 "SSRM"
 ],
 [
-"System1 Inc",
+"System1  Inc.",
 "SST"
 ],
 [
@@ -22364,11 +22476,11 @@
 "SSTI"
 ],
 [
-"Shutterstock Inc",
+"Shutterstock  Inc.",
 "SSTK"
 ],
 [
-"Stratasys Ltd",
+"Stratasys Ltd.",
 "SSYS"
 ],
 [
@@ -22376,11 +22488,11 @@
 "ST"
 ],
 [
-"STAAR Surgical Co",
+"STAAR Surgical Company",
 "STAA"
 ],
 [
-"STAG Industrial Inc",
+"STAG Industrial  Inc.",
 "STAG"
 ],
 [
@@ -22396,15 +22508,19 @@
 "STC"
 ],
 [
+"Standard Nuclear Inc",
+"STDN"
+],
+[
 "STERIS plc",
 "STE"
 ],
 [
-"Stem Inc",
+"Stem  Inc.",
 "STEM"
 ],
 [
-"StepStone Group Inc",
+"StepStone Group Inc.",
 "STEP"
 ],
 [
@@ -22424,7 +22540,7 @@
 "STG"
 ],
 [
-"Stagwell Inc",
+"Stagwell Inc.",
 "STGW"
 ],
 [
@@ -22456,7 +22572,7 @@
 "STKS"
 ],
 [
-"Stellantis NV",
+"Stellantis N.V.",
 "STLA"
 ],
 [
@@ -22464,27 +22580,31 @@
 "STLD"
 ],
 [
-"STMicroelectronics NV ADR",
+"Starling Oncology  Inc.",
+"STLN"
+],
+[
+"STMicroelectronics N.V. ADR",
 "STM"
 ],
 [
-"Stantec Inc",
+"Stantec Inc.",
 "STN"
 ],
 [
-"StoneCo Ltd",
+"StoneCo Ltd.",
 "STNE"
 ],
 [
-"Scorpio Tankers Inc",
+"Scorpio Tankers Inc.",
 "STNG"
 ],
 [
-"Stoke Therapeutics Inc",
+"Stoke Therapeutics  Inc.",
 "STOK"
 ],
 [
-"Strategic Education Inc",
+"Strategic Education  Inc.",
 "STRA"
 ],
 [
@@ -22504,7 +22624,7 @@
 "STRK"
 ],
 [
-"Sterling Infrastructure Inc",
+"Sterling Infrastructure  Inc.",
 "STRL"
 ],
 [
@@ -22532,11 +22652,11 @@
 "STRW"
 ],
 [
-"Starz Entertainment Corp",
+"Starz Entertainment Corp.",
 "STRZ"
 ],
 [
-"State Street Corp",
+"State Street Corporation",
 "STT"
 ],
 [
@@ -22564,7 +22684,7 @@
 "STXS"
 ],
 [
-"Constellation Brands Inc",
+"Constellation Brands  Inc.",
 "STZ"
 ],
 [
@@ -22592,6 +22712,10 @@
 "SUMA"
 ],
 [
+"SUMA Acquisition Rights Exp 05th Mar 2031",
+"SUMAR"
+],
+[
 "SUMA Acquisition Units",
 "SUMAU"
 ],
@@ -22616,11 +22740,11 @@
 "SUNS"
 ],
 [
-"Supernus Pharmaceuticals Inc",
+"Supernus Pharmaceuticals  Inc.",
 "SUPN"
 ],
 [
-"Grupo Supervielle SA ADR",
+"Grupo Supervielle S.A. ADR",
 "SUPV"
 ],
 [
@@ -22638,14 +22762,6 @@
 [
 "Sinovac Biotech Ltd",
 "SVA"
-],
-[
-"Spring Valley Acquisition Corp III",
-"SVAC"
-],
-[
-"Spring Valley Acquisition III Units",
-"SVACU"
 ],
 [
 "Silicon Valley Acquisition Corp",
@@ -22684,7 +22800,7 @@
 "SVM"
 ],
 [
-"Savara Inc",
+"Savara Inc.",
 "SVRA"
 ],
 [
@@ -22696,7 +22812,7 @@
 "SVRN"
 ],
 [
-"Savers Value Village Inc",
+"Savers Value Village  Inc.",
 "SVV"
 ],
 [
@@ -22724,7 +22840,7 @@
 "SWKHL"
 ],
 [
-"Skyworks Solutions Inc",
+"Skyworks Solutions  Inc.",
 "SWKS"
 ],
 [
@@ -22736,7 +22852,7 @@
 "SWVL"
 ],
 [
-"Southwest Gas Holdings Inc",
+"Southwest Gas Holdings  Inc.",
 "SWX"
 ],
 [
@@ -22752,7 +22868,7 @@
 "SXI"
 ],
 [
-"Sensient Technologies Corp",
+"Sensient Technologies Corporation",
 "SXT"
 ],
 [
@@ -22776,7 +22892,7 @@
 "SYF"
 ],
 [
-"Stryker Corp",
+"Stryker Corporation",
 "SYK"
 ],
 [
@@ -22784,7 +22900,7 @@
 "SYM"
 ],
 [
-"Synaptics Inc",
+"Synaptics Incorporated",
 "SYNA"
 ],
 [
@@ -22800,7 +22916,7 @@
 "SYRE"
 ],
 [
-"Sysco Corp",
+"Sysco Corporation",
 "SYY"
 ],
 [
@@ -22844,7 +22960,7 @@
 "TACT"
 ],
 [
-"Takeda Pharmaceutical Co Ltd ADR",
+"Takeda Pharmaceutical Company Limited ADR",
 "TAK"
 ],
 [
@@ -22852,11 +22968,7 @@
 "TAL"
 ],
 [
-"Talkspace Inc",
-"TALK"
-],
-[
-"Talos Energy Inc",
+"Talos Energy Inc.",
 "TALO"
 ],
 [
@@ -22884,7 +22996,7 @@
 "TARA"
 ],
 [
-"Tarsus Pharmaceuticals Inc",
+"Tarsus Pharmaceuticals  Inc.",
 "TARS"
 ],
 [
@@ -22912,7 +23024,7 @@
 "TAYD"
 ],
 [
-"Bbb Foods Inc",
+"BBB Foods Inc.",
 "TBBB"
 ],
 [
@@ -22920,8 +23032,12 @@
 "TBBK"
 ],
 [
-"Turtle Beach Corp",
+"Turtle Beach Corporation",
 "TBCH"
+],
+[
+"Thunder Bridge Capital Partners V Units",
+"TBCVU"
 ],
 [
 "TrueBlue Inc",
@@ -22940,19 +23056,15 @@
 "TBN"
 ],
 [
-"Theravance Biopharma Inc",
+"Theravance Biopharma  Inc.",
 "TBPH"
-],
-[
-"TruBridge Inc",
-"TBRG"
 ],
 [
 "Token Cat Ltd ADR",
 "TC"
 ],
 [
-"Texas Capital Bancshares Inc",
+"Texas Capital Bancshares  Inc.",
 "TCBI"
 ],
 [
@@ -22972,15 +23084,19 @@
 "TCBX"
 ],
 [
+"TCGX Acquisition Corp",
+"TCGX"
+],
+[
 "Transcontinental Realty Investors Inc",
 "TCI"
 ],
 [
-"Tactile Systems Technology Inc",
+"Tactile Systems Technology  Inc.",
 "TCMD"
 ],
 [
-"Trip.com Group Ltd ADR",
+"Trip.com Group Limited ADR",
 "TCOM"
 ],
 [
@@ -23016,7 +23132,7 @@
 "TDAY"
 ],
 [
-"Teradata Corp",
+"Teradata Corporation",
 "TDC"
 ],
 [
@@ -23024,7 +23140,7 @@
 "TDF"
 ],
 [
-"TransDigm Group Inc",
+"TransDigm Group Incorporated",
 "TDG"
 ],
 [
@@ -23036,19 +23152,19 @@
 "TDOC"
 ],
 [
-"Telephone and Data Systems Inc",
+"Telephone and Data Systems  Inc.",
 "TDS"
 ],
 [
-"Trident Digital Tech Holdings Ltd ADR",
+"Trident Digital Tech Holdings Ltd",
 "TDTH"
 ],
 [
-"ThredUp Inc",
+"ThredUp Inc.",
 "TDUP"
 ],
 [
-"Tidewater Inc",
+"Tidewater Inc.",
 "TDW"
 ],
 [
@@ -23068,7 +23184,7 @@
 "TDY"
 ],
 [
-"T1 Energy Inc",
+"T1 Energy Inc.",
 "TE"
 ],
 [
@@ -23080,7 +23196,7 @@
 "TEAM"
 ],
 [
-"Bio-Techne Corp",
+"Bio-Techne Corporation",
 "TECH"
 ],
 [
@@ -23088,7 +23204,7 @@
 "TECK"
 ],
 [
-"Tectonic Therapeutic Inc",
+"Tectonic Therapeutic  Inc.",
 "TECX"
 ],
 [
@@ -23108,7 +23224,7 @@
 "TELO"
 ],
 [
-"Tempus AI Inc",
+"Tempus AI  Inc.",
 "TEM"
 ],
 [
@@ -23116,7 +23232,7 @@
 "TEN"
 ],
 [
-"Tenable Holdings Inc",
+"Tenable Holdings  Inc.",
 "TENB"
 ],
 [
@@ -23128,31 +23244,31 @@
 "TEO"
 ],
 [
-"Teradyne Inc",
+"Teradyne  Inc.",
 "TER"
 ],
 [
-"Teva Pharmaceutical Industries Limited.. ADR",
+"Teva Pharmaceutical Industries Limited ADR",
 "TEVA"
 ],
 [
-"Terex Corp",
+"Terex Corporation",
 "TEX"
 ],
 [
-"Truist Financial Corp",
+"Truist Financial Corporation",
 "TFC"
 ],
 [
-"TFI International Inc",
+"TFI International Inc.",
 "TFII"
 ],
 [
-"Triumph Financial Inc",
+"Triumph Financial  Inc.",
 "TFIN"
 ],
 [
-"Triple Flag Precious Metals Corp",
+"Triple Flag Precious Metals Corp.",
 "TFPM"
 ],
 [
@@ -23160,7 +23276,7 @@
 "TFSL"
 ],
 [
-"Teleflex Inc",
+"Teleflex Incorporated",
 "TFX"
 ],
 [
@@ -23168,7 +23284,7 @@
 "TG"
 ],
 [
-"Trekor Metals Ltd",
+"Trekor Metals Limited",
 "TGB"
 ],
 [
@@ -23188,7 +23304,7 @@
 "TGL"
 ],
 [
-"Tecnoglass Inc",
+"Tecnoglass Holdings Inc.",
 "TGLS"
 ],
 [
@@ -23200,11 +23316,11 @@
 "TGT"
 ],
 [
-"TG Therapeutics Inc",
+"TG Therapeutics  Inc.",
 "TGTX"
 ],
 [
-"Target Hospitality Corp",
+"Target Hospitality Corp.",
 "TH"
 ],
 [
@@ -23216,11 +23332,19 @@
 "THCH"
 ],
 [
+"BOA Acquisition Corp. II",
+"THEO"
+],
+[
+"BOA Acquisition II Units",
+"THEOU"
+],
+[
 "First Financial Corp",
 "THFF"
 ],
 [
-"Hanover Insurance Group Inc",
+"The Hanover Insurance Group  Inc.",
 "THG"
 ],
 [
@@ -23232,7 +23356,7 @@
 "THM"
 ],
 [
-"Thor Industries Inc",
+"THOR Industries  Inc.",
 "THO"
 ],
 [
@@ -23240,7 +23364,7 @@
 "THQ"
 ],
 [
-"Gentherm Inc",
+"Gentherm Incorporated",
 "THRM"
 ],
 [
@@ -23256,11 +23380,11 @@
 "TIC"
 ],
 [
-"Millicom International Cellular SA",
+"Millicom International Cellular S.A.",
 "TIGO"
 ],
 [
-"UP Fintech Holding Ltd ADR",
+"UP Fintech Holding Limited ADR",
 "TIGR"
 ],
 [
@@ -23268,15 +23392,15 @@
 "TII"
 ],
 [
-"Instil Bio Inc",
+"Instil Bio  Inc.",
 "TIL"
 ],
 [
-"Interface Inc",
+"Interface  Inc.",
 "TILE"
 ],
 [
-"Tim SA ADR",
+"TIM S.A. ADR",
 "TIMB"
 ],
 [
@@ -23296,7 +23420,7 @@
 "TJGC"
 ],
 [
-"TJX Companies Inc",
+"The TJX Companies  Inc.",
 "TJX"
 ],
 [
@@ -23312,7 +23436,7 @@
 "TKLF"
 ],
 [
-"Alpha Teknova Inc",
+"Alpha Teknova  Inc.",
 "TKNO"
 ],
 [
@@ -23368,7 +23492,7 @@
 "TLSI"
 ],
 [
-"Telix Pharmaceuticals Ltd ADR",
+"Telix Pharmaceuticals Limited ADR",
 "TLX"
 ],
 [
@@ -23376,15 +23500,15 @@
 "TLYS"
 ],
 [
-"Toyota Motor Corp ADR",
+"TOYOTA MOTOR CORPORATION ADR",
 "TM"
 ],
 [
-"TMC the metals company Inc",
+"TMC the metals company Inc.",
 "TMC"
 ],
 [
-"Treace Medical Concepts  Inc",
+"Treace Medical Concepts  Inc.",
 "TMCI"
 ],
 [
@@ -23396,16 +23520,12 @@
 "TMDE"
 ],
 [
-"Transmedics Group Inc",
+"TransMedics Group  Inc.",
 "TMDX"
 ],
 [
 "Tencent Music Entertainment Group ADR",
 "TME"
-],
-[
-"Taylor Morrison Home Corp",
-"TMHC"
 ],
 [
 "Thermo Fisher Scientific Inc",
@@ -23422,6 +23542,10 @@
 [
 "Teamshares Inc.",
 "TMS"
+],
+[
+"Spartacus Acquisition Corp II",
+"TMTS"
 ],
 [
 "Spartacus Acquisition II Units",
@@ -23448,15 +23572,15 @@
 "TNC"
 ],
 [
-"Tandem Diabetes Care Inc",
+"Tandem Diabetes Care  Inc.",
 "TNDM"
 ],
 [
-"TriNet Group Inc",
+"TriNet Group  Inc.",
 "TNET"
 ],
 [
-"Tango Therapeutics Inc",
+"Tango Therapeutics  Inc.",
 "TNGX"
 ],
 [
@@ -23476,16 +23600,12 @@
 "TNON"
 ],
 [
-"Tonix Pharmaceuticals Holding Corp",
+"Tonix Pharmaceuticals Holding Corp.",
 "TNXP"
 ],
 [
-"Tenaya Therapeutics Inc",
+"Tenaya Therapeutics  Inc.",
 "TNYA"
-],
-[
-"Oncology Institute Inc",
-"TOI"
 ],
 [
 "Toll Brothers Inc",
@@ -23494,6 +23614,14 @@
 [
 "TOMI Environmental Solutions Inc",
 "TOMZ"
+],
+[
+"Graf Global Corp",
+"TONT"
+],
+[
+"Graf Global Units",
+"TONT-U"
 ],
 [
 "Ton Strategy Co",
@@ -23520,7 +23648,7 @@
 "TORO"
 ],
 [
-"Toast Inc",
+"Toast  Inc.",
 "TOST"
 ],
 [
@@ -23540,11 +23668,15 @@
 "TOYO"
 ],
 [
+"Ticketplus Ltd",
+"TP"
+],
+[
 "Turning Point Brands Inc",
 "TPB"
 ],
 [
-"Tutor Perini Corp",
+"Tutor Perini Corporation",
 "TPC"
 ],
 [
@@ -23560,11 +23692,11 @@
 "TPG"
 ],
 [
-"Texas Pacific Land Corp (Dover)",
+"Texas Pacific Land Corporation",
 "TPL"
 ],
 [
-"Tapestry Inc",
+"Tapestry  Inc.",
 "TPR"
 ],
 [
@@ -23608,24 +23740,32 @@
 "TRC"
 ],
 [
-"Entrada Therapeutics Inc",
+"Entrada Therapeutics  Inc.",
 "TRDA"
 ],
 [
-"Lendingtree Inc",
+"LendingTree  Inc.",
 "TREE"
 ],
 [
-"Trex Company Inc",
+"Tactical Resources Corp.",
+"TREO"
+],
+[
+"Trex Company  Inc.",
 "TREX"
 ],
 [
-"Targa Resources Corp",
+"Targa Resources Corp.",
 "TRGP"
 ],
 [
 "TRG Latin America Acquisitions Corp",
 "TRGS"
+],
+[
+"TRG Latin America Acquisitions Rights Exp 20th Feb 2031",
+"TRGSR"
 ],
 [
 "TRG Latin America Acquisitions Units",
@@ -23644,11 +23784,11 @@
 "TRIN"
 ],
 [
-"Tripadvisor Inc",
+"TripAdvisor  Inc.",
 "TRIP"
 ],
 [
-"Trulieve Cannabis Corp",
+"Trulieve Cannabis Corp.(Pre-Reincorporation)",
 "TRLV"
 ],
 [
@@ -23660,7 +23800,7 @@
 "TRMD"
 ],
 [
-"Trustmark Corp",
+"Trustmark Corporation",
 "TRMK"
 ],
 [
@@ -23668,7 +23808,7 @@
 "TRN"
 ],
 [
-"Terreno Realty Corp",
+"Terreno Realty Corporation",
 "TRNO"
 ],
 [
@@ -23676,7 +23816,7 @@
 "TRNR"
 ],
 [
-"Transcat Inc",
+"Transcat  Inc.",
 "TRNS"
 ],
 [
@@ -23688,7 +23828,7 @@
 "TROO"
 ],
 [
-"T Rowe Price Group Inc",
+"T. Rowe Price Group  Inc.",
 "TROW"
 ],
 [
@@ -23696,11 +23836,11 @@
 "TROX"
 ],
 [
-"TC Energy Corp",
+"TC Energy Corporation",
 "TRP"
 ],
 [
-"TriMas Corp",
+"TriMas Corporation",
 "TRS"
 ],
 [
@@ -23724,15 +23864,15 @@
 "TRU"
 ],
 [
-"Trugolf Holdings Inc",
+"TruGolf Holdings Inc",
 "TRUG"
 ],
 [
-"Trupanion Inc",
+"Trupanion  Inc.",
 "TRUP"
 ],
 [
-"Travelers Companies Inc",
+"The Travelers Companies  Inc.",
 "TRV"
 ],
 [
@@ -23740,7 +23880,7 @@
 "TRVG"
 ],
 [
-"Trevi Therapeutics Inc",
+"Trevi Therapeutics  Inc.",
 "TRVI"
 ],
 [
@@ -23760,15 +23900,15 @@
 "TSBK"
 ],
 [
-"Tractor Supply Co",
+"Tractor Supply Company",
 "TSCO"
 ],
 [
-"Tower Semiconductor Ltd",
+"Tower Semiconductor Ltd.",
 "TSEM"
 ],
 [
-"Taysha Gene Therapies Inc",
+"Taysha Gene Therapies  Inc.",
 "TSHA"
 ],
 [
@@ -23780,11 +23920,11 @@
 "TSLA"
 ],
 [
-"Sixth Street Specialty Lending Inc",
+"Sixth Street Specialty Lending  Inc.",
 "TSLX"
 ],
 [
-"Taiwan Semiconductor Manufacturing Co Ltd ADR",
+"Taiwan Semiconductor Manufacturing Company Limited ADR",
 "TSM"
 ],
 [
@@ -23808,11 +23948,11 @@
 "TTAM"
 ],
 [
-"ServiceTitan Inc",
+"ServiceTitan  Inc.",
 "TTAN"
 ],
 [
-"Toro Co",
+"The Toro Company",
 "TTC"
 ],
 [
@@ -23828,7 +23968,7 @@
 "TTEC"
 ],
 [
-"Tetra Tech Inc (Delaware)",
+"Tetra Tech  Inc.",
 "TTEK"
 ],
 [
@@ -23836,7 +23976,7 @@
 "TTGT"
 ],
 [
-"Tetra Technologies Inc",
+"TETRA Technologies  Inc.",
 "TTI"
 ],
 [
@@ -23848,7 +23988,7 @@
 "TTRX"
 ],
 [
-"Take-Two Interactive Software Inc",
+"Take-Two Interactive Software  Inc.",
 "TTWO"
 ],
 [
@@ -23868,11 +24008,11 @@
 "TUSK"
 ],
 [
-"Tuya Inc ADR",
+"Tuya Inc. ADR",
 "TUYA"
 ],
 [
-"Grupo Televisa SAB ADR",
+"Grupo Televisa  S.A.B. ADR",
 "TV"
 ],
 [
@@ -23904,19 +24044,23 @@
 "TVE"
 ],
 [
-"Tevogen Bio Holdings Inc",
+"Tevogen Inc",
 "TVGN"
+],
+[
+"Texas Ventures Acquisition IV Corp",
+"TVIV"
 ],
 [
 "Texas Ventures Acquisition IV Units",
 "TVIVU"
 ],
 [
-"Tvardi Therapeutics Inc",
+"Tvardi Therapeutics  Inc.",
 "TVRD"
 ],
 [
-"Travere Therapeutics Inc",
+"Travere Therapeutics  Inc.",
 "TVTX"
 ],
 [
@@ -23928,7 +24072,7 @@
 "TWAV"
 ],
 [
-"TWFG Inc",
+"TWFG  Inc.",
 "TWFG"
 ],
 [
@@ -23944,7 +24088,7 @@
 "TWIN"
 ],
 [
-"Twilio Inc",
+"Twilio Inc.",
 "TWLO"
 ],
 [
@@ -23964,7 +24108,7 @@
 "TWN"
 ],
 [
-"Two Harbors Investment Corp",
+"Two Harbors Investment Corp.",
 "TWO"
 ],
 [
@@ -23972,7 +24116,7 @@
 "TWOD"
 ],
 [
-"Twist Bioscience Corp",
+"Twist Bioscience Corporation",
 "TWST"
 ],
 [
@@ -23980,7 +24124,7 @@
 "TX"
 ],
 [
-"10X Genomics Inc",
+"10x Genomics  Inc.",
 "TXG"
 ],
 [
@@ -24016,15 +24160,15 @@
 "TYG"
 ],
 [
-"Tigo Energy Inc",
+"Tigo Energy  Inc.",
 "TYGO"
 ],
 [
-"Tyler Technologies Inc",
+"Tyler Technologies  Inc.",
 "TYL"
 ],
 [
-"Tyra Biosciences Inc",
+"Tyra Biosciences  Inc.",
 "TYRA"
 ],
 [
@@ -24032,7 +24176,7 @@
 "TZOO"
 ],
 [
-"Unity Software Inc",
+"Unity Software Inc.",
 "U"
 ],
 [
@@ -24052,7 +24196,7 @@
 "UAC-U"
 ],
 [
-"United Airlines Holdings Inc",
+"United Airlines Holdings  Inc.",
 "UAL"
 ],
 [
@@ -24072,7 +24216,7 @@
 "UBCP"
 ],
 [
-"Uber Technologies Inc",
+"Uber Technologies  Inc.",
 "UBER"
 ],
 [
@@ -24080,12 +24224,8 @@
 "UBS"
 ],
 [
-"United Bankshares Inc",
+"United Bankshares  Inc.",
 "UBSI"
-],
-[
-"U-BX Technology Ltd",
-"UBXG"
 ],
 [
 "U Power Ltd",
@@ -24108,7 +24248,7 @@
 "UCTT"
 ],
 [
-"UDR Inc",
+"UDR  Inc.",
 "UDR"
 ],
 [
@@ -24116,7 +24256,7 @@
 "UE"
 ],
 [
-"Uranium Energy Corp",
+"Uranium Energy Corp.",
 "UEC"
 ],
 [
@@ -24136,7 +24276,7 @@
 "UFI"
 ],
 [
-"UFP Industries Inc",
+"UFP Industries  Inc.",
 "UFPI"
 ],
 [
@@ -24148,7 +24288,7 @@
 "UG"
 ],
 [
-"Ugi Corp",
+"UGI Corporation",
 "UGI"
 ],
 [
@@ -24156,11 +24296,11 @@
 "UGP"
 ],
 [
-"U-Haul Holding Co",
+"U-Haul Holding Company",
 "UHAL"
 ],
 [
-"U-Haul Holding Co Series N",
+"U-Haul Holding Company Series N",
 "UHAL-B"
 ],
 [
@@ -24172,11 +24312,11 @@
 "UHT"
 ],
 [
-"Ubiquiti Inc",
+"Ubiquiti Inc.",
 "UI"
 ],
 [
-"Unisys Corp",
+"Unisys Corporation",
 "UIS"
 ],
 [
@@ -24192,7 +24332,7 @@
 "ULBI"
 ],
 [
-"Frontier Group Holdings Inc",
+"Frontier Group Holdings  Inc.",
 "ULCC"
 ],
 [
@@ -24236,7 +24376,7 @@
 "UNCY"
 ],
 [
-"UniFirst Corp",
+"UniFirst Corporation",
 "UNF"
 ],
 [
@@ -24256,7 +24396,7 @@
 "UNM"
 ],
 [
-"Union Pacific Corp",
+"Union Pacific Corporation",
 "UNP"
 ],
 [
@@ -24272,15 +24412,15 @@
 "UONEK"
 ],
 [
-"Wheels Up Experience Inc",
+"Wheels Up Experience Inc.",
 "UP"
 ],
 [
-"Upstream Bio Inc",
+"Upstream Bio  Inc.",
 "UPB"
 ],
 [
-"Upbound Group Inc",
+"Upbound Group  Inc.",
 "UPBD"
 ],
 [
@@ -24296,11 +24436,11 @@
 "UPS"
 ],
 [
-"Upstart Holdings Inc",
+"Upstart Holdings  Inc.",
 "UPST"
 ],
 [
-"Upwork Inc",
+"Upwork Inc.",
 "UPWK"
 ],
 [
@@ -24308,7 +24448,7 @@
 "UPXI"
 ],
 [
-"Urban Outfitters Inc",
+"Urban Outfitters  Inc.",
 "URBN"
 ],
 [
@@ -24316,11 +24456,11 @@
 "URG"
 ],
 [
-"Urogen Pharma Ltd",
+"UroGen Pharma Ltd.",
 "URGN"
 ],
 [
-"United Rentals Inc",
+"United Rentals  Inc.",
 "URI"
 ],
 [
@@ -24336,7 +24476,7 @@
 "USAC"
 ],
 [
-"USA Rare Earth Inc",
+"USA Rare Earth  Inc.",
 "USAR"
 ],
 [
@@ -24368,7 +24508,7 @@
 "USEA"
 ],
 [
-"US Foods Holding Corp",
+"US Foods Holding Corp.",
 "USFD"
 ],
 [
@@ -24400,11 +24540,11 @@
 "UTG"
 ],
 [
-"United Therapeutics Corp",
+"United Therapeutics Corporation",
 "UTHR"
 ],
 [
-"Universal Technical Institute Inc",
+"Universal Technical Institute  Inc.",
 "UTI"
 ],
 [
@@ -24416,7 +24556,7 @@
 "UTMD"
 ],
 [
-"UTStarcom Holdings Corp",
+"UTStarcom Holdings Corp.",
 "UTSI"
 ],
 [
@@ -24428,7 +24568,7 @@
 "UUU"
 ],
 [
-"Energy Fuels Inc",
+"Energy Fuels Inc.",
 "UUUU"
 ],
 [
@@ -24440,11 +24580,11 @@
 "UVSP"
 ],
 [
-"Universal Corp",
+"Universal Corporation",
 "UVV"
 ],
 [
-"UWM Holdings Corp",
+"UWM Holdings Corporation",
 "UWMC"
 ],
 [
@@ -24480,7 +24620,7 @@
 "UZX"
 ],
 [
-"Visa Inc",
+"Visa Inc.",
 "V"
 ],
 [
@@ -24488,7 +24628,7 @@
 "VABK"
 ],
 [
-"Marriott Vacations Worldwide Corp",
+"Marriott Vacations Worldwide Corporation",
 "VAC"
 ],
 [
@@ -24508,7 +24648,7 @@
 "VAL"
 ],
 [
-"Vale SA ADR",
+"Vale S.A. ADR",
 "VALE"
 ],
 [
@@ -24540,11 +24680,11 @@
 "VBNK"
 ],
 [
-"Visteon Corp",
+"Visteon Corporation",
 "VC"
 ],
 [
-"Vericel Corp",
+"Vericel Corporation",
 "VCEL"
 ],
 [
@@ -24556,7 +24696,7 @@
 "VCRE"
 ],
 [
-"Victory Capital Holdings Inc",
+"Victory Capital Holdings  Inc.",
 "VCTR"
 ],
 [
@@ -24568,7 +24708,7 @@
 "VCX"
 ],
 [
-"Veracyte Inc",
+"Veracyte  Inc.",
 "VCYT"
 ],
 [
@@ -24588,11 +24728,11 @@
 "VEEA"
 ],
 [
-"Twin Vee PowerCats Co (Pre-Reincorporation)",
+"Twin Vee PowerCats Co (Nevada)",
 "VEEE"
 ],
 [
-"Veeva Systems Inc",
+"Veeva Systems Inc.",
 "VEEV"
 ],
 [
@@ -24612,7 +24752,7 @@
 "VEON"
 ],
 [
-"Vera Therapeutics  Inc",
+"Vera Therapeutics  Inc.",
 "VERA"
 ],
 [
@@ -24624,15 +24764,15 @@
 "VERI"
 ],
 [
-"Veru Inc",
+"Veru Inc.",
 "VERU"
 ],
 [
-"Vertex Inc",
+"Vertex  Inc.",
 "VERX"
 ],
 [
-"Vermilion Energy Inc",
+"Vermilion Energy Inc.",
 "VET"
 ],
 [
@@ -24644,15 +24784,11 @@
 "VFF"
 ],
 [
-"Abrdn National Municipal Income Mutual Fund",
-"VFL"
-],
-[
 "VinFast Auto Ltd",
 "VFS"
 ],
 [
-"Venture Global Inc",
+"Venture Global  Inc.",
 "VG"
 ],
 [
@@ -24692,15 +24828,15 @@
 "VHI"
 ],
 [
-"Venhub Global Inc",
+"Venhub Global  Inc.",
 "VHUB"
 ],
 [
-"Via Transportation Inc",
+"Via Transportation  Inc.",
 "VIA"
 ],
 [
-"Viavi Solutions Inc",
+"Viavi Solutions Inc.",
 "VIAV"
 ],
 [
@@ -24708,7 +24844,7 @@
 "VICI"
 ],
 [
-"Vicor Corp",
+"Vicor Corporation",
 "VICR"
 ],
 [
@@ -24716,11 +24852,15 @@
 "VIDA"
 ],
 [
+"Viking Acquisition Corp II",
+"VII"
+],
+[
 "Viking Acquisition II Units",
 "VII-U"
 ],
 [
-"Viking Holdings Ltd(Pembroke)",
+"Viking Holdings Ltd",
 "VIK"
 ],
 [
@@ -24732,11 +24872,15 @@
 "VIOT"
 ],
 [
-"Vipshop Holdings Ltd ADR",
+"Vulcan Infrastructure and Power Inc",
+"VIP"
+],
+[
+"Vipshop Holdings Limited ADR",
 "VIPS"
 ],
 [
-"Vir Biotechnology Inc",
+"Vir Biotechnology  Inc.",
 "VIR"
 ],
 [
@@ -24752,7 +24896,7 @@
 "VISN"
 ],
 [
-"Vista Energy SAB de CV ADR",
+"Vista Energy  S.A.B. de C.V. ADR",
 "VIST"
 ],
 [
@@ -24784,7 +24928,7 @@
 "VKQ"
 ],
 [
-"Viking Therapeutics Inc",
+"Viking Therapeutics  Inc.",
 "VKTX"
 ],
 [
@@ -24798,6 +24942,14 @@
 [
 "Valero Energy Corp",
 "VLO"
+],
+[
+"Velos Acquisition I Corp",
+"VLOS"
+],
+[
+"Velos Acquisition I Units",
+"VLOSU"
 ],
 [
 "Controladora Vuela Compania de Aviacion SAB de CV ADR",
@@ -24840,16 +24992,20 @@
 "VMD"
 ],
 [
-"Versamet Royalties Corp",
+"Versamet Royalties Corporation",
 "VMET"
 ],
 [
-"Valmont Industries Inc",
+"Valmont Industries  Inc.",
 "VMI"
 ],
 [
 "Invesco Municipal Opportunity Trust",
 "VMO"
+],
+[
+"Vivmark Residential",
+"VMRK"
 ],
 [
 "Vince Holding Corp",
@@ -24860,7 +25016,7 @@
 "VNDA"
 ],
 [
-"VNET Group Inc ADR",
+"VNET Group  Inc. ADR",
 "VNET"
 ],
 [
@@ -24884,7 +25040,7 @@
 "VNRX"
 ],
 [
-"Vontier Corp",
+"Vontier Corporation",
 "VNT"
 ],
 [
@@ -24900,7 +25056,11 @@
 "VOD"
 ],
 [
-"Vor Biopharma Inc",
+"Vogenx  Inc.",
+"VOGX"
+],
+[
+"Vor Biopharma Inc.",
 "VOR"
 ],
 [
@@ -24908,15 +25068,15 @@
 "VOXR"
 ],
 [
-"Voya Financial Inc",
+"Voya Financial  Inc.",
 "VOYA"
 ],
 [
-"Voyager Technologies Inc",
+"Voyager Technologies  Inc.",
 "VOYG"
 ],
 [
-"Vishay Precision Group Inc",
+"Vishay Precision Group  Inc.",
 "VPG"
 ],
 [
@@ -24940,11 +25100,11 @@
 "VRDN"
 ],
 [
-"Varex Imaging Corp",
+"Varex Imaging Corporation",
 "VREX"
 ],
 [
-"Vroom Inc",
+"Vroom  Inc.",
 "VRM"
 ],
 [
@@ -24952,19 +25112,19 @@
 "VRME"
 ],
 [
-"Varonis Systems Inc",
+"Varonis Systems  Inc.",
 "VRNS"
 ],
 [
-"Verra Mobility Corp",
+"Verra Mobility Corporation",
 "VRRM"
 ],
 [
-"Verisk Analytics Inc",
+"Verisk Analytics  Inc.",
 "VRSK"
 ],
 [
-"VeriSign  Inc",
+"VeriSign  Inc.",
 "VRSN"
 ],
 [
@@ -24976,7 +25136,7 @@
 "VRTS"
 ],
 [
-"Vertex Pharmaceuticals Inc",
+"Vertex Pharmaceuticals Incorporated",
 "VRTX"
 ],
 [
@@ -25000,8 +25160,8 @@
 "VSEC"
 ],
 [
-"Vsee Health Inc",
-"VSEE"
+"Vse Corporation Tangible Equity Units",
+"VSECU"
 ],
 [
 "Vishay Intertechnology Inc",
@@ -25016,23 +25176,19 @@
 "VSNT"
 ],
 [
-"Vistra Corp",
+"Vistra Corp.",
 "VST"
-],
-[
-"Vestand Inc",
-"VSTD"
 ],
 [
 "Verastem Inc",
 "VSTM"
 ],
 [
-"Vestis Corp",
+"Vestis Corporation",
 "VSTS"
 ],
 [
-"Victoria's Secret & Co",
+"Victoria's Secret & Co.",
 "VSXY"
 ],
 [
@@ -25060,15 +25216,15 @@
 "VTN"
 ],
 [
-"Bristow Group Inc",
+"Bristow Group Inc.",
 "VTOL"
 ],
 [
-"Ventas Inc",
+"Ventas  Inc.",
 "VTR"
 ],
 [
-"Viatris Inc",
+"Viatris Inc.",
 "VTRS"
 ],
 [
@@ -25100,7 +25256,7 @@
 "VVV"
 ],
 [
-"V2X Inc",
+"V2X  Inc.",
 "VVX"
 ],
 [
@@ -25108,15 +25264,11 @@
 "VWAV"
 ],
 [
-"Voyager Therapeutics Inc",
+"Voyager Therapeutics  Inc.",
 "VYGR"
 ],
 [
-"Vyne Therapeutics Inc",
-"VYNE"
-],
-[
-"NCR Voyix Corp",
+"NCR Voyix Corporation",
 "VYX"
 ],
 [
@@ -25124,11 +25276,11 @@
 "VZ"
 ],
 [
-"Vizsla Silver Corp",
+"Vizsla Silver Corp.",
 "VZLA"
 ],
 [
-"Wayfair Inc",
+"Wayfair Inc.",
 "W"
 ],
 [
@@ -25152,10 +25304,6 @@
 "WAFU"
 ],
 [
-"Top KingWin Ltd",
-"WAI"
-],
-[
 "Western Alliance Bancorp",
 "WAL"
 ],
@@ -25172,6 +25320,10 @@
 "WAT"
 ],
 [
+"Inflection Point Acquisition Corp III",
+"WATR"
+],
+[
 "Energous Corp",
 "WATT"
 ],
@@ -25180,7 +25332,7 @@
 "WAVE"
 ],
 [
-"Waystar Holding Corp",
+"Waystar Holding Corp.",
 "WAY"
 ],
 [
@@ -25188,16 +25340,12 @@
 "WB"
 ],
 [
-"Warner Bros Discovery Inc",
+"Warner Bros. Discovery  Inc.",
 "WBD"
 ],
 [
 "WaterBridge Infrastructure LLC",
 "WBI"
-],
-[
-"Webster Financial Corp",
-"WBS"
 ],
 [
 "Webtoon Entertainment Inc",
@@ -25212,11 +25360,11 @@
 "WBX"
 ],
 [
-"Wesco International Inc",
+"WESCO International  Inc.",
 "WCC"
 ],
 [
-"Waste Connections  Inc",
+"Waste Connections  Inc.",
 "WCN"
 ],
 [
@@ -25228,7 +25376,7 @@
 "WD"
 ],
 [
-"Workday Inc",
+"Workday  Inc.",
 "WDAY"
 ],
 [
@@ -25236,11 +25384,11 @@
 "WDC"
 ],
 [
-"WD-40 Co",
+"WD-40 Company",
 "WDFC"
 ],
 [
-"Waterdrop Inc ADR",
+"Waterdrop Inc. ADR",
 "WDH"
 ],
 [
@@ -25256,15 +25404,15 @@
 "WEA"
 ],
 [
-"Weave Communications Inc",
+"Weave Communications  Inc.",
 "WEAV"
 ],
 [
-"WEC Energy Group Inc",
+"WEC Energy Group  Inc.",
 "WEC"
 ],
 [
-"Welltower Inc",
+"Welltower Inc.",
 "WELL"
 ],
 [
@@ -25288,7 +25436,7 @@
 "WENNU"
 ],
 [
-"Werner Enterprises Inc",
+"Werner Enterprises  Inc.",
 "WERN"
 ],
 [
@@ -25308,7 +25456,7 @@
 "WETO"
 ],
 [
-"WEX Inc",
+"WEX Inc.",
 "WEX"
 ],
 [
@@ -25332,7 +25480,7 @@
 "WFF"
 ],
 [
-"West Fraser Timber Co Ltd",
+"West Fraser Timber Co. Ltd.",
 "WFG"
 ],
 [
@@ -25340,23 +25488,19 @@
 "WFRD"
 ],
 [
-"Winnebago Industries Inc",
+"Winnebago Industries  Inc.",
 "WGO"
 ],
 [
-"Wellgistics Health Inc",
-"WGRX"
-],
-[
-"GeneDx Holdings Corp",
+"GeneDx Holdings Corp.",
 "WGS"
 ],
 [
-"Wyndham Hotels & Resorts Inc",
+"Wyndham Hotels & Resorts  Inc.",
 "WH"
 ],
 [
-"Cactus Inc",
+"Cactus  Inc.",
 "WHD"
 ],
 [
@@ -25388,7 +25532,7 @@
 "WHLRP"
 ],
 [
-"Whirlpool Corp",
+"Whirlpool Corporation",
 "WHR"
 ],
 [
@@ -25408,15 +25552,15 @@
 "WIMI"
 ],
 [
-"Winmark Corp",
+"Winmark Corporation",
 "WINA"
 ],
 [
-"Wingstop Inc",
+"Wingstop Inc.",
 "WING"
 ],
 [
-"Wipro Ltd ADR",
+"Wipro Limited ADR",
 "WIT"
 ],
 [
@@ -25424,15 +25568,15 @@
 "WIW"
 ],
 [
-"Wix.Com Ltd",
+"Wix.com Ltd.",
 "WIX"
 ],
 [
-"Workiva Inc",
+"Workiva Inc.",
 "WK"
 ],
 [
-"World Kinect Corp",
+"World Kinect Corporation",
 "WKC"
 ],
 [
@@ -25456,11 +25600,15 @@
 "WLACU"
 ],
 [
+"Wilco 63 Corp",
+"WLCO"
+],
+[
 "Wilco 63 Units",
 "WLCOU"
 ],
 [
-"Willdan Group  Inc",
+"Willdan Group  Inc.",
 "WLDN"
 ],
 [
@@ -25468,7 +25616,7 @@
 "WLDS"
 ],
 [
-"Willis Lease Finance Corp",
+"Willis Lease Finance Corporation",
 "WLFC"
 ],
 [
@@ -25488,15 +25636,15 @@
 "WLKP"
 ],
 [
-"Wealthfront Corp",
+"Wealthfront Corporation",
 "WLTH"
 ],
 [
-"John Wiley & Sons Inc Class A",
+"John Wiley & Sons  Inc. Class A",
 "WLY"
 ],
 [
-"John Wiley & Sons Inc Class B",
+"John Wiley & Sons  Inc. Class B",
 "WLYB"
 ],
 [
@@ -25504,15 +25652,15 @@
 "WM"
 ],
 [
-"Williams Companies Inc",
+"The Williams Companies  Inc.",
 "WMB"
 ],
 [
-"Warner Music Group Corp",
+"Warner Music Group Corp.",
 "WMG"
 ],
 [
-"Weis Markets Inc",
+"Weis Markets  Inc.",
 "WMK"
 ],
 [
@@ -25524,7 +25672,7 @@
 "WMT"
 ],
 [
-"Wabash National Corp",
+"Wabash National Corporation",
 "WNC"
 ],
 [
@@ -25548,7 +25696,7 @@
 "WOOF"
 ],
 [
-"Worthington Enterprises  Inc",
+"Worthington Enterprises  Inc.",
 "WOR"
 ],
 [
@@ -25560,11 +25708,11 @@
 "WPAC-U"
 ],
 [
-"W.p. Carey Inc",
+"W.P. CAREY INC.",
 "WPC"
 ],
 [
-"Wheaton Precious Metals Corp",
+"Wheaton Precious Metals Corp.",
 "WPM"
 ],
 [
@@ -25580,7 +25728,7 @@
 "WRAP"
 ],
 [
-"W. R. Berkley Corp",
+"W. R. Berkley Corporation",
 "WRB"
 ],
 [
@@ -25604,7 +25752,7 @@
 "WS"
 ],
 [
-"WesBanco Inc",
+"Wesbanco  Inc.",
 "WSBC"
 ],
 [
@@ -25620,7 +25768,7 @@
 "WSBK"
 ],
 [
-"WillScot Holdings Corp",
+"WillScot Holdings Corporation",
 "WSC"
 ],
 [
@@ -25628,11 +25776,11 @@
 "WSE"
 ],
 [
-"WSFS Financial Corp",
+"WSFS Financial Corporation",
 "WSFS"
 ],
 [
-"WeShop Holdings Ltd",
+"WeShop Holdings Limited",
 "WSHP"
 ],
 [
@@ -25640,11 +25788,11 @@
 "WSM"
 ],
 [
-"Watsco Inc",
+"Watsco  Inc.",
 "WSO"
 ],
 [
-"Watsco Inc Class B",
+"Watsco  Inc. Class B",
 "WSO-B"
 ],
 [
@@ -25652,7 +25800,7 @@
 "WSR"
 ],
 [
-"West Pharmaceutical Services Inc",
+"West Pharmaceutical Services  Inc.",
 "WST"
 ],
 [
@@ -25668,7 +25816,7 @@
 "WSTNU"
 ],
 [
-"WisdomTree Inc",
+"WisdomTree  Inc.",
 "WT"
 ],
 [
@@ -25700,11 +25848,11 @@
 "WTGUU"
 ],
 [
-"W&T Offshore Inc",
+"W&T Offshore  Inc.",
 "WTI"
 ],
 [
-"White Mountains Insurance Group Ltd",
+"White Mountains Insurance Group  Ltd.",
 "WTM"
 ],
 [
@@ -25712,27 +25860,27 @@
 "WTRG"
 ],
 [
-"Watts Water Technologies Inc",
+"Watts Water Technologies  Inc.",
 "WTS"
 ],
 [
-"Select Water Solutions Inc",
+"Select Water Solutions  Inc.",
 "WTTR"
 ],
 [
-"Willis Towers Watson PLC",
+"Willis Towers Watson Public Limited Company",
 "WTW"
 ],
 [
-"Western Union Co",
+"The Western Union Company",
 "WU"
 ],
 [
-"Terawulf Inc",
+"TeraWulf Inc.",
 "WULF"
 ],
 [
-"WAVE Life Sciences Ltd",
+"Wave Life Sciences Ltd.",
 "WVE"
 ],
 [
@@ -25748,7 +25896,7 @@
 "WW"
 ],
 [
-"Woodward Inc",
+"Woodward  Inc.",
 "WWD"
 ],
 [
@@ -25756,7 +25904,7 @@
 "WWR"
 ],
 [
-"Wolverine World Wide Inc",
+"Wolverine World Wide  Inc.",
 "WWW"
 ],
 [
@@ -25764,7 +25912,7 @@
 "WXM"
 ],
 [
-"Weyerhaeuser Co",
+"Weyerhaeuser Company",
 "WY"
 ],
 [
@@ -25776,7 +25924,7 @@
 "WYHG"
 ],
 [
-"Wynn Resorts Ltd",
+"Wynn Resorts  Limited",
 "WYNN"
 ],
 [
@@ -25828,11 +25976,11 @@
 "XELB"
 ],
 [
-"Xenon Pharmaceuticals Inc",
+"Xenon Pharmaceuticals Inc.",
 "XENE"
 ],
 [
-"Xeris Biopharma Holdings Inc",
+"Xeris Biopharma Holdings  Inc.",
 "XERS"
 ],
 [
@@ -25844,7 +25992,7 @@
 "XFLH-U"
 ],
 [
-"XAI Floating Rate & Alternative Income Trust",
+"XAI Floating Rate Alternative Income Trust Closed End Fund",
 "XFLT"
 ],
 [
@@ -25852,7 +26000,7 @@
 "XFOR"
 ],
 [
-"Exagen Inc",
+"Exagen Inc.",
 "XGN"
 ],
 [
@@ -25864,12 +26012,16 @@
 "XHLD"
 ],
 [
-"Xenia Hotels & Resorts Inc",
+"Xenia Hotels & Resorts  Inc.",
 "XHR"
 ],
 [
 "XPLR Infrastructure LP",
 "XIFR"
+],
+[
+"Churchill Capital XIII Units",
+"XIIIU"
 ],
 [
 "Xilio Therapeutics Inc",
@@ -25880,11 +26032,11 @@
 "XMAX"
 ],
 [
-"Xometry Inc",
+"Xometry  Inc.",
 "XMTR"
 ],
 [
-"Xencor Inc",
+"Xencor  Inc.",
 "XNCR"
 ],
 [
@@ -25896,20 +26048,8 @@
 "XNET"
 ],
 [
-"Exxon Mobil Corp",
+"Exxonmobil Holdings Corp",
 "XOM"
-],
-[
-"Xoma Royalty Corp",
-"XOMA"
-],
-[
-"Xoma Royalty Depository Shares Series B",
-"XOMAO"
-],
-[
-"XOMA Royalty 8.625 Cumulative Perpetual Pref Shs Series A",
-"XOMAP"
 ],
 [
 "Xos Inc",
@@ -25920,7 +26060,7 @@
 "XP"
 ],
 [
-"Xpel Inc",
+"XPEL  Inc.",
 "XPEL"
 ],
 [
@@ -25940,7 +26080,7 @@
 "XPO"
 ],
 [
-"Xponential Fitness Inc",
+"Xponential Fitness  Inc.",
 "XPOF"
 ],
 [
@@ -25948,11 +26088,11 @@
 "XPON"
 ],
 [
-"Expro Group Holdings NV",
+"Expro Ltd",
 "XPRO"
 ],
 [
-"DENTSPLY SIRONA Inc",
+"DENTSPLY SIRONA Inc.",
 "XRAY"
 ],
 [
@@ -25982,6 +26122,10 @@
 [
 "Xsolla SPAC 1 Units",
 "XSLLU"
+],
+[
+"Karman Line Acquisition Units",
+"XTERU"
 ],
 [
 "XTI Aerospace Inc",
@@ -26016,7 +26160,7 @@
 "XYL"
 ],
 [
-"Block Inc",
+"Block  Inc.",
 "XYZ"
 ],
 [
@@ -26028,8 +26172,12 @@
 "YAAS"
 ],
 [
-"Yalla Group Ltd ADR",
+"Yalla Group Limited ADR",
 "YALA"
+],
+[
+"Yarrow Bioscience Inc",
+"YARW"
 ],
 [
 "Yuanbao Inc ADR",
@@ -26060,19 +26208,19 @@
 "YDKG"
 ],
 [
-"Yelp Inc",
+"Yelp Inc.",
 "YELP"
 ],
 [
-"Yeti Holdings Inc",
+"YETI Holdings  Inc.",
 "YETI"
 ],
 [
-"Yext Inc",
+"Yext  Inc.",
 "YEXT"
 ],
 [
-"LQR House Inc",
+"LQR House Inc. (Pre-Reincorporation)",
 "YHC"
 ],
 [
@@ -26100,6 +26248,10 @@
 "YIBO"
 ],
 [
+"Yorkville International Capital Corp",
+"YICC"
+],
+[
 "Yorkville International Capital Units",
 "YICCU"
 ],
@@ -26112,7 +26264,7 @@
 "YMAT"
 ],
 [
-"Full Truck Alliance Co Ltd ADR",
+"Full Truck Alliance Co. Ltd. ADR",
 "YMM"
 ],
 [
@@ -26120,15 +26272,11 @@
 "YMT"
 ],
 [
-"Concorde International Group Ltd",
-"YOOV"
-],
-[
 "York Water Co",
 "YORW"
 ],
 [
-"Clear Secure Inc",
+"CLEAR Secure  Inc.",
 "YOU"
 ],
 [
@@ -26168,7 +26316,7 @@
 "YTRA"
 ],
 [
-"Yum! Brands Inc",
+"Yum! Brands  Inc.",
 "YUM"
 ],
 [
@@ -26188,7 +26336,7 @@
 "YYGH"
 ],
 [
-"Zillow Group Inc Class C",
+"Zillow Group  Inc. Class C",
 "Z"
 ],
 [
@@ -26196,11 +26344,11 @@
 "ZBAO"
 ],
 [
-"Zimmer Biomet Holdings  Inc",
+"Zimmer Biomet Holdings  Inc.",
 "ZBH"
 ],
 [
-"Zenas Biopharma Inc",
+"Zenas BioPharma  Inc.",
 "ZBIO"
 ],
 [
@@ -26228,7 +26376,7 @@
 "ZENA"
 ],
 [
-"Zeo Energy Corp",
+"Zeo Energy Corp.",
 "ZEO"
 ],
 [
@@ -26236,11 +26384,11 @@
 "ZEPP"
 ],
 [
-"Zeta Global Holdings Corp",
+"Zeta Global Holdings Corp.",
 "ZETA"
 ],
 [
-"Zillow Group Inc Class A",
+"Zillow Group  Inc. Class A",
 "ZG"
 ],
 [
@@ -26256,7 +26404,7 @@
 "ZIM"
 ],
 [
-"Zions Bancorporation NA",
+"Zions Bancorporation  National Association",
 "ZION"
 ],
 [
@@ -26296,7 +26444,7 @@
 "ZLAB"
 ],
 [
-"Zoom Communications Inc",
+"Zoom Communications  Inc.",
 "ZM"
 ],
 [
@@ -26308,7 +26456,7 @@
 "ZNTL"
 ],
 [
-"CleanCore Solutions Inc",
+"Zone Frontier Inc",
 "ZONE"
 ],
 [
@@ -26316,7 +26464,7 @@
 "ZOOZ"
 ],
 [
-"Zscaler Inc",
+"Zscaler  Inc.",
 "ZS"
 ],
 [
@@ -26348,7 +26496,7 @@
 "ZTS"
 ],
 [
-"Zumiez Inc",
+"Zumiez Inc.",
 "ZUMZ"
 ],
 [
@@ -26372,7 +26520,7 @@
 "ZYBT"
 ],
 [
-"Zymeworks Inc",
+"Zymeworks Inc.",
 "ZYME"
 ],
 [
