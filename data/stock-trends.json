@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-24T08:08:59.268Z",
+ "generated_at": "2026-08-25T10:10:13.832Z",
  "source": "Gemini + Google Search 그라운딩 — 한국·미국 독립 검색 후 교차 배치 (AI 추정 순위)",
  "items": [
   {
@@ -11,10 +11,10 @@
   },
   {
    "rank": 2,
-   "name_ko": "스페이스X",
-   "ticker": "SPCX",
+   "name_ko": "엔비디아",
+   "ticker": "NVDA",
    "market": "미국",
-   "score": 100
+   "score": 98
   },
   {
    "rank": 3,
@@ -25,192 +25,192 @@
   },
   {
    "rank": 4,
-   "name_ko": "엔비디아",
-   "ticker": "NVDA",
+   "name_ko": "테슬라",
+   "ticker": "TSLA",
    "market": "미국",
    "score": 95
   },
   {
    "rank": 5,
-   "name_ko": "달바글로벌",
-   "ticker": "미확인",
+   "name_ko": "두산에너빌리티",
+   "ticker": "034020.KS",
    "market": "한국",
-   "score": 88
+   "score": 90
   },
   {
    "rank": 6,
-   "name_ko": "네비우스",
-   "ticker": "NBIS",
+   "name_ko": "게임스톱",
+   "ticker": "GME",
    "market": "미국",
    "score": 90
   },
   {
    "rank": 7,
-   "name_ko": "파마리서치",
-   "ticker": "214450.KQ",
+   "name_ko": "현대건설",
+   "ticker": "000720.KS",
    "market": "한국",
-   "score": 85
+   "score": 88
   },
   {
    "rank": 8,
-   "name_ko": "마이크론 테크놀로지",
-   "ticker": "MU",
+   "name_ko": "모더나",
+   "ticker": "MRNA",
    "market": "미국",
    "score": 88
   },
   {
    "rank": 9,
-   "name_ko": "삼성SDI",
-   "ticker": "006400.KS",
+   "name_ko": "한전기술",
+   "ticker": "052690.KS",
    "market": "한국",
-   "score": 82
+   "score": 85
   },
   {
    "rank": 10,
-   "name_ko": "웬디스",
-   "ticker": "WEN",
+   "name_ko": "마이크론 테크놀로지",
+   "ticker": "MU",
    "market": "미국",
    "score": 85
   },
   {
    "rank": 11,
-   "name_ko": "삼성전자우",
-   "ticker": "005935.KS",
+   "name_ko": "셀트리온",
+   "ticker": "068270.KS",
    "market": "한국",
-   "score": 80
+   "score": 82
   },
   {
    "rank": 12,
-   "name_ko": "브로드컴",
-   "ticker": "AVGO",
+   "name_ko": "팔란티어 테크놀로지스",
+   "ticker": "PLTR",
    "market": "미국",
    "score": 82
   },
   {
    "rank": 13,
-   "name_ko": "에코프로비엠",
-   "ticker": "247540.KQ",
+   "name_ko": "삼성바이오로직스",
+   "ticker": "207940.KS",
    "market": "한국",
-   "score": 78
+   "score": 80
   },
   {
    "rank": 14,
-   "name_ko": "소파이",
-   "ticker": "SOFI",
+   "name_ko": "샌디스크",
+   "ticker": "SNDK",
+   "market": "미국",
+   "score": 80
+  },
+  {
+   "rank": 15,
+   "name_ko": "LG에너지솔루션",
+   "ticker": "373220.KS",
+   "market": "한국",
+   "score": 78
+  },
+  {
+   "rank": 16,
+   "name_ko": "스페이스X",
+   "ticker": "SPCX",
    "market": "미국",
    "score": 78
   },
   {
-   "rank": 15,
-   "name_ko": "에코프로",
-   "ticker": "086520.KQ",
-   "market": "한국",
-   "score": 75
-  },
-  {
-   "rank": 16,
-   "name_ko": "HIVE 블록체인",
-   "ticker": "HIVE",
-   "market": "미국",
-   "score": 75
-  },
-  {
    "rank": 17,
-   "name_ko": "삼성전기",
-   "ticker": "009150.KS",
+   "name_ko": "삼성SDI",
+   "ticker": "006400.KS",
    "market": "한국",
-   "score": 72
+   "score": 75
   },
   {
    "rank": 18,
-   "name_ko": "넷플릭스",
-   "ticker": "NFLX",
+   "name_ko": "인텔",
+   "ticker": "INTC",
    "market": "미국",
-   "score": 70
+   "score": 75
   },
   {
    "rank": 19,
-   "name_ko": "LG에너지솔루션",
-   "ticker": "373220.KS",
+   "name_ko": "에코프로비엠",
+   "ticker": "247540.KQ",
+   "market": "한국",
+   "score": 73
+  },
+  {
+   "rank": 20,
+   "name_ko": "알파벳",
+   "ticker": "GOOGL",
+   "market": "미국",
+   "score": 73
+  },
+  {
+   "rank": 21,
+   "name_ko": "에코프로",
+   "ticker": "086520.KQ",
    "market": "한국",
    "score": 70
   },
   {
-   "rank": 20,
-   "name_ko": "아리스타 네트웍스",
-   "ticker": "ANET",
+   "rank": 22,
+   "name_ko": "아마존",
+   "ticker": "AMZN",
    "market": "미국",
-   "score": 68
+   "score": 70
   },
   {
-   "rank": 21,
+   "rank": 23,
    "name_ko": "현대차",
    "ticker": "005380.KS",
    "market": "한국",
    "score": 68
   },
   {
-   "rank": 22,
-   "name_ko": "올스테이트",
-   "ticker": "ALL",
-   "market": "미국",
-   "score": 65
-  },
-  {
-   "rank": 23,
-   "name_ko": "SK스퀘어",
-   "ticker": "402340.KS",
-   "market": "한국",
-   "score": 65
-  },
-  {
    "rank": 24,
-   "name_ko": "가트너",
-   "ticker": "IT",
+   "name_ko": "마이크로소프트",
+   "ticker": "MSFT",
    "market": "미국",
-   "score": 62
+   "score": 68
   },
   {
    "rank": 25,
-   "name_ko": "셀트리온",
-   "ticker": "068270.KS",
+   "name_ko": "주성엔지니어링",
+   "ticker": "036220.KQ",
    "market": "한국",
-   "score": 62
+   "score": 65
   },
   {
    "rank": 26,
-   "name_ko": "아메텍",
-   "ticker": "AME",
-   "market": "미국",
-   "score": 60
-  },
-  {
-   "rank": 27,
-   "name_ko": "한화오션",
-   "ticker": "042660.KS",
-   "market": "한국",
-   "score": 60
-  },
-  {
-   "rank": 28,
    "name_ko": "애플",
    "ticker": "AAPL",
    "market": "미국",
-   "score": 55
+   "score": 65
+  },
+  {
+   "rank": 27,
+   "name_ko": "원익IPS",
+   "ticker": "240810.KQ",
+   "market": "한국",
+   "score": 63
+  },
+  {
+   "rank": 28,
+   "name_ko": "브로드컴",
+   "ticker": "AVGO",
+   "market": "미국",
+   "score": 63
   },
   {
    "rank": 29,
-   "name_ko": "두산에너빌리티",
-   "ticker": "034020.KS",
+   "name_ko": "리노공업",
+   "ticker": "058470.KQ",
    "market": "한국",
-   "score": 58
+   "score": 60
   },
   {
    "rank": 30,
-   "name_ko": "테슬라",
-   "ticker": "TSLA",
+   "name_ko": "아틀라시안",
+   "ticker": "TEAM",
    "market": "미국",
-   "score": 50
+   "score": 60
   }
  ]
 }
