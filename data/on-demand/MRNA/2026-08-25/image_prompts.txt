@@ -1,0 +1,11 @@
+# MRNA 주간 배경 이미지 프롬프트 — 2026-08-25
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A sophisticated pharmaceutical research laboratory bathed in analytical purple and violet lighting, featuring scientists in white coats examining holographic double helix DNA strands floating above sleek workstations, advanced genomic sequencing equipment lining the walls, mRNA molecular structures rendered as glowing purple particles suspended in air, with a small cluster of vaccine vials placed subtly on a side counter as secondary detail, deep scientific atmosphere, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A vibrant biotech manufacturing facility showcasing rapid growth energy with emerald green ambient lighting, automated bioreactor tanks rising majestically with glowing green liquid processing mRNA compounds, robotic arms assembling therapeutic products with dynamic upward motion trails, clean room technicians in green-tinted protective suits monitoring expansion, a small vial rack tucked in the corner as a supporting element, glowing motion lines suggesting acceleration and momentum, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A visionary pharmaceutical innovation center illuminated by warm golden hour light streaming through tall windows, researchers collaborating around a large translucent display showing personalized cancer vaccine molecular blueprints, futuristic mRNA therapy development pods glowing amber, patient wellness silhouettes symbolizing hope and healing in the background, a small vial of therapeutic solution resting on a golden-lit side table as a subtle supporting object, warm inspiring golden light, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

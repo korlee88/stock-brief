@@ -1,0 +1,29 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+모더나, 요즘 어떨까요? *$138.89*예요
+*mRNA 백신·치료제* 만드는 회사죠
+*2028년 흑자 전환*이 목표예요
+매사추세츠 공장에 *1.4억 달러* 투자했죠
+*맞춤형 암 백신* 3상 성공했더라고요
+*mRNA 신약 1등 기업*으로 통해요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: *에볼라 백신 1상* 시작으로 신약 후보가 늘 거란 기대가 커요
+악재: 최근 뚜렷한 악재는 없었어요
+보합: *2분기 매출 1.45억 달러*로 조금 늘었지만 적자는 이어졌죠
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+관전 포인트 — *독감+코로나 동시접종 백신* 승인 임박
+근거 — *FDA 자문위 만장일치 찬성*으로 기대감 쑥
+20일선 대비 *+81%*, 단기 과열 신호가 보여요
+목표주가 평균 *$95.67*, 현 주가와 차이가 커요
+변수 — *RSI 72* 과열권, 차익 실현 매물 조심
+오늘도 함께해 주셔서 감사해요!
+
+IMAGE_PROMPT_0: A sophisticated pharmaceutical research laboratory bathed in analytical purple and violet lighting, featuring scientists in white coats examining holographic double helix DNA strands floating above sleek workstations, advanced genomic sequencing equipment lining the walls, mRNA molecular structures rendered as glowing purple particles suspended in air, with a small cluster of vaccine vials placed subtly on a side counter as secondary detail, deep scientific atmosphere, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A vibrant biotech manufacturing facility showcasing rapid growth energy with emerald green ambient lighting, automated bioreactor tanks rising majestically with glowing green liquid processing mRNA compounds, robotic arms assembling therapeutic products with dynamic upward motion trails, clean room technicians in green-tinted protective suits monitoring expansion, a small vial rack tucked in the corner as a supporting element, glowing motion lines suggesting acceleration and momentum, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A visionary pharmaceutical innovation center illuminated by warm golden hour light streaming through tall windows, researchers collaborating around a large translucent display showing personalized cancer vaccine molecular blueprints, futuristic mRNA therapy development pods glowing amber, patient wellness silhouettes symbolizing hope and healing in the background, a small vial of therapeutic solution resting on a golden-lit side table as a subtle supporting object, warm inspiring golden light, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

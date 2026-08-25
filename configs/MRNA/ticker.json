@@ -1,0 +1,32 @@
+{
+  "ticker": "MRNA",
+  "company_en": "Moderna, Inc.",
+  "company_ko": "모더나",
+  "industry_ko": "생명공학, 제약",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "Vials of mRNA vaccines and therapeutics, glowing with microscopic genetic code, are meticulously prepared in a sterile laboratory, representing the company's innovative approach to instructing human cells to produce therapeutic proteins.",
+  "brand_label": "MRNA BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "BNTX",
+  "key_people": [
+    "Stéphane Bancel",
+    "Noubar Afeyan"
+  ],
+  "google_trends_keywords": [
+    "모더나",
+    "MRNA 주가",
+    "모더나 백신",
+    "mRNA 치료제",
+    "모더나 암 백신"
+  ],
+  "video_tags": [
+    "Moderna",
+    "MRNA stock",
+    "mRNA vaccine",
+    "biotechnology",
+    "cancer vaccine"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-08-25T10:13:09.068Z"
+}

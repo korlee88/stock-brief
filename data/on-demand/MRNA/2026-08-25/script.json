@@ -1,0 +1,195 @@
+{
+  "generated_at": "2026-08-25",
+  "generated_by": "Claude Opus 4",
+  "title": "모더나, 요즘 어떨까요? *$138.89*예요",
+  "subtitle": "2026-08-25 ~ 2026-08-25 · 모더나, 에볼라 백신 1상 임상시험 시작 후 주가 상승",
+  "summary": {
+    "week_start": "2026-08-25",
+    "week_end": "2026-08-25",
+    "session_count": 1,
+    "total_analyzed": 5,
+    "bullish_count": 4,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 138.89,
+    "price_end": 138.89,
+    "latest_price": 138.89,
+    "today_price": 138.89,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "모더나, 에볼라 백신 1상 임상시험 시작 후 주가 상승",
+      "score": 2,
+      "reason": "새로운 백신 후보 물질의 임상시험 진입은 모더나의 파이프라인 다양성을 보여주며, 이는 장기적인 성장 잠재력에 대한 투자자들의 기대를 높여 주가에 긍정적입니다.",
+      "source": "Seeking Alpha",
+      "date": "2026-08-04",
+      "category": "Product",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "모더나, 에볼라 백신 1상 임상시험 시작 후 주가 상승",
+        "score": 2,
+        "reason": "새로운 백신 후보 물질의 임상시험 진입은 모더나의 파이프라인 다양성을 보여주며, 이는 장기적인 성장 잠재력에 대한 투자자들의 기대를 높여 주가에 긍정적입니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-04",
+        "category": "Product"
+      },
+      {
+        "title": "모더나, 미국 FDA로부터 mRNA 독감 백신 mFLUSIVA 승인 획득",
+        "score": 4,
+        "reason": "미국 FDA의 mRNA 독감 백신 승인은 모더나의 제품 파이프라인 확장과 시장 점유율 확대 가능성을 보여주며, 이는 매출 증대와 주가 상승에 긍정적인 영향을 미칠 것입니다.",
+        "source": "StockTitan",
+        "date": "2026-08-05",
+        "category": "Regulatory"
+      },
+      {
+        "title": "모더나, FDA 자문위원회에서 계절성 인플루엔자 백신 mRNA-1010의 유익성-위험성 프로파일에 만장일치 찬성표 획득",
+        "score": 4,
+        "reason": "FDA 자문위원회의 만장일치 찬성표는 백신 승인 가능성을 높여주며, 이는 시장 출시와 매출 기여에 대한 기대감을 높여 주가에 긍정적인 영향을 미칩니다.",
+        "source": "StockTitan",
+        "date": "2026-08-05",
+        "category": "Regulatory"
+      },
+      {
+        "title": "모더나, 고형암 환자 대상 종양 표적 암 항원 치료제 1상 임상시험 첫 참가자 투여",
+        "score": 3,
+        "reason": "새로운 암 치료제 후보 물질의 임상시험 진전은 모더나의 장기적인 성장 동력을 강화하며, 성공적인 결과는 미래 매출에 크게 기여할 수 있어 주가에 긍정적입니다.",
+        "source": "StockTitan",
+        "date": "2026-08-05",
+        "category": "Product"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "모더나, 2026년 2분기 매출 1억 4,500만 달러 기록, 전년 대비 소폭 증가",
+        "score": 0,
+        "reason": "매출은 소폭 증가했지만 순손실이 지속되고 있어 단기적인 주가에 큰 영향을 미치지는 않을 것으로 보입니다. 다만, 매출 성장 목표는 긍정적인 신호입니다.",
+        "source": "StockTitan",
+        "date": "2026-08-05",
+        "category": "Earnings"
+      }
+    ],
+    "neutral_count": 1,
+    "scene1_news": {
+      "bullish": {
+        "title": "모더나, 에볼라 백신 1상 임상시험 시작 후 주가 상승",
+        "score": 2,
+        "reason": "새로운 백신 후보 물질의 임상시험 진입은 모더나의 파이프라인 다양성을 보여주며, 이는 장기적인 성장 잠재력에 대한 투자자들의 기대를 높여 주가에 긍정적입니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-04",
+        "category": "Product"
+      },
+      "bearish": null,
+      "neutral": {
+        "title": "모더나, 2026년 2분기 매출 1억 4,500만 달러 기록, 전년 대비 소폭 증가",
+        "score": 0,
+        "reason": "매출은 소폭 증가했지만 순손실이 지속되고 있어 단기적인 주가에 큰 영향을 미치지는 않을 것으로 보입니다. 다만, 매출 성장 목표는 긍정적인 신호입니다.",
+        "source": "StockTitan",
+        "date": "2026-08-05",
+        "category": "Earnings"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-08-25",
+        138.89
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-08-25",
+    "today_news": [],
+    "signals": {
+      "technicals": {
+        "price": 138.89,
+        "ma20": 76.73,
+        "vs_ma20_pct": 81.0,
+        "ma60": 65.79,
+        "trend": "상승추세(20일선>60일선)",
+        "rsi14": 72.0,
+        "rsi_state": "과매수(과열)",
+        "macd_momentum": "상승 모멘텀",
+        "volatility_20d_pct": 39.2,
+        "pos_52w_pct": 76.0,
+        "high_52w": 176.66,
+        "low_52w": 22.28,
+        "mom_5d_pct": 115.5,
+        "mom_20d_pct": 149.7
+      },
+      "valuation": {
+        "목표주가_평균": 95.67,
+        "목표주가_최고": 170.0,
+        "목표주가_최저": 25.0,
+        "애널리스트_수": 18,
+        "투자의견": "중립",
+        "PER_선행": -30.3
+      }
+    },
+    "prev_day": {
+      "date": "2026-08-24",
+      "open": 142.7,
+      "close": 138.89,
+      "change_pct": -4.3
+    },
+    "month_low": {
+      "low": 52.66,
+      "current": 138.89,
+      "pct_vs_low": 163.75
+    },
+    "movement_reason": "모더나(MRNA) 주가는 2026년 8월 19일 긍정적인 암 백신 임상 3상 결과 발표로 크게 급등한 이후, 8월 20일과 24일에는 차익 실현 및 가치 재평가 등의 요인으로 하락세를 보였습니다. 8월 25일 현재 주가가 $138.89이며, 변동률은 None%이지만, 최근 주가 하락의 주요 원인은 다음과 같습니다.\n\n*   차익 실현 매물\n*   높은 기업 가치 부담\n*   지속적인 순손실",
+    "company_direction": "모더나(MRNA) 회사 소개 자료입니다.\n\n*   **주력 사업:** mRNA(메신저 리보핵산) 의약품 개발·상업화 / 코로나19 백신 '스파이크백스' 주력 / RSV(호흡기세포융합바이러스) 백신 'mRESVIA' 출시 / 계절성 백신·종양·희귀질환 치료제 개발\n*   **회사의 비전·전략 방향:** mRNA 의약품으로 인류 건강 기여 / 다각화된 mRNA 의약품 회사 전환 목표 / 계절성 백신 매출로 종양·희귀질환 투자 / 2028년까지 손익분기 달성 전략 / mRNA 플랫폼으로 신약 개발 가속화\n*   **최근 1년 내 주요 투자·설비·인수:** 매사추세츠 제조 시설에 1.4억 달러 투자 / 미국 내 mRNA 생산 역량 강화 목적 / 아레스 매니지먼트와 15억 달러 대출 계약 / Arbutus와 특허 분쟁 9.5억 달러 합의 (2026년) / 2026년 자본 지출 2억~3억 달러 예상\n*   **핵심 신제품·신기술 로드맵:** 맞춤형 암 백신 '인티스메란' 3상 성공 / 독감+코로나19 콤보 백신 2026년 승인 기대 / 노로바이러스 백신 3상 데이터 2026년 예상 / 희귀질환 치료제 개발 로드맵 진행 중 / 5년 내 신제품 15개 출시 목표\n*   **시장 내 위치·점유율:** mRNA 의약품 분야 선도 기업 / 코로나19 백신 시장의 주요 공급자 / 화이자/바이오엔테크와 mRNA 백신 시장 경쟁 / 호흡기 백신 시장 진입(mRESVIA) / 암 치료 시장 진입 발판 마련"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "모더나, 요즘 어떨까요? *$138.89*예요",
+        "*mRNA 백신·치료제* 만드는 회사죠",
+        "*2028년 흑자 전환*이 목표예요",
+        "매사추세츠 공장에 *1.4억 달러* 투자했죠",
+        "*맞춤형 암 백신* 3상 성공했더라고요",
+        "*mRNA 신약 1등 기업*으로 통해요"
+      ],
+      "body": "모더나, 요즘 어떨까요? *$138.89*예요\n*mRNA 백신·치료제* 만드는 회사죠\n*2028년 흑자 전환*이 목표예요\n매사추세츠 공장에 *1.4억 달러* 투자했죠\n*맞춤형 암 백신* 3상 성공했더라고요\n*mRNA 신약 1등 기업*으로 통해요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: *에볼라 백신 1상* 시작으로 신약 후보가 늘 거란 기대가 커요",
+        "악재: 최근 뚜렷한 악재는 없었어요",
+        "보합: *2분기 매출 1.45억 달러*로 조금 늘었지만 적자는 이어졌죠"
+      ],
+      "body": "호재: *에볼라 백신 1상* 시작으로 신약 후보가 늘 거란 기대가 커요\n악재: 최근 뚜렷한 악재는 없었어요\n보합: *2분기 매출 1.45억 달러*로 조금 늘었지만 적자는 이어졌죠"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "관전 포인트 — *독감+코로나 동시접종 백신* 승인 임박",
+        "근거 — *FDA 자문위 만장일치 찬성*으로 기대감 쑥",
+        "20일선 대비 *+81%*, 단기 과열 신호가 보여요",
+        "목표주가 평균 *$95.67*, 현 주가와 차이가 커요",
+        "변수 — *RSI 72* 과열권, 차익 실현 매물 조심",
+        "오늘도 함께해 주셔서 감사해요!"
+      ],
+      "body": "관전 포인트 — *독감+코로나 동시접종 백신* 승인 임박\n근거 — *FDA 자문위 만장일치 찬성*으로 기대감 쑥\n20일선 대비 *+81%*, 단기 과열 신호가 보여요\n목표주가 평균 *$95.67*, 현 주가와 차이가 커요\n변수 — *RSI 72* 과열권, 차익 실현 매물 조심\n오늘도 함께해 주셔서 감사해요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A sophisticated pharmaceutical research laboratory bathed in analytical purple and violet lighting, featuring scientists in white coats examining holographic double helix DNA strands floating above sleek workstations, advanced genomic sequencing equipment lining the walls, mRNA molecular structures rendered as glowing purple particles suspended in air, with a small cluster of vaccine vials placed subtly on a side counter as secondary detail, deep scientific atmosphere, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A vibrant biotech manufacturing facility showcasing rapid growth energy with emerald green ambient lighting, automated bioreactor tanks rising majestically with glowing green liquid processing mRNA compounds, robotic arms assembling therapeutic products with dynamic upward motion trails, clean room technicians in green-tinted protective suits monitoring expansion, a small vial rack tucked in the corner as a supporting element, glowing motion lines suggesting acceleration and momentum, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A visionary pharmaceutical innovation center illuminated by warm golden hour light streaming through tall windows, researchers collaborating around a large translucent display showing personalized cancer vaccine molecular blueprints, futuristic mRNA therapy development pods glowing amber, patient wellness silhouettes symbolizing hope and healing in the background, a small vial of therapeutic solution resting on a golden-lit side table as a subtle supporting object, warm inspiring golden light, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

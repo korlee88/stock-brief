@@ -1,14 +1,14 @@
 {
- "ticker": "WEN",
- "company_ko": "웬디스",
- "date": "2026-08-24",
- "report_dir": "data/on-demand/WEN/2026-08-24",
+ "ticker": "MRNA",
+ "company_ko": "모더나",
+ "date": "2026-08-25",
+ "report_dir": "data/on-demand/MRNA/2026-08-25",
  "scenes": [
-  "data/on-demand/WEN/2026-08-24/260824_웬디스_씬0.png",
-  "data/on-demand/WEN/2026-08-24/260824_웬디스_씬1.png",
-  "data/on-demand/WEN/2026-08-24/260824_웬디스_씬2.png"
+  "data/on-demand/MRNA/2026-08-25/260825_모더나_씬0.png",
+  "data/on-demand/MRNA/2026-08-25/260825_모더나_씬1.png",
+  "data/on-demand/MRNA/2026-08-25/260825_모더나_씬2.png"
  ],
- "youtube_title": "넬슨 펠츠의 비공개 전환설 등장! | 웬디스(WEN) 주가 브리핑 8/24 #Shorts",
- "youtube_description": "웬디스(WEN) 2026-08-24 주가 브리핑 — 현재가 $9.01 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 웬디스, WEN, 웬디스 주가, WEN 주가, 미국주식, 웬디스 햄버거, 웬디스 메뉴, 웬디스 칠리, 웬디스 주식, Wendy's, Wendy's Company, Fast Food, Hamburgers, Drive-Thru AI, Restaurant Technology, 패스트푸드, 햄버거, 인공지능 드라이브 스루, 외식 산업, QSR\n#WEN #웬디스 #미국주식 #Wendy's #Wendy'sCompany #FastFood #Hamburgers #Drive-ThruAI #RestaurantTechnology #패스트푸드 #햄버거 #인공지능드라이브스루 #Shorts",
- "generated_at": "2026-08-24"
+ "youtube_title": "모더나, 요즘 어떨까요? $138.89예요 | 모더나(MRNA) 주가 브리핑 8/25 #Shorts",
+ "youtube_description": "모더나(MRNA) 2026-08-25 주가 브리핑 — 현재가 $138.89 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 모더나, MRNA, 모더나 주가, MRNA 주가, 미국주식, 모더나 백신, mRNA 치료제, 모더나 암 백신, Moderna, MRNA stock, mRNA vaccine, biotechnology, cancer vaccine, 생명공학, 제약, BNTX\n#MRNA #모더나 #미국주식 #Moderna #MRNAstock #mRNAvaccine #biotechnology #cancervaccine #Shorts",
+ "generated_at": "2026-08-25"
 }
