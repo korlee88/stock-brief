@@ -250,68 +250,37 @@ async def gen_audio(segments, path):
         print(f"   ⚠ 세그먼트 합성 실패({e}) → 단일 TTS 폴백", file=sys.stderr)
         await _tts(" ".join(segments), path)
 
-# ── 곰 마스코트 ───────────────────────────────────────────────────────────────
-# 기존 기계식 로봇 캐릭터(안테나·LED·"T" 패널)가 딱딱하다는 사용자 피드백으로
-# 둥근 곰 얼굴 캐릭터로 교체. SCENE_MOODS에서 실제로 쓰는 focused/happy/celebrating
-# 3개 표정만 구현(다른 mood는 호출되지 않던 죽은 코드라 함께 정리).
+# ── 마스코트 ─────────────────────────────────────────────────────────────────
+# 곰+루피를 섞은 이전 디자인이 "짬뽕됐다"는 사용자 피드백으로 단순한 얼굴 하나로
+# 정리(귀·볼터치·코·스카프·배지 전부 제거). 씬 accent 색은 얇은 테두리로만 반영.
 
 def draw_mascot_pil(img, rx, ry, mood="focused", accent=(167, 139, 250)):
-    """PIL 도형으로 둥근 곰 얼굴 마스코트를 img 위에 합성. 씬 accent 색은 스카프에
-    반영해 기존처럼 장면별 분위기를 유지한다."""
+    """PIL 원 하나 + 눈·입으로 그리는 단순한 마스코트 얼굴을 img 위에 합성."""
     from PIL import Image, ImageDraw
     layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
     d = ImageDraw.Draw(layer)
 
-    HEAD    = (244, 175, 160)
-    EAR     = (230, 150, 140)
-    EAR_IN  = (255, 240, 230)
-    BLUSH   = (255, 140, 120)
-    DARK    = (58, 42, 46)
-    NOSE    = (200, 70, 60)
+    HEAD = (255, 224, 189)
+    DARK = (58, 42, 46)
 
-    cx, cy = rx + 50, ry + 50
-    R = 46
+    cx, cy = rx + 45, ry + 45
+    R = 42
+    d.ellipse([cx - R, cy - R, cx + R, cy + R], fill=HEAD, outline=accent, width=5)
 
-    # 귀
-    for ex in (cx - 38, cx + 38):
-        d.ellipse([ex - 16, cy - 54, ex + 16, cy - 22], fill=EAR)
-        d.ellipse([ex - 9,  cy - 47, ex + 9,  cy - 29], fill=EAR_IN)
-
-    # 머리
-    d.ellipse([cx - R, cy - R, cx + R, cy + R], fill=HEAD)
-
-    # 볼터치
-    d.ellipse([cx - 40, cy + 4, cx - 18, cy + 18], fill=(*BLUSH, 140))
-    d.ellipse([cx + 18, cy + 4, cx + 40, cy + 18], fill=(*BLUSH, 140))
-
-    # 눈·입 (mood별 — focused=차분, happy=미소, celebrating=반짝이는 눈+함박웃음)
-    lx, rx2, ey = cx - 20, cx + 20, cy - 6
+    # 눈·입 (mood별 — focused=차분, happy=미소, celebrating=함박웃음)
+    lx, rx2, ey = cx - 16, cx + 16, cy - 6
     if mood == "celebrating":
-        for ex in (lx, rx2):
-            d.line([ex - 7, ey, ex + 7, ey], fill=DARK, width=3)
-            d.line([ex, ey - 7, ex, ey + 7], fill=DARK, width=3)
-            d.line([ex - 5, ey - 5, ex + 5, ey + 5], fill=DARK, width=2)
-            d.line([ex - 5, ey + 5, ex + 5, ey - 5], fill=DARK, width=2)
-        d.arc([cx - 18, cy + 4, cx + 18, cy + 26], start=10, end=170, fill=DARK, width=4)
+        d.arc([lx - 9, ey - 9, lx + 9, ey + 9], start=200, end=340, fill=DARK, width=4)
+        d.arc([rx2 - 9, ey - 9, rx2 + 9, ey + 9], start=200, end=340, fill=DARK, width=4)
+        d.arc([cx - 14, cy + 4, cx + 14, cy + 24], start=15, end=165, fill=DARK, width=4)
     elif mood == "happy":
-        d.arc([lx - 10, ey - 6, lx + 10, ey + 10], start=200, end=340, fill=DARK, width=4)
-        d.arc([rx2 - 10, ey - 6, rx2 + 10, ey + 10], start=200, end=340, fill=DARK, width=4)
-        d.arc([cx - 15, cy + 6, cx + 15, cy + 22], start=10, end=170, fill=DARK, width=3)
+        d.arc([lx - 8, ey - 6, lx + 8, ey + 8], start=200, end=340, fill=DARK, width=4)
+        d.arc([rx2 - 8, ey - 6, rx2 + 8, ey + 8], start=200, end=340, fill=DARK, width=4)
+        d.arc([cx - 12, cy + 6, cx + 12, cy + 18], start=15, end=165, fill=DARK, width=3)
     else:   # focused (기본)
-        for ex in (lx, rx2):
-            d.ellipse([ex - 7, ey - 7, ex + 7, ey + 7], fill=DARK)
-            d.ellipse([ex - 3, ey - 5, ex + 1, ey - 1], fill=(255, 255, 255))
-        d.arc([cx - 9, cy + 9, cx + 9, cy + 19], start=10, end=170, fill=DARK, width=3)
-
-    # 코
-    d.ellipse([cx - 7, cy + 10, cx + 7, cy + 22], fill=NOSE)
-
-    # 스카프(accent 색) + 배지 — 기존 눈/패널 색상 자리를 대체, 상승 화살표로 반응 표현
-    d.rounded_rectangle([cx - 38, cy + 32, cx + 38, cy + 50], radius=9, fill=accent)
-    d.ellipse([cx - 12, cy + 30, cx + 12, cy + 54], fill=(255, 247, 230), outline=accent, width=2)
-    arrow_col = (34, 197, 94) if mood in ("happy", "celebrating") else (140, 100, 245)
-    d.line([cx - 5, cy + 47, cx - 1, cy + 40, cx + 3, cy + 44, cx + 8, cy + 36],
-           fill=arrow_col, width=3)
+        d.ellipse([lx - 5, ey - 5, lx + 5, ey + 5], fill=DARK)
+        d.ellipse([rx2 - 5, ey - 5, rx2 + 5, ey + 5], fill=DARK)
+        d.line([cx - 8, cy + 14, cx + 8, cy + 14], fill=DARK, width=3)
 
     return Image.alpha_composite(img.convert("RGBA"), layer).convert("RGB")
 
