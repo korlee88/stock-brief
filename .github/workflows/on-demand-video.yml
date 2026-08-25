@@ -59,11 +59,13 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/on-demand-collect.js
 
-      - name: 정량 신호 보강 (기술지표·수급·밸류)
+      - name: 정량 신호 보강 (기술지표·수급·밸류·재무제표)
         env:
-          # pykrx(한국 수급/밸류)·yfinance(미국 밸류/목표가)는 키 불필요. 실패해도 파이프라인 계속.
+          # pykrx(한국 수급/밸류)·yfinance(미국 밸류/목표가)는 키 불필요. DART_API_KEY 없으면
+          # 재무제표 신호만 생략. 실패해도 파이프라인 계속.
           TICKER_CONFIG: configs/${{ env.TICKER }}/ticker.json
           SESSIONS_FILE: data/on-demand/${{ env.TICKER }}/session.json
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: python scripts/enrich_signals.py || true
 
       - name: 대본 및 씬 이미지 생성

@@ -35,6 +35,9 @@
 - **배경 이미지 주 피사체**: 회사가 추구하는 브랜드 이미지·업종 정체성이 주 피사체, 핵심 매출
   제품은 화면 한쪽의 보조 오브젝트로만(사용자 요청 — 범용 미래도시·로켓 발사 같은 상투적 SF
   배경 남용 금지, 실제 항공우주 기업 등 업종에 맞을 때만 사용).
+- **DART 재무제표**(한국만, 사용자 요청): `DART_API_KEY`(무료 발급, GitHub Secrets에 등록—
+  채팅에 붙여넣지 말 것) 필요. `data/dart-corp-codes.json`(종목코드→고유번호, `update-kr-stocks.yml`이
+  갱신)로 조회 → 매출액·영업이익·당기순이익 등 주요계정, 지어낸 숫자 금지. 키 없으면 조용히 생략.
 
 ## 웹 (on-demand.html — GitHub Pages)
 3열: 리모컨(한국·미국 종목 검색 `data/kr-stocks.json`·`us-stocks.json`) | 구글 관심 TOP30(`data/stock-trends.json`, 관리자 리셋 시만 갱신) | 최근 생성 영상(`data/on-demand/latest.json`, 씬 미리보기+YouTube 카피).
