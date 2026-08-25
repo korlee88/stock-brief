@@ -13,16 +13,22 @@ session.json 의 세션 객체에 `signals` 필드를 추가한다. 전부 **선
   · analyst_reports (한국만, 네이버 금융 리서치): 최근 증권사 리포트 — 증권사명·날짜·
     제목, 목표주가는 제목에 명시된 경우만 파싱(추측 금지). 대형 IB 개별 목표주가는
     미국은 무료로 구하기 어려워 컨센서스 범위로 대체, 한국은 증권사 리포트로 보강.
+  · dart_financials (한국만, DART 오픈API 주요계정): 최근 확정 분기·연간 재무제표의
+    매출액·영업이익·당기순이익·자산총계·부채총계·자본총계(연결 우선, 없으면 별도).
+    DART_API_KEY 필요(무료 발급) — 없으면 조용히 생략(선택 신호).
 
 env: SESSIONS_FILE(세션 json 경로), TICKER_CONFIG(회사 config). 둘 다 필수.
+    DART_API_KEY(선택 — 없으면 재무제표 신호만 생략).
 """
 import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
 from html.parser import HTMLParser
+from pathlib import Path
 
 CFG_PATH = os.environ.get("TICKER_CONFIG")
 SESS_PATH = os.environ.get("SESSIONS_FILE")
@@ -233,6 +239,76 @@ def fetch_kr_analyst_reports(code, max_items=3):
         return []
 
 
+# ── 한국: DART(전자공시) 재무제표 핵심 계정(매출액·영업이익·당기순이익 등) ──────────
+# 종목코드 대신 8자리 고유번호(corp_code)가 필요 — build_dart_corp_codes.py가 미리
+# 받아둔 data/dart-corp-codes.json에서 조회(사용자 요청 — DART 재무제표 요약 추가).
+DART_API_KEY = os.environ.get("DART_API_KEY", "")
+_DART_CORP_CODES_PATH = Path(__file__).resolve().parent.parent / "data" / "dart-corp-codes.json"
+_DART_REPRT_LABEL = {"11013": "1분기", "11012": "반기", "11014": "3분기", "11011": "사업보고서(연간)"}
+_DART_KEY_ACCOUNTS = ["매출액", "영업이익", "당기순이익", "자산총계", "부채총계", "자본총계"]
+
+
+def _dart_corp_code(code):
+    if not _DART_CORP_CODES_PATH.exists():
+        return None
+    try:
+        mapping = json.loads(_DART_CORP_CODES_PATH.read_text(encoding="utf-8"))
+        return mapping.get(code)
+    except Exception:
+        return None
+
+
+def _dart_report_period_candidates():
+    """최근 발표분부터 역순으로 (연도, 보고서코드) 후보 나열 — 분기 발표 지연을
+    감안해 최근 ~1.5년 범위를 넉넉히 훑는다(첫 성공에서 멈춤)."""
+    y = datetime.utcnow().year
+    quarters = ["11014", "11012", "11013"]   # 3분기 → 반기 → 1분기(당해 연도)
+    return ([(y, c) for c in quarters]
+            + [(y - 1, "11011")]
+            + [(y - 1, c) for c in quarters]
+            + [(y - 2, "11011")])
+
+
+def fetch_dart_financials(code):
+    """DART 오픈API(fnlttSinglAcnt, 주요계정)로 최근 확정 재무제표 핵심 계정 조회.
+    DART_API_KEY 없거나 종목의 corp_code 매핑이 없으면 None(비차단, 선택 신호).
+    연결재무제표(CFS) 우선, 없으면 별도(OFS)."""
+    if not DART_API_KEY:
+        return None
+    corp_code = _dart_corp_code(code)
+    if not corp_code:
+        return None
+    for year, reprt_code in _dart_report_period_candidates():
+        try:
+            params = urllib.parse.urlencode({
+                "crtfc_key": DART_API_KEY, "corp_code": corp_code,
+                "bsns_year": str(year), "reprt_code": reprt_code,
+            })
+            url = f"https://opendart.fss.or.kr/api/fnlttSinglAcnt.json?{params}"
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=15) as r:
+                data = json.loads(r.read())
+            if data.get("status") != "000":
+                continue   # 해당 분기 미공시 — 다음 후보로
+            rows = data.get("list") or []
+            fs_rows = [row for row in rows if row.get("fs_div") == "CFS"] or rows
+            picked = {}
+            for row in fs_rows:
+                name = row.get("account_nm", "")
+                if name in _DART_KEY_ACCOUNTS and name not in picked:
+                    try:
+                        picked[name] = int(str(row.get("thstrm_amount", "")).replace(",", ""))
+                    except (ValueError, TypeError):
+                        continue
+            if picked:
+                picked["period"] = f"{year}년 {_DART_REPRT_LABEL.get(reprt_code, reprt_code)}"
+                return picked
+        except Exception as e:
+            print(f"   ⚠ DART 재무제표 조회 실패({year}/{reprt_code}): {e}", file=sys.stderr)
+            continue
+    return None
+
+
 # ── 미국: yfinance 목표주가 컨센서스(평균·최고·최저·참여 인원)·투자의견·PER ──────────
 # 개별 대형 IB(골드만삭스 등) 명의 목표주가는 무료로 구할 신뢰 가능한 소스가 없어
 # (TipRanks·Benzinga 등은 유료) 컨센서스 범위로 대체(사용자 확인 사항).
@@ -302,6 +378,11 @@ def main():
             signals["analyst_reports"] = reports
             print(f"   ✅ 증권사 리포트 {len(reports)}건: "
                   + ", ".join(f"{r['firm']}({r['date']})" for r in reports))
+        dart = fetch_dart_financials(KR_CODE)
+        if dart:
+            signals["dart_financials"] = dart
+            print(f"   ✅ DART 재무제표({dart.get('period')}): "
+                  + ", ".join(f"{k} {v:,}" for k, v in dart.items() if k != "period"))
     else:
         val = fetch_us_signals(TICKER)
         if val:
