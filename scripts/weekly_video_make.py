@@ -55,7 +55,6 @@ ACCENT_THEMES = [
 def _theme_idx(date_str):
     """생성일 문자열로 결정적 테마 인덱스 (prep.py와 동일 함수 → 색상 동기화)."""
     return sum(ord(c) for c in (date_str or "")) % len(ACCENT_THEMES)
-SCENE_MOODS = ["focused", "happy", "celebrating"]   # 차분 분석 톤에 맞춘 마스코트
 
 # ── BGM 설정 (원본 합성 · CC0/로열티프리) ────────────────────────────────────
 # 배경음악은 저장소에 커밋된 data/bgm.mp3 를 사용한다 → 빌드 시 네트워크 의존 0.
@@ -251,38 +250,30 @@ async def gen_audio(segments, path):
         await _tts(" ".join(segments), path)
 
 # ── 마스코트 ─────────────────────────────────────────────────────────────────
-# 곰+루피를 섞은 이전 디자인이 "짬뽕됐다"는 사용자 피드백으로 단순한 얼굴 하나로
-# 정리(귀·볼터치·코·스카프·배지 전부 제거). 씬 accent 색은 얇은 테두리로만 반영.
+# PIL로 직접 그리던 이전 버전들(로봇→곰→단순 얼굴)이 매번 별로라는 피드백 —
+# 사용자가 직접 고른 이미지(data/mascot.png, 빨강·파랑 반반의 불꽃 스파크
+# 캐릭터 — 미국·한국 두 시장 + "지금 화제(hot)" 컨셉)를 그대로 합성한다.
+# 표정 변화는 없음(단일 정적 이미지, "당분간은 이걸로" — 사용자 확정).
+MASCOT_SIZE = 130   # 렌더 폭(px) — 높이는 원본 비율 유지
+_mascot_cache = None
 
-def draw_mascot_pil(img, rx, ry, mood="focused", accent=(167, 139, 250)):
-    """PIL 원 하나 + 눈·입으로 그리는 단순한 마스코트 얼굴을 img 위에 합성."""
-    from PIL import Image, ImageDraw
-    layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    d = ImageDraw.Draw(layer)
+def _load_mascot():
+    global _mascot_cache
+    if _mascot_cache is None:
+        from PIL import Image
+        im = Image.open(ROOT_DIR / "data" / "mascot.png").convert("RGBA")
+        h = int(MASCOT_SIZE * im.height / im.width)
+        _mascot_cache = im.resize((MASCOT_SIZE, h), Image.LANCZOS)
+    return _mascot_cache
 
-    HEAD = (255, 224, 189)
-    DARK = (58, 42, 46)
 
-    cx, cy = rx + 45, ry + 45
-    R = 42
-    d.ellipse([cx - R, cy - R, cx + R, cy + R], fill=HEAD, outline=accent, width=5)
-
-    # 눈·입 (mood별 — focused=차분, happy=미소, celebrating=함박웃음)
-    lx, rx2, ey = cx - 16, cx + 16, cy - 6
-    if mood == "celebrating":
-        d.arc([lx - 9, ey - 9, lx + 9, ey + 9], start=200, end=340, fill=DARK, width=4)
-        d.arc([rx2 - 9, ey - 9, rx2 + 9, ey + 9], start=200, end=340, fill=DARK, width=4)
-        d.arc([cx - 14, cy + 4, cx + 14, cy + 24], start=15, end=165, fill=DARK, width=4)
-    elif mood == "happy":
-        d.arc([lx - 8, ey - 6, lx + 8, ey + 8], start=200, end=340, fill=DARK, width=4)
-        d.arc([rx2 - 8, ey - 6, rx2 + 8, ey + 8], start=200, end=340, fill=DARK, width=4)
-        d.arc([cx - 12, cy + 6, cx + 12, cy + 18], start=15, end=165, fill=DARK, width=3)
-    else:   # focused (기본)
-        d.ellipse([lx - 5, ey - 5, lx + 5, ey + 5], fill=DARK)
-        d.ellipse([rx2 - 5, ey - 5, rx2 + 5, ey + 5], fill=DARK)
-        d.line([cx - 8, cy + 14, cx + 8, cy + 14], fill=DARK, width=3)
-
-    return Image.alpha_composite(img.convert("RGBA"), layer).convert("RGB")
+def draw_mascot_pil(img, rx, ry):
+    """data/mascot.png를 (rx, ry) 위치에 합성."""
+    from PIL import Image
+    mascot = _load_mascot()
+    base = img.convert("RGBA")
+    base.paste(mascot, (rx, ry), mascot)
+    return base.convert("RGB")
 
 # ── 애니메이션 이펙트 ─────────────────────────────────────────────────────────
 
@@ -407,9 +398,8 @@ def make_anime_frame(t, base_arr, accent, dur, scene_idx):
     img = fx_scanline(img, t)
     img = fx_pulse_glow(img, t, accent)
 
-    mood       = SCENE_MOODS[scene_idx]
     mascot_dy  = int(math.sin(t * 3.5) * 3)
-    img = draw_mascot_pil(img, W - 130, 40 + mascot_dy, mood, accent)
+    img = draw_mascot_pil(img, W - MASCOT_SIZE - 30, 26 + mascot_dy)
 
     # 영상 시작/종료에만 부드러운 페이드 (그 외 씬 전환은 CrossFadeIn 처리)
     if is_intro:
