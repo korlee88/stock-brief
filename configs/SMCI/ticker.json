@@ -1,0 +1,34 @@
+{
+  "ticker": "SMCI",
+  "company_en": "Super Micro Computer, Inc.",
+  "company_ko": "슈퍼 마이크로 컴퓨터",
+  "industry_ko": "서버, 스토리지, 네트워킹 솔루션",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "High-performance, energy-efficient server and storage solutions, including liquid and air-cooled AI servers with integrated GPUs, designed for enterprise data centers, cloud computing, and artificial intelligence workloads.",
+  "brand_label": "SMCI BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "HPE",
+  "key_people": [
+    "Charles Liang",
+    "Sara Liu"
+  ],
+  "google_trends_keywords": [
+    "슈퍼 마이크로 컴퓨터",
+    "SMCI 주가",
+    "AI 서버",
+    "Supermicro",
+    "찰스 리앙"
+  ],
+  "video_tags": [
+    "Supermicro",
+    "SMCI",
+    "AI servers",
+    "GPU servers",
+    "Data Center Solutions",
+    "슈퍼마이크로",
+    "AI 서버"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-08-27T04:58:11.191Z"
+}

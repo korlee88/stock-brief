@@ -1,0 +1,29 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+전일 *-2.78%*, 현재 *$37.39*예요
+*AI 서버* 만드는 상장사죠
+"데이터센터는 하나의 컴퓨터"라는 비전을 가지고 있어요
+*49억 달러* 유상증자로 성장을 위한 자금을 확보했어요
+*액체냉각* 기술로 *고성능 서버* 전력을 효율적으로 절감해요
+AI 서버 시장 *약 8%* 점유율을 가지고 있어요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: *4분기 실적* 매출·마진 예상치 상회하며 성장세 확인됐어요
+악재: 경쟁사 *Vertiv* 마진 개선으로 경쟁 심화 우려가 나왔죠
+보합: *내부 조사 완료*, 경영진 위법 없음 확인돼 불확실성 해소됐네요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+*9월 초* 투자자 컨퍼런스에 참여할 예정이에요
+관전 포인트 — *600억 달러* *통합 GPU 서버* 수주 언급 여부
+20일선 대비 *+9.3%*, 완만한 상승 흐름이 전망돼요
+목표주가 평균 *$42.38*, 상단 여력이 관측돼요
+변수 — 시장은 규제를 걱정하지만, 진짜 관건은 *AMD와의 AI GPU 통합 서버* 협력 속도
+오늘도 함께해 줘서 고마워요!
+
+IMAGE_PROMPT_0: A vast, dimly lit hyperscale data center corridor with towering rows of high-density server racks stretching into the distance, subtle purple and violet analytical mood lighting casting cool reflections on polished floors, faint blue LED indicators glowing along the racks, atmospheric haze adding depth, one small liquid-cooled AI server unit visible as a secondary object on the right side of the frame, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic wide shot of a modern AI data center expansion floor with technicians in clean uniforms installing new server infrastructure, vibrant green ambient lighting symbolizing growth and momentum, glowing motion lines suggesting rapid data flow and rising energy through fiber cables, upward-tilted camera angle emphasizing scale and progress, one compact GPU server chassis placed on a side workbench as a secondary element, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A vertical composition of a futuristic enterprise AI infrastructure hall bathed in warm golden light streaming through tall windows, sleek liquid cooling pipelines running vertically along the ceiling, reflective floors amplifying the inspiring atmosphere, a lone engineer silhouette gazing upward at the towering architecture symbolizing vision and direction, one small rack-scale AI server module positioned discreetly at the lower corner as a secondary object, warm inspiring golden light, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

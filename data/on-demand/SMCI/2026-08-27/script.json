@@ -1,0 +1,260 @@
+{
+  "generated_at": "2026-08-27",
+  "generated_by": "Claude Opus 4",
+  "title": "전일 *-2.78%*, 현재 *$37.39*예요",
+  "subtitle": "2026-08-27 ~ 2026-08-27 · Super Micro Computer, 2026년 4분",
+  "summary": {
+    "week_start": "2026-08-27",
+    "week_end": "2026-08-27",
+    "session_count": 1,
+    "total_analyzed": 8,
+    "bullish_count": 4,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 37.39,
+    "price_end": 37.39,
+    "latest_price": 37.39,
+    "today_price": 37.39,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "Super Micro Computer, 2026년 4분기 및 전체 회계연도 재무 결과 발표",
+      "score": 3,
+      "reason": "예상치를 상회하는 매출과 마진 증가는 회사의 강력한 성장세를 보여주며 주가에 긍정적인 영향을 미칠 것입니다.",
+      "source": "StockTitan",
+      "date": "2026-08-20",
+      "category": "Earnings",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "Super Micro Computer, 2026년 4분기 및 전체 회계연도 재무 결과 발표",
+        "score": 3,
+        "reason": "예상치를 상회하는 매출과 마진 증가는 회사의 강력한 성장세를 보여주며 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "StockTitan",
+        "date": "2026-08-20",
+        "category": "Earnings"
+      },
+      {
+        "title": "Super Micro Computer, 수익 추정치 상향 조정으로 주가 상승 가능성",
+        "score": 3,
+        "reason": "수익 추정치 상향 조정은 투자자들에게 긍정적인 신호로 작용하여 주가 상승을 견인할 수 있습니다.",
+        "source": "Nasdaq",
+        "date": "2026-08-24",
+        "category": "Earnings"
+      },
+      {
+        "title": "Supermicro, 고밀도 AI 및 HPC 인프라를 위한 액체 냉각 포트폴리오 확장",
+        "score": 2,
+        "reason": "AI 및 HPC 시장의 성장에 맞춰 액체 냉각 솔루션을 확장하는 것은 Supermicro의 시장 경쟁력을 강화하고 매출 증대에 기여할 것으로 예상됩니다.",
+        "source": "StockTitan",
+        "date": "2026-08-20",
+        "category": "Product"
+      },
+      {
+        "title": "Supermicro, AI 랙 시리즈 확장으로 배포 및 온라인 시간 단축",
+        "score": 2,
+        "reason": "AI 데이터 센터 시장의 수요 증가에 대응하는 맞춤형 AI 랙 솔루션 출시는 Supermicro의 시장 점유율 확대에 긍정적인 영향을 미칠 것입니다.",
+        "source": "StockTitan",
+        "date": "2026-08-20",
+        "category": "Product"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "Super Micro Computer, 내부 조사 완료 및 수출 규정 준수 프로그램 강화 발표",
+        "score": 0,
+        "reason": "내부 조사가 완료되고 고위 경영진의 위법 행위가 없었다는 점은 불확실성을 해소하여 긍정적일 수 있으나, 주가는 이미 이러한 소식을 반영하여 큰 변동은 없을 것으로 예상됩니다.",
+        "source": "Business Wire",
+        "date": "2026-08-20",
+        "category": "Regulatory"
+      },
+      {
+        "title": "Super Micro Computer, 다가오는 투자자 컨퍼런스 참여 발표",
+        "score": 0,
+        "reason": "투자자 컨퍼런스 참여는 일반적인 기업 활동으로, 즉각적인 주가 영향은 미미할 것으로 예상됩니다.",
+        "source": "StockTitan",
+        "date": "2026-08-20",
+        "category": "Market"
+      }
+    ],
+    "neutral_count": 2,
+    "scene1_news": {
+      "bullish": {
+        "title": "Super Micro Computer, 2026년 4분기 및 전체 회계연도 재무 결과 발표",
+        "score": 3,
+        "reason": "예상치를 상회하는 매출과 마진 증가는 회사의 강력한 성장세를 보여주며 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "StockTitan",
+        "date": "2026-08-20",
+        "category": "Earnings"
+      },
+      "bearish": {
+        "title": "Vertiv, 마진 개선으로 경쟁 우위 확보: APH 및 SMCI를 능가할 수 있을까?",
+        "score": -1,
+        "reason": "경쟁사의 마진 개선 및 시장 확장 소식은 Super Micro Computer의 경쟁 심화를 의미하며, 이는 주가에 부정적인 영향을 미칠 수 있습니다.",
+        "source": "Nasdaq",
+        "date": "2026-08-24",
+        "category": "Competition"
+      },
+      "neutral": {
+        "title": "Super Micro Computer, 내부 조사 완료 및 수출 규정 준수 프로그램 강화 발표",
+        "score": 0,
+        "reason": "내부 조사가 완료되고 고위 경영진의 위법 행위가 없었다는 점은 불확실성을 해소하여 긍정적일 수 있으나, 주가는 이미 이러한 소식을 반영하여 큰 변동은 없을 것으로 예상됩니다.",
+        "source": "Business Wire",
+        "date": "2026-08-20",
+        "category": "Regulatory"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-08-27",
+        37.39
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-08-27",
+    "today_news": [
+      {
+        "title": "Super Micro Computer, 수익 추정치 상향 조정으로 주가 상승 가능성",
+        "category": "Earnings",
+        "source": "Nasdaq",
+        "date": "2026-08-24"
+      },
+      {
+        "title": "Vertiv, 마진 개선으로 경쟁 우위 확보: APH 및 SMCI를 능가할 수 있을까?",
+        "category": "Competition",
+        "source": "Nasdaq",
+        "date": "2026-08-24"
+      },
+      {
+        "title": "Nebius vs. Super Micro: 어떤 AI 인프라 주식이 더 나은가?",
+        "category": "Competition",
+        "source": "Nasdaq",
+        "date": "2026-08-23"
+      },
+      {
+        "title": "Super Micro Computer, 내부 조사 완료 및 수출 규정 준수 프로그램 강화 발표",
+        "category": "Regulatory",
+        "source": "Business Wire",
+        "date": "2026-08-20"
+      },
+      {
+        "title": "Super Micro Computer, 2026년 4분기 및 전체 회계연도 재무 결과 발표",
+        "category": "Earnings",
+        "source": "StockTitan",
+        "date": "2026-08-20"
+      },
+      {
+        "title": "Supermicro, 고밀도 AI 및 HPC 인프라를 위한 액체 냉각 포트폴리오 확장",
+        "category": "Product",
+        "source": "StockTitan",
+        "date": "2026-08-20"
+      },
+      {
+        "title": "Supermicro, AI 랙 시리즈 확장으로 배포 및 온라인 시간 단축",
+        "category": "Product",
+        "source": "StockTitan",
+        "date": "2026-08-20"
+      },
+      {
+        "title": "Super Micro Computer, 다가오는 투자자 컨퍼런스 참여 발표",
+        "category": "Market",
+        "source": "StockTitan",
+        "date": "2026-08-20"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 37.39,
+        "ma20": 34.2,
+        "vs_ma20_pct": 9.3,
+        "ma60": 32.25,
+        "trend": "상승추세(20일선>60일선)",
+        "rsi14": 69.1,
+        "rsi_state": "중립",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 5.9,
+        "pos_52w_pct": 46.0,
+        "high_52w": 58.78,
+        "low_52w": 19.48,
+        "mom_5d_pct": 2.2,
+        "mom_20d_pct": 45.5
+      },
+      "valuation": {
+        "목표주가_평균": 42.38,
+        "목표주가_최고": 60.0,
+        "목표주가_최저": 15.0,
+        "애널리스트_수": 16,
+        "투자의견": "중립",
+        "PER_선행": 7.0,
+        "PER": 11.5
+      }
+    },
+    "prev_day": {
+      "date": "2026-08-26",
+      "open": 38.03,
+      "close": 37.39,
+      "change_pct": -2.78
+    },
+    "month_low": {
+      "low": 25.68,
+      "current": 37.39,
+      "pct_vs_low": 45.6
+    },
+    "movement_reason": "2026년 8월 27일 슈퍼 마이크로 컴퓨터(SMCI) 주가 하락의 주요 원인을 분석해 달라는 요청을 주셨으나, 저는 미래의 주식 시장 움직임을 예측할 수 없습니다. 따라서 해당 날짜의 특정 주가 변동 원인을 정확히 알려드릴 수 없습니다.\n\n그러나 일반적으로 주식 가격 하락에 영향을 미칠 수 있는 주요 원인들은 다음과 같습니다.\n\n금리 인상 / 실적 부진 / 경쟁 심화",
+    "company_direction": "슈퍼 마이크로 컴퓨터(SMCI) 회사 소개 자료입니다.\n\n① 주력 사업:\nAI 서버, 스토리지, 네트워킹 솔루션 제공 / 고성능 컴퓨팅 및 데이터센터 구축 / AI·클라우드·엣지 컴퓨팅 특화 서버 제조 / 엔비디아 GPU 탑재 AI 서버 매출 증대\n\n② 회사의 비전·전략 방향:\n'데이터센터는 하나의 컴퓨터' 비전 제시 / 완제품 랙 스케일 솔루션으로 AI 도입 가속 / 직접 액체 냉각 기술 리더십으로 에너지 효율 증대 / 모듈식 개방형 아키텍처 기반 솔루션 개발\n\n③ 최근 1년 내 주요 투자·설비·인수:\n지난 1년 AI 서버 주문 대응 70억 달러 자금 조달 계획 / 2026년 6월 49억 달러 유상증자 확정 / 2026년 4분기 600억 달러 초과 신규 주문 수주 / 운전자본 및 설비투자 자금 활용 계획\n\n④ 핵심 신제품·신기술 로드맵:\nDLC-2 직접 액체 냉각 솔루션 주력 / CPU·GPU 넘어 시스템 전반 수랭식 냉각 / AMD '헬리오스' 랙 스케일 AI 플랫폼 협력 / 기업용 에이전틱 AI 인프라 기술 개발 중\n\n⑤ 시장 내 위치·점유율:\n전 세계 AI 서버 데이터센터 시장 1위 주장 / AI 서버 시장 약 8% 점유율 기록 (2025년 4월) / 한국 시장 점유율 25%까지 확대 목표 / 엔비디아, AMD 등에 냉각 솔루션 공급"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "전일 *-2.78%*, 현재 *$37.39*예요",
+        "*AI 서버* 만드는 상장사죠",
+        "\"데이터센터는 하나의 컴퓨터\"라는 비전을 가지고 있어요",
+        "*49억 달러* 유상증자로 성장을 위한 자금을 확보했어요",
+        "*액체냉각* 기술로 *고성능 서버* 전력을 효율적으로 절감해요",
+        "AI 서버 시장 *약 8%* 점유율을 가지고 있어요"
+      ],
+      "body": "전일 *-2.78%*, 현재 *$37.39*예요\n*AI 서버* 만드는 상장사죠\n\"데이터센터는 하나의 컴퓨터\"라는 비전을 가지고 있어요\n*49억 달러* 유상증자로 성장을 위한 자금을 확보했어요\n*액체냉각* 기술로 *고성능 서버* 전력을 효율적으로 절감해요\nAI 서버 시장 *약 8%* 점유율을 가지고 있어요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: *4분기 실적* 매출·마진 예상치 상회하며 성장세 확인됐어요",
+        "악재: 경쟁사 *Vertiv* 마진 개선으로 경쟁 심화 우려가 나왔죠",
+        "보합: *내부 조사 완료*, 경영진 위법 없음 확인돼 불확실성 해소됐네요"
+      ],
+      "body": "호재: *4분기 실적* 매출·마진 예상치 상회하며 성장세 확인됐어요\n악재: 경쟁사 *Vertiv* 마진 개선으로 경쟁 심화 우려가 나왔죠\n보합: *내부 조사 완료*, 경영진 위법 없음 확인돼 불확실성 해소됐네요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "*9월 초* 투자자 컨퍼런스에 참여할 예정이에요",
+        "관전 포인트 — *600억 달러* *통합 GPU 서버* 수주 언급 여부",
+        "20일선 대비 *+9.3%*, 완만한 상승 흐름이 전망돼요",
+        "목표주가 평균 *$42.38*, 상단 여력이 관측돼요",
+        "변수 — 시장은 규제를 걱정하지만, 진짜 관건은 *AMD와의 AI GPU 통합 서버* 협력 속도",
+        "오늘도 함께해 줘서 고마워요!"
+      ],
+      "body": "*9월 초* 투자자 컨퍼런스에 참여할 예정이에요\n관전 포인트 — *600억 달러* *통합 GPU 서버* 수주 언급 여부\n20일선 대비 *+9.3%*, 완만한 상승 흐름이 전망돼요\n목표주가 평균 *$42.38*, 상단 여력이 관측돼요\n변수 — 시장은 규제를 걱정하지만, 진짜 관건은 *AMD와의 AI GPU 통합 서버* 협력 속도\n오늘도 함께해 줘서 고마워요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A vast, dimly lit hyperscale data center corridor with towering rows of high-density server racks stretching into the distance, subtle purple and violet analytical mood lighting casting cool reflections on polished floors, faint blue LED indicators glowing along the racks, atmospheric haze adding depth, one small liquid-cooled AI server unit visible as a secondary object on the right side of the frame, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic wide shot of a modern AI data center expansion floor with technicians in clean uniforms installing new server infrastructure, vibrant green ambient lighting symbolizing growth and momentum, glowing motion lines suggesting rapid data flow and rising energy through fiber cables, upward-tilted camera angle emphasizing scale and progress, one compact GPU server chassis placed on a side workbench as a secondary element, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A vertical composition of a futuristic enterprise AI infrastructure hall bathed in warm golden light streaming through tall windows, sleek liquid cooling pipelines running vertically along the ceiling, reflective floors amplifying the inspiring atmosphere, a lone engineer silhouette gazing upward at the towering architecture symbolizing vision and direction, one small rack-scale AI server module positioned discreetly at the lower corner as a secondary object, warm inspiring golden light, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

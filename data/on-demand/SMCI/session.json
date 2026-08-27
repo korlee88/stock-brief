@@ -1,0 +1,144 @@
+[
+  {
+    "date": "2026-08-27",
+    "generatedAt": "2026-08-27T04:58:20.477Z",
+    "mode": "on-demand",
+    "latestPrice": 37.39,
+    "news": [
+      {
+        "id": 1,
+        "title": "Super Micro Computer, 내부 조사 완료 및 수출 규정 준수 프로그램 강화 발표",
+        "summary": "Super Micro Computer는 수출 규정 준수 프로그램에 대한 독립적인 조사를 완료했으며, 고위 경영진은 어떠한 위법 행위도 인지하지 못했다고 밝혔습니다. 또한, 회사는 수출 규정 준수 프로그램을 강화하기 위한 권고 사항을 전적으로 수용했습니다.",
+        "source": "Business Wire",
+        "date": "2026-08-20",
+        "category": "Regulatory"
+      },
+      {
+        "id": 2,
+        "title": "Super Micro Computer, 2026년 4분기 및 전체 회계연도 재무 결과 발표",
+        "summary": "Super Micro Computer는 2026년 회계연도 4분기 순매출이 111억 달러를 기록하여 전 분기 대비 증가했으며, GAAP 총 마진은 17.5%로 상승했다고 발표했습니다.",
+        "source": "StockTitan",
+        "date": "2026-08-20",
+        "category": "Earnings"
+      },
+      {
+        "id": 3,
+        "title": "Supermicro, 고밀도 AI 및 HPC 인프라를 위한 액체 냉각 포트폴리오 확장",
+        "summary": "Supermicro는 고밀도 AI 및 HPC 인프라를 위한 후면 도어 열 교환기(RDHx) 모델 10종을 포함하여 데이터 센터 빌딩 블록 솔루션(DCBBS) 액체 냉각 포트폴리오를 확장했습니다.",
+        "source": "StockTitan",
+        "date": "2026-08-20",
+        "category": "Product"
+      },
+      {
+        "id": 4,
+        "title": "Supermicro, AI 랙 시리즈 확장으로 배포 및 온라인 시간 단축",
+        "summary": "Supermicro는 미션 크리티컬 고밀도 AI 데이터 센터를 겨냥한 정밀 엔지니어링 AI 랙 포트폴리오를 확장하여 ORv3, NVIDIA Vera Rubin/GB300 (MGX) 및 EIA 표준 플랫폼을 지원합니다.",
+        "source": "StockTitan",
+        "date": "2026-08-20",
+        "category": "Product"
+      },
+      {
+        "id": 5,
+        "title": "Super Micro Computer, 다가오는 투자자 컨퍼런스 참여 발표",
+        "summary": "Super Micro Computer는 Oppenheimer 29th Annual Technology, Internet & Communications Conference, Citi 2026 Global TMT Conference, Goldman Sachs Communacopia + Technology Conference 2026 등 세 가지 투자자 컨퍼런스에 참여할 예정입니다.",
+        "source": "StockTitan",
+        "date": "2026-08-20",
+        "category": "Market"
+      },
+      {
+        "id": 6,
+        "title": "Super Micro Computer, 수익 추정치 상향 조정으로 주가 상승 가능성",
+        "summary": "Super Micro Computer (SMCI) 주가는 견고한 수익 추정치 상향 조정으로 인해 단기적으로 계속 상승할 수 있습니다.",
+        "source": "Nasdaq",
+        "date": "2026-08-24",
+        "category": "Earnings"
+      },
+      {
+        "id": 7,
+        "title": "Vertiv, 마진 개선으로 경쟁 우위 확보: APH 및 SMCI를 능가할 수 있을까?",
+        "summary": "Vertiv의 마진 개선과 강력한 매출 성장은 AI 인프라 분야에서 Amphenol 및 Super Micro Computer가 확장함에 따라 경쟁적 위치를 재편하고 있습니다.",
+        "source": "Nasdaq",
+        "date": "2026-08-24",
+        "category": "Competition"
+      },
+      {
+        "id": 8,
+        "title": "Nebius vs. Super Micro: 어떤 AI 인프라 주식이 더 나은가?",
+        "summary": "SMCI는 더 큰 규모, 낮은 주가/장부가치 평가, 그리고 상향 조정된 수익 추정치로 인해 강력한 AI 인프라 성장에도 불구하고 Nebius (NBIS)에 비해 우위를 점하고 있습니다.",
+        "source": "Nasdaq",
+        "date": "2026-08-23",
+        "category": "Competition"
+      }
+    ],
+    "analyses": {
+      "1": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "내부 조사가 완료되고 고위 경영진의 위법 행위가 없었다는 점은 불확실성을 해소하여 긍정적일 수 있으나, 주가는 이미 이러한 소식을 반영하여 큰 변동은 없을 것으로 예상됩니다."
+      },
+      "2": {
+        "direction": "bullish",
+        "impact_score": 3,
+        "reasoning": "예상치를 상회하는 매출과 마진 증가는 회사의 강력한 성장세를 보여주며 주가에 긍정적인 영향을 미칠 것입니다."
+      },
+      "3": {
+        "direction": "bullish",
+        "impact_score": 2,
+        "reasoning": "AI 및 HPC 시장의 성장에 맞춰 액체 냉각 솔루션을 확장하는 것은 Supermicro의 시장 경쟁력을 강화하고 매출 증대에 기여할 것으로 예상됩니다."
+      },
+      "4": {
+        "direction": "bullish",
+        "impact_score": 2,
+        "reasoning": "AI 데이터 센터 시장의 수요 증가에 대응하는 맞춤형 AI 랙 솔루션 출시는 Supermicro의 시장 점유율 확대에 긍정적인 영향을 미칠 것입니다."
+      },
+      "5": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "투자자 컨퍼런스 참여는 일반적인 기업 활동으로, 즉각적인 주가 영향은 미미할 것으로 예상됩니다."
+      },
+      "6": {
+        "direction": "bullish",
+        "impact_score": 3,
+        "reasoning": "수익 추정치 상향 조정은 투자자들에게 긍정적인 신호로 작용하여 주가 상승을 견인할 수 있습니다."
+      },
+      "7": {
+        "direction": "bearish",
+        "impact_score": -1,
+        "reasoning": "경쟁사의 마진 개선 및 시장 확장 소식은 Super Micro Computer의 경쟁 심화를 의미하며, 이는 주가에 부정적인 영향을 미칠 수 있습니다."
+      },
+      "8": {
+        "direction": "bullish",
+        "impact_score": 1,
+        "reasoning": "경쟁사 대비 Super Micro Computer의 강점이 부각되는 분석은 투자자들에게 긍정적인 신호로 작용할 수 있습니다."
+      }
+    },
+    "dailyForecasts": [],
+    "signals": {
+      "technicals": {
+        "price": 37.39,
+        "ma20": 34.2,
+        "vs_ma20_pct": 9.3,
+        "ma60": 32.25,
+        "trend": "상승추세(20일선>60일선)",
+        "rsi14": 69.1,
+        "rsi_state": "중립",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 5.9,
+        "pos_52w_pct": 46.0,
+        "high_52w": 58.78,
+        "low_52w": 19.48,
+        "mom_5d_pct": 2.2,
+        "mom_20d_pct": 45.5
+      },
+      "valuation": {
+        "목표주가_평균": 42.38,
+        "목표주가_최고": 60.0,
+        "목표주가_최저": 15.0,
+        "애널리스트_수": 16,
+        "투자의견": "중립",
+        "PER_선행": 7.0,
+        "PER": 11.5
+      }
+    }
+  }
+]

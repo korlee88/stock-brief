@@ -1,0 +1,11 @@
+# SMCI 주간 배경 이미지 프롬프트 — 2026-08-27
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A vast, dimly lit hyperscale data center corridor with towering rows of high-density server racks stretching into the distance, subtle purple and violet analytical mood lighting casting cool reflections on polished floors, faint blue LED indicators glowing along the racks, atmospheric haze adding depth, one small liquid-cooled AI server unit visible as a secondary object on the right side of the frame, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A dynamic wide shot of a modern AI data center expansion floor with technicians in clean uniforms installing new server infrastructure, vibrant green ambient lighting symbolizing growth and momentum, glowing motion lines suggesting rapid data flow and rising energy through fiber cables, upward-tilted camera angle emphasizing scale and progress, one compact GPU server chassis placed on a side workbench as a secondary element, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A vertical composition of a futuristic enterprise AI infrastructure hall bathed in warm golden light streaming through tall windows, sleek liquid cooling pipelines running vertically along the ceiling, reflective floors amplifying the inspiring atmosphere, a lone engineer silhouette gazing upward at the towering architecture symbolizing vision and direction, one small rack-scale AI server module positioned discreetly at the lower corner as a secondary object, warm inspiring golden light, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
