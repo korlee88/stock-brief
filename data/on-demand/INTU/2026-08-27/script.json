@@ -1,0 +1,280 @@
+{
+  "generated_at": "2026-08-27",
+  "generated_by": "Claude Opus 4",
+  "title": "전일 *-3.24%*, 현재 *$345.88*이에요",
+  "subtitle": "2026-08-27 ~ 2026-08-27 · Intuit, 예상치 상회하는 4분기 실적 발표에도 불",
+  "summary": {
+    "week_start": "2026-08-27",
+    "week_end": "2026-08-27",
+    "session_count": 1,
+    "total_analyzed": 8,
+    "bullish_count": 2,
+    "bearish_count": 2,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 345.88,
+    "price_end": 345.88,
+    "latest_price": 345.88,
+    "today_price": 345.88,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "Intuit, 예상치 상회하는 4분기 실적 발표에도 불구하고 2027년 성장률 둔화 전망으로 주가 하락",
+      "score": -4,
+      "reason": "예상치를 뛰어넘는 실적에도 불구하고, 회사의 2027년 성장률 둔화 가이던스는 투자자들의 우려를 증폭시켜 주가 하락으로 이어졌습니다. 이는 미래 성장 전망에 대한 시장의 부정적인 반응을 반영합니다.",
+      "source": "Seeking Alpha",
+      "date": "2026-08-26",
+      "category": "Earnings",
+      "direction_ko": "악재",
+      "emoji": "⚠"
+    },
+    "top_bullish": [
+      {
+        "title": "Intuit, AI 통합 및 중견기업 시장 성장 강조",
+        "score": 2,
+        "reason": "AI 기술 통합과 중견기업 시장에서의 강력한 성장은 Intuit의 장기적인 경쟁력과 성장 잠재력을 보여주며 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "Zacks.com",
+        "date": "2026-08-26",
+        "category": "Product"
+      },
+      {
+        "title": "Evercore ISI, Intuit에 대한 '시장수익률 상회' 등급 유지 및 목표주가 $875 제시",
+        "score": 3,
+        "reason": "주요 투자은행의 긍정적인 평가와 높은 목표주가는 투자자들에게 Intuit 주식에 대한 신뢰를 심어주어 주가 상승에 기여할 수 있습니다.",
+        "source": "Facebook",
+        "date": "2026-08-25",
+        "category": "Market"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "Intuit, 예상치 상회하는 4분기 실적 발표에도 불구하고 2027년 성장률 둔화 전망으로 주가 하락",
+        "score": -4,
+        "reason": "예상치를 뛰어넘는 실적에도 불구하고, 회사의 2027년 성장률 둔화 가이던스는 투자자들의 우려를 증폭시켜 주가 하락으로 이어졌습니다. 이는 미래 성장 전망에 대한 시장의 부정적인 반응을 반영합니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-26",
+        "category": "Earnings"
+      },
+      {
+        "title": "Intuit, 2027 회계연도 매출 성장률 9~10% 전망",
+        "score": -3,
+        "reason": "이전보다 낮은 매출 성장률 전망은 투자자들의 기대치를 낮추고 주가에 부정적인 영향을 미 미칠 수 있습니다.",
+        "source": "Zacks.com",
+        "date": "2026-08-26",
+        "category": "Earnings"
+      }
+    ],
+    "top_neutral": [
+      {
+        "title": "Intuit, 고객 확보 및 시장 점유율 성장을 위한 투자 전환 발표",
+        "score": 0,
+        "reason": "고객 성장 둔화에 대한 대응으로 새로운 전략을 발표했지만, 단기적인 주가 영향은 불확실합니다. 장기적으로는 긍정적일 수 있으나, 초기 투자 비용과 효과를 지켜봐야 합니다.",
+        "source": "Zacks.com",
+        "date": "2026-08-26",
+        "category": "Product"
+      },
+      {
+        "title": "Intuit, 2026 회계연도 3,000명 이상 해고 및 AI 개발에 자원 재배치",
+        "score": 0,
+        "reason": "대규모 해고는 단기적으로 비용 절감 효과를 가져올 수 있지만, 직원 사기 및 기업 이미지에 부정적인 영향을 미칠 수 있어 중립적인 주가 영향을 예상합니다. AI 개발 집중은 장기적으로 긍정적일 수 있습니다.",
+        "source": "Facebook",
+        "date": "2026-08-25",
+        "category": "Market"
+      },
+      {
+        "title": "Intuit, TurboTax DIY 가격 경쟁력 강화 및 유통 확대 계획",
+        "score": 0,
+        "reason": "가격 경쟁력 강화는 단기적으로 수익성에 영향을 미칠 수 있지만, 장기적으로는 고객 기반을 확대하고 시장 점유율을 회복하는 데 도움이 될 수 있어 중립적인 영향을 예상합니다.",
+        "source": "TradingView",
+        "date": "2026-08-26",
+        "category": "Competition"
+      }
+    ],
+    "neutral_count": 3,
+    "scene1_news": {
+      "bullish": {
+        "title": "Intuit, AI 통합 및 중견기업 시장 성장 강조",
+        "score": 2,
+        "reason": "AI 기술 통합과 중견기업 시장에서의 강력한 성장은 Intuit의 장기적인 경쟁력과 성장 잠재력을 보여주며 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "Zacks.com",
+        "date": "2026-08-26",
+        "category": "Product"
+      },
+      "bearish": {
+        "title": "Intuit, 예상치 상회하는 4분기 실적 발표에도 불구하고 2027년 성장률 둔화 전망으로 주가 하락",
+        "score": -4,
+        "reason": "예상치를 뛰어넘는 실적에도 불구하고, 회사의 2027년 성장률 둔화 가이던스는 투자자들의 우려를 증폭시켜 주가 하락으로 이어졌습니다. 이는 미래 성장 전망에 대한 시장의 부정적인 반응을 반영합니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-26",
+        "category": "Earnings"
+      },
+      "neutral": {
+        "title": "Intuit, 고객 확보 및 시장 점유율 성장을 위한 투자 전환 발표",
+        "score": 0,
+        "reason": "고객 성장 둔화에 대한 대응으로 새로운 전략을 발표했지만, 단기적인 주가 영향은 불확실합니다. 장기적으로는 긍정적일 수 있으나, 초기 투자 비용과 효과를 지켜봐야 합니다.",
+        "source": "Zacks.com",
+        "date": "2026-08-26",
+        "category": "Product"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-08-27",
+        345.88
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-08-27",
+    "today_news": [
+      {
+        "title": "Intuit, 예상치 상회하는 4분기 실적 발표에도 불구하고 2027년 성장률 둔화 전망으로 주가 하락",
+        "category": "Earnings",
+        "source": "Seeking Alpha",
+        "date": "2026-08-26"
+      },
+      {
+        "title": "Intuit, 고객 확보 및 시장 점유율 성장을 위한 투자 전환 발표",
+        "category": "Product",
+        "source": "Zacks.com",
+        "date": "2026-08-26"
+      },
+      {
+        "title": "Intuit, AI 통합 및 중견기업 시장 성장 강조",
+        "category": "Product",
+        "source": "Zacks.com",
+        "date": "2026-08-26"
+      },
+      {
+        "title": "Intuit, TurboTax DIY 가격 경쟁력 강화 및 유통 확대 계획",
+        "category": "Competition",
+        "source": "TradingView",
+        "date": "2026-08-26"
+      },
+      {
+        "title": "Intuit, 2027 회계연도 매출 성장률 9~10% 전망",
+        "category": "Earnings",
+        "source": "Zacks.com",
+        "date": "2026-08-26"
+      },
+      {
+        "title": "Intuit, 2026 회계연도 3,000명 이상 해고 및 AI 개발에 자원 재배치",
+        "category": "Market",
+        "source": "Facebook",
+        "date": "2026-08-25"
+      },
+      {
+        "title": "Evercore ISI, Intuit에 대한 '시장수익률 상회' 등급 유지 및 목표주가 $875 제시",
+        "category": "Market",
+        "source": "Facebook",
+        "date": "2026-08-25"
+      },
+      {
+        "title": "Intuit CFO Sandeep Aujla, QuickBooks 플랫폼의 자동화 기능 강조",
+        "category": "Product",
+        "source": "Facebook",
+        "date": "2026-08-25"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 345.88,
+        "ma20": 340.44,
+        "vs_ma20_pct": 1.6,
+        "ma60": 302.59,
+        "trend": "상승추세(20일선>60일선)",
+        "rsi14": 59.8,
+        "rsi_state": "중립",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 2.9,
+        "pos_52w_pct": 21.0,
+        "high_52w": 705.08,
+        "low_52w": 252.84,
+        "mom_5d_pct": -4.6,
+        "mom_20d_pct": 3.8
+      },
+      "valuation": {
+        "목표주가_평균": 428.61,
+        "목표주가_최고": 921.0,
+        "목표주가_최저": 290.0,
+        "애널리스트_수": 32,
+        "투자의견": "매수",
+        "PER_선행": 12.2,
+        "PER": 21.7
+      }
+    },
+    "prev_day": {
+      "date": "2026-08-26",
+      "open": 323.47,
+      "close": 345.88,
+      "change_pct": -3.24
+    },
+    "month_low": {
+      "low": 299.63,
+      "current": 345.88,
+      "pct_vs_low": 15.44
+    },
+    "movement_reason": "2026년 8월 27일 기준 인튜이트(INTU) 주가 하락의 주요 원인은 전날인 8월 26일에 발표된 실적 및 가이던스와 관련된 소식 때문입니다. 당시 주가는 하락세를 보였습니다.\n\n핵심 원인은 다음과 같습니다:\n\n부진한 2027년 실적 전망 / 고객 성장 둔화 / AI 경쟁 우려",
+    "company_direction": "인튜이트(Intuit)는 개인과 중소기업의 재정을 관리하는 금융 소프트웨어 회사입니다. 주요 사업은 세금 신고, 회계, 마케팅 지원 서비스를 제공하며, TurboTax, QuickBooks, Mailchimp 등이 대표적인 제품입니다.\n\n*   **주력 사업:** 금융 소프트웨어 제공 / 개인, 중소기업 재정 관리 / 세금 신고, 회계, 마케팅 지원\n*   **비전·전략 방향:** AI 기반 금융 플랫폼 전환 / 고객 번영 돕는 재정 시스템 구축 / 중견 기업 시장 공략 확대\n*   **최근 1년 내 주요 투자·설비·인수:** Relevvo 등 2025년 3건 인수 / OpenAI와 AI 기술 협력 1억 달러 이상 / 2026회계연도 55억 달러 자사주 매입\n*   **핵심 신제품·신기술 로드맵:** AI 비서 'Intuit Assist' 고도화 / 중견 기업용 'Intuit Enterprise Suite' 강화 / QuickBooks에 대화형 AI 기능 추가\n*   **시장 내 위치·점유율:** 미국 세금 신고 70~90% 점유 / 중소기업 회계 소프트웨어 선두 / 1억 고객 보유 글로벌 핀테크"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "전일 *-3.24%*, 현재 *$345.88*이에요",
+        "*세금·회계* 소프트웨어 회사예요",
+        "*AI 금융 비서* 회사로 변신 중이죠",
+        "*OpenAI와 1억 달러+* 협력 중이에요",
+        "대표작은 *터보택스·퀵북스*랍니다",
+        "미국 세금 신고 *70~90%* 점유해요"
+      ],
+      "body": "전일 *-3.24%*, 현재 *$345.88*이에요\n*세금·회계* 소프트웨어 회사예요\n*AI 금융 비서* 회사로 변신 중이죠\n*OpenAI와 1억 달러+* 협력 중이에요\n대표작은 *터보택스·퀵북스*랍니다\n미국 세금 신고 *70~90%* 점유해요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: *AI 세무비서* 확산과 중견기업 공략으로 장기 경쟁력 부각됐어요",
+        "악재: 4분기 실적 좋았지만 *2027년 성장 둔화* 전망에 주가 밀렸죠",
+        "보합: 고객 확보용 *마케팅 투자 확대* 발표, 단기 영향은 지켜봐야 해요"
+      ],
+      "body": "호재: *AI 세무비서* 확산과 중견기업 공략으로 장기 경쟁력 부각됐어요\n악재: 4분기 실적 좋았지만 *2027년 성장 둔화* 전망에 주가 밀렸죠\n보합: 고객 확보용 *마케팅 투자 확대* 발표, 단기 영향은 지켜봐야 해요"
+    },
+    {
+      "index": 2,
+      "title": "숫자로보기",
+      "lines": [
+        "추세: 20일선 위 *+1.6%*, 완만한 상승 흐름이에요",
+        "밸류: 내년 예상 PER *12.2배*, 목표가 평균 *$428*이에요",
+        "총평: 32명 애널리스트 *매수* 의견, 저평가 구간이에요"
+      ],
+      "body": "추세: 20일선 위 *+1.6%*, 완만한 상승 흐름이에요\n밸류: 내년 예상 PER *12.2배*, 목표가 평균 *$428*이에요\n총평: 32명 애널리스트 *매수* 의견, 저평가 구간이에요"
+    },
+    {
+      "index": 3,
+      "title": "다음주전망",
+      "lines": [
+        "관전 포인트 — *2027 매출 9~10% 성장* 눈높이 조정 국면",
+        "*Evercore 목표가 $875* 유지, 강세론 vs 둔화 우려 팽팽해요",
+        "현재 *$345*에서 평균 목표가 *$428*까지 여력 있어요",
+        "관건은 *AI 자동 세무·회계 비서* 돈 버는 속도예요",
+        "변수: *3,000명 감원* 뒤 AI 인재 재배치 성과 나올지죠",
+        "오늘도 함께해줘서 고마워요!"
+      ],
+      "body": "관전 포인트 — *2027 매출 9~10% 성장* 눈높이 조정 국면\n*Evercore 목표가 $875* 유지, 강세론 vs 둔화 우려 팽팽해요\n현재 *$345*에서 평균 목표가 *$428*까지 여력 있어요\n관건은 *AI 자동 세무·회계 비서* 돈 버는 속도예요\n변수: *3,000명 감원* 뒤 AI 인재 재배치 성과 나올지죠\n오늘도 함께해줘서 고마워요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A serene modern home office interior where a small business owner sits at a wooden desk reviewing finances, warm ambient lighting mixed with soft purple analytical glow filtering through large windows, bookshelves and plants in background creating a thoughtful atmosphere, a tablet on the side displaying subtle financial charts and tax forms as a small secondary object, cinematic photography, photorealistic, deep purple and violet tones, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A vibrant bustling small business storefront at golden hour with an entrepreneur confidently opening doors to customers, lush green plants and thriving retail environment symbolizing growth and prosperity, sunlight streaming through creating dynamic upward energy and glowing motion lines suggesting momentum, a small tablet on counter showing subtle financial dashboard as secondary element, emerald green growth atmosphere, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A calm sophisticated accountant workspace with a professional analyst reviewing documents at a sleek desk, floating holographic data visualizations and subtle financial graphs projected softly in the background, cool cyan-blue analytical lighting creating a focused analytical mood, minimalist modern architecture with glass panels, a tablet displaying financial interface as small side object on desk corner, photorealistic cinematic composition, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "3": "A visionary scene of a diverse group of small business owners and entrepreneurs standing on a modern rooftop terrace at sunrise, symbolizing financial prosperity and empowered future, warm golden inspiring light bathing the scene with hopeful atmosphere, city skyline of thriving small businesses in soft focus background, a single tablet held by one figure showing subtle AI financial insights as small secondary detail, photorealistic cinematic, warm inspiring golden light, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

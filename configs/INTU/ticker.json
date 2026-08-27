@@ -1,0 +1,36 @@
+{
+  "ticker": "INTU",
+  "company_en": "Intuit Inc.",
+  "company_ko": "인튜이트",
+  "industry_ko": "금융 소프트웨어",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "A digital interface displaying financial data, charts, and automated tax preparation forms, with a small business owner confidently reviewing their finances on a tablet, while AI-powered insights highlight potential savings and growth opportunities.",
+  "brand_label": "INTU BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "ADBE",
+  "key_people": [
+    "Sasan Goodarzi",
+    "Sandeep Aujla"
+  ],
+  "google_trends_keywords": [
+    "인튜이트",
+    "터보택스",
+    "퀵북",
+    "크레딧 카르마",
+    "메일침프",
+    "재무 소프트웨어"
+  ],
+  "video_tags": [
+    "Intuit",
+    "TurboTax",
+    "QuickBooks",
+    "Credit Karma",
+    "Mailchimp",
+    "Financial Software",
+    "Tax Software",
+    "Small Business Accounting"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-08-27T06:47:25.952Z"
+}

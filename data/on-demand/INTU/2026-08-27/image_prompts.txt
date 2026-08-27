@@ -1,0 +1,14 @@
+# INTU 주간 배경 이미지 프롬프트 — 2026-08-27
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A serene modern home office interior where a small business owner sits at a wooden desk reviewing finances, warm ambient lighting mixed with soft purple analytical glow filtering through large windows, bookshelves and plants in background creating a thoughtful atmosphere, a tablet on the side displaying subtle financial charts and tax forms as a small secondary object, cinematic photography, photorealistic, deep purple and violet tones, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A vibrant bustling small business storefront at golden hour with an entrepreneur confidently opening doors to customers, lush green plants and thriving retail environment symbolizing growth and prosperity, sunlight streaming through creating dynamic upward energy and glowing motion lines suggesting momentum, a small tablet on counter showing subtle financial dashboard as secondary element, emerald green growth atmosphere, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 정량지표
+A calm sophisticated accountant workspace with a professional analyst reviewing documents at a sleek desk, floating holographic data visualizations and subtle financial graphs projected softly in the background, cool cyan-blue analytical lighting creating a focused analytical mood, minimalist modern architecture with glass panels, a tablet displaying financial interface as small side object on desk corner, photorealistic cinematic composition, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬3 다음주전망
+A visionary scene of a diverse group of small business owners and entrepreneurs standing on a modern rooftop terrace at sunrise, symbolizing financial prosperity and empowered future, warm golden inspiring light bathing the scene with hopeful atmosphere, city skyline of thriving small businesses in soft focus background, a single tablet held by one figure showing subtle AI financial insights as small secondary detail, photorealistic cinematic, warm inspiring golden light, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
