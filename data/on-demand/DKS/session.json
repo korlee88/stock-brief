@@ -1,0 +1,118 @@
+[
+  {
+    "date": "2026-08-27",
+    "generatedAt": "2026-08-27T06:21:59.529Z",
+    "mode": "on-demand",
+    "latestPrice": 129.66,
+    "news": [
+      {
+        "id": 1,
+        "title": "DICK'S Sporting Goods, 예상치 하회하는 실적 발표 후 주가 31% 급락",
+        "summary": "DICK'S Sporting Goods는 회계연도 2분기 실적이 시장 예상치를 하회하고 연간 이익 전망치를 하향 조정하면서 주가가 31% 가까이 폭락했습니다. 이는 Foot Locker 사업 부문의 부진과 판촉 활동 증가로 인한 마진 압박 때문입니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-25",
+        "category": "Earnings"
+      },
+      {
+        "id": 2,
+        "title": "DICK'S Sporting Goods, 핵심 사업 성장에도 Foot Locker 사업 부진으로 이익 압박",
+        "summary": "DICK'S Sporting Goods의 핵심 사업은 견고한 성장세를 보였지만, Foot Locker 인수로 인한 마진 압박과 프로모션 증가로 인해 수익성이 저하되었습니다. 경영진은 Foot Locker 사업의 연간 전망을 하향 조정했습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-27",
+        "category": "Earnings"
+      },
+      {
+        "id": 3,
+        "title": "DICK'S Sporting Goods 경영진, 2분기 시장 변화 속에서도 사업 유지 강조",
+        "summary": "DICK'S Sporting Goods의 경영진(Ed Stack, Lauren Hobart, Navdeep Gupta)은 2분기 실적 발표 컨퍼런스 콜에서 Foot Locker 사업에 대한 의지와 장기적인 기회에 대한 자신감을 표명하며 현재의 어려움 속에서도 사업 방향을 유지할 것이라고 밝혔습니다.",
+        "source": "MarketBeat",
+        "date": "2026-08-25",
+        "category": "Market"
+      },
+      {
+        "id": 4,
+        "title": "DICK'S Sporting Goods, Foot Locker 인수로 인한 희석 효과로 GAAP EPS 하락",
+        "summary": "DICK'S Sporting Goods는 Foot Locker 인수로 발행된 960만 주 때문에 GAAP 희석 주당순이익(EPS)이 전년 대비 하락했습니다. 이는 매출 증가에도 불구하고 수익성에 부정적인 영향을 미쳤습니다.",
+        "source": "StockTitan",
+        "date": "2026-08-25",
+        "category": "Earnings"
+      },
+      {
+        "id": 5,
+        "title": "DICK'S Sporting Goods, Foot Locker 사업의 프로모션 강화 및 운영 손실 전망",
+        "summary": "DICK'S Sporting Goods는 Foot Locker 사업의 프로모션 환경이 악화되고 있으며, 이로 인해 Foot Locker 사업에서 연간 4천만 달러에서 8천만 달러의 운영 손실이 발생할 것으로 예상하고 있습니다.",
+        "source": "Zacks",
+        "date": "2026-08-26",
+        "category": "Competition"
+      },
+      {
+        "id": 6,
+        "title": "DICK'S Sporting Goods, 기술 및 마케팅 투자로 시장 점유율 확대 전략",
+        "summary": "Ed Stack과 Lauren Hobart는 시장 침체기에도 마케팅에 투자하고 기술, GameChanger, DICK'S Media Network에 대한 투자를 통해 시장 점유율을 확보하고 수익성을 높일 전략이라고 밝혔습니다.",
+        "source": "GuruFocus",
+        "date": "2026-08-25",
+        "category": "Product"
+      }
+    ],
+    "analyses": {
+      "1": {
+        "direction": "bearish",
+        "impact_score": -5,
+        "reasoning": "예상치를 크게 하회하는 실적과 하향 조정된 연간 전망은 투자자들의 신뢰를 떨어뜨려 주가에 매우 부정적인 영향을 미 미쳤습니다."
+      },
+      "2": {
+        "direction": "bearish",
+        "impact_score": -4,
+        "reasoning": "핵심 사업의 성장은 긍정적이지만, Foot Locker 사업의 지속적인 부진과 마진 압박은 전반적인 수익성에 부정적인 영향을 미쳐 주가에 하방 압력을 가할 것입니다."
+      },
+      "3": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "경영진의 사업 유지 의지는 불확실성 속에서 안정감을 줄 수 있지만, 현재의 부정적인 시장 상황을 상쇄할 만큼 강력한 긍정적 요인은 아니므로 주가에 중립적인 영향을 미칠 것으로 예상됩니다."
+      },
+      "4": {
+        "direction": "bearish",
+        "impact_score": -3,
+        "reasoning": "인수합병으로 인한 주식 희석은 기존 주주들에게 부정적인 영향을 미치며, 이는 주당순이익 감소로 이어져 주가에 하방 압력을 가할 수 있습니다."
+      },
+      "5": {
+        "direction": "bearish",
+        "impact_score": -4,
+        "reasoning": "경쟁 심화로 인한 프로모션 증가는 마진을 압박하고, Foot Locker 사업의 운영 손실은 전체 회사 수익성에 부정적인 영향을 미쳐 주가 하락으로 이어질 것입니다."
+      },
+      "6": {
+        "direction": "bullish",
+        "impact_score": 2,
+        "reasoning": "장기적인 관점에서 기술 및 마케팅 투자를 통한 시장 점유율 확대 전략은 회사의 성장 잠재력을 높여 주가에 긍정적인 영향을 미칠 수 있습니다."
+      }
+    },
+    "dailyForecasts": [],
+    "signals": {
+      "technicals": {
+        "price": 129.66,
+        "ma20": 190.31,
+        "vs_ma20_pct": -31.9,
+        "ma60": 210.46,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 20.9,
+        "rsi_state": "과매도(침체)",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 7.1,
+        "pos_52w_pct": 7.0,
+        "high_52w": 244.38,
+        "low_52w": 120.4,
+        "mom_5d_pct": -32.2,
+        "mom_20d_pct": -37.1
+      },
+      "valuation": {
+        "목표주가_평균": 174.28,
+        "목표주가_최고": 275.0,
+        "목표주가_최저": 99.0,
+        "애널리스트_수": 22,
+        "투자의견": "매수",
+        "PER_선행": 9.1,
+        "PER": 13.7
+      }
+    }
+  }
+]

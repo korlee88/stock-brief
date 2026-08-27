@@ -1,0 +1,29 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+전일 *+4.30%* 반등, 현재 *$129.66*
+미국 *최대 스포츠용품* 소매기업이에요
+매장·앱 하나로 *어디서든 쇼핑* 편해요
+2025년 *풋락커 24억 달러*에 인수했죠
+'*코치 바이 딕스*' 앱이 장비 골라줘요
+업계 점유율 *14.3%* 확고한 1위예요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 기술·마케팅 투자로 *시장 점유율 확대* 본격 시동 걸었어요
+악재: 풋락커 부진에 실적 눈높이 하회, 주가 *31% 급락*했어요
+보합: 경영진이 2분기 변화 속 *사업 유지 의지*를 강조했어요
+
+SCENE_2_TITLE: 다음주전망
+SCENE_2:
+*3분기 실적 가이던스* 후속 코멘트 주목
+관전 포인트: 팀·아웃도어 *체험형 대형매장* 확장
+RSI *20.9* 과매도, 단기 *반등 시도* 예상
+목표주가 평균 *$174*, 현재가 대비 상승 여력
+변수: 실적 우려 속 관건은 *풋락커 시너지*
+오늘도 함께해 주셔서 고마워요!
+
+IMAGE_PROMPT_0: A vast, meticulously organized sporting goods retail interior shot from a wide cinematic angle, showcasing spacious aisles with polished floors reflecting soft purple analytical lighting, mannequins displaying athletic wear in the distance, a subtle small display of running shoes and a basketball placed as a secondary object on the right side of the frame, deep purple and violet ambient light casting analytical shadows, empty store atmosphere suggesting strategic contemplation, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: An expansive modern House of Sport flagship store interior bathed in vibrant emerald green growth energy lighting, featuring a rock climbing wall and batting cage experience zones as the main subject demonstrating retail innovation and customer engagement, dynamic glowing upward motion lines flowing through the space suggesting expansion and momentum, athletic footwear and jerseys arranged small on a side shelf as secondary background elements, energetic bright atmosphere of a thriving retail environment, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A futuristic omnichannel sporting goods retail concept space shot vertically, featuring an inspiring warm golden light bathing an integrated experience zone where digital coaching screens and interactive fitting areas represent the future of athletic retail, an athlete silhouette engaging with smart technology as the main focal point, a small corner display of shoes and apparel as secondary background objects, aspirational cinematic mood with warm inspiring golden light rays streaming through large windows, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

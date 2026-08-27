@@ -1,0 +1,11 @@
+# DKS 주간 배경 이미지 프롬프트 — 2026-08-27
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A vast, meticulously organized sporting goods retail interior shot from a wide cinematic angle, showcasing spacious aisles with polished floors reflecting soft purple analytical lighting, mannequins displaying athletic wear in the distance, a subtle small display of running shoes and a basketball placed as a secondary object on the right side of the frame, deep purple and violet ambient light casting analytical shadows, empty store atmosphere suggesting strategic contemplation, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+An expansive modern House of Sport flagship store interior bathed in vibrant emerald green growth energy lighting, featuring a rock climbing wall and batting cage experience zones as the main subject demonstrating retail innovation and customer engagement, dynamic glowing upward motion lines flowing through the space suggesting expansion and momentum, athletic footwear and jerseys arranged small on a side shelf as secondary background elements, energetic bright atmosphere of a thriving retail environment, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 다음주전망
+A futuristic omnichannel sporting goods retail concept space shot vertically, featuring an inspiring warm golden light bathing an integrated experience zone where digital coaching screens and interactive fitting areas represent the future of athletic retail, an athlete silhouette engaging with smart technology as the main focal point, a small corner display of shoes and apparel as secondary background objects, aspirational cinematic mood with warm inspiring golden light rays streaming through large windows, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

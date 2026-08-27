@@ -1,0 +1,241 @@
+{
+  "generated_at": "2026-08-27",
+  "generated_by": "Claude Opus 4",
+  "title": "전일 *+4.30%* 반등, 현재 *$129.66*",
+  "subtitle": "2026-08-27 ~ 2026-08-27 · DICK'S Sporting Goods, 핵심 사업 성",
+  "summary": {
+    "week_start": "2026-08-27",
+    "week_end": "2026-08-27",
+    "session_count": 1,
+    "total_analyzed": 6,
+    "bullish_count": 1,
+    "bearish_count": 3,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 129.66,
+    "price_end": 129.66,
+    "latest_price": 129.66,
+    "today_price": 129.66,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "DICK'S Sporting Goods, 핵심 사업 성장에도 Foot Locker 사업 부진으로 이익 압박",
+      "score": -4,
+      "reason": "핵심 사업의 성장은 긍정적이지만, Foot Locker 사업의 지속적인 부진과 마진 압박은 전반적인 수익성에 부정적인 영향을 미쳐 주가에 하방 압력을 가할 것입니다.",
+      "source": "Seeking Alpha",
+      "date": "2026-08-27",
+      "category": "Earnings",
+      "direction_ko": "악재",
+      "emoji": "⚠"
+    },
+    "top_bullish": [
+      {
+        "title": "DICK'S Sporting Goods, 기술 및 마케팅 투자로 시장 점유율 확대 전략",
+        "score": 2,
+        "reason": "장기적인 관점에서 기술 및 마케팅 투자를 통한 시장 점유율 확대 전략은 회사의 성장 잠재력을 높여 주가에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "GuruFocus",
+        "date": "2026-08-25",
+        "category": "Product"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "DICK'S Sporting Goods, 핵심 사업 성장에도 Foot Locker 사업 부진으로 이익 압박",
+        "score": -4,
+        "reason": "핵심 사업의 성장은 긍정적이지만, Foot Locker 사업의 지속적인 부진과 마진 압박은 전반적인 수익성에 부정적인 영향을 미쳐 주가에 하방 압력을 가할 것입니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-27",
+        "category": "Earnings"
+      },
+      {
+        "title": "DICK'S Sporting Goods, 예상치 하회하는 실적 발표 후 주가 31% 급락",
+        "score": -5,
+        "reason": "예상치를 크게 하회하는 실적과 하향 조정된 연간 전망은 투자자들의 신뢰를 떨어뜨려 주가에 매우 부정적인 영향을 미 미쳤습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-25",
+        "category": "Earnings"
+      },
+      {
+        "title": "DICK'S Sporting Goods, Foot Locker 사업의 프로모션 강화 및 운영 손실 전망",
+        "score": -4,
+        "reason": "경쟁 심화로 인한 프로모션 증가는 마진을 압박하고, Foot Locker 사업의 운영 손실은 전체 회사 수익성에 부정적인 영향을 미쳐 주가 하락으로 이어질 것입니다.",
+        "source": "Zacks",
+        "date": "2026-08-26",
+        "category": "Competition"
+      }
+    ],
+    "top_neutral": [
+      {
+        "title": "DICK'S Sporting Goods 경영진, 2분기 시장 변화 속에서도 사업 유지 강조",
+        "score": 0,
+        "reason": "경영진의 사업 유지 의지는 불확실성 속에서 안정감을 줄 수 있지만, 현재의 부정적인 시장 상황을 상쇄할 만큼 강력한 긍정적 요인은 아니므로 주가에 중립적인 영향을 미칠 것으로 예상됩니다.",
+        "source": "MarketBeat",
+        "date": "2026-08-25",
+        "category": "Market"
+      }
+    ],
+    "neutral_count": 1,
+    "scene1_news": {
+      "bullish": {
+        "title": "DICK'S Sporting Goods, 기술 및 마케팅 투자로 시장 점유율 확대 전략",
+        "score": 2,
+        "reason": "장기적인 관점에서 기술 및 마케팅 투자를 통한 시장 점유율 확대 전략은 회사의 성장 잠재력을 높여 주가에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "GuruFocus",
+        "date": "2026-08-25",
+        "category": "Product"
+      },
+      "bearish": {
+        "title": "DICK'S Sporting Goods, 핵심 사업 성장에도 Foot Locker 사업 부진으로 이익 압박",
+        "score": -4,
+        "reason": "핵심 사업의 성장은 긍정적이지만, Foot Locker 사업의 지속적인 부진과 마진 압박은 전반적인 수익성에 부정적인 영향을 미쳐 주가에 하방 압력을 가할 것입니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-27",
+        "category": "Earnings"
+      },
+      "neutral": {
+        "title": "DICK'S Sporting Goods 경영진, 2분기 시장 변화 속에서도 사업 유지 강조",
+        "score": 0,
+        "reason": "경영진의 사업 유지 의지는 불확실성 속에서 안정감을 줄 수 있지만, 현재의 부정적인 시장 상황을 상쇄할 만큼 강력한 긍정적 요인은 아니므로 주가에 중립적인 영향을 미칠 것으로 예상됩니다.",
+        "source": "MarketBeat",
+        "date": "2026-08-25",
+        "category": "Market"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-08-27",
+        129.66
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-08-27",
+    "today_news": [
+      {
+        "title": "DICK'S Sporting Goods, 핵심 사업 성장에도 Foot Locker 사업 부진으로 이익 압박",
+        "category": "Earnings",
+        "source": "Seeking Alpha",
+        "date": "2026-08-27"
+      },
+      {
+        "title": "DICK'S Sporting Goods, Foot Locker 사업의 프로모션 강화 및 운영 손실 전망",
+        "category": "Competition",
+        "source": "Zacks",
+        "date": "2026-08-26"
+      },
+      {
+        "title": "DICK'S Sporting Goods, 예상치 하회하는 실적 발표 후 주가 31% 급락",
+        "category": "Earnings",
+        "source": "Seeking Alpha",
+        "date": "2026-08-25"
+      },
+      {
+        "title": "DICK'S Sporting Goods 경영진, 2분기 시장 변화 속에서도 사업 유지 강조",
+        "category": "Market",
+        "source": "MarketBeat",
+        "date": "2026-08-25"
+      },
+      {
+        "title": "DICK'S Sporting Goods, Foot Locker 인수로 인한 희석 효과로 GAAP EPS 하락",
+        "category": "Earnings",
+        "source": "StockTitan",
+        "date": "2026-08-25"
+      },
+      {
+        "title": "DICK'S Sporting Goods, 기술 및 마케팅 투자로 시장 점유율 확대 전략",
+        "category": "Product",
+        "source": "GuruFocus",
+        "date": "2026-08-25"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 129.66,
+        "ma20": 190.31,
+        "vs_ma20_pct": -31.9,
+        "ma60": 210.46,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 20.9,
+        "rsi_state": "과매도(침체)",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 7.1,
+        "pos_52w_pct": 7.0,
+        "high_52w": 244.38,
+        "low_52w": 120.4,
+        "mom_5d_pct": -32.2,
+        "mom_20d_pct": -37.1
+      },
+      "valuation": {
+        "목표주가_평균": 174.28,
+        "목표주가_최고": 275.0,
+        "목표주가_최저": 99.0,
+        "애널리스트_수": 22,
+        "투자의견": "매수",
+        "PER_선행": 9.1,
+        "PER": 13.7
+      }
+    },
+    "prev_day": {
+      "date": "2026-08-26",
+      "open": 121.87,
+      "close": 129.66,
+      "change_pct": 4.3
+    },
+    "month_low": {
+      "low": 120.4,
+      "current": 129.66,
+      "pct_vs_low": 7.69
+    },
+    "movement_reason": "2026년 8월 27일 딕스 스포팅 굿즈(DKS) 주가 하락의 주요 원인은 다음과 같습니다.\n\n*   **저조한 2분기 실적 및 매출** 딕스 스포팅 굿즈는 2026년 2분기 실적과 매출이 월스트리트의 예상치를 하회했다고 발표했습니다. 이는 투자자들에게 부정적인 신호를 주어 주가 하락을 이끌었습니다.\n*   **연간 실적 전망 하향 조정** 회사는 2026회계연도 조정 주당 순이익 전망치를 하향 조정했습니다. 이는 향후 실적에 대한 우려를 증폭시켰습니다.\n*   **풋락커 사업 부진** 최근 인수한 풋락커(Foot Locker) 사업 부문의 실적 부진과 프로모션이 활발한 시장 환경이 전체 회사 실적에 부정적인 영향을 미 미쳤습니다.\n\n**하락 주요 원인:**\n실적 및 매출 부진 / 연간 전망 하향 / 풋락커 사업 부진",
+    "company_direction": "딕스 스포팅 굿즈(DKS) 회사 소개 자료입니다.\n\n*   **주력 사업**: 스포츠용품·의류·신발 소매 / 골프·아웃도어 등 전문점 운영 / 온·오프라인 결합 판매 채널 / 다양한 스포츠·레저 용품 취급 / 미국 최대 스포츠용품 유통업체\n*   **회사의 비전·전략 방향**: 옴니채널 전략으로 고객 편의성 극대화 / 매장 내 스포츠 체험 공간 확대 / 선수 중심 전략으로 제품 차별화 / 강력한 브랜드 파트너십 강화 / 풋락커 인수 통한 시장 점유율 확대 목표\n*   **최근 1년 내 주요 투자·설비·인수**: 2025년 9월 풋락커 24억 달러에 인수 / 상반기 7.4억 달러 설비투자 진행 / 상반기 1.4억 달러 자사주 매입 / 신규 하우스 오브 스포츠 매장 개장 / 풋락커 통합 비용 및 재고 증가\n*   **핵심 신제품·신기술 로드맵**: 풋락커 신제품 출시 확대 노력 / 혁신 브랜드 파트너십으로 안정성 확보 / '코치 바이 딕스' 앱으로 장비 추천 / '스코어카드+' 멤버십으로 고객 리워드 제공\n*   **시장 내 위치·점유율**: 미국 스포츠용품 소매업계 선두 / 전체 산업 시장 점유율 14.3% 차지 / 북미 최대 규모 옴니채널 소매업체 / 딕스 사업부문에서 시장 점유율 확대 / 풋락커 인수 후 두 자릿수 점유율 목표"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "전일 *+4.30%* 반등, 현재 *$129.66*",
+        "미국 *최대 스포츠용품* 소매기업이에요",
+        "매장·앱 하나로 *어디서든 쇼핑* 편해요",
+        "2025년 *풋락커 24억 달러*에 인수했죠",
+        "'*코치 바이 딕스*' 앱이 장비 골라줘요",
+        "업계 점유율 *14.3%* 확고한 1위예요"
+      ],
+      "body": "전일 *+4.30%* 반등, 현재 *$129.66*\n미국 *최대 스포츠용품* 소매기업이에요\n매장·앱 하나로 *어디서든 쇼핑* 편해요\n2025년 *풋락커 24억 달러*에 인수했죠\n'*코치 바이 딕스*' 앱이 장비 골라줘요\n업계 점유율 *14.3%* 확고한 1위예요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: 기술·마케팅 투자로 *시장 점유율 확대* 본격 시동 걸었어요",
+        "악재: 풋락커 부진에 실적 눈높이 하회, 주가 *31% 급락*했어요",
+        "보합: 경영진이 2분기 변화 속 *사업 유지 의지*를 강조했어요"
+      ],
+      "body": "호재: 기술·마케팅 투자로 *시장 점유율 확대* 본격 시동 걸었어요\n악재: 풋락커 부진에 실적 눈높이 하회, 주가 *31% 급락*했어요\n보합: 경영진이 2분기 변화 속 *사업 유지 의지*를 강조했어요"
+    },
+    {
+      "index": 2,
+      "title": "다음주전망",
+      "lines": [
+        "*3분기 실적 가이던스* 후속 코멘트 주목",
+        "관전 포인트: 팀·아웃도어 *체험형 대형매장* 확장",
+        "RSI *20.9* 과매도, 단기 *반등 시도* 예상",
+        "목표주가 평균 *$174*, 현재가 대비 상승 여력",
+        "변수: 실적 우려 속 관건은 *풋락커 시너지*",
+        "오늘도 함께해 주셔서 고마워요!"
+      ],
+      "body": "*3분기 실적 가이던스* 후속 코멘트 주목\n관전 포인트: 팀·아웃도어 *체험형 대형매장* 확장\nRSI *20.9* 과매도, 단기 *반등 시도* 예상\n목표주가 평균 *$174*, 현재가 대비 상승 여력\n변수: 실적 우려 속 관건은 *풋락커 시너지*\n오늘도 함께해 주셔서 고마워요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A vast, meticulously organized sporting goods retail interior shot from a wide cinematic angle, showcasing spacious aisles with polished floors reflecting soft purple analytical lighting, mannequins displaying athletic wear in the distance, a subtle small display of running shoes and a basketball placed as a secondary object on the right side of the frame, deep purple and violet ambient light casting analytical shadows, empty store atmosphere suggesting strategic contemplation, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "An expansive modern House of Sport flagship store interior bathed in vibrant emerald green growth energy lighting, featuring a rock climbing wall and batting cage experience zones as the main subject demonstrating retail innovation and customer engagement, dynamic glowing upward motion lines flowing through the space suggesting expansion and momentum, athletic footwear and jerseys arranged small on a side shelf as secondary background elements, energetic bright atmosphere of a thriving retail environment, dynamic upward energy, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A futuristic omnichannel sporting goods retail concept space shot vertically, featuring an inspiring warm golden light bathing an integrated experience zone where digital coaching screens and interactive fitting areas represent the future of athletic retail, an athlete silhouette engaging with smart technology as the main focal point, a small corner display of shoes and apparel as secondary background objects, aspirational cinematic mood with warm inspiring golden light rays streaming through large windows, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ticker": "DKS",
+  "company_en": "DICK'S Sporting Goods, Inc.",
+  "company_ko": "딕스 스포팅 굿즈",
+  "industry_ko": "스포츠용품 소매",
+  "exchange": "NYSE",
+  "image_future_tech_en": "A vast retail space filled with athletic apparel, footwear, and sports equipment for various activities, including dedicated sections for team sports, outdoor adventures, and fitness, catering to a wide range of athletes and enthusiasts.",
+  "brand_label": "DKS BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "ASO",
+  "key_people": [
+    "Lauren R. Hobart",
+    "Edward W. Stack"
+  ],
+  "google_trends_keywords": [
+    "딕스 스포팅 굿즈",
+    "DKS 주가",
+    "스포츠용품 매장",
+    "로렌 호바트",
+    "운동복",
+    "운동화"
+  ],
+  "video_tags": [
+    "DICK'S Sporting Goods",
+    "DKS",
+    "Sporting Goods",
+    "Athletic Apparel",
+    "Footwear",
+    "Outdoor Gear",
+    "Retail",
+    "Sports Equipment",
+    "Lauren Hobart",
+    "Dick's House of Sport"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-08-27T06:21:50.721Z"
+}
