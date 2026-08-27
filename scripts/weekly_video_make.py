@@ -58,12 +58,13 @@ def _theme_idx(date_str):
     return sum(ord(c) for c in (date_str or "")) % len(ACCENT_THEMES)
 
 # ── BGM 설정 (원본 합성 · CC0/로열티프리) ────────────────────────────────────
-# 배경음악은 저장소에 커밋된 data/bgm.mp3 를 사용한다 → 빌드 시 네트워크 의존 0.
-# 이 파일은 scripts/make_bgm.py 가 생성한 '원본' 앰비언트 패드라 저작권·출처 표기 의무가 없다.
+# 배경음악은 저장소에 커밋된 data/bgm/*.mp3 를 사용한다 → 빌드 시 네트워크 의존 0.
+# 이 파일들은 scripts/make_bgm.py 가 생성한 '원본' 앰비언트 패드라 저작권·출처 표기 의무가 없다.
 # (외부 CC0 사이트는 빌드 환경에서 불안정: FreePD는 JS 렌더링이라 스크래핑 불가,
 #  archive.org는 CC0 검색이 비고, yt-dlp+YouTube는 러너 IP 봇 차단 → 직접 합성·커밋으로 확정.)
+# 여러 트랙 중 하나를 매번 다르게 골라 씀(사용자 요청 — 항상 같은 곡이라 단조롭다는 피드백).
 BGM_VOLUME = 0.10                            # 나레이션 아래 배경음 (10%)
-BGM_CACHE  = ROOT_DIR / "data" / "bgm.mp3"
+BGM_DIR    = ROOT_DIR / "data" / "bgm"
 
 # ── 유틸 ──────────────────────────────────────────────────────────────────────
 
@@ -78,17 +79,22 @@ def find_latest_report():
     return dirs[0] if dirs else None
 
 
-def download_bgm() -> "Path | None":
-    """저장소에 커밋된 BGM(data/bgm.mp3)을 반환. 없으면 None → 음악 없이 진행.
+def download_bgm(seed: str = "") -> "Path | None":
+    """data/bgm/ 안의 여러 트랙 중 하나를 골라 반환. 없으면 None → 음악 없이 진행.
 
     음원은 scripts/make_bgm.py 로 미리 생성·커밋한다(원본·로열티프리). 빌드 중 네트워크 0.
-    교체하려면 data/bgm.mp3 를 원하는 트랙으로 바꿔 커밋하면 된다.
+    seed(티커+날짜)로 결정적 선택 — 같은 종목·같은 날 재실행하면 동일 트랙, 다른
+    종목/날짜는 자동으로 달라진다(prep.py의 _theme_idx 색상 로테이션과 동일한 패턴).
+    트랙을 추가·교체하려면 data/bgm/ 에 mp3만 더 넣으면(또는 바꾸면) 자동으로 로테이션된다.
     """
-    if BGM_CACHE.exists():
-        print(f"   🎵 BGM 사용: {BGM_CACHE.name}")
-        return BGM_CACHE
-    print("   ⚠ data/bgm.mp3 없음 — 음악 없이 진행", file=sys.stderr)
-    return None
+    files = sorted(BGM_DIR.glob("*.mp3")) if BGM_DIR.exists() else []
+    if not files:
+        print("   ⚠ data/bgm/ 에 트랙 없음 — 음악 없이 진행", file=sys.stderr)
+        return None
+    idx = sum(ord(c) for c in (seed or "")) % len(files)
+    chosen = files[idx]
+    print(f"   🎵 BGM 사용: {chosen.name} ({idx + 1}/{len(files)})")
+    return chosen
 
 
 def clean_for_tts(lines):
@@ -509,7 +515,7 @@ async def build_video_async(report_dir):
     final = final.with_fps(FPS)
 
     # ── BGM 믹싱 ────────────────────────────────────────────────────────────
-    bgm_path = download_bgm()
+    bgm_path = download_bgm(f"{TICKER}{report_dir.name}")
     if bgm_path:
         try:
             from moviepy import AudioFileClip as _AFC, CompositeAudioClip, concatenate_audioclips
