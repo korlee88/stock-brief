@@ -1,216 +1,246 @@
 {
- "generated_at": "2026-08-27T04:55:20.468Z",
+ "generated_at": "2026-08-27T13:54:14.210Z",
  "source": "Gemini + Google Search 그라운딩 — 한국·미국 독립 검색 후 미국 우선 교차 배치 (AI 추정 순위)",
  "items": [
   {
    "rank": 1,
-   "name_ko": "엔비디아",
-   "ticker": "NVDA",
+   "name_ko": "비욘드 미트",
+   "ticker": "BYND",
    "market": "미국",
-   "score": 98
+   "score": 98,
+   "reason": "밈 주식 열풍 및 주가 1000% 급등"
   },
   {
    "rank": 2,
    "name_ko": "삼성전자",
    "ticker": "005930.KS",
    "market": "한국",
-   "score": 98
+   "score": 98,
+   "reason": "엔비디아 실적 호조 및 반도체 투심 개선"
   },
   {
    "rank": 3,
-   "name_ko": "슈퍼 마이크로 컴퓨터",
-   "ticker": "SMCI",
+   "name_ko": "네비우스 그룹",
+   "ticker": "NBIS",
    "market": "미국",
-   "score": 95
+   "score": 95,
+   "reason": "강력한 2분기 실적 및 애널리스트 목표가 상향"
   },
   {
    "rank": 4,
    "name_ko": "SK하이닉스",
    "ticker": "000660.KS",
    "market": "한국",
-   "score": 95
+   "score": 95,
+   "reason": "엔비디아 실적 호조 및 반도체 투심 개선"
   },
   {
    "rank": 5,
-   "name_ko": "샌디스크",
-   "ticker": "SNDK",
-   "market": "미국",
-   "score": 92
-  },
-  {
-   "rank": 6,
-   "name_ko": "두산에너빌리티",
-   "ticker": "034020.KS",
-   "market": "한국",
-   "score": 85
-  },
-  {
-   "rank": 7,
-   "name_ko": "게임스탑",
-   "ticker": "GME",
-   "market": "미국",
-   "score": 88
-  },
-  {
-   "rank": 8,
-   "name_ko": "한국전력",
-   "ticker": "015760.KS",
-   "market": "한국",
-   "score": 80
-  },
-  {
-   "rank": 9,
-   "name_ko": "AMC 엔터테인먼트 홀딩스",
-   "ticker": "AMC",
-   "market": "미국",
-   "score": 85
-  },
-  {
-   "rank": 10,
-   "name_ko": "현대차",
-   "ticker": "005380.KS",
-   "market": "한국",
-   "score": 75
-  },
-  {
-   "rank": 11,
-   "name_ko": "모더나",
-   "ticker": "MRNA",
-   "market": "미국",
-   "score": 83
-  },
-  {
-   "rank": 12,
-   "name_ko": "삼성SDI",
-   "ticker": "006400.KS",
-   "market": "한국",
-   "score": 70
-  },
-  {
-   "rank": 13,
    "name_ko": "마이크론 테크놀로지",
    "ticker": "MU",
    "market": "미국",
-   "score": 80
+   "score": 92,
+   "reason": "AI 칩 수요 증가 및 실적 호조"
   },
   {
-   "rank": 14,
-   "name_ko": "NAVER",
-   "ticker": "035420.KS",
+   "rank": 6,
+   "name_ko": "삼성SDI",
+   "ticker": "006400.KS",
    "market": "한국",
-   "score": 68
+   "score": 90,
+   "reason": "삼성디스플레이 지분 매각 통한 투자재원 확보"
   },
   {
-   "rank": 15,
-   "name_ko": "테슬라",
-   "ticker": "TSLA",
+   "rank": 7,
+   "name_ko": "샌디스크",
+   "ticker": "SNDK",
    "market": "미국",
-   "score": 78
+   "score": 90,
+   "reason": "야심찬 성장 전망 발표 및 주가 급등"
   },
   {
-   "rank": 16,
-   "name_ko": "카카오",
-   "ticker": "035720.KS",
+   "rank": 8,
+   "name_ko": "대한광통신",
+   "ticker": "010170.KQ",
    "market": "한국",
-   "score": 65
+   "score": 88,
+   "reason": "AI 매매신호 이용자 관심 급증"
   },
   {
-   "rank": 17,
-   "name_ko": "팔란티어 테크놀로지스",
-   "ticker": "PLTR",
+   "rank": 9,
+   "name_ko": "틸레이",
+   "ticker": "TLRY",
    "market": "미국",
-   "score": 75
+   "score": 88,
+   "reason": "마리화나 재분류 가능성 보도에 주가 급등"
   },
   {
-   "rank": 18,
-   "name_ko": "한화오션",
-   "ticker": "042660.KS",
+   "rank": 10,
+   "name_ko": "삼성전기",
+   "ticker": "009150.KS",
    "market": "한국",
-   "score": 60
+   "score": 85,
+   "reason": "테슬라 및 AI 호재로 급등"
   },
   {
-   "rank": 19,
-   "name_ko": "딕스 스포팅 굿즈",
-   "ticker": "DKS",
+   "rank": 11,
+   "name_ko": "카프리코 테라퓨틱스",
+   "ticker": "CAPR",
    "market": "미국",
-   "score": 72
+   "score": 85,
+   "reason": "뒤센 근이영양증 치료제 3상 데이터 기대감"
   },
   {
-   "rank": 20,
+   "rank": 12,
    "name_ko": "대우건설",
    "ticker": "047040.KS",
    "market": "한국",
-   "score": 58
+   "score": 80,
+   "reason": "인기 검색 종목 상위 기록"
   },
   {
-   "rank": 21,
-   "name_ko": "인트위트",
-   "ticker": "INTU",
+   "rank": 13,
+   "name_ko": "마벨 테크놀로지",
+   "ticker": "MRVL",
    "market": "미국",
-   "score": 70
+   "score": 83,
+   "reason": "강력한 3분기 실적 및 AI 관련 기업 인수"
   },
   {
-   "rank": 22,
-   "name_ko": "LG전자",
-   "ticker": "066570.KS",
+   "rank": 14,
+   "name_ko": "산일전기",
+   "ticker": "005270.KS",
    "market": "한국",
-   "score": 55
+   "score": 78,
+   "reason": "인기 검색 종목 상위 기록"
   },
   {
-   "rank": 23,
+   "rank": 15,
    "name_ko": "크라우드스트라이크 홀딩스",
    "ticker": "CRWD",
    "market": "미국",
-   "score": 68
+   "score": 80,
+   "reason": "강력한 AI 관련 수요로 실적 가이던스 상향"
+  },
+  {
+   "rank": 16,
+   "name_ko": "심텍",
+   "ticker": "222800.KQ",
+   "market": "한국",
+   "score": 75,
+   "reason": "인기 검색 종목 상위 기록"
+  },
+  {
+   "rank": 17,
+   "name_ko": "아메리칸 이글 아웃피터스",
+   "ticker": "AEO",
+   "market": "미국",
+   "score": 78,
+   "reason": "예상치 상회하는 3분기 실적 및 4분기 전망 상향"
+  },
+  {
+   "rank": 18,
+   "name_ko": "LG에너지솔루션",
+   "ticker": "373220.KS",
+   "market": "한국",
+   "score": 70,
+   "reason": "주가 큰 폭 상승"
+  },
+  {
+   "rank": 19,
+   "name_ko": "치폴레 멕시칸 그릴",
+   "ticker": "CMG",
+   "market": "미국",
+   "score": 75,
+   "reason": "50대 1 주식 분할 발표로 관심 급증"
+  },
+  {
+   "rank": 20,
+   "name_ko": "에코프로비엠",
+   "ticker": "247540.KQ",
+   "market": "한국",
+   "score": 68,
+   "reason": "주가 상승세 기록"
+  },
+  {
+   "rank": 21,
+   "name_ko": "웬디스",
+   "ticker": "WEN",
+   "market": "미국",
+   "score": 72,
+   "reason": "밈 주식으로 부상하며 주가 급등"
+  },
+  {
+   "rank": 22,
+   "name_ko": "에코프로",
+   "ticker": "086520.KQ",
+   "market": "한국",
+   "score": 65,
+   "reason": "주가 상승세 기록"
+  },
+  {
+   "rank": 23,
+   "name_ko": "서비스나우",
+   "ticker": "NOW",
+   "market": "미국",
+   "score": 70,
+   "reason": "애널리스트 목표가 하향 조정으로 주가 하락"
   },
   {
    "rank": 24,
-   "name_ko": "주성엔지니어링",
-   "ticker": "036220.KQ",
+   "name_ko": "레인보우로보틱스",
+   "ticker": "277810.KQ",
    "market": "한국",
-   "score": 52
+   "score": 63,
+   "reason": "주가 상승세 기록"
   },
   {
    "rank": 25,
-   "name_ko": "로빈후드 마켓츠",
-   "ticker": "HOOD",
+   "name_ko": "아틀라시안",
+   "ticker": "TEAM",
    "market": "미국",
-   "score": 65
+   "score": 68,
+   "reason": "인력 감축 및 AI 개발 집중 발표"
   },
   {
    "rank": 26,
-   "name_ko": "제주반도체",
-   "ticker": "080350.KQ",
+   "name_ko": "주성엔지니어링",
+   "ticker": "036930.KQ",
    "market": "한국",
-   "score": 50
+   "score": 60,
+   "reason": "주가 상승세 기록"
   },
   {
    "rank": 27,
-   "name_ko": "BWXT 어드밴스드 테크놀로지스",
-   "ticker": "BWXT",
+   "name_ko": "스페이스X",
+   "ticker": "SPCX",
    "market": "미국",
-   "score": 63
+   "score": 65,
+   "reason": "소매 투자자들의 높은 관심 및 주가 상승"
   },
   {
    "rank": 28,
-   "name_ko": "엘앤에프",
-   "ticker": "066970.KQ",
+   "name_ko": "한국전력",
+   "ticker": "015760.KS",
    "market": "한국",
-   "score": 48
+   "score": 55,
+   "reason": "금통위 금리 인상 변수 주목"
   },
   {
    "rank": 29,
-   "name_ko": "제로스택",
-   "ticker": "ZSTK",
+   "name_ko": "캐터필러",
+   "ticker": "CAT",
    "market": "미국",
-   "score": 60
+   "score": 63,
+   "reason": "AI 데이터 센터 구축 수요 증가로 인한 장비 수요 상승"
   },
   {
    "rank": 30,
-   "name_ko": "포스코퓨처엠",
-   "ticker": "003670.KS",
+   "name_ko": "두산에너빌리티",
+   "ticker": "034020.KS",
    "market": "한국",
-   "score": 45
+   "score": 50,
+   "reason": "고점 회복 및 수급 관심"
   }
  ]
 }
