@@ -3,12 +3,15 @@
  * 구글 관심 주식 순위 조사 — Gemini + Google Search 그라운딩으로 "지금 구글에서
  * 검색 관심이 가장 높은 상장사 TOP 30"을 조사해 data/stock-trends.json 에 기록한다.
  *
- * 한국·미국 시장을 **독립된 두 번의 검색**으로 각각 조사해 합친다(사용자 요청 —
- * 한 번의 통합 검색은 "한국 개인투자자 관점" 프롬프트에 끌려 미국 쪽 결과 품질이
- * 떨어짐: 실제 미국에서 화제인 종목이 아니라 한국어 검색 맥락에 걸리는 종목 위주로
+ * 한국·미국·일본·대만 4개 시장을 **독립된 검색**으로 각각 조사해 합친다(사용자 요청 —
+ * 한 번의 통합 검색은 "한국 개인투자자 관점" 프롬프트에 끌려 다른 시장 결과 품질이
+ * 떨어짐: 실제 그 시장에서 화제인 종목이 아니라 한국어 검색 맥락에 걸리는 종목 위주로
  * 나옴). 각 시장 검색은 그 시장 언어·매체 기준으로 독립 그라운딩되고, 결과를
- * 시장 내 순위 기준으로 교차 배치(interleave)하되 **미국을 한국보다 우선**한다
- * (사용자 요청 — US1,KR1,US2,KR2,... 순, 동순위면 미국이 위).
+ * 시장 내 순위 기준으로 교차 배치(interleave)하되 **미국 → 한국 → 일본 → 대만**
+ * 순으로 우선한다(사용자 요청 — 미국 검색 순위를 한국보다 우선, 한국 외 해외
+ * 미국주식 투자가 활발한 국가로 일본·대만 추가). 일본·대만은 "미국주식에 대한
+ * 그 나라 검색 관심"을 보는 것이라 미국 상장 종목(ticker)을 대상으로 하되,
+ * 검색 그라운딩만 각 언어·매체로 독립시킨다(미국 자국 관심과는 다른 종목이 뜰 수 있음).
  *
  * on-demand.html 우측 '구글 관심 주식 TOP 30' 패널이 이 파일을 읽어 표시하며,
  * 갱신은 페이지의 [리셋] 버튼 → update-stock-trends.yml workflow_dispatch 로만 일어난다
@@ -80,6 +83,31 @@ Rules:
 - reason은 지어내지 말고 실제 검색된 뉴스·이슈에 근거해 짧게 요약한다.
 - Return ONLY the JSON array, no prose.`;
 
+// 일본·대만 — 한국 외 해외주식(미국주식) 투자가 활발한 대표 국가(사용자 요청).
+// 자국 상장사가 아니라 "그 나라 투자자들이 지금 검색·화제 삼는 미국 상장 종목"을
+// 조사한다 — 미국 자국 관심(US_PROMPT)과는 언어·매체가 달라 결과가 다를 수 있다.
+const JP_PROMPT = (today) =>
+`Search Google (日本語での検索 — 日本の経済メディア、個人投資家コミュニティ、SNSでの話題性) for US-listed (NYSE/NASDAQ) companies that Japanese retail investors are searching for and discussing THE MOST right now (past few days, as of ${today}).
+Focus on what is genuinely buzzing among Japanese investors specifically about US stocks — this may differ from what's trending among US domestic investors.
+
+Return ONLY a JSON array of exactly 10 items ranked by search interest (1 = highest):
+[{"rank":1,"name_ko":"회사명 한국어 표기 (예: 엔비디아)","ticker":"Yahoo Finance 심볼, 접미사 없음 (예: NVDA)","score":1~100 정수,"reason":"왜 지금 일본에서 검색 관심이 높은지 한국어로 8~16자 이내 핵심만"}]
+Rules:
+- 반드시 미국 거래소(NYSE/NASDAQ) 상장사만. 중복 금지, ETF·지수 제외.
+- reason은 지어내지 말고 실제 검색된 뉴스·이슈에 근거해 짧게 요약한다.
+- Return ONLY the JSON array, no prose.`;
+
+const TW_PROMPT = (today) =>
+`用 Google 搜尋(繁體中文搜尋 — 台灣財經媒體、投資社群、社群平台話題) for US-listed (NYSE/NASDAQ) companies that Taiwanese retail investors are searching for and discussing THE MOST right now (past few days, as of ${today}).
+Focus on what is genuinely buzzing among Taiwanese investors specifically about US stocks — this may differ from what's trending among US domestic investors (e.g. AI/semiconductor supply-chain related names may rank higher).
+
+Return ONLY a JSON array of exactly 10 items ranked by search interest (1 = highest):
+[{"rank":1,"name_ko":"회사명 한국어 표기 (예: 엔비디아)","ticker":"Yahoo Finance 심볼, 접미사 없음 (예: NVDA)","score":1~100 정수,"reason":"왜 지금 대만에서 검색 관심이 높은지 한국어로 8~16자 이내 핵심만"}]
+Rules:
+- 반드시 미국 거래소(NYSE/NASDAQ) 상장사만. 중복 금지, ETF·지수 제외.
+- reason은 지어내지 말고 실제 검색된 뉴스·이슈에 근거해 짧게 요약한다.
+- Return ONLY the JSON array, no prose.`;
+
 async function fetchMarketTrends(label, promptText) {
   const data = await geminiPost({
     tools: [{ google_search: {} }],
@@ -103,25 +131,38 @@ async function fetchMarketTrends(label, promptText) {
 
 async function main() {
   const today = new Date(Date.now() + 9 * 3600 * 1000).toISOString().split('T')[0];
-  console.log(`🔥 관심 주식 순위 조사 중 — 한국·미국 독립 검색 (Gemini + Google Search, ${today} KST)...`);
+  console.log(`🔥 관심 주식 순위 조사 중 — 미국·한국·일본·대만 독립 검색 (Gemini + Google Search, ${today} KST)...`);
 
-  // 한국·미국을 별도 검색으로 조사 — 한쪽이 다른 쪽 언어·매체 맥락에 끌려가지 않게.
-  const [krItems, usItems] = await Promise.all([
-    fetchMarketTrends('한국', KR_PROMPT(today)),
+  // 미국·한국은 핵심 시장 — 실패 시 전체 실패(기존 동작 유지). 일본·대만은 보조 시장 —
+  // 검색 품질이 낮거나 실패해도(예: 그라운딩 부족) 조용히 빈 배열로 건너뛰고 계속 진행.
+  const [usItems, krItems] = await Promise.all([
     fetchMarketTrends('미국', US_PROMPT(today)),
+    fetchMarketTrends('한국', KR_PROMPT(today)),
   ]);
-  console.log(`   한국 ${krItems.length}건, 미국 ${usItems.length}건 수신`);
+  const [jpItems, twItems] = await Promise.all([
+    fetchMarketTrends('일본', JP_PROMPT(today)).catch(e => {
+      console.error(`   ⚠ 일본 순위 조사 실패(건너뜀): ${e.message}`);
+      return [];
+    }),
+    fetchMarketTrends('대만', TW_PROMPT(today)).catch(e => {
+      console.error(`   ⚠ 대만 순위 조사 실패(건너뜀): ${e.message}`);
+      return [];
+    }),
+  ]);
+  console.log(`   미국 ${usItems.length}건, 한국 ${krItems.length}건, 일본 ${jpItems.length}건, 대만 ${twItems.length}건 수신`);
 
-  // 시장 내 순위(이미 score 내림차순으로 옴) 기준으로 교차 배치하되 미국을 우선
-  // 배치(US1,KR1,US2,KR2,...) — 사용자 요청: 한국보다 미국 검색 순위를 우선한다.
+  // 시장 내 순위(이미 score 내림차순으로 옴) 기준으로 교차 배치하되 미국→한국→일본→대만
+  // 순으로 우선한다(사용자 요청).
+  const MARKET_ORDER = [usItems, krItems, jpItems, twItems];
   const interleaved = [];
-  const maxLen = Math.max(krItems.length, usItems.length);
+  const maxLen = Math.max(...MARKET_ORDER.map(a => a.length));
   for (let i = 0; i < maxLen; i++) {
-    if (usItems[i]) interleaved.push(usItems[i]);
-    if (krItems[i]) interleaved.push(krItems[i]);
+    for (const arr of MARKET_ORDER) {
+      if (arr[i]) interleaved.push(arr[i]);
+    }
   }
 
-  // 정리: 이름 중복 제거(양쪽에 같은 종목이 우연히 잡힌 경우 대비)·30개 컷·순위 재부여
+  // 정리: 이름 중복 제거(여러 시장에 같은 종목이 우연히 잡힌 경우 대비)·30개 컷·순위 재부여
   const seen = new Set();
   const items = interleaved
     .filter(it => !seen.has(it.name_ko) && seen.add(it.name_ko))
@@ -130,7 +171,7 @@ async function main() {
 
   const out = {
     generated_at: new Date().toISOString(),
-    source: 'Gemini + Google Search 그라운딩 — 한국·미국 독립 검색 후 미국 우선 교차 배치 (AI 추정 순위)',
+    source: 'Gemini + Google Search 그라운딩 — 미국·한국·일본·대만 독립 검색 후 미국 우선 교차 배치 (AI 추정 순위)',
     items,
   };
   fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 1) + '\n');
