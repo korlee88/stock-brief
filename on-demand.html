@@ -109,6 +109,7 @@
   .trend-name { font-size: 14px; font-weight: 700; }
   .trend-mkt { font-size: 10.5px; color: var(--dim); }
   .trend-tk { margin-left: auto; font-size: 11.5px; color: var(--accent2); font-family: monospace; }
+  .trend-reason { font-size: 11px; color: var(--dim); margin: 3px 0 0 32px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .trend-bar { height: 6px; border-radius: 0 4px 4px 0; background: rgba(124,140,248,0.75); margin: 5px 0 0 32px; }
   .trend-bar-track { background: var(--card2); border-radius: 4px; margin: 5px 0 0 32px; }
   .trend-bar-track .trend-bar { margin: 0; }
@@ -684,6 +685,7 @@ function renderTrends(data) {
         <span class="trend-mkt">${_esc(it.market || '')}</span>
         ${it.ticker ? `<span class="trend-tk">${_esc(it.ticker)}</span>` : ''}
       </div>
+      ${it.reason ? `<div class="trend-reason">${_esc(it.reason)}</div>` : ''}
       <div class="trend-bar" style="width:calc((100% - 32px) * ${Math.max(0.04, (it.score || 1) / max)})"></div>
     </div>`).join('');
 }

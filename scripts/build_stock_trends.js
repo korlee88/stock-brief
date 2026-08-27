@@ -15,7 +15,9 @@
  * (사용자 요청: 리셋을 누를 때만 순위를 검색해서 기록).
  *
  * 사용: GEMINI_API_KEY=... node scripts/build_stock_trends.js
- * 출력: data/stock-trends.json {generated_at, source, items:[{rank,name_ko,ticker,market,score}]}
+ * 출력: data/stock-trends.json {generated_at, source, items:[{rank,name_ko,ticker,market,score,reason}]}
+ * reason: 왜 지금 검색 관심이 높은지 짧은 한 줄(사용자 요청 — 순위만 보여주고 이유가
+ * 없어 궁금하다는 피드백). Gemini가 그라운딩한 실제 뉴스·이슈 근거로 작성, 지어내기 금지.
  */
 const fs = require('fs');
 const path = require('path');
@@ -61,9 +63,10 @@ const KR_PROMPT = (today) =>
 신호: 실시간 인기 검색 종목, 국내 경제·증권 뉴스 화제도, 급등락 이슈, 실적 발표 화제.
 
 Return ONLY a JSON array of exactly 15 items ranked by search interest (1 = highest):
-[{"rank":1,"name_ko":"회사명 한국어 (예: 삼성전자)","ticker":"005930.KS 또는 247540.KQ 형식","score":1~100 정수}]
+[{"rank":1,"name_ko":"회사명 한국어 (예: 삼성전자)","ticker":"005930.KS 또는 247540.KQ 형식","score":1~100 정수,"reason":"왜 지금 검색 관심이 높은지 한국어로 8~16자 이내 핵심만 (예: '3분기 실적 서프라이즈', '신제품 발표 화제', '급등락 이슈')"}]
 Rules:
 - 반드시 한국거래소(KOSPI/KOSDAQ) 상장사만. 중복 금지, ETF·지수 제외.
+- reason은 지어내지 말고 실제 검색된 뉴스·이슈에 근거해 짧게 요약한다.
 - Return ONLY the JSON array, no prose.`;
 
 const US_PROMPT = (today) =>
@@ -71,9 +74,10 @@ const US_PROMPT = (today) =>
 Focus on what is genuinely trending/buzzing in the US market itself right now (earnings surprises, viral or meme-stock activity, major product/AI news, unusual price moves) — NOT just large stable blue-chip names by default.
 
 Return ONLY a JSON array of exactly 15 items ranked by search interest (1 = highest):
-[{"rank":1,"name_ko":"회사명 한국어 표기 (예: 엔비디아)","ticker":"Yahoo Finance 심볼, 접미사 없음 (예: NVDA)","score":1~100 정수}]
+[{"rank":1,"name_ko":"회사명 한국어 표기 (예: 엔비디아)","ticker":"Yahoo Finance 심볼, 접미사 없음 (예: NVDA)","score":1~100 정수,"reason":"왜 지금 검색 관심이 높은지 한국어로 8~16자 이내 핵심만 (예: '실적 서프라이즈', 'AI 신제품 공개', '밈 주식 화제')"}]
 Rules:
 - 반드시 미국 거래소(NYSE/NASDAQ) 상장사만. 중복 금지, ETF·지수 제외.
+- reason은 지어내지 말고 실제 검색된 뉴스·이슈에 근거해 짧게 요약한다.
 - Return ONLY the JSON array, no prose.`;
 
 async function fetchMarketTrends(label, promptText) {
@@ -93,6 +97,7 @@ async function fetchMarketTrends(label, promptText) {
       ticker: String(it.ticker || '').trim().toUpperCase(),
       market: label,
       score: Math.max(1, Math.min(100, Math.round(Number(it.score) || (100 - i * 3)))),
+      reason: String(it.reason || '').trim().slice(0, 40),
     }));
 }
 
