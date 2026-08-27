@@ -2,15 +2,21 @@
 
 외부 CC0 음원 사이트(FreePD=JS 렌더링, archive.org=CC0 검색 불가)가 빌드 환경에서
 안정적으로 접근되지 않아, 저작권·네트워크 의존이 전혀 없는 '원본' 배경 음악을 직접 합성한다.
-구성(트랙 공통): 따뜻한 코드 패드(스테레오 코러스) + 사이클마다 바뀌는 아르페지오 +
-가끔 울리는 high shimmer + 스테레오 크로스피드 에코. 나레이션 아래 10%용.
+
+트랙 두 종류:
+  · 코드 패드(warm/dreamy/airy — PRESETS): 따뜻한 코드 패드(스테레오 코러스) + 사이클마다
+    바뀌는 아르페지오 + 가끔 울리는 high shimmer + 스테레오 크로스피드 에코.
+  · 왈츠(waltz — generate_waltz): 사용자가 "하울의 움직이는 성" OST 같은 분위기를 요청 —
+    실제 멜로디는 베끼지 않고 같은 장르(따뜻한 3박자 왈츠풍 피아노, 오르골·캐러셀 느낌)로
+    새로 작곡한 오리지널 멜로디 + 붕작작 반주.
+나레이션 아래 10%용.
 
 여러 트랙을 생성해 매 영상 생성마다 다른 곡으로 변화를 준다(사용자 요청 — 항상 같은
 곡이라 단조롭다는 피드백). weekly_video_make.py의 download_bgm()이 data/bgm/ 안의
 파일 중 하나를 (티커+날짜) 시드로 결정적으로 골라 쓴다.
 
-재생성: python scripts/make_bgm.py  (출력: data/bgm/<preset>.mp3, 이음매 없는 스테레오 루프,
-프리셋별 RNG 시드 고정이라 재생성해도 항상 동일한 결과)
+재생성: python scripts/make_bgm.py  (출력: data/bgm/<이름>.mp3, 이음매 없는 스테레오 루프,
+시드 고정이라 재생성해도 항상 동일한 결과)
 """
 import math
 from pathlib import Path
@@ -125,6 +131,34 @@ def echo_stereo(sigL, sigR, delay_s=0.36, decay=0.34, taps=4, cross=0.45, r_offs
     return outL, outR
 
 
+def _export(name, loopL, loopR, peak):
+    """정규화·PCM 변환·mp3 인코딩까지 공통 마무리 (트랙 종류 무관 공용)."""
+    pcm = np.empty(len(loopL) * 2, dtype=np.int16)
+    pcm[0::2] = (loopL * 32767).astype(np.int16)
+    pcm[1::2] = (loopR * 32767).astype(np.int16)
+
+    out_dir = Path(__file__).parent.parent / "data" / "bgm"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out = out_dir / f"{name}.mp3"
+    try:
+        import lameenc
+        enc = lameenc.Encoder()
+        enc.set_bit_rate(160)
+        enc.set_in_sample_rate(SR)
+        enc.set_channels(2)
+        enc.set_quality(2)
+        mp3 = enc.encode(pcm.tobytes()) + enc.flush()
+        out.write_bytes(mp3)
+        print(f"✅ {out} ({len(mp3)} bytes, {len(loopL) / SR:.1f}s stereo, peak={peak:.2f})")
+    except ImportError:
+        import wave
+        wav = out.with_suffix(".wav")
+        with wave.open(str(wav), "wb") as w:
+            w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
+            w.writeframes(pcm.tobytes())
+        print(f"⚠ lameenc 없음 → {wav} (WAV) 생성. ffmpeg로 mp3 변환 필요")
+
+
 def generate_track(name, chords, seed):
     rng = np.random.default_rng(seed)
     total = int(CHORD_SEC * len(chords) * CYCLES * SR)
@@ -195,33 +229,96 @@ def generate_track(name, chords, seed):
     scale = (10 ** (-3 / 20)) / peak
     loopL = loopL * scale
     loopR = loopR * scale
+    _export(name, loopL, loopR, peak)
 
-    pcm = np.empty(len(loopL) * 2, dtype=np.int16)
-    pcm[0::2] = (loopL * 32767).astype(np.int16)
-    pcm[1::2] = (loopR * 32767).astype(np.int16)
 
-    out_dir = Path(__file__).parent.parent / "data" / "bgm"
-    out_dir.mkdir(parents=True, exist_ok=True)
-    out = out_dir / f"{name}.mp3"
-    try:
-        import lameenc
-        enc = lameenc.Encoder()
-        enc.set_bit_rate(160)
-        enc.set_in_sample_rate(SR)
-        enc.set_channels(2)
-        enc.set_quality(2)
-        mp3 = enc.encode(pcm.tobytes()) + enc.flush()
-        out.write_bytes(mp3)
-        print(f"✅ {out} ({len(mp3)} bytes, {len(loopL) / SR:.1f}s stereo, peak={peak:.2f})")
-    except ImportError:
-        import wave
-        wav = out.with_suffix(".wav")
-        with wave.open(str(wav), "wb") as w:
-            w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
-            w.writeframes(pcm.tobytes())
-        print(f"⚠ lameenc 없음 → {wav} (WAV) 생성. ffmpeg로 mp3 변환 필요")
+def piano_tone(freq, n, decay=2.0, amp=1.0):
+    """피아노/뮤직박스 느낌의 톤 — 배음 여러 개(2·3·4배음) + 지수 감쇠. 왈츠 멜로디·반주용."""
+    t = np.arange(n) / SR
+    env = np.exp(-t * decay) * amp
+    w = _tone(freq, n, [(2, 0.5), (3, 0.25), (4, 0.12)], 0, bright_rate=0)
+    a = int(0.004 * SR)
+    w[:a] *= np.linspace(0, 1, a)
+    return w * env
+
+
+# 왈츠 프리셋 — 사용자가 "하울의 움직이는 성" OST 같은 분위기를 요청(따뜻한 3박자 왈츠풍
+# 피아노). 실제 멜로디를 베끼지 않고 같은 장르로 새로 작곡한 오리지널 캐러셀풍 멜로디.
+# 마디: (베이스 Hz, 코드 톤 2개 Hz, [(멜로디 Hz, 박자), ...]) — 박자 합이 마디당 3이 되게 구성.
+WALTZ_BPM = 132
+WALTZ_SEED = 23
+WALTZ_CYCLES = 3
+WALTZ_BARS = [
+    (174.61, (220.00, 261.63), [(523.25, 1), (587.33, 1), (698.46, 1)]),  # F:  C5 D5 F5
+    (146.83, (174.61, 220.00), [(659.25, 1), (587.33, 1), (523.25, 1)]),  # Dm: E5 D5 C5
+    (116.54, (146.83, 174.61), [(466.16, 1), (523.25, 1), (587.33, 1)]),  # Bb: Bb4 C5 D5
+    (130.81, (164.81, 196.00), [(523.25, 2), (466.16, 1)]),               # C:  C5(2) Bb4
+    (174.61, (220.00, 261.63), [(440.00, 1), (523.25, 1), (698.46, 1)]),  # F:  A4 C5 F5
+    (146.83, (174.61, 220.00), [(698.46, 1), (659.25, 1), (587.33, 1)]),  # Dm: F5 E5 D5
+    (116.54, (146.83, 174.61), [(523.25, 1), (466.16, 1), (440.00, 1)]),  # Bb: C5 Bb4 A4
+    (130.81, (164.81, 196.00), [(392.00, 2), (349.23, 1)]),               # C:  G4(2) F4
+]
+
+
+def generate_waltz(name="waltz", seed=WALTZ_SEED):
+    """3/4박 왈츠 — 오르골·캐러셀 느낌의 붕작작 반주 위에 손으로 쓴 멜로디."""
+    rng = np.random.default_rng(seed)
+    beat_n = int(60 / WALTZ_BPM * SR)
+    bar_beats = 3
+    total = len(WALTZ_BARS) * WALTZ_CYCLES * bar_beats * beat_n
+    buf_len = total + int(2.0 * SR)
+    melL, melR = np.zeros(buf_len), np.zeros(buf_len)
+    accL, accR = np.zeros(buf_len), np.zeros(buf_len)
+
+    idx = 0
+    for _cyc in range(WALTZ_CYCLES):
+        for bass, chord, melody in WALTZ_BARS:
+            # 반주(붕-작-작): 베이스는 1박(약간 넓게), 코드는 2·3박에 짧게 — 좌우로 살짝 벌림
+            bt = piano_tone(bass, int(1.6 * beat_n), decay=2.6, amp=0.5)
+            e = min(idx + len(bt), buf_len)
+            accL[idx:e] += bt[:e - idx] * 0.9
+            accR[idx:e] += bt[:e - idx] * 0.7
+            for beat_i in (1, 2):
+                s = idx + beat_i * beat_n
+                ct = sum(piano_tone(f, int(1.3 * beat_n), decay=3.2, amp=0.32) for f in chord)
+                e2 = min(s + len(ct), buf_len)
+                accL[s:e2] += ct[:e2 - s] * 0.65
+                accR[s:e2] += ct[:e2 - s] * 0.85
+
+            # 멜로디 — 마디 내 누적 박자 위치에 배치, 살짝 휴머나이즈(타이밍 지터)
+            beat_pos = 0.0
+            for freq, beats in melody:
+                s = idx + int(beat_pos * beat_n) + int(rng.uniform(-0.01, 0.01) * SR)
+                note = piano_tone(freq, int((beats + 1.3) * beat_n),
+                                   decay=2.0 / max(beats, 1) + 0.6, amp=0.85)
+                e3 = min(s + len(note), buf_len)
+                melL[s:e3] += note[:e3 - s]
+                melR[s:e3] += note[:e3 - s]
+                beat_pos += beats
+
+            idx += bar_beats * beat_n
+
+    melL, melR = echo_stereo(melL, melR, delay_s=0.3, decay=0.28, taps=3, cross=0.35, r_offset_s=0.05)
+    bufL = 0.6 * accL[:total] + 0.9 * melL[:total]
+    bufR = 0.6 * accR[:total] + 0.9 * melR[:total]
+
+    # 이음매 없는 루프
+    F = int(FADE * SR)
+    ramp = np.linspace(0, 1, F)
+    for buf in (bufL, bufR):
+        head, tail = buf[:F].copy(), buf[-F:].copy()
+        buf[:F] = head * ramp + tail * (1 - ramp)
+    loopL = bufL[:len(bufL) - F]
+    loopR = bufR[:len(bufR) - F]
+
+    peak = max(np.max(np.abs(loopL)), np.max(np.abs(loopR))) or 1.0
+    scale = (10 ** (-3 / 20)) / peak
+    loopL = loopL * scale
+    loopR = loopR * scale
+    _export(name, loopL, loopR, peak)
 
 
 if __name__ == "__main__":
     for preset_name, cfg in PRESETS.items():
         generate_track(preset_name, cfg["chords"], cfg["seed"])
+    generate_waltz()
