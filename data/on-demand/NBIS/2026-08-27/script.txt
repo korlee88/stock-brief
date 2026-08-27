@@ -1,0 +1,37 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+전일 종가 *$221.29*, 하루 *+3.4%* 반등
+*AI 클라우드*를 빌려주며 돈 버는 상장사예요
+*'AI계 아마존'*을 목표로 달리고 있죠
+*57.5억 달러* 전환사채로 투자금 확보했어요
+*엔비디아 GPU*로 채운 AI 공장 운영 중
+MS와 *174억 달러* 클라우드 공급 계약 체결
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: *2027년 GPU 물량* 아껴둬요, 수요 자신감 신호죠
+악재: *45억 달러* 전환사채로 자금 조달, 주식 가치 희석 우려돼요
+보합: Q2 실적은 좋았지만 *전환사채 이슈*로 주가는 눌렸어요
+
+SCENE_2_TITLE: 숫자로보기
+SCENE_2:
+추세: 20일선 아래 *-0.4%*, 단기 흐름은 주춤해요
+밸류: 목표가 평균 *$286*, 최고 *$415*까지 봐요
+총평: 의견은 *적극매수*, 단기 변동성은 남아 있어요
+
+SCENE_3_TITLE: 다음주전망
+SCENE_3:
+*50억 달러* 조달금으로 GPU 데이터센터 확장 주목
+관전 포인트 — *GPU 증설 속도 vs 지분 희석* 균형
+현재가 *$221*, 목표가 *$286*까지 *29%* 여유
+16명 애널리스트 *적극매수* 의견 유지 중
+변수 — *2027년 차세대 GPU* 판매 개시 시점이 관건
+오늘도 함께해 주셔서 고마워요!
+
+IMAGE_PROMPT_0: A vast modern AI cloud infrastructure facility interior with sleek server corridors bathed in analytical purple and violet ambient lighting, engineers in clean uniforms walking between illuminated pathways studying holographic performance dashboards, a small secondary corner showing a compact GPU cluster rack with subtle indicator lights and a tiny autonomous delivery robot passing by, deep atmospheric perspective, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic AI data campus at dawn with lush green landscaping surrounding gleaming cloud computing buildings, soft green growth-energy light beams rising upward through morning mist symbolizing expansion and momentum, autonomous self-driving vehicles gliding along smooth roads outside, a small secondary element in the corner showing a modest GPU server rack glowing softly, vibrant upward motion lines, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A calm sophisticated AI cloud operations control room with analysts seated at curved workstations reviewing subtle background monitors showing faint abstract data visualizations, cool cyan-blue analytical lighting washing across polished surfaces, an ambient sense of measured precision and quiet focus, a small secondary corner featuring a compact GPU cluster rack with gentle indicator glows, cinematic depth, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_3: A vertical inspiring view of a next-generation AI infrastructure campus at golden hour, tall cloud computing towers rising toward warm amber skies while autonomous vehicles quietly navigate below and educational technology holograms float in the distance, bathed in warm inspiring golden light suggesting visionary progress, a small secondary corner element showing a modest GPU rack with soft glow, cinematic scale, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

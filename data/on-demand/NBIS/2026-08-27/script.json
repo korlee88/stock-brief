@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-08-27",
+  "generated_by": "Claude Opus 4",
+  "title": "전일 종가 *$221.29*, 하루 *+3.4%* 반등",
+  "subtitle": "2026-08-27 ~ 2026-08-27 · Nebius 주식, 전환사채 발행 우려로 하락",
+  "summary": {
+    "week_start": "2026-08-27",
+    "week_end": "2026-08-27",
+    "session_count": 1,
+    "total_analyzed": 5,
+    "bullish_count": 1,
+    "bearish_count": 2,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 221.38,
+    "price_end": 221.38,
+    "latest_price": 221.38,
+    "today_price": 221.38,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "Nebius 주식, 전환사채 발행 우려로 하락",
+      "score": -4,
+      "reason": "대규모 전환사채 발행은 잠재적인 주식 희석을 의미하며, 이는 투자 심리를 위축시켜 주가 하락으로 이어질 수 있습니다. 이미 주가에 부정적인 영향을 미치고 있음을 보여줍니다.",
+      "source": "TipRanks",
+      "date": "2026-08-26",
+      "category": "Market",
+      "direction_ko": "악재",
+      "emoji": "⚠"
+    },
+    "top_bullish": [
+      {
+        "title": "Nebius, 2027년 용량 의도적으로 판매하지 않아",
+        "score": 3,
+        "reason": "이는 회사가 미래 AI 컴퓨팅 수요에 대한 강한 확신을 가지고 있으며, 장기적인 수익성 극대화를 위한 전략을 펼치고 있음을 시사합니다. 이는 장기적으로 주가에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-15",
+        "category": "Product"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "Nebius 주식, 전환사채 발행 우려로 하락",
+        "score": -4,
+        "reason": "대규모 전환사채 발행은 잠재적인 주식 희석을 의미하며, 이는 투자 심리를 위축시켜 주가 하락으로 이어질 수 있습니다. 이미 주가에 부정적인 영향을 미치고 있음을 보여줍니다.",
+        "source": "TipRanks",
+        "date": "2026-08-26",
+        "category": "Market"
+      },
+      {
+        "title": "Nebius Group, 50억 달러 규모의 전환사채 발행 가격 발표",
+        "score": -3,
+        "reason": "전환사채 발행은 일반적으로 주식 희석 우려로 인해 단기적으로 주가에 부정적인 영향을 미칠 수 있습니다. 특히 발행 규모가 증액된 점은 시장에 더 큰 부담으로 작용할 수 있습니다.",
+        "source": "Business Wire",
+        "date": "2026-08-25",
+        "category": "Market"
+      }
+    ],
+    "top_neutral": [
+      {
+        "title": "Nebius, Q2 실적 호조에도 주가 하락",
+        "score": 0,
+        "reason": "실적 자체는 매우 긍정적이지만, 전환사채 발행과 같은 다른 시장 요인들이 실적 호재를 상쇄하며 주가에 중립적인 영향을 미치고 있습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-15",
+        "category": "Earnings"
+      }
+    ],
+    "neutral_count": 1,
+    "scene1_news": {
+      "bullish": {
+        "title": "Nebius, 2027년 용량 의도적으로 판매하지 않아",
+        "score": 3,
+        "reason": "이는 회사가 미래 AI 컴퓨팅 수요에 대한 강한 확신을 가지고 있으며, 장기적인 수익성 극대화를 위한 전략을 펼치고 있음을 시사합니다. 이는 장기적으로 주가에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-15",
+        "category": "Product"
+      },
+      "bearish": {
+        "title": "Nebius, AI 클라우드 확장 위해 45억 달러 규모의 전환사채 사모 발행 제안",
+        "score": -3,
+        "reason": "대규모 전환사채 발행은 주식 희석 가능성을 높여 투자자들에게 부정적인 신호로 작용할 수 있습니다. 이는 주가에 하방 압력을 가할 수 있습니다.",
+        "source": "Reuters",
+        "date": "2026-08-24",
+        "category": "Market"
+      },
+      "neutral": {
+        "title": "Nebius, Q2 실적 호조에도 주가 하락",
+        "score": 0,
+        "reason": "실적 자체는 매우 긍정적이지만, 전환사채 발행과 같은 다른 시장 요인들이 실적 호재를 상쇄하며 주가에 중립적인 영향을 미치고 있습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-15",
+        "category": "Earnings"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-08-27",
+        221.38
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-08-27",
+    "today_news": [
+      {
+        "title": "Nebius 주식, 전환사채 발행 우려로 하락",
+        "category": "Market",
+        "source": "TipRanks",
+        "date": "2026-08-26"
+      },
+      {
+        "title": "Nebius Group, 50억 달러 규모의 전환사채 발행 가격 발표",
+        "category": "Market",
+        "source": "Business Wire",
+        "date": "2026-08-25"
+      },
+      {
+        "title": "Nebius, AI 클라우드 확장 위해 45억 달러 규모의 전환사채 사모 발행 제안",
+        "category": "Market",
+        "source": "Reuters",
+        "date": "2026-08-24"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 221.21,
+        "ma20": 222.16,
+        "vs_ma20_pct": -0.4,
+        "ma60": 223.53,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 58.4,
+        "rsi_state": "중립",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 9.6,
+        "pos_52w_pct": 67.0,
+        "high_52w": 299.86,
+        "low_52w": 63.26,
+        "mom_5d_pct": 0.5,
+        "mom_20d_pct": 17.4
+      },
+      "valuation": {
+        "목표주가_평균": 286.69,
+        "목표주가_최고": 415.0,
+        "목표주가_최저": 144.0,
+        "애널리스트_수": 16,
+        "투자의견": "적극매수",
+        "PER_선행": -73.9
+      }
+    },
+    "prev_day": {
+      "date": "2026-08-27",
+      "open": 223.29,
+      "close": 221.29,
+      "change_pct": 3.44
+    },
+    "month_low": {
+      "low": 145.8,
+      "current": 221.4,
+      "pct_vs_low": 51.85
+    },
+    "movement_reason": "2026년 8월 27일 네비우스 그룹(NBIS)의 주가 하락에 대한 주요 원인을 분석해 달라는 요청은 현재 날짜(2026년 8월 27일)를 기준으로 미래 시점의 정보를 요구하고 있습니다. 저는 미래의 특정 날짜에 발생할 주가 변동 및 그 원인을 예측하거나 알 수 없습니다. 따라서 요청하신 '원인1 / 원인2 / 원인3' 형식으로 답변을 제공할 수 없습니다.",
+    "company_direction": "네비우스 그룹(NBIS) 회사 소개 자료입니다.\n\nAI 인프라, 클라우드 플랫폼 제공 / GPU 클러스터로 AI 워크로드 지원 / 자율주행, 교육 기술도 운영 / 데이터 서비스 플랫폼 '톨로카' // AI 인프라 시장 선도 목표 / 글로벌 데이터센터 확장 전략 / 엔비디아 협력으로 기술 우위 / AI 클라우드 1기가와트 용량 확보 추진 // 최근 57.5억 달러 전환사채 발행 / 자율주행 아브라이드에 3.8억 달러 투자 / 마이크로소프트와 174억 달러 AI 계약 / 유럽에 10억 달러 GPU 클러스터 투자 // 풀스택 AI 클라우드 플랫폼 제공 / 엔비디아 최신 GPU 활용 인프라 / 기가와트급 AI 팩토리 구축 계획 / 엔드투엔드 AI 워크로드 지원 // 'AI 인프라의 아마존'으로 평가 / 마이크로소프트 등 대형 고객사 확보 / AI 특화 클라우드 플랫폼 강점 / 글로벌 시장 점유율 확대 목표"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "전일 종가 *$221.29*, 하루 *+3.4%* 반등",
+        "*AI 클라우드*를 빌려주며 돈 버는 상장사예요",
+        "*'AI계 아마존'*을 목표로 달리고 있죠",
+        "*57.5억 달러* 전환사채로 투자금 확보했어요",
+        "*엔비디아 GPU*로 채운 AI 공장 운영 중",
+        "MS와 *174억 달러* 클라우드 공급 계약 체결"
+      ],
+      "body": "전일 종가 *$221.29*, 하루 *+3.4%* 반등\n*AI 클라우드*를 빌려주며 돈 버는 상장사예요\n*'AI계 아마존'*을 목표로 달리고 있죠\n*57.5억 달러* 전환사채로 투자금 확보했어요\n*엔비디아 GPU*로 채운 AI 공장 운영 중\nMS와 *174억 달러* 클라우드 공급 계약 체결"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: *2027년 GPU 물량* 아껴둬요, 수요 자신감 신호죠",
+        "악재: *45억 달러* 전환사채로 자금 조달, 주식 가치 희석 우려돼요",
+        "보합: Q2 실적은 좋았지만 *전환사채 이슈*로 주가는 눌렸어요"
+      ],
+      "body": "호재: *2027년 GPU 물량* 아껴둬요, 수요 자신감 신호죠\n악재: *45억 달러* 전환사채로 자금 조달, 주식 가치 희석 우려돼요\n보합: Q2 실적은 좋았지만 *전환사채 이슈*로 주가는 눌렸어요"
+    },
+    {
+      "index": 2,
+      "title": "숫자로보기",
+      "lines": [
+        "추세: 20일선 아래 *-0.4%*, 단기 흐름은 주춤해요",
+        "밸류: 목표가 평균 *$286*, 최고 *$415*까지 봐요",
+        "총평: 의견은 *적극매수*, 단기 변동성은 남아 있어요"
+      ],
+      "body": "추세: 20일선 아래 *-0.4%*, 단기 흐름은 주춤해요\n밸류: 목표가 평균 *$286*, 최고 *$415*까지 봐요\n총평: 의견은 *적극매수*, 단기 변동성은 남아 있어요"
+    },
+    {
+      "index": 3,
+      "title": "다음주전망",
+      "lines": [
+        "*50억 달러* 조달금으로 GPU 데이터센터 확장 주목",
+        "관전 포인트 — *GPU 증설 속도 vs 지분 희석* 균형",
+        "현재가 *$221*, 목표가 *$286*까지 *29%* 여유",
+        "16명 애널리스트 *적극매수* 의견 유지 중",
+        "변수 — *2027년 차세대 GPU* 판매 개시 시점이 관건",
+        "오늘도 함께해 주셔서 고마워요!"
+      ],
+      "body": "*50억 달러* 조달금으로 GPU 데이터센터 확장 주목\n관전 포인트 — *GPU 증설 속도 vs 지분 희석* 균형\n현재가 *$221*, 목표가 *$286*까지 *29%* 여유\n16명 애널리스트 *적극매수* 의견 유지 중\n변수 — *2027년 차세대 GPU* 판매 개시 시점이 관건\n오늘도 함께해 주셔서 고마워요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A vast modern AI cloud infrastructure facility interior with sleek server corridors bathed in analytical purple and violet ambient lighting, engineers in clean uniforms walking between illuminated pathways studying holographic performance dashboards, a small secondary corner showing a compact GPU cluster rack with subtle indicator lights and a tiny autonomous delivery robot passing by, deep atmospheric perspective, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A dynamic AI data campus at dawn with lush green landscaping surrounding gleaming cloud computing buildings, soft green growth-energy light beams rising upward through morning mist symbolizing expansion and momentum, autonomous self-driving vehicles gliding along smooth roads outside, a small secondary element in the corner showing a modest GPU server rack glowing softly, vibrant upward motion lines, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A calm sophisticated AI cloud operations control room with analysts seated at curved workstations reviewing subtle background monitors showing faint abstract data visualizations, cool cyan-blue analytical lighting washing across polished surfaces, an ambient sense of measured precision and quiet focus, a small secondary corner featuring a compact GPU cluster rack with gentle indicator glows, cinematic depth, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "3": "A vertical inspiring view of a next-generation AI infrastructure campus at golden hour, tall cloud computing towers rising toward warm amber skies while autonomous vehicles quietly navigate below and educational technology holograms float in the distance, bathed in warm inspiring golden light suggesting visionary progress, a small secondary corner element showing a modest GPU rack with soft glow, cinematic scale, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

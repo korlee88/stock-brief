@@ -1,181 +1,103 @@
 [
   {
-    "date": "2026-08-24",
-    "generatedAt": "2026-08-24T08:16:40.382Z",
+    "date": "2026-08-27",
+    "generatedAt": "2026-08-27T14:07:44.506Z",
     "mode": "on-demand",
-    "latestPrice": 219.13,
+    "latestPrice": 221.38,
     "news": [
       {
         "id": 1,
-        "title": "Nebius Group, AI 및 데이터 센터 확장을 위한 50억 달러 전환사채 발행",
-        "summary": "Nebius Group N.V.는 AI 및 데이터 센터 확장을 가속화하기 위해 50억 달러 규모의 전환사채 발행을 발표했습니다. 이 소식으로 인해 NBIS 주가는 급락했습니다.",
-        "source": "Robinhood",
-        "date": "2026-08-20",
+        "title": "Nebius Group, 50억 달러 규모의 전환사채 발행 가격 발표",
+        "summary": "Nebius Group N.V.는 AI 및 데이터 센터 확장을 위한 자금 조달을 위해 50억 달러 규모의 전환사채 발행 가격을 발표했습니다. 이는 당초 계획했던 45억 달러에서 증액된 규모입니다.",
+        "source": "Business Wire",
+        "date": "2026-08-25",
         "category": "Market"
       },
       {
         "id": 2,
-        "title": "Nebius CEO, AI 클라우드 계약 '역대 최고 조건'으로 체결 발표",
-        "summary": "Nebius의 설립자이자 CEO인 Arkady Volozh는 주주들에게 보낸 서한에서 회사가 역대 가장 강력한 조건으로 최대 규모의 AI 클라우드 계약을 체결했다고 밝혔습니다. 이는 사업 경제성에 큰 변화를 가져올 것이라고 언급했습니다.",
+        "title": "Nebius 주식, 전환사채 발행 우려로 하락",
+        "summary": "AI 클라우드 기업 Nebius의 주가가 50억 달러 규모의 전환사채 발행에 대한 투자자들의 우려로 월요일에 약 5% 하락했습니다.",
         "source": "TipRanks",
-        "date": "2026-08-17",
-        "category": "Contract"
+        "date": "2026-08-26",
+        "category": "Market"
       },
       {
         "id": 3,
-        "title": "아카디 볼로즈, 유럽 제재에서 해제",
-        "summary": "얀덱스(Yandex)의 창립자 아카디 볼로즈가 2024년 3월 유럽연합 제재 목록에서 해제되었습니다. 이로 인해 그는 암스테르담 기반의 AI 인프라 서비스 기업인 Nebius AI를 자유롭게 구축할 수 있게 되었습니다.",
-        "source": "Lansky",
-        "date": "2024-03-XX",
-        "category": "Regulatory"
-      },
-      {
-        "id": 4,
-        "title": "Nebius Group, Meta와 270억 달러 규모 계약 체결",
-        "summary": "Nebius Group은 2026년 3월 Meta와 최대 270억 달러 규모의 AI 컴퓨팅 계약을 체결했습니다. 이 소식으로 Nebius 주가는 15% 상승하며 회사 가치를 약 300억 달러로 끌어올렸습니다.",
-        "source": "Forbes",
-        "date": "2026-03-26",
-        "category": "Contract"
-      },
-      {
-        "id": 5,
-        "title": "NVIDIA, Nebius에 20억 달러 지분 투자 및 전략적 파트너십",
-        "summary": "2026년 3월, NVIDIA는 Nebius에 20억 달러의 지분 투자를 단행하며 전략적 파트너십을 맺었습니다. 이는 Nebius의 AI 인프라 구축 역량에 대한 신뢰를 보여줍니다.",
-        "source": "Wikipedia",
-        "date": "2026-03-11",
-        "category": "Market"
-      },
-      {
-        "id": 6,
-        "title": "Nebius Group, Q2 실적 호조 및 연간 매출 가이던스 상향",
-        "summary": "Nebius Group은 2분기 매출이 전년 대비 454% 성장한 5억 8,200만 달러를 기록했으며, 연간 경상 매출(ARR) 가이던스를 70억~90억 달러로 상향 조정했습니다. 이는 강력한 AI 클라우드 수요에 힘입은 결과입니다.",
+        "title": "Nebius, 2027년 용량 의도적으로 판매하지 않아",
+        "summary": "Nebius의 CEO Arkady Volozh는 2027년 용량을 현재 판매하지 않고 있으며, AI 컴퓨팅 부족으로 인해 배포 시점에 더 높은 가치를 얻을 수 있다고 판단하고 있다고 밝혔습니다.",
         "source": "Seeking Alpha",
-        "date": "2026-08-20",
-        "category": "Earnings"
-      },
-      {
-        "id": 7,
-        "title": "Nebius Group, 50억 달러 규모 전환사채 발행",
-        "summary": "Nebius Group은 AI 데이터 센터 및 GPU 용량 확장을 위한 자금 조달을 위해 50억 달러 규모의 전환사채 발행을 발표했습니다. 이는 45억 달러에서 증액된 규모입니다.",
-        "source": "Perplexity",
-        "date": "2026-08-20",
-        "category": "Market"
-      },
-      {
-        "id": 8,
-        "title": "Nebius Group, Tavily 인수 및 AI 팩토리 건설 계획 발표",
-        "summary": "2026년 2월, Nebius는 에이전트 검색 회사인 Tavily를 약 4억 달러에 인수하고, 같은 달 미국 앨라배마주 버밍엄에 AI 팩토리를 건설할 계획을 발표했습니다.",
-        "source": "Wikipedia",
-        "date": "2026-02-XX",
+        "date": "2026-08-15",
         "category": "Product"
       },
       {
-        "id": 9,
-        "title": "Nebius Group, 2024년 10월 나스닥 거래 재개",
-        "summary": "Yandex N.V.가 러시아 자산을 매각하고 Nebius Group N.V.로 사명을 변경한 후, 2024년 10월 나스닥에서 거래를 재개했습니다.",
-        "source": "Wikipedia",
-        "date": "2024-10-XX",
+        "id": 4,
+        "title": "Nebius, Q2 실적 호조에도 주가 하락",
+        "summary": "Nebius Group은 2분기 매출이 전년 대비 454% 증가한 5억 8,200만 달러를 기록하는 등 인상적인 실적을 발표했지만, 주가는 하락했습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-15",
+        "category": "Earnings"
+      },
+      {
+        "id": 5,
+        "title": "Nebius, AI 클라우드 확장 위해 45억 달러 규모의 전환사채 사모 발행 제안",
+        "summary": "Nebius Group은 데이터 센터 및 AI 플랫폼 확장을 위한 자금 조달을 위해 45억 달러 규모의 전환사채 사모 발행을 제안했습니다.",
+        "source": "Reuters",
+        "date": "2026-08-24",
         "category": "Market"
-      },
-      {
-        "id": 10,
-        "title": "오피르 나베, Nebius Group N.V.의 COO 겸 이사로 임명",
-        "summary": "오피르 나베 박사는 2024년 5월 Nebius Group의 최고운영책임자(COO)로 임명되었으며, 2024년 8월부터는 이사로 재직하고 있습니다.",
-        "source": "MarketScreener UK",
-        "date": "2024-08-XX",
-        "category": "Management"
-      },
-      {
-        "id": 11,
-        "title": "Arkady Volozh, 러시아 시민권 포기 완료",
-        "summary": "2026년 2월, 아카디 볼로즈는 러시아 시민권 포기 절차를 완료했습니다.",
-        "source": "Wikipedia",
-        "date": "2026-02-XX",
-        "category": "Regulatory"
       }
     ],
     "analyses": {
       "1": {
         "direction": "bearish",
-        "impact_score": -4,
-        "reasoning": "대규모 전환사채 발행은 기존 주주의 지분 희석 우려를 불러일으키고, 이는 일반적으로 주가에 부정적인 영향을 미칩니다. 특히 AI 클라우드 관련 주식들이 자금 조달 우려로 하락세를 보인다는 분석도 있습니다."
+        "impact_score": -3,
+        "reasoning": "전환사채 발행은 일반적으로 주식 희석 우려로 인해 단기적으로 주가에 부정적인 영향을 미칠 수 있습니다. 특히 발행 규모가 증액된 점은 시장에 더 큰 부담으로 작용할 수 있습니다."
       },
       "2": {
-        "direction": "bullish",
-        "impact_score": 3,
-        "reasoning": "최대 규모의 계약을 역대 최고 조건으로 체결했다는 소식은 회사의 수익성 개선과 성장 잠재력을 시사하며, 이는 주가에 긍정적인 영향을 미칠 수 있습니다."
+        "direction": "bearish",
+        "impact_score": -4,
+        "reasoning": "대규모 전환사채 발행은 잠재적인 주식 희석을 의미하며, 이는 투자 심리를 위축시켜 주가 하락으로 이어질 수 있습니다. 이미 주가에 부정적인 영향을 미치고 있음을 보여줍니다."
       },
       "3": {
         "direction": "bullish",
         "impact_score": 3,
-        "reasoning": "창립자이자 CEO인 아카디 볼로즈에 대한 제재 해제는 Nebius Group의 사업 확장에 대한 불확실성을 제거하고, 회사의 리더십 안정성을 강화하여 긍정적인 영향을 미 미칠 것입니다."
+        "reasoning": "이는 회사가 미래 AI 컴퓨팅 수요에 대한 강한 확신을 가지고 있으며, 장기적인 수익성 극대화를 위한 전략을 펼치고 있음을 시사합니다. 이는 장기적으로 주가에 긍정적인 영향을 미칠 수 있습니다."
       },
       "4": {
-        "direction": "bullish",
-        "impact_score": 5,
-        "reasoning": "Meta와의 대규모 계약은 Nebius의 AI 인프라 서비스에 대한 강력한 수요를 입증하며, 상당한 미래 매출을 보장하여 주가에 매우 긍정적인 영향을 미쳤습니다."
-      },
-      "5": {
-        "direction": "bullish",
-        "impact_score": 4,
-        "reasoning": "NVIDIA의 전략적 투자는 Nebius의 기술력과 시장 잠재력을 인정하는 것으로, AI 산업 내에서 Nebius의 입지를 강화하고 향후 성장에 대한 기대를 높여 주가에 긍정적인 영향을 줄 것입니다."
-      },
-      "6": {
-        "direction": "bullish",
-        "impact_score": 4,
-        "reasoning": "예상치를 뛰어넘는 매출 성장과 상향된 가이던스는 Nebius의 강력한 사업 모멘텀과 AI 인프라 시장에서의 리더십을 보여주며, 투자자들에게 긍정적인 신호로 작용할 것입니다."
-      },
-      "7": {
         "direction": "neutral",
         "impact_score": 0,
-        "reasoning": "전환사채 발행은 AI 인프라 확장을 위한 자금을 확보하는 긍정적인 측면이 있지만, 잠재적인 주식 희석 우려로 인해 단기적으로는 주가에 중립적인 영향을 미칠 수 있습니다."
+        "reasoning": "실적 자체는 매우 긍정적이지만, 전환사채 발행과 같은 다른 시장 요인들이 실적 호재를 상쇄하며 주가에 중립적인 영향을 미치고 있습니다."
       },
-      "8": {
-        "direction": "bullish",
-        "impact_score": 3,
-        "reasoning": "Tavily 인수는 Nebius의 AI 서비스 포트폴리오를 확장하고, AI 팩토리 건설은 AI 인프라 역량을 강화하여 장기적인 성장 동력을 확보하는 데 기여할 것입니다."
-      },
-      "9": {
-        "direction": "bullish",
-        "impact_score": 2,
-        "reasoning": "나스닥 거래 재개는 Nebius Group이 러시아 시장과의 분리를 완료하고 글로벌 AI 인프라 기업으로서 새로운 시작을 알리는 중요한 단계로, 투자자 신뢰를 회복하는 데 긍정적인 영향을 미쳤습니다."
-      },
-      "10": {
-        "direction": "neutral",
-        "impact_score": 1,
-        "reasoning": "경험이 풍부한 오피르 나베의 COO 및 이사 임명은 회사의 운영 효율성과 경영 안정성에 긍정적인 영향을 미칠 수 있지만, 단기적인 주가 영향은 중립적일 것으로 예상됩니다."
-      },
-      "11": {
-        "direction": "bullish",
-        "impact_score": 2,
-        "reasoning": "러시아 시민권 포기는 볼로즈가 러시아와의 모든 관계를 단절하고 Nebius Group의 국제적인 입지를 강화하려는 의지를 보여주는 것으로, 지정학적 위험을 줄여 투자자들에게 긍정적인 신호로 작용할 수 있습니다."
+      "5": {
+        "direction": "bearish",
+        "impact_score": -3,
+        "reasoning": "대규모 전환사채 발행은 주식 희석 가능성을 높여 투자자들에게 부정적인 신호로 작용할 수 있습니다. 이는 주가에 하방 압력을 가할 수 있습니다."
       }
     },
     "dailyForecasts": [],
     "signals": {
       "technicals": {
-        "price": 219.13,
-        "ma20": 213.47,
-        "vs_ma20_pct": 2.6,
-        "ma60": 225.44,
+        "price": 221.21,
+        "ma20": 222.16,
+        "vs_ma20_pct": -0.4,
+        "ma60": 223.53,
         "trend": "하락추세(20일선<60일선)",
-        "rsi14": 51.5,
+        "rsi14": 58.4,
         "rsi_state": "중립",
-        "macd_momentum": "상승 모멘텀",
-        "volatility_20d_pct": 11.7,
-        "pos_52w_pct": 66.0,
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 9.6,
+        "pos_52w_pct": 67.0,
         "high_52w": 299.86,
         "low_52w": 63.26,
-        "mom_5d_pct": -21.1,
-        "mom_20d_pct": 16.7
+        "mom_5d_pct": 0.5,
+        "mom_20d_pct": 17.4
       },
       "valuation": {
-        "목표주가_평균": 283.93,
+        "목표주가_평균": 286.69,
         "목표주가_최고": 415.0,
         "목표주가_최저": 144.0,
-        "애널리스트_수": 15,
+        "애널리스트_수": 16,
         "투자의견": "적극매수",
-        "PER_선행": -73.1
+        "PER_선행": -73.9
       }
     }
   }
