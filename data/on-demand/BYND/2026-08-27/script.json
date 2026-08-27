@@ -1,0 +1,219 @@
+{
+  "generated_at": "2026-08-27",
+  "generated_by": "Claude Opus 4",
+  "title": "현재 주가 *$14.30*, 보합권이에요",
+  "subtitle": "2026-08-27 ~ 2026-08-27 · MILK BAR, 비욘드 미트와 제휴하여 새로운 식물성",
+  "summary": {
+    "week_start": "2026-08-27",
+    "week_end": "2026-08-27",
+    "session_count": 1,
+    "total_analyzed": 7,
+    "bullish_count": 1,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 14.3,
+    "price_end": 14.3,
+    "latest_price": 14.3,
+    "today_price": 14.3,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "MILK BAR, 비욘드 미트와 제휴하여 새로운 식물성 옵션 출시",
+      "score": 2,
+      "reason": "새로운 파트너십은 비욘드 미트 제품의 시장 침투력을 높이고 매출 증대에 긍정적인 영향을 미칠 수 있습니다.",
+      "source": "PR Newswire",
+      "date": "2026-08-27",
+      "category": "Product",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "MILK BAR, 비욘드 미트와 제휴하여 새로운 식물성 옵션 출시",
+        "score": 2,
+        "reason": "새로운 파트너십은 비욘드 미트 제품의 시장 침투력을 높이고 매출 증대에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "PR Newswire",
+        "date": "2026-08-27",
+        "category": "Product"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "비욘드 미트, 1대 30 역주식 분할 완료",
+        "score": 0,
+        "reason": "역주식 분할은 주로 상장 폐지를 피하기 위한 조치로, 기업의 근본적인 가치 변화를 의미하지 않으므로 단기적인 주가 영향은 중립적일 수 있습니다.",
+        "source": "Investing.com",
+        "date": "2026-08-14",
+        "category": "Market"
+      },
+      {
+        "title": "비욘드 미트, 증권 소송 기각 신청",
+        "score": 0,
+        "reason": "소송 기각 신청은 법적 절차의 일부이며, 소송의 결과가 아직 불확실하므로 현재로서는 주가에 중립적인 영향을 미칩니다.",
+        "source": "TipRanks",
+        "date": "2026-07-23",
+        "category": "Legal"
+      },
+      {
+        "title": "비욘드 미트 CEO, '아직 싸울 힘이 충분하다'고 밝히며 글로벌 단백질 회사 건설 계획 발표",
+        "score": 0,
+        "reason": "CEO의 발언은 장기적인 비전을 제시하지만, 단기적인 실적 부진을 상쇄할 만큼 구체적인 개선책이 제시되지 않아 주가에 중립적인 영향을 미칩니다.",
+        "source": "AgFunderNews",
+        "date": "2025-11-11",
+        "category": "Market"
+      }
+    ],
+    "neutral_count": 3,
+    "scene1_news": {
+      "bullish": {
+        "title": "MILK BAR, 비욘드 미트와 제휴하여 새로운 식물성 옵션 출시",
+        "score": 2,
+        "reason": "새로운 파트너십은 비욘드 미트 제품의 시장 침투력을 높이고 매출 증대에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "PR Newswire",
+        "date": "2026-08-27",
+        "category": "Product"
+      },
+      "bearish": {
+        "title": "바클레이즈, 비욘드 미트 투자의견 '비중 축소' 유지 및 목표주가 $10로 조정",
+        "score": -3,
+        "reason": "주요 투자은행의 부정적인 투자의견과 하향 조정된 목표주가는 투자자들에게 부정적인 신호로 작용하여 주가 하락 압력을 가할 수 있습니다.",
+        "source": "Benzinga",
+        "date": "2026-08-17",
+        "category": "Market"
+      },
+      "neutral": {
+        "title": "비욘드 미트, 1대 30 역주식 분할 완료",
+        "score": 0,
+        "reason": "역주식 분할은 주로 상장 폐지를 피하기 위한 조치로, 기업의 근본적인 가치 변화를 의미하지 않으므로 단기적인 주가 영향은 중립적일 수 있습니다.",
+        "source": "Investing.com",
+        "date": "2026-08-14",
+        "category": "Market"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-08-27",
+        14.3
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-08-27",
+    "today_news": [
+      {
+        "title": "MILK BAR, 비욘드 미트와 제휴하여 새로운 식물성 옵션 출시",
+        "category": "Product",
+        "source": "PR Newswire",
+        "date": "2026-08-27"
+      },
+      {
+        "title": "비욘드 미트, Beyond Immerse™를 Erewhon에서 출시",
+        "category": "Product",
+        "source": "Investing.com",
+        "date": "2026-08-24"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 14.3,
+        "ma20": 10.55,
+        "vs_ma20_pct": 35.6,
+        "ma60": 4.83,
+        "trend": "상승추세(20일선>60일선)",
+        "rsi14": 85.5,
+        "rsi_state": "과매수(과열)",
+        "macd_momentum": "상승 모멘텀",
+        "volatility_20d_pct": 934.0,
+        "pos_52w_pct": 77.0,
+        "high_52w": 18.51,
+        "low_52w": 0.5,
+        "mom_5d_pct": -1.2,
+        "mom_20d_pct": 2471.9
+      },
+      "valuation": {
+        "목표주가_평균": 18.33,
+        "목표주가_최고": 30.0,
+        "목표주가_최저": 10.0,
+        "애널리스트_수": 3,
+        "투자의견": "underperform",
+        "PER_선행": -1.5
+      }
+    },
+    "prev_day": {
+      "date": "2026-08-27",
+      "open": 14.2,
+      "close": 14.3,
+      "change_pct": 0.35
+    },
+    "month_low": {
+      "low": 0.52,
+      "current": 14.3,
+      "pct_vs_low": 2660.62
+    },
+    "movement_reason": "2026년 8월 27일 비욘드 미트(BYND) 주가 하락의 주요 원인은 다음과 같습니다.\n\n실적 악화 지속 / 역주식 분할 단행 / 미국 시장 수요 부진\n\n**주요 원인 분석:**\n*   **실적 악화 지속**: 비욘드 미트는 2026년 8월 5일 발표된 2분기 실적에서 매출이 전년 대비 8.2% 감소했으며, 핵심 사업 부문의 지속적인 압박으로 인해 3분기 매출 가이던스도 추가 하락을 예상했습니다. 또한, 매출 총이익이 감소하고 영업 손실이 지속되는 등 전반적인 재정적 어려움을 겪고 있습니다.\n*   **역주식 분할 단행**: 회사는 주가가 1달러 미만으로 떨어져 나스닥 상장 유지 요건을 충족하기 위해 2026년 8월 13일 1대 30 비율의 역주식 분할을 단행했습니다. 이는 일반적으로 투자자들에게 심각한 재정난의 신호로 인식되어 주가에 부정적인 영향을 미쳤습니다.\n*   **미국 시장 수요 부진**: 미국 소매 및 푸드서비스 부문에서 핵심 식물성 육류 제품에 대한 수요가 계속해서 압력을 받고 있으며, 전반적인 식물성 육류 카테고리에 대한 소비자 회의론과 \"초가공 식품\" 논란이 시장 수요 감소의 원인으로 지목됩니다.",
+    "company_direction": "비욘드 미트(BYND) 회사 소개 자료입니다.\n\n*   **① 주력 사업**\n    주력은 식물성 고기 대체육 생산 / 실제 고기 맛·식감 구현 목표 / 버거, 소시지, 치킨 등 제품 / 콩·완두콩 단백질 활용 / 식료품점·외식업체 주요 판매 / 단백질 음료 시장 진출 중\n\n*   **② 회사의 비전·전략 방향**\n    지구, 인류, 동물 위한 미래 단백질 / 지속 가능한 식품 시스템 구축 / 매출 회복 위해 신제품 출시 전략 / 유럽 시장 확장 및 생산 개선 / '식물성 단백질 기업'으로 재편 / 비용 절감, 수익성 개선 추진\n\n*   **③ 최근 1년 내 주요 투자·설비·인수**\n    최근 1년간 대규모 투자·인수 부재 / 재무 건전성 회복에 주력 / 1조 원대 부채 해결 위해 / 채권-주식 교환 계획 발표 / 매출 감소로 비용 절감 노력 / 경영 효율성 개선 목표\n\n*   **④ 핵심 신제품·신기술 로드맵**\n    매출 회복 위해 통살 스테이크 대체육 / 버섯 균사체로 질감 구현 / 단백질 음료 '비욘드 이머스' 출시 / 근육·장 건강 등 기능성 강조 / 연구개발로 제품 개선 지속 추진 / 식물성 단백질 미래 기술 집중 / 버거·스테이크, 기후 해결책 인정 / 친환경 혁신 가치 지향\n\n*   **⑤ 시장 내 위치·점유율**\n    초기 식물성 대체육 시장 개척 / 한때 '육가공 테슬라'로 불림 / 현재 시장 점유율 하락 추세 / 주요 외식업체 파트너십 상실 / 높은 가격·맛 문제로 고전 중 / 초가공식품 이미지 약점 / 업계 전반의 위기 속에 입지 약화 / 애널리스트 '매도' 의견 다수"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "현재 주가 *$14.30*, 보합권이에요",
+        "*식물성 대체육* 만드는 회사예요",
+        "*완두콩 단백질* 로 진짜 고기 맛 냈죠",
+        "*채권을 주식으로* 바꿔 빚 줄이는 중",
+        "대표 제품은 *식물성 버거 패티* 예요",
+        "한때 *'육가공 테슬라'* 로 불렸죠"
+      ],
+      "body": "현재 주가 *$14.30*, 보합권이에요\n*식물성 대체육* 만드는 회사예요\n*완두콩 단백질* 로 진짜 고기 맛 냈죠\n*채권을 주식으로* 바꿔 빚 줄이는 중\n대표 제품은 *식물성 버거 패티* 예요\n한때 *'육가공 테슬라'* 로 불렸죠"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: MILK BAR와 손잡고 *식물성 신메뉴* 낸대요",
+        "악재: 바클레이즈가 목표주가 *$10* 으로 낮췄어요",
+        "보합: 상장 유지하려 *1대 30 역분할* 마쳤어요"
+      ],
+      "body": "호재: MILK BAR와 손잡고 *식물성 신메뉴* 낸대요\n악재: 바클레이즈가 목표주가 *$10* 으로 낮췄어요\n보합: 상장 유지하려 *1대 30 역분할* 마쳤어요"
+    },
+    {
+      "index": 2,
+      "title": "정량지표",
+      "lines": [
+        "추세: 20일선 위 *+35.6%*, 단기 과열권이에요",
+        "밸류: 평균 목표가 *$18.33*, 의견은 '비중축소'",
+        "총평: 반등은 나왔지만 *과열 신호* 도 커요"
+      ],
+      "body": "추세: 20일선 위 *+35.6%*, 단기 과열권이에요\n밸류: 평균 목표가 *$18.33*, 의견은 '비중축소'\n총평: 반등은 나왔지만 *과열 신호* 도 커요"
+    },
+    {
+      "index": 3,
+      "title": "다음주",
+      "lines": [
+        "*3분기 실적 가이던스* 후속 발언 주목돼요",
+        "매출 *8.2% 감소* 흐름 반전될지가 관건",
+        "단기 *과매수(RSI 85)* 라 조정 올 수도",
+        "목표가 *$10~$30*, 시각차가 크네요",
+        "변수: *미국 소매 수요* 회복 지연 우려",
+        "붉은빛 완두콩 패티로 다시 붐 올까요?",
+        "함께해 주셔서 감사해요!"
+      ],
+      "body": "*3분기 실적 가이던스* 후속 발언 주목돼요\n매출 *8.2% 감소* 흐름 반전될지가 관건\n단기 *과매수(RSI 85)* 라 조정 올 수도\n목표가 *$10~$30*, 시각차가 크네요\n변수: *미국 소매 수요* 회복 지연 우려\n붉은빛 완두콩 패티로 다시 붐 올까요?\n함께해 주셔서 감사해요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A modern minimalist test kitchen dedicated to plant-based food innovation, featuring stainless steel counters, fresh peas and legumes in glass containers, chopped vegetables, and a chef in a clean white coat carefully examining a plant protein sample under soft purple analytical mood lighting. On the side of the frame, a small sizzling plant-based burger patty crafted from pea protein with a reddish hue sits on a wooden board as a subtle secondary object. Cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.",
+    "1": "A vibrant urban plant-based restaurant kitchen bustling with energy, showing fresh green vegetables, herbs, and pea protein ingredients being prepared on a bright counter, with a chef enthusiastically plating a new menu collaboration item under lush green growth-themed lighting and dynamic upward motion lines symbolizing partnership expansion. On the edge of the frame, a small sizzling plant-based burger patty with a reddish hue on a bun with fresh vegetables sits as a subtle secondary object. Photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.",
+    "2": "A calm food science laboratory focused on plant protein research, featuring beakers of pea protein slurry, petri dishes with plant fibers, and subtle background monitors showing faint nutritional data charts, all bathed in cool cyan-blue analytical lighting that suggests careful measurement and quantitative evaluation of plant-based meat properties. On the side of the frame, a small sizzling plant-based burger patty with a reddish hue rests on a slate plate as a subtle secondary object. Cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.",
+    "3": "A visionary sustainable vertical farm interior with rows of lush green pea plants and legume crops growing under warm inspiring golden light, symbolizing the future direction of plant-based protein innovation and eco-friendly food systems, with gentle sunbeams filtering through greenery to evoke hope and renewal for the plant-based meat industry. On the lower side of the frame, a small sizzling plant-based burger patty with a reddish hue sits on a rustic wooden board as a subtle secondary object. Photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo."
+  }
+}

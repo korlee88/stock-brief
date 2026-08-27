@@ -1,0 +1,32 @@
+{
+  "ticker": "BYND",
+  "company_en": "Beyond Meat, Inc.",
+  "company_ko": "비욘드 미트",
+  "industry_ko": "식물성 대체육",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "A sizzling plant-based burger patty, crafted from pea protein and other plant ingredients, with a reddish hue mimicking traditional beef, served on a bun with fresh vegetables.",
+  "brand_label": "BYND BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "SMPL",
+  "key_people": [
+    "Ethan Brown",
+    "Lubi Kutua"
+  ],
+  "google_trends_keywords": [
+    "비욘드 미트",
+    "식물성 고기",
+    "대체육",
+    "비건 버거",
+    "이든 브라운"
+  ],
+  "video_tags": [
+    "Beyond Meat",
+    "Plant-Based Meat",
+    "Vegan Food",
+    "Beyond Burger",
+    "Korean BBQ Beyond Steak"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-08-27T13:57:49.572Z"
+}

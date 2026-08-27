@@ -1,0 +1,130 @@
+[
+  {
+    "date": "2026-08-27",
+    "generatedAt": "2026-08-27T13:57:57.892Z",
+    "mode": "on-demand",
+    "latestPrice": 14.3,
+    "news": [
+      {
+        "id": 1,
+        "title": "MILK BAR, 비욘드 미트와 제휴하여 새로운 식물성 옵션 출시",
+        "summary": "MILK BAR가 비욘드 미트와 협력하여 새로운 식물성 메뉴를 선보입니다. 이는 비욘드 미트 제품의 유통 채널을 확장하고 소비자 접근성을 높일 수 있습니다.",
+        "source": "PR Newswire",
+        "date": "2026-08-27",
+        "category": "Product"
+      },
+      {
+        "id": 2,
+        "title": "비욘드 미트, Beyond Immerse™를 Erewhon에서 출시",
+        "summary": "비욘드 미트의 기능성 음료 라인인 Beyond Immerse™가 Erewhon 매장에서 판매를 시작했습니다. 이는 제품 포트폴리오 다각화 및 새로운 시장 개척을 의미합니다.",
+        "source": "Investing.com",
+        "date": "2026-08-24",
+        "category": "Product"
+      },
+      {
+        "id": 3,
+        "title": "비욘드 미트, 1대 30 역주식 분할 완료",
+        "summary": "비욘드 미트가 1대 30 역주식 분할을 완료하여 주당 가격을 높이고 나스닥 상장 규정 준수를 목표로 합니다. 이는 주가 조작이 아닌 상장 유지 목적의 조치입니다.",
+        "source": "Investing.com",
+        "date": "2026-08-14",
+        "category": "Market"
+      },
+      {
+        "id": 4,
+        "title": "바클레이즈, 비욘드 미트 투자의견 '비중 축소' 유지 및 목표주가 $10로 조정",
+        "summary": "바클레이즈는 비욘드 미트에 대한 투자의견을 '비중 축소'로 유지하고, 역주식 분할을 반영하여 목표주가를 10달러로 조정했습니다. 이는 회사의 재무 건전성에 대한 우려를 반영합니다.",
+        "source": "Benzinga",
+        "date": "2026-08-17",
+        "category": "Market"
+      },
+      {
+        "id": 5,
+        "title": "비욘드 미트, 증권 소송 기각 신청",
+        "summary": "비욘드 미트와 경영진은 연방 증권법 위반 혐의로 제기된 투자자 소송 기각을 법원에 요청했습니다. 이는 회사가 소송의 법적 요건을 충족하지 못한다고 주장하는 것입니다.",
+        "source": "TipRanks",
+        "date": "2026-07-23",
+        "category": "Legal"
+      },
+      {
+        "id": 6,
+        "title": "비욘드 미트, 2026년 2분기 실적 발표",
+        "summary": "비욘드 미트는 2026년 2분기 순매출이 전년 대비 8.2% 감소한 6,880만 달러를 기록했다고 발표했습니다. 이는 예상치를 상회했지만, 여전히 매출 감소세를 보였습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-06",
+        "category": "Earnings"
+      },
+      {
+        "id": 7,
+        "title": "비욘드 미트 CEO, '아직 싸울 힘이 충분하다'고 밝히며 글로벌 단백질 회사 건설 계획 발표",
+        "summary": "비욘드 미트의 CEO인 에단 브라운은 3분기 실적 발표 후 회사의 재무 상태가 개선되었으며, '미래의 글로벌 단백질 회사'를 건설할 계획이라고 밝혔습니다.",
+        "source": "AgFunderNews",
+        "date": "2025-11-11",
+        "category": "Market"
+      }
+    ],
+    "analyses": {
+      "1": {
+        "direction": "bullish",
+        "impact_score": 2,
+        "reasoning": "새로운 파트너십은 비욘드 미트 제품의 시장 침투력을 높이고 매출 증대에 긍정적인 영향을 미칠 수 있습니다."
+      },
+      "2": {
+        "direction": "bullish",
+        "impact_score": 1,
+        "reasoning": "신제품 출시와 유통 채널 확대는 매출 증대 가능성을 열어주며, 회사의 혁신 역량을 보여줄 수 있습니다."
+      },
+      "3": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "역주식 분할은 주로 상장 폐지를 피하기 위한 조치로, 기업의 근본적인 가치 변화를 의미하지 않으므로 단기적인 주가 영향은 중립적일 수 있습니다."
+      },
+      "4": {
+        "direction": "bearish",
+        "impact_score": -3,
+        "reasoning": "주요 투자은행의 부정적인 투자의견과 하향 조정된 목표주가는 투자자들에게 부정적인 신호로 작용하여 주가 하락 압력을 가할 수 있습니다."
+      },
+      "5": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "소송 기각 신청은 법적 절차의 일부이며, 소송의 결과가 아직 불확실하므로 현재로서는 주가에 중립적인 영향을 미칩니다."
+      },
+      "6": {
+        "direction": "bearish",
+        "impact_score": -2,
+        "reasoning": "매출 감소는 회사의 성장 둔화를 나타내며, 이는 투자자들에게 부정적인 신호로 작용하여 주가에 하락 압력을 가할 수 있습니다."
+      },
+      "7": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "CEO의 발언은 장기적인 비전을 제시하지만, 단기적인 실적 부진을 상쇄할 만큼 구체적인 개선책이 제시되지 않아 주가에 중립적인 영향을 미칩니다."
+      }
+    },
+    "dailyForecasts": [],
+    "signals": {
+      "technicals": {
+        "price": 14.3,
+        "ma20": 10.55,
+        "vs_ma20_pct": 35.6,
+        "ma60": 4.83,
+        "trend": "상승추세(20일선>60일선)",
+        "rsi14": 85.5,
+        "rsi_state": "과매수(과열)",
+        "macd_momentum": "상승 모멘텀",
+        "volatility_20d_pct": 934.0,
+        "pos_52w_pct": 77.0,
+        "high_52w": 18.51,
+        "low_52w": 0.5,
+        "mom_5d_pct": -1.2,
+        "mom_20d_pct": 2471.9
+      },
+      "valuation": {
+        "목표주가_평균": 18.33,
+        "목표주가_최고": 30.0,
+        "목표주가_최저": 10.0,
+        "애널리스트_수": 3,
+        "투자의견": "underperform",
+        "PER_선행": -1.5
+      }
+    }
+  }
+]

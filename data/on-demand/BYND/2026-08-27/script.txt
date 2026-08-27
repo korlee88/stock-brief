@@ -1,0 +1,38 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+현재 주가 *$14.30*, 보합권이에요
+*식물성 대체육* 만드는 회사예요
+*완두콩 단백질* 로 진짜 고기 맛 냈죠
+*채권을 주식으로* 바꿔 빚 줄이는 중
+대표 제품은 *식물성 버거 패티* 예요
+한때 *'육가공 테슬라'* 로 불렸죠
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: MILK BAR와 손잡고 *식물성 신메뉴* 낸대요
+악재: 바클레이즈가 목표주가 *$10* 으로 낮췄어요
+보합: 상장 유지하려 *1대 30 역분할* 마쳤어요
+
+SCENE_2_TITLE: 정량지표
+SCENE_2:
+추세: 20일선 위 *+35.6%*, 단기 과열권이에요
+밸류: 평균 목표가 *$18.33*, 의견은 '비중축소'
+총평: 반등은 나왔지만 *과열 신호* 도 커요
+
+SCENE_3_TITLE: 다음주
+SCENE_3:
+*3분기 실적 가이던스* 후속 발언 주목돼요
+매출 *8.2% 감소* 흐름 반전될지가 관건
+단기 *과매수(RSI 85)* 라 조정 올 수도
+목표가 *$10~$30*, 시각차가 크네요
+변수: *미국 소매 수요* 회복 지연 우려
+붉은빛 완두콩 패티로 다시 붐 올까요?
+함께해 주셔서 감사해요!
+
+IMAGE_PROMPT_0: A modern minimalist test kitchen dedicated to plant-based food innovation, featuring stainless steel counters, fresh peas and legumes in glass containers, chopped vegetables, and a chef in a clean white coat carefully examining a plant protein sample under soft purple analytical mood lighting. On the side of the frame, a small sizzling plant-based burger patty crafted from pea protein with a reddish hue sits on a wooden board as a subtle secondary object. Cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+IMAGE_PROMPT_1: A vibrant urban plant-based restaurant kitchen bustling with energy, showing fresh green vegetables, herbs, and pea protein ingredients being prepared on a bright counter, with a chef enthusiastically plating a new menu collaboration item under lush green growth-themed lighting and dynamic upward motion lines symbolizing partnership expansion. On the edge of the frame, a small sizzling plant-based burger patty with a reddish hue on a bun with fresh vegetables sits as a subtle secondary object. Photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+IMAGE_PROMPT_2: A calm food science laboratory focused on plant protein research, featuring beakers of pea protein slurry, petri dishes with plant fibers, and subtle background monitors showing faint nutritional data charts, all bathed in cool cyan-blue analytical lighting that suggests careful measurement and quantitative evaluation of plant-based meat properties. On the side of the frame, a small sizzling plant-based burger patty with a reddish hue rests on a slate plate as a subtle secondary object. Cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+IMAGE_PROMPT_3: A visionary sustainable vertical farm interior with rows of lush green pea plants and legume crops growing under warm inspiring golden light, symbolizing the future direction of plant-based protein innovation and eco-friendly food systems, with gentle sunbeams filtering through greenery to evoke hope and renewal for the plant-based meat industry. On the lower side of the frame, a small sizzling plant-based burger patty with a reddish hue sits on a rustic wooden board as a subtle secondary object. Photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo.

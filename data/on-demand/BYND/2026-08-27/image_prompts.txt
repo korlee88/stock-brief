@@ -1,0 +1,14 @@
+# BYND 주간 배경 이미지 프롬프트 — 2026-08-27
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A modern minimalist test kitchen dedicated to plant-based food innovation, featuring stainless steel counters, fresh peas and legumes in glass containers, chopped vegetables, and a chef in a clean white coat carefully examining a plant protein sample under soft purple analytical mood lighting. On the side of the frame, a small sizzling plant-based burger patty crafted from pea protein with a reddish hue sits on a wooden board as a subtle secondary object. Cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+## 씬1 호재심층
+A vibrant urban plant-based restaurant kitchen bustling with energy, showing fresh green vegetables, herbs, and pea protein ingredients being prepared on a bright counter, with a chef enthusiastically plating a new menu collaboration item under lush green growth-themed lighting and dynamic upward motion lines symbolizing partnership expansion. On the edge of the frame, a small sizzling plant-based burger patty with a reddish hue on a bun with fresh vegetables sits as a subtle secondary object. Photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+## 씬2 정량지표
+A calm food science laboratory focused on plant protein research, featuring beakers of pea protein slurry, petri dishes with plant fibers, and subtle background monitors showing faint nutritional data charts, all bathed in cool cyan-blue analytical lighting that suggests careful measurement and quantitative evaluation of plant-based meat properties. On the side of the frame, a small sizzling plant-based burger patty with a reddish hue rests on a slate plate as a subtle secondary object. Cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+## 씬3 다음주전망
+A visionary sustainable vertical farm interior with rows of lush green pea plants and legume crops growing under warm inspiring golden light, symbolizing the future direction of plant-based protein innovation and eco-friendly food systems, with gentle sunbeams filtering through greenery to evoke hope and renewal for the plant-based meat industry. On the lower side of the frame, a small sizzling plant-based burger patty with a reddish hue sits on a rustic wooden board as a subtle secondary object. Photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo.
