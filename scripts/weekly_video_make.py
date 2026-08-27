@@ -42,14 +42,15 @@ MIN_SCENE_SEC = 5.0
 ACCENT_COLORS = [
     (167, 139, 250),  # scene 0 purple  - 주간 브리핑
     (34,  197,  94),  # scene 1 green   - 호재 심층
-    (236,  72, 153),  # scene 2 magenta - 미래 비전 (클로징)
+    (14,  165, 233),  # scene 2 cyan    - 정량 지표
+    (236,  72, 153),  # scene 3 magenta - 미래 비전 (클로징)
 ]
 
 # 색상 테마 로테이션 (prep.py와 동일 — 생성일 시드로 동기화). 씬1(호재)은 항상 초록.
 ACCENT_THEMES = [
-    [(167, 139, 250), (34, 197, 94), (236, 72, 153)],  # A 보라·초록·마젠타 (기존)
-    [(56, 189, 248),  (34, 197, 94), (251, 146, 60)],  # B 시안·초록·오렌지
-    [(129, 140, 248), (34, 197, 94), (250, 204, 21)],  # C 인디고·초록·골드
+    [(167, 139, 250), (34, 197, 94), (14, 165, 233), (236, 72, 153)],  # A 보라·초록·시안·마젠타 (기존)
+    [(56, 189, 248),  (34, 197, 94), (99, 102, 241), (251, 146, 60)],  # B 시안·초록·인디고·오렌지
+    [(129, 140, 248), (34, 197, 94), (45, 212, 191), (250, 204, 21)],  # C 인디고·초록·틸·골드
 ]
 
 def _theme_idx(date_str):
@@ -178,6 +179,25 @@ def build_scene_tts_segments(idx: int, lines: list) -> list:
                 segments.append(ln)   # 접두어 없는 예외 줄도 살림
 
     elif idx == 2:
+        # 정량 지표 — "추세:/밸류:/수급:/재무:/총평:" 접두어 줄에 다정한 브리지를 붙여 narration
+        import re as _re
+        bridges = {
+            "추세": "숫자로도 한번 볼게요. 최근 추세는요, ",
+            "밸류": "밸류에이션 짚어보면요, ",
+            "수급": "수급 쪽도 볼까요? ",
+            "재무": "최근 실적도 확인해봤어요. ",
+            "총평": "정리하면요, ",
+        }
+        segments = []
+        for ln in cleaned:
+            m = _re.match(r'^\s*(추세|밸류|수급|재무|총평)\s*[:：]\s*(.*)$', ln)
+            if m:
+                key, body = m.group(1), m.group(2).strip()
+                segments.append((bridges.get(key, "") + body).strip() if body else "")
+            elif ln.strip():
+                segments.append(ln)   # 접두어 없는 예외 줄도 살림
+
+    elif idx == 3:
         # 클로징(다음주 전망) — 6줄: 일정·시나리오·가격예측·흐름·변수·마무리
         head = cleaned[0] if cleaned else ""
         rest = cleaned[1:]
@@ -390,7 +410,7 @@ def make_anime_frame(t, base_arr, accent, dur, scene_idx):
     img = Image.fromarray(base_arr).copy()
 
     is_intro   = (scene_idx == 0)   # 주간 브리핑(첫 씬) — 부드러운 페이드인
-    is_closing = (scene_idx == 2)   # 미래 비전(마지막 씬) — 페이드아웃
+    is_closing = (scene_idx == 3)   # 미래 비전(마지막 씬) — 페이드아웃
 
     # Ken Burns 효과 제거 — 정적 이미지 유지
 
@@ -425,7 +445,7 @@ async def process_scene(scene, report_dir):
 
     idx      = scene["index"]
     lines    = [l for l in scene.get("lines", []) if l.strip()]
-    accent   = ACCENT_COLORS[idx]   # 0-based: 0=주간브리핑, 1=호재심층, 2=미래비전
+    accent   = ACCENT_COLORS[idx]   # 0-based: 0=주간브리핑, 1=호재심층, 2=정량지표, 3=미래비전
     title    = scene.get("title", f"씬 {idx}")
     # 씬 이미지: 신규 {YYMMDD}_{회사명}_씬N.png 우선, 구 scene_NN.png 폴백 (과거 리포트 호환)
     _cands = sorted(report_dir.glob(f"*_씬{idx}.png"))

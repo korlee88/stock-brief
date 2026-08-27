@@ -110,16 +110,18 @@ CARD_GREEN  = (22, 58, 36)     # 초록 카드
 CARD_RED    = (58, 24, 24)     # 빨강 카드
 CARD_AMBER  = (58, 46, 16)     # 앰버 카드
 CARD_PURPLE = (42, 20, 78)     # 보라 카드
+CARD_CYAN   = (14, 46, 64)     # 시안 카드 (씬2 정량지표 — 재무제표 등)
 BADGE_BG    = (20, 26, 48)     # 배지·푸터 배경
 
-SCENE_ACCENTS = [PURPLE, GREEN, (236, 72, 153)]  # 브리핑/호재/미래비전 (인트로·시장반응 제거)
+SCENE_ACCENTS = [PURPLE, GREEN, (14, 165, 233), (236, 72, 153)]  # 브리핑/호재/정량지표/미래비전
 
 # ── 양산형 탈피: 영상마다 변형 (생성일 시드로 결정 → 격일 생성 시 매번 달라짐) ──
 # 인트로/클로징(썸네일) 색상 테마 2~3종 로테이션. 씬1(호재)은 의미상 항상 초록 유지.
+# 씬2(정량지표)는 데이터 느낌의 블루·시안 계열로 고정(테마별로만 미세하게 변형).
 ACCENT_THEMES = [
-    [(167, 139, 250), GREEN, (236, 72, 153)],  # A 보라·초록·마젠타 (기존)
-    [(56, 189, 248),  GREEN, (251, 146, 60)],  # B 시안·초록·오렌지
-    [(129, 140, 248), GREEN, (250, 204, 21)],  # C 인디고·초록·골드
+    [(167, 139, 250), GREEN, (14, 165, 233), (236, 72, 153)],  # A 보라·초록·시안·마젠타 (기존)
+    [(56, 189, 248),  GREEN, (99, 102, 241), (251, 146, 60)],  # B 시안·초록·인디고·오렌지
+    [(129, 140, 248), GREEN, (45, 212, 191), (250, 204, 21)],  # C 인디고·초록·틸·골드
 ]
 
 def _theme_idx(date_str):
@@ -667,7 +669,9 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 • 단정적 권유 금지 (매수·매도·관망 직접 언급 금지)
 • **내부 점수(+N점·-N점) 절대 표기 금지** — 시청자용 지표가 아니다. "좋은 소식"·"호재" / "걱정되는 부분"·"리스크"처럼 풀어 말하고, 점수 대신 구체적 수치·배경·맥락으로 왜 그런지 설명한다.
 • 수치·근거는 그대로 살린다: 모든 핵심 줄에 %·$·대수 등 구체 수치를 자연스럽게 녹여 넣는다
-• 씬 0: 6줄(각 30자 이내) / 씬 1: 3줄(호재·악재·보합 각 1줄, 40~55자, "호재:/악재:/보합:" 접두어 필수) / 씬 2: 6줄(각 45자 이내, 줄1~5는 헤드라인체로 딱 잘라 맺기·줄6 마무리만 다정하게)
+• 씬 0: 6줄(각 30자 이내) / 씬 1: 3줄(호재·악재·보합 각 1줄, 40~55자, "호재:/악재:/보합:" 접두어 필수) /
+  씬 2: 3~5줄(정량 지표, 각 40자 이내, "추세:/밸류:/수급:/재무:/총평:" 접두어 필수) /
+  씬 3: 6줄(각 45자 이내, 줄1~5는 헤드라인체로 딱 잘라 맺기·줄6 마무리만 다정하게)
 
 === 쉬운 말 · 맥락 원칙 (반드시 준수 — 주식을 처음 보는 시청자 기준) ===
 • 각 줄은 **그 줄만 들어도 이해**되게 쓴다. 맥락 없이 결과·수치만 던지지 않는다 —
@@ -688,7 +692,7 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 • 오프닝(SCENE_0_TITLE·씬0 줄1)은 매 영상 달라야 한다. 이번 영상 오프닝 훅 스타일 → {hook_style}
   ※ "오늘의 뉴스"·"이번주 뉴스 N건 분석했어요" 같은 고정·상투적 오프닝 금지(분석 규모는 뒷줄에 자연스럽게 녹여도 됨).
 • 차별화 관점 1줄(필수): 단순 뉴스 요약·낭독을 넘어, 시장 컨센서스·통념과 다른 분석가만의 시각을 한 줄 넣는다
-  (예: "시장은 X를 우려하지만, 정작 중요한 건 Y예요"). 씬1 '향후 전망' 또는 씬2에 자연스럽게 배치.
+  (예: "시장은 X를 우려하지만, 정작 중요한 건 Y예요"). 씬1 '향후 전망' 또는 씬3에 자연스럽게 배치.
 
 === 분석 데이터 ({week_start} ~ {week_end}) ===
 - {ticker} 현재 주가: {price}
@@ -699,7 +703,7 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 - 점수 구성 요인 동향 (참고용, 점수·숫자 절대 금지·"~한 신호가 있었다" 식 맥락 설명에만 활용): {scoring_str}
 - 경쟁사({competitor_ticker}) 비교: {competitor_str}
 - 기술적 지표(참고용, 자연스럽게 수치 인용 가능): {tech_str}
-- 정량 신호 (기술추세·수급·밸류·목표주가·재무제표 — 씬2 '다음주 전망'의 근거로 우선 활용. 전문용어는 풀어서 쉽게): {signals_str}
+- 정량 신호 (기술추세·수급·밸류·목표주가·재무제표 — 씬2 '정량 지표'의 핵심 소재이자 씬3 '다음주 전망'의 근거로도 활용. 전문용어는 풀어서 쉽게): {signals_str}
 - 주가 변동 원인: {movement_reason_str}
 - 회사 방향·최근 투자 (검색 결과 — 씬0 줄2~5 소재로 우선 활용): {company_direction_str}
 - 검색량 트렌드: {trends_str}
@@ -715,7 +719,7 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 - 씬1 선정 뉴스 (신뢰도 우선 선정 — 씬1은 반드시 이 3건만 사용, 출처가 이미 검증됨):
 {scene1_str}
 
-=== 씬 구성 (총 3씬) ===
+=== 씬 구성 (총 4씬) ===
 
 【씬 0 — 회사 소개 & 간략한 주가 흐름】 (6줄, 한 줄 30자 이내, 핵심만 응축)
 ※ 이 씬은 '주가 분석'이 아니라 **어떤 회사인지 소개**하는 씬이다. 주가는 줄1에서 간단히만 짚고, 변동 원인 심층 분석은 하지 않는다(뉴스 분석은 씬1 담당).
@@ -735,7 +739,22 @@ SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 최근 데이터를 바탕으로 You
 - 줄2: "악재: ..." — 제공된 악재 뉴스를 한 문장으로 (40~55자, 수치 포함). 악재가 "없음"이면 "악재: 최근 뚜렷한 악재는 없었어요"(안전하다고 단정하지 말 것)
 - 줄3: "보합: ..." — 제공된 보합(중립) 뉴스를 한 문장으로 (40~55자, 수치 포함). 보합이 "없음"이면 "보합: 최근 뚜렷한 중립 이슈는 없었어요"
 
-【씬 2 — 다음주 전망 (클로징)】 (6줄, 다음주 예측 중심·수치 의무 — 간결하고 "딱 잘라지는" 헤드라인 어투)
+【씬 2 — 정량 지표】 (3~5줄, 각 40자 이내 — 위 '정량 신호' 데이터를 쉬운 말로 브리핑)
+※ 뉴스 감(感)이 아니라 실제 수치(추세·밸류·목표주가·수급·재무제표)로 이 종목을 짚어주는 씬이다.
+  RSI·MACD·PER 같은 용어는 반드시 쉬운 말로 풀어 쓴다(예: "RSI 72" → "단기 과열 신호").
+※ 각 줄은 반드시 "추세:"·"밸류:"·"수급:"·"재무:"·"총평:" 접두어로 시작한다(카드 구분에 사용 — 생략 금지).
+  추세·밸류·총평 3줄은 항상 포함(전 종목 공통 데이터). 수급·재무는 한국 종목이고 실제 데이터가
+  있을 때만 포함(미국 종목이거나 데이터가 없으면 그 줄 자체를 통째로 뺀다 — "데이터 없음" 언급 금지).
+- "추세: ..." — 기술 추세 한 줄, 쉬운 말로 (예: "추세: 20일선 위에서 *상승 흐름* 이어가는 중이에요")
+- "밸류: ..." — PER 수준 + 목표주가(있는 경우만 수치 인용, 지어내기 금지)를 한 줄로
+  (예: "밸류: PER *11.5배*, 애널리스트 평균 목표가는 *42달러*예요")
+- "수급: ..." — (한국 종목·데이터 있을 때만) 외국인·기관 순매수 동향
+  (예: "수급: 외국인이 5거래일 동안 *120억* 넘게 사들였어요")
+- "재무: ..." — (한국 종목·DART 데이터 있을 때만) 매출액·영업이익 등 최근 실적
+  (예: "재무: 3분기 매출 *3천억원*, 영업이익도 함께 늘었어요")
+- "총평: ..." — 위 수치들을 종합한 한 줄 총평 (단정적 매수·매도 권유 금지, 예: "총평: 숫자로 보면 꾸준한 성장 흐름이에요")
+
+【씬 3 — 다음주 전망 (클로징)】 (6줄, 다음주 예측 중심·수치 의무 — 간결하고 "딱 잘라지는" 헤드라인 어투)
 ※ 위 '정량 신호(기술추세·수급·밸류·목표주가·재무제표)'를 **전망의 핵심 근거로 우선 활용**한다 — 뉴스 감(感)이 아니라 추세·수급·밸류·목표주가·재무 수치로 방향을 뒷받침. 단 RSI·MACD·PER 같은 용어는 **반드시 쉬운 말로 풀어** 쓴다(예: "RSI 72" → "단기 과열 신호", "외국인 5일 순매수 +120억" → "외국인이 최근 강하게 사들이는 중").
 ※ 목표주가는 [밸류·목표주가]/[증권사 리포트]에 있는 수치만 사용하고, 없는 숫자를 지어내지 않는다. 증권사 리포트에 목표주가 없이 증권사명·날짜만 있으면 "○○증권이 최근 리포트를 냈다" 정도로만 언급(구체 금액 단정 금지).
 ※ [재무제표]가 있으면 매출액·영업이익·당기순이익 등을 그대로 인용하되(지어낸 숫자 금지), "전년 대비"처럼 비교 시점을 지어내지 말고 해당 분기·연도 실적임을 자연스럽게 밝힌다(예: "3분기 매출 3천억원을 기록했어요").
@@ -765,8 +784,16 @@ SCENE_1:
 악재: 선정된 악재 뉴스 한 문장 (핵심 수치 *별표* 강조, 없으면 "최근 뚜렷한 악재는 없었어요")
 보합: 선정된 보합 뉴스 한 문장 (핵심 수치 *별표* 강조)
 
-SCENE_2_TITLE: [6자 이내, "다음주" "전망" 같은 단어]
+SCENE_2_TITLE: [6자 이내, 예: "정량지표" "숫자로보기"]
 SCENE_2:
+추세: 기술 추세 한 줄 (*별표* 강조)
+밸류: PER·목표주가 한 줄 (*별표* 강조, 목표주가는 실제 수치 있을 때만)
+수급: (한국·데이터 있을 때만) 외국인·기관 순매수 한 줄 (*별표* 강조)
+재무: (한국·DART 데이터 있을 때만) 매출액·영업이익 등 한 줄 (*별표* 강조)
+총평: 수치 종합 한 줄
+
+SCENE_3_TITLE: [6자 이내, "다음주" "전망" 같은 단어]
+SCENE_3:
 [줄1 — 다음주 핵심 일정·이벤트, 핵심 *별표* 강조]
 [줄2 — → 예상 시나리오·관전 포인트, *별표* 강조]
 [줄3 — 다음주 가격 흐름 예측 요약, 누적 변동률·도달가 *별표* 강조]
@@ -774,7 +801,7 @@ SCENE_2:
 [줄5 — 신중히 볼 변수 1건]
 [줄6 — 따뜻한 마무리 인사]
 
-=== 배경 이미지 프롬프트 (Gemini Imagen용, 영어, 3개) ===
+=== 배경 이미지 프롬프트 (Gemini Imagen용, 영어, 4개) ===
 각 60단어 이상. 반드시 포함: "no text, no letters, no watermark, no logo", "ultra-high resolution".
 ★ 주 피사체 원칙(가장 중요): {company_ko}({industry_ko})가 실제로 추구하는 브랜드 이미지·업(業)의
   정체성을 주 피사체로 삼는다. 모든 종목에 범용 미래도시·로켓 발사 같은 상투적 SF 배경을 기본값으로
@@ -782,12 +809,13 @@ SCENE_2:
   화장품이면 뷰티 스튜디오, 실제로 항공우주 기업일 때만 로켓·발사 장면 사용).
 ★ {company_ko}의 핵심 매출 제품·서비스({future_tech})는 화면 한쪽의 보조 오브젝트로만 작게
   배치한다 — 제품이 화면을 지배하는 큰 클로즈업이나 주인공처럼 나오면 안 된다.
-※ 씬 0·1은 16:9 landscape (horizontal strip), 씬 2는 9:16 vertical (full screen) — 프롬프트에 비율 명시.
-  씬별 무드는 유지: 0=보라 분석적, 1=초록 성장, 2=골드 영감.
+※ 씬 0·1·2는 16:9 landscape (horizontal strip), 씬 3은 9:16 vertical (full screen) — 프롬프트에 비율 명시.
+  씬별 무드는 유지: 0=보라 분석적, 1=초록 성장, 2=시안 데이터, 3=골드 영감.
 
 IMAGE_PROMPT_0: [씬0 — 16:9 landscape · {company_ko}({industry_ko})가 추구하는 브랜드 이미지·업의 정체성을 담은, 이 업종에 실제로 어울리는 구체적 공간·장면을 주 피사체로, 핵심 제품({future_tech})은 화면 한쪽에 작게 보조 오브젝트로만 배치, 보라빛 분석적 무드 조명, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
 IMAGE_PROMPT_1: [씬1 — 16:9 landscape · {company_ko}({industry_ko})의 성장·상승세를 상징하는, 이 업종 고유의 구체적 장면을 주 피사체로(범용 로켓 발사 이미지는 실제 항공우주 기업일 때만 사용), 핵심 제품({future_tech})은 화면 한쪽의 보조 요소로만 등장, 초록빛 성장 상승 에너지 분위기, dynamic upward energy, glowing motion lines, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
-IMAGE_PROMPT_2: [씬2 — 9:16 vertical · {company_ko}({industry_ko})가 그리는 사업 방향성을 담은, 이 업종 고유의 미래 지향적 장면을 주 피사체로(범용 미래도시가 아니라 실제 사업 영역을 반영), 핵심 제품({future_tech})은 화면 한쪽의 보조 요소로만 배치, 골드빛 영감적인 무드, warm inspiring golden light, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo]"""
+IMAGE_PROMPT_2: [씬2 — 16:9 landscape · {company_ko}({industry_ko})의 데이터·수치를 다루는 듯한 차분한 장면을 주 피사체로(이 업종에 실제로 어울리는 구체적 공간, 그래프·모니터 같은 요소는 배경 소품으로만 은은하게), 핵심 제품({future_tech})은 화면 한쪽의 보조 요소로만 등장, 시안빛 데이터 분석적 무드, cool cyan-blue analytical lighting, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_3: [씬3 — 9:16 vertical · {company_ko}({industry_ko})가 그리는 사업 방향성을 담은, 이 업종 고유의 미래 지향적 장면을 주 피사체로(범용 미래도시가 아니라 실제 사업 영역을 반영), 핵심 제품({future_tech})은 화면 한쪽의 보조 요소로만 배치, 골드빛 영감적인 무드, warm inspiring golden light, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo]"""
 
 
 SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({company_ko}) 유튜브 쇼츠 나레이션 대본이다.
@@ -797,7 +825,7 @@ SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({company_
 1. 어색한 문구: 번역체·문어체·딱딱한 보고서 말투·부자연스러운 어순·같은 표현 반복이 있으면
    다정한 구어체(~예요/~네요/~거든요/~죠)로 자연스럽게 다듬는다.
 2. 미래 비전 전달력: {company_ko}의 미래 기술·사업계획({future_tech})이 씬1 '향후 전망' 줄과
-   씬2 '관전 포인트' 줄에서 막연하거나 추상적이면, 구체적인 제품·로드맵 이미지가 떠오르게 보강한다.
+   씬3 '관전 포인트' 줄에서 막연하거나 추상적이면, 구체적인 제품·로드맵 이미지가 떠오르게 보강한다.
    (수치·형식·글자 수 제한은 절대 깨지 않는 선에서 단어만 더 생동감 있게 교체)
 3. 맥락 없는 결과 서술: 수치·사실만 툭 던져 "그게 왜?"가 되는 줄(예: "지분 80억 취득했거든요")은
    '무엇을 위해/무슨 의미인지'가 같은 문장에 보이게 고친다(예: "80억을 들여 반도체 회사 지분을 사며 사업을 넓혔어요").
@@ -807,7 +835,7 @@ SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({company_
 === 반드시 지킬 것 ===
 • 출력 형식(SCENE_*_TITLE/SCENE_*/IMAGE_PROMPT_*)·씬별 줄 수·줄당 글자 수 제한·*별표* 강조 표기·
   내부 점수 미표기 규칙은 원본과 동일하게 유지한다.
-• IMAGE_PROMPT_0~2는 원본 그대로 한 글자도 바꾸지 않고 그대로 옮긴다.
+• IMAGE_PROMPT_0~3는 원본 그대로 한 글자도 바꾸지 않고 그대로 옮긴다.
 • 이미 자연스럽고 생동감 있는 줄은 건드리지 않는다 — 트집을 잡기 위한 불필요한 재작성 금지.
 • 고친 내용이 없다면 원본을 그대로 출력해도 된다.
 
@@ -815,7 +843,7 @@ SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({company_
 {raw_script}
 
 === 출력 ===
-설명·코멘트 없이, 재검토를 마친 최종 대본 전체(IMAGE_PROMPT_0~2 포함)만 원본과 동일한 형식으로 출력해라."""
+설명·코멘트 없이, 재검토를 마친 최종 대본 전체(IMAGE_PROMPT_0~3 포함)만 원본과 동일한 형식으로 출력해라."""
 
 
 def _fmt_krw_compact(v) -> str:
@@ -1005,7 +1033,7 @@ def _build_prompt(summary):
     rsi = mc.get("rsi")
     tech_str = f"RSI {rsi:.1f}" if isinstance(rsi, (int, float)) else "데이터 없음"
 
-    # ── 정량 신호(enrich_signals.py) → 자연어 그라운딩 (씬2 전망 근거) ──
+    # ── 정량 신호(enrich_signals.py) → 자연어 그라운딩 (씬2 정량지표 소재·씬3 전망 근거) ──
     signals_str = _format_signals(summary.get("signals") or {})
 
     # ── 오늘 실제 수집된 뉴스 전체 목록 (씬1을 이 안에서만 작성하도록 그라운딩 — 옛 뉴스 재활용 방지) ──
@@ -1106,9 +1134,9 @@ def generate_script_gemini(prompt):
 _last_model = "AI"
 
 _REQUIRED_SCRIPT_MARKERS = (
-    [f"SCENE_{i}_TITLE:" for i in range(3)]
-    + [f"SCENE_{i}:" for i in range(3)]
-    + [f"IMAGE_PROMPT_{i}:" for i in range(3)]
+    [f"SCENE_{i}_TITLE:" for i in range(4)]
+    + [f"SCENE_{i}:" for i in range(4)]
+    + [f"IMAGE_PROMPT_{i}:" for i in range(4)]
 )
 
 
@@ -1171,7 +1199,7 @@ def generate_script(summary):
 
 def parse_script(raw):
     scenes = []
-    SCENE_RANGE = range(0, 3)   # 씬 0(주간브리핑)~씬 2(미래비전) · 인트로·시장반응 씬 제거
+    SCENE_RANGE = range(0, 4)   # 씬 0(주간브리핑)~씬 3(미래비전) · 인트로·시장반응 씬 제거
     # 본문이 넘어가면 안 되는 경계 마커 (특히 마지막 씬이 이미지 프롬프트/섹션을 흡수하는 것 방지)
     BOUNDARY_MARKERS = ("IMAGE_PROMPT_", "=== 배경", "===")
     for i in SCENE_RANGE:
@@ -1202,7 +1230,7 @@ def parse_script(raw):
 def parse_image_prompts(raw):
     """대본에서 씬별 Imagen 프롬프트 추출 → {0: "...", 1: "...", ...}"""
     prompts = {}
-    for i in range(0, 3):
+    for i in range(0, 4):
         key = f"IMAGE_PROMPT_{i}:"
         if key in raw:
             s = raw.index(key) + len(key)
@@ -1615,7 +1643,7 @@ def draw_mbc_header(draw, brand: str, title_main: str, title_sub: str, accent,
     draw.line([(bx0 + 24, brand_y + 38), (bx0 + bw - 24, brand_y + 38)],
               fill=accent, width=3)
 
-    # ── 메인 헤드라인 (2줄 초과 시 … — 씬2처럼 긴 대본 줄도 중간 잘림 없이) ──
+    # ── 메인 헤드라인 (2줄 초과 시 … — 씬3처럼 긴 대본 줄도 중간 잘림 없이) ──
     main_y = 148
     main_lines = wrap_ellipsis(draw, title_main, fnt_main, W - 80, 2)
     for wl in main_lines[:2]:
@@ -2167,7 +2195,7 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
     idx    = scene["index"]
     title  = scene["title"] or f"씬 {idx}"
     lines  = scene.get("lines") or [l.strip() for l in (scene.get("body") or "").split("\n") if l.strip()]
-    accent = SCENE_ACCENTS[idx]   # 0=브리핑, 1=호재 심층, 2=다음주 전망(클로징)
+    accent = SCENE_ACCENTS[idx]   # 0=브리핑, 1=호재 심층, 2=정량 지표, 3=다음주 전망(클로징)
 
     img, draw = make_canvas(accent)
 
@@ -2213,9 +2241,105 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
     news_lines = [l for l in lines if l.strip() and not l.startswith("SCENE")]
 
     # ╔══════════════════════════════════════════════════════════════════╗
-    # ║ 씬 2 — 다음주 전망 (클로징, custom layout)                         ║
+    # ║ 씬 2 — 정량 지표 (추세·밸류·수급·재무·총평, custom layout)          ║
     # ╚══════════════════════════════════════════════════════════════════╝
     if idx == 2:
+        # ① AI 배경 풀스크린(연하게) — 씬1과 동일 패턴, 시안 톤
+        if bg_path and bg_path.exists():
+            try:
+                from PIL import Image as PILImage
+                bg = PILImage.open(bg_path).convert("RGB")
+                bw, bh = bg.size
+                ratio = max(W / bw, H / bh)
+                nw, nh = int(bw * ratio), int(bh * ratio)
+                bg = bg.resize((nw, nh), PILImage.LANCZOS)
+                ox, oy = (nw - W) // 2, (nh - H) // 2
+                img.paste(bg.crop((ox, oy, ox + W, oy + H)), (0, 0))
+                overlay = PILImage.new("RGB", (W, H), (10, 32, 46))
+                img = PILImage.blend(img, overlay, 0.4)
+                draw = ImageDraw.Draw(img)
+            except Exception:
+                pass
+        else:
+            for yy in range(H):
+                t = yy / H
+                draw.line([(0, yy), (W, yy)], fill=(
+                    int(14 + 10 * t), int(28 + 30 * t), int(48 + 45 * t)))
+
+        # ② 접두어("추세:/밸류:/수급:/재무:/총평:")로 대본 줄 파싱 — 데이터 없는 항목은
+        #    대본 자체에 그 줄이 없으므로(프롬프트 지침) 자동으로 카드도 생략된다.
+        _quant_prefix = {"추세": "trend", "밸류": "valuation", "수급": "flow",
+                         "재무": "financial", "총평": "summary"}
+        quant_parsed = {}
+        for _ln in lines:
+            _m = re.match(r'^\s*(추세|밸류|수급|재무|총평)\s*[:：]\s*(.+)$',
+                          strip_markup(strip_emoji(_ln)))
+            if _m:
+                _key = _quant_prefix[_m.group(1)]
+                _txt = _m.group(2).strip()
+                if _txt and _key not in quant_parsed:
+                    quant_parsed[_key] = _txt
+        _QUANT_DEFS = [
+            ("trend",     "추세", GREEN,  CARD_GREEN,  (134, 239, 172)),
+            ("valuation", "밸류", AMBER,  CARD_AMBER,  KEY),
+            ("flow",      "수급", PURPLE, CARD_PURPLE, (216, 180, 254)),
+            ("financial", "재무", accent, CARD_CYAN,   CYAN_LIGHT),
+            ("summary",   "총평", WHITE,  CARD_BG,     KEY),
+        ]
+        QUANT_CARDS = [(label, col, bgc, hl, quant_parsed[key])
+                       for key, label, col, bgc, hl in _QUANT_DEFS if quant_parsed.get(key)]
+        if not QUANT_CARDS:   # 파싱 실패 안전망(접두어 형식이 깨진 경우) — 빈 화면 방지
+            QUANT_CARDS = [("정량 지표", accent, CARD_BG, KEY,
+                            "이 종목의 최근 지표를 확인해보세요")]
+
+        # ③ 헤더 — 서브 배지는 실제로 채워진 카드 라벨만 동적으로 나열(없는 항목 언급 방지)
+        quant_pill = " · ".join(c[0] for c in QUANT_CARDS)
+        draw_mbc_header(draw, "정량 지표", '"숫자로 보는 이 종목"', quant_pill,
+                        accent, f_brand, f_head_main, f_head_sub)
+
+        # ④ 카드 렌더 — 씬1과 동일한 가변 높이 카드 계산(내용 길이만큼 커짐).
+        #    카드가 적을 때(미국 종목 등, 수급·재무 없음) 위쪽에 쏠려 하단이 휑해 보이지
+        #    않도록, 전체 카드 묶음을 본문 영역(MSG_Y~SAFE_BOTTOM) 안에서 수직 중앙 정렬.
+        LINE_H, LABEL_H, BODY_PAD = 52, 56, 18
+        MSG_Y, MSG_GAP = HEADER_H + 8, 14
+        card_sizes = []
+        for label, col, bgcol, hl_col, text in QUANT_CARDS:
+            rendered = wrap_runs(draw, split_runs(text), f_nm, W - PAD * 2 - 44)[:2] or [[]]
+            card_h = LABEL_H + len(rendered) * LINE_H + BODY_PAD
+            card_sizes.append((label, rendered, col, bgcol, hl_col, card_h))
+        total_h = sum(c[5] for c in card_sizes) + MSG_GAP * max(0, len(card_sizes) - 1)
+        avail_h = max(0, SAFE_BOTTOM - MSG_Y)
+        cy = MSG_Y + max(0, (avail_h - total_h) // 2)
+        cards_calc = []
+        for label, rendered, col, bgcol, hl_col, card_h in card_sizes:
+            cards_calc.append((label, rendered, col, bgcol, hl_col, cy, card_h))
+            cy += card_h + MSG_GAP
+
+        from PIL import Image as PILImage
+        CARD_ALPHA = 190
+        _layer = PILImage.new("RGBA", (W, H), (0, 0, 0, 0))
+        _ld = ImageDraw.Draw(_layer)
+        for _lbl, _vis, _col, _bg, _hl, _cyy, _ch in cards_calc:
+            _ld.rounded_rectangle([PAD, _cyy, W - PAD, _cyy + _ch], radius=18, fill=_bg + (CARD_ALPHA,))
+        img = PILImage.alpha_composite(img.convert("RGBA"), _layer).convert("RGB")
+        draw = ImageDraw.Draw(img)
+
+        for label, rendered, col, bgcol, hl_col, cyy, card_h in cards_calc:
+            draw.rounded_rectangle([PAD, cyy, W - PAD, cyy + card_h],
+                                   radius=18, outline=col, width=3)
+            draw.text((PAD + 22, cyy + 14), label, font=f_sm, fill=col, anchor="lt")
+            ty = cyy + LABEL_H
+            for line_runs in rendered:
+                draw_rich_line(draw, PAD + 24, ty, line_runs, f_nm, WHITE, hl_col,
+                               stroke_width=2, stroke_fill=STROKE)
+                ty += LINE_H
+
+        return _apply_frame_overlay(img)
+
+    # ╔══════════════════════════════════════════════════════════════════╗
+    # ║ 씬 3 — 다음주 전망 (클로징, custom layout)                         ║
+    # ╚══════════════════════════════════════════════════════════════════╝
+    if idx == 3:
         # ① AI 배경 이미지를 풀스크린으로 깔기 (미래 비전 이미지)
         if bg_path and bg_path.exists():
             try:
@@ -2242,7 +2366,7 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
                 ))
 
         # ── 헤더: MBC 스타일 (씬0·1과 통일) — pill·핵심 문구·예측 수치 서브 ──
-        # 핵심 문구 = 씬2 줄1(다음주 핵심 일정·이벤트), 서브 = dailyForecasts 누적 예측 수치
+        # 핵심 문구 = 씬3 줄1(다음주 핵심 일정·이벤트), 서브 = dailyForecasts 누적 예측 수치
         head2 = strip_markup(strip_emoji(news_lines[0])).strip() if news_lines else "다음주 핵심 이벤트 미리보기"
         if not (head2.startswith('"') or head2.startswith("'")):
             head2 = f'"{head2}"'
@@ -2634,9 +2758,9 @@ def build_images(scenes, summary, out_dir, img_prompts=None):
         img_prompts = {}
 
     # 모든 씬에 AI 배경 이미지 생성
-    BG_SCENES = {0, 1, 2}
-    # 씬별 aspect ratio — 0·1은 가로 strip(16:9), 2(미래비전)는 풀스크린(9:16)
-    BG_ASPECTS = {0: "16:9", 1: "16:9", 2: "9:16"}
+    BG_SCENES = {0, 1, 2, 3}
+    # 씬별 aspect ratio — 0·1·2는 가로 strip(16:9), 3(미래비전)는 풀스크린(9:16)
+    BG_ASPECTS = {0: "16:9", 1: "16:9", 2: "16:9", 3: "9:16"}
 
     print("   🖼 배경 이미지 준비 중...")
     bg_paths = {}
@@ -2673,7 +2797,7 @@ def build_images(scenes, summary, out_dir, img_prompts=None):
             print(f"      씬{idx} [정적 배경: {Path(static).name}] ✅")
             continue
 
-        # 최종: 기본 배경 (씬0·1 다크 카드 / 씬2 그라데이션) — bg 없음으로 처리
+        # 최종: 기본 배경 (씬0·1 다크 카드 / 씬2·3 그라데이션) — bg 없음으로 처리
         bg_paths[idx] = None
         print(f"      씬{idx} AI·정적 모두 없음 → 기본 배경(그라데이션/다크 카드)", file=sys.stderr)
 
@@ -2745,7 +2869,7 @@ def main():
     img_prompts = {}  # Nano Banana 이미지 생성에 사용 (대본 생성 시 채워짐)
     if not ANTHROPIC_API_KEY and not GEMINI_API_KEY:
         print("⚠ API 키 없음 — 대본 생성 건너뜀", file=sys.stderr)
-        scenes = [{"index": i, "title": f"씬 {i}", "lines": [], "body": ""} for i in range(0, 3)]
+        scenes = [{"index": i, "title": f"씬 {i}", "lines": [], "body": ""} for i in range(0, 4)]
     else:
         print("✍ 대본 생성 중...")
         raw    = generate_script(summary)
@@ -2781,8 +2905,8 @@ def main():
         if img_prompts:
             lines = [f"# {TICKER} 주간 배경 이미지 프롬프트 — {today}",
                      "# Gemini Imagen에 씬별로 붙여넣기 하세요.\n"]
-            scene_names = {0: "씬0 주간브리핑", 1: "씬1 호재심층", 2: "씬2 다음주전망"}
-            for i in range(0, 3):
+            scene_names = {0: "씬0 주간브리핑", 1: "씬1 호재심층", 2: "씬2 정량지표", 3: "씬3 다음주전망"}
+            for i in range(0, 4):
                 if i in img_prompts:
                     lines.append(f"## {scene_names[i]}")
                     lines.append(img_prompts[i])
@@ -2822,7 +2946,7 @@ def main():
                 "company_ko": COMPANY_KO,
                 "date": today,
                 "report_dir": f"data/on-demand/{TICKER}/{today}",
-                "scenes": [f"data/on-demand/{TICKER}/{today}/{scene_png_name(i, today)}" for i in range(3)],
+                "scenes": [f"data/on-demand/{TICKER}/{today}/{scene_png_name(i, today)}" for i in range(4)],
                 "youtube_title": yt_title,
                 "youtube_description": yt_desc,
                 "generated_at": today,
