@@ -41,6 +41,9 @@
 - **DART 재무제표**(한국만, 사용자 요청): `DART_API_KEY`(무료 발급, GitHub Secrets에 등록—
   채팅에 붙여넣지 말 것) 필요. `data/dart-corp-codes.json`(종목코드→고유번호, `update-kr-stocks.yml`이
   갱신)로 조회 → 매출액·영업이익·당기순이익 등 주요계정, 지어낸 숫자 금지. 키 없으면 조용히 생략.
+- **관심 주식 순위**(build_stock_trends.js, 사용자 요청): 미국·한국·일본·대만 4개 시장을
+  독립 검색 후 미국→한국→일본→대만 순으로 교차 배치. 일본·대만은 "그 나라 투자자가
+  검색하는 미국 상장 종목"을 보는 보조 시장이라 실패해도 조용히 건너뜀(미국·한국은 필수).
 
 ## 웹 (on-demand.html — GitHub Pages)
 3열: 리모컨(한국·미국 종목 검색 `data/kr-stocks.json`·`us-stocks.json`) | 구글 관심 TOP30(`data/stock-trends.json`, 관리자 리셋 시만 갱신) | 최근 생성 영상(`data/on-demand/latest.json`, 씬 미리보기+YouTube 카피).
