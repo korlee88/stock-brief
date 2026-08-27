@@ -8,9 +8,9 @@
     # 1) 한글 폰트·(음성 합성용)ffmpeg 준비 — 없으면 글씨가 깨진 기본 비트맵으로 나옴
     apt-get install -y fonts-nanum ffmpeg
 
-    # 2) 최신 대본으로 씬 3장 렌더 (실데이터 data/auto-sessions.json 기준)
+    # 2) 최신 대본으로 씬 4장 렌더 (실데이터 data/auto-sessions.json 기준)
     python3 scripts/preview_scenes.py
-    #    → out/preview/scene_0.png ~ scene_2.png
+    #    → out/preview/scene_0.png ~ scene_3.png
 
     # 특정 대본/출력 위치 지정
     python3 scripts/preview_scenes.py --script data/weekly-report/2026-06-26/script.txt --out /tmp/pv
