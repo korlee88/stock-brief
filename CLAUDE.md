@@ -44,6 +44,9 @@
 - **관심 주식 순위**(build_stock_trends.js, 사용자 요청): 미국·한국·일본·대만 4개 시장을
   독립 검색 후 미국→한국→일본→대만 순으로 교차 배치. 일본·대만은 "그 나라 투자자가
   검색하는 미국 상장 종목"을 보는 보조 시장이라 실패해도 조용히 건너뜀(미국·한국은 필수).
+- **BGM**(사용자 요청 — 매번 같은 곡이라 단조로움): `data/bgm/*.mp3`(scripts/make_bgm.py로
+  합성, 원본·로열티프리) 여러 트랙 중 (티커+날짜) 시드로 결정적 선택 — 재실행 시 동일,
+  다른 종목/날짜는 자동으로 달라짐. 트랙 추가·교체는 파일만 넣으면 자동 반영.
 
 ## 웹 (on-demand.html — GitHub Pages)
 3열: 리모컨(한국·미국 종목 검색 `data/kr-stocks.json`·`us-stocks.json`) | 구글 관심 TOP30(`data/stock-trends.json`, 관리자 리셋 시만 갱신) | 최근 생성 영상(`data/on-demand/latest.json`, 씬 미리보기+YouTube 카피).
