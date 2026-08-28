@@ -1,0 +1,221 @@
+{
+  "generated_at": "2026-08-28",
+  "generated_by": "Claude Opus 4",
+  "title": "왜 갑자기 *$0.17*까지 밀렸을까요?",
+  "subtitle": "2026-08-28 ~ 2026-08-28 · FingerMotion 주가, 지난 24시간 동안 11",
+  "summary": {
+    "week_start": "2026-08-28",
+    "week_end": "2026-08-28",
+    "session_count": 1,
+    "total_analyzed": 5,
+    "bullish_count": 0,
+    "bearish_count": 3,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 0.17,
+    "price_end": 0.17,
+    "latest_price": 0.17,
+    "today_price": 0.17,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "FingerMotion 주가, 지난 24시간 동안 11.26% 하락",
+      "score": -4,
+      "reason": "최근 주가 하락은 투자자 신뢰도 하락과 부정적인 시장 심리를 반영하며, 이는 단기적으로 주가에 부정적인 영향을 미칠 것입니다.",
+      "source": "TradingView",
+      "date": "2026-08-28",
+      "category": "Market",
+      "direction_ko": "악재",
+      "emoji": "⚠"
+    },
+    "top_bullish": [],
+    "top_bearish": [
+      {
+        "title": "FingerMotion 주가, 지난 24시간 동안 11.26% 하락",
+        "score": -4,
+        "reason": "최근 주가 하락은 투자자 신뢰도 하락과 부정적인 시장 심리를 반영하며, 이는 단기적으로 주가에 부정적인 영향을 미칠 것입니다.",
+        "source": "TradingView",
+        "date": "2026-08-28",
+        "category": "Market"
+      },
+      {
+        "title": "FingerMotion 시가총액, 지난주 대비 27.35% 감소",
+        "score": -3,
+        "reason": "시가총액의 상당한 감소는 회사의 가치 하락을 의미하며, 이는 투자자들에게 부정적인 신호로 작용하여 주가에 하방 압력을 가할 수 있습니다.",
+        "source": "TradingView",
+        "date": "2026-08-28",
+        "category": "Market"
+      },
+      {
+        "title": "FingerMotion, 지난 분기 순이익 -2.00백만 USD 기록",
+        "score": -3,
+        "reason": "순이익 감소는 회사의 수익성 악화를 나타내며, 이는 투자 심리에 부정적인 영향을 미쳐 주가 하락으로 이어질 수 있습니다.",
+        "source": "TradingView",
+        "date": "2026-08-28",
+        "category": "Earnings"
+      }
+    ],
+    "top_neutral": [
+      {
+        "title": "FingerMotion, Lyken AI Computing 지분 9.9% 인수 완료",
+        "score": 0,
+        "reason": "이번 인수는 회사의 AI 역량을 강화할 수 있지만, 전액 주식 거래였고 이미 발표된 내용이므로 단기적인 주가 영향은 중립적일 것으로 예상됩니다.",
+        "source": "StockTitan",
+        "date": "2026-08-17",
+        "category": "Contract"
+      },
+      {
+        "title": "FingerMotion, Chris Polimeni를 최고재무책임자(CFO)로 임명",
+        "score": 0,
+        "reason": "새로운 CFO의 임명은 일반적으로 회사의 재무 건전성과 투명성에 긍정적인 영향을 미칠 수 있지만, 이 소식은 이미 며칠 전에 발표되었고 시장에 반영되었을 가능성이 높으므로 단기적인 주가 영향은 중립적일 것으로 보입니다.",
+        "source": "Stocktwits",
+        "date": "2026-08-17",
+        "category": "Market"
+      }
+    ],
+    "neutral_count": 2,
+    "scene1_news": {
+      "bullish": null,
+      "bearish": {
+        "title": "FingerMotion 주가, 지난 24시간 동안 11.26% 하락",
+        "score": -4,
+        "reason": "최근 주가 하락은 투자자 신뢰도 하락과 부정적인 시장 심리를 반영하며, 이는 단기적으로 주가에 부정적인 영향을 미칠 것입니다.",
+        "source": "TradingView",
+        "date": "2026-08-28",
+        "category": "Market"
+      },
+      "neutral": {
+        "title": "FingerMotion, Chris Polimeni를 최고재무책임자(CFO)로 임명",
+        "score": 0,
+        "reason": "새로운 CFO의 임명은 일반적으로 회사의 재무 건전성과 투명성에 긍정적인 영향을 미칠 수 있지만, 이 소식은 이미 며칠 전에 발표되었고 시장에 반영되었을 가능성이 높으므로 단기적인 주가 영향은 중립적일 것으로 보입니다.",
+        "source": "Stocktwits",
+        "date": "2026-08-17",
+        "category": "Market"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-08-28",
+        0.17
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-08-28",
+    "today_news": [
+      {
+        "title": "FingerMotion 주가, 지난 24시간 동안 11.26% 하락",
+        "category": "Market",
+        "source": "TradingView",
+        "date": "2026-08-28"
+      },
+      {
+        "title": "FingerMotion 시가총액, 지난주 대비 27.35% 감소",
+        "category": "Market",
+        "source": "TradingView",
+        "date": "2026-08-28"
+      },
+      {
+        "title": "FingerMotion, 지난 분기 순이익 -2.00백만 USD 기록",
+        "category": "Earnings",
+        "source": "TradingView",
+        "date": "2026-08-28"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 0.17,
+        "ma20": 0.25,
+        "vs_ma20_pct": -31.3,
+        "ma60": 0.37,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 20.3,
+        "rsi_state": "과매도(침체)",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 12.2,
+        "pos_52w_pct": 1.0,
+        "high_52w": 2.2,
+        "low_52w": 0.15,
+        "mom_5d_pct": -24.5,
+        "mom_20d_pct": -27.0
+      },
+      "valuation": {
+        "PER_선행": 5.8
+      }
+    },
+    "prev_day": {
+      "date": "2026-08-27",
+      "open": 0.17,
+      "close": 0.17,
+      "change_pct": 6.25
+    },
+    "month_low": {
+      "low": 0.15,
+      "current": 0.17,
+      "pct_vs_low": 15.33
+    },
+    "movement_reason": "핑거모션(FNGR)의 2026년 8월 28일 주가 하락의 주요 원인은 다음과 같이 분석됩니다:\n\n상장폐지 경고 / 저조한 실적 / AI 사업 불확실성\n\n**주요 원인 분석:**\n\n*   **상장폐지 경고**: 2026년 7월 3일, 핑거모션은 주당 최소 입찰 가격 요건(1.00달러) 미달로 나스닥으로부터 상장폐지 경고를 받았습니다. 이는 투자자들에게 심각한 우려를 야기하며 주가에 지속적인 하방 압력을 가하고 있습니다.\n*   **저조한 실적**: 핑거모션은 2026 회계연도에 7백만 달러의 순손실을 기록하고 핵심 통신 사업 부문의 매출이 감소하는 등 전반적으로 저조한 재무 성과를 보였습니다. 이러한 수익성 및 성장성 악화는 투자 심리를 위축시키는 요인입니다.\n*   **AI 사업 불확실성**: 회사는 2026년 8월 24일부터 25일경 북미 AI 인프라 시장 진출 계획을 발표했지만, 시장은 이에 대해 회의적인 반응을 보이고 있습니다. 낮은 주가순매출비율(P/S)과 부실한 기본 체력이 시장의 회의론을 반영하며, 신규 사업의 구체적인 계약이나 자금 조달 등이 확정되지 않아 불확실성이 크다는 분석입니다.",
+    "company_direction": "핑거모션(FNGR) 회사 소개 자료입니다.\n\n*   **주력 사업:** 중국 모바일 결제 및 충전 서비스 주력 / 통신 상품 및 서비스로 주요 매출 / 빅데이터 분석 기반 솔루션 제공 / 스마트 이동성 및 긴급 통신 플랫폼 운영\n*   **회사의 비전·전략 방향:** 중국 내 모바일 사용자 생태계 확장 / 다각화된 성장 위한 해외 시장 진출 모색 / 기존 모바일 및 통신 사업 효율성 강화 / 북미 AI/고성능 컴퓨팅 인프라 진출 추진\n*   **최근 1년 내 주요 투자·설비·인수:** 2026년 8월, Lyken AI 지분 9.9% 인수 (주식 교환) / 2026년 6월, BlueFlare와 AI 데이터센터 MOU 체결 / 2026년 3월, Telforge 인수 계약 (최대 733만 주) / 북미 AI 컴퓨팅 인프라 진출 위한 투자\n*   **핵심 신제품·신기술 로드맵:** 모듈형 AI 엣지 컴퓨팅 시설 개발 추진 / 북미 BTM(전력망 독립형) AI/HPC(고성능 컴퓨팅) 인프라 구축 로드맵 / 자회사 통한 지능형 차량 솔루션 공동 개발 / Lyken AI와 클라우드 컴퓨팅 및 기업 서비스 제공 / Sapientus, AI 기반 빅데이터 분석 플랫폼 운영\n*   **시장 내 위치·점유율:** 시가총액 약 1천3백만 달러 소형 기업 / 중국 주요 통신사 충전 서비스 도매 접근권 보유 / 연간 매출 약 2천4백만 달러로 업계 평균 하회 / 통신 서비스 및 무선 통신 서비스 산업 소속"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "왜 갑자기 *$0.17*까지 밀렸을까요?",
+        "중국에서 *모바일 결제·통신* 서비스가 주력이에요",
+        "*북미 AI 데이터센터* 시장 진출을 노리고 있죠",
+        "8월 *AI 스타트업 Lyken 지분 9.9%*를 사들여 AI 사업을 넓혔어요",
+        "*빅데이터 분석* 플랫폼도 함께 운영해요",
+        "시총 *1천3백만 달러* 소형주랍니다"
+      ],
+      "body": "왜 갑자기 *$0.17*까지 밀렸을까요?\n중국에서 *모바일 결제·통신* 서비스가 주력이에요\n*북미 AI 데이터센터* 시장 진출을 노리고 있죠\n8월 *AI 스타트업 Lyken 지분 9.9%*를 사들여 AI 사업을 넓혔어요\n*빅데이터 분석* 플랫폼도 함께 운영해요\n시총 *1천3백만 달러* 소형주랍니다"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: 최근 뚜렷한 호재는 없었어요, 조금 아쉬운 부분이죠",
+        "악재: 지난 24시간 새 주가가 *11.26% 하락*하며 투자심리가 얼어붙었죠",
+        "보합: 새 CFO로 *Chris Polimeni*를 뽑아 재무 정비에 나섰어요"
+      ],
+      "body": "호재: 최근 뚜렷한 호재는 없었어요, 조금 아쉬운 부분이죠\n악재: 지난 24시간 새 주가가 *11.26% 하락*하며 투자심리가 얼어붙었죠\n보합: 새 CFO로 *Chris Polimeni*를 뽑아 재무 정비에 나섰어요"
+    },
+    {
+      "index": 2,
+      "title": "숫자로보기",
+      "lines": [
+        "추세: *RSI 20.3*, 단기 과매도로 바닥권이에요",
+        "밸류: 선행 PER *5.8배*, 수익성 회복이 관건이죠",
+        "재무: 지난 분기 *200만 달러* 순손실을 냈어요",
+        "총평: 숫자로 보면 *상장폐지 경고*까지 겹친 힘든 국면이에요"
+      ],
+      "body": "추세: *RSI 20.3*, 단기 과매도로 바닥권이에요\n밸류: 선행 PER *5.8배*, 수익성 회복이 관건이죠\n재무: 지난 분기 *200만 달러* 순손실을 냈어요\n총평: 숫자로 보면 *상장폐지 경고*까지 겹친 힘든 국면이에요"
+    },
+    {
+      "index": 3,
+      "title": "다음주전망",
+      "lines": [
+        "다음주 *나스닥 1달러 규정*(주가 유지 조건) 재점검이 최대 변수",
+        "관전 포인트 — *북미 AI 서버 공급 계약* 성사 여부 주목",
+        "누적 흐름 *$0.15~$0.19 박스권* 예상",
+        "5거래일 중 *2일 상승·3일 하락* 관측",
+        "변수 — AI 진출은 반기지만 *현금흐름 개선*이 진짜 관건",
+        "오늘도 함께해 주셔서 고마워요!"
+      ],
+      "body": "다음주 *나스닥 1달러 규정*(주가 유지 조건) 재점검이 최대 변수\n관전 포인트 — *북미 AI 서버 공급 계약* 성사 여부 주목\n누적 흐름 *$0.15~$0.19 박스권* 예상\n5거래일 중 *2일 상승·3일 하락* 관측\n변수 — AI 진출은 반기지만 *현금흐름 개선*이 진짜 관건\n오늘도 함께해 주셔서 고마워요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A quiet modern telecommunications operations room in China at dusk, wide analytical view of a control desk with soft purple ambient lighting, a large window showing distant city cell towers glowing faintly, an analyst silhouette studying subtle mobile network flow visualizations on a wall display, a single smartphone resting on the desk as a small secondary object on the side representing mobile data services, moody violet and indigo tones, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A bustling Chinese urban telecom hub at sunrise showing gleaming fiber optic bundles rising upward through a modern data corridor, green bioluminescent light trails symbolizing growing mobile payment transactions surging along network cables, engineers in the background inspecting connections with confident posture, a small mobile device placed on a side console as a minor supporting object, dynamic upward energy, glowing motion lines in emerald and lime tones, hopeful growth atmosphere, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A calm telecom network operations center with rows of servers bathed in cool cyan-blue analytical lighting, a wide angle view of engineers reviewing subtle abstract data flow patterns on translucent panels representing mobile carrier traffic and payment volumes, faint holographic charts floating as background props, a small handset lying on a desk edge as a minor supporting object, clean minimalistic technical mood, cool cyan-blue analytical lighting, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "3": "A vertical composition of a futuristic modular AI edge computing facility at golden hour, warm inspiring sunlight streaming through a North American landscape with distant telecom towers and a compact off-grid data pod glowing softly, a lone technician gazing toward the horizon symbolizing new market expansion, a small smartphone placed on a nearby crate as a minor supporting object referencing mobile data heritage, warm inspiring golden light, hopeful visionary mood, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}
