@@ -1,0 +1,37 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+왜 갑자기 *$37.08*에 멈췄을까요?
+*AI 서버*·스토리지 만드는 회사예요
+*랙 통째로* 납품하는 게 목표죠
+AI 인프라에 *200억 달러* 협력 체결
+*액체냉각* GPU 서버가 대표작이에요
+*AI 서버 점유율 1위* 기업이랍니다
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 6월 분기 *총마진 전망 상향*으로 수익성이 살아난다는 신호예요
+악재: 과거 *연간보고서 지연*·회계 조작 의혹이 아직 그림자로 남아있죠
+보합: *사기 조사 종결*에 경영진 무관 발표로 불확실성이 좀 걷혔어요
+
+SCENE_2_TITLE: 정량지표
+SCENE_2:
+추세: 20일선 위 *+5.4%*, 상승 흐름 이어져요
+밸류: 선행 PER *7배*, 목표가 평균 *$42.38*
+총평: 저평가 매력은 있지만 *중립 의견*이 많아요
+
+SCENE_3_TITLE: 다음주전망
+SCENE_3:
+*9월 초* 액체냉각 AI 서버 신규 수주 주목
+*600억 달러* 밀린 주문 소화 속도가 관건
+현재가 대비 *목표가 +14%* 여유 구간
+*RSI 63*, 단기 과열 임박·눈치보기 장세
+변수: *회계 잔상*보다 진짜 관건은 마진이에요
+함께해 주셔서 고마워요!
+
+IMAGE_PROMPT_0: A vast, immersive hyperscale data center hall serving as the main subject, endless rows of tall server racks stretching into deep perspective, cool ambient purple and violet analytical lighting bathing polished floors, subtle mist and glowing indicator lights suggesting deep computation, a single liquid-cooled AI server module placed small on the side as a secondary object, cinematic wide composition, moody analytical atmosphere, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A dynamic hyperscale AI data center corridor as the main subject with glowing green fiber optic cables streaming upward like rising energy currents, luminous emerald light trails flowing along server aisles symbolizing rapid growth momentum, cooling vapor swirling with vitality, a small compact GPU server unit tucked at the side as a secondary element, upward diagonal composition suggesting acceleration, vibrant growth atmosphere, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A quiet network operations control room as the main subject, engineers silhouetted before vast cyan-blue holographic dashboards showing abstract performance waveforms and cluster telemetry, cool analytical lighting reflecting off polished consoles, faint grid patterns floating in the air suggesting deep data analysis, a single rack-mounted storage server sitting small on the side desk as a secondary object, calm contemplative mood, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_3: A futuristic liquid-cooled AI data center chamber as the main subject viewed vertically, translucent coolant pipes glowing with warm golden light flowing through immersive tanks, soft inspiring sunrise-like illumination filtering through the architectural lattice above, a sense of visionary infrastructure powering tomorrow, one small integrated GPU server module placed at the lower side as a secondary element, uplifting cinematic atmosphere, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

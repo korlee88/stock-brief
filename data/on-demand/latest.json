@@ -1,15 +1,15 @@
 {
- "ticker": "FNGR",
- "company_ko": "핑거모션",
- "date": "2026-08-28",
- "report_dir": "data/on-demand/FNGR/2026-08-28",
+ "ticker": "SMCI",
+ "company_ko": "슈퍼 마이크로 컴퓨터",
+ "date": "2026-08-31",
+ "report_dir": "data/on-demand/SMCI/2026-08-31",
  "scenes": [
-  "data/on-demand/FNGR/2026-08-28/260828_핑거모션_씬0.png",
-  "data/on-demand/FNGR/2026-08-28/260828_핑거모션_씬1.png",
-  "data/on-demand/FNGR/2026-08-28/260828_핑거모션_씬2.png",
-  "data/on-demand/FNGR/2026-08-28/260828_핑거모션_씬3.png"
+  "data/on-demand/SMCI/2026-08-31/260831_슈퍼마이크로컴퓨터_씬0.png",
+  "data/on-demand/SMCI/2026-08-31/260831_슈퍼마이크로컴퓨터_씬1.png",
+  "data/on-demand/SMCI/2026-08-31/260831_슈퍼마이크로컴퓨터_씬2.png",
+  "data/on-demand/SMCI/2026-08-31/260831_슈퍼마이크로컴퓨터_씬3.png"
  ],
- "youtube_title": "왜 갑자기 $0.17까지 밀렸을까요? | 핑거모션(FNGR) 주가 브리핑 8/28 #Shorts",
- "youtube_description": "핑거모션(FNGR) 2026-08-28 주가 브리핑 — 현재가 $0.17 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 핑거모션, FNGR, 핑거모션 주가, FNGR 주가, 미국주식, 모바일 데이터 서비스, 중국 통신, Chris Polimeni FingerMotion, FingerMotion, FNGR stock, mobile data, telecommunications, China tech, 모바일 데이터 및 통신 서비스\n#FNGR #핑거모션 #미국주식 #FingerMotion #FNGRstock #mobiledata #telecommunications #Chinatech #Shorts",
- "generated_at": "2026-08-28"
+ "youtube_title": "왜 갑자기 $37.08에 멈췄을까요? | 슈퍼 마이크로 컴퓨터(SMCI) 주가 브리핑 8/31 #Shorts",
+ "youtube_description": "슈퍼 마이크로 컴퓨터(SMCI) 2026-08-31 주가 브리핑 — 현재가 $37.08 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 슈퍼 마이크로 컴퓨터, SMCI, 슈퍼 마이크로 컴퓨터 주가, SMCI 주가, 미국주식, AI 서버, Supermicro, 찰스 리앙, AI servers, GPU servers, Data Center Solutions, 슈퍼마이크로, 서버, 스토리지, 네트워킹 솔루션, HPE\n#SMCI #슈퍼마이크로컴퓨터 #미국주식 #Supermicro #AIservers #GPUservers #DataCenterSolutions #슈퍼마이크로 #AI서버 #Shorts",
+ "generated_at": "2026-08-31"
 }

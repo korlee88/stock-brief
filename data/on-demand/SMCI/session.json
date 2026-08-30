@@ -1,134 +1,134 @@
 [
   {
-    "date": "2026-08-27",
-    "generatedAt": "2026-08-27T04:58:20.477Z",
+    "date": "2026-08-31",
+    "generatedAt": "2026-08-30T15:25:28.468Z",
     "mode": "on-demand",
-    "latestPrice": 37.39,
+    "latestPrice": 37.08,
     "news": [
       {
         "id": 1,
-        "title": "Super Micro Computer, 내부 조사 완료 및 수출 규정 준수 프로그램 강화 발표",
-        "summary": "Super Micro Computer는 수출 규정 준수 프로그램에 대한 독립적인 조사를 완료했으며, 고위 경영진은 어떠한 위법 행위도 인지하지 못했다고 밝혔습니다. 또한, 회사는 수출 규정 준수 프로그램을 강화하기 위한 권고 사항을 전적으로 수용했습니다.",
-        "source": "Business Wire",
-        "date": "2026-08-20",
-        "category": "Regulatory"
-      },
-      {
-        "id": 2,
-        "title": "Super Micro Computer, 2026년 4분기 및 전체 회계연도 재무 결과 발표",
-        "summary": "Super Micro Computer는 2026년 회계연도 4분기 순매출이 111억 달러를 기록하여 전 분기 대비 증가했으며, GAAP 총 마진은 17.5%로 상승했다고 발표했습니다.",
-        "source": "StockTitan",
-        "date": "2026-08-20",
-        "category": "Earnings"
-      },
-      {
-        "id": 3,
-        "title": "Supermicro, 고밀도 AI 및 HPC 인프라를 위한 액체 냉각 포트폴리오 확장",
-        "summary": "Supermicro는 고밀도 AI 및 HPC 인프라를 위한 후면 도어 열 교환기(RDHx) 모델 10종을 포함하여 데이터 센터 빌딩 블록 솔루션(DCBBS) 액체 냉각 포트폴리오를 확장했습니다.",
-        "source": "StockTitan",
-        "date": "2026-08-20",
-        "category": "Product"
-      },
-      {
-        "id": 4,
-        "title": "Supermicro, AI 랙 시리즈 확장으로 배포 및 온라인 시간 단축",
-        "summary": "Supermicro는 미션 크리티컬 고밀도 AI 데이터 센터를 겨냥한 정밀 엔지니어링 AI 랙 포트폴리오를 확장하여 ORv3, NVIDIA Vera Rubin/GB300 (MGX) 및 EIA 표준 플랫폼을 지원합니다.",
-        "source": "StockTitan",
-        "date": "2026-08-20",
-        "category": "Product"
-      },
-      {
-        "id": 5,
-        "title": "Super Micro Computer, 다가오는 투자자 컨퍼런스 참여 발표",
-        "summary": "Super Micro Computer는 Oppenheimer 29th Annual Technology, Internet & Communications Conference, Citi 2026 Global TMT Conference, Goldman Sachs Communacopia + Technology Conference 2026 등 세 가지 투자자 컨퍼런스에 참여할 예정입니다.",
-        "source": "StockTitan",
-        "date": "2026-08-20",
+        "title": "Super Micro Computer, Inc. 이사회 의장 Sara Liu, 회사 주식 매입",
+        "summary": "Super Micro Computer, Inc.의 이사회 의장인 Sara Liu가 2026년 8월 17일에 회사 주식 3,650주를 매입했다. 이는 내부자 매수로, 회사 경영진이 회사 가치에 대해 긍정적으로 평가하고 있음을 시사한다.",
+        "source": "Insider Trading Screener",
+        "date": "2026-08-17",
         "category": "Market"
       },
       {
-        "id": 6,
-        "title": "Super Micro Computer, 수익 추정치 상향 조정으로 주가 상승 가능성",
-        "summary": "Super Micro Computer (SMCI) 주가는 견고한 수익 추정치 상향 조정으로 인해 단기적으로 계속 상승할 수 있습니다.",
-        "source": "Nasdaq",
-        "date": "2026-08-24",
+        "id": 2,
+        "title": "Super Micro, 사기 조사 완료 및 경영진 무관 발표",
+        "summary": "Super Micro Computer는 사기 혐의에 대한 독립적인 조사를 완료했으며, 고위 경영진은 해당 계획을 인지하지 못했다고 밝혔다. 회사는 수출 규정 준수 프로그램을 강화하기 위한 권고 사항을 채택했다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-20",
+        "category": "Legal"
+      },
+      {
+        "id": 3,
+        "title": "Super Micro, 내부자 사라 리우의 RSU 정산 및 6,500만 주 이상 간접 보유 보고",
+        "summary": "Super Micro Computer의 이사이자 10% 소유주인 량 치우-추 사라 리우가 2026년 8월 10일 제한부 주식 단위(RSU)의 권리 확정 및 보통주 3,134주로의 정산을 보고했습니다. 이와 관련하여 세금 원천징수 의무를 이행하기 위해 주당 31.46달러에 1,692주가 원천징수되었습니다.",
+        "source": "Stock Titan",
+        "date": "2026-08-12",
+        "category": "Market"
+      },
+      {
+        "id": 4,
+        "title": "Super Micro, 사기 조사 완료 및 고위 경영진의 연루 사실 없음 발표",
+        "summary": "Super Micro Computer는 인공지능 서버 제조업체가 불법 밀수 혐의에 대한 독립적인 조사를 완료했으며, 고위 경영진이 해당 행위를 인지하지 못했다고 밝혔습니다. 이 소식에 주가는 장중 2% 이상 하락하며 초기 상승분을 반납했습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-20",
+        "category": "Legal"
+      },
+      {
+        "id": 5,
+        "title": "Super Micro Computer, 2026년 6월 분기 매출 가이던스 상향 조정",
+        "summary": "Super Micro Computer는 2026년 6월 30일 마감된 회계연도 4분기 매출이 이전에 제시한 110억~120억 달러 범위의 하단에 근접할 것으로 예상하지만, 비GAAP 총 마진은 이전 예상치인 8.2%~8.4%보다 훨씬 높은 15%~17% 범위가 될 것으로 예상한다고 발표했습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-07-27",
         "category": "Earnings"
       },
       {
+        "id": 6,
+        "title": "Supermicro, 독립 이사회 이사들의 조사 진행 상황 업데이트 제공",
+        "summary": "Supermicro는 2026년 3월에 회사와 관련이 있었던 세 명의 개인에 대한 기소와 관련하여 독립적인 조사가 진행 중임을 확인했습니다. Supermicro는 기소 대상에 포함되지 않았으며 어떠한 위법 행위도 기소되지 않았습니다.",
+        "source": "Business Wire",
+        "date": "2026-04-07",
+        "category": "Legal"
+      },
+      {
         "id": 7,
-        "title": "Vertiv, 마진 개선으로 경쟁 우위 확보: APH 및 SMCI를 능가할 수 있을까?",
-        "summary": "Vertiv의 마진 개선과 강력한 매출 성장은 AI 인프라 분야에서 Amphenol 및 Super Micro Computer가 확장함에 따라 경쟁적 위치를 재편하고 있습니다.",
-        "source": "Nasdaq",
-        "date": "2026-08-24",
-        "category": "Competition"
+        "title": "Supermicro, 400억 달러 매출 목표 추구 중 밀수 혐의로 CEO 및 이사회 위협받아",
+        "summary": "Supermicro는 이번 회계연도에 400억 달러의 매출을 달성할 수 있다고 밝혔지만, 공동 창립자 이-샨 '월리' 리아오(Yih-Shyan 'Wally' Liaw)와 다른 두 명이 엔비디아 칩이 장착된 25억 달러 상당의 서버를 동남아시아의 위장 회사를 통해 중국으로 밀수하려 공모한 혐의로 기소되면서 문제가 발생했습니다.",
+        "source": "Reddit (Fortune 기사 인용)",
+        "date": "2026-05-05",
+        "category": "Legal"
       },
       {
         "id": 8,
-        "title": "Nebius vs. Super Micro: 어떤 AI 인프라 주식이 더 나은가?",
-        "summary": "SMCI는 더 큰 규모, 낮은 주가/장부가치 평가, 그리고 상향 조정된 수익 추정치로 인해 강력한 AI 인프라 성장에도 불구하고 Nebius (NBIS)에 비해 우위를 점하고 있습니다.",
-        "source": "Nasdaq",
-        "date": "2026-08-23",
-        "category": "Competition"
+        "title": "AI, Super Micro의 10-K 보고서 누락 및 관련 당사자 회계 조작 혐의 위험을 2년 전에 포착",
+        "summary": "Super Micro Computer (SMCI) 주가는 10-K 보고서 제출 누락 소식과 숏셀링 회사 힌덴버그 리서치의 관련 당사자 회계 조작 혐의 보고서로 인해 수요일 20% 급락했습니다. 전반적으로 주가는 3월 중순 최고치 대비 63% 이상 하락했습니다.",
+        "source": "Forbes",
+        "date": "2024-08-30",
+        "category": "Legal"
       }
     ],
     "analyses": {
       "1": {
-        "direction": "neutral",
-        "impact_score": 0,
-        "reasoning": "내부 조사가 완료되고 고위 경영진의 위법 행위가 없었다는 점은 불확실성을 해소하여 긍정적일 수 있으나, 주가는 이미 이러한 소식을 반영하여 큰 변동은 없을 것으로 예상됩니다."
+        "direction": "bullish",
+        "impact_score": 3,
+        "reasoning": "내부자 매수는 일반적으로 회사 경영진이 주식 가치에 대해 확신을 가지고 있음을 나타내므로 주가에 긍정적인 영향을 미칠 수 있다. 특히 이사회 의장의 매수는 더욱 강한 신호로 해석될 수 있다."
       },
       "2": {
-        "direction": "bullish",
-        "impact_score": 3,
-        "reasoning": "예상치를 상회하는 매출과 마진 증가는 회사의 강력한 성장세를 보여주며 주가에 긍정적인 영향을 미칠 것입니다."
-      },
-      "3": {
-        "direction": "bullish",
-        "impact_score": 2,
-        "reasoning": "AI 및 HPC 시장의 성장에 맞춰 액체 냉각 솔루션을 확장하는 것은 Supermicro의 시장 경쟁력을 강화하고 매출 증대에 기여할 것으로 예상됩니다."
-      },
-      "4": {
-        "direction": "bullish",
-        "impact_score": 2,
-        "reasoning": "AI 데이터 센터 시장의 수요 증가에 대응하는 맞춤형 AI 랙 솔루션 출시는 Supermicro의 시장 점유율 확대에 긍정적인 영향을 미칠 것입니다."
-      },
-      "5": {
         "direction": "neutral",
         "impact_score": 0,
-        "reasoning": "투자자 컨퍼런스 참여는 일반적인 기업 활동으로, 즉각적인 주가 영향은 미미할 것으로 예상됩니다."
+        "reasoning": "사기 조사 완료 및 경영진의 무관함 발표는 불확실성을 해소하여 단기적으로 주가에 긍정적일 수 있으나, 과거의 법적 문제와 관련된 우려가 완전히 사라진 것은 아니므로 중립적인 영향을 미칠 것으로 예상된다."
       },
-      "6": {
+      "3": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "내부자의 RSU 정산은 일반적인 보상 절차의 일부이며, 세금 관련 주식 원천징수는 시장에 큰 영향을 미치지 않는 일상적인 거래입니다."
+      },
+      "4": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "고위 경영진의 연루가 없다는 발표는 불확실성을 해소하여 긍정적일 수 있지만, 주가 하락은 시장이 여전히 해당 문제에 대한 우려를 완전히 떨쳐내지 못했음을 시사합니다."
+      },
+      "5": {
         "direction": "bullish",
         "impact_score": 3,
-        "reasoning": "수익 추정치 상향 조정은 투자자들에게 긍정적인 신호로 작용하여 주가 상승을 견인할 수 있습니다."
+        "reasoning": "매출 가이던스의 하단 예상에도 불구하고, 총 마진 예상치가 크게 상향 조정된 것은 회사의 수익성 개선을 의미하며 주가에 긍정적인 영향을 미칠 수 있습니다."
+      },
+      "6": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "회사가 기소 대상이 아니라는 점은 긍정적이지만, 조사가 진행 중이라는 사실 자체는 여전히 불확실성을 남겨 주가에 중립적인 영향을 미칩니다."
       },
       "7": {
         "direction": "bearish",
-        "impact_score": -1,
-        "reasoning": "경쟁사의 마진 개선 및 시장 확장 소식은 Super Micro Computer의 경쟁 심화를 의미하며, 이는 주가에 부정적인 영향을 미칠 수 있습니다."
+        "impact_score": -4,
+        "reasoning": "공동 창립자의 심각한 밀수 혐의는 회사의 명성과 운영에 큰 위험을 초래하며, 이는 주가에 매우 부정적인 영향을 미칠 수 있습니다."
       },
       "8": {
-        "direction": "bullish",
-        "impact_score": 1,
-        "reasoning": "경쟁사 대비 Super Micro Computer의 강점이 부각되는 분석은 투자자들에게 긍정적인 신호로 작용할 수 있습니다."
+        "direction": "bearish",
+        "impact_score": -5,
+        "reasoning": "10-K 보고서 제출 누락과 회계 조작 혐의는 회사의 투명성과 신뢰성에 대한 심각한 우려를 불러일으키며, 이는 주가에 매우 부정적인 영향을 미칩니다."
       }
     },
     "dailyForecasts": [],
     "signals": {
       "technicals": {
-        "price": 37.39,
-        "ma20": 34.2,
-        "vs_ma20_pct": 9.3,
-        "ma60": 32.25,
+        "price": 37.08,
+        "ma20": 35.17,
+        "vs_ma20_pct": 5.4,
+        "ma60": 31.89,
         "trend": "상승추세(20일선>60일선)",
-        "rsi14": 69.1,
+        "rsi14": 63.2,
         "rsi_state": "중립",
         "macd_momentum": "하락 모멘텀",
         "volatility_20d_pct": 5.9,
-        "pos_52w_pct": 46.0,
+        "pos_52w_pct": 45.0,
         "high_52w": 58.78,
         "low_52w": 19.48,
-        "mom_5d_pct": 2.2,
-        "mom_20d_pct": 45.5
+        "mom_5d_pct": -0.4,
+        "mom_20d_pct": 30.6
       },
       "valuation": {
         "목표주가_평균": 42.38,
@@ -137,7 +137,7 @@
         "애널리스트_수": 16,
         "투자의견": "중립",
         "PER_선행": 7.0,
-        "PER": 11.5
+        "PER": 11.4
       }
     }
   }
