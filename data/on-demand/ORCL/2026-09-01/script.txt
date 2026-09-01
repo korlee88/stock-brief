@@ -1,0 +1,37 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+다들 흔들린다지만, *$143.45*에서 버티는 중이에요
+*기업용 클라우드*와 데이터베이스로 돈을 벌어요
+*AI 인프라* 중심 기업으로 확 바꾸는 중이죠
+AI 클라우드에 무려 *560억 달러* 쏟아부었어요
+*AI 데이터베이스*와 GPU 서버가 핵심 무기죠
+*데이터베이스 1위*, 클라우드는 열심히 추격 중이에요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: *AI 전략* 덕에 클라우드·DB 수주가 쭉 늘어요
+악재: AI 투자로 *현금흐름 마이너스*, 빚 부담도 커요
+보합: *9월 10일 실적 발표* 앞두고 눈치보기 장세예요
+
+SCENE_2_TITLE: 숫자로보기
+SCENE_2:
+추세: *20일 평균 주가선* 대비 *-2.6%*, 약세 흐름이에요
+밸류: 내년 예상 PER *13.1배*(이익 대비 싼 편)이에요
+총평: 42명 애널리스트 *매수 의견*, 기대감은 여전해요
+
+SCENE_3_TITLE: 다음주전망
+SCENE_3:
+*9월 10일 실적 발표* — 최대 분수령이에요
+관건: *AI 클라우드 매출* 성장률 서프라이즈 여부
+현금흐름보다 *GPU 서버 수주 잔고*가 진짜 핵심
+*목표가 최고 $400·최저 $110* — 시각차 극심해요
+변수: *신용등급 하향* 우려와 거시 부담 지속돼요
+다음에 또 만나요!
+
+IMAGE_PROMPT_0: A vast modern enterprise data center interior with towering server racks stretching into the distance, softly illuminated by cool ambient lighting, technicians in the far background working at holographic control panels, sleek polished floors reflecting subtle purple analytical mood lighting, a small cluster of glowing server nodes and faint database schematics tucked in one corner as subtle background elements, deep cinematic atmosphere conveying enterprise scale and analytical depth, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A sprawling hyperscale cloud campus at golden dawn with multiple newly constructed data center buildings rising across a green landscape, cranes and expansion sites suggesting rapid growth, lush trees and fresh grass framing the composition, vibrant green sunrise light bathing the facilities in optimistic warmth, a small side view of interconnected server silhouettes and glowing fiber cables in one corner as a subtle secondary element, dynamic upward energy, glowing motion lines rising skyward, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A calm sophisticated enterprise network operations center with analysts seated before massive curved monitors displaying subtle abstract data visualizations and flowing database queries, cool cyan-blue analytical lighting washing across polished desks and glass partitions, quiet focused atmosphere, faint holographic charts drifting in the background as ambient decoration, a small compact server rack and database cluster tucked in one corner as a subtle supporting element, professional analytical mood, cinematic depth of field, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_3: A visionary architectural view of a next-generation AI cloud campus glowing under warm golden hour light, sleek modern data center buildings with reflective glass facades set against rolling hills, soft light beams streaming through clouds inspiring a sense of forward momentum and enterprise ambition, subtle hints of AI-driven automation shown through faint glowing pathways, a small side arrangement of server nodes and cloud infrastructure icons tucked in one corner as a subtle secondary element, warm inspiring golden light, cinematic aspirational mood, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

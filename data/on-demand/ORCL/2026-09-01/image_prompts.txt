@@ -1,0 +1,14 @@
+# ORCL 주간 배경 이미지 프롬프트 — 2026-09-01
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A vast modern enterprise data center interior with towering server racks stretching into the distance, softly illuminated by cool ambient lighting, technicians in the far background working at holographic control panels, sleek polished floors reflecting subtle purple analytical mood lighting, a small cluster of glowing server nodes and faint database schematics tucked in one corner as subtle background elements, deep cinematic atmosphere conveying enterprise scale and analytical depth, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A sprawling hyperscale cloud campus at golden dawn with multiple newly constructed data center buildings rising across a green landscape, cranes and expansion sites suggesting rapid growth, lush trees and fresh grass framing the composition, vibrant green sunrise light bathing the facilities in optimistic warmth, a small side view of interconnected server silhouettes and glowing fiber cables in one corner as a subtle secondary element, dynamic upward energy, glowing motion lines rising skyward, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 정량지표
+A calm sophisticated enterprise network operations center with analysts seated before massive curved monitors displaying subtle abstract data visualizations and flowing database queries, cool cyan-blue analytical lighting washing across polished desks and glass partitions, quiet focused atmosphere, faint holographic charts drifting in the background as ambient decoration, a small compact server rack and database cluster tucked in one corner as a subtle supporting element, professional analytical mood, cinematic depth of field, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬3 다음주전망
+A visionary architectural view of a next-generation AI cloud campus glowing under warm golden hour light, sleek modern data center buildings with reflective glass facades set against rolling hills, soft light beams streaming through clouds inspiring a sense of forward momentum and enterprise ambition, subtle hints of AI-driven automation shown through faint glowing pathways, a small side arrangement of server nodes and cloud infrastructure icons tucked in one corner as a subtle secondary element, warm inspiring golden light, cinematic aspirational mood, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo
