@@ -1,0 +1,32 @@
+{
+  "ticker": "010600.KQ",
+  "company_en": "KQ Entertainment",
+  "company_ko": "KQ엔터테인먼트",
+  "industry_ko": "엔터테인먼트, K-POP, 힙합, R&B",
+  "exchange": "KOSDAQ",
+  "image_future_tech_en": "A vibrant K-pop concert stage with dynamic lighting and a large LED screen displaying energetic performances by idol groups, surrounded by a cheering crowd holding light sticks.",
+  "brand_label": "010600.KQ BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "",
+  "key_people": [
+    "Kim Kyu-wook"
+  ],
+  "google_trends_keywords": [
+    "KQ엔터테인먼트",
+    "ATEEZ",
+    "Xikers",
+    "케이큐엔터테인먼트",
+    "에이티즈",
+    "싸이커스"
+  ],
+  "video_tags": [
+    "KQ Entertainment",
+    "ATEEZ",
+    "Xikers",
+    "K-pop",
+    "케이큐엔터테인먼트"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-09-01T09:50:18.556Z"
+}

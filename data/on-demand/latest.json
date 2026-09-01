@@ -1,15 +1,15 @@
 {
- "ticker": "SMCI",
- "company_ko": "슈퍼 마이크로 컴퓨터",
- "date": "2026-08-31",
- "report_dir": "data/on-demand/SMCI/2026-08-31",
+ "ticker": "010600.KQ",
+ "company_ko": "KQ엔터테인먼트",
+ "date": "2026-09-01",
+ "report_dir": "data/on-demand/010600.KQ/2026-09-01",
  "scenes": [
-  "data/on-demand/SMCI/2026-08-31/260831_슈퍼마이크로컴퓨터_씬0.png",
-  "data/on-demand/SMCI/2026-08-31/260831_슈퍼마이크로컴퓨터_씬1.png",
-  "data/on-demand/SMCI/2026-08-31/260831_슈퍼마이크로컴퓨터_씬2.png",
-  "data/on-demand/SMCI/2026-08-31/260831_슈퍼마이크로컴퓨터_씬3.png"
+  "data/on-demand/010600.KQ/2026-09-01/260901_KQ엔터테인먼트_씬0.png",
+  "data/on-demand/010600.KQ/2026-09-01/260901_KQ엔터테인먼트_씬1.png",
+  "data/on-demand/010600.KQ/2026-09-01/260901_KQ엔터테인먼트_씬2.png",
+  "data/on-demand/010600.KQ/2026-09-01/260901_KQ엔터테인먼트_씬3.png"
  ],
- "youtube_title": "왜 갑자기 $37.08에 멈췄을까요? | 슈퍼 마이크로 컴퓨터(SMCI) 주가 브리핑 8/31 #Shorts",
- "youtube_description": "슈퍼 마이크로 컴퓨터(SMCI) 2026-08-31 주가 브리핑 — 현재가 $37.08 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 슈퍼 마이크로 컴퓨터, SMCI, 슈퍼 마이크로 컴퓨터 주가, SMCI 주가, 미국주식, AI 서버, Supermicro, 찰스 리앙, AI servers, GPU servers, Data Center Solutions, 슈퍼마이크로, 서버, 스토리지, 네트워킹 솔루션, HPE\n#SMCI #슈퍼마이크로컴퓨터 #미국주식 #Supermicro #AIservers #GPUservers #DataCenterSolutions #슈퍼마이크로 #AI서버 #Shorts",
- "generated_at": "2026-08-31"
+ "youtube_title": "다들 상장 전이라 오해하지만 코스닥 상장사예요 | KQ엔터테인먼트(010600.KQ) 주가 브리핑 9/1 #Shorts",
+ "youtube_description": "KQ엔터테인먼트(010600.KQ) 2026-09-01 주가 브리핑 — 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: KQ엔터테인먼트, 010600.KQ, KQ엔터테인먼트 주가, 010600.KQ 주가, 한국주식, ATEEZ, Xikers, 케이큐엔터테인먼트, 에이티즈, 싸이커스, KQ Entertainment, K-pop, 엔터테인먼트, K-POP, 힙합, R&B\n#010600.KQ #KQ엔터테인먼트 #한국주식 #KQEntertainment #ATEEZ #Xikers #K-pop #케이큐엔터테인먼트 #Shorts",
+ "generated_at": "2026-09-01"
 }

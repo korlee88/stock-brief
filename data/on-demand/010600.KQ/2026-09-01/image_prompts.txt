@@ -1,0 +1,14 @@
+# 010600.KQ 주간 배경 이미지 프롬프트 — 2026-09-01
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A cinematic wide shot of a modern K-pop entertainment company headquarters interior, featuring sleek recording studios with soundproof walls, dance practice rooms with mirrored surfaces, and creative meeting spaces where music producers work. Purple analytical mood lighting bathes the scene, with soft neon accents highlighting the professional environment. In one corner, a small illuminated concert stage miniature sits as a subtle background element. Cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+## 씬1 호재심층
+A dynamic wide shot of a bustling K-pop industry scene showing rising global influence, featuring a busy backstage area with stylists preparing outfits, choreographers reviewing dance formations on tablets, and staff coordinating international tour logistics with world maps glowing in the background. Green growth-energy lighting emanates upward, symbolizing expansion. A small concert stage silhouette appears at the edge of the frame as a supporting element. Glowing motion lines suggest momentum, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+## 씬2 정량지표
+A calm cinematic wide shot of an entertainment company's analytics room where music industry data specialists review streaming metrics, fan demographics, and tour revenue on multiple monitors displaying abstract charts. The environment feels professional and thoughtful, with cyan-blue analytical lighting casting cool tones across the desks. In one corner, a small concert stage prop sits quietly as a subtle background element. Cool cyan-blue analytical mood, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+## 씬3 다음주전망
+A vertical cinematic shot of a K-pop entertainment company's future vision, showing a grand global concert arena at golden hour with warm inspiring light streaming through massive glass ceilings, illuminated pathways leading toward international stages, and holographic tour route displays hinting at worldwide expansion. A small concert stage element with idol group silhouettes appears at the side as a supporting motif. Warm inspiring golden light bathes the scene, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo.
