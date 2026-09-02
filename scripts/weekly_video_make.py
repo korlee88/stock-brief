@@ -25,6 +25,8 @@ def safe_filename(name: str) -> str:
     return s or _re.sub(r'[\\/:*?"<>|\s]+', '', TICKER) or "video"
 
 REPORT_BASE   = Path(os.environ.get("REPORT_BASE") or (ROOT_DIR / "data" / "weekly-report"))
+# 영상 포맷 모드 — weekly_video_prep.py와 동일한 env(MODE)를 읽어 화면비율을 맞춘다.
+MODE          = os.environ.get("MODE", "short")
 VOICE         = "ko-KR-SunHiNeural"    # 밝은 여성 — 친근 튜닝 (edge-tts 지원 검증 음성)
 RATE          = "+13%"                  # 대화하듯 자연스러운 속도
 PITCH         = "+6Hz"                  # 살짝 올려 밝고 친근한 톤
@@ -34,7 +36,7 @@ TRIM_KEEP_MS  = 60                      # 트리밍 후 가장자리에 남길 �
 SCENE_LEAD_MS = 500                     # 씬 시작~첫 나레이션 사이 여유 무음 (씬 전환 딜레이)
 SCENE_TAIL_MS = 300                     # 씬 끝 여유 무음 (ms)
 FPS           = 24
-W, H          = 1080, 1920
+W, H          = (1920, 1080) if MODE == "long" else (1080, 1920)   # long=가로 16:9, short=세로 9:16
 PHOTO_Y       = 500                     # 헤더 아래 사진 시작 Y (prep.py의 HEADER_H와 동일)
 PHOTO_H       = 500                     # 사진 영역 높이 (prep.py의 PHOTO_H와 동일)
 MIN_SCENE_SEC = 5.0
@@ -204,12 +206,14 @@ def build_scene_tts_segments(idx: int, lines: list) -> list:
                 segments.append(ln)   # 접두어 없는 예외 줄도 살림
 
     elif idx == 3:
-        # 클로징(다음주 전망) — 6줄: 일정·시나리오·가격예측·흐름·변수·마무리
+        # 클로징 — short: 다음주 전망(일정·시나리오·가격예측·흐름·변수·마무리)
+        #        long: 메이저 투자사 전망(목표주가·근거·관전포인트·마무리) — "다음 주" 프레이밍은 안 맞음
         head = cleaned[0] if cleaned else ""
         rest = cleaned[1:]
         segments = []
         if head:
-            segments.append("자, 다음 주는 어떨까요? " + head)
+            bridge = "그럼 전문가들은 어떻게 보고 있을까요? " if MODE == "long" else "자, 다음 주는 어떨까요? "
+            segments.append(bridge + head)
         segments.extend(rest)
 
     else:
@@ -432,6 +436,11 @@ def make_anime_frame(t, base_arr, accent, dur, scene_idx):
         img = fx_fade_in(img, t, 0.30)
     if is_closing:
         img = fx_fade_out(img, t, dur, 0.40)
+
+    if MODE == "long":
+        # 롱폼(16:9)은 이미 풀프레임 캡션 이미지 — 쇼츠처럼 "핸드폰 화면 여백" 확보용
+        # 90% 축소·중앙 레터박싱을 할 필요가 없다(캔버스 자체가 최종 프레임).
+        return np.array(img)
 
     # 90% 축소 — 핸드폰 화면 여백 확보
     cw = int(W * 0.90)

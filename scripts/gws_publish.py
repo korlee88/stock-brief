@@ -110,6 +110,9 @@ def build_youtube_copy(meta: dict, report_dir: Path) -> tuple[str, str]:
     price  = meta.get("latest_price")
     signal = get_signal_label(bi)
     price_str = fmt_price(price)
+    mode   = meta.get("mode", "short")
+    is_long = mode == "long"
+    shorts_tag = "" if is_long else " #Shorts"
 
     # 제목: 씬0 헤드라인(대본 줄1) 훅
     headline = ""
@@ -126,14 +129,17 @@ def build_youtube_copy(meta: dict, report_dir: Path) -> tuple[str, str]:
         md = f"{int(m)}/{int(d)}"
     except (ValueError, IndexError):
         md = date
-    if headline:
-        title = f"{headline} | {COMPANY_KO}({TICKER}) 주가 브리핑 {md} #Shorts"
+    if is_long:
+        title = (f"{headline} | {COMPANY_KO}({TICKER}) 기업 소개"
+                 if headline else f"{COMPANY_KO}({TICKER}) 기업 소개 — 사업모델부터 투자사 전망까지 {md}")
+    elif headline:
+        title = f"{headline} | {COMPANY_KO}({TICKER}) 주가 브리핑 {md}{shorts_tag}"
     elif bi is not None:
         title = TICKER_CONFIG.get(
             "video_title_template", "{ticker} 주가 분석 {date} | 참고지수 {bi}점 {signal}"
-        ).format(ticker=TICKER, date=date, bi=bi, signal=signal) + " #Shorts"
+        ).format(ticker=TICKER, date=date, bi=bi, signal=signal) + shorts_tag
     else:
-        title = f"{COMPANY_KO}({TICKER}) 주가 브리핑 {md} #Shorts"
+        title = f"{COMPANY_KO}({TICKER}) 주가 브리핑 {md}{shorts_tag}"
     title = title[:100]
 
     # 연관검색어·해시태그: config 기반 조립 (중복 제거·순서 보존)
@@ -148,14 +154,20 @@ def build_youtube_copy(meta: dict, report_dir: Path) -> tuple[str, str]:
     hashtags = " ".join(dict.fromkeys(
         "#" + t.replace(" ", "").replace("·", "")
         for t in [TICKER, COMPANY_KO, MARKET_KW] + [v for v in VIDEO_TAGS if v.lower() != "shorts"]
-    )) + " #Shorts"
+    )) + shorts_tag
 
-    bi_s = f"참고지수 {bi}점({signal})" if bi is not None else "뉴스 브리핑"
-    stat = f"현재가 {price_str} · {bi_s}" if price_str else bi_s
+    if is_long:
+        summary_line = "사업모델·현재 상황·업계 구도·주요 투자사 전망을 3분 30초로 정리했습니다."
+        stat_line = f"{COMPANY_KO}({TICKER}) 기업 소개\n"
+    else:
+        bi_s = f"참고지수 {bi}점({signal})" if bi is not None else "뉴스 브리핑"
+        stat = f"현재가 {price_str} · {bi_s}" if price_str else bi_s
+        summary_line = "핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다."
+        stat_line = f"{COMPANY_KO}({TICKER}) {date} 주가 브리핑 — {stat}\n"
     description = (
-        f"{COMPANY_KO}({TICKER}) {date} 주가 브리핑 — {stat}\n"
-        f"핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n"
-        f"※ 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n"
+        f"{stat_line}"
+        f"{summary_line}\n\n"
+        f"※ 본 영상은 AI 분석 툴로 수집한 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n"
         f"연관검색어: {', '.join(kw)}\n"
         f"{hashtags}"
     )
@@ -188,7 +200,8 @@ def get_sheets_credentials():
 # ── YouTube 업로드 ─────────────────────────────────────────────────────────────
 
 def upload_to_youtube(report_dir: Path, meta: dict) -> str | None:
-    """video.mp4 를 YouTube Shorts (비공개) 로 업로드. 성공 시 youtu.be URL 반환."""
+    """video.mp4 를 YouTube(비공개)로 업로드 — short 모드는 Shorts, long 모드는 일반 롱폼.
+    성공 시 youtu.be URL 반환."""
     from googleapiclient.discovery import build
     from googleapiclient.http import MediaFileUpload
 
@@ -202,12 +215,13 @@ def upload_to_youtube(report_dir: Path, meta: dict) -> str | None:
 
     # 제목·설명(연관검색어 포함) — 메일 안내와 동일 문구 (build_youtube_copy)
     title, description = build_youtube_copy(meta, report_dir)
+    tags = [t for t in VIDEO_TAGS if t.lower() != "shorts"] if meta.get("mode") == "long" else VIDEO_TAGS
 
     body = {
         "snippet": {
             "title": title,
             "description": description,
-            "tags": VIDEO_TAGS,
+            "tags": tags,
             "categoryId": "25",
             "defaultLanguage": "ko",
         },
@@ -323,7 +337,10 @@ def _build_html(meta: dict, youtube_url: str | None, scene_count: int,
     </div>"""
 
     scene_imgs = ""
-    scene_labels = ["주간 브리핑", "핵심 뉴스 3선", "다음주 전망"]
+    if meta.get("mode") == "long":
+        scene_labels = ["사업모델", "현재 상황", "주변 상황", "투자사 전망"]
+    else:
+        scene_labels = ["주간 브리핑", "핵심 뉴스 3선", "다음주 전망"]
     for i in range(0, scene_count):
         label = scene_labels[i] if i < len(scene_labels) else f"씬 {i}"
         scene_imgs += f"""

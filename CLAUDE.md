@@ -49,9 +49,16 @@
   다른 종목/날짜는 자동으로 달라짐. 트랙 추가·교체는 파일만 넣으면 자동 반영. `waltz`는
   하울의 움직이는 성 OST 분위기 참고(사용자 요청) — 실제 멜로디 아닌 오리지널 작곡,
   저작권 곡 재현 금지.
+- **롱폼 "기업소개" 모드**(사용자 요청 — 쇼츠는 주가분석 중심이라 조회수 저조): `MODE=short`(기본)
+  /`long` env로 분기. long은 3분30초·가로 16:9, 씬0=주력 사업모델/씬1=현재 상황/씬2=주변 상황
+  (업계·경쟁구도)/씬3=메이저 투자사 전망(목표주가) — 당일 주가 등락·기술적 분석은 다루지 않는다.
+  씬 이미지는 4개 전부 풀블리드 배경+하단 캡션(`draw_scene_landscape`, 쇼츠의 씬별 카드
+  레이아웃과 다름). 대상 종목은 사용자가 인기순위에서 직접 "처음 보는 회사"를 골라 지정
+  (자동 판별 없음). 출력은 `REPORT_BASE=data/on-demand-long/<T>`로 쇼츠 트리와 완전 분리—
+  `on-demand.html`에 포맷 토글(쇼츠/기업소개) 추가, `data/on-demand-long/latest.json`도 별도.
 
 ## 웹 (on-demand.html — GitHub Pages)
-3열: 리모컨(한국·미국 종목 검색 `data/kr-stocks.json`·`us-stocks.json`) | 구글 관심 TOP30(`data/stock-trends.json`, 관리자 리셋 시만 갱신) | 최근 생성 영상(`data/on-demand/latest.json`, 씬 미리보기+YouTube 카피).
+3열: 리모컨(한국·미국 종목 검색 `data/kr-stocks.json`·`us-stocks.json`, 쇼츠/기업소개 포맷 토글) | 구글 관심 TOP30(`data/stock-trends.json`, 관리자 리셋 시만 갱신) | 최근 생성 영상(쇼츠 `data/on-demand/latest.json` + 기업소개 `data/on-demand-long/latest.json`, 씬 미리보기+YouTube 카피).
 **관리자 탭**: 구글 로그인(허용 계정 sinlee01@gmail.com)으로만 열림 — GitHub 토큰 설정·순위 리셋. 실행 권한의 실질 경계는 PAT(localStorage, 미커밋).
 
 ## 워크플로 (.github/workflows/)
