@@ -11,6 +11,13 @@ on:
         description: '게시 생략(메일 안 보냄) — 아티팩트만 생성하는 미리보기용'
         type: boolean
         default: false
+      mode:
+        description: '영상 포맷 — short(기존 쇼츠) / long(3분30초 기업소개 롱폼)'
+        type: choice
+        options:
+          - short
+          - long
+        default: short
 
 jobs:
   on-demand-video:
@@ -25,12 +32,19 @@ jobs:
       - name: 티커·경로 설정
         run: |
           T=$(echo "${{ github.event.inputs.ticker }}" | tr '[:lower:]' '[:upper:]' | tr -d ' ')
+          M="${{ github.event.inputs.mode }}"
+          if [ -z "$M" ]; then M="short"; fi
           echo "TICKER=${T}" >> $GITHUB_ENV
+          echo "MODE=${M}" >> $GITHUB_ENV
           echo "TICKER_CONFIG=configs/${T}/ticker.json" >> $GITHUB_ENV
           echo "SESSIONS_FILE=data/on-demand/${T}/session.json" >> $GITHUB_ENV
-          echo "REPORT_BASE=data/on-demand/${T}" >> $GITHUB_ENV
+          if [ "$M" = "long" ]; then
+            echo "REPORT_BASE=data/on-demand-long/${T}" >> $GITHUB_ENV
+          else
+            echo "REPORT_BASE=data/on-demand/${T}" >> $GITHUB_ENV
+          fi
           echo "TODAY=$(TZ='Asia/Seoul' date +'%Y-%m-%d')" >> $GITHUB_ENV
-          echo "🎯 대상 종목: ${T}"
+          echo "🎯 대상 종목: ${T} (모드: ${M})"
 
       - name: Node 20 설정
         uses: actions/setup-node@v4
@@ -82,12 +96,15 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "${TICKER} On-demand Bot"
           git add configs/ data/on-demand/
-          git restore --staged 'data/on-demand/**/*.mp3' 2>/dev/null || true
-          git restore --staged 'data/on-demand/**/*.mp4' 2>/dev/null || true
+          if [ -d data/on-demand-long ]; then git add data/on-demand-long/; fi
+          git restore --staged 'data/on-demand*/**/*.mp3' 2>/dev/null || true
+          git restore --staged 'data/on-demand*/**/*.mp4' 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "변경 사항 없음 — 커밋 건너뜀"
           else
-            git commit -m "on-demand: ${TICKER} 영상 자료 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
+            SUFFIX=""
+            if [ "${MODE}" = "long" ]; then SUFFIX=" (롱폼)"; fi
+            git commit -m "on-demand: ${TICKER} 영상 자료${SUFFIX} $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
             git pull --rebase origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
@@ -96,7 +113,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ env.TICKER }}-${{ env.TODAY }}-video
-          path: data/on-demand/${{ env.TICKER }}/*/*.mp4
+          path: |
+            data/on-demand/${{ env.TICKER }}/*/*.mp4
+            data/on-demand-long/${{ env.TICKER }}/*/*.mp4
           retention-days: 30
           if-no-files-found: warn
 

@@ -166,8 +166,14 @@
     <h2>새 영상 요청</h2>
     <label for="ticker">종목 티커 (한국 주식은 .KS/.KQ 접미사)</label>
     <input type="text" id="ticker" placeholder="예: TSLA, NVDA, 005930.KS" autocapitalize="characters" autocomplete="off">
+    <label>영상 포맷</label>
+    <div class="tabs" id="modeToggle" style="margin:0 0 14px;">
+      <button type="button" id="modeShort" class="on" onclick="setVideoMode('short')">🎬 쇼츠 (9:16 · 1분)</button>
+      <button type="button" id="modeLong" onclick="setVideoMode('long')">📺 기업소개 (16:9 · 3분30초)</button>
+    </div>
     <button class="btn" id="goBtn" onclick="dispatchRun()">🎬 영상 생성 시작</button>
-    <p class="hint">완료까지 보통 15~30분 — 끝나면 메일로 영상이 도착합니다. 이 페이지를 닫아도 진행에는 영향이 없습니다.</p>
+    <p class="hint">완료까지 보통 15~30분 — 끝나면 메일로 영상이 도착합니다. 이 페이지를 닫아도 진행에는 영향이 없습니다.
+    기업소개는 잘 알려지지 않은 회사를 사업모델·상황·투자사 전망 위주로 소개하는 롱폼 포맷이에요.</p>
   </div>
 
   <div class="card" id="status">
@@ -247,7 +253,7 @@
 <!-- ══ 3열: 최근 생성 영상 — 메일과 동일한 씬 미리보기 + YouTube 업로드용 제목·설명 ══ -->
 <aside class="col-side">
   <div class="card" id="lastVideoCard">
-    <h2>🎬 최근 생성 영상</h2>
+    <h2>🎬 최근 생성 영상 (쇼츠)</h2>
     <p class="hint" id="lvMeta">불러오는 중…</p>
     <div class="scenes" id="lvScenes"></div>
     <div id="lvCopy" style="display:none">
@@ -257,6 +263,20 @@
       <label>YouTube 업로드용 설명</label>
       <pre class="copypre" id="lvDesc" style="max-height:200px"></pre>
       <button class="btn ghost" onclick="copyText('lvDesc','설명')">📋 설명 복사</button>
+    </div>
+  </div>
+
+  <div class="card" id="lastVideoCardLong">
+    <h2>📺 최근 생성 영상 (기업소개 롱폼)</h2>
+    <p class="hint" id="lvLongMeta">불러오는 중…</p>
+    <div class="scenes" id="lvLongScenes"></div>
+    <div id="lvLongCopy" style="display:none">
+      <label>YouTube 업로드용 제목</label>
+      <pre class="copypre" id="lvLongTitle"></pre>
+      <button class="btn ghost" onclick="copyText('lvLongTitle','제목')">📋 제목 복사</button>
+      <label>YouTube 업로드용 설명</label>
+      <pre class="copypre" id="lvLongDesc" style="max-height:200px"></pre>
+      <button class="btn ghost" onclick="copyText('lvLongDesc','설명')">📋 설명 복사</button>
     </div>
   </div>
 </aside>
@@ -387,25 +407,32 @@ function adminLogout() {
   toast('관리 화면을 잠갔습니다');
 }
 
-// ── 최근 생성 영상 (data/on-demand/latest.json — prep이 생성마다 갱신) ──
-// 메일과 동일 소스: 씬 미리보기 3장 + YouTube 업로드용 제목·설명(build_youtube_copy 재사용)
-async function loadLastVideo() {
-  const meta = document.getElementById('lvMeta');
+// ── 최근 생성 영상 (data/on-demand/latest.json, data/on-demand-long/latest.json —
+// prep이 생성마다 갱신). 메일과 동일 소스: 씬 미리보기 + YouTube 업로드용 제목·설명
+// (build_youtube_copy 재사용). 쇼츠/롱폼 각각 별도 트리(REPORT_BASE)에 쓰이므로 카드도 분리.
+async function loadVideoCard(jsonPath, idPrefix, emptyMsg) {
+  const meta = document.getElementById(idPrefix + 'Meta');
   try {
-    const d = await fetchRepoJson('data/on-demand/latest.json');
+    const d = await fetchRepoJson(jsonPath);
     meta.textContent = `${d.company_ko}(${d.ticker}) · ${d.date} 생성`;
-    document.getElementById('lvScenes').innerHTML = (d.scenes || []).map(s => {
+    document.getElementById(idPrefix + 'Scenes').innerHTML = (d.scenes || []).map(s => {
       const u = `${RAW}/${s.split('/').map(encodeURIComponent).join('/')}`;   // 한글 파일명 인코딩
       return `<a href="${u}" target="_blank"><img loading="lazy" src="${u}"
          onerror="this.parentElement.style.display='none'"></a>`;
     }).join('');
-    document.getElementById('lvTitle').textContent = d.youtube_title || '';
-    document.getElementById('lvDesc').textContent = d.youtube_description || '';
-    document.getElementById('lvCopy').style.display =
+    document.getElementById(idPrefix + 'Title').textContent = d.youtube_title || '';
+    document.getElementById(idPrefix + 'Desc').textContent = d.youtube_description || '';
+    document.getElementById(idPrefix + 'Copy').style.display =
       (d.youtube_title || d.youtube_description) ? 'block' : 'none';
   } catch (e) {
-    meta.textContent = '아직 생성 기록이 없어요 — 영상을 만들면 씬 미리보기와 업로드용 제목·설명이 여기 표시됩니다.';
+    meta.textContent = emptyMsg;
   }
+}
+function loadLastVideo() {
+  loadVideoCard('data/on-demand/latest.json', 'lv',
+    '아직 생성 기록이 없어요 — 영상을 만들면 씬 미리보기와 업로드용 제목·설명이 여기 표시됩니다.');
+  loadVideoCard('data/on-demand-long/latest.json', 'lvLong',
+    '아직 기업소개 롱폼 생성 기록이 없어요 — "기업소개" 포맷으로 영상을 만들면 여기 표시됩니다.');
 }
 function copyText(id, label) {
   const t = document.getElementById(id).textContent;
@@ -436,6 +463,14 @@ function clearPat() {
   localStorage.removeItem(LS_KEY); refreshPatUI(); toast('토큰을 삭제했습니다');
 }
 
+// ── 영상 포맷 토글 (쇼츠 / 기업소개 롱폼) ────────────────────────
+let selectedVideoMode = 'short';
+function setVideoMode(m) {
+  selectedVideoMode = m;
+  document.getElementById('modeShort').classList.toggle('on', m === 'short');
+  document.getElementById('modeLong').classList.toggle('on', m === 'long');
+}
+
 // ── 워크플로 실행 ─────────────────────────────────────────────
 async function dispatchRun() {
   const raw = document.getElementById('ticker').value.trim().toUpperCase();
@@ -449,7 +484,7 @@ async function dispatchRun() {
     const res = await fetch(`${API}/actions/workflows/${WORKFLOW}/dispatches`, {
       method: 'POST',
       headers: { ...ghHeaders(true), 'Content-Type': 'application/json' },
-      body: JSON.stringify({ ref: BRANCH, inputs: { ticker: raw } }),
+      body: JSON.stringify({ ref: BRANCH, inputs: { ticker: raw, mode: selectedVideoMode } }),
     });
     if (res.status === 204) {
       toast(`${raw} 영상 생성을 시작했습니다`);
@@ -515,46 +550,58 @@ async function ghContents(path) {
   if (!res.ok) throw res.status;
   return res.json();
 }
+// basePath 트리(data/on-demand 또는 data/on-demand-long)를 훑어 box에 항목을 추가.
+// 트리 자체가 없으면(그 모드로 아직 생성한 적 없음) 조용히 0건으로 처리 — 에러로 취급하지 않는다.
+async function loadHistoryTree(basePath, modeLabel, box) {
+  let tickers;
+  try {
+    tickers = (await ghContents(basePath)).filter(x => x.type === 'dir');
+  } catch (e) {
+    return 0;
+  }
+  for (const t of tickers) {
+    const dates = (await ghContents(`${basePath}/${t.name}`))
+      .filter(x => x.type === 'dir').map(x => x.name).sort().reverse();
+    const latest = dates[0];
+    // 씬 이미지 파일명이 {YYMMDD}_{회사명}_씬N.png 로 바뀌어(구 scene_NN.png 병존)
+    // 하드코딩 대신 디렉토리의 실제 png 목록을 읽는다
+    let scenePngs = [];
+    if (latest) {
+      try {
+        scenePngs = (await ghContents(`${basePath}/${t.name}/${latest}`))
+          .filter(x => x.type === 'file' && /(_씬\d|scene_\d\d)\.png$/i.test(x.name))
+          .map(x => x.name).sort().slice(0, 3);
+      } catch (e) { /* 목록 실패 시 미리보기만 생략 */ }
+    }
+    const el = document.createElement('div');
+    el.className = 'tk';
+    el.innerHTML = `
+      <div class="tk-head" onclick="this.nextElementSibling.classList.toggle('open')">
+        <b>${t.name}</b><span>${modeLabel} · ${latest ? '최근 ' + latest : '리포트 없음'} · ${dates.length}회</span>
+      </div>
+      <div class="tk-body">${latest ? `
+        <div class="scenes">
+          ${scenePngs.map(n => `<a href="${RAW}/${basePath}/${t.name}/${latest}/${encodeURIComponent(n)}" target="_blank">
+            <img loading="lazy" src="${RAW}/${basePath}/${t.name}/${latest}/${encodeURIComponent(n)}"
+                 onerror="this.parentElement.style.display='none'"></a>`).join('')}
+        </div>
+        <p class="hint">영상 파일은 메일 첨부 또는
+          <a href="https://github.com/${OWNER}/${REPO}/actions/workflows/${WORKFLOW}" target="_blank">Actions 아티팩트</a>에서 (30일 보관)</p>`
+        : '<p class="hint">아직 완료된 리포트가 없습니다</p>'}
+      </div>`;
+    box.appendChild(el);
+  }
+  return tickers.length;
+}
 async function loadHistory() {
   const box = document.getElementById('histList');
   box.innerHTML = '<p class="empty">불러오는 중…</p>';
   try {
     await ensureBranch();
-    const tickers = (await ghContents('data/on-demand')).filter(x => x.type === 'dir');
-    if (!tickers.length) throw 404;
     box.innerHTML = '';
-    for (const t of tickers) {
-      const dates = (await ghContents(`data/on-demand/${t.name}`))
-        .filter(x => x.type === 'dir').map(x => x.name).sort().reverse();
-      const latest = dates[0];
-      // 씬 이미지 파일명이 {YYMMDD}_{회사명}_씬N.png 로 바뀌어(구 scene_NN.png 병존)
-      // 하드코딩 대신 디렉토리의 실제 png 목록을 읽는다
-      let scenePngs = [];
-      if (latest) {
-        try {
-          scenePngs = (await ghContents(`data/on-demand/${t.name}/${latest}`))
-            .filter(x => x.type === 'file' && /(_씬\d|scene_\d\d)\.png$/i.test(x.name))
-            .map(x => x.name).sort().slice(0, 3);
-        } catch (e) { /* 목록 실패 시 미리보기만 생략 */ }
-      }
-      const el = document.createElement('div');
-      el.className = 'tk';
-      el.innerHTML = `
-        <div class="tk-head" onclick="this.nextElementSibling.classList.toggle('open')">
-          <b>${t.name}</b><span>${latest ? '최근 ' + latest : '리포트 없음'} · ${dates.length}회</span>
-        </div>
-        <div class="tk-body">${latest ? `
-          <div class="scenes">
-            ${scenePngs.map(n => `<a href="${RAW}/data/on-demand/${t.name}/${latest}/${encodeURIComponent(n)}" target="_blank">
-              <img loading="lazy" src="${RAW}/data/on-demand/${t.name}/${latest}/${encodeURIComponent(n)}"
-                   onerror="this.parentElement.style.display='none'"></a>`).join('')}
-          </div>
-          <p class="hint">영상 파일은 메일 첨부 또는
-            <a href="https://github.com/${OWNER}/${REPO}/actions/workflows/${WORKFLOW}" target="_blank">Actions 아티팩트</a>에서 (30일 보관)</p>`
-          : '<p class="hint">아직 완료된 리포트가 없습니다</p>'}
-        </div>`;
-      box.appendChild(el);
-    }
+    const n1 = await loadHistoryTree('data/on-demand', '🎬 쇼츠', box);
+    const n2 = await loadHistoryTree('data/on-demand-long', '📺 기업소개', box);
+    if (n1 + n2 === 0) throw 404;
   } catch (code) {
     box.innerHTML = `<p class="empty">${code === 404
       ? '아직 생성 이력이 없습니다 — 첫 영상을 만들어 보세요!'

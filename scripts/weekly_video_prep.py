@@ -71,6 +71,11 @@ ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 GEMINI_API_KEY    = os.environ.get("GEMINI_API_KEY", "")
 AUTO_SESSIONS     = Path(os.environ.get("SESSIONS_FILE") or (ROOT_DIR / "data" / "auto-sessions.json"))
 OUTPUT_BASE       = Path(os.environ.get("REPORT_BASE") or (ROOT_DIR / "data" / "weekly-report"))
+# 영상 포맷 모드: "short"(기존 9:16 쇼츠, 기본) / "long"(3분30초 16:9 기업소개 롱폼, 사용자 요청 —
+# 쇼츠는 주가분석 중심이라 조회수가 안 나와, 잘 알려지지 않은 회사를 사업모델·상황·주변상황·
+# 투자사 전망 위주로 소개하는 포맷을 별도 모드로 추가). 씬 개수(4개)는 두 모드 동일 — 내용·
+# 화면비율(W,H)만 다르다.
+MODE              = os.environ.get("MODE", "short")
 LOOKBACK_DAYS     = 2   # 격일(월·수·금) 생성 주기와 일치 — 변동률·뉴스가 '직전 영상 이후' 구간이 되어 영상 간 겹침 없음 (v1.0.32에서 3→2)
                         # (윈도우가 넓으면 격일 영상끼리 겹쳐 옛 내용 반복. 더 좁히려면 2, 빈 날 여유는 4~5)
 RECENT_NEWS_DAYS  = 2   # 호재/악재 BEST 픽 — 당일~이 기간 이내 뉴스를 점수와 무관하게 우선
@@ -87,7 +92,7 @@ AMBER   = (245, 158, 11)
 PURPLE  = (167, 139, 250)
 CYAN    = (6, 182, 212)
 BLUE    = (59, 130, 246)
-W, H    = 1080, 1920
+W, H    = (1920, 1080) if MODE == "long" else (1080, 1920)   # long=가로 16:9, short=세로 9:16
 
 PAD     = 40
 COL_W   = W - PAD
@@ -852,6 +857,137 @@ SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({company_
 설명·코멘트 없이, 재검토를 마친 최종 대본 전체(IMAGE_PROMPT_0~3 포함)만 원본과 동일한 형식으로 출력해라."""
 
 
+# ── 롱폼(3분30초, 16:9) "기업소개" 모드 — 사용자 요청: 쇼츠는 주가분석 중심이라 조회수가
+# 안 나와, 잘 알려지지 않은 회사를 골라 사업모델·상황·주변상황·투자사 전망 위주로 소개하는
+# 다큐멘터리형 롱폼을 별도 모드로 추가. 씬 마커(SCENE_i_TITLE/SCENE_i/IMAGE_PROMPT_i)는
+# 쇼츠와 동일(4개) — 검증 로직(_REQUIRED_SCRIPT_MARKERS)을 그대로 재사용하기 위함.
+LONG_SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 데이터를 바탕으로, 유튜브 롱폼(3분 30초 안팎, 가로 16:9)
+"기업 소개" 영상 나레이션 대본을 작성해줘. **시청자 대부분이 이 회사를 처음 들어본다고 가정**하고,
+다큐멘터리 설명 영상처럼 차근차근 소개한다. **오늘의 주가 등락이나 기술적 분석은 다루지 않는다** —
+이 영상의 목적은 "이런 회사가 있다"는 걸 알기 쉽게 소개하는 것이다.
+
+=== 종목 사실 (고정·반드시 준수) ===
+• {grounding}
+
+=== 톤 가이드 (반드시 준수) ===
+• 친근한 구어체 어미 사용: "~예요", "~네요", "~더라고요", "~거든요", "~답니다", "~죠", "~봐요", "~해요"
+• 다정하게 말 걸기: "여러분", "같이 알아볼까요?", "~한 점이 흥미롭죠" 처럼 대화하듯 자연스럽게
+• 딱딱한 보고서 말투("~로 분석된다", "~로 전망된다") 금지 — 사람이 설명하듯 풀어 쓴다
+• 단정적 매수·매도 권유 금지, 내부 점수 표기 금지
+• 각 씬은 8~10줄, 한 줄 45~60자 — 롱폼이라 쇼츠보다 한 줄 호흡이 길어도 된다
+• 각 줄에서 가장 중요한 핵심 글귀 1개를 *별표*로 감싼다 (한 줄 최대 1~2개)
+
+=== 쉬운 말 · 맥락 원칙 (반드시 준수 — 주식·이 회사를 처음 접하는 시청자 기준) ===
+• 전문용어·영문 약어는 쉬운 말로 풀거나 짧은 설명을 붙인다 (예: "HBM" → "AI용 메모리(HBM)").
+• RSI·MACD·PER 같은 기술적 지표 용어가 씬3(투자사 전망)에 등장하면 반드시 쉬운 말로 풀어 쓴다
+  (예: "PER 11.5배" → "PER *11.5배*(이익 대비 주가가 싼 편)").
+• 수치가 나오면 '무엇을 위해/무슨 의미인지'가 같은 문장 안에 보이게 쓴다 — 맥락 없는 수치 나열 금지.
+
+=== 오프닝 훅 (반드시 준수) ===
+• 씬0 줄1은 "혹시 {company_ko} 들어보셨나요?" 류로, 생소할 수 있는 회사를 소개한다는 톤에서 시작한다
+  (이미 아주 유명한 대형주라면 "이름은 익숙해도 무슨 사업인지는 의외로 잘 모르는" 각도로 비튼다).
+
+=== 분석 데이터 ===
+- {ticker} 현재가(참고용, 씬0 줄1에만 짧게 언급): {price}
+- 회사 방향·최근 투자 (검색 결과 — 씬0의 핵심 소재): {company_direction_str}
+- 정량 신호 (밸류·목표주가·재무제표·기술추세 — 씬3 '투자사 전망'의 핵심 근거. 전문용어는 풀어서 쉽게): {signals_str}
+- 경쟁사({competitor_ticker}) 비교: {competitor_str}
+- 주가 변동 배경(참고용, 씬1에 짧게만 활용): {movement_reason_str}
+- 다음주 가격 예측(AI 모델, 참고용): {next_week_str}
+
+=== 씬 구성 (총 4씬, 각 8~10줄) ===
+
+【씬 0 — 주력 사업모델】
+※ 이 회사는 무엇을 만들어 어떻게 돈을 버는가. 구체적 제품·서비스·매출 구조를 처음 듣는 사람도
+  그림이 그려지게 설명한다. 주가 등락 분석은 하지 않는다(줄1에서 현재가만 짧게 언급 가능).
+- 줄1: 오프닝 훅 (위 가이드대로, 현재가는 짧게만 곁들여도 됨)
+- 줄2~4: 주력 사업 — 무엇으로 돈 버는 회사인지, 대표 제품·서비스 ({industry_ko} 산업)
+- 줄5~6: 회사가 추구하는 방향·비전, 핵심 기술({future_tech})
+- 줄7~8(~10): 시장 내 위치·강점 — 왜 주목할 만한 회사인지
+
+【씬 1 — 현재 상황】
+※ 최근 실적·재무·주요 이벤트 등 "지금 이 회사가 어떤 상태인가"를 다룬다. 오늘 하루의 주가
+  등락이 아니라 최근 분기·최근 몇 달 흐름 관점으로 서술한다.
+- 8~10줄: 최근 실적/재무 상황, 최근 투자·이벤트, 사업 진행 상황을 구체 수치와 함께
+
+【씬 2 — 주변 상황(업계·경쟁 구도)】
+※ 이 회사가 속한 산업 전체의 흐름과 경쟁사 대비 위치를 다룬다.
+- 8~10줄: 업계 트렌드, 경쟁사({competitor_ticker}) 비교, 시장 점유율·경쟁 우위, 산업 전망
+
+【씬 3 — 메이저 투자사 전망 (클로징)】
+※ 애널리스트·증권사 등 주요 투자사들의 목표주가·전망을 다룬다. 목표주가는 [정량 신호]에 있는
+  수치만 사용하고 없는 숫자를 지어내지 않는다. 데이터가 부족해도 "예측 데이터 없이" 같은
+  결핍 고백 문구 금지 — 아는 사실(산업 전망·로드맵)로 채운다.
+- 줄1~2: 주요 증권사/기관의 목표주가·투자의견 요약 (수치 있는 것만)
+- 줄3~4: 그 전망의 근거 (밸류·재무·성장성 등)
+- 줄5~7(~9): 향후 지켜볼 변수·이벤트
+- 마지막 줄: 따뜻한 마무리 인사 (20자 이내)
+
+=== 출력 형식 (반드시 준수 — 마커는 쇼츠와 동일) ===
+※ 핵심 수치·키워드는 *별표*로 감싸 강조한다.
+SCENE_0_TITLE: [6자 이내, 예: "사업모델" "무슨회사"]
+SCENE_0:
+[줄1~8~10, 위 씬0 구성대로]
+
+SCENE_1_TITLE: [6자 이내, 예: "현재상황" "요즘어때"]
+SCENE_1:
+[줄1~8~10, 위 씬1 구성대로]
+
+SCENE_2_TITLE: [6자 이내, 예: "주변상황" "업계구도"]
+SCENE_2:
+[줄1~8~10, 위 씬2 구성대로]
+
+SCENE_3_TITLE: [6자 이내, 예: "투자사전망" "전문가는"]
+SCENE_3:
+[줄1~8~10, 위 씬3 구성대로]
+
+=== 배경 이미지 프롬프트 (Gemini Imagen용, 영어, 4개 — 전부 16:9 가로 풀프레임) ===
+각 60단어 이상. 반드시 포함: "no text, no letters, no watermark, no logo", "ultra-high resolution".
+★ 주 피사체 원칙(가장 중요): {company_ko}({industry_ko})가 실제로 추구하는 브랜드 이미지·업(業)의
+  정체성을 주 피사체로 삼는다. 범용 미래도시·로켓 발사 같은 상투적 SF 배경을 기본값으로 쓰지
+  말 것 — 이 회사이기 때문에 나올 수 있는 구체적 장면을 그린다.
+★ {company_ko}의 핵심 매출 제품·서비스({future_tech})는 화면 한쪽의 보조 오브젝트로만 작게 배치한다.
+※ 4개 전부 "16:9 landscape, full-frame documentary cinematic photography" — 세로 분할 없음.
+  씬별 무드: 0=보라 소개, 1=초록 현황, 2=시안 업계구도, 3=골드 전망.
+
+IMAGE_PROMPT_0: [씬0 — 16:9 landscape full-frame · {company_ko}({industry_ko})의 사업 정체성을 담은 구체적 공간·장면을 주 피사체로, 핵심 제품({future_tech})은 화면 한쪽에 작게 보조 오브젝트로만 배치, 보라빛 소개 무드 조명, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_1: [씬1 — 16:9 landscape full-frame · {company_ko}({industry_ko})의 현재 사업 진행 상황을 상징하는 구체적 장면을 주 피사체로, 핵심 제품({future_tech})은 화면 한쪽의 보조 요소로만 등장, 초록빛 현황 무드, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_2: [씬2 — 16:9 landscape full-frame · {company_ko}({industry_ko})가 속한 업계·경쟁 구도를 상징하는 구체적 장면을 주 피사체로, 핵심 제품({future_tech})은 화면 한쪽의 보조 요소로만 등장, 시안빛 데이터 분석적 무드, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]
+IMAGE_PROMPT_3: [씬3 — 16:9 landscape full-frame · {company_ko}({industry_ko})가 그리는 사업 방향성을 담은 미래 지향적이되 실제 사업 영역을 반영한 장면을 주 피사체로, 핵심 제품({future_tech})은 화면 한쪽의 보조 요소로만 배치, 골드빛 영감적인 무드, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo]"""
+
+
+LONG_SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({company_ko}) 유튜브 롱폼(기업소개) 나레이션 대본이다.
+편집자 입장에서 비판적으로 재검토하고, 문제가 있는 줄만 직접 고쳐서 전체를 동일한 형식으로 다시 출력해라.
+
+=== 점검 기준 (이 4가지를 줄 단위로 점검) ===
+1. 어색한 문구: 번역체·문어체·딱딱한 보고서 말투·부자연스러운 어순·같은 표현 반복이 있으면
+   다정한 구어체(~예요/~네요/~거든요/~죠)로 자연스럽게 다듬는다.
+2. 미래 비전 전달력: {company_ko}의 미래 기술·사업계획({future_tech})이 씬0 '사업모델' 줄과
+   씬3 '투자사 전망' 줄에서 막연하거나 추상적이면, 구체적인 제품·로드맵 이미지가 떠오르게 보강한다.
+   (수치·형식·글자 수 제한은 절대 깨지 않는 선에서 단어만 더 생동감 있게 교체)
+3. 맥락 없는 결과 서술: 수치·사실만 툭 던져 "그게 왜?"가 되는 줄은 '무엇을 위해/무슨 의미인지'가
+   같은 문장에 보이게 고친다.
+4. 알 수 없는 전문용어: 일반 시청자가 모를 약어·전문용어가 풀이 없이 나오면 쉬운 말로 바꾸거나
+   짧은 풀이를 붙인다. 특히 씬3의 RSI·MACD·PER·PBR·ROE 같은 기술적 지표 용어(숫자+영문 약어)가
+   풀이 없이 그대로 보이면 반드시 고친다(예: "PER 11.5배" → "PER *11.5배*(이익 대비 싼 편)").
+   이 점검은 모든 씬에 적용한다.
+
+=== 반드시 지킬 것 ===
+• 출력 형식(SCENE_*_TITLE/SCENE_*/IMAGE_PROMPT_*)·씬별 줄 수(8~10줄)·줄당 글자 수 제한(45~60자)·
+  *별표* 강조 표기·내부 점수 미표기 규칙은 원본과 동일하게 유지한다.
+• IMAGE_PROMPT_0~3는 원본 그대로 한 글자도 바꾸지 않고 그대로 옮긴다.
+• 이미 자연스럽고 생동감 있는 줄은 건드리지 않는다 — 트집을 잡기 위한 불필요한 재작성 금지.
+• 고친 내용이 없다면 원본을 그대로 출력해도 된다.
+• 오늘 하루의 주가 등락·기술적 분석 내용이 새로 섞여 있으면(이 모드는 다루지 않음) 제거하고
+  사업모델/상황/주변상황/투자사 전망 내용으로 대체한다.
+
+=== 원본 대본 ===
+{raw_script}
+
+=== 출력 ===
+설명·코멘트 없이, 재검토를 마친 최종 대본 전체(IMAGE_PROMPT_0~3 포함)만 원본과 동일한 형식으로 출력해라."""
+
+
 def _fmt_krw_compact(v) -> str:
     """DART 원 단위 정수를 조/억원 표기로 변환(초보 시청자 기준 쉬운 말 — 자릿수 그대로
     나열 금지 규칙). 예: 300000000000 → '3,000억원', 1_230_000_000_000 → '1.2조원'."""
@@ -1083,7 +1219,8 @@ def _build_prompt(summary):
 
     _seed = summary.get("week_end") or summary.get("week_start") or ""
     hook_style = pick_hook(_seed)
-    return SCRIPT_PROMPT_TEMPLATE.format(
+    template = LONG_SCRIPT_PROMPT_TEMPLATE if MODE == "long" else SCRIPT_PROMPT_TEMPLATE
+    return template.format(
         ticker=TICKER,
         company_ko=COMPANY_KO,
         industry_ko=INDUSTRY_KO,
@@ -1153,7 +1290,8 @@ def _has_required_script_markers(raw):
 def review_script(raw):
     """생성된 대본을 비판적으로 재검토해 어색한 문구·미래비전 전달력을 보강한다.
     실패 시(또는 형식이 깨지면) 호출 측에서 원본을 그대로 유지하도록 raw를 반환한다."""
-    prompt = SCRIPT_REVIEW_PROMPT_TEMPLATE.format(
+    review_template = LONG_SCRIPT_REVIEW_PROMPT_TEMPLATE if MODE == "long" else SCRIPT_REVIEW_PROMPT_TEMPLATE
+    prompt = review_template.format(
         ticker=TICKER, company_ko=COMPANY_KO, future_tech=FUTURE_TECH_EN, raw_script=raw,
     )
     if ANTHROPIC_API_KEY:
@@ -2196,9 +2334,83 @@ def _apply_frame_overlay(img):
     return PILImage.alpha_composite(base, ov).convert("RGB")
 
 
+def draw_scene_landscape(scene, font_reg, font_bold, bg_path: Path | None):
+    """롱폼(16:9) 전용 씬 이미지 — 4개 씬 전부 동일한 하나의 템플릿(풀블리드 배경 + 하단
+    캡션 바)을 쓴다. 쇼츠처럼 씬마다 다른 카드 레이아웃(포토카드/뉴스카드/지표카드)을
+    가로용으로 새로 만들지 않고 단순화한 것 — 다큐멘터리형 설명 영상에 자연스럽고
+    구현 위험도 낮다(사용자 요청 롱폼 모드, build_scene_image의 기존 씬별 레이아웃과는 무관)."""
+    from PIL import Image as PILImage, ImageDraw, ImageFont
+
+    idx    = scene["index"]
+    title  = scene["title"] or f"씬 {idx}"
+    lines  = scene.get("lines") or [l.strip() for l in (scene.get("body") or "").split("\n") if l.strip()]
+    accent = SCENE_ACCENTS[idx]
+
+    img, draw = make_canvas(accent)
+
+    # ── 풀블리드 배경 (cover-fit) — 없으면 다크 네이비 그라데이션 폴백 ──
+    if bg_path and bg_path.exists():
+        try:
+            bg = PILImage.open(bg_path).convert("RGB")
+            bw, bh = bg.size
+            ratio = max(W / bw, H / bh)
+            nw, nh = int(bw * ratio), int(bh * ratio)
+            bg = bg.resize((nw, nh), PILImage.LANCZOS)
+            ox, oy = (nw - W) // 2, (nh - H) // 2
+            img.paste(bg.crop((ox, oy, ox + W, oy + H)), (0, 0))
+            draw = ImageDraw.Draw(img)
+        except Exception:
+            pass
+    else:
+        for yy in range(H):
+            t = yy / H
+            draw.line([(0, yy), (W, yy)], fill=(
+                int(18 + 14 * t), int(28 + 24 * t), int(50 + 30 * t)))
+
+    # ── 하단 캡션 영역 어둡게(가독성용 스크림) ──
+    SCRIM_TOP = int(H * 0.42)
+    overlay = PILImage.new("RGBA", (W, H - SCRIM_TOP), (8, 12, 24, 195))
+    img.paste(overlay, (0, SCRIM_TOP), overlay)
+    draw = ImageDraw.Draw(img)
+
+    def fnt(path, size):
+        try:
+            return ImageFont.truetype(path, size) if path else ImageFont.load_default()
+        except Exception:
+            return ImageFont.load_default()
+
+    f_title = fnt(font_bold, 52)
+    f_body  = fnt(font_reg, 44)
+
+    # ── 상단 좌측 씬 제목 배지 ──
+    badge_pad_x, badge_pad_y = 34, 20
+    tw = draw.textlength(title, font=f_title)
+    bx0, by0 = 70, 56
+    bx1, by1 = bx0 + tw + badge_pad_x * 2, by0 + 52 + badge_pad_y * 2
+    draw.rounded_rectangle([bx0, by0, bx1, by1], radius=16, fill=accent)
+    draw.text((bx0 + badge_pad_x, by0 + badge_pad_y), title, font=f_title, fill=WHITE,
+              stroke_width=2, stroke_fill=STROKE)
+
+    # ── 하단 캡션 텍스트 (씬 나레이션 8~10줄, *강조* 마커는 draw_rich_text가 골드로 렌더) ──
+    x_pad = 100
+    max_w = W - x_pad * 2
+    y = SCRIM_TOP + 50
+    body_lines = [l for l in lines if l.strip() and not l.startswith("SCENE")]
+    for line in body_lines:
+        y = draw_rich_text(draw, line, x_pad, y, f_body, WHITE, max_w,
+                            hl_fill=KEY, stroke_width=2, stroke_fill=STROKE, line_gap=10)
+        y += 6
+        if y > H - 40:
+            break   # 캡션 영역 초과 방지(과다 줄 안전망)
+
+    return img
+
+
 def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None = None):
     from PIL import ImageFont, ImageDraw
     idx    = scene["index"]
+    if MODE == "long":
+        return draw_scene_landscape(scene, font_reg, font_bold, bg_path)
     title  = scene["title"] or f"씬 {idx}"
     lines  = scene.get("lines") or [l.strip() for l in (scene.get("body") or "").split("\n") if l.strip()]
     accent = SCENE_ACCENTS[idx]   # 0=브리핑, 1=호재 심층, 2=정량 지표, 3=다음주 전망(클로징)
@@ -2765,8 +2977,12 @@ def build_images(scenes, summary, out_dir, img_prompts=None):
 
     # 모든 씬에 AI 배경 이미지 생성
     BG_SCENES = {0, 1, 2, 3}
-    # 씬별 aspect ratio — 0·1·2는 가로 strip(16:9), 3(미래비전)는 풀스크린(9:16)
-    BG_ASPECTS = {0: "16:9", 1: "16:9", 2: "16:9", 3: "9:16"}
+    # 씬별 aspect ratio — short: 0·1·2는 가로 strip(16:9), 3(미래비전)는 풀스크린(9:16)
+    # long(롱폼): 전 씬이 16:9 풀프레임(가로 캔버스 자체가 16:9라 strip 분할 불필요)
+    if MODE == "long":
+        BG_ASPECTS = {0: "16:9", 1: "16:9", 2: "16:9", 3: "16:9"}
+    else:
+        BG_ASPECTS = {0: "16:9", 1: "16:9", 2: "16:9", 3: "9:16"}
 
     print("   🖼 배경 이미지 준비 중...")
     bg_paths = {}
@@ -2937,31 +3153,36 @@ def main():
             "session_count":   summary["session_count"],
             "today_change_pct": summary.get("today_change_pct"),
             "trends":          summary.get("trends"),
+            "mode":            MODE,
         }, f, ensure_ascii=False, indent=2)
 
-    # ── 온디맨드 최근 생성 포인터 (data/on-demand/latest.json) ──
-    # on-demand.html 우측 '최근 생성 영상' 카드가 이 파일 하나만 읽어
-    # 씬 미리보기 경로 + YouTube 업로드용 제목·설명을 표시한다(메일과 동일 카피).
+    # ── 온디맨드 최근 생성 포인터 (data/on-demand/latest.json 또는 data/on-demand-long/latest.json) ──
+    # on-demand.html 우측 '최근 생성 영상' 카드가 이 파일을 읽어 씬 미리보기 경로 + YouTube
+    # 업로드용 제목·설명을 표시한다(메일과 동일 카피). short/long 모드가 REPORT_BASE로 이미
+    # 트리가 분리되어 있으므로(data/on-demand vs data/on-demand-long), OUTPUT_BASE 기준으로
+    # 경로를 만들면 latest.json도 자연히 모드별로 나뉘어 서로 덮어쓰지 않는다.
     if "on-demand" in str(OUTPUT_BASE):
         try:
             import gws_publish   # build_youtube_copy 재사용 — 메일·자동업로드와 단일 진실
             meta = json.loads((out_dir / "meta.json").read_text(encoding="utf-8"))
             yt_title, yt_desc = gws_publish.build_youtube_copy(meta, out_dir)
+            base_str = str(OUTPUT_BASE).replace(os.sep, "/")   # 예: data/on-demand/RKLB, data/on-demand-long/RKLB
             latest = {
                 "ticker": TICKER,
                 "company_ko": COMPANY_KO,
                 "date": today,
-                "report_dir": f"data/on-demand/{TICKER}/{today}",
-                "scenes": [f"data/on-demand/{TICKER}/{today}/{scene_png_name(i, today)}" for i in range(4)],
+                "mode": MODE,
+                "report_dir": f"{base_str}/{today}",
+                "scenes": [f"{base_str}/{today}/{scene_png_name(i, today)}" for i in range(4)],
                 "youtube_title": yt_title,
                 "youtube_description": yt_desc,
                 "generated_at": today,
             }
-            latest_path = ROOT_DIR / "data" / "on-demand" / "latest.json"
+            latest_path = ROOT_DIR / OUTPUT_BASE.parent / "latest.json"
             latest_path.parent.mkdir(parents=True, exist_ok=True)
             latest_path.write_text(json.dumps(latest, ensure_ascii=False, indent=1) + "\n",
                                    encoding="utf-8")
-            print(f"   📌 latest.json 갱신 — {COMPANY_KO} {today} (웹 '최근 생성 영상' 카드용)")
+            print(f"   📌 latest.json 갱신 — {COMPANY_KO} {today} [{MODE}] (웹 '최근 생성 영상' 카드용)")
         except Exception as e:
             print(f"   ⚠ latest.json 갱신 실패(계속 진행): {e}", file=sys.stderr)
 
