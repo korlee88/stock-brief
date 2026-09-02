@@ -1,0 +1,248 @@
+{
+  "generated_at": "2026-09-01",
+  "generated_by": "Claude Opus 4",
+  "title": "다들 흔들린다지만, *$143.45*에서 버티는 중이에요",
+  "subtitle": "2026-09-01 ~ 2026-09-01 · 오라클, AI 데이터센터 투자로 자유 현금 흐름 급감 ",
+  "summary": {
+    "week_start": "2026-09-01",
+    "week_end": "2026-09-01",
+    "session_count": 1,
+    "total_analyzed": 8,
+    "bullish_count": 3,
+    "bearish_count": 1,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 143.45,
+    "price_end": 143.45,
+    "latest_price": 143.45,
+    "today_price": 143.45,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "오라클, AI 데이터센터 투자로 자유 현금 흐름 급감 및 주가 하락",
+      "score": -4,
+      "reason": "AI 인프라 확장을 위한 막대한 투자로 인해 자유 현금 흐름이 마이너스를 기록하고 부채가 증가하는 것은 단기적으로 기업의 재무 건전성에 대한 우려를 높여 주가에 부정적인 영향을 미칠 것입니다.",
+      "source": "Pluang",
+      "date": "2026-08-31",
+      "category": "Market",
+      "direction_ko": "악재",
+      "emoji": "⚠"
+    },
+    "top_bullish": [
+      {
+        "title": "오라클 공동 CEO Clay Magouyrk, AI가 모든 것을 변화시키고 있다고 언급",
+        "score": 2,
+        "reason": "최고 경영진의 AI 기술에 대한 강력한 믿음과 낙관적인 전망은 오라클의 AI 관련 사업 성장에 대한 기대감을 높여 주가에 긍정적인 영향을 미칠 수 있습니다.",
+        "source": "CNBC",
+        "date": "2025-10-13",
+        "category": "Product"
+      },
+      {
+        "title": "오라클, AI 전략으로 클라우드 인프라 및 데이터베이스 수요 증가",
+        "score": 2,
+        "reason": "AI 중심의 제품 및 서비스에 대한 강력한 수요는 오라클의 미래 성장 잠재력을 보여주며, 이는 투자자 신뢰를 높여 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "Investing.com Canada",
+        "date": "2026-08-26",
+        "category": "Product"
+      },
+      {
+        "title": "오라클, OpenAI와의 3천억 달러 계약으로 AI 인프라 성장 기대",
+        "score": 4,
+        "reason": "OpenAI와의 대규모 계약은 오라클의 AI 인프라 사업에 대한 강력한 수요와 미래 성장 동력을 명확히 보여주며, 이는 주가에 매우 긍정적인 영향을 미칠 것입니다.",
+        "source": "SiliconANGLE",
+        "date": "2025-09-22",
+        "category": "Contract"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "오라클, AI 데이터센터 투자로 자유 현금 흐름 급감 및 주가 하락",
+        "score": -4,
+        "reason": "AI 인프라 확장을 위한 막대한 투자로 인해 자유 현금 흐름이 마이너스를 기록하고 부채가 증가하는 것은 단기적으로 기업의 재무 건전성에 대한 우려를 높여 주가에 부정적인 영향을 미칠 것입니다.",
+        "source": "Pluang",
+        "date": "2026-08-31",
+        "category": "Market"
+      }
+    ],
+    "top_neutral": [
+      {
+        "title": "오라클 주가, AI 클라우드 부문 상승에도 불구하고 하락",
+        "score": -1,
+        "reason": "주가가 상승했음에도 불구하고 동종 업계 대비 낮은 상승률과 지속적인 신용 등급 하향 조정 우려는 투자자들에게 불확실성을 제공하여 주가에 중립적이거나 약간 부정적인 영향을 미칠 수 있습니다.",
+        "source": "Pluang",
+        "date": "2026-08-31",
+        "category": "Market"
+      },
+      {
+        "title": "오라클, 9월 10일 실적 발표 앞두고 주가 변동성 심화",
+        "score": 0,
+        "reason": "주요 실적 발표를 앞두고 시장의 불확실성이 커지면서 주가 변동성이 확대되는 것은 일반적인 현상이며, 이는 발표 결과에 따라 주가 방향이 결정될 것입니다.",
+        "source": "Benzinga",
+        "date": "2026-08-30",
+        "category": "Market"
+      }
+    ],
+    "neutral_count": 2,
+    "scene1_news": {
+      "bullish": {
+        "title": "오라클, AI 전략으로 클라우드 인프라 및 데이터베이스 수요 증가",
+        "score": 2,
+        "reason": "AI 중심의 제품 및 서비스에 대한 강력한 수요는 오라클의 미래 성장 잠재력을 보여주며, 이는 투자자 신뢰를 높여 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "Investing.com Canada",
+        "date": "2026-08-26",
+        "category": "Product"
+      },
+      "bearish": {
+        "title": "오라클, AI 데이터센터 투자로 자유 현금 흐름 급감 및 주가 하락",
+        "score": -4,
+        "reason": "AI 인프라 확장을 위한 막대한 투자로 인해 자유 현금 흐름이 마이너스를 기록하고 부채가 증가하는 것은 단기적으로 기업의 재무 건전성에 대한 우려를 높여 주가에 부정적인 영향을 미칠 것입니다.",
+        "source": "Pluang",
+        "date": "2026-08-31",
+        "category": "Market"
+      },
+      "neutral": {
+        "title": "오라클, 9월 10일 실적 발표 앞두고 주가 변동성 심화",
+        "score": 0,
+        "reason": "주요 실적 발표를 앞두고 시장의 불확실성이 커지면서 주가 변동성이 확대되는 것은 일반적인 현상이며, 이는 발표 결과에 따라 주가 방향이 결정될 것입니다.",
+        "source": "Benzinga",
+        "date": "2026-08-30",
+        "category": "Market"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-09-01",
+        143.45
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-09-01",
+    "today_news": [
+      {
+        "title": "오라클, AI 데이터센터 투자로 자유 현금 흐름 급감 및 주가 하락",
+        "category": "Market",
+        "source": "Pluang",
+        "date": "2026-08-31"
+      },
+      {
+        "title": "오라클 주가, AI 클라우드 부문 상승에도 불구하고 하락",
+        "category": "Market",
+        "source": "Pluang",
+        "date": "2026-08-31"
+      },
+      {
+        "title": "오라클, 9월 10일 실적 발표 앞두고 주가 변동성 심화",
+        "category": "Market",
+        "source": "Benzinga",
+        "date": "2026-08-30"
+      },
+      {
+        "title": "오라클, AI 전략으로 클라우드 인프라 및 데이터베이스 수요 증가",
+        "category": "Product",
+        "source": "Investing.com Canada",
+        "date": "2026-08-26"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 143.45,
+        "ma20": 147.23,
+        "vs_ma20_pct": -2.6,
+        "ma60": 148.69,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 39.2,
+        "rsi_state": "중립",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 2.6,
+        "pos_52w_pct": 13.0,
+        "high_52w": 345.72,
+        "low_52w": 114.5,
+        "mom_5d_pct": -0.9,
+        "mom_20d_pct": -1.6
+      },
+      "valuation": {
+        "목표주가_평균": 244.12,
+        "목표주가_최고": 400.0,
+        "목표주가_최저": 110.0,
+        "애널리스트_수": 42,
+        "투자의견": "매수",
+        "PER_선행": 13.1,
+        "PER": 24.6
+      }
+    },
+    "prev_day": {
+      "date": "2026-09-01",
+      "open": 146.75,
+      "close": 143.45,
+      "change_pct": -3.8
+    },
+    "month_low": {
+      "low": 130.21,
+      "current": 143.45,
+      "pct_vs_low": 10.17
+    },
+    "movement_reason": "오라클(ORCL) 주가는 2026년 9월 1일 3.74% 하락했으며, 주요 원인은 다음과 같습니다.\n\n*   AI 투자 부담\n*   신용등급 하향\n*   거시경제 악화",
+    "company_direction": "오라클(ORCL) 회사 소개 자료입니다.\n\n*   **주력 사업:** 기업용 클라우드 서비스 및 라이선스 지원 / 데이터베이스/클라우드 앱 사용료가 핵심 / 고성능 서버 등 하드웨어 제공 / 컨설팅 및 시스템 구축 지원\n*   **회사의 비전·전략 방향:** 클라우드 중심 기업으로 전환 가속화 / AI 인프라 구축에 대규모 투자 / 오픈AI 등과 AI 협력 강화 / 멀티 클라우드 환경 지원 확대\n*   **최근 1년 내 주요 투자·설비·인수:** AI 클라우드 인프라에 약 560억 달러 투자 / 데이터센터를 70개로 대폭 확장 / AI 설비 증설에 최대 72조 원 조달 추진 / 연구개발에 연간 103억 달러 투입\n*   **핵심 신제품·신기술 로드맵:** AI 기술 통합한 오라클 AI 데이터베이스 / 클라우드 앱 내 AI 에이전트 개발 / OCI의 AI용 GPU 인프라 지속 확장 / 새로운 데이터센터 아키텍처 제시\n*   **시장 내 위치·점유율:** 데이터베이스 시장에서 독보적 1위 / 클라우드 인프라 시장 3%로 5위권 / AI 수요 증가로 클라우드 점유율 확대 중 / AWS, Azure, Google에 추격 집중"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "다들 흔들린다지만, *$143.45*에서 버티는 중이에요",
+        "*기업용 클라우드*와 데이터베이스로 돈을 벌어요",
+        "*AI 인프라* 중심 기업으로 확 바꾸는 중이죠",
+        "AI 클라우드에 무려 *560억 달러* 쏟아부었어요",
+        "*AI 데이터베이스*와 GPU 서버가 핵심 무기죠",
+        "*데이터베이스 1위*, 클라우드는 열심히 추격 중이에요"
+      ],
+      "body": "다들 흔들린다지만, *$143.45*에서 버티는 중이에요\n*기업용 클라우드*와 데이터베이스로 돈을 벌어요\n*AI 인프라* 중심 기업으로 확 바꾸는 중이죠\nAI 클라우드에 무려 *560억 달러* 쏟아부었어요\n*AI 데이터베이스*와 GPU 서버가 핵심 무기죠\n*데이터베이스 1위*, 클라우드는 열심히 추격 중이에요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: *AI 전략* 덕에 클라우드·DB 수주가 쭉 늘어요",
+        "악재: AI 투자로 *현금흐름 마이너스*, 빚 부담도 커요",
+        "보합: *9월 10일 실적 발표* 앞두고 눈치보기 장세예요"
+      ],
+      "body": "호재: *AI 전략* 덕에 클라우드·DB 수주가 쭉 늘어요\n악재: AI 투자로 *현금흐름 마이너스*, 빚 부담도 커요\n보합: *9월 10일 실적 발표* 앞두고 눈치보기 장세예요"
+    },
+    {
+      "index": 2,
+      "title": "숫자로보기",
+      "lines": [
+        "추세: *20일 평균 주가선* 대비 *-2.6%*, 약세 흐름이에요",
+        "밸류: 내년 예상 PER *13.1배*(이익 대비 싼 편)이에요",
+        "총평: 42명 애널리스트 *매수 의견*, 기대감은 여전해요"
+      ],
+      "body": "추세: *20일 평균 주가선* 대비 *-2.6%*, 약세 흐름이에요\n밸류: 내년 예상 PER *13.1배*(이익 대비 싼 편)이에요\n총평: 42명 애널리스트 *매수 의견*, 기대감은 여전해요"
+    },
+    {
+      "index": 3,
+      "title": "다음주전망",
+      "lines": [
+        "*9월 10일 실적 발표* — 최대 분수령이에요",
+        "관건: *AI 클라우드 매출* 성장률 서프라이즈 여부",
+        "현금흐름보다 *GPU 서버 수주 잔고*가 진짜 핵심",
+        "*목표가 최고 $400·최저 $110* — 시각차 극심해요",
+        "변수: *신용등급 하향* 우려와 거시 부담 지속돼요",
+        "다음에 또 만나요!"
+      ],
+      "body": "*9월 10일 실적 발표* — 최대 분수령이에요\n관건: *AI 클라우드 매출* 성장률 서프라이즈 여부\n현금흐름보다 *GPU 서버 수주 잔고*가 진짜 핵심\n*목표가 최고 $400·최저 $110* — 시각차 극심해요\n변수: *신용등급 하향* 우려와 거시 부담 지속돼요\n다음에 또 만나요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A vast modern enterprise data center interior with towering server racks stretching into the distance, softly illuminated by cool ambient lighting, technicians in the far background working at holographic control panels, sleek polished floors reflecting subtle purple analytical mood lighting, a small cluster of glowing server nodes and faint database schematics tucked in one corner as subtle background elements, deep cinematic atmosphere conveying enterprise scale and analytical depth, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A sprawling hyperscale cloud campus at golden dawn with multiple newly constructed data center buildings rising across a green landscape, cranes and expansion sites suggesting rapid growth, lush trees and fresh grass framing the composition, vibrant green sunrise light bathing the facilities in optimistic warmth, a small side view of interconnected server silhouettes and glowing fiber cables in one corner as a subtle secondary element, dynamic upward energy, glowing motion lines rising skyward, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A calm sophisticated enterprise network operations center with analysts seated before massive curved monitors displaying subtle abstract data visualizations and flowing database queries, cool cyan-blue analytical lighting washing across polished desks and glass partitions, quiet focused atmosphere, faint holographic charts drifting in the background as ambient decoration, a small compact server rack and database cluster tucked in one corner as a subtle supporting element, professional analytical mood, cinematic depth of field, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "3": "A visionary architectural view of a next-generation AI cloud campus glowing under warm golden hour light, sleek modern data center buildings with reflective glass facades set against rolling hills, soft light beams streaming through clouds inspiring a sense of forward momentum and enterprise ambition, subtle hints of AI-driven automation shown through faint glowing pathways, a small side arrangement of server nodes and cloud infrastructure icons tucked in one corner as a subtle secondary element, warm inspiring golden light, cinematic aspirational mood, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

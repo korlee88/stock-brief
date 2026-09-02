@@ -1,0 +1,38 @@
+{
+  "ticker": "ORCL",
+  "company_en": "Oracle Corporation",
+  "company_ko": "오라클",
+  "industry_ko": "기업용 소프트웨어, 클라우드 컴퓨팅, 데이터베이스 관리 시스템",
+  "exchange": "NYSE",
+  "image_future_tech_en": "A vast, interconnected network of servers and data centers, forming a robust cloud infrastructure that powers enterprise applications and advanced database management systems, all humming with the efficiency of AI-driven automation.",
+  "brand_label": "ORCL BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "MSFT",
+  "key_people": [
+    "Larry Ellison",
+    "Safra Catz",
+    "Clay Magouyrk",
+    "Mike Sicilia"
+  ],
+  "google_trends_keywords": [
+    "오라클 클라우드",
+    "오라클 데이터베이스",
+    "래리 엘리슨",
+    "ORCL 주가",
+    "기업용 소프트웨어",
+    "클라우드 컴퓨팅"
+  ],
+  "video_tags": [
+    "Oracle",
+    "ORCL",
+    "Oracle Cloud",
+    "Oracle Database",
+    "Larry Ellison",
+    "기업용 소프트웨어",
+    "클라우드 컴퓨팅",
+    "데이터베이스"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-09-01T14:33:52.342Z"
+}

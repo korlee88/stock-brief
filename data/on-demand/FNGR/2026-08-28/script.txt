@@ -1,0 +1,38 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+왜 갑자기 *$0.17*까지 밀렸을까요?
+중국에서 *모바일 결제·통신* 서비스가 주력이에요
+*북미 AI 데이터센터* 시장 진출을 노리고 있죠
+8월 *AI 스타트업 Lyken 지분 9.9%*를 사들여 AI 사업을 넓혔어요
+*빅데이터 분석* 플랫폼도 함께 운영해요
+시총 *1천3백만 달러* 소형주랍니다
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 최근 뚜렷한 호재는 없었어요, 조금 아쉬운 부분이죠
+악재: 지난 24시간 새 주가가 *11.26% 하락*하며 투자심리가 얼어붙었죠
+보합: 새 CFO로 *Chris Polimeni*를 뽑아 재무 정비에 나섰어요
+
+SCENE_2_TITLE: 숫자로보기
+SCENE_2:
+추세: *RSI 20.3*, 단기 과매도로 바닥권이에요
+밸류: 선행 PER *5.8배*, 수익성 회복이 관건이죠
+재무: 지난 분기 *200만 달러* 순손실을 냈어요
+총평: 숫자로 보면 *상장폐지 경고*까지 겹친 힘든 국면이에요
+
+SCENE_3_TITLE: 다음주전망
+SCENE_3:
+다음주 *나스닥 1달러 규정*(주가 유지 조건) 재점검이 최대 변수
+관전 포인트 — *북미 AI 서버 공급 계약* 성사 여부 주목
+누적 흐름 *$0.15~$0.19 박스권* 예상
+5거래일 중 *2일 상승·3일 하락* 관측
+변수 — AI 진출은 반기지만 *현금흐름 개선*이 진짜 관건
+오늘도 함께해 주셔서 고마워요!
+
+IMAGE_PROMPT_0: A quiet modern telecommunications operations room in China at dusk, wide analytical view of a control desk with soft purple ambient lighting, a large window showing distant city cell towers glowing faintly, an analyst silhouette studying subtle mobile network flow visualizations on a wall display, a single smartphone resting on the desk as a small secondary object on the side representing mobile data services, moody violet and indigo tones, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A bustling Chinese urban telecom hub at sunrise showing gleaming fiber optic bundles rising upward through a modern data corridor, green bioluminescent light trails symbolizing growing mobile payment transactions surging along network cables, engineers in the background inspecting connections with confident posture, a small mobile device placed on a side console as a minor supporting object, dynamic upward energy, glowing motion lines in emerald and lime tones, hopeful growth atmosphere, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A calm telecom network operations center with rows of servers bathed in cool cyan-blue analytical lighting, a wide angle view of engineers reviewing subtle abstract data flow patterns on translucent panels representing mobile carrier traffic and payment volumes, faint holographic charts floating as background props, a small handset lying on a desk edge as a minor supporting object, clean minimalistic technical mood, cool cyan-blue analytical lighting, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_3: A vertical composition of a futuristic modular AI edge computing facility at golden hour, warm inspiring sunlight streaming through a North American landscape with distant telecom towers and a compact off-grid data pod glowing softly, a lone technician gazing toward the horizon symbolizing new market expansion, a small smartphone placed on a nearby crate as a minor supporting object referencing mobile data heritage, warm inspiring golden light, hopeful visionary mood, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

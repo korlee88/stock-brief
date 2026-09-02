@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-09-01",
+  "generated_by": "Claude Opus 4",
+  "title": "다들 상장 전이라 오해하지만 *코스닥 상장사*예요",
+  "subtitle": "2026-09-01 ~ 2026-09-01 · 에이티즈, 멤버 전원 7년 재계약…KQ엔터 상장 힘 싣",
+  "summary": {
+    "week_start": "2026-09-01",
+    "week_end": "2026-09-01",
+    "session_count": 1,
+    "total_analyzed": 5,
+    "bullish_count": 3,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": null,
+    "price_end": null,
+    "latest_price": null,
+    "today_price": null,
+    "today_change_pct": null,
+    "week_change_pct": null,
+    "biggest_impact": {
+      "title": "에이티즈, 멤버 전원 7년 재계약…KQ엔터 상장 힘 싣는다",
+      "score": 5,
+      "reason": "핵심 아티스트의 장기 재계약은 회사의 안정적인 수익 창출과 미래 성장 동력 확보에 매우 중요하며, IPO를 앞둔 시점에서 기업 가치를 크게 높이는 요인으로 작용하여 주가에 강력한 긍정적 영향을 미칠 것입니다.",
+      "source": "한국경제",
+      "date": "2025-07-10",
+      "category": "Contract",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "에이티즈, 멤버 전원 7년 재계약…KQ엔터 상장 힘 싣는다",
+        "score": 5,
+        "reason": "핵심 아티스트의 장기 재계약은 회사의 안정적인 수익 창출과 미래 성장 동력 확보에 매우 중요하며, IPO를 앞둔 시점에서 기업 가치를 크게 높이는 요인으로 작용하여 주가에 강력한 긍정적 영향을 미칠 것입니다.",
+        "source": "한국경제",
+        "date": "2025-07-10",
+        "category": "Contract"
+      },
+      {
+        "title": "KQ엔터테인먼트, 내년 상장 목표로 미래에셋증권과 IPO 주관 계약 체결",
+        "score": 4,
+        "reason": "IPO 추진은 기업 가치 상승에 대한 기대감을 높여 주가에 매우 긍정적인 영향을 미칠 수 있습니다. 특히 미래에셋증권과의 주관 계약은 상장 절차의 신뢰도를 더합니다.",
+        "source": "한국경제",
+        "date": "2025-04-15",
+        "category": "Market"
+      },
+      {
+        "title": "KQ엔터테인먼트, 에이티즈·싸이커스 동반 성장세로 IPO 기대감 증폭",
+        "score": 3,
+        "reason": "주력 아티스트들의 글로벌 팬덤 확장과 실적 성장은 IPO 성공 가능성을 높여 주가에 긍정적인 영향을 미칠 것으로 예상됩니다.",
+        "source": "한국경제",
+        "date": "2026-04-30",
+        "category": "Market"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "KQ엔터테인먼트, 에이티즈 악성 게시물에 법적 대응 재확인",
+        "score": 0,
+        "reason": "아티스트 보호를 위한 소속사의 법적 대응은 장기적으로 아티스트의 이미지와 활동에 긍정적인 영향을 줄 수 있으나, 단기적인 주가 영향은 미미할 것으로 예상됩니다.",
+        "source": "뉴시스",
+        "date": "2026-07-21",
+        "category": "Legal"
+      },
+      {
+        "title": "KQ엔터테인먼트, 2025년 실적 발표: 매출 1455억 원, 영업이익 100억 원 기록",
+        "score": 1,
+        "reason": "매출액은 크게 성장했으나 영업이익률이 하락한 점은 긍정적이지도 부정적이지도 않은 중립적인 영향을 미칠 것으로 보입니다. 이미 발표된 과거 실적이므로 현재 주가에 미치는 영향은 제한적입니다.",
+        "source": "MyMusicTaste",
+        "date": "2026-05-04",
+        "category": "Earnings"
+      }
+    ],
+    "neutral_count": 2,
+    "scene1_news": {
+      "bullish": {
+        "title": "에이티즈, 멤버 전원 7년 재계약…KQ엔터 상장 힘 싣는다",
+        "score": 5,
+        "reason": "핵심 아티스트의 장기 재계약은 회사의 안정적인 수익 창출과 미래 성장 동력 확보에 매우 중요하며, IPO를 앞둔 시점에서 기업 가치를 크게 높이는 요인으로 작용하여 주가에 강력한 긍정적 영향을 미칠 것입니다.",
+        "source": "한국경제",
+        "date": "2025-07-10",
+        "category": "Contract"
+      },
+      "bearish": null,
+      "neutral": {
+        "title": "KQ엔터테인먼트, 2025년 실적 발표: 매출 1455억 원, 영업이익 100억 원 기록",
+        "score": 1,
+        "reason": "매출액은 크게 성장했으나 영업이익률이 하락한 점은 긍정적이지도 부정적이지도 않은 중립적인 영향을 미칠 것으로 보입니다. 이미 발표된 과거 실적이므로 현재 주가에 미치는 영향은 제한적입니다.",
+        "source": "MyMusicTaste",
+        "date": "2026-05-04",
+        "category": "Earnings"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-09-01",
+    "today_news": [],
+    "signals": {
+      "dart_financials": {
+        "자산총계": 25270242479,
+        "부채총계": 14774061571,
+        "자본총계": 10496180908,
+        "매출액": 21962418843,
+        "영업이익": 264361037,
+        "period": "2026년 반기"
+      }
+    },
+    "prev_day": null,
+    "month_low": null,
+    "movement_reason": "2026년 9월 1일 KQ엔터테인먼트(010600.KQ) 주가 하락의 주요 원인에 대한 구체적인 정보는 검색 결과에서 확인할 수 없습니다. 현재까지의 검색 결과는 KQ엔터테인먼트가 2026년 상장을 목표로 기업공개(IPO)를 추진하고 있으며, 소속 아티스트들의 활동으로 높은 성장세를 보이고 있다는 긍정적인 내용이 주를 이룹니다. 특정 일자의 주가 변동 및 그 원인에 대한 실시간 분석은 일반적인 검색 엔진으로는 확인이 어렵습니다.",
+    "company_direction": "KQ엔터테인먼트는 아티스트 발굴 및 매니지먼트 주력 / 음반·영상 제작 유통 및 국내외 콘서트 개최로 매출 / 2026년 IPO 상장 추진 통한 신성장 동력 확보 목표 / 미래에셋증권과 상장 주관 계약 체결로 상장 준비 중 / ATEEZ, xikers 월드투어 등 글로벌 활동 확대 / 빌보드 차트 기록 등 K-POP 시장 내 글로벌 강자."
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "다들 상장 전이라 오해하지만 *코스닥 상장사*예요",
+        "*K-POP 아이돌* 발굴·매니지먼트로 매출을 내죠",
+        "글로벌 *K-POP 강자* 도약이 목표예요",
+        "*미래에셋증권*과 상장(IPO) 주관 계약을 맺었어요",
+        "*에이티즈·싸이커스* 월드투어가 대표작이죠",
+        "미국 *빌보드 차트*도 오른 글로벌 강자예요"
+      ],
+      "body": "다들 상장 전이라 오해하지만 *코스닥 상장사*예요\n*K-POP 아이돌* 발굴·매니지먼트로 매출을 내죠\n글로벌 *K-POP 강자* 도약이 목표예요\n*미래에셋증권*과 상장(IPO) 주관 계약을 맺었어요\n*에이티즈·싸이커스* 월드투어가 대표작이죠\n미국 *빌보드 차트*도 오른 글로벌 강자예요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: 에이티즈 전원이 *7년 재계약*하며 상장에 힘 실었어요",
+        "악재: 최근 뚜렷한 악재는 없었어요",
+        "보합: 2025년 매출 *1455억*·영업이익 *100억* 기록했네요"
+      ],
+      "body": "호재: 에이티즈 전원이 *7년 재계약*하며 상장에 힘 실었어요\n악재: 최근 뚜렷한 악재는 없었어요\n보합: 2025년 매출 *1455억*·영업이익 *100억* 기록했네요"
+    },
+    {
+      "index": 2,
+      "title": "숫자로보기",
+      "lines": [
+        "추세: 실시간 주가 데이터가 아직 잡히지 않았어요",
+        "밸류: 상장을 앞두고 *기업가치*를 다시 매기는 중이에요",
+        "재무: 반기 매출 *220억*, 영업이익 *3억*으로 흑자예요",
+        "총평: 자본 *105억* 대비 *부채 148억*, 안정적인 편이죠"
+      ],
+      "body": "추세: 실시간 주가 데이터가 아직 잡히지 않았어요\n밸류: 상장을 앞두고 *기업가치*를 다시 매기는 중이에요\n재무: 반기 매출 *220억*, 영업이익 *3억*으로 흑자예요\n총평: 자본 *105억* 대비 *부채 148억*, 안정적인 편이죠"
+    },
+    {
+      "index": 3,
+      "title": "다음주전망",
+      "lines": [
+        "관전 포인트는 *상장 일정*과 월드투어 흥행이에요",
+        "*미래에셋증권* 주관, 내년 상장 목표 유지 중이죠",
+        "누적 흐름은 *중립*, 이벤트 대기 국면이에요",
+        "*에이티즈·싸이커스* 투어 매출 반영도 주목돼요",
+        "변수는 *엔터 업종* 특유의 팬덤 변동성이 관건",
+        "오늘도 함께해 주셔서 고마워요!"
+      ],
+      "body": "관전 포인트는 *상장 일정*과 월드투어 흥행이에요\n*미래에셋증권* 주관, 내년 상장 목표 유지 중이죠\n누적 흐름은 *중립*, 이벤트 대기 국면이에요\n*에이티즈·싸이커스* 투어 매출 반영도 주목돼요\n변수는 *엔터 업종* 특유의 팬덤 변동성이 관건\n오늘도 함께해 주셔서 고마워요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A cinematic wide shot of a modern K-pop entertainment company headquarters interior, featuring sleek recording studios with soundproof walls, dance practice rooms with mirrored surfaces, and creative meeting spaces where music producers work. Purple analytical mood lighting bathes the scene, with soft neon accents highlighting the professional environment. In one corner, a small illuminated concert stage miniature sits as a subtle background element. Cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.",
+    "1": "A dynamic wide shot of a bustling K-pop industry scene showing rising global influence, featuring a busy backstage area with stylists preparing outfits, choreographers reviewing dance formations on tablets, and staff coordinating international tour logistics with world maps glowing in the background. Green growth-energy lighting emanates upward, symbolizing expansion. A small concert stage silhouette appears at the edge of the frame as a supporting element. Glowing motion lines suggest momentum, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.",
+    "2": "A calm cinematic wide shot of an entertainment company's analytics room where music industry data specialists review streaming metrics, fan demographics, and tour revenue on multiple monitors displaying abstract charts. The environment feels professional and thoughtful, with cyan-blue analytical lighting casting cool tones across the desks. In one corner, a small concert stage prop sits quietly as a subtle background element. Cool cyan-blue analytical mood, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.",
+    "3": "A vertical cinematic shot of a K-pop entertainment company's future vision, showing a grand global concert arena at golden hour with warm inspiring light streaming through massive glass ceilings, illuminated pathways leading toward international stages, and holographic tour route displays hinting at worldwide expansion. A small concert stage element with idol group silhouettes appears at the side as a supporting motif. Warm inspiring golden light bathes the scene, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo."
+  }
+}

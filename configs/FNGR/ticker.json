@@ -1,0 +1,32 @@
+{
+  "ticker": "FNGR",
+  "company_en": "FingerMotion, Inc.",
+  "company_ko": "핑거모션",
+  "industry_ko": "모바일 데이터 및 통신 서비스",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "A digital network of mobile devices and data streams, representing the company's core business of providing mobile data and telecommunications services.",
+  "brand_label": "FNGR BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "",
+  "key_people": [
+    "Chris Polimeni",
+    "Dan Pinto"
+  ],
+  "google_trends_keywords": [
+    "핑거모션",
+    "FNGR 주가",
+    "모바일 데이터 서비스",
+    "중국 통신",
+    "Chris Polimeni FingerMotion"
+  ],
+  "video_tags": [
+    "FingerMotion",
+    "FNGR stock",
+    "mobile data",
+    "telecommunications",
+    "China tech"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-08-28T12:40:07.723Z"
+}

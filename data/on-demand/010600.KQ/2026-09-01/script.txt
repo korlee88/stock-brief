@@ -1,0 +1,38 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+다들 상장 전이라 오해하지만 *코스닥 상장사*예요
+*K-POP 아이돌* 발굴·매니지먼트로 매출을 내죠
+글로벌 *K-POP 강자* 도약이 목표예요
+*미래에셋증권*과 상장(IPO) 주관 계약을 맺었어요
+*에이티즈·싸이커스* 월드투어가 대표작이죠
+미국 *빌보드 차트*도 오른 글로벌 강자예요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 에이티즈 전원이 *7년 재계약*하며 상장에 힘 실었어요
+악재: 최근 뚜렷한 악재는 없었어요
+보합: 2025년 매출 *1455억*·영업이익 *100억* 기록했네요
+
+SCENE_2_TITLE: 숫자로보기
+SCENE_2:
+추세: 실시간 주가 데이터가 아직 잡히지 않았어요
+밸류: 상장을 앞두고 *기업가치*를 다시 매기는 중이에요
+재무: 반기 매출 *220억*, 영업이익 *3억*으로 흑자예요
+총평: 자본 *105억* 대비 *부채 148억*, 안정적인 편이죠
+
+SCENE_3_TITLE: 다음주전망
+SCENE_3:
+관전 포인트는 *상장 일정*과 월드투어 흥행이에요
+*미래에셋증권* 주관, 내년 상장 목표 유지 중이죠
+누적 흐름은 *중립*, 이벤트 대기 국면이에요
+*에이티즈·싸이커스* 투어 매출 반영도 주목돼요
+변수는 *엔터 업종* 특유의 팬덤 변동성이 관건
+오늘도 함께해 주셔서 고마워요!
+
+IMAGE_PROMPT_0: A cinematic wide shot of a modern K-pop entertainment company headquarters interior, featuring sleek recording studios with soundproof walls, dance practice rooms with mirrored surfaces, and creative meeting spaces where music producers work. Purple analytical mood lighting bathes the scene, with soft neon accents highlighting the professional environment. In one corner, a small illuminated concert stage miniature sits as a subtle background element. Cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+IMAGE_PROMPT_1: A dynamic wide shot of a bustling K-pop industry scene showing rising global influence, featuring a busy backstage area with stylists preparing outfits, choreographers reviewing dance formations on tablets, and staff coordinating international tour logistics with world maps glowing in the background. Green growth-energy lighting emanates upward, symbolizing expansion. A small concert stage silhouette appears at the edge of the frame as a supporting element. Glowing motion lines suggest momentum, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+IMAGE_PROMPT_2: A calm cinematic wide shot of an entertainment company's analytics room where music industry data specialists review streaming metrics, fan demographics, and tour revenue on multiple monitors displaying abstract charts. The environment feels professional and thoughtful, with cyan-blue analytical lighting casting cool tones across the desks. In one corner, a small concert stage prop sits quietly as a subtle background element. Cool cyan-blue analytical mood, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo.
+
+IMAGE_PROMPT_3: A vertical cinematic shot of a K-pop entertainment company's future vision, showing a grand global concert arena at golden hour with warm inspiring light streaming through massive glass ceilings, illuminated pathways leading toward international stages, and holographic tour route displays hinting at worldwide expansion. A small concert stage element with idol group silhouettes appears at the side as a supporting motif. Warm inspiring golden light bathes the scene, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo.

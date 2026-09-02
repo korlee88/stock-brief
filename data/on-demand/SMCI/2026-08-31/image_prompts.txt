@@ -1,0 +1,14 @@
+# SMCI 주간 배경 이미지 프롬프트 — 2026-08-31
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A vast, immersive hyperscale data center hall serving as the main subject, endless rows of tall server racks stretching into deep perspective, cool ambient purple and violet analytical lighting bathing polished floors, subtle mist and glowing indicator lights suggesting deep computation, a single liquid-cooled AI server module placed small on the side as a secondary object, cinematic wide composition, moody analytical atmosphere, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A dynamic hyperscale AI data center corridor as the main subject with glowing green fiber optic cables streaming upward like rising energy currents, luminous emerald light trails flowing along server aisles symbolizing rapid growth momentum, cooling vapor swirling with vitality, a small compact GPU server unit tucked at the side as a secondary element, upward diagonal composition suggesting acceleration, vibrant growth atmosphere, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 정량지표
+A quiet network operations control room as the main subject, engineers silhouetted before vast cyan-blue holographic dashboards showing abstract performance waveforms and cluster telemetry, cool analytical lighting reflecting off polished consoles, faint grid patterns floating in the air suggesting deep data analysis, a single rack-mounted storage server sitting small on the side desk as a secondary object, calm contemplative mood, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬3 다음주전망
+A futuristic liquid-cooled AI data center chamber as the main subject viewed vertically, translucent coolant pipes glowing with warm golden light flowing through immersive tanks, soft inspiring sunrise-like illumination filtering through the architectural lattice above, a sense of visionary infrastructure powering tomorrow, one small integrated GPU server module placed at the lower side as a secondary element, uplifting cinematic atmosphere, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

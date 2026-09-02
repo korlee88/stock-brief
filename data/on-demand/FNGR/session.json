@@ -1,0 +1,99 @@
+[
+  {
+    "date": "2026-08-28",
+    "generatedAt": "2026-08-28T12:40:14.539Z",
+    "mode": "on-demand",
+    "latestPrice": 0.17,
+    "news": [
+      {
+        "id": 1,
+        "title": "FingerMotion, Lyken AI Computing 지분 9.9% 인수 완료",
+        "summary": "FingerMotion은 Alset AI Ventures로부터 Lyken AI Computing의 지분 9.9% 인수를 완료했으며, 이는 1,674,480주의 제한된 보통주를 발행하는 전액 주식 거래였습니다. 이 거래는 Lyken의 지분 가치를 약 5백만 달러로 평가합니다.",
+        "source": "StockTitan",
+        "date": "2026-08-17",
+        "category": "Contract"
+      },
+      {
+        "id": 2,
+        "title": "FingerMotion, Chris Polimeni를 최고재무책임자(CFO)로 임명",
+        "summary": "FingerMotion은 2026년 8월 17일부로 Chris Polimeni를 새로운 최고재무책임자(CFO)로 임명했다고 발표했습니다.",
+        "source": "Stocktwits",
+        "date": "2026-08-17",
+        "category": "Market"
+      },
+      {
+        "id": 3,
+        "title": "FingerMotion 주가, 지난 24시간 동안 11.26% 하락",
+        "summary": "FingerMotion (FNGR)의 주가는 지난 24시간 동안 11.26% 하락하여 현재 0.2008 USD를 기록하고 있습니다. 지난주 대비 37.85%, 지난달 대비 28.95% 하락했습니다.",
+        "source": "TradingView",
+        "date": "2026-08-28",
+        "category": "Market"
+      },
+      {
+        "id": 4,
+        "title": "FingerMotion 시가총액, 지난주 대비 27.35% 감소",
+        "summary": "FingerMotion의 현재 시가총액은 11.98백만 달러이며, 지난주 대비 27.35% 감소했습니다.",
+        "source": "TradingView",
+        "date": "2026-08-28",
+        "category": "Market"
+      },
+      {
+        "id": 5,
+        "title": "FingerMotion, 지난 분기 순이익 -2.00백만 USD 기록",
+        "summary": "FingerMotion은 지난 분기 순이익이 -2.00백만 USD를 기록했으며, 이는 이전 분기의 -1.78백만 USD보다 악화된 수치입니다.",
+        "source": "TradingView",
+        "date": "2026-08-28",
+        "category": "Earnings"
+      }
+    ],
+    "analyses": {
+      "1": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "이번 인수는 회사의 AI 역량을 강화할 수 있지만, 전액 주식 거래였고 이미 발표된 내용이므로 단기적인 주가 영향은 중립적일 것으로 예상됩니다."
+      },
+      "2": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "새로운 CFO의 임명은 일반적으로 회사의 재무 건전성과 투명성에 긍정적인 영향을 미칠 수 있지만, 이 소식은 이미 며칠 전에 발표되었고 시장에 반영되었을 가능성이 높으므로 단기적인 주가 영향은 중립적일 것으로 보입니다."
+      },
+      "3": {
+        "direction": "bearish",
+        "impact_score": -4,
+        "reasoning": "최근 주가 하락은 투자자 신뢰도 하락과 부정적인 시장 심리를 반영하며, 이는 단기적으로 주가에 부정적인 영향을 미칠 것입니다."
+      },
+      "4": {
+        "direction": "bearish",
+        "impact_score": -3,
+        "reasoning": "시가총액의 상당한 감소는 회사의 가치 하락을 의미하며, 이는 투자자들에게 부정적인 신호로 작용하여 주가에 하방 압력을 가할 수 있습니다."
+      },
+      "5": {
+        "direction": "bearish",
+        "impact_score": -3,
+        "reasoning": "순이익 감소는 회사의 수익성 악화를 나타내며, 이는 투자 심리에 부정적인 영향을 미쳐 주가 하락으로 이어질 수 있습니다."
+      }
+    },
+    "dailyForecasts": [],
+    "signals": {
+      "technicals": {
+        "price": 0.17,
+        "ma20": 0.25,
+        "vs_ma20_pct": -31.3,
+        "ma60": 0.37,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 20.3,
+        "rsi_state": "과매도(침체)",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 12.2,
+        "pos_52w_pct": 1.0,
+        "high_52w": 2.2,
+        "low_52w": 0.15,
+        "mom_5d_pct": -24.5,
+        "mom_20d_pct": -27.0
+      },
+      "valuation": {
+        "PER_선행": 5.8
+      }
+    }
+  }
+]
