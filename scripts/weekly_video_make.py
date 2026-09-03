@@ -256,18 +256,28 @@ async def gen_audio(segments, path):
     씬 맨 앞에는 SCENE_LEAD_MS 무음을 둬, 씬 전환(크로스페이드) 직후
     나레이션이 곧바로 시작되지 않고 ~0.5초 쉬어 가게 한다.
     pydub/ffmpeg 미가용 등 실패 시 공백으로 이어붙인 단일 TTS로 폴백.
+
+    반환값: [(start_sec, end_sec, text), ...] — 세그먼트별 실제 발화 구간(씬 시작 기준
+    초 단위). 롱폼 모드에서 자막을 나레이션 타이밍에 맞춰 한 줄씩 동적으로 표시하는 데
+    쓰인다(make_anime_frame). 합성 실패로 단일 TTS 폴백된 경우엔 타이밍을 알 수 없어
+    빈 리스트를 반환 — 이 경우 자막은 화면에 표시되지 않는다(에러 아님, 안전한 성능 저하).
     """
     segments = [s for s in segments if s and s.strip()]
     if not segments:
-        return
+        return []
     try:
         from pydub import AudioSegment
         line_gap = AudioSegment.silent(duration=LINE_PAUSE_MS)
         combined = None
+        timeline = []
+        cursor_ms = SCENE_LEAD_MS
         for i, seg in enumerate(segments):
             tmp = path.with_name(f"{path.stem}__seg{i}.mp3")
             await _tts(seg, tmp)
             piece = _trim_edge_silence(AudioSegment.from_file(tmp))
+            dur_ms = len(piece)
+            timeline.append((cursor_ms / 1000, (cursor_ms + dur_ms) / 1000, seg))
+            cursor_ms += dur_ms + LINE_PAUSE_MS
             combined = piece if combined is None else (combined + line_gap + piece)
             try: tmp.unlink()
             except Exception: pass
@@ -275,9 +285,21 @@ async def gen_audio(segments, path):
         combined = (AudioSegment.silent(duration=SCENE_LEAD_MS)
                     + combined + AudioSegment.silent(duration=SCENE_TAIL_MS))
         combined.export(str(path), format="mp3")
+        return timeline
     except Exception as e:
         print(f"   ⚠ 세그먼트 합성 실패({e}) → 단일 TTS 폴백", file=sys.stderr)
         await _tts(" ".join(segments), path)
+        return []
+
+
+def _caption_windows(timeline, total_dur):
+    """타임라인을 자막 표시 구간으로 변환 — 각 줄이 다음 줄 시작까지(줄 사이 무음 포함)
+    화면에 남아 있게 해 무음 구간마다 자막이 깜빡 사라지는 걸 방지한다."""
+    out = []
+    for i, (start, _end, text) in enumerate(timeline):
+        nxt = timeline[i + 1][0] if i + 1 < len(timeline) else total_dur
+        out.append((start, nxt, text))
+    return out
 
 # ── 마스코트 ─────────────────────────────────────────────────────────────────
 # PIL로 직접 그리던 이전 버전들(로봇→곰→단순 얼굴)이 매번 별로라는 피드백 —
@@ -412,9 +434,114 @@ def fx_ken_burns(img, t: float, dur: float, scene_idx: int):
 
     return zoomed.crop((cx, cy, cx + ow, cy + oh))
 
+# ── 롱폼 동적 자막 (draw_scene_landscape가 더는 대본을 PNG에 굽지 않으므로, 여기서
+# TTS 세그먼트 타이밍에 맞춰 한 줄씩 그린다 — 배경 이미지가 자막에 가려 안 보인다는
+# 피드백 대응. 실제 자막처럼 한 번에 한 줄만 화면 하단에 표시) ──────────────────
+_CAPTION_HL_RE = None
+
+def _caption_runs(text):
+    """'*...*' 마커 기준 (조각, 강조여부) 런 리스트 — prep.py의 split_runs와 동일 규칙."""
+    import re
+    global _CAPTION_HL_RE
+    if _CAPTION_HL_RE is None:
+        _CAPTION_HL_RE = re.compile(r"\*(.+?)\*")
+    runs, pos = [], 0
+    for m in _CAPTION_HL_RE.finditer(text):
+        if m.start() > pos:
+            runs.append((text[pos:m.start()], False))
+        runs.append((m.group(1), True))
+        pos = m.end()
+    if pos < len(text):
+        runs.append((text[pos:], False))
+    return [(s, hl) for s, hl in runs if s]
+
+
+def _find_caption(t, windows):
+    for start, end, text in windows:
+        if start <= t < end:
+            return text
+    return None
+
+
+_caption_font_cache = {}
+
+def _caption_font(size):
+    from PIL import ImageFont
+    f = _caption_font_cache.get(size)
+    if f is None:
+        try:
+            from pathlib import Path as _P
+            cands = [
+                "/usr/share/fonts/truetype/nanum/NanumSquareRoundB.ttf",
+                "/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf",
+            ]
+            path = next((c for c in cands if _P(c).exists()), None)
+            f = ImageFont.truetype(path, size) if path else ImageFont.load_default()
+        except Exception:
+            f = ImageFont.load_default()
+        _caption_font_cache[size] = f
+    return f
+
+
+def draw_dynamic_caption(img, text):
+    """자막처럼 화면 하단 중앙에 최대 2줄만 표시 — 배경을 가리지 않도록 텍스트
+    바로 뒤에만 살짝 어두운 바를 깔고, 나머지 배경은 그대로 드러낸다."""
+    import re
+    from PIL import Image, ImageDraw
+    if not text:
+        return img
+
+    img = img.convert("RGBA")
+    draw = ImageDraw.Draw(img)
+    font = _caption_font(48)
+    max_w = int(W * 0.82)
+
+    runs = _caption_runs(text)
+    tokens = []
+    for seg, hl in runs:
+        for tok in re.findall(r"\S+|\s+", seg):
+            tokens.append((tok, hl))
+
+    def tok_w(s):
+        return draw.textlength(s, font=font)
+
+    lines, cur, cur_w = [], [], 0
+    for tok, hl in tokens:
+        w = tok_w(tok)
+        if cur and cur_w + w > max_w:
+            lines.append(cur); cur, cur_w = [], 0
+        if cur or not tok.isspace():
+            cur.append((tok, hl)); cur_w += w
+    if cur:
+        lines.append(cur)
+    lines = lines[-2:] or [[("", False)]]   # 최대 2줄(길면 뒷부분 우선 — 앞은 이미 지나간 맥락)
+
+    bb = draw.textbbox((0, 0), "가", font=font)
+    line_h = (bb[3] - bb[1]) + 16
+    pad_x, pad_y = 28, 16
+    block_h = line_h * len(lines) + pad_y * 2
+    y0 = H - 70 - block_h
+
+    max_line_w = max((sum(tok_w(t) for t, _ in ln) for ln in lines), default=0)
+    bx0 = (W - max_line_w) / 2 - pad_x
+    bx1 = (W + max_line_w) / 2 + pad_x
+    draw.rounded_rectangle([bx0, y0, bx1, y0 + block_h], radius=14, fill=(8, 12, 24, 175))
+
+    y = y0 + pad_y
+    for line in lines:
+        total = sum(tok_w(t) for t, _ in line)
+        x = (W - total) / 2
+        for tok, hl in line:
+            draw.text((x, y), tok, font=font,
+                      fill=((255, 215, 0, 255) if hl else (255, 255, 255, 255)),
+                      stroke_width=2, stroke_fill=(8, 12, 30, 255))
+            x += tok_w(tok)
+        y += line_h
+    return img.convert("RGB")
+
 # ── 애니메이션 프레임 합성 ────────────────────────────────────────────────────
 
-def make_anime_frame(t, base_arr, accent, dur, scene_idx):
+def make_anime_frame(t, base_arr, accent, dur, scene_idx, caption_windows=None):
     import numpy as np
     from PIL import Image
     img = Image.fromarray(base_arr).copy()
@@ -422,7 +549,11 @@ def make_anime_frame(t, base_arr, accent, dur, scene_idx):
     is_intro   = (scene_idx == 0)   # 주간 브리핑(첫 씬) — 부드러운 페이드인
     is_closing = (scene_idx == 3)   # 미래 비전(마지막 씬) — 페이드아웃
 
-    # Ken Burns 효과 제거 — 정적 이미지 유지
+    if MODE == "long":
+        # 롱폼은 배경 사진이 주인공이므로 은은한 팬/줌(Ken Burns)으로 "정적 이미지"
+        # 느낌을 줄인다 — 자막·마스코트 등 오버레이보다 먼저 적용해 그것들은 고정.
+        img = fx_ken_burns(img, t, dur, scene_idx)
+    # Ken Burns 효과 제거 — 정적 이미지 유지 (쇼츠는 기존 그대로 무변경)
 
     # 차분한 분석체 톤 — 자극적 효과 제거 (속도선·플래시 약화)
     img = fx_scanline(img, t)
@@ -438,7 +569,11 @@ def make_anime_frame(t, base_arr, accent, dur, scene_idx):
         img = fx_fade_out(img, t, dur, 0.40)
 
     if MODE == "long":
-        # 롱폼(16:9)은 이미 풀프레임 캡션 이미지 — 쇼츠처럼 "핸드폰 화면 여백" 확보용
+        # 현재 나레이션 줄만 자막처럼 하단에 표시(전체 대본을 한 번에 굽지 않음 —
+        # 배경이 자막에 가려 안 보인다는 피드백 대응).
+        caption = _find_caption(t, caption_windows or [])
+        img = draw_dynamic_caption(img, caption)
+        # 롱폼(16:9)은 이미 풀프레임 이미지 — 쇼츠처럼 "핸드폰 화면 여백" 확보용
         # 90% 축소·중앙 레터박싱을 할 필요가 없다(캔버스 자체가 최종 프레임).
         return np.array(img)
 
@@ -470,10 +605,11 @@ async def process_scene(scene, report_dir):
     segments = build_scene_tts_segments(idx, lines) or [title]
     audio_path = report_dir / f"scene_{idx:02d}.mp3"
     print(f"   🎙 씬 {idx} [{title[:20]}] 나레이션 생성... ({len(segments)}개 세그먼트)")
-    await gen_audio(segments, audio_path)
+    timeline = await gen_audio(segments, audio_path)
 
     audio = AudioFileClip(str(audio_path))
     dur   = max(audio.duration, MIN_SCENE_SEC)
+    caption_windows = _caption_windows(timeline, dur) if MODE == "long" else None
 
     if img_path.exists():
         base_arr = np.array(Image.open(img_path).convert("RGB"))
@@ -481,7 +617,7 @@ async def process_scene(scene, report_dir):
         base_arr = np.full((H, W, 3), (14, 17, 23), dtype=np.uint8)
 
     def make_frame(t):
-        return make_anime_frame(t, base_arr, accent, dur, idx)
+        return make_anime_frame(t, base_arr, accent, dur, idx, caption_windows)
 
     video = VideoClip(make_frame, duration=dur).with_fps(FPS)
     video = video.with_audio(audio)

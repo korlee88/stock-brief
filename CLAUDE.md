@@ -50,12 +50,15 @@
   하울의 움직이는 성 OST 분위기 참고(사용자 요청) — 실제 멜로디 아닌 오리지널 작곡,
   저작권 곡 재현 금지.
 - **롱폼 "기업소개" 모드**(사용자 요청 — 쇼츠는 주가분석 중심이라 조회수 저조): `MODE=short`(기본)
-  /`long` env로 분기. long은 3분30초·가로 16:9, 씬0=주력 사업모델/씬1=현재 상황/씬2=주변 상황
+  /`long` env로 분기. long은 가로 16:9, 씬0=주력 사업모델/씬1=현재 상황/씬2=주변 상황
   (업계·경쟁구도)/씬3=메이저 투자사 전망(목표주가) — 당일 주가 등락·기술적 분석은 다루지 않는다.
-  씬 이미지는 4개 전부 풀블리드 배경+하단 캡션(`draw_scene_landscape`, 쇼츠의 씬별 카드
-  레이아웃과 다름). 대상 종목은 사용자가 인기순위에서 직접 "처음 보는 회사"를 골라 지정
-  (자동 판별 없음). 출력은 `REPORT_BASE=data/on-demand-long/<T>`로 쇼츠 트리와 완전 분리—
-  `on-demand.html`에 포맷 토글(쇼츠/기업소개) 추가, `data/on-demand-long/latest.json`도 별도.
+  각 씬 5~6줄·핵심만(분량보다 밀도 우선 — 사용자 피드백: 화면 잘 안 보이고 대본 과다).
+  씬 배경은 풀블리드 사진(`draw_scene_landscape`, 정적 텍스트 없음)에 Ken Burns 팬/줌 —
+  나레이션은 PNG에 굽지 않고 `weekly_video_make.py`가 TTS 세그먼트 타이밍에 맞춰 한 줄씩
+  실제 자막처럼 하단에 동적으로 그린다(`draw_dynamic_caption`, 배경 최대한 노출). 대상
+  종목은 사용자가 인기순위에서 직접 "처음 보는 회사"를 골라 지정(자동 판별 없음). 출력은
+  `REPORT_BASE=data/on-demand-long/<T>`로 쇼츠 트리와 완전 분리 — `on-demand.html`에 포맷
+  토글(쇼츠/기업소개) 추가, `data/on-demand-long/latest.json`도 별도.
 
 ## 웹 (on-demand.html — GitHub Pages)
 3열: 리모컨(한국·미국 종목 검색 `data/kr-stocks.json`·`us-stocks.json`, 쇼츠/기업소개 포맷 토글) | 구글 관심 TOP30(`data/stock-trends.json`, 관리자 리셋 시만 갱신) | 최근 생성 영상(쇼츠 `data/on-demand/latest.json` + 기업소개 `data/on-demand-long/latest.json`, 씬 미리보기+YouTube 카피).

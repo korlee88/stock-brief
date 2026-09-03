@@ -861,10 +861,13 @@ SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({company_
 # 안 나와, 잘 알려지지 않은 회사를 골라 사업모델·상황·주변상황·투자사 전망 위주로 소개하는
 # 다큐멘터리형 롱폼을 별도 모드로 추가. 씬 마커(SCENE_i_TITLE/SCENE_i/IMAGE_PROMPT_i)는
 # 쇼츠와 동일(4개) — 검증 로직(_REQUIRED_SCRIPT_MARKERS)을 그대로 재사용하기 위함.
-LONG_SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 데이터를 바탕으로, 유튜브 롱폼(3분 30초 안팎, 가로 16:9)
+LONG_SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 데이터를 바탕으로, 유튜브 롱폼(가로 16:9)
 "기업 소개" 영상 나레이션 대본을 작성해줘. **시청자 대부분이 이 회사를 처음 들어본다고 가정**하고,
 다큐멘터리 설명 영상처럼 차근차근 소개한다. **오늘의 주가 등락이나 기술적 분석은 다루지 않는다** —
 이 영상의 목적은 "이런 회사가 있다"는 걸 알기 쉽게 소개하는 것이다.
+
+**분량보다 밀도가 우선이다** — 화면에는 한 줄씩 자막처럼 표시되므로, 정보를 욱여넣지 말고
+꼭 필요한 핵심만 추려서 짧고 또렷하게 말한다. 애매하거나 부차적인 내용은 과감히 뺀다.
 
 === 종목 사실 (고정·반드시 준수) ===
 • {grounding}
@@ -874,8 +877,9 @@ LONG_SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 데이터를 바탕으로, 유�
 • 다정하게 말 걸기: "여러분", "같이 알아볼까요?", "~한 점이 흥미롭죠" 처럼 대화하듯 자연스럽게
 • 딱딱한 보고서 말투("~로 분석된다", "~로 전망된다") 금지 — 사람이 설명하듯 풀어 쓴다
 • 단정적 매수·매도 권유 금지, 내부 점수 표기 금지
-• 각 씬은 8~10줄, 한 줄 45~60자 — 롱폼이라 쇼츠보다 한 줄 호흡이 길어도 된다
-• 각 줄에서 가장 중요한 핵심 글귀 1개를 *별표*로 감싼다 (한 줄 최대 1~2개)
+• 각 씬은 5~6줄, 한 줄 28~40자 — 자막 한 줄에 들어갈 분량으로 짧고 간결하게. 한 줄에 한
+  가지 사실만 담는다(여러 정보를 한 줄에 욱여넣지 말 것).
+• 각 줄에서 가장 중요한 핵심 글귀 1개를 *별표*로 감싼다 (한 줄 최대 1개)
 
 === 쉬운 말 · 맥락 원칙 (반드시 준수 — 주식·이 회사를 처음 접하는 시청자 기준) ===
 • 전문용어·영문 약어는 쉬운 말로 풀거나 짧은 설명을 붙인다 (예: "HBM" → "AI용 메모리(HBM)").
@@ -895,51 +899,51 @@ LONG_SCRIPT_PROMPT_TEMPLATE = """아래 {ticker} 데이터를 바탕으로, 유�
 - 주가 변동 배경(참고용, 씬1에 짧게만 활용): {movement_reason_str}
 - 다음주 가격 예측(AI 모델, 참고용): {next_week_str}
 
-=== 씬 구성 (총 4씬, 각 8~10줄) ===
+=== 씬 구성 (총 4씬, 각 5~6줄 — 핵심만) ===
 
 【씬 0 — 주력 사업모델】
-※ 이 회사는 무엇을 만들어 어떻게 돈을 버는가. 구체적 제품·서비스·매출 구조를 처음 듣는 사람도
-  그림이 그려지게 설명한다. 주가 등락 분석은 하지 않는다(줄1에서 현재가만 짧게 언급 가능).
+※ 이 회사는 무엇을 만들어 어떻게 돈을 버는가. 가장 중요한 한 가지만 또렷하게 그려지게
+  설명한다. 주가 등락 분석은 하지 않는다(줄1에서 현재가만 짧게 언급 가능).
 - 줄1: 오프닝 훅 (위 가이드대로, 현재가는 짧게만 곁들여도 됨)
-- 줄2~4: 주력 사업 — 무엇으로 돈 버는 회사인지, 대표 제품·서비스 ({industry_ko} 산업)
-- 줄5~6: 회사가 추구하는 방향·비전, 핵심 기술({future_tech})
-- 줄7~8(~10): 시장 내 위치·강점 — 왜 주목할 만한 회사인지
+- 줄2~3: 주력 사업 — 무엇으로 돈 버는 회사인지, 대표 제품·서비스 ({industry_ko} 산업)
+- 줄4: 회사가 추구하는 방향·비전 또는 핵심 기술({future_tech}) 중 더 중요한 하나만
+- 줄5~6: 시장 내 위치·강점 — 왜 주목할 만한 회사인지, 가장 인상적인 사실 하나
 
 【씬 1 — 현재 상황】
-※ 최근 실적·재무·주요 이벤트 등 "지금 이 회사가 어떤 상태인가"를 다룬다. 오늘 하루의 주가
-  등락이 아니라 최근 분기·최근 몇 달 흐름 관점으로 서술한다.
-- 8~10줄: 최근 실적/재무 상황, 최근 투자·이벤트, 사업 진행 상황을 구체 수치와 함께
+※ 최근 실적·재무·주요 이벤트 중 가장 중요한 것 위주로. 오늘 하루의 주가 등락이 아니라
+  최근 분기·최근 몇 달 흐름 관점으로 서술한다.
+- 5~6줄: 최근 실적/재무 상황, 최근 투자·이벤트 중 핵심만 골라 구체 수치와 함께
 
 【씬 2 — 주변 상황(업계·경쟁 구도)】
-※ 이 회사가 속한 산업 전체의 흐름과 경쟁사 대비 위치를 다룬다.
-- 8~10줄: 업계 트렌드, 경쟁사({competitor_ticker}) 비교, 시장 점유율·경쟁 우위, 산업 전망
+※ 이 회사가 속한 산업 전체의 흐름과 경쟁사 대비 위치 중 가장 눈에 띄는 것만.
+- 5~6줄: 업계 트렌드, 경쟁사({competitor_ticker}) 비교, 시장 점유율·경쟁 우위 중 핵심만
 
 【씬 3 — 메이저 투자사 전망 (클로징)】
 ※ 애널리스트·증권사 등 주요 투자사들의 목표주가·전망을 다룬다. 목표주가는 [정량 신호]에 있는
   수치만 사용하고 없는 숫자를 지어내지 않는다. 데이터가 부족해도 "예측 데이터 없이" 같은
   결핍 고백 문구 금지 — 아는 사실(산업 전망·로드맵)로 채운다.
-- 줄1~2: 주요 증권사/기관의 목표주가·투자의견 요약 (수치 있는 것만)
-- 줄3~4: 그 전망의 근거 (밸류·재무·성장성 등)
-- 줄5~7(~9): 향후 지켜볼 변수·이벤트
+- 줄1: 주요 증권사/기관의 목표주가·투자의견 요약 (수치 있는 것만)
+- 줄2: 그 전망의 핵심 근거 (밸류·재무·성장성 중 하나)
+- 줄3~5: 향후 지켜볼 변수·이벤트 중 가장 중요한 것
 - 마지막 줄: 따뜻한 마무리 인사 (20자 이내)
 
 === 출력 형식 (반드시 준수 — 마커는 쇼츠와 동일) ===
 ※ 핵심 수치·키워드는 *별표*로 감싸 강조한다.
 SCENE_0_TITLE: [6자 이내, 예: "사업모델" "무슨회사"]
 SCENE_0:
-[줄1~8~10, 위 씬0 구성대로]
+[줄1~5~6, 위 씬0 구성대로]
 
 SCENE_1_TITLE: [6자 이내, 예: "현재상황" "요즘어때"]
 SCENE_1:
-[줄1~8~10, 위 씬1 구성대로]
+[줄1~5~6, 위 씬1 구성대로]
 
 SCENE_2_TITLE: [6자 이내, 예: "주변상황" "업계구도"]
 SCENE_2:
-[줄1~8~10, 위 씬2 구성대로]
+[줄1~5~6, 위 씬2 구성대로]
 
 SCENE_3_TITLE: [6자 이내, 예: "투자사전망" "전문가는"]
 SCENE_3:
-[줄1~8~10, 위 씬3 구성대로]
+[줄1~5~6, 위 씬3 구성대로]
 
 === 배경 이미지 프롬프트 (Gemini Imagen용, 영어, 4개 — 전부 16:9 가로 풀프레임) ===
 각 60단어 이상. 반드시 포함: "no text, no letters, no watermark, no logo", "ultra-high resolution".
@@ -973,13 +977,15 @@ LONG_SCRIPT_REVIEW_PROMPT_TEMPLATE = """아래는 방금 생성한 {ticker}({com
    이 점검은 모든 씬에 적용한다.
 
 === 반드시 지킬 것 ===
-• 출력 형식(SCENE_*_TITLE/SCENE_*/IMAGE_PROMPT_*)·씬별 줄 수(8~10줄)·줄당 글자 수 제한(45~60자)·
+• 출력 형식(SCENE_*_TITLE/SCENE_*/IMAGE_PROMPT_*)·씬별 줄 수(5~6줄)·줄당 글자 수 제한(28~40자)·
   *별표* 강조 표기·내부 점수 미표기 규칙은 원본과 동일하게 유지한다.
 • IMAGE_PROMPT_0~3는 원본 그대로 한 글자도 바꾸지 않고 그대로 옮긴다.
 • 이미 자연스럽고 생동감 있는 줄은 건드리지 않는다 — 트집을 잡기 위한 불필요한 재작성 금지.
 • 고친 내용이 없다면 원본을 그대로 출력해도 된다.
 • 오늘 하루의 주가 등락·기술적 분석 내용이 새로 섞여 있으면(이 모드는 다루지 않음) 제거하고
   사업모델/상황/주변상황/투자사 전망 내용으로 대체한다.
+• 줄이 길거나(40자 초과) 한 줄에 여러 사실이 섞여 있으면, 가장 중요한 사실 하나만 남기고
+  나머지는 과감히 쳐낸다(화면에 자막처럼 한 줄씩 표시되므로 길면 잘려 보인다).
 
 === 원본 대본 ===
 {raw_script}
@@ -2335,15 +2341,18 @@ def _apply_frame_overlay(img):
 
 
 def draw_scene_landscape(scene, font_reg, font_bold, bg_path: Path | None):
-    """롱폼(16:9) 전용 씬 이미지 — 4개 씬 전부 동일한 하나의 템플릿(풀블리드 배경 + 하단
-    캡션 바)을 쓴다. 쇼츠처럼 씬마다 다른 카드 레이아웃(포토카드/뉴스카드/지표카드)을
-    가로용으로 새로 만들지 않고 단순화한 것 — 다큐멘터리형 설명 영상에 자연스럽고
-    구현 위험도 낮다(사용자 요청 롱폼 모드, build_scene_image의 기존 씬별 레이아웃과는 무관)."""
+    """롱폼(16:9) 전용 씬 배경 이미지 — 4개 씬 전부 동일한 하나의 템플릿(풀블리드 배경 +
+    좌상단 씬 제목 배지)을 쓴다. 쇼츠처럼 씬마다 다른 카드 레이아웃(포토카드/뉴스카드/
+    지표카드)을 가로용으로 새로 만들지 않고 단순화한 것.
+
+    나레이션 텍스트는 이 정적 PNG에 굽지 않는다 — 배경 이미지가 자막에 가려 안 보인다는
+    피드백(사용자 요청)으로, 대본 전체를 한 번에 표시하는 대신 weekly_video_make.py가
+    TTS 세그먼트 타이밍에 맞춰 한 줄씩 자막처럼 동적으로 그린다(draw_dynamic_caption).
+    이 함수는 배경 + 씬 제목 배지만 담당."""
     from PIL import Image as PILImage, ImageDraw, ImageFont
 
     idx    = scene["index"]
     title  = scene["title"] or f"씬 {idx}"
-    lines  = scene.get("lines") or [l.strip() for l in (scene.get("body") or "").split("\n") if l.strip()]
     accent = SCENE_ACCENTS[idx]
 
     img, draw = make_canvas(accent)
@@ -2367,12 +2376,6 @@ def draw_scene_landscape(scene, font_reg, font_bold, bg_path: Path | None):
             draw.line([(0, yy), (W, yy)], fill=(
                 int(18 + 14 * t), int(28 + 24 * t), int(50 + 30 * t)))
 
-    # ── 하단 캡션 영역 어둡게(가독성용 스크림) ──
-    SCRIM_TOP = int(H * 0.42)
-    overlay = PILImage.new("RGBA", (W, H - SCRIM_TOP), (8, 12, 24, 195))
-    img.paste(overlay, (0, SCRIM_TOP), overlay)
-    draw = ImageDraw.Draw(img)
-
     def fnt(path, size):
         try:
             return ImageFont.truetype(path, size) if path else ImageFont.load_default()
@@ -2380,9 +2383,9 @@ def draw_scene_landscape(scene, font_reg, font_bold, bg_path: Path | None):
             return ImageFont.load_default()
 
     f_title = fnt(font_bold, 52)
-    f_body  = fnt(font_reg, 44)
 
-    # ── 상단 좌측 씬 제목 배지 ──
+    # ── 상단 좌측 씬 제목 배지 (배경 위 유일한 고정 텍스트 — 자막은 동적으로 별도 합성) ──
+    # 배지 뒤에만 살짝 어둡게 깔아 배경을 최대한 가리지 않으면서 가독성 확보.
     badge_pad_x, badge_pad_y = 34, 20
     tw = draw.textlength(title, font=f_title)
     bx0, by0 = 70, 56
@@ -2390,18 +2393,6 @@ def draw_scene_landscape(scene, font_reg, font_bold, bg_path: Path | None):
     draw.rounded_rectangle([bx0, by0, bx1, by1], radius=16, fill=accent)
     draw.text((bx0 + badge_pad_x, by0 + badge_pad_y), title, font=f_title, fill=WHITE,
               stroke_width=2, stroke_fill=STROKE)
-
-    # ── 하단 캡션 텍스트 (씬 나레이션 8~10줄, *강조* 마커는 draw_rich_text가 골드로 렌더) ──
-    x_pad = 100
-    max_w = W - x_pad * 2
-    y = SCRIM_TOP + 50
-    body_lines = [l for l in lines if l.strip() and not l.startswith("SCENE")]
-    for line in body_lines:
-        y = draw_rich_text(draw, line, x_pad, y, f_body, WHITE, max_w,
-                            hl_fill=KEY, stroke_width=2, stroke_fill=STROKE, line_gap=10)
-        y += 6
-        if y > H - 40:
-            break   # 캡션 영역 초과 방지(과다 줄 안전망)
 
     return img
 
