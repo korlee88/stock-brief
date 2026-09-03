@@ -1,0 +1,14 @@
+# 010600.KQ 주간 배경 이미지 프롬프트 — 2026-09-03
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A grand K-pop entertainment company headquarters interior with a spacious modern lobby, glossy marble floors reflecting soft purple ambient lighting, tall glass walls showcasing rehearsal studios where silhouettes of dancers practice choreography, warm violet spotlights highlighting a curved reception desk, on the far right side a small vibrant K-pop concert stage miniature with dynamic lighting and a tiny LED screen as a subtle background element, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape full-frame, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A bustling backstage production area of a K-pop management company with staff coordinating tour logistics, green-tinted monitors displaying performance schedules and revenue growth charts, sound engineers adjusting mixing consoles, wardrobe racks with stage outfits illuminated by fresh emerald accent lights, financial documents and touring maps spread on a wooden table, on the left corner a small distant concert stage with light sticks glowing softly as a secondary element, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape full-frame, no text, no letters, no watermark, no logo
+
+## 씬2 정량지표
+A wide analytical view of the global K-pop industry landscape featuring a modern data visualization room with cyan holographic world maps showing fandom hotspots across North America, Europe and Asia, translucent screens displaying comparative streaming metrics between multiple entertainment agencies, sleek desks with analysts studying industry trends, cool teal lighting creating a strategic atmosphere, on the far right a small K-pop concert stage silhouette with light sticks as a minor background accent, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape full-frame, no text, no letters, no watermark, no logo
+
+## 씬3 다음주전망
+An inspiring golden-hour view of a future-forward K-pop entertainment complex with a sunlit rooftop terrace overlooking Seoul skyline, warm amber light bathing modern glass architecture symbolizing IPO growth and global expansion, elegant meeting lounge with executives reviewing world tour roadmaps, plants and awards subtly displayed, on the left corner a small distant vibrant concert stage with tiny glowing light sticks as a subtle secondary element, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape full-frame, no text, no letters, no watermark, no logo
