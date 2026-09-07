@@ -1,0 +1,47 @@
+name: 주간 주요 일정 (카카오 알림)
+
+on:
+  schedule:
+    # 매주 일요일 22:00 KST (= 13:00 UTC) — 다가올 한 주 일정을 미리 받는다
+    - cron: '0 13 * * 0'
+  workflow_dispatch:
+
+jobs:
+  weekly-calendar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 3.11 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 의존성 설치
+        # 이 스크립트는 google-genai 외엔 표준 라이브러리만 쓴다 (requirements.txt 전체는 불필요)
+        run: pip install google-genai --quiet
+
+      - name: 주간 일정 수집 · 카카오 발송
+        env:
+          GEMINI_API_KEY:      ${{ secrets.GEMINI_API_KEY }}
+          KAKAO_REST_API_KEY:  ${{ secrets.KAKAO_REST_API_KEY }}
+          KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
+        run: python scripts/weekly_calendar.py
+
+      - name: 결과 커밋 & 푸시
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Weekly Calendar Bot"
+          git add data/calendar/
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음 — 커밋 건너뜀"
+          else
+            git commit -m "chore: 주간 주요 일정 갱신 $(TZ='Asia/Seoul' date +'%Y-%m-%d %H:%M KST')"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
