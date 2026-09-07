@@ -1,0 +1,43 @@
+SCENE_0_TITLE: 무슨회사
+SCENE_0:
+혹시 고프로 들어보셨나요? 지금 주가는 *$1.70*이에요.
+서핑, 스키 탈 때 헬멧에 붙이는 *액션 카메라* 회사예요.
+대표작이 손바닥만 한 *HERO 시리즈* 카메라죠.
+작고 튼튼해서 *극한 스포츠 영상*을 생생히 담아내거든요.
+드론, 서핑보드, 헬멧 어디든 붙이는 게 매력이에요.
+한때 액션캠 하면 *고프로가 대명사*였던 시절도 있었죠.
+
+SCENE_1_TITLE: 요즘어때
+SCENE_1:
+요즘 고프로는 *큰 변화*를 겪고 있어요.
+자회사 *Starman Optical을 2.85억 달러*에 팔았거든요.
+카메라 한 우물만 파던 회사가 방향을 튼 거죠.
+새로 노리는 건 *AI 영상인식과 국방 광학* 사업이에요.
+소비자 카메라 시장이 예전 같지 않다는 뜻이죠.
+지금은 *체질 개선*을 시도하는 중이라고 보시면 돼요.
+
+SCENE_2_TITLE: 업계구도
+SCENE_2:
+액션캠 시장은 지금 *경쟁이 정말 치열*해요.
+드론으로 유명한 *DJI*가 액션캠까지 밀고 들어왔거든요.
+360도 카메라 강자 *Insta360*도 무섭게 크고 있죠.
+그 사이에서 고프로 *점유율은 계속 밀리는* 모습이에요.
+원조지만 후발주자에게 자리를 내주는 상황이랄까요.
+그래서 신사업 확장이 더 절실해진 거예요.
+
+SCENE_3_TITLE: 전문가는
+SCENE_3:
+증권가 목표주가는 평균 *$0.50* 수준으로 잡혀요.
+*선행 PER -170배*(적자라 이익 대비 평가 어려움)예요.
+관건은 *국방 광학 사업*이 실제 매출로 이어질지예요.
+차세대 HERO 카메라와 AI 기능도 반등 카드가 될 수 있죠.
+매각 자금을 *어디에 재투자*할지도 지켜봐야 해요.
+오늘도 함께해줘서 고마워요.
+
+IMAGE_PROMPT_0: A breathtaking wide cinematic shot of a lone surfer riding a massive turquoise wave at golden hour transitioning into purple twilight, sea spray glowing, dramatic ocean horizon stretching across the frame, a tiny compact rugged action camera mounted on the tip of the surfboard visible in the lower right corner as a small secondary object, purple introductory mood lighting, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A modern optical engineering laboratory with technicians examining precision lens components and AI vision sensors on illuminated workbenches, holographic optical diagrams floating subtly in the background, industrial defense-grade equipment visible, a small compact action camera resting quietly on the corner of a workbench as a secondary object, soft green progress mood lighting, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A dramatic wide shot of multiple drones and 360-degree camera rigs flying and hovering across a vast mountain ridge at dusk, competing camera operators filming extreme mountain bikers descending rocky trails, dynamic aerial choreography filling the frame, one small compact action camera mounted on a helmet in the lower left corner as a secondary object, cyan analytical mood lighting with data-driven atmosphere, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_3: A visionary landscape of a futuristic outdoor adventure park where AI-guided drones assist paragliders soaring over golden canyons at sunrise, advanced optical sensor towers glinting in warm light, human explorers preparing for expedition, a small compact rugged action camera clipped to a backpack strap in the lower right corner as a subtle secondary object, inspiring gold prospective mood lighting, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo

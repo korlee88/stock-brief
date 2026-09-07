@@ -1,0 +1,255 @@
+{
+  "generated_at": "2026-09-08",
+  "generated_by": "Claude Opus 4",
+  "title": "혹시 고프로 들어보셨나요? 지금 주가는 *$1.70*이에요.",
+  "subtitle": "2026-09-08 ~ 2026-09-08 · GoPro, AI 피벗 및 데이터 센터 진출 소식에 주",
+  "summary": {
+    "week_start": "2026-09-08",
+    "week_end": "2026-09-08",
+    "session_count": 1,
+    "total_analyzed": 7,
+    "bullish_count": 4,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 1.7,
+    "price_end": 1.7,
+    "latest_price": 1.7,
+    "today_price": 1.7,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "GoPro, AI 피벗 및 데이터 센터 진출 소식에 주가 급등",
+      "score": 4,
+      "reason": "AI 및 데이터 센터 시장은 현재 높은 성장세를 보이는 분야로, GoPro의 이러한 전략적 전환은 투자자들에게 새로운 성장 기회로 인식되어 주가에 긍정적인 영향을 미쳤습니다.",
+      "source": "CNBC",
+      "date": "2026-09-01",
+      "category": "Market",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "GoPro, AI 피벗 및 데이터 센터 진출 소식에 주가 급등",
+        "score": 4,
+        "reason": "AI 및 데이터 센터 시장은 현재 높은 성장세를 보이는 분야로, GoPro의 이러한 전략적 전환은 투자자들에게 새로운 성장 기회로 인식되어 주가에 긍정적인 영향을 미쳤습니다.",
+        "source": "CNBC",
+        "date": "2026-09-01",
+        "category": "Market"
+      },
+      {
+        "title": "GoPro, Starman Optical과의 합병 계약 체결 및 AI 데이터 센터 시장 진출",
+        "score": 4,
+        "reason": "이번 합병은 GoPro가 새로운 고성장 시장으로 진출하고 사업 다각화를 꾀한다는 점에서 긍정적입니다. 특히 AI 데이터 센터 시장 진출은 미래 성장 동력을 확보하는 데 기여할 것으로 보입니다.",
+        "source": "PRNewsWire",
+        "date": "2026-09-01",
+        "category": "Contract"
+      },
+      {
+        "title": "GoPro, YouTube 스타 Markiplier의 대규모 지분 확보 및 주가 급등",
+        "score": 3,
+        "reason": "유명 인사의 지분 확보는 기업에 대한 대중의 인지도를 높이고, 특히 젊은 투자자층의 관심을 끌어 단기적인 주가 상승을 유도할 수 있습니다.",
+        "source": "Fast Company",
+        "date": "2026-09-01",
+        "category": "Market"
+      },
+      {
+        "title": "GoPro, Nicholas Woodman CEO로부터 2천만 달러 자금 조달",
+        "score": 2,
+        "reason": "CEO의 개인적인 자금 지원은 회사의 재정 건전성에 대한 긍정적인 신호로 해석될 수 있으며, 투자자들에게 신뢰를 줄 수 있습니다.",
+        "source": "StockTitan",
+        "date": "2026-09-01",
+        "category": "Market"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "GoPro, Mission 1 PRO ILS 카메라 9월 출시 예정",
+        "score": 0,
+        "reason": "신제품 출시는 일반적으로 긍정적이지만, 이 소식은 8월 11일자 기사로 이미 시장에 반영되었을 가능성이 높으며, 최근 3일간의 주가에는 큰 영향을 미치지 않을 것으로 판단됩니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-11",
+        "category": "Product"
+      }
+    ],
+    "neutral_count": 1,
+    "scene1_news": {
+      "bullish": {
+        "title": "GoPro, AI 피벗 및 데이터 센터 진출 소식에 주가 급등",
+        "score": 4,
+        "reason": "AI 및 데이터 센터 시장은 현재 높은 성장세를 보이는 분야로, GoPro의 이러한 전략적 전환은 투자자들에게 새로운 성장 기회로 인식되어 주가에 긍정적인 영향을 미쳤습니다.",
+        "source": "CNBC",
+        "date": "2026-09-01",
+        "category": "Market"
+      },
+      "bearish": {
+        "title": "GoPro, Starman Optical 합병 관련 주주 소송 조사",
+        "score": -3,
+        "reason": "합병 관련 소송은 거래 지연이나 조건 변경을 초래할 수 있으며, 이는 투자자 불확실성을 증가시켜 주가에 부정적인 영향을 미 미칠 수 있습니다.",
+        "source": "Business Wire",
+        "date": "2026-09-03",
+        "category": "Legal"
+      },
+      "neutral": {
+        "title": "GoPro, Mission 1 PRO ILS 카메라 9월 출시 예정",
+        "score": 0,
+        "reason": "신제품 출시는 일반적으로 긍정적이지만, 이 소식은 8월 11일자 기사로 이미 시장에 반영되었을 가능성이 높으며, 최근 3일간의 주가에는 큰 영향을 미치지 않을 것으로 판단됩니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-11",
+        "category": "Product"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-09-08",
+        1.7
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-09-08",
+    "today_news": [
+      {
+        "title": "GoPro, Starman Optical 합병 관련 주주 소송 조사",
+        "category": "Legal",
+        "source": "Business Wire",
+        "date": "2026-09-03"
+      },
+      {
+        "title": "GoPro, 스마트폰 보급으로 인한 어려움 지속",
+        "category": "Competition",
+        "source": "Market Watch",
+        "date": "2026-09-02"
+      },
+      {
+        "title": "GoPro, Starman Optical과의 합병 계약 체결 및 AI 데이터 센터 시장 진출",
+        "category": "Contract",
+        "source": "PRNewsWire",
+        "date": "2026-09-01"
+      },
+      {
+        "title": "GoPro, YouTube 스타 Markiplier의 대규모 지분 확보 및 주가 급등",
+        "category": "Market",
+        "source": "Fast Company",
+        "date": "2026-09-01"
+      },
+      {
+        "title": "GoPro, AI 피벗 및 데이터 센터 진출 소식에 주가 급등",
+        "category": "Market",
+        "source": "CNBC",
+        "date": "2026-09-01"
+      },
+      {
+        "title": "GoPro, Nicholas Woodman CEO로부터 2천만 달러 자금 조달",
+        "category": "Market",
+        "source": "StockTitan",
+        "date": "2026-09-01"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 1.7,
+        "ma20": 0.81,
+        "vs_ma20_pct": 111.1,
+        "ma60": 0.76,
+        "trend": "상승추세(20일선>60일선)",
+        "rsi14": 79.2,
+        "rsi_state": "과매수(과열)",
+        "macd_momentum": "상승 모멘텀",
+        "volatility_20d_pct": 17.0,
+        "pos_52w_pct": 46.0,
+        "high_52w": 3.05,
+        "low_52w": 0.57,
+        "mom_5d_pct": 183.3,
+        "mom_20d_pct": 134.2
+      },
+      "valuation": {
+        "목표주가_평균": 0.5,
+        "목표주가_최고": 0.5,
+        "목표주가_최저": 0.5,
+        "애널리스트_수": 1,
+        "PER_선행": -170.0
+      }
+    },
+    "prev_day": {
+      "date": "2026-09-04",
+      "open": 1.48,
+      "close": 1.7,
+      "change_pct": 22.3
+    },
+    "month_low": {
+      "low": 0.57,
+      "current": 1.7,
+      "pct_vs_low": 198.25
+    },
+    "movement_reason": "2026년 9월 8일은 아직 도래하지 않은 미래 시점으로, 해당 날짜의 GoPro(GPRO) 주가 하락에 대한 실제 원인을 현재 시점에서 검색하거나 분석할 수 없습니다. 주식 시장의 움직임은 예측하기 어려우며, 미래의 주가 변동 요인을 미리 알 수는 없습니다.\n\n다만, 일반적으로 기업의 주가가 하락하는 주요 원인으로는 다음과 같은 것들이 있을 수 있습니다.\n\n**미래 주가 하락 가능성 (가상):**\n실적 부진 / 경쟁 심화 / 시장 상황 악화",
+    "company_direction": "고프로(GPRO) 회사 소개 자료는 다음과 같습니다.\n\n액션 카메라 주력 / HERO 시리즈, MAX 등 제품 판매 / Starman Optical에 2.85억 달러 매각 / AI 및 국방 광학 사업으로 확장 추진 / DJI, Insta360 등 경쟁 심화로 시장 점유율 하락"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "무슨회사",
+      "lines": [
+        "혹시 고프로 들어보셨나요? 지금 주가는 *$1.70*이에요.",
+        "서핑, 스키 탈 때 헬멧에 붙이는 *액션 카메라* 회사예요.",
+        "대표작이 손바닥만 한 *HERO 시리즈* 카메라죠.",
+        "작고 튼튼해서 *극한 스포츠 영상*을 생생히 담아내거든요.",
+        "드론, 서핑보드, 헬멧 어디든 붙이는 게 매력이에요.",
+        "한때 액션캠 하면 *고프로가 대명사*였던 시절도 있었죠."
+      ],
+      "body": "혹시 고프로 들어보셨나요? 지금 주가는 *$1.70*이에요.\n서핑, 스키 탈 때 헬멧에 붙이는 *액션 카메라* 회사예요.\n대표작이 손바닥만 한 *HERO 시리즈* 카메라죠.\n작고 튼튼해서 *극한 스포츠 영상*을 생생히 담아내거든요.\n드론, 서핑보드, 헬멧 어디든 붙이는 게 매력이에요.\n한때 액션캠 하면 *고프로가 대명사*였던 시절도 있었죠."
+    },
+    {
+      "index": 1,
+      "title": "요즘어때",
+      "lines": [
+        "요즘 고프로는 *큰 변화*를 겪고 있어요.",
+        "자회사 *Starman Optical을 2.85억 달러*에 팔았거든요.",
+        "카메라 한 우물만 파던 회사가 방향을 튼 거죠.",
+        "새로 노리는 건 *AI 영상인식과 국방 광학* 사업이에요.",
+        "소비자 카메라 시장이 예전 같지 않다는 뜻이죠.",
+        "지금은 *체질 개선*을 시도하는 중이라고 보시면 돼요."
+      ],
+      "body": "요즘 고프로는 *큰 변화*를 겪고 있어요.\n자회사 *Starman Optical을 2.85억 달러*에 팔았거든요.\n카메라 한 우물만 파던 회사가 방향을 튼 거죠.\n새로 노리는 건 *AI 영상인식과 국방 광학* 사업이에요.\n소비자 카메라 시장이 예전 같지 않다는 뜻이죠.\n지금은 *체질 개선*을 시도하는 중이라고 보시면 돼요."
+    },
+    {
+      "index": 2,
+      "title": "업계구도",
+      "lines": [
+        "액션캠 시장은 지금 *경쟁이 정말 치열*해요.",
+        "드론으로 유명한 *DJI*가 액션캠까지 밀고 들어왔거든요.",
+        "360도 카메라 강자 *Insta360*도 무섭게 크고 있죠.",
+        "그 사이에서 고프로 *점유율은 계속 밀리는* 모습이에요.",
+        "원조지만 후발주자에게 자리를 내주는 상황이랄까요.",
+        "그래서 신사업 확장이 더 절실해진 거예요."
+      ],
+      "body": "액션캠 시장은 지금 *경쟁이 정말 치열*해요.\n드론으로 유명한 *DJI*가 액션캠까지 밀고 들어왔거든요.\n360도 카메라 강자 *Insta360*도 무섭게 크고 있죠.\n그 사이에서 고프로 *점유율은 계속 밀리는* 모습이에요.\n원조지만 후발주자에게 자리를 내주는 상황이랄까요.\n그래서 신사업 확장이 더 절실해진 거예요."
+    },
+    {
+      "index": 3,
+      "title": "전문가는",
+      "lines": [
+        "증권가 목표주가는 평균 *$0.50* 수준으로 잡혀요.",
+        "*선행 PER -170배*(적자라 이익 대비 평가 어려움)예요.",
+        "관건은 *국방 광학 사업*이 실제 매출로 이어질지예요.",
+        "차세대 HERO 카메라와 AI 기능도 반등 카드가 될 수 있죠.",
+        "매각 자금을 *어디에 재투자*할지도 지켜봐야 해요.",
+        "오늘도 함께해줘서 고마워요."
+      ],
+      "body": "증권가 목표주가는 평균 *$0.50* 수준으로 잡혀요.\n*선행 PER -170배*(적자라 이익 대비 평가 어려움)예요.\n관건은 *국방 광학 사업*이 실제 매출로 이어질지예요.\n차세대 HERO 카메라와 AI 기능도 반등 카드가 될 수 있죠.\n매각 자금을 *어디에 재투자*할지도 지켜봐야 해요.\n오늘도 함께해줘서 고마워요."
+    }
+  ],
+  "image_prompts": {
+    "0": "A breathtaking wide cinematic shot of a lone surfer riding a massive turquoise wave at golden hour transitioning into purple twilight, sea spray glowing, dramatic ocean horizon stretching across the frame, a tiny compact rugged action camera mounted on the tip of the surfboard visible in the lower right corner as a small secondary object, purple introductory mood lighting, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A modern optical engineering laboratory with technicians examining precision lens components and AI vision sensors on illuminated workbenches, holographic optical diagrams floating subtly in the background, industrial defense-grade equipment visible, a small compact action camera resting quietly on the corner of a workbench as a secondary object, soft green progress mood lighting, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A dramatic wide shot of multiple drones and 360-degree camera rigs flying and hovering across a vast mountain ridge at dusk, competing camera operators filming extreme mountain bikers descending rocky trails, dynamic aerial choreography filling the frame, one small compact action camera mounted on a helmet in the lower left corner as a secondary object, cyan analytical mood lighting with data-driven atmosphere, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "3": "A visionary landscape of a futuristic outdoor adventure park where AI-guided drones assist paragliders soaring over golden canyons at sunrise, advanced optical sensor towers glinting in warm light, human explorers preparing for expedition, a small compact rugged action camera clipped to a backpack strap in the lower right corner as a subtle secondary object, inspiring gold prospective mood lighting, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo"
+  }
+}

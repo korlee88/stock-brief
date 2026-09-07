@@ -1,0 +1,33 @@
+{
+  "ticker": "GPRO",
+  "company_en": "GoPro, Inc.",
+  "company_ko": "고프로",
+  "industry_ko": "소비자 가전",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "A compact, rugged action camera, like the HERO series, capturing immersive, high-resolution video of extreme sports or outdoor adventures, often mounted on helmets, surfboards, or drones.",
+  "brand_label": "GPRO BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "DJI",
+  "key_people": [
+    "Nicholas Woodman",
+    "Brian McGee"
+  ],
+  "google_trends_keywords": [
+    "고프로",
+    "고프로 히어로",
+    "고프로 미션1",
+    "액션캠",
+    "고프로 구독"
+  ],
+  "video_tags": [
+    "GoPro",
+    "고프로",
+    "액션캠",
+    "GoPro Hero",
+    "GoPro 팁",
+    "GoPro HiLight"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-09-07T23:43:34.367Z"
+}

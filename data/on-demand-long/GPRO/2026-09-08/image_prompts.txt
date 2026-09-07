@@ -1,0 +1,14 @@
+# GPRO 주간 배경 이미지 프롬프트 — 2026-09-08
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A breathtaking wide cinematic shot of a lone surfer riding a massive turquoise wave at golden hour transitioning into purple twilight, sea spray glowing, dramatic ocean horizon stretching across the frame, a tiny compact rugged action camera mounted on the tip of the surfboard visible in the lower right corner as a small secondary object, purple introductory mood lighting, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A modern optical engineering laboratory with technicians examining precision lens components and AI vision sensors on illuminated workbenches, holographic optical diagrams floating subtly in the background, industrial defense-grade equipment visible, a small compact action camera resting quietly on the corner of a workbench as a secondary object, soft green progress mood lighting, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 정량지표
+A dramatic wide shot of multiple drones and 360-degree camera rigs flying and hovering across a vast mountain ridge at dusk, competing camera operators filming extreme mountain bikers descending rocky trails, dynamic aerial choreography filling the frame, one small compact action camera mounted on a helmet in the lower left corner as a secondary object, cyan analytical mood lighting with data-driven atmosphere, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬3 다음주전망
+A visionary landscape of a futuristic outdoor adventure park where AI-guided drones assist paragliders soaring over golden canyons at sunrise, advanced optical sensor towers glinting in warm light, human explorers preparing for expedition, a small compact rugged action camera clipped to a backpack strap in the lower right corner as a subtle secondary object, inspiring gold prospective mood lighting, documentary cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo

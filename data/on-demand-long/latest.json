@@ -1,16 +1,16 @@
 {
- "ticker": "010600.KQ",
- "company_ko": "KQ엔터테인먼트",
- "date": "2026-09-03",
+ "ticker": "GPRO",
+ "company_ko": "고프로",
+ "date": "2026-09-08",
  "mode": "long",
- "report_dir": "data/on-demand-long/010600.KQ/2026-09-03",
+ "report_dir": "data/on-demand-long/GPRO/2026-09-08",
  "scenes": [
-  "data/on-demand-long/010600.KQ/2026-09-03/260903_KQ엔터테인먼트_씬0.png",
-  "data/on-demand-long/010600.KQ/2026-09-03/260903_KQ엔터테인먼트_씬1.png",
-  "data/on-demand-long/010600.KQ/2026-09-03/260903_KQ엔터테인먼트_씬2.png",
-  "data/on-demand-long/010600.KQ/2026-09-03/260903_KQ엔터테인먼트_씬3.png"
+  "data/on-demand-long/GPRO/2026-09-08/260908_고프로_씬0.png",
+  "data/on-demand-long/GPRO/2026-09-08/260908_고프로_씬1.png",
+  "data/on-demand-long/GPRO/2026-09-08/260908_고프로_씬2.png",
+  "data/on-demand-long/GPRO/2026-09-08/260908_고프로_씬3.png"
  ],
- "youtube_title": "혹시 KQ엔터테인먼트 들어보셨나요, 여러분? | KQ엔터테인먼트(010600.KQ) 기업 소개",
- "youtube_description": "KQ엔터테인먼트(010600.KQ) 기업 소개\n사업모델·현재 상황·업계 구도·주요 투자사 전망을 3분 30초로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: KQ엔터테인먼트, 010600.KQ, KQ엔터테인먼트 주가, 010600.KQ 주가, 한국주식, ATEEZ, Xikers, 케이큐엔터테인먼트, 에이티즈, 싸이커스, KQ Entertainment, K-pop, 엔터테인먼트, K-POP, 힙합, R&B\n#010600.KQ #KQ엔터테인먼트 #한국주식 #KQEntertainment #ATEEZ #Xikers #K-pop #케이큐엔터테인먼트",
- "generated_at": "2026-09-03"
+ "youtube_title": "혹시 고프로 들어보셨나요? 지금 주가는 $1.70이에요. | 고프로(GPRO) 기업 소개",
+ "youtube_description": "고프로(GPRO) 기업 소개\n사업모델·현재 상황·업계 구도·주요 투자사 전망을 3분 30초로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 고프로, GPRO, 고프로 주가, GPRO 주가, 미국주식, 고프로 히어로, 고프로 미션1, 액션캠, 고프로 구독, GoPro, GoPro Hero, GoPro 팁, GoPro HiLight, 소비자 가전, DJI\n#GPRO #고프로 #미국주식 #GoPro #액션캠 #GoProHero #GoPro팁 #GoProHiLight",
+ "generated_at": "2026-09-08"
 }
