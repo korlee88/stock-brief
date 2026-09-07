@@ -60,14 +60,23 @@
   `REPORT_BASE=data/on-demand-long/<T>`로 쇼츠 트리와 완전 분리 — `on-demand.html`에 포맷
   토글(쇼츠/기업소개) 추가, `data/on-demand-long/latest.json`도 별도.
 
+- **주간 주요 일정**(weekly_calendar.py, 사용자 요청 — 카톡으로 받고 싶음): 일요일 22시 KST
+  크론으로 다음 주 경제지표·통화정책·실적·컨퍼런스·크립토 일정을 Gemini 검색 그라운딩으로
+  수집 → `data/calendar/latest.json` → 카카오톡 '나에게 보내기'. **카카오 text 템플릿은
+  200자 제한**이라 전문을 못 보내므로 영향도 높은 순 요약 + `calendar.html` 링크로 보낸다.
+  각 항목은 **S&P500·나스닥 지수 기준 영향도(high/medium/low)**를 매겨 색으로 구분(사용자
+  요청). 출처(source)가 없는 항목은 지어냈을 가능성이 커 파서가 버린다(지어낸 정보 금지).
+
 ## 웹 (on-demand.html — GitHub Pages)
 3열: 리모컨(한국·미국 종목 검색 `data/kr-stocks.json`·`us-stocks.json`, 쇼츠/기업소개 포맷 토글) | 구글 관심 TOP30(`data/stock-trends.json`, 관리자 리셋 시만 갱신) | 최근 생성 영상(쇼츠 `data/on-demand/latest.json` + 기업소개 `data/on-demand-long/latest.json`, 씬 미리보기+YouTube 카피).
 **관리자 탭**: 구글 로그인(허용 계정 sinlee01@gmail.com)으로만 열림 — GitHub 토큰 설정·순위 리셋. 실행 권한의 실질 경계는 PAT(localStorage, 미커밋).
+`calendar.html` — 주간 주요 일정 페이지(`data/calendar/latest.json`을 상대경로로 fetch, 토큰 불필요). 카카오 메시지 버튼과 on-demand.html 푸터에서 연결.
 
 ## 워크플로 (.github/workflows/)
 - `on-demand-video.yml` — 영상 생성 (workflow_dispatch, 티커 입력)
 - `update-kr-stocks.yml` — 한국·미국 종목 목록 갱신 (수동)
 - `update-stock-trends.yml` — 관심 주식 순위 (웹 리셋 버튼이 호출)
+- `weekly-calendar.yml` — 주간 주요 일정 수집·카카오 발송 (일요일 22시 KST 크론)
 
 ## 환경 제약 (로컬 검증 시)
 - Gemini·Yahoo·KRX·edge-tts는 샌드박스 프록시가 차단 — 실호출 검증은 CI에서. 렌더는 `fonts-nanum` 설치 후 로컬 가능.
