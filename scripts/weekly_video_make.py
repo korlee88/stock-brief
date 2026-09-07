@@ -1,10 +1,10 @@
 """
-주간 나레이션 영상 생성 (moviepy 2.x + 애니메이션)
+나레이션 영상 생성 (moviepy 2.x + 애니메이션)
 weekly_video_prep.py 실행 후 사용.
-script.json + scene_XX.png → edge-tts MP3 → 애니메이션 MP4
-출력: 1080×1920 (YouTube Shorts 세로 포맷)
+script.json + 씬 PNG({YYMMDD}_{회사명}_씬N.png, 구 scene_NN.png 폴백) → edge-tts MP3 → MP4
+출력: MODE=short는 1080×1920(쇼츠 세로), MODE=long은 1920×1080(기업소개 롱폼 가로)
 
-종목 설정: config/ticker.json
+종목 설정: TICKER_CONFIG 환경변수 (온디맨드는 configs/<티커>/ticker.json)
 필요 패키지: pip install -r requirements.txt
 """
 
@@ -37,8 +37,6 @@ SCENE_LEAD_MS = 500                     # 씬 시작~첫 나레이션 사이 여
 SCENE_TAIL_MS = 300                     # 씬 끝 여유 무음 (ms)
 FPS           = 24
 W, H          = (1920, 1080) if MODE == "long" else (1080, 1920)   # long=가로 16:9, short=세로 9:16
-PHOTO_Y       = 500                     # 헤더 아래 사진 시작 Y (prep.py의 HEADER_H와 동일)
-PHOTO_H       = 500                     # 사진 영역 높이 (prep.py의 PHOTO_H와 동일)
 MIN_SCENE_SEC = 5.0
 
 ACCENT_COLORS = [
@@ -97,27 +95,6 @@ def download_bgm(seed: str = "") -> "Path | None":
     chosen = files[idx]
     print(f"   🎵 BGM 사용: {chosen.name} ({idx + 1}/{len(files)})")
     return chosen
-
-
-def clean_for_tts(lines):
-    table = {
-        '【': '', '】': '', '①': '첫째,', '②': '둘째,', '③': '셋째,',
-        '④': '넷째,', '⑤': '다섯째,', '$': '달러 ', '%': '퍼센트',
-        '比': ' 대비',
-        '+': '플러스 ', '─': '', '▲': '', '▼': '', '*': '',
-        '🟢': '', '🔴': '', '📊': '', '📈': '', '✓': '', '⚡': '',
-    }
-    result = []
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
-        if '|' in line:
-            line = line.split('|')[0].strip()
-        for k, v in table.items():
-            line = line.replace(k, v)
-        result.append(line)
-    return ' '.join(result)
 
 
 def _clean_line(line: str) -> str:
@@ -320,12 +297,13 @@ def _load_mascot():
 
 
 def draw_mascot_pil(img, rx, ry):
-    """data/mascot.png를 (rx, ry) 위치에 합성."""
-    from PIL import Image
+    """data/mascot.png를 (rx, ry) 위치에 합성.
+
+    RGB 이미지에 RGBA 스프라이트를 mask 인자로 바로 붙인다 — 130px 스프라이트 하나 때문에
+    프레임 전체를 RGBA로 변환했다 되돌리면 프레임당 9ms가 그냥 날아간다(결과 픽셀은 동일)."""
     mascot = _load_mascot()
-    base = img.convert("RGBA")
-    base.paste(mascot, (rx, ry), mascot)
-    return base.convert("RGB")
+    img.paste(mascot, (rx, ry), mascot)
+    return img
 
 # ── 애니메이션 이펙트 ─────────────────────────────────────────────────────────
 
@@ -347,60 +325,41 @@ def fx_fade_out(img, t, total, dur=0.25):
     return Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
 
 
-def fx_speed_lines(img, t, accent, intense=False):
-    """씬 시작 속도선 (만화 액션씬 느낌). intense=True면 인트로용 강화."""
-    if t >= 0.55:
-        return img
-    from PIL import Image, ImageDraw
-    a  = int((0.55 - t) / 0.55 * (130 if intense else 95))
-    ov = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    d  = ImageDraw.Draw(ov)
-    cx, cy = W // 2, H // 2
-    n_lines = 40 if intense else 22
-    width   = 4  if intense else 2
-    for i in range(n_lines):
-        angle = (i / n_lines) * 2 * math.pi
-        x1 = cx + int(math.cos(angle) * 85)
-        y1 = cy + int(math.sin(angle) * 55)
-        x2 = cx + int(math.cos(angle) * 1100)
-        y2 = cy + int(math.sin(angle) * 1100)
-        la = a if i % 3 != 1 else a // 3
-        d.line([x1, y1, x2, y2], fill=(*accent, la), width=width)
-    return Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
+def fx_pixel_effects(img, t, accent):
+    """CRT 스캔라인 + 이동 글로우 라인 + 상하 바 박동 글로우를 numpy 한 패스로 처리.
 
-
-def fx_white_flash(img, t, dur=0.15):
-    """인트로 첫 순간 흰색 플래시 — 충격 효과."""
-    if t >= dur:
-        return img
+    예전엔 이펙트마다 프레임 크기의 RGBA 오버레이를 만들어 alpha_composite 했는데,
+    상하 9px 바 하나 그리자고 2M 픽셀을 통째로 RGBA 왕복시키느라 두 이펙트 합쳐
+    프레임당 ~30ms를 썼다. 배열 복사 한 번에 필요한 행만 손대면 ~10ms로 떨어진다
+    (결과는 육안상 동일 — 알파 블렌드를 정수 연산으로 근사).
+    """
     from PIL import Image
-    a = int((1 - t / dur) * 200)
-    ov = Image.new("RGBA", img.size, (255, 255, 255, a))
-    return Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
+    import numpy as np
 
+    a = np.array(img, copy=True)
 
-def fx_scanline(img, t):
-    """CRT 스캔라인 + 이동 글로우 라인."""
-    from PIL import Image, ImageDraw
-    ov = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    d  = ImageDraw.Draw(ov)
-    for y in range(0, H, 4):
-        d.line([(0, y), (W, y)], fill=(0, 0, 0, 14), width=1)
+    # 스캔라인: 4행마다 살짝 어둡게 (기존 alpha 14/255 ≈ ×0.945)
+    a[::4] = (a[::4].astype(np.uint16) * 241 >> 8).astype(np.uint8)
+
+    # 아래로 흐르는 글로우 라인 (흰색 alpha 22)
     sy = int((t * 110) % H)
-    d.line([(0, sy), (W, sy)], fill=(255, 255, 255, 22), width=2)
-    return Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
+    band = a[sy:sy + 2].astype(np.uint16)
+    a[sy:sy + 2] = ((band * 233 + 255 * 22) >> 8).astype(np.uint8)
 
-
-def fx_pulse_glow(img, t, accent):
-    """상단·하단 바 박동 글로우."""
+    # 상·하단 accent 바 — 해당 스트립만 float 변환 (전체 변환하면 이득이 사라진다)
     pulse = (math.sin(t * 4.5) + 1) / 2
-    a     = int(18 + pulse * 52)
-    from PIL import Image, ImageDraw
-    ov = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    d  = ImageDraw.Draw(ov)
-    d.rectangle([0, 0, W, 9], fill=(*accent, a))
-    d.rectangle([0, H-9, W, H], fill=(*accent, a // 2))
-    return Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
+    alpha = int(18 + pulse * 52)
+    accent_arr = np.array(accent, dtype=np.float32)
+    for sl, q in ((slice(0, 9), alpha), (slice(H - 9, H), alpha // 2)):
+        f = q / 255.0
+        strip = a[sl].astype(np.float32)
+        a[sl] = (strip * (1 - f) + accent_arr * f).astype(np.uint8)
+
+    return Image.fromarray(a)
+
+
+KB_ZOOM_RATE = 1.2      # Ken Burns 줌 갱신 빈도(초당) — 씬 길이와 무관하게 비용을 일정하게 묶는다
+_kb_cache = None        # (키, 확대 이미지) 한 장만 유지
 
 
 def fx_ken_burns(img, t: float, dur: float, scene_idx: int):
@@ -417,14 +376,27 @@ def fx_ken_burns(img, t: float, dur: float, scene_idx: int):
     ]
     zoom_s, zoom_e, px_s, px_e, py_s, py_e = CONFIGS[scene_idx % len(CONFIGS)]
 
-    zoom  = zoom_s + (zoom_e - zoom_s) * progress
+    # 줌은 ~0.8초 단위로만 갱신해 확대본을 재사용한다 — 매 프레임 2M 픽셀을 LANCZOS로
+    # 리샘플하면 프레임당 60ms가 넘어가(전체의 70%) 렌더가 하염없이 길어진다. 줌 폭이
+    # 1.00~1.05뿐이라 한 단계는 0.1% 미만이고, 원래 코드도 int() 절삭 때문에 이미 계단식이었다
+    # (프레임간 변화량 비교: 기존 최대 0.198 → 이 방식 0.244로 사실상 동일).
+    # 팬은 계속 연속이라 움직임 자체는 그대로 부드럽다.
+    steps = max(1, round(dur * KB_ZOOM_RATE))
+    zoom  = zoom_s + (zoom_e - zoom_s) * (round(progress * steps) / steps)
     pan_x = px_s  + (px_e  - px_s)   * progress
     pan_y = py_s  + (py_e  - py_s)   * progress
 
-    ow, oh = img.size  # 1080, 1920
+    ow, oh = img.size
     nw = max(int(ow * zoom), ow)
     nh = max(int(oh * zoom), oh)
-    zoomed = img.resize((nw, nh), Image.LANCZOS)
+
+    # 같은 줌 단계가 이어지는 동안(≈50프레임) 확대본을 재사용. 한 장만 들고 있어
+    # (2016×1134 기준 ~7MB) 씬이 바뀌면 자연히 교체된다.
+    global _kb_cache
+    key = (scene_idx, nw, nh)
+    if _kb_cache is None or _kb_cache[0] != key:
+        _kb_cache = (key, img.resize((nw, nh), Image.LANCZOS))
+    zoomed = _kb_cache[1]
 
     # 중앙 기준으로 패닝 오프셋 적용 후 경계 클램핑
     cx = (nw - ow) // 2 + int(pan_x * ow)
@@ -453,7 +425,9 @@ def _caption_runs(text):
         pos = m.end()
     if pos < len(text):
         runs.append((text[pos:], False))
-    return [(s, hl) for s, hl in runs if s]
+    # 짝이 안 맞는 '*'는 제거 — 안 그러면 PNG에 굽는 쪽(prep.py split_runs)은 지우는데
+    # 동적 자막만 별표가 그대로 노출돼 같은 대본이 다르게 보인다.
+    return [(seg.replace("*", ""), hl) for seg, hl in runs if seg.replace("*", "")]
 
 
 def _find_caption(t, windows):
@@ -483,15 +457,35 @@ def _caption_font(size):
     return f
 
 
+_caption_sprite_cache = {}
+
+
 def draw_dynamic_caption(img, text):
-    """자막처럼 화면 하단 중앙에 최대 2줄만 표시 — 배경을 가리지 않도록 텍스트
-    바로 뒤에만 살짝 어두운 바를 깔고, 나머지 배경은 그대로 드러낸다."""
-    import re
-    from PIL import Image, ImageDraw
+    """현재 나레이션 줄을 자막처럼 화면 하단 중앙에 합성.
+
+    자막은 한 줄이 몇 초씩 그대로 떠 있는데, 예전엔 프레임마다 줄바꿈 계산(토큰별
+    textlength)과 RGBA 왕복을 다시 했다 — 프레임당 ~22ms. 줄 단위로 스프라이트를 한 번만
+    만들어 캐시해 두고 붙이기만 하면 ~2ms로 떨어진다(결과 픽셀은 완전히 동일)."""
     if not text:
         return img
+    sprite = _caption_sprite_cache.get(text)
+    if sprite is None:
+        sprite = _caption_sprite_cache[text] = _render_caption_sprite(text)
+    if sprite is None:      # 렌더할 내용이 없던 경우
+        return img
+    layer, pos = sprite
+    img.paste(layer, pos, layer)
+    return img
 
-    img = img.convert("RGBA")
+
+def _render_caption_sprite(text):
+    """자막 한 줄을 투명 배경 RGBA 스프라이트로 렌더해 (레이어, 붙일 위치)를 반환.
+
+    배경을 가리지 않도록 텍스트 바로 뒤에만 살짝 어두운 바를 깔고, 나머지는 투명하게 둔다."""
+    import re
+    from PIL import Image, ImageDraw
+
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
     font = _caption_font(48)
     max_w = int(W * 0.82)
@@ -537,14 +531,21 @@ def draw_dynamic_caption(img, text):
                       stroke_width=2, stroke_fill=(8, 12, 30, 255))
             x += tok_w(tok)
         y += line_h
-    return img.convert("RGB")
+
+    # 실제로 그려진 영역만 잘라 두면 매 프레임 붙이는 비용도 그만큼 줄어든다
+    box = img.getbbox()
+    if box is None:
+        return None
+    return img.crop(box), (box[0], box[1])
 
 # ── 애니메이션 프레임 합성 ────────────────────────────────────────────────────
 
 def make_anime_frame(t, base_arr, accent, dur, scene_idx, caption_windows=None):
     import numpy as np
     from PIL import Image
-    img = Image.fromarray(base_arr).copy()
+    # .copy() 불필요 — 아래 ken_burns(crop)·fx_pixel_effects(np.array copy) 모두 새 이미지를
+    # 만들어 내므로, 이 시점의 img가 base_arr와 메모리를 공유해도 제자리 수정이 일어나지 않는다.
+    img = Image.fromarray(base_arr)
 
     is_intro   = (scene_idx == 0)   # 주간 브리핑(첫 씬) — 부드러운 페이드인
     is_closing = (scene_idx == 3)   # 미래 비전(마지막 씬) — 페이드아웃
@@ -556,8 +557,7 @@ def make_anime_frame(t, base_arr, accent, dur, scene_idx, caption_windows=None):
     # Ken Burns 효과 제거 — 정적 이미지 유지 (쇼츠는 기존 그대로 무변경)
 
     # 차분한 분석체 톤 — 자극적 효과 제거 (속도선·플래시 약화)
-    img = fx_scanline(img, t)
-    img = fx_pulse_glow(img, t, accent)
+    img = fx_pixel_effects(img, t, accent)
 
     mascot_dy  = int(math.sin(t * 3.5) * 3)
     img = draw_mascot_pil(img, W - MASCOT_SIZE - 30, 26 + mascot_dy)

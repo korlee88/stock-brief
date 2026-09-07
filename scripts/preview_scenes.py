@@ -13,7 +13,7 @@
     #    → out/preview/scene_0.png ~ scene_3.png
 
     # 특정 대본/출력 위치 지정
-    python3 scripts/preview_scenes.py --script data/weekly-report/2026-06-26/script.txt --out /tmp/pv
+    python3 scripts/preview_scenes.py --script data/on-demand/TSLA/2026-06-26/script.txt --out /tmp/pv
 
 확인 못 하는 것 (제약):
     - 음성 실제 소리: edge-tts가 wss://speech.platform.bing.com WebSocket을 쓰는데
@@ -31,13 +31,13 @@ import weekly_video_prep as wp  # noqa: E402
 
 
 def latest_script():
-    cands = sorted(glob.glob("data/weekly-report/*/script.txt"))
+    cands = sorted(glob.glob("data/on-demand*/*/*/script.txt"))
     return cands[-1] if cands else None
 
 
 def main():
     ap = argparse.ArgumentParser(description="씬 이미지 로컬 프리뷰")
-    ap.add_argument("--script", help="대본 txt 경로 (기본: data/weekly-report 최신)")
+    ap.add_argument("--script", help="대본 txt 경로 (기본: data/on-demand* 최신)")
     ap.add_argument("--out", default="out/preview", help="PNG 출력 디렉토리")
     ap.add_argument("--dump-tts", action="store_true", help="씬별 TTS 세그먼트(읽는 문장) 출력")
     ap.add_argument("--dump-prompts", action="store_true", help="씬별 AI 배경 이미지 프롬프트 출력")
