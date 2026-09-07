@@ -8,7 +8,7 @@
 - 코드 상수·동작 변경 시 이 파일의 관련 줄도 같은 커밋에서 갱신.
 
 ## 토큰 절감 수칙
-- 큰 파일 전체 Read 금지 — `weekly_video_prep.py`(2,700줄+)·`on-demand.html`(700줄+)은 Grep으로 위치 찾아 부분만.
+- 큰 파일 전체 Read 금지 — `weekly_video_prep.py`(2,700줄+)·`on-demand.html`(800줄+)은 Grep으로 위치 찾아 부분만.
 - 씬 프리뷰는 절반 해상도로 확인, 변경된 씬만 렌더. 문구 검증은 이미지 대신 TTS 덤프·대본 텍스트 우선.
 - **새 작업은 stock-brief만 연결한 새 세션에서** (rklb-dashboard 연결 금지 — 34KB CLAUDE.md가 매 턴 주입됨).
 
@@ -21,7 +21,9 @@
 `resolve-ticker.js`(티커→회사 메타, configs/<T>/ 캐시) → `on-demand-collect.js`(뉴스 3→7→14일→무기한 확대 수집) → `weekly_video_prep.py`(대본+씬 PNG) → `weekly_video_make.py`(TTS+영상) → `gws_publish.py`(메일·YouTube 카피)
 
 ## 핵심 규칙 (사용자 확정 사항 — 회귀 금지)
-- **통화**: `.KS/.KQ` 종목 = 원화 정수(`318,000원`), 그 외 = `$` 2소수점. `fmt_price()` 일원화.
+- **통화**: `.KS/.KQ` 종목 = 원화 정수(`318,000원`), 그 외 = `$` 2소수점. 판정 규칙은 동일하나
+  `fmt_price()`는 prep.py(소수 자릿수 지정 가능)와 gws_publish.py(빈 값 폴백 지정 가능)에 각각
+  있다 — 시그니처가 달라 서로 대체 불가, 한쪽만 고치지 말 것.
 - **한국 티커 오인 방지**: resolve-ticker가 `data/kr-stocks.json`(KRX 전 종목)에서 회사명 선조회 → 프롬프트 명시, 한국 거래소 아니면 캐시 안 함 (케냐항공 "KQ" 오인 사건).
 - **파일명**: 영상 `{회사명}_YYYYMMDD.mp4`, 씬 `{YYMMDD}_{회사명}_씬N.png` (읽는 쪽은 구명 폴백 유지).
 - **씬0** = "어떤 회사인가요?" 소개 씬 (6줄: 간략 주가 1줄 + 주력사업·방향·투자·제품·시장지위). 주가 분석 금지, 헤더에 현재가·한달 최저 대비 %만(전일 대비는 하루짜리라 변동폭이 작아 안 보임 — Yahoo 월간 최저가 조회 실패 시에만 전일 대비로 폴백).
@@ -66,6 +68,13 @@
   200자 제한**이라 전문을 못 보내므로 영향도 높은 순 요약 + `calendar.html` 링크로 보낸다.
   각 항목은 **S&P500·나스닥 지수 기준 영향도(high/medium/low)**를 매겨 색으로 구분(사용자
   요청). 출처(source)가 없는 항목은 지어냈을 가능성이 커 파서가 버린다(지어낸 정보 금지).
+
+- **렌더 성능**(프레임당 비용 — 되돌리지 말 것): `make_anime_frame`이 영상 1초당 24번 도는
+  최내부 루프라, 이펙트마다 프레임 크기 RGBA 오버레이를 만들면 렌더가 수 배로 늘어난다.
+  ① 스캔라인·글로우는 `fx_pixel_effects`에서 numpy 한 패스로 처리 ② 마스코트는 RGB에 직접
+  paste(전체 RGBA 변환 금지) ③ 자막은 줄 단위 스프라이트 캐시(`_caption_sprite_cache`)
+  ④ Ken Burns 확대본은 ~0.8초 단위로만 갱신해 재사용(`KB_ZOOM_RATE`).
+  이 4개로 롱폼 프레임 154ms→31ms(3분30초 영상 렌더 12.9분→2.5분), 쇼츠도 88ms로 개선.
 
 ## 웹 (on-demand.html — GitHub Pages)
 3열: 리모컨(한국·미국 종목 검색 `data/kr-stocks.json`·`us-stocks.json`, 쇼츠/기업소개 포맷 토글) | 구글 관심 TOP30(`data/stock-trends.json`, 관리자 리셋 시만 갱신) | 최근 생성 영상(쇼츠 `data/on-demand/latest.json` + 기업소개 `data/on-demand-long/latest.json`, 씬 미리보기+YouTube 카피).

@@ -1,11 +1,13 @@
 """
-주간 영상 자료 생성 스크립트
-- 최근 LOOKBACK_DAYS(2일) auto-sessions.json 데이터 기반 (격일 생성 주기에 맞춘 신선 윈도우)
-- Gemini API → 한국어 영상 대본(4 씬)
-- Pillow → 씬별 1080×1920 카드 이미지 (YouTube Shorts 세로 포맷)
-- 저장: data/weekly-report/YYYY-MM-DD/
+온디맨드 영상 자료 생성 스크립트 (대본 + 씬 이미지)
+- 최근 LOOKBACK_DAYS(2일) 세션 데이터 기반 — 요청 시에만 실행(정기 크론 없음)
+- Gemini/Claude → 한국어 영상 대본(4 씬)
+- Pillow → 씬별 카드 이미지. MODE=short는 1080×1920(쇼츠 세로),
+  MODE=long은 1920×1080(기업소개 롱폼 가로, draw_scene_landscape)
+- 저장: REPORT_BASE 환경변수 경로 — 워크플로가 data/on-demand/<티커>(쇼츠) 또는
+  data/on-demand-long/<티커>(롱폼)로 지정한다
 
-종목 설정: config/ticker.json
+종목 설정: TICKER_CONFIG 환경변수 (온디맨드는 configs/<티커>/ticker.json)
 """
 
 import os, json, sys, re, random, urllib.request, urllib.parse
@@ -84,14 +86,10 @@ SCRIPT_REVIEW_ROUNDS = 2   # 대본 생성 후 자기 재검토·수정 반복 �
 # ── 팔레트 ────────────────────────────────────────────────────────────────
 BG      = (24, 32, 54)         # 14,17,23 → 밝은 미드나이트 네이비
 WHITE   = (255, 255, 255)
-GRAY    = (120, 128, 148)
-LGRAY   = (185, 192, 210)      # 더 밝은 회색
 GREEN   = (34, 197, 94)
 RED     = (239, 68, 68)
 AMBER   = (245, 158, 11)
 PURPLE  = (167, 139, 250)
-CYAN    = (6, 182, 212)
-BLUE    = (59, 130, 246)
 W, H    = (1920, 1080) if MODE == "long" else (1080, 1920)   # long=가로 16:9, short=세로 9:16
 
 PAD     = 40
@@ -116,7 +114,6 @@ CARD_RED    = (58, 24, 24)     # 빨강 카드
 CARD_AMBER  = (58, 46, 16)     # 앰버 카드
 CARD_PURPLE = (42, 20, 78)     # 보라 카드
 CARD_CYAN   = (14, 46, 64)     # 시안 카드 (씬2 정량지표 — 재무제표 등)
-BADGE_BG    = (20, 26, 48)     # 배지·푸터 배경
 
 SCENE_ACCENTS = [PURPLE, GREEN, (14, 165, 233), (236, 72, 153)]  # 브리핑/호재/정량지표/미래비전
 
@@ -148,7 +145,6 @@ HOOK_STYLES = [
 def pick_hook(seed):
     return random.Random(str(seed)).choice(HOOK_STYLES)
 
-SCENE_WIKI_ARTICLES = TICKER_CONFIG.get("scene_wiki_articles", [])   # 온디맨드 종목은 없을 수 있음
 GOOGLE_TRENDS_KEYWORDS = TICKER_CONFIG.get("google_trends_keywords", [])
 
 SCENE_BG_DIR = ROOT_DIR / "data" / "scene-backgrounds"
@@ -1475,100 +1471,6 @@ def wrap_ellipsis(draw, text, font, max_w, max_lines):
     return shown
 
 
-def render_lines(draw, text, x, y, font, fill, max_px, line_gap=8):
-    """여러 줄 텍스트 렌더링 → 다음 y 반환"""
-    for raw_line in text.split("\n"):
-        raw_line = raw_line.strip()
-        if not raw_line:
-            y += line_gap
-            continue
-        for line in wrap_text(draw, raw_line, font, max_px):
-            draw.text((x, y), line, font=font, fill=fill)
-            bbox = draw.textbbox((0, 0), line, font=font)
-            y += (bbox[3] - bbox[1]) + line_gap
-    return y
-
-
-def _is_usable_photo(raw: bytes) -> bool:
-    """배경으로 쓸 만한 사진인지 검사 — 아주 작은 아이콘/로고·극단적 슬리버만 거부.
-    로켓처럼 세로로 긴 사진은 허용(씬 합성 시 cover-crop)."""
-    from PIL import Image as _PILImg
-    import io as _io
-    try:
-        pimg = _PILImg.open(_io.BytesIO(raw))
-        pw, ph = pimg.size
-        if min(pw, ph) < 150:                        # 너무 작은 아이콘/로고
-            return False
-        if max(pw, ph) / max(min(pw, ph), 1) > 4.0:  # 배너/슬리버 거부
-            return False
-        return True
-    except Exception:
-        return True   # 검증 불가 시 일단 허용
-
-
-def fetch_wiki_image(article: str, out_path: Path) -> bool:
-    """Wikipedia 기사 대표 이미지를 다운로드. (REST summary 우선 → pageimages 폴백)
-    로켓 등 세로형 사진도 허용하고, 아주 작은 아이콘·슬리버만 거부한다."""
-    headers = {"User-Agent": f"{TICKER}-Dashboard/2.0 (github.com/{REPO})"}
-    candidates = []
-    # 1) REST summary — 기사 대표(hero) 이미지. originalimage가 고화질
-    try:
-        title_enc = urllib.parse.quote(article.replace(" ", "_"))
-        req = urllib.request.Request(
-            f"https://en.wikipedia.org/api/rest_v1/page/summary/{title_enc}",
-            headers=headers)
-        with urllib.request.urlopen(req, timeout=15) as r:
-            summ = json.loads(r.read())
-        for key in ("originalimage", "thumbnail"):
-            src = (summ.get(key) or {}).get("source", "")
-            if src:
-                candidates.append(src)
-    except Exception:
-        pass
-    # 2) pageimages 폴백
-    try:
-        params = urllib.parse.urlencode({
-            "action": "query", "titles": article,
-            "prop": "pageimages", "pithumbsize": "1280", "format": "json",
-        })
-        req = urllib.request.Request(
-            f"https://en.wikipedia.org/w/api.php?{params}", headers=headers)
-        with urllib.request.urlopen(req, timeout=15) as r:
-            data = json.loads(r.read())
-        for p in data.get("query", {}).get("pages", {}).values():
-            src = p.get("thumbnail", {}).get("source", "")
-            if src:
-                candidates.append(src)
-    except Exception:
-        pass
-    # 후보를 순서대로 시도
-    seen = set()
-    for url in candidates:
-        if url in seen:
-            continue
-        seen.add(url)
-        try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=15) as r:
-                raw = r.read()
-        except Exception as e:
-            print(f"   ⚠ 이미지 다운로드 실패 ({article}): {e}", file=sys.stderr)
-            continue
-        if _is_usable_photo(raw):
-            out_path.write_bytes(raw)
-            return True
-        print(f"   ⚠ 부적합 이미지 skip ({article})", file=sys.stderr)
-    return False
-
-
-def fetch_wiki_image_with_fallback(articles, out_path: Path) -> bool:
-    """후보 기사 목록 중 가로형 이미지를 찾을 때까지 순서대로 시도."""
-    for article in (articles if isinstance(articles, list) else [articles]):
-        if fetch_wiki_image(article, out_path):
-            return True
-    return False
-
-
 _IMAGEN_MODELS = [
     "imagen-4.0-generate-001",   # Imagen 4 — Nano Banana보다 사진 같은 화질·구도(유료, 무료 티어 없음)
     "imagen-3.0-generate-002",   # Imagen 3 (폴백)
@@ -1679,7 +1581,7 @@ def fetch_nano_banana_image(prompt: str, out_path: Path, aspect_ratio: str = "16
 
 
 def make_canvas(accent):
-    """다크 배경 캔버스 생성 (1080×1920 세로 포맷)."""
+    """다크 배경 캔버스 생성 — 크기는 모듈 W,H (short=1080×1920 세로 / long=1920×1080 가로)."""
     from PIL import Image, ImageDraw
     img = Image.new("RGB", (W, H), BG)
     draw = ImageDraw.Draw(img)
@@ -1817,111 +1719,6 @@ def draw_mbc_header(draw, brand: str, title_main: str, title_sub: str, accent,
     draw.rectangle([0, HEADER_H - 10, W, HEADER_H], fill=accent)
 
 
-def draw_buy_index_gauge(draw, cx, cy, r, bi, fnt_big, fnt_small):
-    col = GREEN if bi >= 65 else AMBER if bi >= 45 else RED
-    # 배경 반원 (회색)
-    draw.arc([cx - r, cy - r, cx + r, cy + r], start=180, end=360, fill=(62, 68, 88), width=22)
-    # 값 반원 (컬러)
-    end_a = 180 + int(bi / 100 * 180)
-    draw.arc([cx - r, cy - r, cx + r, cy + r], start=180, end=end_a, fill=col, width=22)
-    # 중앙 숫자
-    draw.text((cx, cy - 18), str(bi), font=fnt_big, fill=col, anchor="mm")
-    draw.text((cx, cy + 22), "참고지수", font=fnt_small, fill=GRAY, anchor="mm")
-    # 범례
-    draw.text((cx - r + 8, cy + 14), "0", font=fnt_small, fill=GRAY)
-    draw.text((cx + r - 22, cy + 14), "100", font=fnt_small, fill=GRAY)
-
-
-def draw_news_card_portrait(draw, img, x, y, w, h, chapter, content, source, accent,
-                             fnt_bold, fnt_content, fnt_source,
-                             fnt_content_xl=None, fnt_content_sm=None):
-    """세로 포맷 전용 뉴스카드 (헤더 + 내용 수직중앙 + 하단 출처)."""
-    from PIL import ImageDraw
-
-    HEADER_H = 90
-    FOOTER_H = 60
-
-    grade_map = {
-        "호재": GREEN, "악재": RED, "주의": AMBER,
-        "참고": CYAN, "고려": BLUE,
-    }
-    badge_col = GRAY
-    badge_text = ""
-    for grade, col in grade_map.items():
-        if grade in source:
-            badge_col = col
-            badge_text = grade
-            break
-
-    # 카드 배경
-    draw.rounded_rectangle([x, y, x + w, y + h], radius=14,
-                            fill=CARD_BG, outline=accent, width=2)
-
-    # 헤더 배경
-    draw.rounded_rectangle([x, y, x + w, y + HEADER_H], radius=14, fill=accent)
-    draw.rectangle([x, y + HEADER_H - 14, x + w, y + HEADER_H], fill=accent)
-
-    # 챕터 이름 (헤더 왼쪽)
-    draw.text((x + 22, y + HEADER_H // 2), chapter[:5],
-              font=fnt_bold, fill=BADGE_BG, anchor="lm")
-
-    # 등급 배지 (헤더 오른쪽)
-    if badge_text:
-        badge_w = 110
-        badge_h = 52
-        badge_x = x + w - badge_w - 16
-        badge_y = y + (HEADER_H - badge_h) // 2
-        draw.rounded_rectangle([badge_x, badge_y, badge_x + badge_w, badge_y + badge_h],
-                               radius=10, fill=BADGE_BG)
-        draw.text((badge_x + badge_w // 2, badge_y + badge_h // 2),
-                  badge_text, font=fnt_bold, fill=badge_col, anchor="mm")
-
-    # ── 적응형 폰트: 콘텐츠 길이에 따라 자동 선택 ──────────────────────────
-    char_count = len(content)
-    if fnt_content_xl and char_count < 60:
-        adaptive_font = fnt_content_xl   # 48px — 짧은 콘텐츠는 크게
-    elif fnt_content_sm and char_count >= 120:
-        adaptive_font = fnt_content_sm   # 28px — 긴 콘텐츠는 작게
-    else:
-        adaptive_font = fnt_content      # 36px — 기본
-
-    # 내용 영역
-    content_x = x + 22
-    content_y = y + HEADER_H + 16
-    content_max_w = w - 44
-    content_area_h = h - HEADER_H - FOOTER_H - 32
-
-    content_lines = wrap_text(draw, content, adaptive_font, content_max_w)
-    bb_test = draw.textbbox((0, 0), "가", font=adaptive_font)
-    char_h = bb_test[3] - bb_test[1]
-    line_h = char_h + 14
-    max_lines = max(1, content_area_h // line_h)
-
-    # 수직 중앙 정렬
-    display_lines = content_lines[:max_lines]
-    total_text_h = len(display_lines) * line_h
-    cy = content_y + max(0, (content_area_h - total_text_h) // 2)
-
-    for line in display_lines:
-        if cy + char_h > y + h - FOOTER_H - 8:
-            break
-        draw.text((content_x, cy), line, font=adaptive_font, fill=WHITE,
-                  stroke_width=1, stroke_fill=STROKE)
-        cy += line_h
-
-    # 하단 출처 바
-    footer_y = y + h - FOOTER_H
-    draw.rounded_rectangle([x, footer_y - 6, x + w, y + h], radius=14, fill=BADGE_BG)
-
-    # 출처 텍스트 — KEY 노랑으로 강조
-    src_display = source
-    for grade in grade_map:
-        src_display = src_display.replace("·" + grade, "").replace(grade + "·", "").replace(grade, "").strip("· ")
-    draw.text((x + 18, footer_y + FOOTER_H // 2), src_display[:50],
-              font=fnt_source, fill=KEY, anchor="lm",
-              stroke_width=1, stroke_fill=STROKE)
-
-
 _EMOJI_RE = re.compile(
     "["
     "\U0001F600-\U0001F64F"  # 감정/얼굴
@@ -2023,114 +1820,6 @@ def draw_rich_line(draw, x, y, line_runs, font, base_fill, hl_fill,
     return total
 
 
-def draw_rich_text(draw, text, x, y, font, base_fill, max_w, *, hl_fill=KEY,
-                   max_lines=None, center=False, center_x=None, center_w=None,
-                   stroke_width=1, stroke_fill=STROKE, line_h=None, line_gap=8):
-    """마커 포함 텍스트를 래핑 + 색상 강조하여 그린다. 다음 y를 반환.
-
-    center=True면 center_w(기본 max_w) 안에서 center_x(기본 x) 기준 가운데 정렬.
-    """
-    runs    = split_runs(strip_emoji(text))
-    wrapped = wrap_runs(draw, runs, font, max_w)
-    if max_lines:
-        wrapped = wrapped[:max_lines]
-    bb   = draw.textbbox((0, 0), "가", font=font)
-    step = line_h if line_h else (bb[3] - bb[1]) + line_gap
-    cw   = (center_w if center_w is not None else max_w) if center else None
-    cx   = center_x if center_x is not None else x
-    for line_runs in wrapped:
-        draw_rich_line(draw, cx, y, line_runs, font, base_fill, hl_fill,
-                       stroke_width=stroke_width, stroke_fill=stroke_fill,
-                       center_w=cw)
-        y += step
-    return y
-
-
-def draw_bell_icon(draw, cx, cy, size, color):
-    """PIL 도형으로 그린 벨 아이콘 (🔔 이모지 대체)."""
-    s = size
-    # 돔 (반원 — 벨 상단)
-    draw.pieslice([cx - s // 2, cy - s, cx + s // 2, cy], 180, 0, fill=color)
-    # 몸통 (아래로 퍼지는 사다리꼴)
-    body = [
-        (cx - s // 2,       cy - s // 6),
-        (cx + s // 2,       cy - s // 6),
-        (cx + s // 2 + s // 5, cy + s // 2),
-        (cx - s // 2 - s // 5, cy + s // 2),
-    ]
-    draw.polygon(body, fill=color)
-    # 하단 챙 (가로 타원 아크)
-    hw = s // 2 + s // 5 + 8
-    draw.arc([cx - hw, cy + s // 3, cx + hw, cy + s // 2 + s // 4],
-             0, 180, fill=color, width=max(s // 6, 5))
-    # 손잡이 (상단 작은 아치)
-    draw.arc([cx - s // 8, cy - s - s // 8, cx + s // 8, cy - s + s // 8],
-             180, 0, fill=color, width=max(s // 10, 4))
-    # 추 (하단 작은 원)
-    cr = s // 8
-    draw.ellipse([cx - cr, cy + s // 2, cx + cr, cy + s // 2 + cr * 2], fill=color)
-
-
-def draw_bi_legend(draw, avg_bi, fnt_label, fnt_val):
-    """하단 안전 영역에 매수지수 범례 + 현재 점수 표시 (y=1700~1870). 씬 4에만 사용."""
-    LX  = PAD
-    LY  = SAFE_BOTTOM + 20           # 1700
-    LW  = W - PAD * 2                # 1000
-    LH  = H - LY - 50                # ~170px
-
-    # 배경 패널
-    draw.rounded_rectangle([LX, LY, LX + LW, LY + LH],
-                           radius=14, fill=CARD_BG, outline=(55, 65, 95), width=1)
-
-    # 현재 매수지수 (왼쪽 강조)
-    bi_col = GREEN if avg_bi >= 65 else AMBER if avg_bi >= 45 else RED
-    bi_str = str(avg_bi) if avg_bi is not None else "?"
-    draw.text((LX + 24, LY + LH // 2), f"{bi_str}점",
-              font=fnt_val, fill=bi_col, anchor="lm",
-              stroke_width=2, stroke_fill=STROKE)
-
-    signal = "긍정" if avg_bi is not None and avg_bi >= 65 else \
-             "중립" if avg_bi is not None and avg_bi >= 45 else "신중"
-    draw.text((LX + 24, LY + LH // 2 + 38), signal,
-              font=fnt_label, fill=bi_col, anchor="lm",
-              stroke_width=1, stroke_fill=STROKE)
-
-    # 구분선
-    SEP_X = LX + 140
-    draw.line([(SEP_X, LY + 16), (SEP_X, LY + LH - 16)], fill=(65, 75, 105), width=1)
-
-    # 오른쪽: 3단계 범례
-    ITEMS = [
-        (GREEN, "65점↑", "긍정"),
-        (AMBER, "45-64점", "중립"),
-        (RED,   "44점↓", "신중"),
-    ]
-    slot_w = (LX + LW - SEP_X - 16) // 3
-    for j, (col, range_lbl, sig_lbl) in enumerate(ITEMS):
-        ix = SEP_X + 8 + j * slot_w
-        iy = LY + LH // 2 - 28
-
-        # 색상 원
-        draw.ellipse([ix, iy, ix + 20, iy + 20], fill=col)
-        draw.text((ix + 28, iy), range_lbl,
-                  font=fnt_label, fill=LGRAY)
-        draw.text((ix + 28, iy + 24), sig_lbl,
-                  font=fnt_label, fill=col)
-
-    # 면책 문구 + 참고 뉴스 강조 (우측)
-    disclaimer = "※ 투자 권유 아님 · 참고 뉴스 · 투자 판단은 본인 책임"
-    db = draw.textbbox((0, 0), disclaimer, font=fnt_label)
-    dw = db[2] - db[0]
-    draw.text((LX + LW - dw - 10, LY + LH - 26),
-              disclaimer, font=fnt_label, fill=(200, 160, 80))
-
-
-def draw_stat_box(draw, x, y, w, h, label, value, col, fnt_val, fnt_lbl):
-    draw.rectangle([x, y, x + w, y + h], fill=CARD_BG, outline=(55, 65, 95), width=1)
-    draw.text((x + w // 2, y + 18), label, font=fnt_lbl, fill=GRAY, anchor="mt")
-    draw.text((x + w // 2, y + h - 22), value, font=fnt_val, fill=col, anchor="mb")
-
-
 # index.html SOURCE_INFO와 동일한 매핑 — 영상 호재 카드에 출처 신뢰도 동반 표기용(부분 문자열 매칭).
 SOURCE_CREDIBILITY = {
     'reuters': ('영국·글로벌통신', 'high'), 'bloomberg': ('미국', 'high'),
@@ -2196,118 +1885,9 @@ def source_credibility_rank(source: str) -> int:
     return 0
 
 
-def parse_news_line(line):
-    """'카테고리: 내용 | 소스' 형식 분리. → (chapter, content, source)"""
-    source = ""
-    if "|" in line:
-        main, source = line.split("|", 1)
-        source = source.strip()
-    else:
-        main = line
-    if ": " in main:
-        ch, ct = main.split(": ", 1)
-        return ch.strip()[:6], ct.strip(), source
-    return "뉴스", main.strip(), source
-
-
-def draw_check(draw, x, y, size, color, width=None):
-    """체크표시 ✓ (두 선분) — (x, y)는 좌상단, size는 한 변 기준."""
-    w = width or max(3, size // 7)
-    p1 = (x + size * 0.08, y + size * 0.52)
-    p2 = (x + size * 0.38, y + size * 0.82)
-    p3 = (x + size * 0.92, y + size * 0.14)
-    draw.line([p1, p2], fill=color, width=w)
-    draw.line([p2, p3], fill=color, width=w)
-
-
-def draw_bullish_hero_card(draw, img, x, y, w, h, headline, details, score,
-                            source, date, accent, fnt_bold, fnt_content,
-                            fnt_source, fnt_content_xl=None, fnt_content_sm=None,
-                            category=""):
-    """호재 심층 히어로 카드 — BEST 배지 + ↑ 화살표 + 카테고리 라벨 + 스토리텔링."""
-    from PIL import ImageDraw
-
-    HEADER_H = 90
-    FOOTER_H = 64
-
-    # 카드 배경
-    draw.rounded_rectangle([x, y, x + w, y + h], radius=14,
-                            fill=CARD_BG, outline=accent, width=2)
-
-    # 헤더 배경 (GREEN 강조)
-    draw.rounded_rectangle([x, y, x + w, y + HEADER_H], radius=14, fill=accent)
-    draw.rectangle([x, y + HEADER_H - 14, x + w, y + HEADER_H], fill=accent)
-
-    # 헤더 왼쪽: 카테고리 또는 소스 라벨 ("+4pt" 대신 — 시청자에게 의미 있는 정보)
-    header_label = (category or source or "최근 HOT")[:14]
-    draw.text((x + 22, y + HEADER_H // 2), header_label,
-              font=fnt_bold, fill=BADGE_BG, anchor="lm",
-              stroke_width=2, stroke_fill=(0, 60, 0))
-
-    # 헤더 오른쪽: "BEST" 배지
-    badge_w, badge_h = 110, 52
-    bx = x + w - badge_w - 16
-    by = y + (HEADER_H - badge_h) // 2
-    draw.rounded_rectangle([bx, by, bx + badge_w, by + badge_h],
-                           radius=10, fill=BADGE_BG)
-    draw.text((bx + badge_w // 2, by + badge_h // 2),
-              "BEST", font=fnt_bold, fill=KEY, anchor="mm",
-              stroke_width=1, stroke_fill=STROKE)
-
-    # 본문 영역 — 각 호재 줄 앞에 초록 체크(✓) 머리기호
-    content_x    = x + 28
-    content_y    = y + HEADER_H + 16
-    content_max_w = w - 28 - 22
-    content_area_h = h - HEADER_H - FOOTER_H - 32
-    CHECK_W      = 44   # 체크 + 여백 폭
-
-    all_lines = [headline] + [d for d in details if d.strip()]
-
-    # 헤드라인은 xl, 본문은 content 폰트 — 일관된 크기 계층
-    headline_font = fnt_content_xl if fnt_content_xl else fnt_bold
-    body_font     = fnt_content
-
-    bb = draw.textbbox((0, 0), "가", font=body_font)
-    char_h = bb[3] - bb[1]
-    bbh = draw.textbbox((0, 0), "가", font=headline_font)
-    head_h = bbh[3] - bbh[1]
-    line_h      = char_h + 16   # 본문 줄 간격 — 전달사항당 2줄씩 6줄이 들어가도록 압축
-    line_h_head = head_h + 16   # 헤드라인 줄 간격 — 글씨가 커 본문보다 더 크게
-    HEAD_GAP    = 16            # 헤드라인과 첫 본문 줄 사이 추가 여백(겹침 방지)
-
-    cy = content_y
-    for i, ln in enumerate(all_lines[:6]):   # 헤드라인+세부 항목
-        if not ln.strip() or cy + char_h > y + h - FOOTER_H - 8:
-            continue
-        use_font   = headline_font if i == 0 else body_font
-        use_col    = WHITE         if i == 0 else LGRAY
-        sw         = 2             if i == 0 else 1
-        use_line_h = line_h_head   if i == 0 else line_h
-        is_detail  = i >= 1                       # 헤드라인 제외, 호재 항목에만 체크
-        text_x     = content_x + (CHECK_W if is_detail else 0)
-        wrap_w     = content_max_w - (CHECK_W if is_detail else 0)
-        wrapped    = wrap_runs(draw, split_runs(strip_emoji(ln)), use_font, wrap_w)
-        for j, line_runs in enumerate(wrapped[:2]):
-            if cy + char_h > y + h - FOOTER_H - 8:
-                break
-            if is_detail and j == 0:             # 줄 첫 행에만 ✓
-                draw_check(draw, content_x, cy + char_h * 0.12, char_h, GREEN)
-            draw_rich_line(draw, text_x, cy, line_runs, use_font, use_col, KEY,
-                           stroke_width=sw, stroke_fill=STROKE)
-            cy += use_line_h
-        if i == 0:
-            cy += HEAD_GAP                        # 헤드라인 끝난 뒤 본문 시작 전 여백
-
-    # 하단 출처 바 (source · date)
-    footer_y = y + h - FOOTER_H
-    draw.rounded_rectangle([x, footer_y - 6, x + w, y + h], radius=14, fill=BADGE_BG)
-    footer_text = " · ".join(filter(None, [source, date])) or "출처 미상"
-    draw.text((x + 18, footer_y + FOOTER_H // 2), footer_text[:50],
-              font=fnt_source, fill=KEY, anchor="lm",
-              stroke_width=1, stroke_fill=STROKE)
-
-
-_FRAME_TEMPLATE_PATH = Path("data/frame-template.png")
+# ROOT_DIR 기준으로 잡아야 한다 — 상대경로로 두면 실행 디렉터리에 따라 템플릿을 못 찾아
+# 오버레이가 조용히 건너뛰어진다(파일이 있어도 CI에서만 적용되는 식의 혼란).
+_FRAME_TEMPLATE_PATH = ROOT_DIR / "data" / "frame-template.png"
 _frame_overlay_cache = None
 _frame_overlay_loaded = False
 
@@ -2414,7 +1994,7 @@ def build_scene_image(scene, summary, font_reg, font_bold, bg_path: Path | None 
         except Exception:
             return ImageFont.load_default()
 
-    # ── 폰트 (1080px 세로 포맷 기준 충분히 큰 사이즈) ──
+    # ── 폰트 (쇼츠 1080px 세로 카드 기준 — 아래 레이아웃은 short 전용) ──
     f_xl    = fnt(font_bold, 72)
     f_lg    = fnt(font_bold, 54)   # 40→54
     f_md    = fnt(font_bold, 48)   # 32→48

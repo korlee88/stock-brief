@@ -18,7 +18,6 @@
 재생성: python scripts/make_bgm.py  (출력: data/bgm/<이름>.mp3, 이음매 없는 스테레오 루프,
 시드 고정이라 재생성해도 항상 동일한 결과)
 """
-import math
 from pathlib import Path
 import numpy as np
 

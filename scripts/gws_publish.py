@@ -1,7 +1,7 @@
 """
 GWS 게시 스크립트 — YouTube 업로드 + Sheets 기록 + Gmail 다이제스트
 
-매주 GitHub Actions에서 weekly_video_make.py 이후 호출됨.
+on-demand-video.yml에서 weekly_video_make.py 이후 호출됨(정기 크론 없음 — 요청 시만).
 시크릿이 없는 통합은 조용히 건너뜀 — 기존 파이프라인에 영향 없음.
 
 필요 환경변수 (선택):
@@ -16,7 +16,6 @@ GWS 게시 스크립트 — YouTube 업로드 + Sheets 기록 + Gmail 다이제�
   pip install google-api-python-client google-auth google-auth-httplib2 gspread
 """
 
-import base64
 import json
 import os
 import smtplib
@@ -65,7 +64,7 @@ KAKAO_REFRESH_TOKEN = os.environ.get("KAKAO_REFRESH_TOKEN", "")
 # ── 유틸 ──────────────────────────────────────────────────────────────────────
 
 def find_latest_report() -> Path | None:
-    """data/weekly-report/ 에서 meta.json이 있는 가장 최근 디렉토리 반환."""
+    """REPORT_BASE(온디맨드는 data/on-demand[-long]/<티커>)에서 meta.json이 있는 최신 디렉토리 반환."""
     if not REPORT_BASE.exists():
         return None
     dirs = sorted(
@@ -538,7 +537,7 @@ def send_kakao_memo(report_dir: Path, meta: dict, youtube_url: str | None):
 def main():
     report_dir = find_latest_report()
     if not report_dir:
-        print("⚠ weekly-report 디렉토리 없음", file=sys.stderr)
+        print(f"⚠ 리포트 디렉토리 없음: {REPORT_BASE}", file=sys.stderr)
         sys.exit(0)
 
     meta = load_meta(report_dir)
