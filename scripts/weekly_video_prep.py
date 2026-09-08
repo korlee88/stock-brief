@@ -1507,12 +1507,15 @@ def fetch_imagen_image(prompt: str, out_path: Path, aspect_ratio: str = "16:9") 
                     return True
             except Exception as e:
                 msg = str(e)
-                # 결제 미설정(FAILED_PRECONDITION/PERMISSION_DENIED)은 재시도해도 계속 실패하므로
-                # 이번 실행에서 Imagen 자체를 끄고 바로 Nano Banana(무료)로 넘어간다.
-                if "FAILED_PRECONDITION" in msg or "PERMISSION_DENIED" in msg or "billing" in msg.lower():
+                # 결제 미설정(FAILED_PRECONDITION/PERMISSION_DENIED)이거나, 이 GEMINI_API_KEY가
+                # Vertex AI/Enterprise Agent Platform 모드가 아닌 일반 Developer API 키라서
+                # generate_images 자체를 지원 안 하는 경우 — 둘 다 재시도해도 계속 실패하므로
+                # 이번 실행에서 Imagen을 끄고 바로 Nano Banana(무료)로 넘어간다.
+                if ("FAILED_PRECONDITION" in msg or "PERMISSION_DENIED" in msg
+                        or "billing" in msg.lower() or "Enterprise Agent Platform" in msg):
                     _IMAGEN_UNAVAILABLE = True
-                    print(f"      ⚠ Imagen 결제 미설정으로 판단, 이번 실행은 Nano Banana만 사용: {e}",
-                          file=sys.stderr)
+                    print(f"      ⚠ Imagen 사용 불가로 판단(결제 미설정 또는 API 키가 Enterprise 모드 아님), "
+                          f"이번 실행은 Nano Banana만 사용: {e}", file=sys.stderr)
                     return False
                 print(f"      ⚠ {model_id} 실패: {e}", file=sys.stderr)
                 continue
@@ -2758,8 +2761,9 @@ def main():
             print(f"   ⚠ latest.json 갱신 실패(계속 진행): {e}", file=sys.stderr)
 
     print(f"\n✅ 완료: {out_dir}/")
-    print(f"   📄 script.txt  — 영상 대본 (5씬, 인트로+클로징 포함)")
-    print(f"   🖼 YYMMDD_회사명_씬0~2.png — 씬별 배경 카드 이미지 (1080×1920, YouTube Shorts 세로 포맷)")
+    print(f"   📄 script.txt  — 영상 대본 (4씬, 인트로+클로징 포함)")
+    print(f"   🖼 YYMMDD_회사명_씬0~3.png — 씬별 배경 이미지 ({W}×{H}, "
+          f"{'기업소개 롱폼 가로' if MODE == 'long' else 'YouTube Shorts 세로'} 포맷)")
 
 
 if __name__ == "__main__":
