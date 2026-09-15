@@ -11,9 +11,17 @@
 
 env:
   GEMINI_API_KEY       — 필수 (없으면 종료)
+  OPENAI_API_KEY       — 선택 (없으면 2차 검증 생략, Gemini 결과만 사용)
   KAKAO_REST_API_KEY   — 선택 (없으면 발송 생략, 파일만 갱신)
   KAKAO_REFRESH_TOKEN  — 선택
   GITHUB_REPOSITORY    — 링크 생성용 (owner/repo)
+
+2차 검증(OPENAI_API_KEY, 사용자 요청): 카카오 메시지는 impact="high" 항목만 골라 보내므로,
+근거가 약한 high가 가장 위험하다(사용자 눈에 제일 먼저 띄고 제일 신뢰받는 자리). Gemini가
+high로 매긴 항목을 OpenAI(web_search 그라운딩)로 독립 재조사해, 같은 날짜에 비슷한 일정을
+못 찾으면 medium으로 낮춘다 — 서로 다른 두 검색 소스가 같은 사실을 못 찾으면 근거가
+불충분하다고 보는 것(지어낸 정보 금지 원칙의 연장). OpenAI 쪽 실패·미설정은 전체 실행을
+막지 않고 Gemini 결과만 그대로 쓴다(최선 노력, 필수 아님).
 """
 
 import json
@@ -27,6 +35,10 @@ ROOT_DIR = Path(__file__).parent.parent
 OUT_DIR = ROOT_DIR / "data" / "calendar"
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+# 2차 검증 전용 — 실시간 웹서치 그라운딩이 되면서 속도·비용 우선인 모델(2026-09 기준).
+# 정확도가 더 필요해지면 gpt-5.5(검색 범위 넓지만 비용·지연 큼)로 올릴 것.
+OPENAI_MODEL = "gpt-5.4"
 KAKAO_REST_API_KEY = os.environ.get("KAKAO_REST_API_KEY", "")
 KAKAO_REFRESH_TOKEN = os.environ.get("KAKAO_REFRESH_TOKEN", "")
 REPO = os.environ.get("GITHUB_REPOSITORY", "")
@@ -156,6 +168,76 @@ def _parse_events(raw, start, end):
     return out
 
 
+def fetch_events_openai(start, end):
+    """OpenAI Responses API(web_search 그라운딩)로 같은 질문을 독립적으로 재조사.
+    Gemini 결과의 2차 검증용 — 이 함수가 실패해도 호출부가 감싸서 전체 실행에는 영향 없다."""
+    from openai import OpenAI
+
+    client = OpenAI(api_key=OPENAI_API_KEY)
+    prompt = PROMPT.format(start=start.isoformat(), end=end.isoformat(),
+                           categories=", ".join(CATEGORIES))
+    schema = {
+        "type": "object",
+        "properties": {
+            "events": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "date": {"type": "string"},
+                        "time": {"type": "string"},
+                        "title": {"type": "string"},
+                        "category": {"type": "string"},
+                        "impact": {"type": "string"},
+                        "source": {"type": "string"},
+                    },
+                    "required": ["date", "time", "title", "category", "impact", "source"],
+                    "additionalProperties": False,
+                },
+            },
+        },
+        "required": ["events"],
+        "additionalProperties": False,
+    }
+    response = client.responses.create(
+        model=OPENAI_MODEL,
+        tools=[{"type": "web_search"}],
+        input=prompt,
+        text={"format": {"type": "json_schema", "name": "calendar_events",
+                          "strict": True, "schema": schema}},
+    )
+    data = json.loads(response.output_text)
+    # _parse_events는 문자열에서 JSON 배열을 정규식으로 뽑아 검증하는 공용 로직 —
+    # Structured Outputs로 이미 스키마가 보장된 배열이지만, 날짜 범위·출처 검증은 동일하게
+    # 거치는 게 맞아 그대로 재사용한다(두 소스를 동일한 기준으로 필터링해야 대조가 공정하다).
+    return _parse_events(json.dumps(data.get("events", [])), start, end)
+
+
+def reconcile_high_impact(events, other_events):
+    """Gemini가 'high'로 매긴 항목을 OpenAI의 독립 조사 결과와 대조.
+
+    같은 날짜에 제목이 겹치는 일정을 못 찾으면 medium으로 낮춘다 — 완벽한 문구 일치는
+    기대할 수 없어(번역·표현 차이) 2글자 이상 단어 하나라도 겹치면 같은 일정으로 본다.
+    other_events가 비어 있으면(2차 검증 미설정·실패) 원본을 그대로 반환한다."""
+    if not other_events:
+        return events
+
+    by_date = {}
+    for oe in other_events:
+        by_date.setdefault(oe["date"], []).append(oe["title"])
+
+    def corroborated(e):
+        words = re.findall(r"[가-힣A-Za-z0-9]{2,}", e["title"])
+        return any(w in title for title in by_date.get(e["date"], []) for w in words)
+
+    for e in events:
+        if e["impact"] == "high" and not corroborated(e):
+            print(f"   ⚠ 2차 조사에서 확인 안 됨 → medium으로 하향: {e['date']} {e['title']}",
+                  file=sys.stderr)
+            e["impact"] = "medium"
+    return events
+
+
 def build_kakao_text(events, start, end):
     """카카오 200자 제한에 맞춰 영향도 높은 순으로 압축. 넘치면 잘라내고 '외 N건'.
 
@@ -247,6 +329,16 @@ def main():
     if not events:
         print("⚠ 확인된 일정 없음 — 파일·발송 모두 건너뜀", file=sys.stderr)
         sys.exit(0)
+
+    if OPENAI_API_KEY:
+        try:
+            other_events = fetch_events_openai(start, end)
+            events = reconcile_high_impact(events, other_events)
+            print(f"   🔎 OpenAI 2차 검증 완료 ({len(other_events)}건과 대조)")
+        except Exception as e:
+            print(f"   ⚠ OpenAI 2차 검증 실패(건너뜀, Gemini 결과만 사용): {e}", file=sys.stderr)
+    else:
+        print("   [SKIP] OPENAI_API_KEY 없음 — 2차 검증 생략")
 
     tally = {k: sum(1 for e in events if e["impact"] == k) for k in IMPACT_RANK}
     print(f"   ✅ {len(events)}건 수집 — 지수 영향 높음 {tally['high']} · 중간 {tally['medium']} · 낮음 {tally['low']}")
