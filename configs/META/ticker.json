@@ -1,0 +1,33 @@
+{
+  "ticker": "META",
+  "company_en": "Meta Platforms, Inc.",
+  "company_ko": "메타 플랫폼스",
+  "industry_ko": "소셜 미디어, 광고",
+  "exchange": "NASDAQ",
+  "image_future_tech_en": "A vibrant digital landscape where billions of users connect and share across platforms like Facebook, Instagram, and WhatsApp, powered by advanced AI for targeted advertising and immersive social experiences.",
+  "brand_label": "META BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "GOOGL",
+  "key_people": [
+    "Mark Zuckerberg",
+    "Javier Olivan"
+  ],
+  "google_trends_keywords": [
+    "메타",
+    "페이스북",
+    "인스타그램",
+    "마크 저커버그",
+    "메타버스",
+    "AI 안경"
+  ],
+  "video_tags": [
+    "메타",
+    "페이스북",
+    "인스타그램",
+    "Metaverse",
+    "AI"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-09-15T14:18:21.116Z"
+}

@@ -1,0 +1,14 @@
+# META 주간 배경 이미지 프롬프트 — 2026-09-15
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A sleek modern open-plan tech campus interior with diverse creative professionals collaborating around large interactive touch walls displaying flowing abstract social network graphs and community connection nodes, soft purple analytical mood lighting bathing the space, floor-to-ceiling windows revealing a calm dusk sky, a small smartphone on a side desk showing a generic social feed interface as a subtle background prop, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A vibrant global connectivity visualization with luminous green data streams flowing upward between countless glowing user nodes across a stylized world map, symbolizing surging social engagement and advertising reach growth, dynamic upward energy with glowing motion lines rising through the composition, a small tablet device tucked in the lower corner displaying a generic photo-sharing interface as a minor accessory, warm green growth atmosphere, cinematic depth, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 정량지표
+A quiet advertising analytics command center with a focused analyst reviewing softly glowing cyan holographic dashboards showing abstract audience segmentation charts and campaign performance curves, cool cyan-blue analytical lighting casting calm reflections on glass surfaces, minimalist desk setup with a subtle smartphone on the side showing a generic messaging app as a background prop, deep focus atmosphere, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬3 다음주전망
+A visionary immersive mixed-reality studio scene where a person wears sleek AI smart glasses experiencing warm golden holographic social avatars and floating conversation bubbles blending seamlessly with a cozy real-world environment, symbolizing the future of connected social experiences and metaverse computing, warm inspiring golden light pouring from above, a small VR headset resting on a nearby shelf as a subtle secondary element, cinematic vertical composition, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

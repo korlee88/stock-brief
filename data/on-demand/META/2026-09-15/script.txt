@@ -1,0 +1,37 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+다들 걱정했지만, *$670.37*에서 잘 버텨요
+*페이스북·인스타* 광고로 돈 버는 회사예요
+*AI와 메타버스*로 미래를 그리고 있죠
+2026년 AI 인프라에 *1350억 달러* 투자해요
+자체 AI 칩 *MTIA*로 광고 추천 정확도 높여요
+온라인 광고 *1위*, 구글 추월 예상돼요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: 개인 AI 비서 *'뮤즈'* 출시로 월가 관심이 뜨거워요
+악재: COO 올리반이 *약 330만 달러* 규모 자사주를 팔았어요
+보합: AI 투자비 크지만 *성과 확인*으로 반응은 중립이에요
+
+SCENE_2_TITLE: 정량지표
+SCENE_2:
+추세: 20일 평균가보다 *+12.6%* 위, 단기 과열 신호예요
+밸류: 내년 예상 PER *19.2배*(이익 대비 적정), 목표가 *$758*
+총평: 애널리스트 57명 의견은 *적극 매수*로 모여요
+
+SCENE_3_TITLE: 다음주전망
+SCENE_3:
+JP모건 *'비중 확대'* 상향 — 투자심리 개선 신호
+AI 비서 *'뮤즈'*가 광고 매출로 이어질지 관건
+현재 *$670선*에서 *완만한 등락* 전망
+단기 과열(RSI *84.1*, 매수 과열) — 차익매물 주의
+변수: 내부자 매도·AI 투자비 부담 지속돼요
+오늘도 함께해줘서 고마워요!
+
+IMAGE_PROMPT_0: A sleek modern open-plan tech campus interior with diverse creative professionals collaborating around large interactive touch walls displaying flowing abstract social network graphs and community connection nodes, soft purple analytical mood lighting bathing the space, floor-to-ceiling windows revealing a calm dusk sky, a small smartphone on a side desk showing a generic social feed interface as a subtle background prop, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A vibrant global connectivity visualization with luminous green data streams flowing upward between countless glowing user nodes across a stylized world map, symbolizing surging social engagement and advertising reach growth, dynamic upward energy with glowing motion lines rising through the composition, a small tablet device tucked in the lower corner displaying a generic photo-sharing interface as a minor accessory, warm green growth atmosphere, cinematic depth, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A quiet advertising analytics command center with a focused analyst reviewing softly glowing cyan holographic dashboards showing abstract audience segmentation charts and campaign performance curves, cool cyan-blue analytical lighting casting calm reflections on glass surfaces, minimalist desk setup with a subtle smartphone on the side showing a generic messaging app as a background prop, deep focus atmosphere, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_3: A visionary immersive mixed-reality studio scene where a person wears sleek AI smart glasses experiencing warm golden holographic social avatars and floating conversation bubbles blending seamlessly with a cozy real-world environment, symbolizing the future of connected social experiences and metaverse computing, warm inspiring golden light pouring from above, a small VR headset resting on a nearby shelf as a subtle secondary element, cinematic vertical composition, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

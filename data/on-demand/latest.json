@@ -1,15 +1,16 @@
 {
- "ticker": "ORCL",
- "company_ko": "오라클",
- "date": "2026-09-01",
- "report_dir": "data/on-demand/ORCL/2026-09-01",
+ "ticker": "META",
+ "company_ko": "메타 플랫폼스",
+ "date": "2026-09-15",
+ "mode": "short",
+ "report_dir": "data/on-demand/META/2026-09-15",
  "scenes": [
-  "data/on-demand/ORCL/2026-09-01/260901_오라클_씬0.png",
-  "data/on-demand/ORCL/2026-09-01/260901_오라클_씬1.png",
-  "data/on-demand/ORCL/2026-09-01/260901_오라클_씬2.png",
-  "data/on-demand/ORCL/2026-09-01/260901_오라클_씬3.png"
+  "data/on-demand/META/2026-09-15/260915_메타플랫폼스_씬0.png",
+  "data/on-demand/META/2026-09-15/260915_메타플랫폼스_씬1.png",
+  "data/on-demand/META/2026-09-15/260915_메타플랫폼스_씬2.png",
+  "data/on-demand/META/2026-09-15/260915_메타플랫폼스_씬3.png"
  ],
- "youtube_title": "다들 흔들린다지만, $143.45에서 버티는 중이에요 | 오라클(ORCL) 주가 브리핑 9/1 #Shorts",
- "youtube_description": "오라클(ORCL) 2026-09-01 주가 브리핑 — 현재가 $143.45 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 뉴스 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 오라클, ORCL, 오라클 주가, ORCL 주가, 미국주식, 오라클 클라우드, 오라클 데이터베이스, 래리 엘리슨, 기업용 소프트웨어, 클라우드 컴퓨팅, Oracle, Oracle Cloud, Oracle Database, Larry Ellison, 데이터베이스, 기업용 소프트웨어, 클라우드 컴퓨팅, 데이터베이스 관리 시스템, MSFT\n#ORCL #오라클 #미국주식 #Oracle #OracleCloud #OracleDatabase #LarryEllison #기업용소프트웨어 #클라우드컴퓨팅 #데이터베이스 #Shorts",
- "generated_at": "2026-09-01"
+ "youtube_title": "다들 걱정했지만, $670.37에서 잘 버텨요 | 메타 플랫폼스(META) 주가 브리핑 9/15 #Shorts",
+ "youtube_description": "메타 플랫폼스(META) 2026-09-15 주가 브리핑 — 현재가 $670.37 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 메타 플랫폼스, META, 메타 플랫폼스 주가, META 주가, 미국주식, 메타, 페이스북, 인스타그램, 마크 저커버그, 메타버스, AI 안경, Metaverse, AI, 소셜 미디어, 광고, GOOGL\n#META #메타플랫폼스 #미국주식 #메타 #페이스북 #인스타그램 #Metaverse #AI #Shorts",
+ "generated_at": "2026-09-15"
 }

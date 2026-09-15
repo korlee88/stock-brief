@@ -1,0 +1,235 @@
+{
+  "generated_at": "2026-09-15",
+  "generated_by": "Claude Opus 4",
+  "title": "다들 걱정했지만, *$670.37*에서 잘 버텨요",
+  "subtitle": "2026-09-15 ~ 2026-09-15 · Meta, 새로운 개인 AI 에이전트 'Muse' 출시",
+  "summary": {
+    "week_start": "2026-09-15",
+    "week_end": "2026-09-15",
+    "session_count": 1,
+    "total_analyzed": 10,
+    "bullish_count": 2,
+    "bearish_count": 0,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 670.37,
+    "price_end": 670.37,
+    "latest_price": 670.37,
+    "today_price": 670.37,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "Meta, 새로운 개인 AI 에이전트 'Muse' 출시로 월스트리트의 관심 집중",
+      "score": 4,
+      "reason": "새로운 AI 에이전트 출시는 Meta의 AI 기술 발전을 보여주며, 이는 사용자 참여도와 광고 수익 개선으로 이어질 수 있어 주가에 긍정적인 영향을 미칠 것입니다.",
+      "source": "MarketWatch",
+      "date": "2026-09-10",
+      "category": "Product",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "Meta, 새로운 개인 AI 에이전트 'Muse' 출시로 월스트리트의 관심 집중",
+        "score": 4,
+        "reason": "새로운 AI 에이전트 출시는 Meta의 AI 기술 발전을 보여주며, 이는 사용자 참여도와 광고 수익 개선으로 이어질 수 있어 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "MarketWatch",
+        "date": "2026-09-10",
+        "category": "Product"
+      },
+      {
+        "title": "JPMorgan, Meta 주식 등급 '중립'에서 '비중 확대'로 상향 조정 및 목표 주가 상향",
+        "score": 3,
+        "reason": "주요 투자 은행의 긍정적인 등급 상향 조정과 목표 주가 상향은 투자자 신뢰를 높여 주가 상승에 기여할 것입니다.",
+        "source": "JPMorgan (via Investing.com)",
+        "date": "2026-09-10",
+        "category": "Market"
+      }
+    ],
+    "top_bearish": [],
+    "top_neutral": [
+      {
+        "title": "Meta, AI 투자로 인한 막대한 비용 발생에도 불구하고 AI 성과 입증",
+        "score": 0,
+        "reason": "AI 투자의 긍정적인 효과와 막대한 자본 지출로 인한 잉여 현금 흐름 감소가 상충되어 주가에 중립적인 영향을 미칠 것으로 예상됩니다. 장기적으로는 AI 투자의 효율성이 중요합니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-09-15",
+        "category": "Earnings"
+      }
+    ],
+    "neutral_count": 1,
+    "scene1_news": {
+      "bullish": {
+        "title": "Meta, 새로운 개인 AI 에이전트 'Muse' 출시로 월스트리트의 관심 집중",
+        "score": 4,
+        "reason": "새로운 AI 에이전트 출시는 Meta의 AI 기술 발전을 보여주며, 이는 사용자 참여도와 광고 수익 개선으로 이어질 수 있어 주가에 긍정적인 영향을 미칠 것입니다.",
+        "source": "MarketWatch",
+        "date": "2026-09-10",
+        "category": "Product"
+      },
+      "bearish": {
+        "title": "Meta Platforms COO 하비에르 올리반, 약 330만 달러 규모의 주식 매각",
+        "score": -2,
+        "reason": "내부자의 대규모 주식 매각은 시장에 부정적인 신호로 해석될 수 있으며, 이는 주가에 하락 압력을 가할 수 있습니다.",
+        "source": "Investing.com",
+        "date": "2026-09-11",
+        "category": "Market"
+      },
+      "neutral": {
+        "title": "Meta, AI 투자로 인한 막대한 비용 발생에도 불구하고 AI 성과 입증",
+        "score": 0,
+        "reason": "AI 투자의 긍정적인 효과와 막대한 자본 지출로 인한 잉여 현금 흐름 감소가 상충되어 주가에 중립적인 영향을 미칠 것으로 예상됩니다. 장기적으로는 AI 투자의 효율성이 중요합니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-09-15",
+        "category": "Earnings"
+      }
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-09-15",
+        670.37
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-09-15",
+    "today_news": [
+      {
+        "title": "Meta, AI 투자로 인한 막대한 비용 발생에도 불구하고 AI 성과 입증",
+        "category": "Earnings",
+        "source": "Seeking Alpha",
+        "date": "2026-09-15"
+      },
+      {
+        "title": "Meta Platforms COO 하비에르 올리반, 약 330만 달러 규모의 주식 매각",
+        "category": "Market",
+        "source": "Investing.com",
+        "date": "2026-09-11"
+      },
+      {
+        "title": "Meta, 새로운 개인 AI 에이전트 'Muse' 출시로 월스트리트의 관심 집중",
+        "category": "Product",
+        "source": "MarketWatch",
+        "date": "2026-09-10"
+      },
+      {
+        "title": "JPMorgan, Meta 주식 등급 '중립'에서 '비중 확대'로 상향 조정 및 목표 주가 상향",
+        "category": "Market",
+        "source": "JPMorgan (via Investing.com)",
+        "date": "2026-09-10"
+      },
+      {
+        "title": "Meta, 분기별 현금 배당 발표",
+        "category": "Market",
+        "source": "PR Newswire",
+        "date": "2026-09-10"
+      },
+      {
+        "title": "Meta, 청소년 소셜 미디어 소송에서 1억 9천만 달러 합의",
+        "category": "Legal",
+        "source": "Morningstar",
+        "date": "2026-09-09"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 670.4,
+        "ma20": 595.33,
+        "vs_ma20_pct": 12.6,
+        "ma60": 598.28,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 84.1,
+        "rsi_state": "과매수(과열)",
+        "macd_momentum": "상승 모멘텀",
+        "volatility_20d_pct": 2.1,
+        "pos_52w_pct": 55.0,
+        "high_52w": 790.8,
+        "low_52w": 520.26,
+        "mom_5d_pct": 9.3,
+        "mom_20d_pct": 17.8
+      },
+      "valuation": {
+        "목표주가_평균": 758.28,
+        "목표주가_최고": 1000.0,
+        "목표주가_최저": 580.0,
+        "애널리스트_수": 57,
+        "투자의견": "적극매수",
+        "PER_선행": 19.2,
+        "PER": 25.2
+      }
+    },
+    "prev_day": {
+      "date": "2026-09-15",
+      "open": 659.3,
+      "close": 670.4,
+      "change_pct": 0.72
+    },
+    "month_low": {
+      "low": 537.27,
+      "current": 670.4,
+      "pct_vs_low": 24.78
+    },
+    "movement_reason": "죄송합니다. 저는 실시간 시장 데이터나 2026년 9월 15일의 특정 사건에 대한 정보에 접근할 수 없습니다. 따라서 해당 날짜의 메타 플랫폼스(META) 주가 하락에 대한 정확한 원인을 분석해 드릴 수 없습니다. 제공해주신 정보만으로는 변동률이 None%이므로 주가 하락이 발생했다고 단정하기도 어렵습니다.\n\n그러나 일반적으로 메타와 같은 기술 기업의 주가 하락에 영향을 미칠 수 있는 주요 요인들은 다음과 같습니다. 검색 결과는 일반적인 주가 하락 요인을 기반으로 합니다.\n\n메타 플랫폼스(META)의 주가 하락은 다양한 복합적인 원인으로 발생할 수 있습니다. 2026년 9월 15일 기준의 정확한 실시간 정보를 알 수는 없으나, 일반적인 빅테크 기업의 주가 하락 요인을 바탕으로 분석하면 다음과 같습니다.\n\n주요 하락 원인:\n\nAI 투자 부담 / 메타버스 손실 / 광고 시장 둔화",
+    "company_direction": "메타 플랫폼스는 주요 소셜 미디어와 광고 사업을 기반으로 AI 및 메타버스 기술에 집중 투자하며 미래 성장을 주도하고 있습니다.\n\n*   **주력 사업:** 소셜 미디어 운영/페이스북, 인스타그램 플랫폼 제공 / 앱 기반 광고 수익/핵심 매출원 역할 / VR/AR 기기 개발/메타버스 생태계 구축\n*   **회사의 비전·전략 방향:** 연결 통한 커뮤니티 강화/초기 기업 미션 / 메타버스 패러다임 전환/가상-현실 경계 허물기 / AI 기술 개발 가속/광고 효율성 및 인프라 혁신 / 차세대 컴퓨팅 플랫폼 선점/장기 성장 동력 확보\n*   **최근 1년 내 주요 투자·설비·인수:** 2026년 AI 인프라 투자/최대 190조 원 (1350억 달러) / AI 칩 및 데이터센터 확충/초지능 구현 목표 / AI 웨어러블 기업 인수/기술 역량 강화 (리미트리스 등) / 코닝과 8조 원 계약/광섬유 케이블 확보\n*   **핵심 신제품·신기술 로드맵:** AI 광고 모델 뮤즈 스파크/영상 자동 생성 기능 / 자체 AI 칩 MTIA 개발/6개월 주기 신제품 출시 / 초지능 AI 시스템 구축/차세대 기술 선점 / AI 스마트 안경 출시/일상 속 AI 경험 확장\n*   **시장 내 위치·점유율:** 온라인 광고 시장 1위/구글 추월 예상 (2026년) / 소셜 미디어 독보적 위치/수십억 사용자 기반 / 릴스 등 AI 광고 효과/매출 성장 주도 / 주요 빅테크와 시장 과점/높은 지배력 유지"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "다들 걱정했지만, *$670.37*에서 잘 버텨요",
+        "*페이스북·인스타* 광고로 돈 버는 회사예요",
+        "*AI와 메타버스*로 미래를 그리고 있죠",
+        "2026년 AI 인프라에 *1350억 달러* 투자해요",
+        "자체 AI 칩 *MTIA*로 광고 추천 정확도 높여요",
+        "온라인 광고 *1위*, 구글 추월 예상돼요"
+      ],
+      "body": "다들 걱정했지만, *$670.37*에서 잘 버텨요\n*페이스북·인스타* 광고로 돈 버는 회사예요\n*AI와 메타버스*로 미래를 그리고 있죠\n2026년 AI 인프라에 *1350억 달러* 투자해요\n자체 AI 칩 *MTIA*로 광고 추천 정확도 높여요\n온라인 광고 *1위*, 구글 추월 예상돼요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: 개인 AI 비서 *'뮤즈'* 출시로 월가 관심이 뜨거워요",
+        "악재: COO 올리반이 *약 330만 달러* 규모 자사주를 팔았어요",
+        "보합: AI 투자비 크지만 *성과 확인*으로 반응은 중립이에요"
+      ],
+      "body": "호재: 개인 AI 비서 *'뮤즈'* 출시로 월가 관심이 뜨거워요\n악재: COO 올리반이 *약 330만 달러* 규모 자사주를 팔았어요\n보합: AI 투자비 크지만 *성과 확인*으로 반응은 중립이에요"
+    },
+    {
+      "index": 2,
+      "title": "정량지표",
+      "lines": [
+        "추세: 20일 평균가보다 *+12.6%* 위, 단기 과열 신호예요",
+        "밸류: 내년 예상 PER *19.2배*(이익 대비 적정), 목표가 *$758*",
+        "총평: 애널리스트 57명 의견은 *적극 매수*로 모여요"
+      ],
+      "body": "추세: 20일 평균가보다 *+12.6%* 위, 단기 과열 신호예요\n밸류: 내년 예상 PER *19.2배*(이익 대비 적정), 목표가 *$758*\n총평: 애널리스트 57명 의견은 *적극 매수*로 모여요"
+    },
+    {
+      "index": 3,
+      "title": "다음주전망",
+      "lines": [
+        "JP모건 *'비중 확대'* 상향 — 투자심리 개선 신호",
+        "AI 비서 *'뮤즈'*가 광고 매출로 이어질지 관건",
+        "현재 *$670선*에서 *완만한 등락* 전망",
+        "단기 과열(RSI *84.1*, 매수 과열) — 차익매물 주의",
+        "변수: 내부자 매도·AI 투자비 부담 지속돼요",
+        "오늘도 함께해줘서 고마워요!"
+      ],
+      "body": "JP모건 *'비중 확대'* 상향 — 투자심리 개선 신호\nAI 비서 *'뮤즈'*가 광고 매출로 이어질지 관건\n현재 *$670선*에서 *완만한 등락* 전망\n단기 과열(RSI *84.1*, 매수 과열) — 차익매물 주의\n변수: 내부자 매도·AI 투자비 부담 지속돼요\n오늘도 함께해줘서 고마워요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A sleek modern open-plan tech campus interior with diverse creative professionals collaborating around large interactive touch walls displaying flowing abstract social network graphs and community connection nodes, soft purple analytical mood lighting bathing the space, floor-to-ceiling windows revealing a calm dusk sky, a small smartphone on a side desk showing a generic social feed interface as a subtle background prop, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A vibrant global connectivity visualization with luminous green data streams flowing upward between countless glowing user nodes across a stylized world map, symbolizing surging social engagement and advertising reach growth, dynamic upward energy with glowing motion lines rising through the composition, a small tablet device tucked in the lower corner displaying a generic photo-sharing interface as a minor accessory, warm green growth atmosphere, cinematic depth, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A quiet advertising analytics command center with a focused analyst reviewing softly glowing cyan holographic dashboards showing abstract audience segmentation charts and campaign performance curves, cool cyan-blue analytical lighting casting calm reflections on glass surfaces, minimalist desk setup with a subtle smartphone on the side showing a generic messaging app as a background prop, deep focus atmosphere, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "3": "A visionary immersive mixed-reality studio scene where a person wears sleek AI smart glasses experiencing warm golden holographic social avatars and floating conversation bubbles blending seamlessly with a cozy real-world environment, symbolizing the future of connected social experiences and metaverse computing, warm inspiring golden light pouring from above, a small VR headset resting on a nearby shelf as a subtle secondary element, cinematic vertical composition, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

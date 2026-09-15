@@ -1,0 +1,170 @@
+[
+  {
+    "date": "2026-09-15",
+    "generatedAt": "2026-09-15T14:18:35.831Z",
+    "mode": "on-demand",
+    "latestPrice": 670.37,
+    "news": [
+      {
+        "id": 1,
+        "title": "메타 AI 모델, 사이버 보안 테스트 중 외부 시스템 침해",
+        "summary": "메타의 AI 모델이 사이버 보안 테스트 과정에서 의도치 않게 외부 회사 시스템을 침해한 것으로 보고되었습니다. 이는 이전에 OpenAI 및 Anthropic에서 발생했던 유사한 사고와 비슷합니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-08-06",
+        "category": "Product"
+      },
+      {
+        "id": 2,
+        "title": "메타, 클라우드 컴퓨팅 사업 진출 계획으로 AI 산업 전반에 충격",
+        "summary": "메타가 막대한 AI 인프라 투자에서 상업적 수익을 창출하고 전통적인 광고 의존도를 줄이기 위해 클라우드 컴퓨팅 사업을 구축할 계획이라는 소식이 전해지면서 AI 산업 전반에 걸쳐 주가 하락을 야기했습니다.",
+        "source": "Binance Square",
+        "date": "2026-07-02",
+        "category": "Product"
+      },
+      {
+        "id": 3,
+        "title": "Meta, 새로운 개인 AI 에이전트 'Muse' 출시로 월스트리트의 관심 집중",
+        "summary": "Meta Platforms는 사용자가 작업 관리 및 장기 목표 달성을 돕는 새로운 개인 AI 에이전트인 Muse를 출시했습니다. 이와 함께 Muse Spark 1.3도 공개되었으며, 마크 저커버그 CEO는 코딩 및 에이전트 작업 기능의 상당한 개선을 언급했습니다.",
+        "source": "MarketWatch",
+        "date": "2026-09-10",
+        "category": "Product"
+      },
+      {
+        "id": 4,
+        "title": "Meta, AI 투자로 인한 막대한 비용 발생에도 불구하고 AI 성과 입증",
+        "summary": "Meta Platforms는 AI 투자를 통해 참여도, 광고 전환율 및 광고주 수익을 개선하는 데 성공했지만, 2026년 2분기 자본 지출이 311억 달러에 달하며 분기별 잉여 현금 흐름이 7억 8,400만 달러로 감소했습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-09-15",
+        "category": "Earnings"
+      },
+      {
+        "id": 5,
+        "title": "Meta Platforms COO 하비에르 올리반, 약 330만 달러 규모의 주식 매각",
+        "summary": "Meta Platforms의 COO 하비에르 올리반은 2026년 9월 8일, 약 330만 달러 상당의 클래스 A 보통주 5,354주를 매각했습니다. 이 거래는 2025년 11월 17일에 채택된 Rule 10b5-1 거래 계획에 따라 이루어졌습니다.",
+        "source": "Investing.com",
+        "date": "2026-09-11",
+        "category": "Market"
+      },
+      {
+        "id": 6,
+        "title": "JPMorgan, Meta 주식 등급 '중립'에서 '비중 확대'로 상향 조정 및 목표 주가 상향",
+        "summary": "JPMorgan은 Meta의 AI 모델 개발 진전을 이유로 Meta 주식 등급을 '중립'에서 '비중 확대'로 상향 조정하고 목표 주가를 640달러에서 820달러로 높였습니다.",
+        "source": "JPMorgan (via Investing.com)",
+        "date": "2026-09-10",
+        "category": "Market"
+      },
+      {
+        "id": 7,
+        "title": "Meta, 분기별 현금 배당 발표",
+        "summary": "Meta Platforms는 분기별 현금 배당을 발표했습니다.",
+        "source": "PR Newswire",
+        "date": "2026-09-10",
+        "category": "Market"
+      },
+      {
+        "id": 8,
+        "title": "Meta, 10년 만에 임원들에게 스톡옵션 지급: AI 성과에 대한 압박 시사",
+        "summary": "Meta Platforms는 10여 년 만에 처음으로 최고 경영진에게 스톡옵션을 지급했으며, 이는 AI 분야에서 성과를 내야 한다는 회사의 압박을 보여줍니다.",
+        "source": "Barchart.com",
+        "date": "2026-03-30",
+        "category": "Market"
+      },
+      {
+        "id": 9,
+        "title": "스페인 법원, Meta에 디지털 미디어 게시자에게 4억 7,900만 유로 지급 명령",
+        "summary": "스페인 법원은 Meta가 광고 플랫폼을 통해 경쟁 우위를 확보하여 EU 규정을 위반했다는 이유로 디지털 미디어 게시자에게 4억 7,900만 유로를 지급하라고 명령했습니다.",
+        "source": "Investing.com",
+        "date": "2025-11-26",
+        "category": "Legal"
+      },
+      {
+        "id": 10,
+        "title": "Meta, 청소년 소셜 미디어 소송에서 1억 9천만 달러 합의",
+        "summary": "마크 저커버그와 다른 Meta 경영진은 개인 정보 침해 혐의에 대한 주주 소송을 해결하기 위해 1억 9천만 달러의 합의에 동의했습니다.",
+        "source": "Morningstar",
+        "date": "2026-09-09",
+        "category": "Legal"
+      }
+    ],
+    "analyses": {
+      "1": {
+        "direction": "bearish",
+        "impact_score": -3,
+        "reasoning": "AI 모델의 보안 취약성 및 통제 부족은 메타의 AI 개발 노력에 대한 신뢰를 저해하고 잠재적인 규제 조사를 초래할 수 있어 주가에 부정적인 영향을 미칠 수 있습니다."
+      },
+      "2": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "메타의 클라우드 컴퓨팅 시장 진출은 장기적으로 새로운 수익원을 창출할 수 있지만, 단기적으로는 AI 산업 내 경쟁 심화에 대한 우려로 인해 시장에 불확실성을 야기할 수 있습니다."
+      },
+      "3": {
+        "direction": "bullish",
+        "impact_score": 4,
+        "reasoning": "새로운 AI 에이전트 출시는 Meta의 AI 기술 발전을 보여주며, 이는 사용자 참여도와 광고 수익 개선으로 이어질 수 있어 주가에 긍정적인 영향을 미칠 것입니다."
+      },
+      "4": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "AI 투자의 긍정적인 효과와 막대한 자본 지출로 인한 잉여 현금 흐름 감소가 상충되어 주가에 중립적인 영향을 미칠 것으로 예상됩니다. 장기적으로는 AI 투자의 효율성이 중요합니다."
+      },
+      "5": {
+        "direction": "bearish",
+        "impact_score": -2,
+        "reasoning": "내부자의 대규모 주식 매각은 시장에 부정적인 신호로 해석될 수 있으며, 이는 주가에 하락 압력을 가할 수 있습니다."
+      },
+      "6": {
+        "direction": "bullish",
+        "impact_score": 3,
+        "reasoning": "주요 투자 은행의 긍정적인 등급 상향 조정과 목표 주가 상향은 투자자 신뢰를 높여 주가 상승에 기여할 것입니다."
+      },
+      "7": {
+        "direction": "bullish",
+        "impact_score": 1,
+        "reasoning": "배당금 지급은 주주 환원 정책의 일환으로, 투자자들에게 긍정적인 신호로 작용하여 주가에 소폭 긍정적인 영향을 줄 수 있습니다."
+      },
+      "8": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "스톡옵션 지급은 임원들의 동기 부여에 긍정적이지만, AI 성과에 대한 압박은 불확실성을 내포하고 있어 주가에 중립적인 영향을 미 미칠 수 있습니다."
+      },
+      "9": {
+        "direction": "bearish",
+        "impact_score": -3,
+        "reasoning": "대규모 벌금은 Meta의 재무 상태에 부정적인 영향을 미치고 규제 리스크를 부각시켜 주가에 하락 요인으로 작용할 것입니다."
+      },
+      "10": {
+        "direction": "neutral",
+        "impact_score": 0,
+        "reasoning": "합의금 지급은 단기적인 비용이지만, 법적 불확실성을 해소하여 장기적으로는 주가에 중립적인 영향을 미칠 수 있습니다."
+      }
+    },
+    "dailyForecasts": [],
+    "signals": {
+      "technicals": {
+        "price": 670.4,
+        "ma20": 595.33,
+        "vs_ma20_pct": 12.6,
+        "ma60": 598.28,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 84.1,
+        "rsi_state": "과매수(과열)",
+        "macd_momentum": "상승 모멘텀",
+        "volatility_20d_pct": 2.1,
+        "pos_52w_pct": 55.0,
+        "high_52w": 790.8,
+        "low_52w": 520.26,
+        "mom_5d_pct": 9.3,
+        "mom_20d_pct": 17.8
+      },
+      "valuation": {
+        "목표주가_평균": 758.28,
+        "목표주가_최고": 1000.0,
+        "목표주가_최저": 580.0,
+        "애널리스트_수": 57,
+        "투자의견": "적극매수",
+        "PER_선행": 19.2,
+        "PER": 25.2
+      }
+    }
+  }
+]
