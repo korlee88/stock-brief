@@ -1,39 +1,95 @@
 {
  "week_start": "2026-09-14",
  "week_end": "2026-09-20",
- "generated_at": "2026-09-14 01:52 KST",
+ "generated_at": "2026-09-15 23:57 KST",
  "events": [
   {
    "date": "2026-09-15",
-   "time": "06:00",
-   "title": "한국 8월 수출입물가지수",
-   "category": "지표",
+   "time": "10:00",
+   "title": "한-투르크메니스탄 정상회담",
+   "category": "정치",
+   "impact": "low",
+   "source": "뉴스핌"
+  },
+  {
+   "date": "2026-09-15",
+   "time": "16:00",
+   "title": "한-카자흐스탄 정상회담",
+   "category": "정치",
+   "impact": "low",
+   "source": "뉴스핌"
+  },
+  {
+   "date": "2026-09-15",
+   "time": "",
+   "title": "한국은행 금통위 의사록 공개 (8월)",
+   "category": "통화정책",
    "impact": "low",
    "source": "한국은행"
   },
   {
+   "date": "2026-09-16",
+   "time": "21:30",
+   "title": "미국 8월 소매판매",
+   "category": "지표",
+   "impact": "medium",
+   "source": "미국 인구조사국"
+  },
+  {
+   "date": "2026-09-16",
+   "time": "",
+   "title": "제1차 한-중앙아시아 정상회의",
+   "category": "정치",
+   "impact": "low",
+   "source": "조선일보, 이슈밸리"
+  },
+  {
    "date": "2026-09-17",
    "time": "03:00",
-   "title": "미국 9월 FOMC 금리 결정",
+   "title": "미국 FOMC 금리 결정·성명",
    "category": "통화정책",
    "impact": "high",
-   "source": "미 연방공개시장위원회"
+   "source": "연방준비제도, 경제돋보기, KuCoin"
+  },
+  {
+   "date": "2026-09-17",
+   "time": "03:30",
+   "title": "연준 의장 기자회견",
+   "category": "통화정책",
+   "impact": "high",
+   "source": "KuCoin, 이슈밸리"
+  },
+  {
+   "date": "2026-09-17",
+   "time": "",
+   "title": "일본은행 금융정책결정회의",
+   "category": "통화정책",
+   "impact": "medium",
+   "source": "미주중앙일보, 이슈밸리"
+  },
+  {
+   "date": "2026-09-17",
+   "time": "",
+   "title": "미국 8월 주택착공·건축허가",
+   "category": "지표",
+   "impact": "low",
+   "source": "유튜브 채널 '미국주식'"
   },
   {
    "date": "2026-09-18",
-   "time": "06:00",
-   "title": "한국 8월 생산자물가지수",
+   "time": "22:15",
+   "title": "미국 8월 산업생산",
    "category": "지표",
    "impact": "medium",
-   "source": "한국은행"
+   "source": "연방준비제도 (유튜브 채널 '미국주식')"
   },
   {
    "date": "2026-09-18",
    "time": "",
-   "title": "UN총회 고위급 일반토의 시작",
-   "category": "정치",
-   "impact": "medium",
-   "source": "유엔"
+   "title": "일본은행 금리 결정·정책 성명",
+   "category": "통화정책",
+   "impact": "high",
+   "source": "일본은행"
   }
  ]
 }
