@@ -22,6 +22,10 @@ high로 매긴 항목을 OpenAI(web_search 그라운딩)로 독립 재조사해,
 못 찾으면 medium으로 낮춘다 — 서로 다른 두 검색 소스가 같은 사실을 못 찾으면 근거가
 불충분하다고 보는 것(지어낸 정보 금지 원칙의 연장). OpenAI 쪽 실패·미설정은 전체 실행을
 막지 않고 Gemini 결과만 그대로 쓴다(최선 노력, 필수 아님).
+
+실패·이상 상황은 data/ops-log.md에 한 줄씩 누적 기록한다(log_incident) — 몇 주 뒤
+"이거 언제부터 이랬지" 하고 기억에 의존하지 않기 위함. 정상적인 스킵(키 미설정 등)은
+노이즈라 기록하지 않고, 실제 실패·예상 밖 결과만 남긴다.
 """
 
 import json
@@ -45,6 +49,19 @@ REPO = os.environ.get("GITHUB_REPOSITORY", "")
 
 KST = timezone(timedelta(hours=9))
 WEEKDAY_KO = ["월", "화", "수", "목", "금", "토", "일"]
+
+OPS_LOG = ROOT_DIR / "data" / "ops-log.md"
+
+
+def log_incident(msg):
+    """실패·스킵 등 나중에 원인을 잊어버리기 쉬운 사건을 커밋되는 로그에 남긴다.
+
+    '설정 안 함'류의 정상적인 스킵(예: 카카오 시크릿 미등록)은 매주 반복 기록해봤자
+    노이즈만 늘어나므로 호출하지 않는다 — 실제 실패·예상 밖 결과만 남긴다."""
+    OPS_LOG.parent.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.now(KST).strftime("%Y-%m-%d %H:%M KST")
+    with OPS_LOG.open("a", encoding="utf-8") as f:
+        f.write(f"- [{stamp}] weekly_calendar: {msg}\n")
 
 # 카테고리 → 화면 배지 (프롬프트가 이 키만 쓰도록 강제)
 CATEGORIES = ["지표", "통화정책", "실적", "이벤트", "크립토", "정치"]
@@ -324,10 +341,12 @@ def main():
         events = fetch_events(start, end)
     except Exception as e:
         print(f"⚠ 일정 수집 실패: {e}", file=sys.stderr)
+        log_incident(f"일정 수집 실패 — {e}")
         sys.exit(1)
 
     if not events:
         print("⚠ 확인된 일정 없음 — 파일·발송 모두 건너뜀", file=sys.stderr)
+        log_incident("확인된 일정 없음 — 파일·발송 모두 건너뜀")
         sys.exit(0)
 
     if OPENAI_API_KEY:
@@ -337,6 +356,7 @@ def main():
             print(f"   🔎 OpenAI 2차 검증 완료 ({len(other_events)}건과 대조)")
         except Exception as e:
             print(f"   ⚠ OpenAI 2차 검증 실패(건너뜀, Gemini 결과만 사용): {e}", file=sys.stderr)
+            log_incident(f"OpenAI 2차 검증 실패(Gemini 결과만 사용) — {e}")
     else:
         print("   [SKIP] OPENAI_API_KEY 없음 — 2차 검증 생략")
 
@@ -364,6 +384,7 @@ def main():
             print("   💬 카카오톡 발송 완료")
         except Exception as e:
             print(f"   ⚠ 카카오 발송 실패(파일은 갱신됨): {e}", file=sys.stderr)
+            log_incident(f"카카오 발송 실패(파일은 갱신됨) — {e}")
     else:
         print("   [SKIP] KAKAO 시크릿 없음 — 발송 생략")
 
