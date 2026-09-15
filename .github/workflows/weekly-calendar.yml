@@ -23,12 +23,14 @@ jobs:
           cache: 'pip'
 
       - name: 의존성 설치
-        # 이 스크립트는 google-genai 외엔 표준 라이브러리만 쓴다 (requirements.txt 전체는 불필요)
-        run: pip install google-genai --quiet
+        # 이 스크립트는 google-genai(필수)·openai(선택, 2차 검증용) 외엔 표준 라이브러리만 쓴다
+        # (requirements.txt 전체는 불필요)
+        run: pip install google-genai openai --quiet
 
       - name: 주간 일정 수집 · 카카오 발송
         env:
           GEMINI_API_KEY:      ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY:      ${{ secrets.OPENAI_API_KEY }}
           KAKAO_REST_API_KEY:  ${{ secrets.KAKAO_REST_API_KEY }}
           KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
         run: python scripts/weekly_calendar.py
