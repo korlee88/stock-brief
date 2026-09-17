@@ -1,0 +1,224 @@
+{
+  "generated_at": "2026-09-17",
+  "generated_by": "Claude Opus 4",
+  "title": "하락 걱정 딛고 *+4.79%* 반등했어요",
+  "subtitle": "2026-09-17 ~ 2026-09-17 · GE Vernova CEO, 2027년 초 수주잔고 2",
+  "summary": {
+    "week_start": "2026-09-17",
+    "week_end": "2026-09-17",
+    "session_count": 1,
+    "total_analyzed": 4,
+    "bullish_count": 2,
+    "bearish_count": 2,
+    "buy_indices": [],
+    "avg_buy_index": null,
+    "latest_buy_index": null,
+    "price_start": 925.09,
+    "price_end": 925.09,
+    "latest_price": 925.09,
+    "today_price": 925.09,
+    "today_change_pct": null,
+    "week_change_pct": 0.0,
+    "biggest_impact": {
+      "title": "GE Vernova CEO, 2027년 초 수주잔고 2천억 달러 달성 전망",
+      "score": 4,
+      "reason": "수주잔고 증가는 회사의 미래 매출 및 수익성에 대한 긍정적인 신호이며, 시장 예상보다 빠른 달성은 투자자들에게 긍정적으로 작용하여 주가 상승을 이끌었습니다.",
+      "source": "Seeking Alpha",
+      "date": "2026-09-16",
+      "category": "Market",
+      "direction_ko": "호재",
+      "emoji": "🚀"
+    },
+    "top_bullish": [
+      {
+        "title": "GE Vernova CEO, 2027년 초 수주잔고 2천억 달러 달성 전망",
+        "score": 4,
+        "reason": "수주잔고 증가는 회사의 미래 매출 및 수익성에 대한 긍정적인 신호이며, 시장 예상보다 빠른 달성은 투자자들에게 긍정적으로 작용하여 주가 상승을 이끌었습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-09-16",
+        "category": "Market"
+      },
+      {
+        "title": "GE Vernova, 전력 수요 증가로 인한 AI 데이터 센터 전력화 수혜 전망",
+        "score": 3,
+        "reason": "AI 및 데이터 센터의 급증하는 전력 수요는 GE Vernova의 핵심 사업 분야에 직접적인 성장 기회를 제공하며, 이는 장기적인 매출 증대로 이어질 수 있습니다.",
+        "source": "24/7 Wall St.",
+        "date": "2026-09-16",
+        "category": "Market"
+      }
+    ],
+    "top_bearish": [
+      {
+        "title": "GE Vernova, Rivian CFO의 합류 소식 이후 주가 하락",
+        "score": -2,
+        "reason": "주요 임원의 이동은 단기적으로 시장에 불확실성을 야기할 수 있으며, 특히 주가 하락과 함께 나타난다면 투자자들의 우려를 반영할 수 있습니다.",
+        "source": "Nasdaq",
+        "date": "2026-09-15",
+        "category": "Market"
+      },
+      {
+        "title": "GE Vernova, 일반 시장보다 큰 폭으로 하락",
+        "score": -1,
+        "reason": "시장 전반의 하락보다 더 큰 폭의 하락은 투자자들이 GE Vernova에 대해 추가적인 우려를 가지고 있음을 시사하며, 이는 단기적인 주가 약세로 이어질 수 있습니다.",
+        "source": "Nasdaq",
+        "date": "2026-09-16",
+        "category": "Market"
+      }
+    ],
+    "top_neutral": [],
+    "neutral_count": 0,
+    "scene1_news": {
+      "bullish": {
+        "title": "GE Vernova CEO, 2027년 초 수주잔고 2천억 달러 달성 전망",
+        "score": 4,
+        "reason": "수주잔고 증가는 회사의 미래 매출 및 수익성에 대한 긍정적인 신호이며, 시장 예상보다 빠른 달성은 투자자들에게 긍정적으로 작용하여 주가 상승을 이끌었습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-09-16",
+        "category": "Market"
+      },
+      "bearish": {
+        "title": "GE Vernova, Rivian CFO의 합류 소식 이후 주가 하락",
+        "score": -2,
+        "reason": "주요 임원의 이동은 단기적으로 시장에 불확실성을 야기할 수 있으며, 특히 주가 하락과 함께 나타난다면 투자자들의 우려를 반영할 수 있습니다.",
+        "source": "Nasdaq",
+        "date": "2026-09-15",
+        "category": "Market"
+      },
+      "neutral": null
+    },
+    "forecasts": [],
+    "daily_prices": [
+      [
+        "2026-09-17",
+        925.09
+      ]
+    ],
+    "overall_signal": null,
+    "trends": null,
+    "next_events": [],
+    "triggered_rules": [],
+    "scoring_layers": {},
+    "macro_ctx": {},
+    "today_date": "2026-09-17",
+    "today_news": [
+      {
+        "title": "GE Vernova CEO, 2027년 초 수주잔고 2천억 달러 달성 전망",
+        "category": "Market",
+        "source": "Seeking Alpha",
+        "date": "2026-09-16"
+      },
+      {
+        "title": "GE Vernova, 전력 수요 증가로 인한 AI 데이터 센터 전력화 수혜 전망",
+        "category": "Market",
+        "source": "24/7 Wall St.",
+        "date": "2026-09-16"
+      },
+      {
+        "title": "GE Vernova, 일반 시장보다 큰 폭으로 하락",
+        "category": "Market",
+        "source": "Nasdaq",
+        "date": "2026-09-16"
+      },
+      {
+        "title": "GE Vernova, Rivian CFO의 합류 소식 이후 주가 하락",
+        "category": "Market",
+        "source": "Nasdaq",
+        "date": "2026-09-15"
+      }
+    ],
+    "signals": {
+      "technicals": {
+        "price": 925.09,
+        "ma20": 934.35,
+        "vs_ma20_pct": -1.0,
+        "ma60": 1007.24,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 45.9,
+        "rsi_state": "중립",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 3.0,
+        "pos_52w_pct": 59.0,
+        "high_52w": 1195.94,
+        "low_52w": 530.16,
+        "mom_5d_pct": -2.7,
+        "mom_20d_pct": -7.9
+      },
+      "valuation": {
+        "목표주가_평균": 1237.34,
+        "목표주가_최고": 1450.0,
+        "목표주가_최저": 940.0,
+        "애널리스트_수": 33,
+        "투자의견": "매수",
+        "PER_선행": 36.6,
+        "PER": 25.3
+      }
+    },
+    "prev_day": {
+      "date": "2026-09-16",
+      "open": 898.0,
+      "close": 925.09,
+      "change_pct": 4.79
+    },
+    "month_low": {
+      "low": 868.25,
+      "current": 925.09,
+      "pct_vs_low": 6.55
+    },
+    "movement_reason": "2026년 9월 17일 GE 버노바(GEV)의 주가 하락 주요 원인은 다음과 같습니다.\n\nAI 개발 둔화 우려 / 애널리스트 매도 의견 / 높은 밸류에이션 부담\n\n**주요 원인 분석:**\n\n*   **AI 개발 둔화 우려:** 2026년 9월 14일, 일부 인공지능(AI) 리더들이 AI 개발의 전 세계적인 둔화를 촉구하면서 GE 버노바의 주가가 8.6% 하락했습니다. AI 개발 둔화는 GE 버노바의 전력 장비 수요에 직접적인 위협이 될 수 있다는 우려가 반영된 것으로 분석됩니다.\n*   **애널리스트 매도 의견:** 2026년 9월 14일, GLJ 리서치는 GE 버노바에 대해 '매도' 의견과 함께 470달러의 목표 주가를 제시했습니다. 이는 월가 최저 목표 주가로, 2027년 마진 전망 및 경기 순환적 사업 모델에 대한 우려를 표명하며 주가 하락에 영향을 미쳤습니다.\n*   **높은 밸류에이션 부담:** GE 버노바는 여러 차례 높은 주가수익비율(P/E)과 업계 대비 프리미엄으로 거래되고 있다는 지적이 있었습니다. 2026년 2분기 주당순이익(EPS)이 예상치를 하회했을 때도 이러한 밸류에이션 우려가 매도세를 심화시키는 요인으로 작용했습니다. 이러한 높은 밸류에이션은 시장의 부정적인 소식이나 실망스러운 실적 발표에 주가가 민감하게 반응하게 만드는 원인이 됩니다.",
+    "company_direction": "GE 버노바(GEV) 회사 소개 자료입니다.\n\n*   **① 주력 사업**: 발전·풍력·전력화 장비 및 서비스 / 전 세계 전력 25% 공급 / 가스터빈·장기 서비스 주력 / 데이터센터 전력 수요 대응\n*   **② 회사의 비전·전략 방향**: 세계 에너지 전환 주도 / 전력화 및 탈탄소화 비전 / 소형모듈원전 등 신기술 R&D 투자 / 데이터센터 전력 수요 집중\n*   **③ 최근 1년 내 주요 투자·설비·인수**: Prolec GE 53억 달러 인수 (변압기 시장 강화) / 로보텍 자동화 및 신생 기업 투자 / 생산능력 확대 위한 설비 투자 / 2028년까지 110억 달러 자본 투자\n*   **④ 핵심 신제품·신기술 로드맵**: 소형모듈원전(SMR) 개발 및 상용화 / 고효율 가스터빈(HA) 지속 공급 / AI 활용 디지털 전환 가속화 / 탄소포집·수소 등 친환경 기술 선도\n*   **⑤ 시장 내 위치·점유율**: 세계 전력 시스템 선도 기업 / 전 세계 전력 25% 장비 공급 / 북미 변압기 시장 1위 / 가스터빈 강세, 풍력 사업 약세"
+  },
+  "scenes": [
+    {
+      "index": 0,
+      "title": "어떤회사",
+      "lines": [
+        "하락 걱정 딛고 *+4.79%* 반등했어요",
+        "전 세계 *전력 25%* 공급하는 회사예요",
+        "*에너지 전환* 이끄는 게 목표죠",
+        "*53억 달러* 들여 변압기 업체 Prolec GE 인수했어요",
+        "*가스터빈·소형원전(SMR)* 이 대표 제품이에요",
+        "*북미 변압기 1위* 자리도 지키고 있어요"
+      ],
+      "body": "하락 걱정 딛고 *+4.79%* 반등했어요\n전 세계 *전력 25%* 공급하는 회사예요\n*에너지 전환* 이끄는 게 목표죠\n*53억 달러* 들여 변압기 업체 Prolec GE 인수했어요\n*가스터빈·소형원전(SMR)* 이 대표 제품이에요\n*북미 변압기 1위* 자리도 지키고 있어요"
+    },
+    {
+      "index": 1,
+      "title": "핵심뉴스",
+      "lines": [
+        "호재: CEO가 2027년 초 수주잔고 *2천억 달러* 달성한다고 밝혔어요",
+        "악재: Rivian CFO 이직 소식에 *임원 이탈 우려*로 주가가 흔들렸죠",
+        "보합: 최근 뚜렷한 중립 이슈는 없었어요"
+      ],
+      "body": "호재: CEO가 2027년 초 수주잔고 *2천억 달러* 달성한다고 밝혔어요\n악재: Rivian CFO 이직 소식에 *임원 이탈 우려*로 주가가 흔들렸죠\n보합: 최근 뚜렷한 중립 이슈는 없었어요"
+    },
+    {
+      "index": 2,
+      "title": "숫자로보기",
+      "lines": [
+        "추세: 20일 평균 주가선 *-1.0%* 아래, 단기 조정 흐름이에요",
+        "밸류: 선행 PER *36.6배*(이익 대비 비싼 편), 목표가 평균 *$1,237* 이에요",
+        "총평: 눈높이 높지만 *애널 33명 매수* 의견이에요"
+      ],
+      "body": "추세: 20일 평균 주가선 *-1.0%* 아래, 단기 조정 흐름이에요\n밸류: 선행 PER *36.6배*(이익 대비 비싼 편), 목표가 평균 *$1,237* 이에요\n총평: 눈높이 높지만 *애널 33명 매수* 의견이에요"
+    },
+    {
+      "index": 3,
+      "title": "다음주전망",
+      "lines": [
+        "관전 포인트 — *AI 데이터센터용 가스터빈* 수주 발표 주목",
+        "근거 — 대형 *가스터빈·소형원전(SMR) 수주* 흐름이 관건",
+        "현재가 *$925* 부근, 목표가 대비 *상방 여력* 넉넉해요",
+        "변동성 *3.0%*, 완만한 흐름 예상돼요",
+        "변수 — *GLJ 매도의견·목표가 $470* 부담이에요",
+        "다음에 또 만나요!"
+      ],
+      "body": "관전 포인트 — *AI 데이터센터용 가스터빈* 수주 발표 주목\n근거 — 대형 *가스터빈·소형원전(SMR) 수주* 흐름이 관건\n현재가 *$925* 부근, 목표가 대비 *상방 여력* 넉넉해요\n변동성 *3.0%*, 완만한 흐름 예상돼요\n변수 — *GLJ 매도의견·목표가 $470* 부담이에요\n다음에 또 만나요!"
+    }
+  ],
+  "image_prompts": {
+    "0": "A cinematic wide-angle interior view of a modern power engineering control room, with engineers in professional attire quietly monitoring vast energy grid networks on large translucent displays, purple analytical mood lighting bathing the scene, deep violet ambient glow reflecting on polished surfaces, a small wind farm and gas turbine facility visible through a distant window as secondary background elements only, sophisticated atmosphere of strategic analysis and energy transition leadership, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "1": "A breathtaking dawn landscape showcasing a rapidly expanding renewable energy infrastructure site, construction cranes lifting massive transformer equipment into position, workers in high-visibility gear collaborating with dynamic upward energy, vibrant green growth atmosphere with glowing motion lines suggesting momentum and progress, lush green fields surrounding the facility, distant wind turbines and gas power plant silhouettes as small secondary elements on one side, sense of thriving expansion and industrial optimism, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "2": "A calm sophisticated engineering data center for power grid analytics, sleek workstations with subtle holographic charts and monitoring dashboards as background props glowing gently, an analyst thoughtfully reviewing electrical grid performance metrics, cool cyan-blue analytical lighting casting a serene scientific mood, polished concrete floors reflecting soft blue tones, distant wind turbines and gas plant infrastructure visible faintly through panoramic windows as small secondary elements, atmosphere of measured evaluation and quantitative rigor, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo",
+    "3": "A majestic vertical composition of a futuristic clean energy landscape at golden hour, a small modular reactor facility and hydrogen production plant standing proudly at center, warm inspiring golden light bathing the scene with hopeful radiance, sunbeams streaming through soft clouds illuminating the horizon, a lone engineer silhouetted contemplating the vast energy transition future ahead, distant wind turbines and gas power infrastructure as small secondary elements on one side, atmosphere of visionary purpose and sustainable ambition, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo"
+  }
+}

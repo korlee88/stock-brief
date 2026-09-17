@@ -1,0 +1,14 @@
+# GEV 주간 배경 이미지 프롬프트 — 2026-09-17
+# Gemini Imagen에 씬별로 붙여넣기 하세요.
+
+## 씬0 주간브리핑
+A cinematic wide-angle interior view of a modern power engineering control room, with engineers in professional attire quietly monitoring vast energy grid networks on large translucent displays, purple analytical mood lighting bathing the scene, deep violet ambient glow reflecting on polished surfaces, a small wind farm and gas turbine facility visible through a distant window as secondary background elements only, sophisticated atmosphere of strategic analysis and energy transition leadership, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬1 호재심층
+A breathtaking dawn landscape showcasing a rapidly expanding renewable energy infrastructure site, construction cranes lifting massive transformer equipment into position, workers in high-visibility gear collaborating with dynamic upward energy, vibrant green growth atmosphere with glowing motion lines suggesting momentum and progress, lush green fields surrounding the facility, distant wind turbines and gas power plant silhouettes as small secondary elements on one side, sense of thriving expansion and industrial optimism, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬2 정량지표
+A calm sophisticated engineering data center for power grid analytics, sleek workstations with subtle holographic charts and monitoring dashboards as background props glowing gently, an analyst thoughtfully reviewing electrical grid performance metrics, cool cyan-blue analytical lighting casting a serene scientific mood, polished concrete floors reflecting soft blue tones, distant wind turbines and gas plant infrastructure visible faintly through panoramic windows as small secondary elements, atmosphere of measured evaluation and quantitative rigor, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+## 씬3 다음주전망
+A majestic vertical composition of a futuristic clean energy landscape at golden hour, a small modular reactor facility and hydrogen production plant standing proudly at center, warm inspiring golden light bathing the scene with hopeful radiance, sunbeams streaming through soft clouds illuminating the horizon, a lone engineer silhouetted contemplating the vast energy transition future ahead, distant wind turbines and gas power infrastructure as small secondary elements on one side, atmosphere of visionary purpose and sustainable ambition, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

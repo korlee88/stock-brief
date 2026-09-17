@@ -1,0 +1,37 @@
+SCENE_0_TITLE: 어떤회사
+SCENE_0:
+하락 걱정 딛고 *+4.79%* 반등했어요
+전 세계 *전력 25%* 공급하는 회사예요
+*에너지 전환* 이끄는 게 목표죠
+*53억 달러* 들여 변압기 업체 Prolec GE 인수했어요
+*가스터빈·소형원전(SMR)* 이 대표 제품이에요
+*북미 변압기 1위* 자리도 지키고 있어요
+
+SCENE_1_TITLE: 핵심뉴스
+SCENE_1:
+호재: CEO가 2027년 초 수주잔고 *2천억 달러* 달성한다고 밝혔어요
+악재: Rivian CFO 이직 소식에 *임원 이탈 우려*로 주가가 흔들렸죠
+보합: 최근 뚜렷한 중립 이슈는 없었어요
+
+SCENE_2_TITLE: 숫자로보기
+SCENE_2:
+추세: 20일 평균 주가선 *-1.0%* 아래, 단기 조정 흐름이에요
+밸류: 선행 PER *36.6배*(이익 대비 비싼 편), 목표가 평균 *$1,237* 이에요
+총평: 눈높이 높지만 *애널 33명 매수* 의견이에요
+
+SCENE_3_TITLE: 다음주전망
+SCENE_3:
+관전 포인트 — *AI 데이터센터용 가스터빈* 수주 발표 주목
+근거 — 대형 *가스터빈·소형원전(SMR) 수주* 흐름이 관건
+현재가 *$925* 부근, 목표가 대비 *상방 여력* 넉넉해요
+변동성 *3.0%*, 완만한 흐름 예상돼요
+변수 — *GLJ 매도의견·목표가 $470* 부담이에요
+다음에 또 만나요!
+
+IMAGE_PROMPT_0: A cinematic wide-angle interior view of a modern power engineering control room, with engineers in professional attire quietly monitoring vast energy grid networks on large translucent displays, purple analytical mood lighting bathing the scene, deep violet ambient glow reflecting on polished surfaces, a small wind farm and gas turbine facility visible through a distant window as secondary background elements only, sophisticated atmosphere of strategic analysis and energy transition leadership, cinematic photography, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_1: A breathtaking dawn landscape showcasing a rapidly expanding renewable energy infrastructure site, construction cranes lifting massive transformer equipment into position, workers in high-visibility gear collaborating with dynamic upward energy, vibrant green growth atmosphere with glowing motion lines suggesting momentum and progress, lush green fields surrounding the facility, distant wind turbines and gas power plant silhouettes as small secondary elements on one side, sense of thriving expansion and industrial optimism, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_2: A calm sophisticated engineering data center for power grid analytics, sleek workstations with subtle holographic charts and monitoring dashboards as background props glowing gently, an analyst thoughtfully reviewing electrical grid performance metrics, cool cyan-blue analytical lighting casting a serene scientific mood, polished concrete floors reflecting soft blue tones, distant wind turbines and gas plant infrastructure visible faintly through panoramic windows as small secondary elements, atmosphere of measured evaluation and quantitative rigor, photorealistic, ultra-high resolution, 16:9 landscape, no text, no letters, no watermark, no logo
+
+IMAGE_PROMPT_3: A majestic vertical composition of a futuristic clean energy landscape at golden hour, a small modular reactor facility and hydrogen production plant standing proudly at center, warm inspiring golden light bathing the scene with hopeful radiance, sunbeams streaming through soft clouds illuminating the horizon, a lone engineer silhouetted contemplating the vast energy transition future ahead, distant wind turbines and gas power infrastructure as small secondary elements on one side, atmosphere of visionary purpose and sustainable ambition, photorealistic, ultra-high resolution, 9:16 vertical, no text, no letters, no watermark, no logo

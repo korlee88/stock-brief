@@ -1,0 +1,92 @@
+[
+  {
+    "date": "2026-09-17",
+    "generatedAt": "2026-09-17T06:24:05.910Z",
+    "mode": "on-demand",
+    "latestPrice": 925.09,
+    "news": [
+      {
+        "id": 1,
+        "title": "GE Vernova CEO, 2027년 초 수주잔고 2천억 달러 달성 전망",
+        "summary": "GE Vernova의 CEO인 Scott Strazik은 회사의 수주잔고가 2027년 초에 2천억 달러에 도달할 것이라고 밝혔으며, 이는 시장 예상보다 빠른 시점입니다. 이 소식으로 인해 GE Vernova의 주가는 5% 상승했습니다.",
+        "source": "Seeking Alpha",
+        "date": "2026-09-16",
+        "category": "Market"
+      },
+      {
+        "id": 2,
+        "title": "GE Vernova, 전력 수요 증가로 인한 AI 데이터 센터 전력화 수혜 전망",
+        "summary": "GE Vernova는 AI 데이터 센터 전력화에 필요한 1.4조 달러 규모의 시장에서 수혜를 입을 것으로 예상됩니다. 이는 전력 수요 증가에 대한 CEO의 발언과 함께 회사의 성장 잠재력을 부각시킵니다.",
+        "source": "24/7 Wall St.",
+        "date": "2026-09-16",
+        "category": "Market"
+      },
+      {
+        "id": 3,
+        "title": "GE Vernova, Rivian CFO의 합류 소식 이후 주가 하락",
+        "summary": "Rivian의 CFO인 Claire McDonough가 GE Vernova에 합류한다는 소식에도 불구하고 GE Vernova의 주가는 하락했습니다. 이는 CFO 교체에 대한 시장의 불확실성 또는 다른 부정적인 요인 때문일 수 있습니다.",
+        "source": "Nasdaq",
+        "date": "2026-09-15",
+        "category": "Market"
+      },
+      {
+        "id": 4,
+        "title": "GE Vernova, 일반 시장보다 큰 폭으로 하락",
+        "summary": "GE Vernova (GEV)는 최근 거래 세션에서 2.09% 하락하여 일반 시장보다 더 큰 폭으로 떨어졌습니다.",
+        "source": "Nasdaq",
+        "date": "2026-09-16",
+        "category": "Market"
+      }
+    ],
+    "analyses": {
+      "1": {
+        "direction": "bullish",
+        "impact_score": 4,
+        "reasoning": "수주잔고 증가는 회사의 미래 매출 및 수익성에 대한 긍정적인 신호이며, 시장 예상보다 빠른 달성은 투자자들에게 긍정적으로 작용하여 주가 상승을 이끌었습니다."
+      },
+      "2": {
+        "direction": "bullish",
+        "impact_score": 3,
+        "reasoning": "AI 및 데이터 센터의 급증하는 전력 수요는 GE Vernova의 핵심 사업 분야에 직접적인 성장 기회를 제공하며, 이는 장기적인 매출 증대로 이어질 수 있습니다."
+      },
+      "3": {
+        "direction": "bearish",
+        "impact_score": -2,
+        "reasoning": "주요 임원의 이동은 단기적으로 시장에 불확실성을 야기할 수 있으며, 특히 주가 하락과 함께 나타난다면 투자자들의 우려를 반영할 수 있습니다."
+      },
+      "4": {
+        "direction": "bearish",
+        "impact_score": -1,
+        "reasoning": "시장 전반의 하락보다 더 큰 폭의 하락은 투자자들이 GE Vernova에 대해 추가적인 우려를 가지고 있음을 시사하며, 이는 단기적인 주가 약세로 이어질 수 있습니다."
+      }
+    },
+    "dailyForecasts": [],
+    "signals": {
+      "technicals": {
+        "price": 925.09,
+        "ma20": 934.35,
+        "vs_ma20_pct": -1.0,
+        "ma60": 1007.24,
+        "trend": "하락추세(20일선<60일선)",
+        "rsi14": 45.9,
+        "rsi_state": "중립",
+        "macd_momentum": "하락 모멘텀",
+        "volatility_20d_pct": 3.0,
+        "pos_52w_pct": 59.0,
+        "high_52w": 1195.94,
+        "low_52w": 530.16,
+        "mom_5d_pct": -2.7,
+        "mom_20d_pct": -7.9
+      },
+      "valuation": {
+        "목표주가_평균": 1237.34,
+        "목표주가_최고": 1450.0,
+        "목표주가_최저": 940.0,
+        "애널리스트_수": 33,
+        "투자의견": "매수",
+        "PER_선행": 36.6,
+        "PER": 25.3
+      }
+    }
+  }
+]

@@ -1,16 +1,16 @@
 {
- "ticker": "META",
- "company_ko": "메타 플랫폼스",
- "date": "2026-09-15",
+ "ticker": "GEV",
+ "company_ko": "GE 버노바",
+ "date": "2026-09-17",
  "mode": "short",
- "report_dir": "data/on-demand/META/2026-09-15",
+ "report_dir": "data/on-demand/GEV/2026-09-17",
  "scenes": [
-  "data/on-demand/META/2026-09-15/260915_메타플랫폼스_씬0.png",
-  "data/on-demand/META/2026-09-15/260915_메타플랫폼스_씬1.png",
-  "data/on-demand/META/2026-09-15/260915_메타플랫폼스_씬2.png",
-  "data/on-demand/META/2026-09-15/260915_메타플랫폼스_씬3.png"
+  "data/on-demand/GEV/2026-09-17/260917_GE버노바_씬0.png",
+  "data/on-demand/GEV/2026-09-17/260917_GE버노바_씬1.png",
+  "data/on-demand/GEV/2026-09-17/260917_GE버노바_씬2.png",
+  "data/on-demand/GEV/2026-09-17/260917_GE버노바_씬3.png"
  ],
- "youtube_title": "다들 걱정했지만, $670.37에서 잘 버텨요 | 메타 플랫폼스(META) 주가 브리핑 9/15 #Shorts",
- "youtube_description": "메타 플랫폼스(META) 2026-09-15 주가 브리핑 — 현재가 $670.37 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: 메타 플랫폼스, META, 메타 플랫폼스 주가, META 주가, 미국주식, 메타, 페이스북, 인스타그램, 마크 저커버그, 메타버스, AI 안경, Metaverse, AI, 소셜 미디어, 광고, GOOGL\n#META #메타플랫폼스 #미국주식 #메타 #페이스북 #인스타그램 #Metaverse #AI #Shorts",
- "generated_at": "2026-09-15"
+ "youtube_title": "하락 걱정 딛고 +4.79% 반등했어요 | GE 버노바(GEV) 주가 브리핑 9/17 #Shorts",
+ "youtube_description": "GE 버노바(GEV) 2026-09-17 주가 브리핑 — 현재가 $925.09 · 뉴스 브리핑\n핵심 뉴스(호재·악재)와 다음주 전망을 1분으로 정리했습니다.\n\n※ 본 영상은 AI 분석 툴로 수집한 자료를 요약·정리한 정보 콘텐츠이며, 투자 권유가 아닙니다.\n\n연관검색어: GE 버노바, GEV, GE 버노바 주가, GEV 주가, 미국주식, GE Vernova 주식, 풍력 터빈, 가스 터빈, 에너지 전환, GE Vernova, GEV stock, Energy transition, Renewable energy, Power generation, 에너지 장비 및 서비스, NEE\n#GEV #GE버노바 #미국주식 #GEVernova #GEVstock #Energytransition #Renewableenergy #Powergeneration #Shorts",
+ "generated_at": "2026-09-17"
 }

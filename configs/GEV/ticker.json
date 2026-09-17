@@ -1,0 +1,32 @@
+{
+  "ticker": "GEV",
+  "company_en": "GE Vernova Inc.",
+  "company_ko": "GE 버노바",
+  "industry_ko": "에너지 장비 및 서비스",
+  "exchange": "NYSE",
+  "image_future_tech_en": "A vast wind farm with towering, modern wind turbines spinning against a clear sky, alongside advanced gas power plants efficiently generating electricity, and intricate grid solutions managing the flow of power across a wide network.",
+  "brand_label": "GEV BRIEF",
+  "repo": "korlee88/stock-brief",
+  "data_source": "yahoo",
+  "competitor_ticker": "NEE",
+  "key_people": [
+    "Scott Strazik"
+  ],
+  "google_trends_keywords": [
+    "GE 버노바",
+    "GEV 주가",
+    "GE Vernova 주식",
+    "풍력 터빈",
+    "가스 터빈",
+    "에너지 전환"
+  ],
+  "video_tags": [
+    "GE Vernova",
+    "GEV stock",
+    "Energy transition",
+    "Renewable energy",
+    "Power generation"
+  ],
+  "resolved_by": "resolve-ticker.js (Gemini google_search)",
+  "resolved_at": "2026-09-17T06:23:59.976Z"
+}
