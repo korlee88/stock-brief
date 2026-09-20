@@ -1,0 +1,1 @@
+- [2026-09-21 01:43 KST] weekly_calendar: 카카오 발송 실패(파일은 갱신됨) — HTTP Error 401: 
