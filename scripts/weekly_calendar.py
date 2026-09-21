@@ -230,6 +230,19 @@ def fetch_events_openai(start, end):
     return _parse_events(json.dumps(data.get("events", [])), start, end)
 
 
+# Gemini 수집이 OpenAI 대비 이 배수 이상 적으면 정상적인 소스 간 편차가 아니라
+# 수집 실패로 본다. 2026-09-21 주에 Gemini 1건 / OpenAI 11건이 나와 40자짜리
+# 메시지가 발송된 것이 계기 — 미국 지표·실적이 통째로 빠진 주는 실재하지 않는다.
+COLLECTION_GAP_RATIO = 2
+MIN_FALLBACK_EVENTS = 3
+
+
+def gemini_collection_broken(events, other_events):
+    """Gemini 결과가 OpenAI 대비 비정상적으로 적은지 — OpenAI 결과로 대체할지 판단."""
+    return (len(other_events) >= MIN_FALLBACK_EVENTS
+            and len(events) * COLLECTION_GAP_RATIO < len(other_events))
+
+
 def reconcile_high_impact(events, other_events):
     """Gemini가 'high'로 매긴 항목을 OpenAI의 독립 조사 결과와 대조.
 
@@ -284,23 +297,48 @@ def build_kakao_text(events, start, end):
     return "\n".join(lines)[:200]
 
 
+FORM_HEADER = {"Content-Type": "application/x-www-form-urlencoded"}
+
+
+def _post(url, data, headers):
+    """POST 후 응답 본문을 돌려준다. 실패하면 응답 본문을 예외 메시지에 담는다.
+
+    카카오는 실패 원인(KOE322=refresh_token 만료, KOE101=REST 키 불일치 등)을 응답
+    본문에만 담아 준다. 본문 없이 "HTTP Error 401"만 남기면 토큰이 죽은 건지 키를
+    잘못 넣은 건지 구분할 수 없다 — kakao-stock-briefing에서 이것 때문에 사흘을
+    날린 적이 있어 같은 실수를 반복하지 않는다."""
+    import urllib.error
+    import urllib.request
+
+    req = urllib.request.Request(url, data=data, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return r.read()
+    except urllib.error.HTTPError as e:
+        try:
+            detail = e.read().decode("utf-8", "replace").strip()
+        except Exception:
+            detail = ""
+        raise RuntimeError(f"HTTP {e.code} — {detail or '(응답 본문 없음)'}") from e
+
+
 def send_kakao(text, link_url):
     """카카오톡 '나에게 보내기' (text 템플릿 + 링크 버튼).
 
     gws_publish.py의 발송 로직과 같은 방식이지만, 그 모듈은 import 시점에
     ticker.json을 읽어야 해서 여기서는 최소한만 자체 구현한다."""
     import urllib.parse
-    import urllib.request
 
-    body = urllib.parse.urlencode({
-        "grant_type": "refresh_token",
-        "client_id": KAKAO_REST_API_KEY,
-        "refresh_token": KAKAO_REFRESH_TOKEN,
-    }).encode()
-    req = urllib.request.Request("https://kauth.kakao.com/oauth/token", data=body,
-                                 headers={"Content-Type": "application/x-www-form-urlencoded"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        token = json.loads(r.read()).get("access_token")
+    raw = _post(
+        "https://kauth.kakao.com/oauth/token",
+        urllib.parse.urlencode({
+            "grant_type": "refresh_token",
+            "client_id": KAKAO_REST_API_KEY,
+            "refresh_token": KAKAO_REFRESH_TOKEN,
+        }).encode(),
+        FORM_HEADER,
+    )
+    token = json.loads(raw).get("access_token")
     if not token:
         raise RuntimeError("액세스 토큰 발급 실패")
 
@@ -310,16 +348,13 @@ def send_kakao(text, link_url):
         "link": {"web_url": link_url, "mobile_web_url": link_url},
         "button_title": "전체 일정 보기",
     }
-    body = urllib.parse.urlencode({
-        "template_object": json.dumps(template, ensure_ascii=False)
-    }).encode()
-    req = urllib.request.Request(
-        "https://kapi.kakao.com/v2/api/talk/memo/default/send", data=body,
-        headers={"Authorization": f"Bearer {token}",
-                 "Content-Type": "application/x-www-form-urlencoded"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        if r.status != 200:
-            raise RuntimeError(f"HTTP {r.status}")
+    _post(
+        "https://kapi.kakao.com/v2/api/talk/memo/default/send",
+        urllib.parse.urlencode({
+            "template_object": json.dumps(template, ensure_ascii=False)
+        }).encode(),
+        {"Authorization": f"Bearer {token}", **FORM_HEADER},
+    )
 
 
 def calendar_url():
@@ -352,8 +387,19 @@ def main():
     if OPENAI_API_KEY:
         try:
             other_events = fetch_events_openai(start, end)
-            events = reconcile_high_impact(events, other_events)
-            print(f"   🔎 OpenAI 2차 검증 완료 ({len(other_events)}건과 대조)")
+            if gemini_collection_broken(events, other_events):
+                # 깨진 목록과 대조하면 멀쩡한 high가 전부 medium으로 깎이므로
+                # 교차 검증은 건너뛴다. OpenAI 결과도 _parse_events를 거쳐
+                # 출처 없는 항목은 이미 걸러진 상태다.
+                print(f"   ⚠ Gemini 수집 이상({len(events)}건) — "
+                      f"OpenAI 결과({len(other_events)}건)로 대체, 교차 검증 생략",
+                      file=sys.stderr)
+                log_incident(f"Gemini 수집 이상({len(events)}건) — "
+                             f"OpenAI 결과({len(other_events)}건)로 대체, 교차 검증 생략")
+                events = other_events
+            else:
+                events = reconcile_high_impact(events, other_events)
+                print(f"   🔎 OpenAI 2차 검증 완료 ({len(other_events)}건과 대조)")
         except Exception as e:
             print(f"   ⚠ OpenAI 2차 검증 실패(건너뜀, Gemini 결과만 사용): {e}", file=sys.stderr)
             log_incident(f"OpenAI 2차 검증 실패(Gemini 결과만 사용) — {e}")
