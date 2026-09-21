@@ -1,1 +1,2 @@
 - [2026-09-21 01:43 KST] weekly_calendar: 카카오 발송 실패(파일은 갱신됨) — HTTP Error 401: 
+- [2026-09-21 23:41 KST] weekly_calendar: 카카오 발송 실패(파일은 갱신됨) — HTTP 401 — {"error":"invalid_client","error_description":"Bad client credentials","error_code":"KOE010"}

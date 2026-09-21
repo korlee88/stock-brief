@@ -1,15 +1,279 @@
 {
  "week_start": "2026-09-21",
  "week_end": "2026-09-27",
- "generated_at": "2026-09-21 01:43 KST",
+ "generated_at": "2026-09-21 23:41 KST",
  "events": [
+  {
+   "date": "2026-09-21",
+   "time": "",
+   "title": "유로시스템 DLT 결제 프로젝트 Pontes 출시",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-21",
+   "time": "",
+   "title": "이재명 대통령 미국 뉴욕 방문 시작",
+   "category": "정치",
+   "impact": "medium",
+   "source": "조선일보, 연합뉴스, 조세일보, 뉴데일리"
+  },
+  {
+   "date": "2026-09-21",
+   "time": "",
+   "title": "패러데이 퓨처 EAI 로봇 공개 (919 이벤트)",
+   "category": "이벤트",
+   "impact": "low",
+   "source": "매일경제"
+  },
+  {
+   "date": "2026-09-21",
+   "time": "",
+   "title": "FreeBit 실적 발표",
+   "category": "실적",
+   "impact": "low",
+   "source": "Investing.com"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "01:30",
+   "title": "미국 8월 시카고 연은 국가활동지수",
+   "category": "지표",
+   "impact": "low",
+   "source": "Investing.com"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "07:30",
+   "title": "시카고 연은 총재 굴스비 연설",
+   "category": "지표",
+   "impact": "medium",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "09:00",
+   "title": "SPACE ID 토큰 언락",
+   "category": "크립토",
+   "impact": "low",
+   "source": "IT타임스"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "19:00",
+   "title": "SOOP 오버워치 멸망전 인비테이셔널",
+   "category": "이벤트",
+   "impact": "low",
+   "source": "연합뉴스"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "21:00",
+   "title": "MultiBank Group 토큰 언락",
+   "category": "크립토",
+   "impact": "low",
+   "source": "IT타임스"
+  },
   {
    "date": "2026-09-22",
    "time": "",
-   "title": "한국은행 금융안정회의",
-   "category": "통화정책",
+   "title": "이재명 대통령 유엔총회 기조연설",
+   "category": "정치",
+   "impact": "medium",
+   "source": "조선일보, 연합뉴스, 조세일보, 뉴데일리"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "",
+   "title": "CoinEx 비현물 서비스 중단",
+   "category": "크립토",
    "impact": "low",
-   "source": "한국은행"
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "",
+   "title": "러시아 MOEX 암호화폐 지수 선물 출시",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "",
+   "title": "Zilliqa 두 번째 하드포크",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "",
+   "title": "The Sandbox SAND 보상 청구 마감",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-22",
+   "time": "",
+   "title": "SEC 토큰화 주식 거래 규제 특례 시행",
+   "category": "크립토",
+   "impact": "medium",
+   "source": "코인데스크"
+  },
+  {
+   "date": "2026-09-23",
+   "time": "13:00",
+   "title": "BitMEX 공식 폐쇄",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-23",
+   "time": "14:00",
+   "title": "리치먼드 연은 총재 바킨 연설",
+   "category": "지표",
+   "impact": "medium",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-23",
+   "time": "17:30",
+   "title": "Soon 토큰 언락",
+   "category": "크립토",
+   "impact": "low",
+   "source": "IT타임스"
+  },
+  {
+   "date": "2026-09-23",
+   "time": "19:00",
+   "title": "SOOP 오버워치 멸망전 인비테이셔널",
+   "category": "이벤트",
+   "impact": "low",
+   "source": "연합뉴스"
+  },
+  {
+   "date": "2026-09-23",
+   "time": "",
+   "title": "완샹 블록체인 글로벌 서밋 상하이",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-23",
+   "time": "",
+   "title": "대한민국 투자 서밋 2026 (뉴욕)",
+   "category": "정치",
+   "impact": "medium",
+   "source": "연합뉴스, 조세일보"
+  },
+  {
+   "date": "2026-09-24",
+   "time": "17:00",
+   "title": "SOOP 오버워치 멸망전 인비테이셔널 결승전",
+   "category": "이벤트",
+   "impact": "low",
+   "source": "연합뉴스"
+  },
+  {
+   "date": "2026-09-24",
+   "time": "18:00",
+   "title": "SoSoValue 토큰 언락",
+   "category": "크립토",
+   "impact": "low",
+   "source": "IT타임스"
+  },
+  {
+   "date": "2026-09-24",
+   "time": "",
+   "title": "이재명 대통령 멕시코 국빈 방문 시작",
+   "category": "정치",
+   "impact": "medium",
+   "source": "조선일보, 연합뉴스, 조세일보, 뉴데일리"
+  },
+  {
+   "date": "2026-09-24",
+   "time": "",
+   "title": "바이낸스 USDP 상장폐지 & STG->ZRO 병합",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-24",
+   "time": "",
+   "title": "Phantom 지갑 Sui 네트워크 지원 중단",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-25",
+   "time": "09:00",
+   "title": "Humanity Protocol 토큰 언락",
+   "category": "크립토",
+   "impact": "low",
+   "source": "IT타임스, PANews"
+  },
+  {
+   "date": "2026-09-25",
+   "time": "09:00",
+   "title": "Big Time 토큰 언락",
+   "category": "크립토",
+   "impact": "low",
+   "source": "IT타임스"
+  },
+  {
+   "date": "2026-09-25",
+   "time": "21:00",
+   "title": "Plasma 토큰 언락",
+   "category": "크립토",
+   "impact": "low",
+   "source": "IT타임스, PANews"
+  },
+  {
+   "date": "2026-09-25",
+   "time": "",
+   "title": "이재명 대통령 멕시코 비즈니스 포럼 참석",
+   "category": "정치",
+   "impact": "medium",
+   "source": "YouTube"
+  },
+  {
+   "date": "2026-09-25",
+   "time": "",
+   "title": "태국 SEC 스테이블코인 규정 의견수렴 마감",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-25",
+   "time": "",
+   "title": "Balancer 프로토콜 종료 제안 투표",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-25",
+   "time": "",
+   "title": "Oracle Switchboard 운영 중단",
+   "category": "크립토",
+   "impact": "low",
+   "source": "PANews"
+  },
+  {
+   "date": "2026-09-26",
+   "time": "19:00",
+   "title": "STBL 토큰 언락",
+   "category": "크립토",
+   "impact": "low",
+   "source": "IT타임스, PANews"
   }
  ]
 }
