@@ -1,207 +1,127 @@
 {
- "week_start": "2026-09-28",
- "week_end": "2026-10-04",
- "generated_at": "2026-09-28 02:35 KST",
+ "week_start": "2026-10-05",
+ "week_end": "2026-10-11",
+ "generated_at": "2026-10-05 02:21 KST",
  "events": [
   {
-   "date": "2026-09-28",
-   "time": "",
-   "title": "미·중 무역 협상 세부 내용",
-   "category": "정치",
-   "impact": "medium",
-   "source": "국민일보, 미주중앙일보"
-  },
-  {
-   "date": "2026-09-28",
-   "time": "",
-   "title": "중국 8월 산업이익",
+   "date": "2026-10-05",
+   "time": "08:50",
+   "title": "일본 경상수지 변동 요인(10월)",
    "category": "지표",
    "impact": "low",
-   "source": "연합뉴스"
+   "source": "일본은행"
   },
   {
-   "date": "2026-09-28",
-   "time": "",
-   "title": "일본은행 통화정책회의록",
-   "category": "통화정책",
+   "date": "2026-10-05",
+   "time": "14:00",
+   "title": "일본 생산성 격차 등 지표",
+   "category": "지표",
    "impact": "low",
-   "source": "연합뉴스"
+   "source": "일본은행"
   },
   {
-   "date": "2026-09-28",
+   "date": "2026-10-05",
    "time": "",
-   "title": "요타 2026 (AI 컨퍼런스) 시작",
+   "title": "테크 위크 2026 (샌프란시스코)",
    "category": "이벤트",
    "impact": "medium",
-   "source": "연합뉴스"
+   "source": "a16z"
   },
   {
-   "date": "2026-09-29",
-   "time": "00:15",
-   "title": "오클랜드 테크위크 (Fed 연사)",
-   "category": "이벤트",
+   "date": "2026-10-05",
+   "time": "",
+   "title": "STRK v0.14.4 메인넷 업그레이드",
+   "category": "크립토",
    "impact": "low",
-   "source": "Federal Reserve Board"
+   "source": "코인니스"
   },
   {
-   "date": "2026-09-29",
-   "time": "23:00",
-   "title": "미국 8월 JOLTS",
-   "category": "지표",
-   "impact": "medium",
-   "source": "미 노동통계국, 연합뉴스"
-  },
-  {
-   "date": "2026-09-29",
+   "date": "2026-10-05",
    "time": "",
-   "title": "미국 9월 소비자신뢰지수",
-   "category": "지표",
-   "impact": "medium",
-   "source": "연합뉴스"
+   "title": "빗썸 SUNDOG 상폐",
+   "category": "크립토",
+   "impact": "low",
+   "source": "코인니스"
   },
   {
-   "date": "2026-09-29",
-   "time": "",
-   "title": "미국 7월 주택가격",
+   "date": "2026-10-06",
+   "time": "06:00",
+   "title": "한국 9월말 외환보유액",
    "category": "지표",
    "impact": "low",
-   "source": "연합뉴스"
+   "source": "한국은행"
   },
   {
-   "date": "2026-09-29",
-   "time": "",
-   "title": "유로존 9월 소비자신뢰지수",
+   "date": "2026-10-07",
+   "time": "08:50",
+   "title": "일본은행 시장 운영(9월)",
    "category": "지표",
    "impact": "low",
-   "source": "연합뉴스"
+   "source": "일본은행"
   },
   {
-   "date": "2026-09-30",
-   "time": "",
-   "title": "한국 8월 소매판매",
+   "date": "2026-10-07",
+   "time": "08:50",
+   "title": "일본은행 정부 거래(9월)",
    "category": "지표",
    "impact": "low",
-   "source": "연합뉴스"
+   "source": "일본은행"
   },
   {
-   "date": "2026-09-30",
-   "time": "",
-   "title": "한국 8월 광공업생산",
+   "date": "2026-10-07",
+   "time": "08:50",
+   "title": "일본 본원통화 및 거래(9월)",
    "category": "지표",
    "impact": "low",
-   "source": "연합뉴스"
+   "source": "일본은행"
   },
   {
-   "date": "2026-09-30",
-   "time": "",
-   "title": "중국 9월 제조업 PMI",
-   "category": "지표",
-   "impact": "medium",
-   "source": "연합뉴스"
-  },
-  {
-   "date": "2026-09-30",
-   "time": "",
-   "title": "중국 9월 서비스업 PMI",
+   "date": "2026-10-07",
+   "time": "12:00",
+   "title": "한국 2분기 자금순환(잠정)",
    "category": "지표",
    "impact": "low",
-   "source": "연합뉴스"
+   "source": "한국은행"
   },
   {
-   "date": "2026-09-30",
-   "time": "",
-   "title": "독일 9월 CPI",
-   "category": "지표",
-   "impact": "medium",
-   "source": "연합뉴스"
-  },
-  {
-   "date": "2026-09-30",
-   "time": "",
-   "title": "미국 9월 ADP 민간고용",
-   "category": "지표",
-   "impact": "medium",
-   "source": "연합뉴스"
-  },
-  {
-   "date": "2026-09-30",
-   "time": "",
-   "title": "미국 8월 PCE 가격지수",
-   "category": "지표",
-   "impact": "high",
-   "source": "연합뉴스, 국민일보, 미주중앙일보"
-  },
-  {
-   "date": "2026-09-30",
-   "time": "",
-   "title": "미국 8월 개인소득·개인지출",
-   "category": "지표",
-   "impact": "medium",
-   "source": "연합뉴스"
-  },
-  {
-   "date": "2026-09-30",
-   "time": "",
-   "title": "미국 2분기 GDP 성장률",
-   "category": "지표",
-   "impact": "medium",
-   "source": "연합뉴스"
-  },
-  {
-   "date": "2026-09-30",
-   "time": "",
-   "title": "마이크론 실적 발표",
-   "category": "실적",
-   "impact": "medium",
-   "source": "연합뉴스, 국민일보"
-  },
-  {
-   "date": "2026-10-01",
-   "time": "",
-   "title": "한국 9월 수출입통계",
+   "date": "2026-10-07",
+   "time": "14:00",
+   "title": "일본 소비활동지수",
    "category": "지표",
    "impact": "low",
-   "source": "연합뉴스, 뉴스1"
+   "source": "일본은행"
   },
   {
-   "date": "2026-10-01",
-   "time": "",
-   "title": "미국 9월 ISM 제조업 PMI",
+   "date": "2026-10-08",
+   "time": "08:00",
+   "title": "한국 8월 국제수지(잠정)",
    "category": "지표",
-   "impact": "high",
-   "source": "연합뉴스"
+   "impact": "medium",
+   "source": "한국은행"
   },
   {
-   "date": "2026-10-01",
-   "time": "",
-   "title": "미국 8월 건설지출",
+   "date": "2026-10-08",
+   "time": "14:00",
+   "title": "일본 지역경제 보고서(10월)",
    "category": "지표",
    "impact": "low",
-   "source": "연합뉴스"
+   "source": "일본은행"
   },
   {
-   "date": "2026-10-02",
-   "time": "16:00",
-   "title": "한국 9월 소비자물가지수",
-   "category": "지표",
-   "impact": "medium",
-   "source": "연합뉴스, Investing.com, 뉴스1"
-  },
-  {
-   "date": "2026-10-02",
+   "date": "2026-10-10",
    "time": "",
-   "title": "유로존 9월 CPI",
-   "category": "지표",
-   "impact": "medium",
-   "source": "연합뉴스"
+   "title": "크립토 [밋업] 제로베이스",
+   "category": "크립토",
+   "impact": "low",
+   "source": "코인니스"
   },
   {
-   "date": "2026-10-02",
+   "date": "2026-10-11",
    "time": "",
-   "title": "미국 9월 고용보고서",
-   "category": "지표",
-   "impact": "high",
-   "source": "연합뉴스, 미주중앙일보"
+   "title": "업비트·빗썸 RVN 상폐",
+   "category": "크립토",
+   "impact": "low",
+   "source": "코인니스"
   }
  ]
 }
