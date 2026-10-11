@@ -1,127 +1,39 @@
 {
- "week_start": "2026-10-05",
- "week_end": "2026-10-11",
- "generated_at": "2026-10-05 02:21 KST",
+ "week_start": "2026-10-12",
+ "week_end": "2026-10-18",
+ "generated_at": "2026-10-12 02:56 KST",
  "events": [
   {
-   "date": "2026-10-05",
-   "time": "08:50",
-   "title": "일본 경상수지 변동 요인(10월)",
-   "category": "지표",
-   "impact": "low",
-   "source": "일본은행"
-  },
-  {
-   "date": "2026-10-05",
-   "time": "14:00",
-   "title": "일본 생산성 격차 등 지표",
-   "category": "지표",
-   "impact": "low",
-   "source": "일본은행"
-  },
-  {
-   "date": "2026-10-05",
-   "time": "",
-   "title": "테크 위크 2026 (샌프란시스코)",
-   "category": "이벤트",
-   "impact": "medium",
-   "source": "a16z"
-  },
-  {
-   "date": "2026-10-05",
-   "time": "",
-   "title": "STRK v0.14.4 메인넷 업그레이드",
-   "category": "크립토",
-   "impact": "low",
-   "source": "코인니스"
-  },
-  {
-   "date": "2026-10-05",
-   "time": "",
-   "title": "빗썸 SUNDOG 상폐",
-   "category": "크립토",
-   "impact": "low",
-   "source": "코인니스"
-  },
-  {
-   "date": "2026-10-06",
-   "time": "06:00",
-   "title": "한국 9월말 외환보유액",
-   "category": "지표",
-   "impact": "low",
-   "source": "한국은행"
-  },
-  {
-   "date": "2026-10-07",
-   "time": "08:50",
-   "title": "일본은행 시장 운영(9월)",
-   "category": "지표",
-   "impact": "low",
-   "source": "일본은행"
-  },
-  {
-   "date": "2026-10-07",
-   "time": "08:50",
-   "title": "일본은행 정부 거래(9월)",
-   "category": "지표",
-   "impact": "low",
-   "source": "일본은행"
-  },
-  {
-   "date": "2026-10-07",
-   "time": "08:50",
-   "title": "일본 본원통화 및 거래(9월)",
-   "category": "지표",
-   "impact": "low",
-   "source": "일본은행"
-  },
-  {
-   "date": "2026-10-07",
-   "time": "12:00",
-   "title": "한국 2분기 자금순환(잠정)",
-   "category": "지표",
-   "impact": "low",
-   "source": "한국은행"
-  },
-  {
-   "date": "2026-10-07",
-   "time": "14:00",
-   "title": "일본 소비활동지수",
-   "category": "지표",
-   "impact": "low",
-   "source": "일본은행"
-  },
-  {
-   "date": "2026-10-08",
-   "time": "08:00",
-   "title": "한국 8월 국제수지(잠정)",
+   "date": "2026-10-14",
+   "time": "10:30",
+   "title": "중국 9월 CPI",
    "category": "지표",
    "impact": "medium",
-   "source": "한국은행"
+   "source": "중국 국가통계국"
   },
   {
-   "date": "2026-10-08",
-   "time": "14:00",
-   "title": "일본 지역경제 보고서(10월)",
+   "date": "2026-10-14",
+   "time": "10:30",
+   "title": "중국 9월 PPI",
    "category": "지표",
-   "impact": "low",
-   "source": "일본은행"
+   "impact": "medium",
+   "source": "중국 국가통계국"
   },
   {
-   "date": "2026-10-10",
-   "time": "",
-   "title": "크립토 [밋업] 제로베이스",
-   "category": "크립토",
-   "impact": "low",
-   "source": "코인니스"
+   "date": "2026-10-14",
+   "time": "21:30",
+   "title": "미국 9월 CPI",
+   "category": "지표",
+   "impact": "high",
+   "source": "미 노동통계국"
   },
   {
-   "date": "2026-10-11",
-   "time": "",
-   "title": "업비트·빗썸 RVN 상폐",
-   "category": "크립토",
-   "impact": "low",
-   "source": "코인니스"
+   "date": "2026-10-15",
+   "time": "21:30",
+   "title": "미국 9월 PPI",
+   "category": "지표",
+   "impact": "high",
+   "source": "미 노동통계국"
   }
  ]
 }

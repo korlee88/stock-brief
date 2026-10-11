@@ -1,0 +1,39 @@
+{
+ "week_start": "2026-10-12",
+ "week_end": "2026-10-18",
+ "generated_at": "2026-10-12 02:56 KST",
+ "events": [
+  {
+   "date": "2026-10-14",
+   "time": "10:30",
+   "title": "중국 9월 CPI",
+   "category": "지표",
+   "impact": "medium",
+   "source": "중국 국가통계국"
+  },
+  {
+   "date": "2026-10-14",
+   "time": "10:30",
+   "title": "중국 9월 PPI",
+   "category": "지표",
+   "impact": "medium",
+   "source": "중국 국가통계국"
+  },
+  {
+   "date": "2026-10-14",
+   "time": "21:30",
+   "title": "미국 9월 CPI",
+   "category": "지표",
+   "impact": "high",
+   "source": "미 노동통계국"
+  },
+  {
+   "date": "2026-10-15",
+   "time": "21:30",
+   "title": "미국 9월 PPI",
+   "category": "지표",
+   "impact": "high",
+   "source": "미 노동통계국"
+  }
+ ]
+}
