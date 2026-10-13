@@ -14,6 +14,7 @@ env:
   OPENAI_API_KEY       — 선택 (없으면 2차 검증 생략, Gemini 결과만 사용)
   KAKAO_REST_API_KEY   — 선택 (없으면 발송 생략, 파일만 갱신)
   KAKAO_REFRESH_TOKEN  — 선택
+  KAKAO_CLIENT_SECRET  — 카카오 앱에 클라이언트 시크릿이 켜져 있으면 필수 (없으면 KOE010)
   GITHUB_REPOSITORY    — 링크 생성용 (owner/repo)
 
 2차 검증(OPENAI_API_KEY, 사용자 요청): 카카오 메시지는 impact="high" 항목만 골라 보내므로,
@@ -45,6 +46,7 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
 OPENAI_MODEL = "gpt-5.4"
 KAKAO_REST_API_KEY = os.environ.get("KAKAO_REST_API_KEY", "")
 KAKAO_REFRESH_TOKEN = os.environ.get("KAKAO_REFRESH_TOKEN", "")
+KAKAO_CLIENT_SECRET = os.environ.get("KAKAO_CLIENT_SECRET", "")
 REPO = os.environ.get("GITHUB_REPOSITORY", "")
 
 KST = timezone(timedelta(hours=9))
@@ -329,15 +331,16 @@ def send_kakao(text, link_url):
     ticker.json을 읽어야 해서 여기서는 최소한만 자체 구현한다."""
     import urllib.parse
 
-    raw = _post(
-        "https://kauth.kakao.com/oauth/token",
-        urllib.parse.urlencode({
-            "grant_type": "refresh_token",
-            "client_id": KAKAO_REST_API_KEY,
-            "refresh_token": KAKAO_REFRESH_TOKEN,
-        }).encode(),
-        FORM_HEADER,
-    )
+    form = {
+        "grant_type": "refresh_token",
+        "client_id": KAKAO_REST_API_KEY,
+        "refresh_token": KAKAO_REFRESH_TOKEN,
+    }
+    # 앱에 클라이언트 시크릿이 켜져 있으면 빠뜨리는 순간 KOE010(invalid_client)
+    if KAKAO_CLIENT_SECRET:
+        form["client_secret"] = KAKAO_CLIENT_SECRET
+    raw = _post("https://kauth.kakao.com/oauth/token",
+                urllib.parse.urlencode(form).encode(), FORM_HEADER)
     token = json.loads(raw).get("access_token")
     if not token:
         raise RuntimeError("액세스 토큰 발급 실패")

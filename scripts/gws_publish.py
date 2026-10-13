@@ -59,6 +59,7 @@ GMAIL_TO           = os.environ.get("GMAIL_TO", "")
 # refresh_token + REST API 키로 매 실행마다 새 토큰 발급. 시크릿 없으면 조용히 건너뜀.
 KAKAO_REST_API_KEY = os.environ.get("KAKAO_REST_API_KEY", "")
 KAKAO_REFRESH_TOKEN = os.environ.get("KAKAO_REFRESH_TOKEN", "")
+KAKAO_CLIENT_SECRET = os.environ.get("KAKAO_CLIENT_SECRET", "")
 
 
 # ── 유틸 ──────────────────────────────────────────────────────────────────────
@@ -474,25 +475,43 @@ def send_gmail_digest(report_dir: Path, meta: dict, youtube_url: str | None) -> 
 
 # ── 메인 ──────────────────────────────────────────────────────────────────────
 
+def _kakao_post(url, data, headers):
+    """POST 후 응답 본문을 돌려준다. 실패 시 카카오 오류코드(KOE***)가 담긴 본문을
+    예외 메시지에 실어 보낸다 — 본문을 버리면 'HTTP Error 401'만 남아 원인을 못 짚는다."""
+    import urllib.error
+    import urllib.request
+    req = urllib.request.Request(url, data=data, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return r.read()
+    except urllib.error.HTTPError as e:
+        try:
+            detail = e.read().decode("utf-8", "replace").strip()
+        except Exception:
+            detail = ""
+        raise RuntimeError(f"HTTP {e.code} — {detail or '(응답 본문 없음)'}") from e
+
+
 def _kakao_refresh_access_token():
     """refresh_token으로 새 access_token 발급 (카카오 토큰은 6시간 만료)."""
     import urllib.parse
-    import urllib.request
-    body = urllib.parse.urlencode({
+    form = {
         "grant_type": "refresh_token",
         "client_id": KAKAO_REST_API_KEY,
         "refresh_token": KAKAO_REFRESH_TOKEN,
-    }).encode()
-    req = urllib.request.Request("https://kauth.kakao.com/oauth/token", data=body,
-                                 headers={"Content-Type": "application/x-www-form-urlencoded"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return json.loads(r.read()).get("access_token")
+    }
+    # 앱에 클라이언트 시크릿이 켜져 있으면 빠뜨리는 순간 KOE010(invalid_client)
+    if KAKAO_CLIENT_SECRET:
+        form["client_secret"] = KAKAO_CLIENT_SECRET
+    raw = _kakao_post("https://kauth.kakao.com/oauth/token",
+                      urllib.parse.urlencode(form).encode(),
+                      {"Content-Type": "application/x-www-form-urlencoded"})
+    return json.loads(raw).get("access_token")
 
 
 def send_kakao_memo(report_dir: Path, meta: dict, youtube_url: str | None):
     """영상 생성 완료를 카카오톡 '나에게 보내기'로 알림 (text 템플릿, 200자 이내)."""
     import urllib.parse
-    import urllib.request
     token = _kakao_refresh_access_token()
     if not token:
         raise RuntimeError("액세스 토큰 발급 실패")
@@ -524,14 +543,10 @@ def send_kakao_memo(report_dir: Path, meta: dict, youtube_url: str | None):
         "link": {"web_url": link_url, "mobile_web_url": link_url},
         "button_title": "영상 보기",
     }
-    body = urllib.parse.urlencode({"template_object": json.dumps(template, ensure_ascii=False)}).encode()
-    req = urllib.request.Request(
-        "https://kapi.kakao.com/v2/api/talk/memo/default/send", data=body,
-        headers={"Authorization": f"Bearer {token}",
-                 "Content-Type": "application/x-www-form-urlencoded"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        if r.status != 200:
-            raise RuntimeError(f"HTTP {r.status}")
+    _kakao_post(
+        "https://kapi.kakao.com/v2/api/talk/memo/default/send",
+        urllib.parse.urlencode({"template_object": json.dumps(template, ensure_ascii=False)}).encode(),
+        {"Authorization": f"Bearer {token}", "Content-Type": "application/x-www-form-urlencoded"})
 
 
 def main():
