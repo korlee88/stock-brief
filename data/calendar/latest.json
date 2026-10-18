@@ -1,39 +1,71 @@
 {
- "week_start": "2026-10-12",
- "week_end": "2026-10-18",
- "generated_at": "2026-10-12 02:56 KST",
+ "week_start": "2026-10-19",
+ "week_end": "2026-10-25",
+ "generated_at": "2026-10-19 01:25 KST",
  "events": [
   {
-   "date": "2026-10-14",
-   "time": "10:30",
-   "title": "중국 9월 CPI",
-   "category": "지표",
+   "date": "2026-10-19",
+   "time": "",
+   "title": "현대로템 3분기 실적 발표",
+   "category": "실적",
+   "impact": "low",
+   "source": "Investing.com"
+  },
+  {
+   "date": "2026-10-20",
+   "time": "",
+   "title": "씽킹AI 서밋 서울 2026",
+   "category": "이벤트",
+   "impact": "low",
+   "source": "지디넷코리아"
+  },
+  {
+   "date": "2026-10-21",
+   "time": "",
+   "title": "GM 3분기 실적 발표",
+   "category": "실적",
    "impact": "medium",
-   "source": "중국 국가통계국"
+   "source": "경북매일, 지디넷코리아"
   },
   {
-   "date": "2026-10-14",
-   "time": "10:30",
-   "title": "중국 9월 PPI",
-   "category": "지표",
+   "date": "2026-10-21",
+   "time": "",
+   "title": "세계 바이오 서밋",
+   "category": "이벤트",
+   "impact": "low",
+   "source": "지디넷코리아"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "",
+   "title": "램리서치 3분기 실적 발표",
+   "category": "실적",
    "impact": "medium",
-   "source": "중국 국가통계국"
+   "source": "지디넷코리아"
   },
   {
-   "date": "2026-10-14",
-   "time": "21:30",
-   "title": "미국 9월 CPI",
-   "category": "지표",
-   "impact": "high",
-   "source": "미 노동통계국"
+   "date": "2026-10-22",
+   "time": "",
+   "title": "테슬라 3분기 실적 발표",
+   "category": "실적",
+   "impact": "medium",
+   "source": "경북매일, 지디넷코리아"
   },
   {
-   "date": "2026-10-15",
-   "time": "21:30",
-   "title": "미국 9월 PPI",
-   "category": "지표",
-   "impact": "high",
-   "source": "미 노동통계국"
+   "date": "2026-10-22",
+   "time": "",
+   "title": "LG디스플레이 3분기 실적 발표",
+   "category": "실적",
+   "impact": "low",
+   "source": "지디넷코리아"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "",
+   "title": "세계 바이오 서밋",
+   "category": "이벤트",
+   "impact": "low",
+   "source": "지디넷코리아"
   }
  ]
 }
