@@ -1,0 +1,191 @@
+{
+ "week_start": "2026-10-26",
+ "week_end": "2026-11-01",
+ "generated_at": "2026-10-26 02:00 KST",
+ "events": [
+  {
+   "date": "2026-10-27",
+   "time": "06:10",
+   "title": "한국 10월 소비자신뢰지수",
+   "category": "지표",
+   "impact": "low",
+   "source": "한국은행"
+  },
+  {
+   "date": "2026-10-27",
+   "time": "08:00",
+   "title": "한국 3분기 GDP 속보치",
+   "category": "지표",
+   "impact": "medium",
+   "source": "한국은행"
+  },
+  {
+   "date": "2026-10-27",
+   "time": "08:50",
+   "title": "일본 9월 서비스 PPI",
+   "category": "지표",
+   "impact": "low",
+   "source": "일본은행"
+  },
+  {
+   "date": "2026-10-27",
+   "time": "21:30",
+   "title": "미국 9월 내구재수주",
+   "category": "지표",
+   "impact": "medium",
+   "source": "미 상무부"
+  },
+  {
+   "date": "2026-10-27",
+   "time": "23:00",
+   "title": "미국 10월 CB 소비자신뢰",
+   "category": "지표",
+   "impact": "medium",
+   "source": "콘퍼런스보드"
+  },
+  {
+   "date": "2026-10-27",
+   "time": "23:00",
+   "title": "미국 9월 신규 주택판매",
+   "category": "지표",
+   "impact": "low",
+   "source": "미 상무부"
+  },
+  {
+   "date": "2026-10-28",
+   "time": "06:00",
+   "title": "NXP세미컨덕터 실적",
+   "category": "실적",
+   "impact": "low",
+   "source": "NXP세미컨덕터"
+  },
+  {
+   "date": "2026-10-28",
+   "time": "",
+   "title": "SK하이닉스 실적 발표",
+   "category": "실적",
+   "impact": "medium",
+   "source": "SK하이닉스"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "03:00",
+   "title": "미국 FOMC 정책금리 결정",
+   "category": "통화정책",
+   "impact": "high",
+   "source": "미 연방준비제도 (Fed)"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "03:30",
+   "title": "미 연준 의장 기자회견",
+   "category": "통화정책",
+   "impact": "high",
+   "source": "미 연방준비제도 (Fed)"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "05:00",
+   "title": "알파벳 실적 발표",
+   "category": "실적",
+   "impact": "high",
+   "source": "알파벳"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "05:00",
+   "title": "마이크로소프트 실적 발표",
+   "category": "실적",
+   "impact": "high",
+   "source": "마이크로소프트"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "22:15",
+   "title": "ECB 통화정책 결정",
+   "category": "통화정책",
+   "impact": "medium",
+   "source": "유럽중앙은행 (ECB)"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "22:45",
+   "title": "ECB 총재 기자회견",
+   "category": "통화정책",
+   "impact": "medium",
+   "source": "유럽중앙은행 (ECB)"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "",
+   "title": "중국 공산당 5중전회",
+   "category": "정치",
+   "impact": "medium",
+   "source": "한국경제"
+  },
+  {
+   "date": "2026-10-29",
+   "time": "",
+   "title": "삼성전자 실적 발표",
+   "category": "실적",
+   "impact": "medium",
+   "source": "삼성전자"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "05:00",
+   "title": "아마존 실적 발표",
+   "category": "실적",
+   "impact": "high",
+   "source": "아마존"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "05:00",
+   "title": "샌디스크 실적 발표",
+   "category": "실적",
+   "impact": "medium",
+   "source": "샌디스크"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "05:30",
+   "title": "미국 3분기 GDP 속보치",
+   "category": "지표",
+   "impact": "high",
+   "source": "미 상무부 (BEA)"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "09:30",
+   "title": "미국 9월 PCE 가격지수",
+   "category": "지표",
+   "impact": "high",
+   "source": "미 상무부"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "",
+   "title": "일본 BOJ 금융정책 결정",
+   "category": "통화정책",
+   "impact": "medium",
+   "source": "일본은행 (BOJ)"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "",
+   "title": "일본 BOJ 총재 기자회견",
+   "category": "통화정책",
+   "impact": "medium",
+   "source": "일본은행 (BOJ)"
+  },
+  {
+   "date": "2026-10-30",
+   "time": "",
+   "title": "일본 BOJ 경제 및 물가전망",
+   "category": "지표",
+   "impact": "medium",
+   "source": "일본은행"
+  }
+ ]
+}
