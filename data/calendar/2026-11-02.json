@@ -1,0 +1,103 @@
+{
+ "week_start": "2026-11-02",
+ "week_end": "2026-11-08",
+ "generated_at": "2026-11-02 03:19 KST",
+ "events": [
+  {
+   "date": "2026-11-03",
+   "time": "23:00",
+   "title": "미국 9월 JOLTS",
+   "category": "지표",
+   "impact": "medium",
+   "source": "미 노동통계국"
+  },
+  {
+   "date": "2026-11-04",
+   "time": "14:00",
+   "title": "BOJ 10월 전망보고서",
+   "category": "지표",
+   "impact": "low",
+   "source": "일본은행"
+  },
+  {
+   "date": "2026-11-04",
+   "time": "21:00",
+   "title": "우버 3분기 실적콜",
+   "category": "실적",
+   "impact": "medium",
+   "source": "Uber Investor Relations"
+  },
+  {
+   "date": "2026-11-04",
+   "time": "21:30",
+   "title": "미국 9월 무역수지",
+   "category": "지표",
+   "impact": "medium",
+   "source": "미 경제분석국"
+  },
+  {
+   "date": "2026-11-04",
+   "time": "22:45",
+   "title": "퀄컴 4Q 실적발표",
+   "category": "실적",
+   "impact": "medium",
+   "source": "Qualcomm Investor Relations"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "06:45",
+   "title": "퀄컴 4Q 실적콜",
+   "category": "실적",
+   "impact": "medium",
+   "source": "Qualcomm Investor Relations"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "22:50",
+   "title": "일본 9월 금정위 의사록",
+   "category": "통화정책",
+   "impact": "low",
+   "source": "일본은행"
+  },
+  {
+   "date": "2026-11-06",
+   "time": "21:30",
+   "title": "미국 10월 고용보고서",
+   "category": "지표",
+   "impact": "high",
+   "source": "미 노동통계국"
+  },
+  {
+   "date": "2026-11-06",
+   "time": "23:00",
+   "title": "오픈AI 데브데이 런던",
+   "category": "이벤트",
+   "impact": "low",
+   "source": "OpenAI"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "03:00",
+   "title": "윌리엄스 3Q 실적콜",
+   "category": "실적",
+   "impact": "low",
+   "source": "Williams Investor Relations"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "10:00",
+   "title": "우에다 총재 강연",
+   "category": "통화정책",
+   "impact": "low",
+   "source": "일본은행"
+  },
+  {
+   "date": "2026-11-08",
+   "time": "",
+   "title": "이더리움 데브콘 8",
+   "category": "크립토",
+   "impact": "low",
+   "source": "Ethereum Foundation"
+  }
+ ]
+}

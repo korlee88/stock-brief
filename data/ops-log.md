@@ -5,3 +5,5 @@
 - [2026-10-12 02:56 KST] weekly_calendar: 카카오 발송 실패(파일은 갱신됨) — HTTP 401 — {"error":"invalid_client","error_description":"Bad client credentials","error_code":"KOE010"}
 - [2026-10-19 01:25 KST] weekly_calendar: 카카오 발송 실패(파일은 갱신됨) — HTTP 401 — {"error":"invalid_client","error_description":"Bad client credentials","error_code":"KOE010"}
 - [2026-10-26 02:00 KST] weekly_calendar: 카카오 발송 실패(파일은 갱신됨) — HTTP 401 — {"error":"invalid_client","error_description":"Bad client credentials","error_code":"KOE010"}
+- [2026-11-02 03:19 KST] weekly_calendar: Gemini 수집 이상(3건) — OpenAI 결과(12건)로 대체, 교차 검증 생략
+- [2026-11-02 03:19 KST] weekly_calendar: 카카오 발송 실패(파일은 갱신됨) — HTTP 401 — {"error":"invalid_client","error_description":"Bad client credentials","error_code":"KOE010"}
